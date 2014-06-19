@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Atmel Studio Solution File, Format Version 11.00
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "software", "software.cproj", "{B167172E-132B-40AF-808B-8B13ECFC6FB4}"
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "pad30", "pad30.cproj", "{B167172E-132B-40AF-808B-8B13ECFC6FB4}"
 EndProject
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "mCommon", "..\..\mCommon\mCommon.cproj", "{9F88DC90-C937-43B8-A936-E5CC5E15421B}"
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "common", "..\common\mCommon.cproj", "{9F88DC90-C937-43B8-A936-E5CC5E15421B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
