@@ -5,7 +5,7 @@
  *  Author: waynej
  */ 
 
-#include "../../mCommon/config.h"
+#include "../common/config.h"
 #include <avr/io.h>
 
 #ifndef PAD32_CONFIG_H_

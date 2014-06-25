@@ -9,8 +9,8 @@
 #include <avr/io.h>
 #include <avr/eeprom.h>
 
-#include "../../mCommon/zb.h"
-#include "../../mCommon/adc.h"
+#include "../common/zb.h"
+#include "../common/adc.h"
 #include <stdio.h>
 
 void statusFSM(int padNum);

@@ -6,7 +6,7 @@
 */
 
 #include "pad30.h"
-#include "../../mCommon/config.h"
+#include "../common/config.h"
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -15,10 +15,10 @@
 #include <avr/eeprom.h>
 #include <string.h> 
 
-#include "../../mCommon/adc.h"
-#include "../../mCommon/uart.h"
-#include "../../mCommon/zb.h"
-#include "../../mCommon/Timer0.h"
+#include "../common/adc.h"
+#include "../common/uart.h"
+#include "../common/zb.h"
+#include "../common/Timer0.h"
 
 #include "launchFSM.h"
 #include "switchFSM.h"

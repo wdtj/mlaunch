@@ -1,6 +1,6 @@
 #include "pad30.h"
-#include "../../mCommon/adc.h"
-#include "../../mCommon/zb.h"
+#include "../common/adc.h"
+#include "../common/zb.h"
 
 #include <avr/interrupt.h>
 #include <avr/eeprom.h>

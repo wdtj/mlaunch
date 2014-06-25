@@ -9,7 +9,7 @@
 #ifndef LINKFSM_H_
 #define LINKFSM_H_
 
-#include "../../mCommon/zb.h"
+#include "../common/zb.h"
 
 void linkFSMinit( char * nodeName );
 void linkFSMtimer( void );

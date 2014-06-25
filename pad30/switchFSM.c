@@ -6,7 +6,7 @@
  */ 
 
 #include "pad30.h"
-#include "../../mCommon/adc.h"
+#include "../common/adc.h"
 
 #include "switchFSM.h"
 
