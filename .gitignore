@@ -10,3 +10,4 @@
 *.map
 [Dd]ebug/
 [Rr]elease/
+*.autosave
