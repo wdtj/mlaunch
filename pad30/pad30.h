@@ -118,12 +118,11 @@ struct epromStruct
 
 extern struct epromStruct eprom;
 
-enum LINK_STATE
+enum LINK_STATUS
 {
-	MODEM_INIT, 
-	MODEM_DIS, 
+	MODEM_INIT,
+	MODEM_RESET,
 	MODEM_READY
 };
-extern volatile enum LINK_STATE linkState;
 
 #endif /* PAD32_CONFIG_H_ */

@@ -104,6 +104,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="linkFSM.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="linkFSM.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="pad30.h">
       <SubType>compile</SubType>
     </Compile>

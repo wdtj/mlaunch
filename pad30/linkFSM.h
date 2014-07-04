@@ -13,7 +13,8 @@
 
 void linkFSMinit( char * nodeName );
 void linkFSMtimer( void );
-bool linkFSMpkt(zbPkt *pkt);
-bool linkFSMready(void);
+void linkFSMpkt(zbPkt *pkt);
+void linkFSMToDo(void);
+enum LINK_STATUS linkFSMStatus(void);
 
 #endif /* LINKFSM_H_ */

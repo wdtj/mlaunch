@@ -71,7 +71,6 @@ volatile unsigned int histTimer=1000/TIMER0_PERIOD;
 
 volatile unsigned long v1, v2, r1, r2;
 
-volatile enum LINK_STATE linkState=MODEM_INIT;
 
 bool ident=false;
 int identTimer;
@@ -105,7 +104,7 @@ void handleIdent( zbRx* rxPkt );
 int main(void)
 {
 	bool sw1pressed=false, sw2pressed=false;
-	long adc0, adc1, adc2, adc3;
+	long adc0, /*adc1,*/ adc2, adc3;
 
 	init();
 	
@@ -116,17 +115,14 @@ int main(void)
 	nodeName[3]=pads[0].padAssign;
 	nodeName[4]=pads[1].padAssign;
 	
-	zb_ni(1, nodeName);
+	linkFSMinit(nodeName);
 
-	while(linkState!=MODEM_READY) 
-	{
-	}
-		
 	resetRed1();
 	resetRed2();
 
 	while(1)
 	{
+		linkFSMToDo();
 		/*	
 		 *  Converting from the ADC value to a voltage is pretty complicated.  There 
 		 *  is a diode bridge that biases ground by about .8 volts and then 
@@ -266,6 +262,8 @@ void init()
 /* Timer 0 interrupt */
 void timer0(void)
 {
+	linkFSMtimer();
+	
 	timer0_set(F_CPU/1024/1000*TIMER0_PERIOD);
 
 	if (ident)
@@ -352,55 +350,12 @@ void rxPkt(unsigned char *data, unsigned int length)
 	zbPkt *pkt=(zbPkt *)data;
 	switch(pkt->frameType)
 	{
-		case ZB_MODEM_STATUS:
-		{
-			struct zbModemStatus *ms=&pkt->zbModemStatus;
-			if (ms->status==zb_mdm_assoc)
-			{
-				linkState=MODEM_READY;
-			}
-			else if (ms->status==zb_mdm_disassoc)
-			{
-				linkState=MODEM_DIS;
-			}
-		}
-		break;
-
 		case ZB_RECEIVE_PACKET:
-		rxData(&pkt->zbRX);
-		break;
-		
-		case ZB_TRANSMIT_STATUS:
-		{
-			struct zbTransmitStatus *ts=&pkt->zbTransmitStatus;
-			
-			zb_txBusy=false;
-		}
-		break;
-
-		case ZB_AT_COMMAND_RESPONSE:
-		{
-			struct zbATResponse *cr=&pkt->zbATResponse;
-
-			if (cr->cmd[0]=='N' && cr->cmd[1]=='I')
-			{
-				zb_jv(1, 1);
-			}
-			else if (cr->cmd[0]=='J' && cr->cmd[1]=='V')
-			{
-				zb_jn(1, 1);
-			} 
-			else if (cr->cmd[0]=='J' && cr->cmd[1]=='N')
-			{
-				zb_nr(0, 0);
-			}
-		}
+			rxData(&pkt->zbRX);
 		break;
 		
 		default:
-#if defined(myDEBUG)
-		while(false){}
-#endif
+			linkFSMpkt(pkt);
 		break;
 	}
 }

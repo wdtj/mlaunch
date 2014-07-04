@@ -5,6 +5,7 @@
 #include <avr/interrupt.h>
 #include <avr/eeprom.h>
 #include "launchFSM.h"
+#include "linkFSM.h"
 #include "pad30.h"
 
 void sendStatus(int padNum, float contVolt, float battVolt);
@@ -25,9 +26,9 @@ void padFSMtimer(int padNum)
     switch (pad->launchState)
     {
         case IDLE:
-		switch(linkState)
+		switch(linkFSMStatus())
 		{
-		case MODEM_DIS:
+		case MODEM_RESET:
 			if (pad->flashTimer <DIS_TIMER50)
 			{
 				set(PORTB, pad->green);
@@ -126,7 +127,7 @@ void padFSMtimer(int padNum)
     }
 }
 
-static unsigned int zeros[10];
+//static unsigned int zeros[10];
 
 void SWEnable(int sw)
 {
