@@ -123,6 +123,7 @@ int main(void)
 	while(1)
 	{
 		linkFSMToDo();
+		
 		/*	
 		 *  Converting from the ADC value to a voltage is pretty complicated.  There 
 		 *  is a diode bridge that biases ground by about .8 volts and then 

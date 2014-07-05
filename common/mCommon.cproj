@@ -115,6 +115,9 @@
     <Compile Include="adc.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="zb_db.c">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="zb_wr.c">
       <SubType>compile</SubType>
     </Compile>

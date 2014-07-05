@@ -348,6 +348,7 @@ void zb_id(unsigned char fid, unsigned long v);
 void zb_fr(unsigned char fid);
 void zb_ch(unsigned char fid);
 void zb_wr(unsigned char fid);
+void zb_db(unsigned char fid);
 
 extern bool zb_txBusy;
 

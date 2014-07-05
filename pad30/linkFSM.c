@@ -30,13 +30,17 @@ volatile enum LINKSTATE {
 	FR_SENT,
 	SEND_CH,
 	CH_SENT,
+	SEND_DB,
+	DB_SENT,
 	RESET,
 	READY
 } linkState;
 
 char ni[21];
 unsigned char channel;
-unsigned int linkTimer;
+unsigned char signalStrength;
+unsigned int linkTimer=0;
+unsigned int statTimer=0;
 
 void linkFSMinit( const char const * nodeName )
 {
@@ -46,11 +50,32 @@ void linkFSMinit( const char const * nodeName )
 
 void linkFSMtimer( void )
 {
-	linkTimer--;
-	if (linkTimer==1)
+	if (linkTimer!=0)
 	{
-		linkState=SEND_NI;
+		linkTimer--;
+		if (linkTimer==1)
+		{
+			linkState=SEND_NI;
+		}
+		else
+		{
+			linkTimer--;
+		}
 	}
+	
+	if (statTimer!=0)
+	{
+		if (statTimer==1)
+		{
+			linkState=SEND_DB;
+			statTimer=0;
+		}
+		else
+		{
+			statTimer--;
+		}
+	}
+	
 }
 
 void linkFSMpkt(zbPkt *pkt)
@@ -114,8 +139,15 @@ void linkFSMpkt(zbPkt *pkt)
 				
 				case CH_SENT:
 				channel=cr->data[0];				
+				linkState=SEND_DB;
+				linkTimer=0;
+				break;
+				
+				case DB_SENT:
+				signalStrength=cr->data[0];				
 				linkState=READY;
 				linkTimer=0;
+				statTimer=10000/TIMER0_PERIOD;
 				break;
 				
 				default:
@@ -171,8 +203,15 @@ void linkFSMToDo(void)
 			linkState=CH_SENT;
 			linkTimer=1000/TIMER0_PERIOD;
 			break;
+
+		case SEND_DB:
+			zb_db(6);
+			linkState=DB_SENT;
+			linkTimer=1000/TIMER0_PERIOD;
+			break;
+
 		default:
-		break;
+			break;
 	}
 }
 
@@ -181,10 +220,14 @@ enum LINK_STATUS linkFSMStatus(void)
 	switch(linkState)
 	{
 		case SEND_NI:
-		return MODEM_INIT;
+			return MODEM_INIT;
 		case READY:
-		return MODEM_READY;
+		case SEND_CH:
+		case CH_SENT:
+		case SEND_DB:
+		case DB_SENT:
+			return MODEM_READY;
 		default:
-		return MODEM_RESET;
+			return MODEM_RESET;
 	}
 }
