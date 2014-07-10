@@ -104,7 +104,7 @@ void handleIdent( zbRx* rxPkt );
 int main(void)
 {
 	bool sw1pressed=false, sw2pressed=false;
-	long adc0, /*adc1,*/ adc2, adc3;
+	long adc0, adc1, adc2, adc3;
 
 	init();
 	
@@ -154,16 +154,67 @@ int main(void)
 			v2=0;
 		}
 		
-		if (v1>v2)
+		if (pads[0].launchState==PAD_ENABLED)
 		{
-			adc0=(long)adc_value(0);
-			pads[0].contVolt=((adc0-12)*10000l/5766l);
-			r1=(((long)adc_value(0)-13)*100l/65l);
+			if (v1>v2)
+			{
+				adc0=(long)adc_value(0);
+				unsigned long r=(adc0*153)-2000;
+				if (r > 50000)
+				{
+					pads[0].contResistance=-1;
+				}
+				else
+				{
+					pads[0].contResistance=r/100;
+				}
+			}
+			else
+			{
+				adc0=(long)adc_value(0);
+				unsigned long r=(adc0*149)-120800L;
+				if (r > 50000)
+				{
+					pads[0].contResistance=-1;
+				}
+				else
+				{
+					pads[0].contResistance=r/100;
+				}
+			}
 		}
+		
+		if (pads[1].launchState==PAD_ENABLED)
+		{
+			if (v1>v2)
+			{
+				adc1=(long)adc_value(1);
+				unsigned long r=(adc1*153)-2000;
+				if (r > 50000)
+				{
+					pads[1].contResistance=-1;
+				}
+				else
+				{
+					pads[1].contResistance=r/100;
+				}
+			}
+			else
+			{
+				adc1=(long)adc_value(1);
+				unsigned long r=(adc1*149)-120800L;
+				if (r > 50000)
+				{
+					pads[0].contResistance=-1;
+				}
+				else
+				{
+					pads[1].contResistance=r/100;
+				}
+			}
+		}
+		
 		pads[0].contValid=true;
-		pads[1].contVolt=(((long)adc_value(1)-16)*10000l/5558l);
-		r2=(((long)adc_value(1)-13)*100l/65l);
-		pads[1].contValid=true;
 
 		if (!sw1pressed && isClosed(0))
 		{	// sw1 has transitioned from open to closed

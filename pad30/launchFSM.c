@@ -71,8 +71,7 @@ void padFSMtimer(int padNum)
         break;
 
         case SW_ENABLED:
-        if (((v1>v2) && (pads[padNum].contVolt < 300)) ||
-			((v1<v2) && (pads[padNum].contVolt > 900)))
+        if (pads[padNum].contResistance < 400)
         {
             set(PORTB, pad->green);
             reset(PORTB, pad->red);
@@ -97,8 +96,7 @@ void padFSMtimer(int padNum)
         case PAD_ENABLED:
         pad->relayTimer--;
 
-		if (((v1>v2) && (pads[padNum].contVolt < 300)) ||
-			((v1<v2) && (pads[padNum].contVolt > 900)))
+		if (pads[padNum].contResistance < 400)
 		{
 			set(PORTB, pad->green);
 			reset(PORTB, pad->red);

@@ -89,7 +89,7 @@ struct padStruct
 	unsigned int relayTimer;
 	unsigned int statusTimer;
 	unsigned int timeout;
-	long contVolt;
+	unsigned long contResistance;
 	bool contValid;
 };
 
@@ -105,7 +105,7 @@ struct padStruct pads[PAD_COUNT];
 #define DIS_TIMER50 (20/TIMER0_PERIOD)
 #define DIS_TIMER (200/TIMER0_PERIOD)
 #define RESET_TIMER (1000*10/TIMER0_PERIOD)
-#define RELAY_TIMER (20/TIMER0_PERIOD)
+#define RELAY_TIMER (100/TIMER0_PERIOD)
 
 volatile bool modemDown;
 int histptr;

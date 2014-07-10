@@ -55,19 +55,12 @@ void sendStatus(int padNum)
 	}
 	
 	batt=v1>v2?v1:v2;
-	cont=pads[padNum].contVolt;
-	if (cont < 0)
-	{
-		cont=0l;
-	}
-	
-	int launchState=pads[padNum].launchState==PAD_LAUNCH?1:0;
-	int contState=((v1>v2 && cont < 300) || (v1<v2 && cont > 900))?1:0;
-	
-	long contDelta=batt>cont?batt-cont:0;
 
-	int len=sprintf(msg, "S%d e%d l%d Cv%ld.%02ld Bv%ld.%02ld Dv%ld.%02ld",
-		padNum+1, contState, launchState, cont/100, cont%100, batt/100, batt%100, contDelta/100, contDelta%100);
+	int launchState=pads[padNum].launchState==PAD_LAUNCH?1:0;
+	int contState=(pads[padNum].contResistance < 400)?1:0;
+	
+	int len=sprintf(msg, "S%d e%d l%d Rc%ld Bv%ld.%02ld",
+		padNum+1, contState, launchState, pads[padNum].contResistance, batt/100, batt%100);
 	
 	zb_tx(0, controllerAddress, controllerNAD, 0, 0, msg, len);
 }
