@@ -9,8 +9,8 @@
 #ifndef CONTROLLER30_H_
 #define CONTROLLER30_H_
 
-#include "../../mCommon/config.h"
-#include "../../mCommon/zb.h"
+#include "../common/config.h"
+#include "../common/zb.h"
 #include <avr/io.h>
 
 #define UART_BAUD  9600UL
@@ -50,7 +50,7 @@ struct padInfo
 	bool discoveredAck;
 	int contState;
 	int launchState;
-	int cont;
+	int contResistance;
 	int batt;
 };
 

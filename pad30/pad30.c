@@ -182,6 +182,7 @@ int main(void)
 					pads[0].contResistance=r/100;
 				}
 			}
+			pads[0].contValid=true;
 		}
 		
 		if (pads[1].launchState==PAD_ENABLED)
@@ -212,9 +213,9 @@ int main(void)
 					pads[1].contResistance=r/100;
 				}
 			}
+			pads[1].contValid=true;
 		}
 		
-		pads[0].contValid=true;
 
 		if (!sw1pressed && isClosed(0))
 		{	// sw1 has transitioned from open to closed

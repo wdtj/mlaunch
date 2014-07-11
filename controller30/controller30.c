@@ -7,19 +7,19 @@
 
 
 #include "controller30.h"
-#include "../../mCommon/config.h"
+#include "../common/config.h"
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <util/delay.h>
 #include <avr/eeprom.h>
 
-#include "../../mCommon/led.h"
-#include "../../mCommon/OLED.h"
-#include "../../mCommon/adc.h"
-#include "../../mCommon/uart.h"
-#include "../../mCommon/zb.h"
-#include "../../mCommon/Timer0.h"
+#include "../common/led.h"
+#include "../common/OLED.h"
+#include "../common/adc.h"
+#include "../common/uart.h"
+#include "../common/zb.h"
+#include "../common/Timer0.h"
 #include "linkFSM.h"
 #include "switchFSM.h"
 
@@ -203,8 +203,6 @@ int main(void)
 	/* main loop */
     while(1)
     {
-		bool allOpen=true;
-			
 		for(int sw=0; sw<8; ++sw)
 		{
 			if(!pads[sw].discovered)
@@ -222,7 +220,6 @@ int main(void)
 				{
 					disable(sw);
 				}
-				allOpen=false;
 			}
 			else
 			{
@@ -242,8 +239,8 @@ int main(void)
 				{
 					OLED_clearDisplay();
 					OLED_XYprintf(0,0, "Pad %d", sw+1);
-					OLED_XYprintf(0,1, "ContVolt=%d.%d", pads[sw].cont/100, pads[sw].cont%100);
-					OLED_XYprintf(0,2, "BattVolt=%d.%d", pads[sw].batt/100, pads[sw].batt%100);
+					OLED_XYprintf(0,1, "Resistance=%d", pads[sw].contResistance);
+					OLED_XYprintf(0,2, "Batt=%d.%d", pads[sw].batt/100, pads[sw].batt%100);
 					pads[sw].newStatus=false;
 				}
 			}
@@ -283,10 +280,10 @@ int main(void)
 		}
 		LED_output(redLeds, greenLeds, yellowLeds);
 		
-		if (allOpen == true)
-		{
-			OLED_clearDisplay();
-		}
+//		if (allOpen == true)
+//		{
+//			OLED_clearDisplay();
+//		}
 		
 		if (isClosed(8) && !launchPressed)
 		{
@@ -488,20 +485,19 @@ void statusMessage(char * data,int length)
 	unsigned char padnum;
 	int contState, launchState;
 	int pad;
-	int cont, cont1, cont2, batt, batt1, batt2, d1, d2;			
+	int contResistance, batt, batt1, batt2;
 	
-	sscanf(data, "S%c e%d l%d Cv%d.%d Bv%d.%d Dv%d.%d", 
-		&padnum, &contState, &launchState, &cont1, &cont2, &batt1, &batt2, &d1, &d2);
+	sscanf(data, "S%c e%d l%d Rc%d Bv%d.%d", 
+		&padnum, &contState, &launchState, &contResistance, &batt1, &batt2);
 
 	batt=batt1*100+batt2;
-	cont=cont1*100+cont2;
 
 	pad=padnum-'1';
 	if (pad<8)
 	{
 		pads[pad].contState=contState;
 		pads[pad].launchState=launchState;
-		pads[pad].cont=cont;
+		pads[pad].contResistance=contResistance;
 		pads[pad].batt=batt;
 		pads[pad].statusValid=true;
 		pads[pad].newStatus=true;

@@ -6,8 +6,8 @@
  */ 
 
 #include <stdbool.h>
-#include "../../mCommon/zb.h"
-#include "../../mCommon/OLED.h"
+#include "../common/zb.h"
+#include "../common/OLED.h"
 #include "controller30.h"
 
 void linkData( zbRx* rxPkt, unsigned int length );
