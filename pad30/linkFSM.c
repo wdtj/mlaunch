@@ -24,6 +24,8 @@ volatile enum LINKSTATE {
 	JV_SENT,
 	SEND_JN,
 	JN_SENT,
+	SEND_NW,
+	NW_SENT,
 	SEND_WR,
 	WR_SENT,
 	SEND_FR,
@@ -97,6 +99,7 @@ void linkFSMpkt(zbPkt *pkt)
 				case zb_mdm_hwrst:
 				case zb_mdm_wdrst:
 				linkState=RESET;
+				statTimer=0;
 				linkTimer=0;
 				break;
 			}
@@ -128,6 +131,11 @@ void linkFSMpkt(zbPkt *pkt)
 				break;
 
 				case JN_SENT:
+				linkState=SEND_NW;
+				linkTimer=0;
+				break;
+				
+				case NW_SENT:
 				linkState=SEND_WR;
 				linkTimer=0;
 				break;
@@ -156,8 +164,13 @@ void linkFSMpkt(zbPkt *pkt)
 		}
 		break;
 		
+		case ZB_NODE_IDENTIFICATION:
+		{
+			break;
+		}
+		
 		default:
-		#if !defined(myDEBUG)
+		#if defined(myDEBUG)
 		while(false){}
 		#endif
 		break;
@@ -186,26 +199,32 @@ void linkFSMToDo(void)
 			linkTimer=1000/TIMER0_PERIOD;
 			break;
 			
+		case SEND_NW:
+			zb_nw(4, 1);
+			linkState=NW_SENT;
+			linkTimer=1000/TIMER0_PERIOD;
+			break;
+			
 		case SEND_WR:
-			zb_wr(4);
+			zb_wr(5);
 			linkState=WR_SENT;
 			linkTimer=1000/TIMER0_PERIOD;
 		break;
 		
 		case SEND_FR:
-			zb_fr(5);
+			zb_fr(6);
 			linkState=FR_SENT;
 			linkTimer=10000/TIMER0_PERIOD;
 			break;
 		
 		case SEND_CH:
-			zb_ch(5);
+			zb_ch(7);
 			linkState=CH_SENT;
 			linkTimer=1000/TIMER0_PERIOD;
 			break;
 
 		case SEND_DB:
-			zb_db(6);
+			zb_db(8);
 			linkState=DB_SENT;
 			linkTimer=1000/TIMER0_PERIOD;
 			break;

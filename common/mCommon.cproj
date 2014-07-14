@@ -118,6 +118,9 @@
     <Compile Include="zb_db.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="zb_nw.c">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="zb_wr.c">
       <SubType>compile</SubType>
     </Compile>

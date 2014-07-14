@@ -349,6 +349,7 @@ void zb_fr(unsigned char fid);
 void zb_ch(unsigned char fid);
 void zb_wr(unsigned char fid);
 void zb_db(unsigned char fid);
+void zb_nw(unsigned char fid, unsigned char time);
 
 extern bool zb_txBusy;
 

@@ -14,8 +14,6 @@ void padFSMtimer(int padNum)
 {
 	struct padStruct *pad=&pads[padNum];
 
-	extern unsigned long v1, v2;
-
 	pad->timeout--;
 	if (pad->timeout==0)
 	{

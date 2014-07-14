@@ -69,7 +69,7 @@ unsigned int adc3hist[10];
 
 volatile unsigned int histTimer=1000/TIMER0_PERIOD;
 
-volatile unsigned long v1, v2, r1, r2;
+volatile unsigned long v1, v2;
 
 
 bool ident=false;
@@ -84,8 +84,6 @@ unsigned char trace_buffer[256];
 unsigned char *trace_buffer_ptr=trace_buffer;
 unsigned char *trace_buffer_end=trace_buffer+sizeof trace_buffer-1;
 #endif
-
-
 
 void init();
 void rxc(void);
