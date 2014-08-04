@@ -1,0 +1,76 @@
+name: "PSON95P300X300X100-7M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "PSON,0.95mm pitch;6 pin,3.10mm W X 3.00mm L X 1.00mm H body (pullback leads) (w/thermal tab)"
+  units: NM
+  sel_rect: -2100000 -2000000 2100000 2000000
+  ref_text: 1270000 0 3000000 0 177800
+  value_text: 1270000 0 -4270000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1550000 1504000
+    next_corner: -1550000 1627000 0
+    next_corner: 1550000 1627000 0
+    next_corner: 1550000 1504000 0
+  outline_polyline: 177800 -1550000 -1504000
+    next_corner: -1550000 -1627000 0
+    next_corner: 1550000 -1627000 0
+    next_corner: 1550000 -1504000 0
+  outline_polyline: 254000 -2185000 1758000
+    next_corner: -2058000 1885000 1
+    next_corner: -1931000 1758000 1
+    next_corner: -2058000 1631000 1
+    close_polyline: 1
+  n_pins: 7
+    pin: "1" 0 -1350000 950000 0
+      top_pad: 3 600000 250000 250000 0
+    pin: "2" 0 -1350000 0 0
+      top_pad: 3 600000 250000 250000 0
+    pin: "3" 0 -1350000 -950000 0
+      top_pad: 3 600000 250000 250000 0
+    pin: "4" 0 1350000 -950000 0
+      top_pad: 3 600000 250000 250000 0
+    pin: "5" 0 1350000 0 0
+      top_pad: 3 600000 250000 250000 0
+    pin: "6" 0 1350000 950000 0
+      top_pad: 3 600000 250000 250000 0
+    pin: "7" 0 0 0 0
+      top_pad: 3 2600000 875000 875000 0
+
+name: "PSON95P329X302X80-7M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "PSON,0.95mm pitch;6 pin,3.39mm W X 3.02mm L X 0.80mm H body (pullback leads) (w/thermal tab)"
+  units: NM
+  sel_rect: -2250000 -2050000 2250000 2050000
+  ref_text: 1270000 0 3050000 0 177800
+  value_text: 1270000 0 -4320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1695000 1479000
+    next_corner: -1695000 1637000 0
+    next_corner: 1695000 1637000 0
+    next_corner: 1695000 1479000 0
+  outline_polyline: 177800 -1695000 -1479000
+    next_corner: -1695000 -1637000 0
+    next_corner: 1695000 -1637000 0
+    next_corner: 1695000 -1479000 0
+  outline_polyline: 254000 -2330000 1733000
+    next_corner: -2203000 1860000 1
+    next_corner: -2076000 1733000 1
+    next_corner: -2203000 1606000 1
+    close_polyline: 1
+  n_pins: 7
+    pin: "1" 0 -1350000 950000 0
+      top_pad: 3 550000 375000 375000 0
+    pin: "2" 0 -1350000 0 0
+      top_pad: 3 550000 375000 375000 0
+    pin: "3" 0 -1350000 -950000 0
+      top_pad: 3 550000 375000 375000 0
+    pin: "4" 0 1350000 -950000 0
+      top_pad: 3 550000 375000 375000 0
+    pin: "5" 0 1350000 0 0
+      top_pad: 3 550000 375000 375000 0
+    pin: "6" 0 1350000 950000 0
+      top_pad: 3 550000 375000 375000 0
+    pin: "7" 0 0 0 0
+      top_pad: 3 2000000 650000 650000 0
+

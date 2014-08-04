@@ -1,0 +1,2831 @@
+name: "1X3HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+  units: MIL
+  sel_rect: -65 -65 65 265
+  ref_text: 50 0 300 0 7
+  value_text: 50 0 200 0 7
+  centroid: 0 0 100 0
+  outline_polyline: 10 -50 250
+    next_corner: -50 -50 0
+    next_corner: 50 -50 0
+    next_corner: 50 250 0
+    close_polyline: 0
+  n_pins: 3
+    pin: "1" 40 0 0 0
+      top_pad: 2 60 25 25 0
+      inner_pad: 0 0 0 0 0 0
+      bottom_pad: 2 60 25 25 0
+    pin: "2" 40 0 100 0
+      top_pad: 1 60 25 25 0
+      inner_pad: 0 0 0 0 0 0
+      bottom_pad: 1 60 25 25 0
+    pin: "3" 40 0 200 0
+      top_pad: 1 60 25 25 0
+      inner_pad: 0 0 0 0 0 0
+      bottom_pad: 1 60 25 25 0
+
+name: "1X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -65 -65 65 165
+ref_text: 50 -60 180 0 7
+outline_polyline: 10 -50 150
+next_corner: -50 -50 0
+next_corner: 50 -50 0
+next_corner: 50 150 0
+close_polyline: 0
+n_pins: 2
+pin: "1" 40 0 0 0
+top_pad: 2 60 25 25 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 60 25 25 0
+pin: "2" 40 0 100 0
+top_pad: 1 60 25 25 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 25 25 0
+
+name: "2X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 133 133
+ref_text: 50 50 160 0 7
+n_pins: 4
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "3X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 233 133
+ref_text: 50 100 160 0 7
+n_pins: 6
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "4X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 333 133
+ref_text: 50 150 160 0 7
+n_pins: 8
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "5X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 433 133
+ref_text: 50 200 160 0 7
+n_pins: 10
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "6X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 533 133
+ref_text: 50 250 160 0 7
+n_pins: 12
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "7X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 633 133
+ref_text: 50 300 160 0 7
+n_pins: 14
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "8X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 733 133
+ref_text: 50 350 160 0 7
+n_pins: 16
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "9X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 833 133
+ref_text: 50 400 160 0 7
+n_pins: 18
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "10X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 933 133
+ref_text: 50 450 160 0 7
+n_pins: 20
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "11X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 1033 133
+ref_text: 50 500 160 0 7
+n_pins: 22
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "12X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 1133 133
+ref_text: 50 550 160 0 7
+n_pins: 24
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 23 40 1100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 24 40 1100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "13X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 1233 133
+ref_text: 50 600 160 0 7
+n_pins: 26
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 23 40 1100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 24 40 1100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 25 40 1200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 26 40 1200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "14X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 1333 133
+ref_text: 50 650 160 0 7
+n_pins: 40
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 23 40 1100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 24 40 1100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 25 40 1200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 26 40 1200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 27 40 1300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 28 40 1300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "15X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 1433 133
+ref_text: 50 700 160 0 7
+n_pins: 30
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 23 40 1100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 24 40 1100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 25 40 1200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 26 40 1200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 27 40 1300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 28 40 1300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 29 40 1400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 30 40 1400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "16X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 1533 133
+ref_text: 50 750 160 0 7
+n_pins: 32
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 23 40 1100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 24 40 1100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 25 40 1200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 26 40 1200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 27 40 1300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 28 40 1300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 29 40 1400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 30 40 1400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 31 40 1500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 32 40 1500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "17X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 1633 133
+ref_text: 50 800 160 0 7
+n_pins: 34
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 23 40 1100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 24 40 1100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 25 40 1200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 26 40 1200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 27 40 1300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 28 40 1300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 29 40 1400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 30 40 1400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 31 40 1500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 32 40 1500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 33 40 1600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 34 40 1600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "18X2HDR-100"
+author: "Ivex"
+source: "PRINTED CIRCUIT DESIGN METHODS PAGE 411"
+units: MIL
+sel_rect: -33 -33 1733 133
+ref_text: 50 850 160 0 7
+n_pins: 36
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 23 40 1100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 24 40 1100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 25 40 1200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 26 40 1200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 27 40 1300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 28 40 1300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 29 40 1400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 30 40 1400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 31 40 1500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 32 40 1500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 33 40 1600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 34 40 1600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 35 40 1700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 36 40 1700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "19X2HDR-100"
+author: "Ivex"
+source: "INVENTED"
+units: MIL
+sel_rect: -33 -33 1833 133
+ref_text: 50 900 160 0 7
+n_pins: 38
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 23 40 1100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 24 40 1100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 25 40 1200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 26 40 1200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 27 40 1300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 28 40 1300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 29 40 1400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 30 40 1400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 31 40 1500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 32 40 1500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 33 40 1600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 34 40 1600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 35 40 1700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 36 40 1700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 37 40 1800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 38 40 1800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "20X2HDR-100"
+author: "Ivex"
+source: "INVENTED"
+units: MIL
+sel_rect: -33 -33 1933 133
+ref_text: 50 950 160 0 7
+n_pins: 40
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 23 40 1100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 24 40 1100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 25 40 1200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 26 40 1200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 27 40 1300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 28 40 1300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 29 40 1400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 30 40 1400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 31 40 1500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 32 40 1500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 33 40 1600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 34 40 1600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 35 40 1700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 36 40 1700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 37 40 1800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 38 40 1800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 39 40 1900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 40 40 1900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "21X2HDR-100"
+author: "Ivex"
+source: "INVENTED"
+units: MIL
+sel_rect: -33 -33 2033 133
+ref_text: 50 1000 160 0 7
+n_pins: 42
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 23 40 1100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 24 40 1100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 25 40 1200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 26 40 1200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 27 40 1300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 28 40 1300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 29 40 1400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 30 40 1400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 31 40 1500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 32 40 1500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 33 40 1600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 34 40 1600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 35 40 1700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 36 40 1700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 37 40 1800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 38 40 1800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 39 40 1900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 40 40 1900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 41 40 2000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 42 40 2000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "22X2HDR-100"
+author: "Ivex"
+source: "INVENTED"
+units: MIL
+sel_rect: -33 -33 2133 133
+ref_text: 50 1050 160 0 7
+n_pins: 44
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 23 40 1100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 24 40 1100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 25 40 1200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 26 40 1200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 27 40 1300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 28 40 1300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 29 40 1400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 30 40 1400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 31 40 1500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 32 40 1500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 33 40 1600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 34 40 1600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 35 40 1700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 36 40 1700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 37 40 1800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 38 40 1800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 39 40 1900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 40 40 1900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 41 40 2000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 42 40 2000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 43 40 2100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 44 40 2100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "23X2HDR-100"
+author: "Ivex"
+source: "INVENTED"
+units: MIL
+sel_rect: -33 -33 2233 133
+ref_text: 50 1100 160 0 7
+n_pins: 46
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 23 40 1100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 24 40 1100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 25 40 1200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 26 40 1200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 27 40 1300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 28 40 1300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 29 40 1400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 30 40 1400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 31 40 1500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 32 40 1500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 33 40 1600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 34 40 1600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 35 40 1700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 36 40 1700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 37 40 1800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 38 40 1800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 39 40 1900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 40 40 1900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 41 40 2000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 42 40 2000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 43 40 2100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 44 40 2100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 45 40 2200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 46 40 2200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "24X2HDR-100"
+author: "Ivex"
+source: "INVENTED"
+units: MIL
+sel_rect: -33 -33 2333 133
+ref_text: 50 1150 160 0 7
+n_pins: 48
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 23 40 1100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 24 40 1100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 25 40 1200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 26 40 1200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 27 40 1300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 28 40 1300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 29 40 1400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 30 40 1400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 31 40 1500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 32 40 1500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 33 40 1600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 34 40 1600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 35 40 1700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 36 40 1700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 37 40 1800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 38 40 1800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 39 40 1900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 40 40 1900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 41 40 2000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 42 40 2000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 43 40 2100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 44 40 2100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 45 40 2200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 46 40 2200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 47 40 2300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 48 40 2300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+
+name: "25X2HDR-100"
+author: "Ivex"
+source: "INVENTED"
+units: MIL
+sel_rect: -33 -33 2433 133
+ref_text: 50 1200 160 0 7
+n_pins: 50
+pin: 1 40 0 0 0
+top_pad: 2 60 25 25
+bottom_pad: 2 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 2 40 0 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 3 40 100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 4 40 100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 5 40 200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 6 40 200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 7 40 300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 8 40 300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 9 40 400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 10 40 400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 11 40 500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 12 40 500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 13 40 600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 14 40 600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 15 40 700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 16 40 700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 17 40 800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 18 40 800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 19 40 900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 20 40 900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 21 40 1000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 22 40 1000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 23 40 1100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 24 40 1100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 25 40 1200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 26 40 1200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 27 40 1300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 28 40 1300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 29 40 1400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 30 40 1400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 31 40 1500 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 32 40 1500 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 33 40 1600 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 34 40 1600 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 35 40 1700 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 36 40 1700 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 37 40 1800 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 38 40 1800 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 39 40 1900 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 40 40 1900 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 41 40 2000 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 42 40 2000 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 43 40 2100 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 44 40 2100 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 45 40 2200 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 46 40 2200 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 47 40 2300 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 48 40 2300 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 49 40 2400 0 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0
+pin: 50 40 2400 100 0
+top_pad: 1 60 25 25
+bottom_pad: 1 60 25 25
+inner_pad: 0 0 0 0 0 0

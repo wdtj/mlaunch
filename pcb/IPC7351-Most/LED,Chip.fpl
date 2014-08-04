@@ -1,0 +1,208 @@
+name: "LEDC1608X60M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "LED,Chip;1.60mm L X 0.80mm W X 0.60mm H"
+  units: NM
+  sel_rect: -1950000 -1050000 1950000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -96000 -271000
+    next_corner: 96000 -271000 0
+    close_polyline: 0
+  outline_polyline: 177800 -96000 271000
+    next_corner: 96000 271000 0
+    close_polyline: 0
+  outline_polyline: 254000 -2085000 0
+    next_corner: -1958000 127000 1
+    next_corner: -1831000 0 1
+    next_corner: -1958000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -900000 0 0
+      top_pad: 3 1050000 550000 550000 0
+    pin: "2" 0 900000 0 0
+      top_pad: 3 1050000 550000 550000 0
+
+name: "LEDC1608X80M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "LED,Chip;1.60mm L X 0.80mm W X 0.80mm H"
+  units: NM
+  sel_rect: -1950000 -1050000 1950000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -96000 -271000
+    next_corner: 96000 -271000 0
+    close_polyline: 0
+  outline_polyline: 177800 -96000 271000
+    next_corner: 96000 271000 0
+    close_polyline: 0
+  outline_polyline: 254000 -2085000 0
+    next_corner: -1958000 127000 1
+    next_corner: -1831000 0 1
+    next_corner: -1958000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -900000 0 0
+      top_pad: 3 1050000 550000 550000 0
+    pin: "2" 0 900000 0 0
+      top_pad: 3 1050000 550000 550000 0
+
+name: "LEDC2012X120M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "LED,Chip;2.00mm L X 1.25mm W X 1.20mm H"
+  units: NM
+  sel_rect: -2100000 -1250000 2100000 1250000
+  ref_text: 1270000 0 2250000 0 177800
+  value_text: 1270000 0 -3520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -146000 -496000
+    next_corner: 146000 -496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -146000 496000
+    next_corner: 146000 496000 0
+    close_polyline: 0
+  outline_polyline: 254000 -2235000 0
+    next_corner: -2108000 127000 1
+    next_corner: -1981000 0 1
+    next_corner: -2108000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1500000 600000 600000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1500000 600000 600000 0
+
+name: "LEDC3015X150M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "LED,Chip;3.00mm L X 1.50mm W X 1.50mm H"
+  units: NM
+  sel_rect: -2650000 -1400000 2650000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -396000 -646000
+    next_corner: 396000 -646000 0
+    close_polyline: 0
+  outline_polyline: 177800 -396000 646000
+    next_corner: 396000 646000 0
+    close_polyline: 0
+  outline_polyline: 254000 -2785000 0
+    next_corner: -2658000 127000 1
+    next_corner: -2531000 0 1
+    next_corner: -2658000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1400000 0 0
+      top_pad: 3 1800000 750000 750000 0
+    pin: "2" 0 1400000 0 0
+      top_pad: 3 1800000 750000 750000 0
+
+name: "LEDC3216X110M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "LED,Chip;3.20mm L X 1.60mm W X 1.10mm H"
+  units: NM
+  sel_rect: -2750000 -1450000 2750000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -696000 -671000
+    next_corner: 696000 -671000 0
+    close_polyline: 0
+  outline_polyline: 177800 -696000 671000
+    next_corner: 696000 671000 0
+    close_polyline: 0
+  outline_polyline: 254000 -2885000 0
+    next_corner: -2758000 127000 1
+    next_corner: -2631000 0 1
+    next_corner: -2758000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1850000 650000 650000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1850000 650000 650000 0
+
+name: "LEDC3216X120M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "LED,Chip;3.20mm L X 1.60mm W X 1.20mm H"
+  units: NM
+  sel_rect: -2700000 -1450000 2700000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -746000 -671000
+    next_corner: 746000 -671000 0
+    close_polyline: 0
+  outline_polyline: 177800 -746000 671000
+    next_corner: 746000 671000 0
+    close_polyline: 0
+  outline_polyline: 254000 -2835000 0
+    next_corner: -2708000 127000 1
+    next_corner: -2581000 0 1
+    next_corner: -2708000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1850000 600000 600000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1850000 600000 600000 0
+
+name: "LEDC3216X130M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "LED,Chip;3.20mm L X 1.60mm W X 1.30mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -696000
+    next_corner: 671000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 696000
+    next_corner: 671000 696000 0
+    close_polyline: 0
+  outline_polyline: 254000 -2910000 0
+    next_corner: -2783000 127000 1
+    next_corner: -2656000 0 1
+    next_corner: -2783000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "LEDC3224X270M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "LED,Chip;3.20mm L X 2.40mm W X 2.70mm H"
+  units: NM
+  sel_rect: -2750000 -1850000 2750000 1850000
+  ref_text: 1270000 0 2850000 0 177800
+  value_text: 1270000 0 -4120000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -596000 -1096000
+    next_corner: 596000 -1096000 0
+    close_polyline: 0
+  outline_polyline: 177800 -596000 1096000
+    next_corner: 596000 1096000 0
+    close_polyline: 0
+  outline_polyline: 254000 -2885000 0
+    next_corner: -2758000 127000 1
+    next_corner: -2631000 0 1
+    next_corner: -2758000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1550000 0 0
+      top_pad: 3 2700000 700000 700000 0
+    pin: "2" 0 1550000 0 0
+      top_pad: 3 2700000 700000 700000 0
+

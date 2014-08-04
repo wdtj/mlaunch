@@ -1,0 +1,1589 @@
+name: "LCM-S02004DSR"
+author: "Ivex"
+units: NM
+sel_rect: -10381000 -57881000 88381000 2881000
+ref_text: 1270000 -1016000 1524000 0 177800
+value_text: 1270000 -1270000 -2794000 0 177800
+centroid: 1 19050000 0 0
+outline_polyline: 254000 -10000000 2500000
+next_corner: 88000000 2500000 0
+next_corner: 88000000 -57500000 0
+next_corner: -10000000 -57500000 0
+close_polyline: 0
+outline_polyline: 254000 -500000 -40100000
+next_corner: 76500000 -40100000 0
+next_corner: 76500000 -14900000 0
+next_corner: -500000 -14900000 0
+close_polyline: 0
+n_pins: 20
+pin: "1" 1016000 0 0 0
+top_pad: 2 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 1524000 762000 762000 0
+pin: "2" 1016000 2540000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "3" 1016000 5080000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "4" 1016000 7620000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "5" 1016000 10160000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "6" 1016000 12700000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "7" 1016000 15240000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "8" 1016000 17780000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "9" 1016000 20320000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "10" 1016000 22860000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "11" 1016000 25400000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "12" 1016000 27940000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "13" 1016000 30480000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "14" 1016000 33020000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "15" 1016000 35560000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "16" 1016000 38100000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "h1" 2500000 -8000000 0 0
+top_pad: 0 1524000 762000 762000 0
+top_mask: 0 0 0 0 0
+top_paste: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 1524000 762000 762000 0
+bottom_mask: 0 0 0 0 0
+bottom_paste: 0 0 0 0 0
+pin: "h2" 2500000 -7500000 -55000000 0
+top_pad: 0 1524000 762000 762000 0
+top_mask: 0 0 0 0 0
+top_paste: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 1524000 762000 762000 0
+bottom_mask: 0 0 0 0 0
+bottom_paste: 0 0 0 0 0
+pin: "h3" 2500000 85500000 0 0
+top_pad: 0 1524000 762000 762000 0
+top_mask: 0 0 0 0 0
+top_paste: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 1524000 762000 762000 0
+bottom_mask: 0 0 0 0 0
+bottom_paste: 0 0 0 0 0
+pin: "20" 2500000 85000000 -55000000 0
+top_pad: 0 1524000 762000 762000 0
+top_mask: 0 0 0 0 0
+top_paste: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 1524000 762000 762000 0
+bottom_mask: 0 0 0 0 0
+bottom_paste: 0 0 0 0 0
+
+name: "3ESH9-15.0"
+units: NM
+sel_rect: -5392900 -7754000 5392900 7754000
+ref_text: 1270000 6100000 3800000 0 127000
+value_text: 2540000 6100000 -5000000 0 254000
+centroid: 0 0 0 0
+outline_polyline: 177800 -5050000 -5050000
+next_corner: 5050000 -5050000 0
+next_corner: 5050000 5050000 0
+next_corner: -5050000 5050000 0
+close_polyline: 0
+outline_polyline: 254000 0 3200000
+next_corner: -3200000 0 2
+next_corner: 0 -3200000 2
+next_corner: 3200000 0 2
+next_corner: 0 3200000 2
+close_polyline: 0
+n_pins: 4
+pin: "1" 0 -3810000 -6250000 270
+top_pad: 3 1200000 1250000 1250000 0
+pin: "3" 0 3810000 -6250000 270
+top_pad: 3 1200000 1250000 1250000 0
+pin: "4" 0 3810000 6250000 90
+top_pad: 3 1200000 1250000 1250000 0
+pin: "2" 0 -3810000 6250000 90
+top_pad: 3 1200000 1250000 1250000 0
+
+name: "67-1833-ND"
+units: NM
+sel_rect: -2921000 -2921000 2921000 2921000
+ref_text: 1270000 3302000 2540000 0 127000
+value_text: 2540000 3048000 -4572000 0 254000
+centroid: 0 0 0 0
+outline_polyline: 254000 -2540000 -2540000
+next_corner: -2540000 2540000 0
+next_corner: 2540000 2540000 0
+next_corner: 2540000 -2540000 0
+close_polyline: 0
+n_pins: 4
+pin: "1" 1000000 -1890000 -1890000 270
+top_pad: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 0 0 0 0
+pin: "2" 1000000 1890000 -1890000 270
+top_pad: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 0 0 0 0
+pin: "3" 1000000 1890000 1890000 90
+top_pad: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 0 0 0 0
+pin: "4" 1000000 -1890000 1890000 90
+top_pad: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 0 0 0 0
+
+name: "R2512b"
+author: "Ivex"
+source: "SURFACE MOUNT DESIGN AND LAND PATTERN STANDARD SUBSECTION 8.1 (PAGE 3 OF 4)"
+units: NM
+sel_rect: -1542900 -2242900 6642900 2242900
+ref_text: 1270000 1400000 2900000 0 177800
+value_text: 1270000 1400000 360000 0 177800
+centroid: 0 1400000 0 0
+outline_polyline: 177800 -1200000 1900000
+next_corner: 6300000 1900000 0
+next_corner: 6300000 -1900000 0
+next_corner: -1200000 -1900000 0
+close_polyline: 0
+n_pins: 2
+pin: "1" 0 0 0 0
+top_pad: 3 3200000 900000 900000 0
+pin: "2" 0 5100000 0 0
+top_pad: 3 3200000 900000 900000 0
+
+name: "SOD-323"
+units: NM
+sel_rect: -1203100 -943100 4381000 943100
+ref_text: 1270000 -1700000 1000000 0 127000
+value_text: 2540000 2500000 500000 0 254000
+centroid: 0 1070000 0 0
+outline_polyline: 177800 -860200 -600200
+next_corner: 3000200 -600200 0
+next_corner: 3000200 600200 0
+next_corner: -860200 600200 0
+close_polyline: 0
+outline_polyline: 254000 3800000 200000
+next_corner: 3600000 0 2
+next_corner: 3800000 -200000 2
+next_corner: 4000000 0 2
+close_polyline: 2
+n_pins: 2
+pin: "1" 0 0 0 90
+top_pad: 3 1160000 320000 320000 0
+pin: "2" 0 2140000 0 90
+top_pad: 3 1160000 320000 320000 0
+
+name: "SOT-23-5"
+units: NM
+sel_rect: -1042900 -1142900 2942900 3542900
+ref_text: 1270000 2600000 3100000 0 127000
+value_text: 2540000 2540000 0 0 254000
+centroid: 0 950000 1200000 0
+outline_polyline: 177800 -700000 -800000
+next_corner: 2600000 -800000 0
+next_corner: 2600000 3200000 0
+next_corner: -700000 3200000 0
+close_polyline: 0
+n_pins: 5
+pin: "1" 0 0 0 270
+top_pad: 3 700000 500000 500000 0
+pin: "2" 0 950000 0 270
+top_pad: 3 700000 500000 500000 0
+pin: "3" 0 1900000 0 270
+top_pad: 3 700000 500000 500000 0
+pin: "4" 0 1900000 2400000 90
+top_pad: 3 700000 500000 500000 0
+pin: "5" 0 0 2400000 90
+top_pad: 3 700000 500000 500000 0
+
+name: "LQH55P"
+units: NM
+sel_rect: -3942900 -2942900 4042900 2942900
+ref_text: 1270000 -1876380 0 0 127000
+value_text: 2540000 636500 0 0 254000
+centroid: 1 -2603500 0 0
+outline_polyline: 177800 -3600000 -2600000
+next_corner: 3700000 -2600000 0
+next_corner: 3700000 2600000 0
+next_corner: -3600000 2600000 0
+close_polyline: 0
+n_pins: 2
+pin: "1" 0 -2300000 0 0
+top_pad: 3 1400000 1000000 1000000 0
+pin: "2" 0 2466500 0 0
+top_pad: 3 1400000 1000000 1000000 0
+
+name: "sot-23-5"
+units: NM
+sel_rect: -604000 -754000 2504000 3154000
+ref_text: 1270000 950000 950000 0 127000
+value_text: 2540000 2540000 0 0 254000
+centroid: 0 950000 1200000 0
+outline_polyline: 177800 0 700000
+next_corner: 1900000 700000 0
+next_corner: 1900000 1700000 0
+next_corner: 0 1700000 0
+next_corner: 0 1400000 0
+next_corner: 237500 1400000 0
+next_corner: 237500 1000000 0
+next_corner: 0 1000000 0
+close_polyline: 0
+n_pins: 5
+pin: "1" 0 0 0 270
+top_pad: 3 700000 500000 500000 0
+pin: "2" 0 950000 0 270
+top_pad: 3 700000 500000 500000 0
+pin: "3" 0 1900000 0 270
+top_pad: 3 700000 500000 500000 0
+pin: "4" 0 1900000 2400000 90
+top_pad: 3 700000 500000 500000 0
+pin: "5" 0 0 2400000 90
+top_pad: 3 700000 500000 500000 0
+
+name: "WSOT-223"
+author: "Ivex"
+source: "SIEMENS PACKAGE INFORMATION DATA BOOK 1.93"
+units: NM
+sel_rect: -1292900 -1104000 5892900 7604000
+ref_text: 1270000 2300000 9000000 0 177800
+value_text: 1270000 2300000 6460000 0 177800
+centroid: 0 2300000 3250000 0
+outline_polyline: 177800 -950000 1550000
+next_corner: 5550000 1550000 0
+next_corner: 5550000 5050000 0
+next_corner: -950000 5050000 0
+close_polyline: 0
+n_pins: 4
+pin: "1" 0 0 0 0
+top_pad: 3 1700000 700000 700000 0
+pin: "2" 0 2300000 0 0
+top_pad: 3 1700000 700000 700000 0
+pin: "3" 0 4600000 0 0
+top_pad: 3 1700000 700000 700000 0
+pin: "4" 0 2300000 6500000 0
+top_pad: 3 1700000 2000000 2000000 0
+
+name: "VCF4-1000"
+units: MIL
+sel_rect: -585 -487.440945 485 487.440945
+ref_text: 100 236.220472 314.96063 0 10
+value_text: 100 236.220472 114.96063 0 10
+centroid: -842150451 -33155.529528 -33155.529528 0
+outline_polyline: 10 470 200
+next_corner: 200 200 0
+next_corner: 200 470 0
+next_corner: -196.850394 472.440945 0
+next_corner: -570 150 0
+next_corner: -570 -150 0
+next_corner: -200 -150 0
+next_corner: -196.850394 -472.440945 0
+next_corner: 196.850394 -472.440945 0
+next_corner: 470 -200 0
+close_polyline: 0
+outline_polyline: 10 200 470
+next_corner: 200 200 0
+next_corner: 470 200 0
+outline_polyline: 10 200 -470
+next_corner: 200 -200 0
+next_corner: 470 -200 0
+outline_polyline: 10 200 -470
+next_corner: 470 -200 0
+outline_polyline: 10 -200 -470
+next_corner: -200 -150 0
+next_corner: -570 -150 0
+next_corner: -570 150 0
+next_corner: -200 150 0
+next_corner: -200 470 0
+outline_polyline: 10 -200 470
+next_corner: -570 150 0
+n_pins: 7
+pin: "3" 92 -374 0 0
+top_pad: 1 242 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 242 0 0 0
+pin: "4" 92 331 0 0
+top_pad: 1 242 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 242 0 0 0
+pin: "7" 92 16 0 0
+top_pad: 0 150 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 150 0 0 0
+pin: "1" 92 0 332 0
+top_pad: 1 150 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 150 0 0 0
+pin: "2" 92 0 -332 0
+top_pad: 1 150 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 150 0 0 0
+pin: "8" 83 -295 256 0
+top_pad: 0 83 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 83 0 0 0
+pin: "9" 83 256 -256 0
+top_pad: 0 83 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 83 0 0 0
+
+name: "EG2614-ND"
+units: NM
+sel_rect: -1912900 -2892900 6912900 2892900
+ref_text: 1270000 900000 1000000 0 127000
+value_text: 1270000 -500000 -2200000 0 127000
+centroid: 0 2540000 0 0
+outline_polyline: 177800 -1570000 -2550000
+next_corner: 6570000 -2550000 0
+next_corner: 6570000 2550000 0
+next_corner: -1570000 2550000 0
+close_polyline: 0
+n_pins: 2
+pin: "1" 1016000 0 0 90
+top_pad: 3 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 3 1524000 762000 762000 0
+pin: "2" 1016000 5080000 0 90
+top_pad: 3 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 3 1524000 762000 762000 0
+
+name: "754-1232-ND"
+units: NM
+sel_rect: -3008000 -3981000 7689181 3981000
+ref_text: 1270000 1270000 0 0 127000
+value_text: 1270000 5500000 -4200000 0 127000
+centroid: 0 2540000 0 0
+text: "G" 1270000 -2500000 -700000 0 254000 0 4
+text: "R" 1270000 6500000 -700000 0 127000 0 4
+outline_polyline: 254000 2400000 3600000
+next_corner: -1200000 0 2
+next_corner: 2400000 -3600000 2
+next_corner: 6200000 0 2
+close_polyline: 2
+outline_polyline: 254000 6000000 -2000000
+next_corner: 6000000 2200000 0
+n_pins: 3
+pin: "1" 762000 0 0 270
+top_pad: 3 1270000 635000 635000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 3 1270000 635000 635000 0
+pin: "2" 762000 2540000 0 270
+top_pad: 3 1270000 635000 635000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 3 1270000 635000 635000 0
+pin: "3" 762000 5080000 0 270
+top_pad: 3 1270000 635000 635000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 3 1270000 635000 635000 0
+
+name: "AutoBreaker2"
+units: MIL
+sel_rect: -367 -85 367 85
+ref_text: 50 -216.535433 62.992126 0 5
+value_text: 50 -216.535433 -37.007874 0 5
+centroid: 1 0 0 0
+n_pins: 6
+pin: "3" 100 -282 0 90
+top_pad: 0 100 50 50 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 100 50 50 0
+pin: "4" 100 -82 0 90
+top_pad: 0 100 50 50 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 100 50 50 0
+pin: "1" 20 -182 0 90
+top_pad: 3 350 75 75 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 3 350 75 75 0
+pin: "2" 20 182 0 90
+top_pad: 3 350 75 75 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 3 350 75 75 0
+pin: "5" 100 82 0 90
+top_pad: 0 100 50 50 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 100 50 50 0
+pin: "6" 100 282 0 90
+top_pad: 0 100 50 50 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 100 50 50 0
+
+name: "Amp63650"
+units: MIL
+sel_rect: -60 -85 260 85
+ref_text: 50 35.433071 62.992126 0 5
+value_text: 50 35.433071 -37.007874 0 5
+centroid: 0 100 0 0
+n_pins: 3
+pin: "2" 55 0 0 90
+top_pad: 0 100 50 50 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 100 50 50 0
+pin: "3" 55 200 0 90
+top_pad: 0 100 50 50 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 100 50 50 0
+pin: "1" 10 100 0 90
+top_pad: 3 300 75 75 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 3 300 75 75 0
+
+name: "458-1092-ND"
+units: MIL
+sel_rect: -468 -468 468 468
+ref_text: 100 -133.858268 216.535433 0 10
+value_text: 100 -133.858268 16.535433 0 10
+centroid: -842150451 -33155.529528 -33155.529528 0
+text: "+" 100 -311.023622 86.614173 0 10 0 4
+outline_polyline: 10 453 0
+next_corner: 0 -453 1
+next_corner: -453 0 1
+next_corner: 0 453 1
+close_polyline: 1
+outline_polyline: 10 60 0
+next_corner: 0 60 2
+next_corner: -60 0 2
+next_corner: 0 -60 2
+close_polyline: 2
+n_pins: 2
+pin: "1" 35 -295 0 0
+top_pad: 1 75 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 75 0 0 0
+pin: "2" 35 295 0 0
+top_pad: 1 75 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 75 0 0 0
+
+name: "5X2HDR-50"
+units: NM
+sel_rect: -624000 -1179000 6838909 5429000
+ref_text: 1270000 5900000 1600000 0 127000
+value_text: 2540000 1900000 -3900000 0 254000
+centroid: 0 2540000 2125000 0
+text: "." 2540000 6100000 -200000 0 254000 0 4
+n_pins: 12
+pin: "1" 0 0 0 270
+top_pad: 3 740000 925000 925000 0
+pin: "3" 0 1270000 0 270
+top_pad: 3 740000 925000 925000 0
+pin: "5" 0 2540000 0 90
+top_pad: 3 740000 925000 925000 0
+pin: "7" 0 3810000 0 90
+top_pad: 3 740000 925000 925000 0
+pin: "9" 0 5080000 0 90
+top_pad: 3 740000 925000 925000 0
+pin: "10" 0 5080000 4250000 90
+top_pad: 3 740000 925000 925000 0
+pin: "8" 0 3810000 4250000 90
+top_pad: 3 740000 925000 925000 0
+pin: "6" 0 2540000 4250000 90
+top_pad: 3 740000 925000 925000 0
+pin: "4" 0 1270000 4250000 90
+top_pad: 3 740000 925000 925000 0
+pin: "2" 0 0 4250000 90
+top_pad: 3 740000 925000 925000 0
+pin: "14" 900000 635000 2100000 90
+top_pad: 0 740000 925000 925000 0
+top_mask: 0 0 0 0 0
+top_paste: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 740000 925000 925000 0
+bottom_mask: 0 0 0 0 0
+bottom_paste: 0 0 0 0 0
+pin: "15" 900000 4445000 2100000 90
+top_pad: 0 740000 925000 925000 0
+top_mask: 0 0 0 0 0
+top_paste: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 740000 925000 925000 0
+bottom_mask: 0 0 0 0 0
+bottom_paste: 0 0 0 0 0
+
+name: "OLED"
+author: "Ivex"
+source: "DIGIKEY CATALOG NO. 941, PAGE 27"
+units: NM
+sel_rect: -10381000 -57881000 88381000 2881000
+ref_text: 1270000 -1016000 1524000 0 177800
+value_text: 1270000 -1270000 -2794000 0 177800
+centroid: 1 19050000 0 0
+outline_polyline: 254000 -10000000 2500000
+next_corner: 88000000 2500000 0
+next_corner: 88000000 -57500000 0
+next_corner: -10000000 -57500000 0
+close_polyline: 0
+outline_polyline: 254000 -500000 -40100000
+next_corner: 76500000 -40100000 0
+next_corner: 76500000 -14900000 0
+next_corner: -500000 -14900000 0
+close_polyline: 0
+n_pins: 20
+pin: "1" 1016000 0 0 0
+top_pad: 2 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 1524000 762000 762000 0
+pin: "2" 1016000 2540000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "3" 1016000 5080000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "4" 1016000 7620000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "5" 1016000 10160000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "6" 1016000 12700000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "7" 1016000 15240000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "8" 1016000 17780000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "9" 1016000 20320000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "10" 1016000 22860000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "11" 1016000 25400000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "12" 1016000 27940000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "13" 1016000 30480000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "14" 1016000 33020000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "15" 1016000 35560000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "16" 1016000 38100000 0 0
+top_pad: 1 1524000 762000 762000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 1524000 762000 762000 0
+pin: "h1" 2500000 -8000000 0 0
+top_pad: 0 1524000 762000 762000 0
+top_mask: 0 0 0 0 0
+top_paste: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 1524000 762000 762000 0
+bottom_mask: 0 0 0 0 0
+bottom_paste: 0 0 0 0 0
+pin: "h2" 2500000 -7500000 -55000000 0
+top_pad: 0 1524000 762000 762000 0
+top_mask: 0 0 0 0 0
+top_paste: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 1524000 762000 762000 0
+bottom_mask: 0 0 0 0 0
+bottom_paste: 0 0 0 0 0
+pin: "h3" 2500000 85500000 0 0
+top_pad: 0 1524000 762000 762000 0
+top_mask: 0 0 0 0 0
+top_paste: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 1524000 762000 762000 0
+bottom_mask: 0 0 0 0 0
+bottom_paste: 0 0 0 0 0
+pin: "20" 2500000 85000000 -55000000 0
+top_pad: 0 1524000 762000 762000 0
+top_mask: 0 0 0 0 0
+top_paste: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 1524000 762000 762000 0
+bottom_mask: 0 0 0 0 0
+bottom_paste: 0 0 0 0 0
+
+name: "HOLE_140_NOPAD_270_keepout"
+units: MIL
+sel_rect: -150 -150 150 150
+ref_text: 0 0 0 0 5
+value_text: 0 0 0 0 5
+centroid: 0 0 0 0
+outline_polyline: 10 -135 0
+next_corner: 0 135 1
+next_corner: 135 0 1
+next_corner: 0 -135 1
+close_polyline: 1
+n_pins: 1
+pin: "1" 140 0 0 90
+top_pad: 0 0 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 0 0 0 0
+
+name: "16SIP100"
+author: "Ivex"
+source: "DIGIKEY CATALOG NO. 941, PAGE 27"
+units: MIL
+sel_rect: -63.5 -63.5 1573.5 63.5
+ref_text: 50 -40 60 0 7
+value_text: 50 -50 -110 0 7
+centroid: 1 750 0 0
+outline_polyline: 7 -50 50
+next_corner: 1560 50 0
+next_corner: 1560 -50 0
+next_corner: -50 -50 0
+close_polyline: 0
+n_pins: 16
+pin: "1" 40 0 0 0
+top_pad: 2 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 60 30 30 0
+pin: "2" 40 100 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+pin: "3" 40 200 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+pin: "4" 40 300 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+pin: "5" 40 400 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+pin: "6" 40 500 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+pin: "7" 40 600 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+pin: "8" 40 700 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+pin: "9" 40 800 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+pin: "10" 40 900 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+pin: "11" 40 1000 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+pin: "12" 40 1100 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+pin: "13" 40 1200 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+pin: "14" 40 1300 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+pin: "15" 40 1400 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+pin: "16" 40 1500 0 0
+top_pad: 1 60 30 30 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 30 30 0
+
+name: "csm-7"
+units: NM
+sel_rect: -3004000 -2881000 12504000 2881000
+ref_text: 1000000 1500000 4000000 0 254000
+value_text: 1000000 1500000 2000000 0 254000
+centroid: 0 4750000 0 0
+outline_polyline: 254000 -1500000 1500000
+next_corner: -500000 2500000 1
+next_corner: 9500000 2500000 0
+next_corner: 10500000 1500000 1
+outline_polyline: 254000 -1500000 -1500000
+next_corner: -500000 -2500000 2
+next_corner: 9500000 -2500000 0
+next_corner: 10500000 -1500000 2
+n_pins: 2
+pin: "1" 0 0 0 0
+top_pad: 3 2000000 2750000 2750000 0
+pin: "2" 0 9500000 0 0
+top_pad: 3 2000000 2750000 2750000 0
+
+name: "eeehae101"
+  units: NM
+  sel_rect: -4542900 -7908000 4542900 5104000
+  ref_text: 1270000 -9000000 3100000 0 127000
+  value_text: 2540000 -1524000 5080000 0 254000
+  centroid: 0 0 0 0
+  text: "+" 2540000 -1100000 -7400000 0 254000 0 4
+  outline_polyline: 177800 -4200000 4200000
+    next_corner: 4200000 4200000 0
+    next_corner: 4200000 -4200000 0
+    next_corner: -4200000 -4200000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 0 -2850000 90
+      top_pad: 3 1000000 2000000 2000000 0
+    pin: "2" 0 0 2850000 90
+      top_pad: 3 1000000 2000000 2000000 0
+
+name: "XBee"
+units: MIL
+sel_rect: -384 -52.870079 1076.492126 919.011811
+ref_text: 50 100 200 0 5
+value_text: 50 100 100 0 5
+centroid: 0 354.133858 432.874016 0
+outline_polyline: 7 -39.370079 -39.370079
+next_corner: 1062.992126 -39.370079 0
+next_corner: 1062.992126 905.511811 0
+next_corner: -39.370079 905.511811 0
+next_corner: -304 620.5 0
+next_corner: -304 245.5 0
+close_polyline: 0
+outline_polyline: 10 -304 245.5
+next_corner: -369 245.5 0
+next_corner: -369 620.5 0
+next_corner: -304 620.5 0
+close_polyline: 0
+n_pins: 20
+pin: "1" 29 0 0 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "2" 29 78 0 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "3" 29 157 0 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "4" 29 236.220472 0 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "5" 29 314.96063 0 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "6" 29 393.700787 0 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "7" 29 472.440945 0 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "8" 29 551.181102 0 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "9" 29 629.92126 0 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "10" 29 708.661417 0 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "11" 29 708.661417 866.141732 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "12" 29 629.92126 866.141732 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "13" 29 551.181102 866.141732 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "14" 29 472.440945 866.141732 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "15" 29 393.700787 866.141732 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "16" 29 314.96063 866.141732 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "17" 29 236.220472 866.141732 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "18" 29 157.480315 866.141732 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "19" 29 78.740157 866.141732 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+pin: "20" 29 0 866 90
+top_pad: 2 50 0 0 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 50 0 0 0
+
+name: "4-SMD"
+units: NM
+sel_rect: -854000 -1014000 7672181 9754000
+ref_text: 1270000 -5080000 5080000 0 127000
+value_text: 2540000 7620000 0 0 254000
+centroid: 0 2605000 4370000 0
+text: "+" 1000000 6500000 8300000 0 100000 0 4
+outline_polyline: 177800 0 1488330
+next_corner: 5210000 1488330 0
+next_corner: 5200000 3900000 0
+next_corner: 4400000 3900000 0
+next_corner: 4400000 5000000 0
+next_corner: 5200000 5000000 0
+next_corner: 5210000 7251670 0
+next_corner: 0 7251670 0
+close_polyline: 0
+n_pins: 4
+pin: "AC1" 0 0 0 90
+top_pad: 3 1200000 760000 760000 0
+pin: "AC2" 0 5210000 0 90
+top_pad: 3 1200000 760000 760000 0
+pin: "+" 0 5210000 8740000 90
+top_pad: 3 1200000 760000 760000 0
+pin: "-" 0 0 8740000 90
+top_pad: 3 1200000 760000 760000 0
+
+name: "PLCC-4"
+units: NM
+sel_rect: -2931000 -2931000 2931000 2931000
+ref_text: 1270000 4200000 900000 0 127000
+value_text: 2540000 4100000 -4100000 0 254000
+centroid: 0 0 0 0
+outline_polyline: 254000 -2550000 -2550000
+next_corner: 2550000 -2550000 0
+next_corner: 2550000 2000000 0
+next_corner: 2000000 2550000 0
+next_corner: -2550000 2550000 0
+close_polyline: 0
+n_pins: 6
+pin: "2" 0 -750000 -1550000 270
+top_pad: 3 900000 750000 750000 0
+pin: "4" 0 750000 -1550000 90
+top_pad: 3 900000 750000 750000 0
+pin: "3" 0 750000 1550000 90
+top_pad: 3 900000 750000 750000 0
+pin: "1" 0 -750000 1550000 90
+top_pad: 3 900000 750000 750000 0
+pin: "z1" 600000 -2049999 2049999 90
+top_pad: 0 900000 750000 750000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 0 0 0 0
+pin: "z2" 600000 2049999 -2049999 90
+top_pad: 0 900000 750000 750000 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 0 0 0 0
+
+name: "16DIP600"
+author: "Ivex"
+source: "DIGIKEY CATALOG NO. 941, PAGE 64"
+units: MIL
+sel_rect: -63.5 -40 763.5 640
+ref_text: 50 -125 300 270 7
+value_text: 50 -25 300 270 7
+centroid: 0 550 300 0
+outline_polyline: 7 -50 50
+next_corner: 750 50 0
+next_corner: 750 550 0
+next_corner: -50 550 0
+close_polyline: 0
+outline_polyline: 7 -50 250
+next_corner: 0 250 0
+next_corner: 0 350 0
+next_corner: -50 350 0
+close_polyline: 0
+n_pins: 16
+pin: "1" 40 0 0 0
+top_pad: 2 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 60 27 27 0
+pin: "2" 40 100 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "3" 40 200 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "4" 40 300 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "5" 40 400 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "6" 40 500 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "7" 40 600 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "8" 40 700 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "9" 40 700 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "10" 40 600 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "11" 40 500 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "12" 40 400 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "13" 40 300 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "14" 40 200 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "15" 40 100 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "16" 40 0 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+
+name: "492-1227-1-ND"
+units: NM
+sel_rect: -1454000 -2554000 1454000 2554000
+ref_text: 1270000 1790000 990000 0 127000
+value_text: 2540000 1790000 -4090000 0 254000
+centroid: 0 0 0 0
+n_pins: 4
+pin: "1" 0 -750000 -1550000 270
+top_pad: 3 900000 750000 750000 0
+pin: "2" 0 750000 -1550000 270
+top_pad: 3 900000 750000 750000 0
+pin: "3" 0 750000 1550000 90
+top_pad: 3 900000 750000 750000 0
+pin: "4" 0 -750000 1550000 90
+top_pad: 3 900000 750000 750000 0
+
+name: "8DIP600ww"
+author: "Ivex"
+source: "DIGIKEY CATALOG NO. 941, PAGE 64"
+units: MIL
+sel_rect: -40 -40 340 640
+ref_text: 50 -125 300 270 7
+value_text: 50 -25 300 270 7
+centroid: 0 550 300 0
+n_pins: 8
+pin: "1" 40 0 0 0
+top_pad: 2 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 60 27 27 0
+pin: "2" 40 100 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "3" 40 200 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "4" 40 300 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "5" 40 300 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "6" 40 200 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "7" 40 100 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "8" 40 0 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+
+name: "754-1581-1-ND"
+units: NM
+sel_rect: -654000 -579000 1854000 2929000
+ref_text: 1270000 2540000 2540000 0 127000
+value_text: 2540000 2540000 -2540000 0 254000
+centroid: 0 600000 1175000 0
+n_pins: 4
+pin: "1" 0 0 0 270
+top_pad: 3 800000 325000 325000 0
+pin: "2" 0 1200000 0 270
+top_pad: 3 800000 325000 325000 0
+pin: "3" 0 1200000 2350000 90
+top_pad: 3 800000 325000 325000 0
+pin: "4" 0 0 2350000 90
+top_pad: 3 800000 325000 325000 0
+
+name: "16DIP300WW"
+author: "Ivex"
+source: "DIGIKEY CATALOG NO. 941, PAGE 64"
+units: MIL
+sel_rect: -40 -40 740 340
+ref_text: 50 -100 150 270 7
+value_text: 50 0 150 270 7
+centroid: 0 350 150 0
+n_pins: 16
+pin: "1" 40 0 0 0
+top_pad: 2 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 60 27 27 0
+pin: "2" 40 100 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "3" 40 200 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "4" 40 300 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "5" 40 400 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "6" 40 500 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "7" 40 600 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "8" 40 700 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "9" 40 700 300 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "10" 40 600 300 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "11" 40 500 300 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "12" 40 400 300 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "13" 40 300 300 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "14" 40 200 300 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "15" 40 100 300 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "16" 40 0 300 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+
+name: "ssop16"
+units: NM
+sel_rect: -404000 -1029000 4954000 6629000
+ref_text: 1270000 650000 650000 0 127000
+value_text: 2540000 2540000 0 0 254000
+centroid: 0 2275000 2800000 0
+outline_polyline: 177800 0 1241666
+next_corner: 4550000 1241666 0
+next_corner: 4550000 4358333 0
+next_corner: 0 4358333 0
+next_corner: 0 3266666 0
+next_corner: 162500 3266666 0
+next_corner: 162500 2333333 0
+next_corner: 0 2333333 0
+close_polyline: 0
+n_pins: 16
+pin: "1" 0 0 0 270
+top_pad: 3 300000 775000 775000 0
+pin: "2" 0 650000 0 270
+top_pad: 3 300000 775000 775000 0
+pin: "3" 0 1300000 0 270
+top_pad: 3 300000 775000 775000 0
+pin: "4" 0 1950000 0 270
+top_pad: 3 300000 775000 775000 0
+pin: "5" 0 2600000 0 270
+top_pad: 3 300000 775000 775000 0
+pin: "6" 0 3250000 0 270
+top_pad: 3 300000 775000 775000 0
+pin: "7" 0 3900000 0 270
+top_pad: 3 300000 775000 775000 0
+pin: "8" 0 4550000 0 270
+top_pad: 3 300000 775000 775000 0
+pin: "9" 0 4550000 5600000 90
+top_pad: 3 300000 775000 775000 0
+pin: "10" 0 3900000 5600000 90
+top_pad: 3 300000 775000 775000 0
+pin: "11" 0 3250000 5600000 90
+top_pad: 3 300000 775000 775000 0
+pin: "12" 0 2600000 5600000 90
+top_pad: 3 300000 775000 775000 0
+pin: "13" 0 1950000 5600000 90
+top_pad: 3 300000 775000 775000 0
+pin: "14" 0 1300000 5600000 90
+top_pad: 3 300000 775000 775000 0
+pin: "15" 0 650000 5600000 90
+top_pad: 3 300000 775000 775000 0
+pin: "16" 0 0 5600000 90
+top_pad: 3 300000 775000 775000 0
+
+name: "754-1650-1-ND"
+units: NM
+sel_rect: -454000 -504000 1154000 1704000
+ref_text: 1270000 700000 700000 0 127000
+value_text: 2540000 2540000 0 0 254000
+centroid: 0 350000 600000 0
+n_pins: 4
+pin: "3" 0 0 0 90
+top_pad: 3 400000 250000 250000 0
+pin: "1" 0 700000 0 90
+top_pad: 3 400000 250000 250000 0
+pin: "2" 0 700000 1200000 90
+top_pad: 3 400000 250000 250000 0
+pin: "4" 0 0 1200000 90
+top_pad: 3 400000 250000 250000 0
+
+name: "4DIP300ww"
+author: "Ivex"
+units: MIL
+sel_rect: -40 -40 140 340
+ref_text: 50 50 -100 0 7
+value_text: 50 50 -200 0 7
+centroid: 0 50 150 0
+n_pins: 4
+pin: "1" 40 0 0 0
+top_pad: 2 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 60 27 27 0
+pin: "2" 40 100 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "3" 40 100 300 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "4" 40 0 300 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+
+name: "754-1648-1-ND"
+units: NM
+sel_rect: -779000 -1104000 2129000 3804000
+ref_text: 1270000 1350000 1350000 0 127000
+value_text: 2540000 2540000 0 0 254000
+centroid: 0 675000 1350000 0
+n_pins: 4
+pin: "1" 0 0 0 270
+top_pad: 3 1050000 850000 850000 0
+pin: "3" 0 1350000 0 270
+top_pad: 3 1050000 850000 850000 0
+pin: "4" 0 1350000 2700000 90
+top_pad: 3 1050000 850000 850000 0
+pin: "2" 0 0 2700000 90
+top_pad: 3 1050000 850000 850000 0
+
+name: "350-2082-1-ND"
+units: NM
+sel_rect: -1004000 -1204000 2854000 4404000
+ref_text: 1270000 1850000 1850000 0 127000
+value_text: 2540000 2540000 0 0 254000
+centroid: 0 925000 1600000 0
+n_pins: 4
+pin: "1" 0 0 0 270
+top_pad: 3 1500000 950000 950000 0
+pin: "3" 0 1850000 0 90
+top_pad: 3 1500000 950000 950000 0
+pin: "4" 0 1850000 3200000 90
+top_pad: 3 1500000 950000 950000 0
+pin: "2" 0 0 3200000 90
+top_pad: 3 1500000 950000 950000 0
+
+name: "led1210"
+units: NM
+sel_rect: -1004000 -1204000 2854000 4404000
+ref_text: 1270000 1850000 1850000 0 127000
+value_text: 2540000 2540000 0 0 254000
+centroid: 0 925000 1600000 0
+outline_polyline: 177800 0 1216666
+next_corner: 1850000 1216666 0
+next_corner: 1850000 1983333 0
+next_corner: 0 1983333 0
+next_corner: 0 1866666 0
+next_corner: 462500 1866666 0
+next_corner: 462500 1333333 0
+next_corner: 0 1333333 0
+close_polyline: 0
+n_pins: 4
+pin: "1" 0 0 0 270
+top_pad: 3 1500000 950000 950000 0
+pin: "3" 0 1850000 0 90
+top_pad: 3 1500000 950000 950000 0
+pin: "4" 0 1850000 3200000 90
+top_pad: 3 1500000 950000 950000 0
+pin: "2" 0 0 3200000 90
+top_pad: 3 1500000 950000 950000 0
+
+name: "24DIP600"
+author: "Ivex"
+source: "DIGIKEY CATALOG NO. 941, PAGE 64"
+units: MIL
+sel_rect: -63.5 -40 1163.5 640
+ref_text: 50 -125 300 270 7
+value_text: 50 -25 300 270 7
+centroid: 0 550 300 0
+outline_polyline: 7 -50 50
+next_corner: 1150 50 0
+next_corner: 1150 550 0
+next_corner: -50 550 0
+close_polyline: 0
+outline_polyline: 7 -50 250
+next_corner: 0 250 0
+next_corner: 0 350 0
+next_corner: -50 350 0
+close_polyline: 0
+n_pins: 24
+pin: "1" 40 0 0 0
+top_pad: 2 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 60 27 27 0
+pin: "2" 40 100 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "3" 40 200 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "4" 40 300 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "5" 40 400 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "6" 40 500 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "7" 40 600 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "8" 40 700 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "9" 40 800 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "10" 40 900 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "11" 40 1000 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "12" 40 1100 0 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "13" 40 1100 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "14" 40 1000 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "15" 40 900 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "16" 40 800 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "17" 40 700 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "18" 40 600 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "19" 40 500 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "20" 40 400 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "21" 40 300 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "22" 40 200 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "23" 40 100 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+pin: "24" 40 0 600 0
+top_pad: 1 60 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 60 27 27 0
+
+name: "1X.5LED"
+units: NM
+sel_rect: -604000 -504000 1704000 504000
+ref_text: 1270000 275000 0 0 127000
+value_text: 2540000 2540000 0 0 254000
+centroid: 0 550000 0 0
+n_pins: 2
+pin: "1" 0 0 0 270
+top_pad: 3 700000 250000 250000 0
+pin: "2" 0 1100000 0 270
+top_pad: 3 700000 250000 250000 0
+
+name: "ssop24"
+units: NM
+sel_rect: -429000 -1154000 7414000 6354000
+ref_text: 1270000 635000 635000 0 127000
+value_text: 2540000 2540000 0 0 254000
+centroid: 0 3492500 2600000 0
+outline_polyline: 177800 0 1333333
+next_corner: 6985000 1333333 0
+next_corner: 6985000 3866666 0
+next_corner: 0 3866666 0
+next_corner: 0 3033333 0
+next_corner: 158750 3033333 0
+next_corner: 158750 2166666 0
+next_corner: 0 2166666 0
+close_polyline: 0
+n_pins: 24
+pin: "1" 0 0 0 270
+top_pad: 3 350000 900000 900000 0
+pin: "2" 0 635000 0 270
+top_pad: 3 350000 900000 900000 0
+pin: "3" 0 1270000 0 270
+top_pad: 3 350000 900000 900000 0
+pin: "4" 0 1905000 0 270
+top_pad: 3 350000 900000 900000 0
+pin: "5" 0 2540000 0 270
+top_pad: 3 350000 900000 900000 0
+pin: "6" 0 3175000 0 270
+top_pad: 3 350000 900000 900000 0
+pin: "7" 0 3810000 0 270
+top_pad: 3 350000 900000 900000 0
+pin: "8" 0 4445000 0 270
+top_pad: 3 350000 900000 900000 0
+pin: "9" 0 5080000 0 270
+top_pad: 3 350000 900000 900000 0
+pin: "10" 0 5715000 0 270
+top_pad: 3 350000 900000 900000 0
+pin: "11" 0 6350000 0 270
+top_pad: 3 350000 900000 900000 0
+pin: "12" 0 6985000 0 270
+top_pad: 3 350000 900000 900000 0
+pin: "13" 0 6985000 5200000 90
+top_pad: 3 350000 900000 900000 0
+pin: "14" 0 6350000 5200000 90
+top_pad: 3 350000 900000 900000 0
+pin: "15" 0 5715000 5200000 90
+top_pad: 3 350000 900000 900000 0
+pin: "16" 0 5080000 5200000 90
+top_pad: 3 350000 900000 900000 0
+pin: "17" 0 4445000 5200000 90
+top_pad: 3 350000 900000 900000 0
+pin: "18" 0 3810000 5200000 90
+top_pad: 3 350000 900000 900000 0
+pin: "19" 0 3175000 5200000 90
+top_pad: 3 350000 900000 900000 0
+pin: "20" 0 2540000 5200000 90
+top_pad: 3 350000 900000 900000 0
+pin: "21" 0 1905000 5200000 90
+top_pad: 3 350000 900000 900000 0
+pin: "22" 0 1270000 5200000 90
+top_pad: 3 350000 900000 900000 0
+pin: "23" 0 635000 5200000 90
+top_pad: 3 350000 900000 900000 0
+pin: "24" 0 0 5200000 90
+top_pad: 3 350000 900000 900000 0
+
+name: "8DIP600"
+author: "Ivex"
+source: "DIGIKEY CATALOG NO. 941, PAGE 64"
+units: MIL
+sel_rect: -37.5 -37.5 337.5 637.5
+ref_text: 50 -125 300 270 7
+value_text: 50 -25 300 270 7
+centroid: 0 550 300 0
+n_pins: 8
+pin: "1" 28 0 0 0
+top_pad: 2 55 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 2 55 27 27 0
+pin: "2" 28 100 0 0
+top_pad: 1 55 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 55 27 27 0
+pin: "3" 28 200 0 0
+top_pad: 1 55 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 55 27 27 0
+pin: "4" 28 300 0 0
+top_pad: 1 55 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 55 27 27 0
+pin: "21" 28 300 600 0
+top_pad: 1 55 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 55 27 27 0
+pin: "22" 28 200 600 0
+top_pad: 1 55 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 55 27 27 0
+pin: "23" 28 100 600 0
+top_pad: 1 55 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 55 27 27 0
+pin: "24" 28 0 600 0
+top_pad: 1 55 27 27 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 1 55 27 27 0
+
+name: "evpad"
+units: NM
+sel_rect: -6342900 -6342900 6342900 6342900
+ref_text: 1270000 0 -3325000 0 127000
+value_text: 2540000 2200000 6600000 0 254000
+centroid: 0 0 0 0
+outline_polyline: 177800 -6000000 -6000000
+next_corner: 6000000 -6000000 0
+next_corner: 6000000 6000000 0
+next_corner: -6000000 6000000 0
+close_polyline: 0
+outline_polyline: 254000 0 2100000
+next_corner: 2100000 0 1
+next_corner: 0 -2100000 1
+next_corner: -2100000 0 1
+close_polyline: 1
+n_pins: 6
+pin: "1" 0 -1600000 -4925000 270
+top_pad: 3 1200000 725000 725000 0
+pin: "2" 0 0 -4925000 270
+top_pad: 3 1200000 725000 725000 0
+pin: "3" 0 1600000 -4925000 270
+top_pad: 3 1200000 725000 725000 0
+pin: "4" 0 1600000 4925000 90
+top_pad: 3 1200000 725000 725000 0
+pin: "5" 0 0 4925000 90
+top_pad: 3 1200000 725000 725000 0
+pin: "6" 0 -1600000 4925000 90
+top_pad: 3 1200000 725000 725000 0
+

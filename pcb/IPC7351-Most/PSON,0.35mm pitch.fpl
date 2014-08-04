@@ -1,0 +1,32 @@
+name: "PSON35P100X105X50-6M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "PSON,0.35mm pitch;6 pin,1.05mm W X 1.05mm L X 0.50mm H body (pullback leads)"
+  units: NM
+  sel_rect: -1100000 -1050000 1100000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -525000 679000
+    next_corner: 525000 679000 0
+  outline_polyline: 177800 -525000 -679000
+    next_corner: 525000 -679000 0
+  outline_polyline: 254000 -1160000 933000
+    next_corner: -1033000 1060000 1
+    next_corner: -906000 933000 1
+    next_corner: -1033000 806000 1
+    close_polyline: 1
+  n_pins: 6
+    pin: "1" 0 -350000 350000 0
+      top_pad: 3 150000 225000 225000 0
+    pin: "2" 0 -350000 0 0
+      top_pad: 3 150000 225000 225000 0
+    pin: "3" 0 -350000 -350000 0
+      top_pad: 3 150000 225000 225000 0
+    pin: "4" 0 350000 -350000 0
+      top_pad: 3 150000 225000 225000 0
+    pin: "5" 0 350000 0 0
+      top_pad: 3 150000 225000 225000 0
+    pin: "6" 0 350000 350000 0
+      top_pad: 3 150000 225000 225000 0
+

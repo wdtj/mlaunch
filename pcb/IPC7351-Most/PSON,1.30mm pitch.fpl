@@ -1,0 +1,28 @@
+name: "PSON130P160X205X115-4M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "PSON,1.30mm pitch;4 pin,1.65mm W X 2.05mm L X 1.15mm H body (pullback leads)"
+  units: NM
+  sel_rect: -1350000 -1550000 1350000 1550000
+  ref_text: 1270000 0 2550000 0 177800
+  value_text: 1270000 0 -3820000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -825000 1279000
+    next_corner: 825000 1279000 0
+  outline_polyline: 177800 -825000 -1279000
+    next_corner: 825000 -1279000 0
+  outline_polyline: 254000 -1460000 1533000
+    next_corner: -1333000 1660000 1
+    next_corner: -1206000 1533000 1
+    next_corner: -1333000 1406000 1
+    close_polyline: 1
+  n_pins: 4
+    pin: "1" 0 -450000 650000 0
+      top_pad: 3 750000 375000 375000 0
+    pin: "2" 0 -450000 -650000 0
+      top_pad: 3 750000 375000 375000 0
+    pin: "3" 0 450000 -650000 0
+      top_pad: 3 750000 375000 375000 0
+    pin: "4" 0 450000 650000 0
+      top_pad: 3 750000 375000 375000 0
+

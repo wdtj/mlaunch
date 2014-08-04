@@ -1,0 +1,170 @@
+name: "PQFN80P400X500X80-11M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "PQFN,0.80mm pitch,rect.,pin 1 on short dimension;2 pin X 3 pin, 4.10mm X 5.10mm X 0.80mm H body (pullback leads) (w/thermal tab)"
+  units: NM
+  sel_rect: -2550000 -3050000 2550000 3050000
+  ref_text: 1270000 0 4050000 0 177800
+  value_text: 1270000 0 -5320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -2176999 1304000
+    next_corner: -2176999 2677000 0
+    next_corner: -904000 2677000 0
+  outline_polyline: 177800 904000 2677000
+    next_corner: 2176999 2677000 0
+    next_corner: 2176999 1304000 0
+  outline_polyline: 177800 -2176999 -1304000
+    next_corner: -2176999 -2677000 0
+    next_corner: -904000 -2677000 0
+  outline_polyline: 177800 904000 -2677000
+    next_corner: 2176999 -2677000 0
+    next_corner: 2176999 -1304000 0
+  outline_polyline: 254000 -2684999 1558000
+    next_corner: -2557999 1685000 1
+    next_corner: -2430999 1558000 1
+    next_corner: -2557999 1431000 1
+    close_polyline: 1
+  n_pins: 11
+    pin: "1" 0 -1700000 800000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "2" 0 -1700000 0 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "3" 0 -1700000 -800000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "4" 0 -400000 -2200000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "5" 0 400000 -2200000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "6" 0 1700000 -800000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "7" 0 1700000 0 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "8" 0 1700000 800000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "9" 0 400000 2200000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "10" 0 -400000 2200000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "11" 0 0 0 0
+      top_pad: 3 3300000 1150000 1150000 0
+
+name: "PQFN80P400X500X80-15M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "PQFN,0.80mm pitch,rect.,pin 1 on short dimension;3 pin X 4 pin, 4.10mm X 5.10mm X 0.80mm H body (pullback leads) (w/thermal tab)"
+  units: NM
+  sel_rect: -2550000 -3050000 2550000 3050000
+  ref_text: 1270000 0 4050000 0 177800
+  value_text: 1270000 0 -5320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -2176999 1704000
+    next_corner: -2176999 2677000 0
+    next_corner: -1304000 2677000 0
+  outline_polyline: 177800 1304000 2677000
+    next_corner: 2176999 2677000 0
+    next_corner: 2176999 1704000 0
+  outline_polyline: 177800 -2176999 -1704000
+    next_corner: -2176999 -2677000 0
+    next_corner: -1304000 -2677000 0
+  outline_polyline: 177800 1304000 -2677000
+    next_corner: 2176999 -2677000 0
+    next_corner: 2176999 -1704000 0
+  outline_polyline: 254000 -2684999 1958000
+    next_corner: -2557999 2085000 1
+    next_corner: -2430999 1958000 1
+    next_corner: -2557999 1831000 1
+    close_polyline: 1
+  n_pins: 15
+    pin: "1" 0 -1700000 1200000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "2" 0 -1700000 400000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "3" 0 -1700000 -400000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "4" 0 -1700000 -1200000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "5" 0 -800000 -2200000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "6" 0 0 -2200000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "7" 0 800000 -2200000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "8" 0 1700000 -1200000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "9" 0 1700000 -400000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "10" 0 1700000 400000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "11" 0 1700000 1200000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "12" 0 800000 2200000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "13" 0 0 2200000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "14" 0 -800000 2200000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "15" 0 0 0 0
+      top_pad: 3 3300000 1150000 1150000 0
+
+name: "PQFN80P500X600X80-17M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "PQFN,0.80mm pitch,rect.,pin 1 on short dimension;3 pin X 5 pin, 5.10mm X 6.10mm X 0.80mm H body (pullback leads) (w/thermal tab)"
+  units: NM
+  sel_rect: -3050000 -3550000 3050000 3550000
+  ref_text: 1270000 0 4550000 0 177800
+  value_text: 1270000 0 -5820000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -2677000 2104000
+    next_corner: -2677000 3177000 0
+    next_corner: -1304000 3177000 0
+  outline_polyline: 177800 1304000 3177000
+    next_corner: 2677000 3177000 0
+    next_corner: 2677000 2104000 0
+  outline_polyline: 177800 -2677000 -2104000
+    next_corner: -2677000 -3177000 0
+    next_corner: -1304000 -3177000 0
+  outline_polyline: 177800 1304000 -3177000
+    next_corner: 2677000 -3177000 0
+    next_corner: 2677000 -2104000 0
+  outline_polyline: 254000 -3185000 2358000
+    next_corner: -3058000 2485000 1
+    next_corner: -2931000 2358000 1
+    next_corner: -3058000 2231000 1
+    close_polyline: 1
+  n_pins: 17
+    pin: "1" 0 -2200000 1600000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "2" 0 -2200000 800000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "3" 0 -2200000 0 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "4" 0 -2200000 -800000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "5" 0 -2200000 -1600000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "6" 0 -800000 -2700000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "7" 0 0 -2700000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "8" 0 800000 -2700000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "9" 0 2200000 -1600000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "10" 0 2200000 -800000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "11" 0 2200000 0 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "12" 0 2200000 800000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "13" 0 2200000 1600000 0
+      top_pad: 3 500000 350000 350000 0
+    pin: "14" 0 800000 2700000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "15" 0 0 2700000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "16" 0 -800000 2700000 90
+      top_pad: 3 500000 350000 350000 0
+    pin: "17" 0 0 0 0
+      top_pad: 3 4300000 1650000 1650000 0
+

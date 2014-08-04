@@ -1,0 +1,1605 @@
+name: "RESC0502X50M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;0.50mm L X 0.25mm W X 0.50mm H"
+  units: NM
+  sel_rect: -800000 -450000 800000 450000
+  ref_text: 1270000 0 1450000 0 177800
+  value_text: 1270000 0 -2720000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -350000 0 0
+      top_pad: 3 450000 250000 250000 0
+    pin: "2" 0 350000 0 0
+      top_pad: 3 450000 250000 250000 0
+
+name: "RESC0603X26M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;0.60mm L X 0.30mm W X 0.26mm H"
+  units: NM
+  sel_rect: -900000 -450000 900000 450000
+  ref_text: 1270000 0 1450000 0 177800
+  value_text: 1270000 0 -2720000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -400000 0 0
+      top_pad: 3 500000 275000 275000 0
+    pin: "2" 0 400000 0 0
+      top_pad: 3 500000 275000 275000 0
+
+name: "RESC0603X28M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;0.60mm L X 0.30mm W X 0.28mm H"
+  units: NM
+  sel_rect: -900000 -450000 900000 450000
+  ref_text: 1270000 0 1450000 0 177800
+  value_text: 1270000 0 -2720000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -400000 0 0
+      top_pad: 3 500000 275000 275000 0
+    pin: "2" 0 400000 0 0
+      top_pad: 3 500000 275000 275000 0
+
+name: "RESC0603X30M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;0.60mm L X 0.30mm W X 0.30mm H"
+  units: NM
+  sel_rect: -900000 -450000 900000 450000
+  ref_text: 1270000 0 1450000 0 177800
+  value_text: 1270000 0 -2720000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -400000 0 0
+      top_pad: 3 500000 275000 275000 0
+    pin: "2" 0 400000 0 0
+      top_pad: 3 500000 275000 275000 0
+
+name: "RESC0603X33M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;0.60mm L X 0.30mm W X 0.33mm H"
+  units: NM
+  sel_rect: -900000 -450000 900000 450000
+  ref_text: 1270000 0 1450000 0 177800
+  value_text: 1270000 0 -2720000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -400000 0 0
+      top_pad: 3 500000 275000 275000 0
+    pin: "2" 0 400000 0 0
+      top_pad: 3 500000 275000 275000 0
+
+name: "RESC1005X38M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.02mm L X 0.51mm W X 0.38mm H"
+  units: NM
+  sel_rect: -1100000 -600000 1100000 600000
+  ref_text: 1270000 0 1600000 0 177800
+  value_text: 1270000 0 -2870000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -500000 0 0
+      top_pad: 3 750000 375000 375000 0
+    pin: "2" 0 500000 0 0
+      top_pad: 3 750000 375000 375000 0
+
+name: "RESC1005X40AM"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.03mm L X 0.53mm W X 0.40mm H"
+  units: NM
+  sel_rect: -1050000 -600000 1050000 600000
+  ref_text: 1270000 0 1600000 0 177800
+  value_text: 1270000 0 -2870000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -500000 0 0
+      top_pad: 3 750000 350000 350000 0
+    pin: "2" 0 500000 0 0
+      top_pad: 3 750000 350000 350000 0
+
+name: "RESC1005X40M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.00mm L X 0.50mm W X 0.40mm H"
+  units: NM
+  sel_rect: -1050000 -550000 1050000 550000
+  ref_text: 1270000 0 1550000 0 177800
+  value_text: 1270000 0 -2820000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -500000 0 0
+      top_pad: 3 700000 350000 350000 0
+    pin: "2" 0 500000 0 0
+      top_pad: 3 700000 350000 350000 0
+
+name: "RESC1106X84M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.07mm L X 0.56mm W X 0.84mm H"
+  units: NM
+  sel_rect: -1150000 -650000 1150000 650000
+  ref_text: 1270000 0 1650000 0 177800
+  value_text: 1270000 0 -2920000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -550000 0 0
+      top_pad: 3 850000 375000 375000 0
+    pin: "2" 0 550000 0 0
+      top_pad: 3 850000 375000 375000 0
+
+name: "RESC1306X51M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.27mm L X 0.64mm W X 0.51mm H"
+  units: NM
+  sel_rect: -1250000 -650000 1250000 650000
+  ref_text: 1270000 0 1650000 0 177800
+  value_text: 1270000 0 -2920000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -21000 -196000
+    next_corner: 21000 -196000 0
+    close_polyline: 0
+  outline_polyline: 177800 -21000 196000
+    next_corner: 21000 196000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -650000 0 0
+      top_pad: 3 900000 375000 375000 0
+    pin: "2" 0 650000 0 0
+      top_pad: 3 900000 375000 375000 0
+
+name: "RESC1306X63M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.27mm L X 0.60mm W X 0.63mm H"
+  units: NM
+  sel_rect: -1250000 -650000 1250000 650000
+  ref_text: 1270000 0 1650000 0 177800
+  value_text: 1270000 0 -2920000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -600000 0 0
+      top_pad: 3 850000 450000 450000 0
+    pin: "2" 0 600000 0 0
+      top_pad: 3 850000 450000 450000 0
+
+name: "RESC1310X51M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.27mm L X 1.02mm W X 0.51mm H"
+  units: NM
+  sel_rect: -1250000 -850000 1250000 850000
+  ref_text: 1270000 0 1850000 0 177800
+  value_text: 1270000 0 -3120000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -21000 -396000
+    next_corner: 21000 -396000 0
+    close_polyline: 0
+  outline_polyline: 177800 -21000 396000
+    next_corner: 21000 396000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -650000 0 0
+      top_pad: 3 1300000 375000 375000 0
+    pin: "2" 0 650000 0 0
+      top_pad: 3 1300000 375000 375000 0
+
+name: "RESC1313X38M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.27mm L X 1.27mm W X 0.38mm H"
+  units: NM
+  sel_rect: -1250000 -1000000 1250000 1000000
+  ref_text: 1270000 0 2000000 0 177800
+  value_text: 1270000 0 -3270000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -600000 0 0
+      top_pad: 3 1550000 450000 450000 0
+    pin: "2" 0 600000 0 0
+      top_pad: 3 1550000 450000 450000 0
+
+name: "RESC1313X51M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.33mm L X 1.27mm W X 0.51mm H"
+  units: NM
+  sel_rect: -1300000 -1000000 1300000 1000000
+  ref_text: 1270000 0 2000000 0 177800
+  value_text: 1270000 0 -3270000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -600000 0 0
+      top_pad: 3 1550000 475000 475000 0
+    pin: "2" 0 600000 0 0
+      top_pad: 3 1550000 475000 475000 0
+
+name: "RESC1313X63M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.27mm L X 1.27mm W X 0.63mm H"
+  units: NM
+  sel_rect: -1250000 -1000000 1250000 1000000
+  ref_text: 1270000 0 2000000 0 177800
+  value_text: 1270000 0 -3270000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -600000 0 0
+      top_pad: 3 1550000 450000 450000 0
+    pin: "2" 0 600000 0 0
+      top_pad: 3 1550000 450000 450000 0
+
+name: "RESC1413X84M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.40mm L X 1.27mm W X 0.84mm H"
+  units: NM
+  sel_rect: -1300000 -1000000 1300000 1000000
+  ref_text: 1270000 0 2000000 0 177800
+  value_text: 1270000 0 -3270000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -650000 0 0
+      top_pad: 3 1550000 450000 450000 0
+    pin: "2" 0 650000 0 0
+      top_pad: 3 1550000 450000 450000 0
+
+name: "RESC1508X63M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.52mm L X 0.85mm W X 0.63mm H"
+  units: NM
+  sel_rect: -1350000 -750000 1350000 750000
+  ref_text: 1270000 0 1750000 0 177800
+  value_text: 1270000 0 -3020000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -700000 0 0
+      top_pad: 3 1100000 450000 450000 0
+    pin: "2" 0 700000 0 0
+      top_pad: 3 1100000 450000 450000 0
+
+name: "RESC1608X38M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.63mm L X 0.81mm W X 0.38mm H"
+  units: NM
+  sel_rect: -2000000 -1050000 2000000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -296000
+    next_corner: 71000 -296000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 296000
+    next_corner: 71000 296000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -900000 0 0
+      top_pad: 3 1100000 575000 575000 0
+    pin: "2" 0 900000 0 0
+      top_pad: 3 1100000 575000 575000 0
+
+name: "RESC1608X50AM"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.60mm L X 0.80mm W X 0.50mm H"
+  units: NM
+  sel_rect: -2000000 -1050000 2000000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -296000
+    next_corner: 71000 -296000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 296000
+    next_corner: 71000 296000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -900000 0 0
+      top_pad: 3 1100000 575000 575000 0
+    pin: "2" 0 900000 0 0
+      top_pad: 3 1100000 575000 575000 0
+
+name: "RESC1608X50M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.58mm L X 0.85mm W X 0.50mm H"
+  units: NM
+  sel_rect: -1900000 -1050000 1900000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -296000
+    next_corner: 71000 -296000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 296000
+    next_corner: 71000 296000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -850000 0 0
+      top_pad: 3 1100000 525000 525000 0
+    pin: "2" 0 850000 0 0
+      top_pad: 3 1100000 525000 525000 0
+
+name: "RESC1608X55AM"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.60mm L X 0.83mm W X 0.55mm H"
+  units: NM
+  sel_rect: -2000000 -1050000 2000000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -296000
+    next_corner: 71000 -296000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 296000
+    next_corner: 71000 296000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -900000 0 0
+      top_pad: 3 1100000 575000 575000 0
+    pin: "2" 0 900000 0 0
+      top_pad: 3 1100000 575000 575000 0
+
+name: "RESC1608X55M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.60mm L X 0.85mm W X 0.55mm H"
+  units: NM
+  sel_rect: -1950000 -1050000 1950000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -96000 -296000
+    next_corner: 96000 -296000 0
+    close_polyline: 0
+  outline_polyline: 177800 -96000 296000
+    next_corner: 96000 296000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -900000 0 0
+      top_pad: 3 1100000 550000 550000 0
+    pin: "2" 0 900000 0 0
+      top_pad: 3 1100000 550000 550000 0
+
+name: "RESC1608X84M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.63mm L X 0.81mm W X 0.84mm H"
+  units: NM
+  sel_rect: -1950000 -1050000 1950000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -196000 -296000
+    next_corner: 196000 -296000 0
+    close_polyline: 0
+  outline_polyline: 177800 -196000 296000
+    next_corner: 196000 296000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -950000 0 0
+      top_pad: 3 1100000 500000 500000 0
+    pin: "2" 0 950000 0 0
+      top_pad: 3 1100000 500000 500000 0
+
+name: "RESC1913X63M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.91mm L X 1.27mm W X 0.63mm H"
+  units: NM
+  sel_rect: -2100000 -1300000 2100000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -171000 -521000
+    next_corner: 171000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -171000 521000
+    next_corner: 171000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1550000 575000 575000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1550000 575000 575000 0
+
+name: "RESC2012X50M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.05mm L X 1.25mm W X 0.50mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -271000 -521000
+    next_corner: 271000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -271000 521000
+    next_corner: 271000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1100000 0 0
+      top_pad: 3 1550000 575000 575000 0
+    pin: "2" 0 1100000 0 0
+      top_pad: 3 1550000 575000 575000 0
+
+name: "RESC2012X60M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.00mm L X 1.25mm W X 0.60mm H"
+  units: NM
+  sel_rect: -2200000 -1250000 2200000 1250000
+  ref_text: 1270000 0 2250000 0 177800
+  value_text: 1270000 0 -3520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -271000 -496000
+    next_corner: 271000 -496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -271000 496000
+    next_corner: 271000 496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1100000 0 0
+      top_pad: 3 1500000 575000 575000 0
+    pin: "2" 0 1100000 0 0
+      top_pad: 3 1500000 575000 575000 0
+
+name: "RESC2012X70M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.00mm L X 1.25mm W X 0.70mm H"
+  units: NM
+  sel_rect: -2200000 -1250000 2200000 1250000
+  ref_text: 1270000 0 2250000 0 177800
+  value_text: 1270000 0 -3520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -171000 -496000
+    next_corner: 171000 -496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -171000 496000
+    next_corner: 171000 496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1050000 0 0
+      top_pad: 3 1500000 625000 625000 0
+    pin: "2" 0 1050000 0 0
+      top_pad: 3 1500000 625000 625000 0
+
+name: "RESC2013X38M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.03mm L X 1.27mm W X 0.38mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -271000 -521000
+    next_corner: 271000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -271000 521000
+    next_corner: 271000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1100000 0 0
+      top_pad: 3 1550000 575000 575000 0
+    pin: "2" 0 1100000 0 0
+      top_pad: 3 1550000 575000 575000 0
+
+name: "RESC2013X51M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;1.97mm L X 1.27mm W X 0.51mm H"
+  units: NM
+  sel_rect: -2150000 -1300000 2150000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -950000 0 0
+      top_pad: 3 1550000 700000 700000 0
+    pin: "2" 0 950000 0 0
+      top_pad: 3 1550000 700000 700000 0
+
+name: "RESC2013X65M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.00mm L X 1.28mm W X 0.65mm H"
+  units: NM
+  sel_rect: -2150000 -1300000 2150000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -196000 -521000
+    next_corner: 196000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -196000 521000
+    next_corner: 196000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1050000 0 0
+      top_pad: 3 1550000 600000 600000 0
+    pin: "2" 0 1050000 0 0
+      top_pad: 3 1550000 600000 600000 0
+
+name: "RESC2013X84M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.03mm L X 1.27mm W X 0.84mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -271000 -521000
+    next_corner: 271000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -271000 521000
+    next_corner: 271000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1100000 0 0
+      top_pad: 3 1550000 575000 575000 0
+    pin: "2" 0 1100000 0 0
+      top_pad: 3 1550000 575000 575000 0
+
+name: "RESC2506X84M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.54mm L X 0.64mm W X 0.84mm H"
+  units: NM
+  sel_rect: -2450000 -950000 2450000 950000
+  ref_text: 1270000 0 1950000 0 177800
+  value_text: 1270000 0 -3220000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -521000 -196000
+    next_corner: 521000 -196000 0
+    close_polyline: 0
+  outline_polyline: 177800 -521000 196000
+    next_corner: 521000 196000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1350000 0 0
+      top_pad: 3 900000 575000 575000 0
+    pin: "2" 0 1350000 0 0
+      top_pad: 3 900000 575000 575000 0
+
+name: "RESC2513X63AM"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.54mm L X 1.27mm W X 0.63mm H"
+  units: NM
+  sel_rect: -2450000 -1300000 2450000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -521000 -521000
+    next_corner: 521000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -521000 521000
+    next_corner: 521000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1350000 0 0
+      top_pad: 3 1550000 575000 575000 0
+    pin: "2" 0 1350000 0 0
+      top_pad: 3 1550000 575000 575000 0
+
+name: "RESC2513X63M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.54mm L X 1.35mm W X 0.63mm H"
+  units: NM
+  sel_rect: -2450000 -1300000 2450000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -396000 -546000
+    next_corner: 396000 -546000 0
+    close_polyline: 0
+  outline_polyline: 177800 -396000 546000
+    next_corner: 396000 546000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1300000 0 0
+      top_pad: 3 1600000 650000 650000 0
+    pin: "2" 0 1300000 0 0
+      top_pad: 3 1600000 650000 650000 0
+
+name: "RESC2525X63M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.54mm L X 2.54mm W X 0.63mm H"
+  units: NM
+  sel_rect: -2450000 -1900000 2450000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -521000 -1146000
+    next_corner: 521000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -521000 1146000
+    next_corner: 521000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1350000 0 0
+      top_pad: 3 2800000 575000 575000 0
+    pin: "2" 0 1350000 0 0
+      top_pad: 3 2800000 575000 575000 0
+
+name: "RESC2550X70M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.50mm L X 5.00mm W X 0.70mm H"
+  units: NM
+  sel_rect: -2450000 -3150000 2450000 3150000
+  ref_text: 1270000 0 4150000 0 177800
+  value_text: 1270000 0 -5420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -321000 -2396000
+    next_corner: 321000 -2396000 0
+    close_polyline: 0
+  outline_polyline: 177800 -321000 2396000
+    next_corner: 321000 2396000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1250000 0 0
+      top_pad: 3 5300000 675000 675000 0
+    pin: "2" 0 1250000 0 0
+      top_pad: 3 5300000 675000 675000 0
+
+name: "RESC2551X63M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.54mm L X 5.08mm W X 0.63mm H"
+  units: NM
+  sel_rect: -2450000 -3200000 2450000 3200000
+  ref_text: 1270000 0 4200000 0 177800
+  value_text: 1270000 0 -5470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -521000 -2421000
+    next_corner: 521000 -2421000 0
+    close_polyline: 0
+  outline_polyline: 177800 -521000 2421000
+    next_corner: 521000 2421000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1350000 0 0
+      top_pad: 3 5350000 575000 575000 0
+    pin: "2" 0 1350000 0 0
+      top_pad: 3 5350000 575000 575000 0
+
+name: "RESC2613X76M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.60mm L X 1.27mm W X 0.76mm H"
+  units: NM
+  sel_rect: -2450000 -1300000 2450000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -296000 -521000
+    next_corner: 296000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -296000 521000
+    next_corner: 296000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1250000 0 0
+      top_pad: 3 1550000 700000 700000 0
+    pin: "2" 0 1250000 0 0
+      top_pad: 3 1550000 700000 700000 0
+
+name: "RESC2651X76M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.60mm L X 5.08mm W X 0.76mm H"
+  units: NM
+  sel_rect: -2450000 -3200000 2450000 3200000
+  ref_text: 1270000 0 4200000 0 177800
+  value_text: 1270000 0 -5470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -421000 -2421000
+    next_corner: 421000 -2421000 0
+    close_polyline: 0
+  outline_polyline: 177800 -421000 2421000
+    next_corner: 421000 2421000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1300000 0 0
+      top_pad: 3 5350000 625000 625000 0
+    pin: "2" 0 1300000 0 0
+      top_pad: 3 5350000 625000 625000 0
+
+name: "RESC2713X84M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.67mm L X 1.27mm W X 0.84mm H"
+  units: NM
+  sel_rect: -2500000 -1300000 2500000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -571000 -521000
+    next_corner: 571000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -571000 521000
+    next_corner: 571000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1400000 0 0
+      top_pad: 3 1550000 575000 575000 0
+    pin: "2" 0 1400000 0 0
+      top_pad: 3 1550000 575000 575000 0
+
+name: "RESC2725X84M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;2.67mm L X 2.54mm W X 0.84mm H"
+  units: NM
+  sel_rect: -2500000 -1900000 2500000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -571000 -1146000
+    next_corner: 571000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -571000 1146000
+    next_corner: 571000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1400000 0 0
+      top_pad: 3 2800000 575000 575000 0
+    pin: "2" 0 1400000 0 0
+      top_pad: 3 2800000 575000 575000 0
+
+name: "RESC3016X63M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.05mm L X 1.60mm W X 0.63mm H"
+  units: NM
+  sel_rect: -2700000 -1450000 2700000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -771000 -671000
+    next_corner: 771000 -671000 0
+    close_polyline: 0
+  outline_polyline: 177800 -771000 671000
+    next_corner: 771000 671000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1850000 575000 575000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1850000 575000 575000 0
+
+name: "RESC3115X70M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.13mm L X 1.55mm W X 0.70mm H"
+  units: NM
+  sel_rect: -2700000 -1400000 2700000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -646000 -646000
+    next_corner: 646000 -646000 0
+    close_polyline: 0
+  outline_polyline: 177800 -646000 646000
+    next_corner: 646000 646000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1550000 0 0
+      top_pad: 3 1800000 650000 650000 0
+    pin: "2" 0 1550000 0 0
+      top_pad: 3 1800000 650000 650000 0
+
+name: "RESC3116X65M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.10mm L X 1.58mm W X 0.65mm H"
+  units: NM
+  sel_rect: -2700000 -1450000 2700000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -671000
+    next_corner: 671000 -671000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 671000
+    next_corner: 671000 671000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1550000 0 0
+      top_pad: 3 1850000 625000 625000 0
+    pin: "2" 0 1550000 0 0
+      top_pad: 3 1850000 625000 625000 0
+
+name: "RESC3216X60M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.15mm L X 1.60mm W X 0.60mm H"
+  units: NM
+  sel_rect: -2750000 -1450000 2750000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -721000 -696000
+    next_corner: 721000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -721000 696000
+    next_corner: 721000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 625000 625000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 625000 625000 0
+
+name: "RESC3216X63M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.20mm L X 1.60mm W X 0.63mm H"
+  units: NM
+  sel_rect: -2750000 -1450000 2750000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -721000 -671000
+    next_corner: 721000 -671000 0
+    close_polyline: 0
+  outline_polyline: 177800 -721000 671000
+    next_corner: 721000 671000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1850000 625000 625000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1850000 625000 625000 0
+
+name: "RESC3216X65M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.20mm L X 1.60mm W X 0.65mm H"
+  units: NM
+  sel_rect: -2750000 -1450000 2750000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -621000 -696000
+    next_corner: 621000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -621000 696000
+    next_corner: 621000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1550000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1550000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "RESC3216X70M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.20mm L X 1.60mm W X 0.70mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -771000 -696000
+    next_corner: 771000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -771000 696000
+    next_corner: 771000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1650000 0 0
+      top_pad: 3 1900000 625000 625000 0
+    pin: "2" 0 1650000 0 0
+      top_pad: 3 1900000 625000 625000 0
+
+name: "RESC3216X84M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.20mm L X 1.60mm W X 0.84mm H"
+  units: NM
+  sel_rect: -2750000 -1450000 2750000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -721000 -671000
+    next_corner: 721000 -671000 0
+    close_polyline: 0
+  outline_polyline: 177800 -721000 671000
+    next_corner: 721000 671000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1850000 625000 625000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1850000 625000 625000 0
+
+name: "RESC3225X60M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.20mm L X 2.50mm W X 0.60mm H"
+  units: NM
+  sel_rect: -2750000 -1900000 2750000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -696000 -1146000
+    next_corner: 696000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -696000 1146000
+    next_corner: 696000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 650000 650000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 650000 650000 0
+
+name: "RESC3225X65M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.20mm L X 2.50mm W X 0.65mm H"
+  units: NM
+  sel_rect: -2750000 -1900000 2750000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -621000 -1146000
+    next_corner: 621000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -621000 1146000
+    next_corner: 621000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1550000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1550000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "RESC3225X70M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.20mm L X 2.50mm W X 0.70mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "RESC3226X70M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.20mm L X 2.60mm W X 0.70mm H"
+  units: NM
+  sel_rect: -2800000 -1950000 2800000 1950000
+  ref_text: 1270000 0 2950000 0 177800
+  value_text: 1270000 0 -4220000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -771000 -1196000
+    next_corner: 771000 -1196000 0
+    close_polyline: 0
+  outline_polyline: 177800 -771000 1196000
+    next_corner: 771000 1196000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1650000 0 0
+      top_pad: 3 2900000 625000 625000 0
+    pin: "2" 0 1650000 0 0
+      top_pad: 3 2900000 625000 625000 0
+
+name: "RESC3246X60M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.15mm L X 4.60mm W X 0.60mm H"
+  units: NM
+  sel_rect: -2750000 -2950000 2750000 2950000
+  ref_text: 1270000 0 3950000 0 177800
+  value_text: 1270000 0 -5220000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -721000 -2196000
+    next_corner: 721000 -2196000 0
+    close_polyline: 0
+  outline_polyline: 177800 -721000 2196000
+    next_corner: 721000 2196000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 4900000 625000 625000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 4900000 625000 625000 0
+
+name: "RESC3316X76M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.26mm L X 1.60mm W X 0.76mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -646000 -671000
+    next_corner: 646000 -671000 0
+    close_polyline: 0
+  outline_polyline: 177800 -646000 671000
+    next_corner: 646000 671000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1850000 700000 700000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1850000 700000 700000 0
+
+name: "RESC3720X40M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.70mm L X 2.00mm W X 0.40mm H"
+  units: NM
+  sel_rect: -3000000 -1650000 3000000 1650000
+  ref_text: 1270000 0 2650000 0 177800
+  value_text: 1270000 0 -3920000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1146000 -896000
+    next_corner: 1146000 -896000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1146000 896000
+    next_corner: 1146000 896000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1950000 0 0
+      top_pad: 3 2300000 550000 550000 0
+    pin: "2" 0 1950000 0 0
+      top_pad: 3 2300000 550000 550000 0
+
+name: "RESC3813X63M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.81mm L X 1.32mm W X 0.63mm H"
+  units: NM
+  sel_rect: -3050000 -1300000 3050000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1121000 -546000
+    next_corner: 1121000 -546000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1121000 546000
+    next_corner: 1121000 546000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1950000 0 0
+      top_pad: 3 1600000 575000 575000 0
+    pin: "2" 0 1950000 0 0
+      top_pad: 3 1600000 575000 575000 0
+
+name: "RESC3913X76M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.87mm L X 1.27mm W X 0.76mm H"
+  units: NM
+  sel_rect: -3100000 -1300000 3100000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -946000 -521000
+    next_corner: 946000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -946000 521000
+    next_corner: 946000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1900000 0 0
+      top_pad: 3 1550000 700000 700000 0
+    pin: "2" 0 1900000 0 0
+      top_pad: 3 1550000 700000 700000 0
+
+name: "RESC3913X84M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;3.94mm L X 1.27mm W X 0.84mm H"
+  units: NM
+  sel_rect: -3150000 -1300000 3150000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1221000 -521000
+    next_corner: 1221000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1221000 521000
+    next_corner: 1221000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2050000 0 0
+      top_pad: 3 1550000 575000 575000 0
+    pin: "2" 0 2050000 0 0
+      top_pad: 3 1550000 575000 575000 0
+
+name: "RESC4532AX135M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;4.50mm L X 3.20mm W X 1.35mm H"
+  units: NM
+  sel_rect: -3450000 -2250000 3450000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1496000
+    next_corner: 1096000 -1496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1496000
+    next_corner: 1096000 1496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3500000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3500000 800000 800000 0
+
+name: "RESC4532X110M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;4.50mm L X 3.20mm W X 1.10mm H"
+  units: NM
+  sel_rect: -3450000 -2250000 3450000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1496000
+    next_corner: 1096000 -1496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1496000
+    next_corner: 1096000 1496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3500000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3500000 800000 800000 0
+
+name: "RESC4532X70M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;4.50mm L X 3.20mm W X 0.70mm H"
+  units: NM
+  sel_rect: -3450000 -2250000 3450000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1321000 -1496000
+    next_corner: 1321000 -1496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1321000 1496000
+    next_corner: 1321000 1496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2250000 0 0
+      top_pad: 3 3500000 675000 675000 0
+    pin: "2" 0 2250000 0 0
+      top_pad: 3 3500000 675000 675000 0
+
+name: "RESC4564X135M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;4.50mm L X 6.40mm W X 1.35mm H"
+  units: NM
+  sel_rect: -3450000 -3950000 3450000 3950000
+  ref_text: 1270000 0 4950000 0 177800
+  value_text: 1270000 0 -6220000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -3196000
+    next_corner: 1096000 -3196000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 3196000
+    next_corner: 1096000 3196000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 6900000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 6900000 800000 800000 0
+
+name: "RESC5025X65M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;5.00mm L X 2.50mm W X 0.65mm H"
+  units: NM
+  sel_rect: -3650000 -1900000 3650000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1496000 -1146000
+    next_corner: 1496000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1496000 1146000
+    next_corner: 1496000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2450000 0 0
+      top_pad: 3 2800000 700000 700000 0
+    pin: "2" 0 2450000 0 0
+      top_pad: 3 2800000 700000 700000 0
+
+name: "RESC5025X70AM"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;5.00mm L X 2.50mm W X 0.70mm H"
+  units: NM
+  sel_rect: -3700000 -1900000 3700000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1671000 -1146000
+    next_corner: 1671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1671000 1146000
+    next_corner: 1671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2550000 0 0
+      top_pad: 3 2800000 625000 625000 0
+    pin: "2" 0 2550000 0 0
+      top_pad: 3 2800000 625000 625000 0
+
+name: "RESC5025X70M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;5.00mm L X 2.50mm W X 0.70mm H"
+  units: NM
+  sel_rect: -3700000 -1900000 3700000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1471000 -1146000
+    next_corner: 1471000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1471000 1146000
+    next_corner: 1471000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2450000 0 0
+      top_pad: 3 2800000 725000 725000 0
+    pin: "2" 0 2450000 0 0
+      top_pad: 3 2800000 725000 725000 0
+
+name: "RESC5038X77M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;5.00mm L X 3.80mm W X 0.77mm H"
+  units: NM
+  sel_rect: -3700000 -2550000 3700000 2550000
+  ref_text: 1270000 0 3550000 0 177800
+  value_text: 1270000 0 -4820000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -971000 -1796000
+    next_corner: 971000 -1796000 0
+    close_polyline: 0
+  outline_polyline: 177800 -971000 1796000
+    next_corner: 971000 1796000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2200000 0 0
+      top_pad: 3 4100000 975000 975000 0
+    pin: "2" 0 2200000 0 0
+      top_pad: 3 4100000 975000 975000 0
+
+name: "RESC5125X63M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;5.08mm L X 2.54mm W X 0.63mm H"
+  units: NM
+  sel_rect: -3700000 -1900000 3700000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1771000 -1146000
+    next_corner: 1771000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1771000 1146000
+    next_corner: 1771000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2600000 0 0
+      top_pad: 3 2800000 575000 575000 0
+    pin: "2" 0 2600000 0 0
+      top_pad: 3 2800000 575000 575000 0
+
+name: "RESC5125X76M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;5.14mm L X 2.54mm W X 0.76mm H"
+  units: NM
+  sel_rect: -3750000 -1900000 3750000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1621000 -1146000
+    next_corner: 1621000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1621000 1146000
+    next_corner: 1621000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2550000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 2550000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "RESC5325X84M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;5.31mm L X 2.49mm W X 0.84mm H"
+  units: NM
+  sel_rect: -3800000 -1900000 3800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1746000 -1121000
+    next_corner: 1746000 -1121000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1746000 1121000
+    next_corner: 1746000 1121000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2650000 0 0
+      top_pad: 3 2750000 650000 650000 0
+    pin: "2" 0 2650000 0 0
+      top_pad: 3 2750000 650000 650000 0
+
+name: "RESC5619X63M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;5.58mm L X 1.91mm W X 0.63mm H"
+  units: NM
+  sel_rect: -3950000 -1600000 3950000 1600000
+  ref_text: 1270000 0 2600000 0 177800
+  value_text: 1270000 0 -3870000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -2021000 -846000
+    next_corner: 2021000 -846000 0
+    close_polyline: 0
+  outline_polyline: 177800 -2021000 846000
+    next_corner: 2021000 846000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2850000 0 0
+      top_pad: 3 2200000 575000 575000 0
+    pin: "2" 0 2850000 0 0
+      top_pad: 3 2200000 575000 575000 0
+
+name: "RESC5819X84M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;5.84mm L X 1.91mm W X 0.84mm H"
+  units: NM
+  sel_rect: -4050000 -1600000 4050000 1600000
+  ref_text: 1270000 0 2600000 0 177800
+  value_text: 1270000 0 -3870000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1996000 -846000
+    next_corner: 1996000 -846000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1996000 846000
+    next_corner: 1996000 846000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2900000 0 0
+      top_pad: 3 2200000 650000 650000 0
+    pin: "2" 0 2900000 0 0
+      top_pad: 3 2200000 650000 650000 0
+
+name: "RESC6235X390M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;6.20mm L X 3.50mm W X 3.90mm H"
+  units: NM
+  sel_rect: -4250000 -2400000 4250000 2400000
+  ref_text: 1270000 0 3400000 0 177800
+  value_text: 1270000 0 -4670000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -796000 -1646000
+    next_corner: 796000 -1646000 0
+    close_polyline: 0
+  outline_polyline: 177800 -796000 1646000
+    next_corner: 796000 1646000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2400000 0 0
+      top_pad: 3 3800000 1350000 1350000 0
+    pin: "2" 0 2400000 0 0
+      top_pad: 3 3800000 1350000 1350000 0
+
+name: "RESC6331X70M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;6.30mm L X 3.10mm W X 0.70mm H"
+  units: NM
+  sel_rect: -4350000 -2200000 4350000 2200000
+  ref_text: 1270000 0 3200000 0 177800
+  value_text: 1270000 0 -4470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -2321000 -1446000
+    next_corner: 2321000 -1446000 0
+    close_polyline: 0
+  outline_polyline: 177800 -2321000 1446000
+    next_corner: 2321000 1446000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -3200000 0 0
+      top_pad: 3 3400000 625000 625000 0
+    pin: "2" 0 3200000 0 0
+      top_pad: 3 3400000 625000 625000 0
+
+name: "RESC6332X65M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;6.30mm L X 3.15mm W X 0.65mm H"
+  units: NM
+  sel_rect: -4350000 -2250000 4350000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -2121000 -1471000
+    next_corner: 2121000 -1471000 0
+    close_polyline: 0
+  outline_polyline: 177800 -2121000 1471000
+    next_corner: 2121000 1471000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -3100000 0 0
+      top_pad: 3 3450000 725000 725000 0
+    pin: "2" 0 3100000 0 0
+      top_pad: 3 3450000 725000 725000 0
+
+name: "RESC6332X70M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;6.30mm L X 3.20mm W X 0.70mm H"
+  units: NM
+  sel_rect: -4300000 -2250000 4300000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -2246000 -1496000
+    next_corner: 2246000 -1496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -2246000 1496000
+    next_corner: 2246000 1496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -3150000 0 0
+      top_pad: 3 3500000 650000 650000 0
+    pin: "2" 0 3150000 0 0
+      top_pad: 3 3500000 650000 650000 0
+
+name: "RESC6350X77M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;6.30mm L X 5.00mm W X 0.77mm H"
+  units: NM
+  sel_rect: -4300000 -3200000 4300000 3200000
+  ref_text: 1270000 0 4200000 0 177800
+  value_text: 1270000 0 -5470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1846000 -2446000
+    next_corner: 1846000 -2446000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1846000 2446000
+    next_corner: 1846000 2446000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2950000 0 0
+      top_pad: 3 5400000 850000 850000 0
+    pin: "2" 0 2950000 0 0
+      top_pad: 3 5400000 850000 850000 0
+
+name: "RESC6431X63M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;6.35mm L X 3.06mm W X 0.63mm H"
+  units: NM
+  sel_rect: -4350000 -2200000 4350000 2200000
+  ref_text: 1270000 0 3200000 0 177800
+  value_text: 1270000 0 -4470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -2421000 -1421000
+    next_corner: 2421000 -1421000 0
+    close_polyline: 0
+  outline_polyline: 177800 -2421000 1421000
+    next_corner: 2421000 1421000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -3250000 0 0
+      top_pad: 3 3350000 575000 575000 0
+    pin: "2" 0 3250000 0 0
+      top_pad: 3 3350000 575000 575000 0
+
+name: "RESC6432X70M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;6.40mm L X 3.20mm W X 0.70mm H"
+  units: NM
+  sel_rect: -4400000 -2250000 4400000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -2171000 -1496000
+    next_corner: 2171000 -1496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -2171000 1496000
+    next_corner: 2171000 1496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -3150000 0 0
+      top_pad: 3 3500000 725000 725000 0
+    pin: "2" 0 3150000 0 0
+      top_pad: 3 3500000 725000 725000 0
+
+name: "RESC6432X76M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;6.41mm L X 3.18mm W X 0.76mm H"
+  units: NM
+  sel_rect: -4400000 -2250000 4400000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -2271000 -1471000
+    next_corner: 2271000 -1471000 0
+    close_polyline: 0
+  outline_polyline: 177800 -2271000 1471000
+    next_corner: 2271000 1471000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -3200000 0 0
+      top_pad: 3 3450000 675000 675000 0
+    pin: "2" 0 3200000 0 0
+      top_pad: 3 3450000 675000 675000 0
+
+name: "RESC6632X84M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip;6.58mm L X 3.15mm W X 0.84mm H"
+  units: NM
+  sel_rect: -4450000 -2200000 4450000 2200000
+  ref_text: 1270000 0 3200000 0 177800
+  value_text: 1270000 0 -4470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -2396000 -1446000
+    next_corner: 2396000 -1446000 0
+    close_polyline: 0
+  outline_polyline: 177800 -2396000 1446000
+    next_corner: 2396000 1446000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -3300000 0 0
+      top_pad: 3 3400000 650000 650000 0
+    pin: "2" 0 3300000 0 0
+      top_pad: 3 3400000 650000 650000 0
+

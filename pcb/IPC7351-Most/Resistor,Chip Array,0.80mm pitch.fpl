@@ -1,0 +1,464 @@
+name: "RESCAV80P160X160X70-4M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip Array,0.80mm pitch;4 pin,1.60mm L X 1.60mm W X 0.70mm H"
+  units: NM
+  sel_rect: -2000000 -1400000 2000000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -800000 1254000
+    next_corner: 800000 1254000 0
+  outline_polyline: 177800 -800000 -1254000
+    next_corner: 800000 -1254000 0
+  outline_polyline: 254000 -1602000 1254000
+    next_corner: -1475000 1381000 1
+    next_corner: -1348000 1254000 1
+    next_corner: -1475000 1127000 1
+    close_polyline: 1
+  n_pins: 4
+    pin: "1" 0 -900000 400000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "2" 0 -900000 -400000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "3" 0 900000 -400000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "4" 0 900000 400000 0
+      top_pad: 3 600000 575000 575000 0
+
+name: "RESCAV80P160X320X70-8M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip Array,0.80mm pitch;8 pin,1.60mm L X 3.20mm W X 0.70mm H"
+  units: NM
+  sel_rect: -1950000 -2200000 1950000 2200000
+  ref_text: 1270000 0 3200000 0 177800
+  value_text: 1270000 0 -4470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -800000 1950000
+    next_corner: 800000 1950000 0
+  outline_polyline: 177800 -800000 -1950000
+    next_corner: 800000 -1950000 0
+  outline_polyline: 250000 -1550000 1950000
+    next_corner: -1425000 2075000 1
+    next_corner: -1300000 1950000 1
+    next_corner: -1425000 1825000 1
+    close_polyline: 1
+  n_pins: 8
+    pin: "1" 0 -850000 1200000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "2" 0 -850000 400000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "3" 0 -850000 -400000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "4" 0 -850000 -1200000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "5" 0 850000 -1200000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "6" 0 850000 -400000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "7" 0 850000 400000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "8" 0 850000 1200000 0
+      top_pad: 3 500000 575000 575000 0
+
+name: "RESCAV80P160X640X70-16M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip Array,0.80mm pitch;16 pin,1.60mm L X 6.40mm W X 0.70mm H"
+  units: NM
+  sel_rect: -2000000 -3800000 2000000 3800000
+  ref_text: 1270000 0 4800000 0 177800
+  value_text: 1270000 0 -6070000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -800000 3654000
+    next_corner: 800000 3654000 0
+  outline_polyline: 177800 -800000 -3654000
+    next_corner: 800000 -3654000 0
+  outline_polyline: 254000 -1602000 3654000
+    next_corner: -1475000 3781000 1
+    next_corner: -1348000 3654000 1
+    next_corner: -1475000 3527000 1
+    close_polyline: 1
+  n_pins: 16
+    pin: "1" 0 -900000 2800000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "2" 0 -900000 2000000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "3" 0 -900000 1200000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "4" 0 -900000 400000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "5" 0 -900000 -400000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "6" 0 -900000 -1200000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "7" 0 -900000 -2000000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "8" 0 -900000 -2800000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "9" 0 900000 -2800000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "10" 0 900000 -2000000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "11" 0 900000 -1200000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "12" 0 900000 -400000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "13" 0 900000 400000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "14" 0 900000 1200000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "15" 0 900000 2000000 0
+      top_pad: 3 600000 575000 575000 0
+    pin: "16" 0 900000 2800000 0
+      top_pad: 3 600000 575000 575000 0
+
+name: "RESCAV80P165X165X70-4M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip Array,0.80mm pitch;4 pin,1.65mm L X 1.65mm W X 0.70mm H"
+  units: NM
+  sel_rect: -2000000 -1400000 2000000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -825000 1254000
+    next_corner: 825000 1254000 0
+  outline_polyline: 177800 -825000 -1254000
+    next_corner: 825000 -1254000 0
+  outline_polyline: 254000 -1627000 1254000
+    next_corner: -1500000 1381000 1
+    next_corner: -1373000 1254000 1
+    next_corner: -1500000 1127000 1
+    close_polyline: 1
+  n_pins: 4
+    pin: "1" 0 -900000 400000 0
+      top_pad: 3 600000 600000 600000 0
+    pin: "2" 0 -900000 -400000 0
+      top_pad: 3 600000 600000 600000 0
+    pin: "3" 0 900000 -400000 0
+      top_pad: 3 600000 600000 600000 0
+    pin: "4" 0 900000 400000 0
+      top_pad: 3 600000 600000 600000 0
+
+name: "RESCAV80P165X325X70-8M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip Array,0.80mm pitch;8 pin,1.65mm L X 3.25mm W X 0.70mm H"
+  units: NM
+  sel_rect: -2000000 -2200000 2000000 2200000
+  ref_text: 1270000 0 3200000 0 177800
+  value_text: 1270000 0 -4470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -825000 2054000
+    next_corner: 825000 2054000 0
+  outline_polyline: 177800 -825000 -2054000
+    next_corner: 825000 -2054000 0
+  outline_polyline: 254000 -1627000 2054000
+    next_corner: -1500000 2181000 1
+    next_corner: -1373000 2054000 1
+    next_corner: -1500000 1927000 1
+    close_polyline: 1
+  n_pins: 8
+    pin: "1" 0 -900000 1200000 0
+      top_pad: 3 600000 600000 600000 0
+    pin: "2" 0 -900000 400000 0
+      top_pad: 3 600000 600000 600000 0
+    pin: "3" 0 -900000 -400000 0
+      top_pad: 3 600000 600000 600000 0
+    pin: "4" 0 -900000 -1200000 0
+      top_pad: 3 600000 600000 600000 0
+    pin: "5" 0 900000 -1200000 0
+      top_pad: 3 600000 600000 600000 0
+    pin: "6" 0 900000 -400000 0
+      top_pad: 3 600000 600000 600000 0
+    pin: "7" 0 900000 400000 0
+      top_pad: 3 600000 600000 600000 0
+    pin: "8" 0 900000 1200000 0
+      top_pad: 3 600000 600000 600000 0
+
+name: "RESCAV80P210X400X65-10M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip Array,0.80mm pitch;10 pin,1 pin X 4 pin,2.10mm L X 4.00mm W X 0.65mm H"
+  units: NM
+  sel_rect: -2250000 -3150000 2250000 3150000
+  ref_text: 1270000 0 4150000 0 177800
+  value_text: 1270000 0 -5420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1050000 1958000
+    next_corner: -1050000 2000000 0
+    next_corner: -758000 2000000 0
+  outline_polyline: 177800 1050000 1958000
+    next_corner: 1050000 2000000 0
+    next_corner: 758000 2000000 0
+  outline_polyline: 177800 -1050000 -1958000
+    next_corner: -1050000 -2000000 0
+    next_corner: -758000 -2000000 0
+  outline_polyline: 177800 1050000 -1958000
+    next_corner: 1050000 -2000000 0
+    next_corner: 758000 -2000000 0
+  outline_polyline: 254000 -127000 3158000
+    next_corner: 0 3285000 1
+    next_corner: 127000 3158000 1
+    next_corner: 0 3031000 1
+    close_polyline: 1
+  n_pins: 10
+    pin: "2" 0 -1150000 1200000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "3" 0 -1150000 400000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "4" 0 -1150000 -400000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "5" 0 -1150000 -1200000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "6" 0 0 -2100000 90
+      top_pad: 3 600000 550000 550000 0
+    pin: "7" 0 1150000 -1200000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "8" 0 1150000 -400000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "9" 0 1150000 400000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "10" 0 1150000 1200000 0
+      top_pad: 3 500000 575000 575000 0
+    pin: "1" 0 0 2100000 90
+      top_pad: 3 600000 550000 550000 0
+
+name: "RESCAXE80P150X320X45-8M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip Array,0.80mm pitch;8 pin,1.50mm L X 3.20mm W X 0.45mm H"
+  units: NM
+  sel_rect: -1950000 -2200000 1950000 2200000
+  ref_text: 1270000 0 3200000 0 177800
+  value_text: 1270000 0 -4470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -750000 1875000
+    next_corner: 750000 1875000 0
+  outline_polyline: 177800 -750000 -1875000
+    next_corner: 750000 -1875000 0
+  outline_polyline: 225000 -1537500 1875000
+    next_corner: -1425000 1987500 1
+    next_corner: -1312500 1875000 1
+    next_corner: -1425000 1762500 1
+    close_polyline: 1
+  n_pins: 8
+    pin: "1" 0 -900000 1200000 0
+      top_pad: 3 450000 525000 525000 0
+    pin: "2" 0 -900000 400000 0
+      top_pad: 3 450000 525000 525000 0
+    pin: "3" 0 -900000 -400000 0
+      top_pad: 3 450000 525000 525000 0
+    pin: "4" 0 -900000 -1200000 0
+      top_pad: 3 450000 525000 525000 0
+    pin: "5" 0 900000 -1200000 0
+      top_pad: 3 450000 525000 525000 0
+    pin: "6" 0 900000 -400000 0
+      top_pad: 3 450000 525000 525000 0
+    pin: "7" 0 900000 400000 0
+      top_pad: 3 450000 525000 525000 0
+    pin: "8" 0 900000 1200000 0
+      top_pad: 3 450000 525000 525000 0
+
+name: "RESCAXE80P160X160X60-4M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip Array,0.80mm pitch;4 pin,1.60mm L X 1.60mm W X 0.60mm H"
+  units: NM
+  sel_rect: -1950000 -1400000 1950000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -800000 1254000
+    next_corner: 800000 1254000 0
+  outline_polyline: 177800 -800000 -1254000
+    next_corner: 800000 -1254000 0
+  outline_polyline: 254000 -1577000 1254000
+    next_corner: -1450000 1381000 1
+    next_corner: -1323000 1254000 1
+    next_corner: -1450000 1127000 1
+    close_polyline: 1
+  n_pins: 4
+    pin: "1" 0 -950000 400000 0
+      top_pad: 3 600000 500000 500000 0
+    pin: "2" 0 -950000 -400000 0
+      top_pad: 3 600000 500000 500000 0
+    pin: "3" 0 950000 -400000 0
+      top_pad: 3 600000 500000 500000 0
+    pin: "4" 0 950000 400000 0
+      top_pad: 3 600000 500000 500000 0
+
+name: "RESCAXE80P160X320X70-8M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip Array,0.80mm pitch;8 pin,1.60mm L X 3.20mm W X 0.70mm H"
+  units: NM
+  sel_rect: -2000000 -2200000 2000000 2200000
+  ref_text: 1270000 0 3200000 0 177800
+  value_text: 1270000 0 -4470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -800000 2054000
+    next_corner: 800000 2054000 0
+  outline_polyline: 177800 -800000 -2054000
+    next_corner: 800000 -2054000 0
+  outline_polyline: 254000 -1602000 2054000
+    next_corner: -1475000 2181000 1
+    next_corner: -1348000 2054000 1
+    next_corner: -1475000 1927000 1
+    close_polyline: 1
+  n_pins: 8
+    pin: "1" 0 -950000 1200000 0
+      top_pad: 3 600000 525000 525000 0
+    pin: "2" 0 -950000 400000 0
+      top_pad: 3 600000 525000 525000 0
+    pin: "3" 0 -950000 -400000 0
+      top_pad: 3 600000 525000 525000 0
+    pin: "4" 0 -950000 -1200000 0
+      top_pad: 3 600000 525000 525000 0
+    pin: "5" 0 950000 -1200000 0
+      top_pad: 3 600000 525000 525000 0
+    pin: "6" 0 950000 -400000 0
+      top_pad: 3 600000 525000 525000 0
+    pin: "7" 0 950000 400000 0
+      top_pad: 3 600000 525000 525000 0
+    pin: "8" 0 950000 1200000 0
+      top_pad: 3 600000 525000 525000 0
+
+name: "RESCAXE80P160X325X50-8M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip Array,0.80mm pitch;8 pin,1.60mm L X 3.25mm W X 0.50mm H"
+  units: NM
+  sel_rect: -1950000 -2300000 1950000 2300000
+  ref_text: 1270000 0 3300000 0 177800
+  value_text: 1270000 0 -4570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -800000 2004000
+    next_corner: 800000 2004000 0
+  outline_polyline: 177800 -800000 -2004000
+    next_corner: 800000 -2004000 0
+  outline_polyline: 254000 -1552000 2004000
+    next_corner: -1425000 2131000 1
+    next_corner: -1298000 2004000 1
+    next_corner: -1425000 1877000 1
+    close_polyline: 1
+  n_pins: 8
+    pin: "1" 0 -900000 1200000 0
+      top_pad: 3 550000 525000 525000 0
+    pin: "2" 0 -900000 400000 0
+      top_pad: 3 550000 525000 525000 0
+    pin: "3" 0 -900000 -400000 0
+      top_pad: 3 550000 525000 525000 0
+    pin: "4" 0 -900000 -1200000 0
+      top_pad: 3 550000 525000 525000 0
+    pin: "5" 0 900000 -1200000 0
+      top_pad: 3 550000 525000 525000 0
+    pin: "6" 0 900000 -400000 0
+      top_pad: 3 550000 525000 525000 0
+    pin: "7" 0 900000 400000 0
+      top_pad: 3 550000 525000 525000 0
+    pin: "8" 0 900000 1200000 0
+      top_pad: 3 550000 525000 525000 0
+
+name: "RESCAXS80P150X160X45-4M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip Array,0.80mm pitch;4 pin,1.50mm L X 1.60mm W X 0.45mm H"
+  units: NM
+  sel_rect: -1950000 -1400000 1950000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -750000 1204000
+    next_corner: 750000 1204000 0
+  outline_polyline: 177800 -750000 -1204000
+    next_corner: 750000 -1204000 0
+  outline_polyline: 254000 -1552000 1204000
+    next_corner: -1425000 1331000 1
+    next_corner: -1298000 1204000 1
+    next_corner: -1425000 1077000 1
+    close_polyline: 1
+  n_pins: 4
+    pin: "1" 0 -900000 400000 0
+      top_pad: 3 550000 525000 525000 0
+    pin: "2" 0 -900000 -400000 0
+      top_pad: 3 550000 525000 525000 0
+    pin: "3" 0 900000 -400000 0
+      top_pad: 3 550000 525000 525000 0
+    pin: "4" 0 900000 400000 0
+      top_pad: 3 550000 525000 525000 0
+
+name: "RESCAXS80P150X320X45-8M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip Array,0.80mm pitch;8 pin,1.50mm L X 3.20mm W X 0.45mm H"
+  units: NM
+  sel_rect: -1950000 -2200000 1950000 2200000
+  ref_text: 1270000 0 3200000 0 177800
+  value_text: 1270000 0 -4470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -750000 1875000
+    next_corner: 750000 1875000 0
+  outline_polyline: 177800 -750000 -1875000
+    next_corner: 750000 -1875000 0
+  outline_polyline: 225000 -1537500 1875000
+    next_corner: -1425000 1987500 1
+    next_corner: -1312500 1875000 1
+    next_corner: -1425000 1762500 1
+    close_polyline: 1
+  n_pins: 8
+    pin: "1" 0 -900000 1200000 0
+      top_pad: 3 450000 525000 525000 0
+    pin: "2" 0 -900000 400000 0
+      top_pad: 3 450000 525000 525000 0
+    pin: "3" 0 -900000 -400000 0
+      top_pad: 3 450000 525000 525000 0
+    pin: "4" 0 -900000 -1200000 0
+      top_pad: 3 450000 525000 525000 0
+    pin: "5" 0 900000 -1200000 0
+      top_pad: 3 450000 525000 525000 0
+    pin: "6" 0 900000 -400000 0
+      top_pad: 3 450000 525000 525000 0
+    pin: "7" 0 900000 400000 0
+      top_pad: 3 450000 525000 525000 0
+    pin: "8" 0 900000 1200000 0
+      top_pad: 3 450000 525000 525000 0
+
+name: "RESCAXS80P160X320X60-8M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip Array,0.80mm pitch;8 pin,1.60mm L X 3.20mm W X 0.60mm H"
+  units: NM
+  sel_rect: -1950000 -2200000 1950000 2200000
+  ref_text: 1270000 0 3200000 0 177800
+  value_text: 1270000 0 -4470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -800000 2004000
+    next_corner: 800000 2004000 0
+  outline_polyline: 177800 -800000 -2004000
+    next_corner: 800000 -2004000 0
+  outline_polyline: 254000 -1577000 2004000
+    next_corner: -1450000 2131000 1
+    next_corner: -1323000 2004000 1
+    next_corner: -1450000 1877000 1
+    close_polyline: 1
+  n_pins: 8
+    pin: "1" 0 -900000 1200000 0
+      top_pad: 3 550000 550000 550000 0
+    pin: "2" 0 -900000 400000 0
+      top_pad: 3 550000 550000 550000 0
+    pin: "3" 0 -900000 -400000 0
+      top_pad: 3 550000 550000 550000 0
+    pin: "4" 0 -900000 -1200000 0
+      top_pad: 3 550000 550000 550000 0
+    pin: "5" 0 900000 -1200000 0
+      top_pad: 3 550000 550000 550000 0
+    pin: "6" 0 900000 -400000 0
+      top_pad: 3 550000 550000 550000 0
+    pin: "7" 0 900000 400000 0
+      top_pad: 3 550000 550000 550000 0
+    pin: "8" 0 900000 1200000 0
+      top_pad: 3 550000 550000 550000 0
+
