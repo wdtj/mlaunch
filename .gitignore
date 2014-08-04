@@ -11,3 +11,5 @@
 [Dd]ebug/
 [Rr]elease/
 *.autosave
+*.fpc.bak
+[Aa]utosave/
