@@ -1,0 +1,208 @@
+name: "CAPCWR3413X165M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,wire-rect.,Chip;3.43mm L X 1.27mm W X 1.65mm H"
+  units: NM
+  sel_rect: -2950000 -1400000 2950000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -496000 -621000
+    next_corner: 496000 -621000 0
+    close_polyline: 0
+  outline_polyline: 177800 -496000 621000
+    next_corner: 496000 621000 0
+    close_polyline: 0
+  outline_polyline: 254000 -3085000 0
+    next_corner: -2958000 127000 1
+    next_corner: -2831000 0 1
+    next_corner: -2958000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1750000 850000 850000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1750000 850000 850000 0
+
+name: "CAPCWR3813X165M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,wire-rect.,Chip;3.81mm L X 1.27mm W X 1.65mm H"
+  units: NM
+  sel_rect: -3200000 -1400000 3200000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -621000
+    next_corner: 671000 -621000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 621000
+    next_corner: 671000 621000 0
+    close_polyline: 0
+  outline_polyline: 254000 -3310000 0
+    next_corner: -3183000 127000 1
+    next_corner: -3056000 0 1
+    next_corner: -3183000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1800000 0 0
+      top_pad: 3 1750000 875000 875000 0
+    pin: "2" 0 1800000 0 0
+      top_pad: 3 1750000 875000 875000 0
+
+name: "CAPCWR3825X165M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,wire-rect.,Chip;3.81mm L X 2.54mm W X 1.65mm H"
+  units: NM
+  sel_rect: -3200000 -2050000 3200000 2050000
+  ref_text: 1270000 0 3050000 0 177800
+  value_text: 1270000 0 -4320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1271000
+    next_corner: 671000 -1271000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1271000
+    next_corner: 671000 1271000 0
+    close_polyline: 0
+  outline_polyline: 254000 -3310000 0
+    next_corner: -3183000 127000 1
+    next_corner: -3056000 0 1
+    next_corner: -3183000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1800000 0 0
+      top_pad: 3 3050000 875000 875000 0
+    pin: "2" 0 1800000 0 0
+      top_pad: 3 3050000 875000 875000 0
+
+name: "CAPCWR5113X165M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,wire-rect.,Chip;5.08mm L X 1.27mm W X 1.65mm H"
+  units: NM
+  sel_rect: -3800000 -1400000 3800000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1346000 -621000
+    next_corner: 1346000 -621000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1346000 621000
+    next_corner: 1346000 621000 0
+    close_polyline: 0
+  outline_polyline: 254000 -3935000 0
+    next_corner: -3808000 127000 1
+    next_corner: -3681000 0 1
+    next_corner: -3808000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -2450000 0 0
+      top_pad: 3 1750000 850000 850000 0
+    pin: "2" 0 2450000 0 0
+      top_pad: 3 1750000 850000 850000 0
+
+name: "CAPCWR5125X165M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,wire-rect.,Chip;5.08mm L X 2.54mm W X 1.65mm H"
+  units: NM
+  sel_rect: -3800000 -2050000 3800000 2050000
+  ref_text: 1270000 0 3050000 0 177800
+  value_text: 1270000 0 -4320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1346000 -1271000
+    next_corner: 1346000 -1271000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1346000 1271000
+    next_corner: 1346000 1271000 0
+    close_polyline: 0
+  outline_polyline: 254000 -3935000 0
+    next_corner: -3808000 127000 1
+    next_corner: -3681000 0 1
+    next_corner: -3808000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -2450000 0 0
+      top_pad: 3 3050000 850000 850000 0
+    pin: "2" 0 2450000 0 0
+      top_pad: 3 3050000 850000 850000 0
+
+name: "CAPCWR5634X216M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,wire-rect.,Chip;5.59mm L X 3.43mm W X 2.16mm H"
+  units: NM
+  sel_rect: -4050000 -2450000 4050000 2450000
+  ref_text: 1270000 0 3450000 0 177800
+  value_text: 1270000 0 -4720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1596000 -1696000
+    next_corner: 1596000 -1696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1596000 1696000
+    next_corner: 1596000 1696000 0
+    close_polyline: 0
+  outline_polyline: 254000 -4185000 0
+    next_corner: -4058000 127000 1
+    next_corner: -3931000 0 1
+    next_corner: -4058000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -2700000 0 0
+      top_pad: 3 3900000 850000 850000 0
+    pin: "2" 0 2700000 0 0
+      top_pad: 3 3900000 850000 850000 0
+
+name: "CAPCWR6729X317M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,wire-rect.,Chip;6.73mm L X 2.86mm W X 3.17mm H"
+  units: NM
+  sel_rect: -4650000 -2150000 4650000 2150000
+  ref_text: 1270000 0 3150000 0 177800
+  value_text: 1270000 0 -4420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1621000 -1396000
+    next_corner: 1621000 -1396000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1621000 1396000
+    next_corner: 1621000 1396000 0
+    close_polyline: 0
+  outline_polyline: 254000 -4760000 0
+    next_corner: -4633000 127000 1
+    next_corner: -4506000 0 1
+    next_corner: -4633000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -3000000 0 0
+      top_pad: 3 3300000 1125000 1125000 0
+    pin: "2" 0 3000000 0 0
+      top_pad: 3 3300000 1125000 1125000 0
+
+name: "CAPCWR7238X317M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,wire-rect.,Chip;7.24mm L X 3.81mm W X 3.17mm H"
+  units: NM
+  sel_rect: -4900000 -2650000 4900000 2650000
+  ref_text: 1270000 0 3650000 0 177800
+  value_text: 1270000 0 -4920000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1871000 -1896000
+    next_corner: 1871000 -1896000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1871000 1896000
+    next_corner: 1871000 1896000 0
+    close_polyline: 0
+  outline_polyline: 254000 -5010000 0
+    next_corner: -4883000 127000 1
+    next_corner: -4756000 0 1
+    next_corner: -4883000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -3250000 0 0
+      top_pad: 3 4300000 1125000 1125000 0
+    pin: "2" 0 3250000 0 0
+      top_pad: 3 4300000 1125000 1125000 0
+

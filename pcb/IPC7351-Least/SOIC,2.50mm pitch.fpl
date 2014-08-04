@@ -1,0 +1,34 @@
+name: "SOIC250P670X300-4L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "SOIC,2.50mm pitch;4 pin,4.20mm W X 4.20mm L X 3.00mm H body"
+  units: NM
+  sel_rect: -3750000 -2200000 3750000 2200000
+  ref_text: 1270000 0 3200000 0 177800
+  value_text: 1270000 0 -4470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 1467000 2100000
+    next_corner: -1467000 2100000 0
+    next_corner: -1467000 -2100000 0
+    next_corner: 1467000 -2100000 0
+    close_polyline: 0
+  outline_polyline: 254000 -3498000 2354000
+    next_corner: -3371000 2481000 1
+    next_corner: -3244000 2354000 1
+    next_corner: -3371000 2227000 1
+    close_polyline: 1
+  outline_polyline: 177800 -1340000 1592000
+    next_corner: -959000 1973000 1
+    next_corner: -578000 1592000 1
+    next_corner: -959000 1211000 1
+    close_polyline: 1
+  n_pins: 4
+    pin: "1" 0 -2800000 1250000 0
+      top_pad: 4 850000 825000 825000 425000
+    pin: "2" 0 -2800000 -1250000 0
+      top_pad: 4 850000 825000 825000 425000
+    pin: "3" 0 2800000 -1250000 0
+      top_pad: 4 850000 825000 825000 425000
+    pin: "4" 0 2800000 1250000 0
+      top_pad: 4 850000 825000 825000 425000
+

@@ -1,0 +1,92 @@
+name: "RESM10857X619L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Molded Body;10.85mm L X 5.74mm W X 6.19mm H"
+  units: NM
+  sel_rect: -5950000 -3200000 5950000 3200000
+  ref_text: 1270000 0 4200000 0 177800
+  value_text: 1270000 0 -5470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -5552000 1231000
+    next_corner: -5552000 2997000 0
+    next_corner: 5552000 2997000 0
+    next_corner: 5552000 1231000 0
+  outline_polyline: 177800 -5552000 -1231000
+    next_corner: -5552000 -2997000 0
+    next_corner: 5552000 -2997000 0
+    next_corner: 5552000 -1231000 0
+  n_pins: 2
+    pin: "1" 0 -4600000 0 0
+      top_pad: 3 1700000 1225000 1225000 0
+    pin: "2" 0 4600000 0 0
+      top_pad: 3 1700000 1225000 1225000 0
+
+name: "RESM20869X741L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Molded Body;20.80mm L X 6.93mm W X 7.41mm H"
+  units: NM
+  sel_rect: -10900000 -3800000 10900000 3800000
+  ref_text: 1270000 0 4800000 0 177800
+  value_text: 1270000 0 -6070000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -10527000 1231000
+    next_corner: -10527000 3592000 0
+    next_corner: 10527000 3592000 0
+    next_corner: 10527000 1231000 0
+  outline_polyline: 177800 -10527000 -1231000
+    next_corner: -10527000 -3592000 0
+    next_corner: 10527000 -3592000 0
+    next_corner: 10527000 -1231000 0
+  n_pins: 2
+    pin: "1" 0 -9450000 0 0
+      top_pad: 3 1700000 1350000 1350000 0
+    pin: "2" 0 9450000 0 0
+      top_pad: 3 1700000 1350000 1350000 0
+
+name: "RESM6234X393L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Molded Body;6.19mm L X 3.45mm W X 3.93mm H"
+  units: NM
+  sel_rect: -3600000 -2050000 3600000 2050000
+  ref_text: 1270000 0 3050000 0 177800
+  value_text: 1270000 0 -4320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -3222000 1306000
+    next_corner: -3222000 1852000 0
+    next_corner: 3222000 1852000 0
+    next_corner: 3222000 1306000 0
+  outline_polyline: 177800 -3222000 -1306000
+    next_corner: -3222000 -1852000 0
+    next_corner: 3222000 -1852000 0
+    next_corner: 3222000 -1306000 0
+  n_pins: 2
+    pin: "1" 0 -2650000 0 0
+      top_pad: 3 1850000 850000 850000 0
+    pin: "2" 0 2650000 0 0
+      top_pad: 3 1850000 850000 850000 0
+
+name: "RESM9940X449L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Molded Body;9.95mm L X 4.03mm W X 4.49mm H"
+  units: NM
+  sel_rect: -5500000 -2350000 5500000 2350000
+  ref_text: 1270000 0 3350000 0 177800
+  value_text: 1270000 0 -4620000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -5102000 1231000
+    next_corner: -5102000 2142000 0
+    next_corner: 5102000 2142000 0
+    next_corner: 5102000 1231000 0
+  outline_polyline: 177800 -5102000 -1231000
+    next_corner: -5102000 -2142000 0
+    next_corner: 5102000 -2142000 0
+    next_corner: 5102000 -1231000 0
+  n_pins: 2
+    pin: "1" 0 -4150000 0 0
+      top_pad: 3 1700000 1225000 1225000 0
+    pin: "2" 0 4150000 0 0
+      top_pad: 3 1700000 1225000 1225000 0
+

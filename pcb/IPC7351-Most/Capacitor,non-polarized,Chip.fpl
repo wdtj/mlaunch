@@ -1,0 +1,2712 @@
+name: "CAPC0603X33M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;0.60mm L X 0.30mm W X 0.33mm H"
+  units: NM
+  sel_rect: -900000 -450000 900000 450000
+  ref_text: 1270000 0 1450000 0 177800
+  value_text: 1270000 0 -2720000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -400000 0 0
+      top_pad: 3 500000 275000 275000 0
+    pin: "2" 0 400000 0 0
+      top_pad: 3 500000 275000 275000 0
+
+name: "CAPC0816X61M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;0.81mm L X 1.60mm W X 0.61mm H"
+  units: NM
+  sel_rect: -1000000 -1150000 1000000 1150000
+  ref_text: 1270000 0 2150000 0 177800
+  value_text: 1270000 0 -3420000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -450000 0 0
+      top_pad: 3 1900000 350000 350000 0
+    pin: "2" 0 450000 0 0
+      top_pad: 3 1900000 350000 350000 0
+
+name: "CAPC1005X55M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;1.00mm L X 0.50mm W X 0.55mm H"
+  units: NM
+  sel_rect: -1100000 -550000 1100000 550000
+  ref_text: 1270000 0 1550000 0 177800
+  value_text: 1270000 0 -2820000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -500000 0 0
+      top_pad: 3 700000 375000 375000 0
+    pin: "2" 0 500000 0 0
+      top_pad: 3 700000 375000 375000 0
+
+name: "CAPC1005X56M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;1.00mm L X 0.50mm W X 0.56mm H"
+  units: NM
+  sel_rect: -1100000 -600000 1100000 600000
+  ref_text: 1270000 0 1600000 0 177800
+  value_text: 1270000 0 -2870000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -500000 0 0
+      top_pad: 3 750000 375000 375000 0
+    pin: "2" 0 500000 0 0
+      top_pad: 3 750000 375000 375000 0
+
+name: "CAPC1005X60M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;1.03mm L X 0.53mm W X 0.60mm H"
+  units: NM
+  sel_rect: -1100000 -600000 1100000 600000
+  ref_text: 1270000 0 1600000 0 177800
+  value_text: 1270000 0 -2870000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -500000 0 0
+      top_pad: 3 750000 375000 375000 0
+    pin: "2" 0 500000 0 0
+      top_pad: 3 750000 375000 375000 0
+
+name: "CAPC1220X107M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;1.25mm L X 2.00mm W X 1.07mm H"
+  units: NM
+  sel_rect: -1250000 -1350000 1250000 1350000
+  ref_text: 1270000 0 2350000 0 177800
+  value_text: 1270000 0 -3620000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -600000 0 0
+      top_pad: 3 2300000 425000 425000 0
+    pin: "2" 0 600000 0 0
+      top_pad: 3 2300000 425000 425000 0
+
+name: "CAPC1320X76M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;1.27mm L X 2.00mm W X 0.76mm H"
+  units: NM
+  sel_rect: -1300000 -1400000 1300000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -600000 0 0
+      top_pad: 3 2350000 475000 475000 0
+    pin: "2" 0 600000 0 0
+      top_pad: 3 2350000 475000 475000 0
+
+name: "CAPC1508X65M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;1.52mm L X 0.80mm W X 0.65mm H"
+  units: NM
+  sel_rect: -1400000 -750000 1400000 750000
+  ref_text: 1270000 0 1750000 0 177800
+  value_text: 1270000 0 -3020000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -650000 0 0
+      top_pad: 3 1100000 525000 525000 0
+    pin: "2" 0 650000 0 0
+      top_pad: 3 1100000 525000 525000 0
+
+name: "CAPC1608X55M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;1.60mm L X 0.80mm W X 0.55mm H"
+  units: NM
+  sel_rect: -1900000 -1050000 1900000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -46000 -271000
+    next_corner: 46000 -271000 0
+    close_polyline: 0
+  outline_polyline: 177800 -46000 271000
+    next_corner: 46000 271000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -850000 0 0
+      top_pad: 3 1050000 550000 550000 0
+    pin: "2" 0 850000 0 0
+      top_pad: 3 1050000 550000 550000 0
+
+name: "CAPC1608X86M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;1.60mm L X 0.81mm W X 0.86mm H"
+  units: NM
+  sel_rect: -2000000 -1050000 2000000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -296000
+    next_corner: 71000 -296000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 296000
+    next_corner: 71000 296000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -900000 0 0
+      top_pad: 3 1100000 575000 575000 0
+    pin: "2" 0 900000 0 0
+      top_pad: 3 1100000 575000 575000 0
+
+name: "CAPC1608X87M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;1.60mm L X 0.80mm W X 0.87mm H"
+  units: NM
+  sel_rect: -2000000 -1050000 2000000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -296000
+    next_corner: 71000 -296000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 296000
+    next_corner: 71000 296000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -900000 0 0
+      top_pad: 3 1100000 575000 575000 0
+    pin: "2" 0 900000 0 0
+      top_pad: 3 1100000 575000 575000 0
+
+name: "CAPC1608X90M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;1.60mm L X 0.80mm W X 0.90mm H"
+  units: NM
+  sel_rect: -2000000 -1050000 2000000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -296000
+    next_corner: 71000 -296000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 296000
+    next_corner: 71000 296000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -900000 0 0
+      top_pad: 3 1100000 575000 575000 0
+    pin: "2" 0 900000 0 0
+      top_pad: 3 1100000 575000 575000 0
+
+name: "CAPC1608X92M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;1.60mm L X 0.80mm W X 0.92mm H"
+  units: NM
+  sel_rect: -1950000 -1050000 1950000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -96000 -271000
+    next_corner: 96000 -271000 0
+    close_polyline: 0
+  outline_polyline: 177800 -96000 271000
+    next_corner: 96000 271000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -900000 0 0
+      top_pad: 3 1050000 550000 550000 0
+    pin: "2" 0 900000 0 0
+      top_pad: 3 1050000 550000 550000 0
+
+name: "CAPC1608X95M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;1.60mm L X 0.80mm W X 0.95mm H"
+  units: NM
+  sel_rect: -2000000 -1050000 2000000 1050000
+  ref_text: 1270000 0 2050000 0 177800
+  value_text: 1270000 0 -3320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -296000
+    next_corner: 71000 -296000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 296000
+    next_corner: 71000 296000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -900000 0 0
+      top_pad: 3 1100000 575000 575000 0
+    pin: "2" 0 900000 0 0
+      top_pad: 3 1100000 575000 575000 0
+
+name: "CAPC1632X168M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;1.60mm L X 3.20mm W X 1.68mm H"
+  units: NM
+  sel_rect: -2000000 -2250000 2000000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -1496000
+    next_corner: 71000 -1496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 1496000
+    next_corner: 71000 1496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -900000 0 0
+      top_pad: 3 3500000 575000 575000 0
+    pin: "2" 0 900000 0 0
+      top_pad: 3 3500000 575000 575000 0
+
+name: "CAPC1632X76M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;1.60mm L X 3.20mm W X 0.76mm H"
+  units: NM
+  sel_rect: -2000000 -2300000 2000000 2300000
+  ref_text: 1270000 0 3300000 0 177800
+  value_text: 1270000 0 -4570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -1521000
+    next_corner: 71000 -1521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 1521000
+    next_corner: 71000 1521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -900000 0 0
+      top_pad: 3 3550000 575000 575000 0
+    pin: "2" 0 900000 0 0
+      top_pad: 3 3550000 575000 575000 0
+
+name: "CAPC2012X100AM"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.00mm L X 1.20mm W X 1.00mm H"
+  units: NM
+  sel_rect: -2200000 -1250000 2200000 1250000
+  ref_text: 1270000 0 2250000 0 177800
+  value_text: 1270000 0 -3520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -496000
+    next_corner: 71000 -496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 496000
+    next_corner: 71000 496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1500000 675000 675000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1500000 675000 675000 0
+
+name: "CAPC2012X100M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.00mm L X 1.25mm W X 1.00mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -521000
+    next_corner: 71000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 521000
+    next_corner: 71000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+
+name: "CAPC2012X120M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.00mm L X 1.25mm W X 1.20mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -521000
+    next_corner: 71000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 521000
+    next_corner: 71000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+
+name: "CAPC2012X127M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.01mm L X 1.25mm W X 1.27mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -521000
+    next_corner: 71000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 521000
+    next_corner: 71000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+
+name: "CAPC2012X130M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.00mm L X 1.25mm W X 1.30mm H"
+  units: NM
+  sel_rect: -2250000 -1400000 2250000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1750000 750000 750000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1750000 750000 750000 0
+
+name: "CAPC2012X135M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.00mm L X 1.25mm W X 1.35mm H"
+  units: NM
+  sel_rect: -2150000 -1250000 2150000 1250000
+  ref_text: 1270000 0 2250000 0 177800
+  value_text: 1270000 0 -3520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -121000 -496000
+    next_corner: 121000 -496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -121000 496000
+    next_corner: 121000 496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1500000 625000 625000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1500000 625000 625000 0
+
+name: "CAPC2012X140M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.00mm L X 1.25mm W X 1.40mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -521000
+    next_corner: 71000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 521000
+    next_corner: 71000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+
+name: "CAPC2012X145AM"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.00mm L X 1.25mm W X 1.45mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -521000
+    next_corner: 71000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 521000
+    next_corner: 71000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+
+name: "CAPC2012X145M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.00mm L X 1.25mm W X 1.45mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -521000
+    next_corner: 71000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 521000
+    next_corner: 71000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+
+name: "CAPC2012X70M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.00mm L X 1.25mm W X 0.70mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -521000
+    next_corner: 71000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 521000
+    next_corner: 71000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+
+name: "CAPC2012X71M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.01mm L X 1.25mm W X 0.71mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -521000
+    next_corner: 71000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 521000
+    next_corner: 71000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+
+name: "CAPC2012X88M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.00mm L X 1.25mm W X 0.88mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -521000
+    next_corner: 71000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 521000
+    next_corner: 71000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+
+name: "CAPC2012X90M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.00mm L X 1.25mm W X 0.90mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -521000
+    next_corner: 71000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 521000
+    next_corner: 71000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+
+name: "CAPC2012X94M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.01mm L X 1.25mm W X 0.94mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -521000
+    next_corner: 71000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 521000
+    next_corner: 71000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+
+name: "CAPC2012X95M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.00mm L X 1.25mm W X 0.95mm H"
+  units: NM
+  sel_rect: -2200000 -1300000 2200000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -521000
+    next_corner: 71000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 521000
+    next_corner: 71000 521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1550000 675000 675000 0
+
+name: "CAPC2013X140M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;2.00mm L X 1.27mm W X 1.40mm H"
+  units: NM
+  sel_rect: -2250000 -1400000 2250000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -1000000 0 0
+      top_pad: 3 1750000 750000 750000 0
+    pin: "2" 0 1000000 0 0
+      top_pad: 3 1750000 750000 750000 0
+
+name: "CAPC3215X168M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.50mm W X 1.68mm H"
+  units: NM
+  sel_rect: -2800000 -1400000 2800000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -621000
+    next_corner: 671000 -621000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 621000
+    next_corner: 671000 621000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1750000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1750000 675000 675000 0
+
+name: "CAPC3216X105M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 1.05mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -696000
+    next_corner: 671000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 696000
+    next_corner: 671000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "CAPC3216X125M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 1.25mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -696000
+    next_corner: 671000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 696000
+    next_corner: 671000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "CAPC3216X127M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 1.27mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -696000
+    next_corner: 671000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 696000
+    next_corner: 671000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "CAPC3216X130AM"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 1.30mm H"
+  units: NM
+  sel_rect: -2850000 -1550000 2850000 1550000
+  ref_text: 1270000 0 2550000 0 177800
+  value_text: 1270000 0 -3820000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -596000 -796000
+    next_corner: 596000 -796000 0
+    close_polyline: 0
+  outline_polyline: 177800 -596000 796000
+    next_corner: 596000 796000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2100000 750000 750000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2100000 750000 750000 0
+
+name: "CAPC3216X130M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 1.30mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -696000
+    next_corner: 671000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 696000
+    next_corner: 671000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "CAPC3216X140M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 1.40mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -696000
+    next_corner: 671000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 696000
+    next_corner: 671000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "CAPC3216X152M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 1.52mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -696000
+    next_corner: 671000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 696000
+    next_corner: 671000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "CAPC3216X175M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 1.75mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -696000
+    next_corner: 671000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 696000
+    next_corner: 671000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "CAPC3216X178M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 1.78mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -696000
+    next_corner: 671000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 696000
+    next_corner: 671000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "CAPC3216X180M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 1.80mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -696000
+    next_corner: 671000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 696000
+    next_corner: 671000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "CAPC3216X190M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 1.90mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -696000
+    next_corner: 671000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 696000
+    next_corner: 671000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "CAPC3216X70M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 0.70mm H"
+  units: NM
+  sel_rect: -2750000 -1450000 2750000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -596000 -696000
+    next_corner: 596000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -596000 696000
+    next_corner: 596000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1550000 0 0
+      top_pad: 3 1900000 700000 700000 0
+    pin: "2" 0 1550000 0 0
+      top_pad: 3 1900000 700000 700000 0
+
+name: "CAPC3216X90M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 0.90mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -696000
+    next_corner: 671000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 696000
+    next_corner: 671000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "CAPC3216X94M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 0.94mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -696000
+    next_corner: 671000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 696000
+    next_corner: 671000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "CAPC3216X95M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 1.60mm W X 0.95mm H"
+  units: NM
+  sel_rect: -2800000 -1450000 2800000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -696000
+    next_corner: 671000 -696000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 696000
+    next_corner: 671000 696000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 1900000 675000 675000 0
+
+name: "CAPC3225X100M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.00mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X105M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.05mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X110M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.10mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X120M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.20mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X127M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.27mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X130M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.30mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X140M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.40mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X150M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.50mm H"
+  units: NM
+  sel_rect: -2850000 -2050000 2850000 2050000
+  ref_text: 1270000 0 3050000 0 177800
+  value_text: 1270000 0 -4320000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -596000 -1271000
+    next_corner: 596000 -1271000 0
+    close_polyline: 0
+  outline_polyline: 177800 -596000 1271000
+    next_corner: 596000 1271000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 3050000 750000 750000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 3050000 750000 750000 0
+
+name: "CAPC3225X152M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.52mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X155M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.55mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X160M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.60mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X168M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.68mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X178M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.78mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X180M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.80mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X190M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 1.90mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X200M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 2.00mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -471000 -1146000
+    next_corner: 471000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -471000 1146000
+    next_corner: 471000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1500000 0 0
+      top_pad: 3 2800000 775000 775000 0
+    pin: "2" 0 1500000 0 0
+      top_pad: 3 2800000 775000 775000 0
+
+name: "CAPC3225X205M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 2.05mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X220M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 2.20mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -471000 -1146000
+    next_corner: 471000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -471000 1146000
+    next_corner: 471000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1500000 0 0
+      top_pad: 3 2800000 775000 775000 0
+    pin: "2" 0 1500000 0 0
+      top_pad: 3 2800000 775000 775000 0
+
+name: "CAPC3225X229M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 2.29mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X230M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 2.30mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X245M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 2.45mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X270M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 2.70mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X279M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 2.79mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X88M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 0.88mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3225X94M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.20mm L X 2.50mm W X 0.94mm H"
+  units: NM
+  sel_rect: -2800000 -1900000 2800000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1146000
+    next_corner: 671000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1146000
+    next_corner: 671000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 2800000 675000 675000 0
+
+name: "CAPC3813X130M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;3.80mm L X 1.30mm W X 1.30mm H"
+  units: NM
+  sel_rect: -3100000 -1300000 3100000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -971000 -546000
+    next_corner: 971000 -546000 0
+    close_polyline: 0
+  outline_polyline: 177800 -971000 546000
+    next_corner: 971000 546000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1900000 0 0
+      top_pad: 3 1600000 675000 675000 0
+    pin: "2" 0 1900000 0 0
+      top_pad: 3 1600000 675000 675000 0
+
+name: "CAPC4520X130M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 2.00mm W X 1.30mm H"
+  units: NM
+  sel_rect: -3400000 -1700000 3400000 1700000
+  ref_text: 1270000 0 2700000 0 177800
+  value_text: 1270000 0 -3970000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1046000 -921000
+    next_corner: 1046000 -921000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1046000 921000
+    next_corner: 1046000 921000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2100000 0 0
+      top_pad: 3 2350000 800000 800000 0
+    pin: "2" 0 2100000 0 0
+      top_pad: 3 2350000 800000 800000 0
+
+name: "CAPC4520X168M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 2.03mm W X 1.68mm H"
+  units: NM
+  sel_rect: -3450000 -1700000 3450000 1700000
+  ref_text: 1270000 0 2700000 0 177800
+  value_text: 1270000 0 -3970000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1296000 -946000
+    next_corner: 1296000 -946000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1296000 946000
+    next_corner: 1296000 946000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2250000 0 0
+      top_pad: 3 2400000 700000 700000 0
+    pin: "2" 0 2250000 0 0
+      top_pad: 3 2400000 700000 700000 0
+
+name: "CAPC4532X102M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 1.02mm H"
+  units: NM
+  sel_rect: -3450000 -2250000 3450000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1496000
+    next_corner: 1096000 -1496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1496000
+    next_corner: 1096000 1496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3500000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3500000 800000 800000 0
+
+name: "CAPC4532X110M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 1.10mm H"
+  units: NM
+  sel_rect: -3450000 -2300000 3450000 2300000
+  ref_text: 1270000 0 3300000 0 177800
+  value_text: 1270000 0 -4570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1546000
+    next_corner: 1096000 -1546000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1546000
+    next_corner: 1096000 1546000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+
+name: "CAPC4532X120M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 1.20mm H"
+  units: NM
+  sel_rect: -3450000 -2300000 3450000 2300000
+  ref_text: 1270000 0 3300000 0 177800
+  value_text: 1270000 0 -4570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1546000
+    next_corner: 1096000 -1546000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1546000
+    next_corner: 1096000 1546000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+
+name: "CAPC4532X127M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 1.27mm H"
+  units: NM
+  sel_rect: -3450000 -2250000 3450000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1496000
+    next_corner: 1096000 -1496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1496000
+    next_corner: 1096000 1496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3500000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3500000 800000 800000 0
+
+name: "CAPC4532X140M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 1.40mm H"
+  units: NM
+  sel_rect: -3450000 -2300000 3450000 2300000
+  ref_text: 1270000 0 3300000 0 177800
+  value_text: 1270000 0 -4570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1546000
+    next_corner: 1096000 -1546000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1546000
+    next_corner: 1096000 1546000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+
+name: "CAPC4532X150M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 1.50mm H"
+  units: NM
+  sel_rect: -3500000 -2350000 3500000 2350000
+  ref_text: 1270000 0 3350000 0 177800
+  value_text: 1270000 0 -4620000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1246000 -1596000
+    next_corner: 1246000 -1596000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1246000 1596000
+    next_corner: 1246000 1596000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2250000 0 0
+      top_pad: 3 3700000 750000 750000 0
+    pin: "2" 0 2250000 0 0
+      top_pad: 3 3700000 750000 750000 0
+
+name: "CAPC4532X152M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 1.52mm H"
+  units: NM
+  sel_rect: -3450000 -2250000 3450000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1496000
+    next_corner: 1096000 -1496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1496000
+    next_corner: 1096000 1496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3500000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3500000 800000 800000 0
+
+name: "CAPC4532X155M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 1.55mm H"
+  units: NM
+  sel_rect: -3450000 -2300000 3450000 2300000
+  ref_text: 1270000 0 3300000 0 177800
+  value_text: 1270000 0 -4570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1546000
+    next_corner: 1096000 -1546000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1546000
+    next_corner: 1096000 1546000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+
+name: "CAPC4532X160M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 1.60mm H"
+  units: NM
+  sel_rect: -3450000 -2300000 3450000 2300000
+  ref_text: 1270000 0 3300000 0 177800
+  value_text: 1270000 0 -4570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1546000
+    next_corner: 1096000 -1546000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1546000
+    next_corner: 1096000 1546000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+
+name: "CAPC4532X165M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 1.65mm H"
+  units: NM
+  sel_rect: -3450000 -2300000 3450000 2300000
+  ref_text: 1270000 0 3300000 0 177800
+  value_text: 1270000 0 -4570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1546000
+    next_corner: 1096000 -1546000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1546000
+    next_corner: 1096000 1546000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+
+name: "CAPC4532X178M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 1.78mm H"
+  units: NM
+  sel_rect: -3450000 -2250000 3450000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1496000
+    next_corner: 1096000 -1496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1496000
+    next_corner: 1096000 1496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3500000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3500000 800000 800000 0
+
+name: "CAPC4532X180M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 1.80mm H"
+  units: NM
+  sel_rect: -3450000 -2300000 3450000 2300000
+  ref_text: 1270000 0 3300000 0 177800
+  value_text: 1270000 0 -4570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1546000
+    next_corner: 1096000 -1546000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1546000
+    next_corner: 1096000 1546000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+
+name: "CAPC4532X185M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 1.85mm H"
+  units: NM
+  sel_rect: -3450000 -2300000 3450000 2300000
+  ref_text: 1270000 0 3300000 0 177800
+  value_text: 1270000 0 -4570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1546000
+    next_corner: 1096000 -1546000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1546000
+    next_corner: 1096000 1546000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+
+name: "CAPC4532X190M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 1.90mm H"
+  units: NM
+  sel_rect: -3450000 -2300000 3450000 2300000
+  ref_text: 1270000 0 3300000 0 177800
+  value_text: 1270000 0 -4570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1546000
+    next_corner: 1096000 -1546000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1546000
+    next_corner: 1096000 1546000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+
+name: "CAPC4532X200M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 2.00mm H"
+  units: NM
+  sel_rect: -3550000 -2250000 3550000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1021000 -1496000
+    next_corner: 1021000 -1496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1021000 1496000
+    next_corner: 1021000 1496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3500000 875000 875000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3500000 875000 875000 0
+
+name: "CAPC4532X210M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 2.10mm H"
+  units: NM
+  sel_rect: -3450000 -2300000 3450000 2300000
+  ref_text: 1270000 0 3300000 0 177800
+  value_text: 1270000 0 -4570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1546000
+    next_corner: 1096000 -1546000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1546000
+    next_corner: 1096000 1546000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+
+name: "CAPC4532X218M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 2.18mm H"
+  units: NM
+  sel_rect: -3450000 -2250000 3450000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1296000 -1496000
+    next_corner: 1296000 -1496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1296000 1496000
+    next_corner: 1296000 1496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2250000 0 0
+      top_pad: 3 3500000 700000 700000 0
+    pin: "2" 0 2250000 0 0
+      top_pad: 3 3500000 700000 700000 0
+
+name: "CAPC4532X220M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 2.20mm H"
+  units: NM
+  sel_rect: -3450000 -2300000 3450000 2300000
+  ref_text: 1270000 0 3300000 0 177800
+  value_text: 1270000 0 -4570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1546000
+    next_corner: 1096000 -1546000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1546000
+    next_corner: 1096000 1546000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3600000 800000 800000 0
+
+name: "CAPC4532X270M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 2.70mm H"
+  units: NM
+  sel_rect: -3550000 -2250000 3550000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1021000 -1496000
+    next_corner: 1021000 -1496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1021000 1496000
+    next_corner: 1021000 1496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3500000 875000 875000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3500000 875000 875000 0
+
+name: "CAPC4532X279M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 3.20mm W X 2.79mm H"
+  units: NM
+  sel_rect: -3450000 -2250000 3450000 2250000
+  ref_text: 1270000 0 3250000 0 177800
+  value_text: 1270000 0 -4520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1496000
+    next_corner: 1096000 -1496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1496000
+    next_corner: 1096000 1496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 3500000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 3500000 800000 800000 0
+
+name: "CAPC4564X125M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 6.40mm W X 1.25mm H"
+  units: NM
+  sel_rect: -3450000 -3950000 3450000 3950000
+  ref_text: 1270000 0 4950000 0 177800
+  value_text: 1270000 0 -6220000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -3196000
+    next_corner: 1096000 -3196000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 3196000
+    next_corner: 1096000 3196000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 6900000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 6900000 800000 800000 0
+
+name: "CAPC4564X127M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 6.40mm W X 1.27mm H"
+  units: NM
+  sel_rect: -3450000 -3950000 3450000 3950000
+  ref_text: 1270000 0 4950000 0 177800
+  value_text: 1270000 0 -6220000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -3196000
+    next_corner: 1096000 -3196000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 3196000
+    next_corner: 1096000 3196000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 6900000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 6900000 800000 800000 0
+
+name: "CAPC4564X130M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 6.40mm W X 1.30mm H"
+  units: NM
+  sel_rect: -3450000 -3950000 3450000 3950000
+  ref_text: 1270000 0 4950000 0 177800
+  value_text: 1270000 0 -6220000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -3196000
+    next_corner: 1096000 -3196000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 3196000
+    next_corner: 1096000 3196000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 6900000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 6900000 800000 800000 0
+
+name: "CAPC4564X145M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 6.40mm W X 1.45mm H"
+  units: NM
+  sel_rect: -3450000 -3950000 3450000 3950000
+  ref_text: 1270000 0 4950000 0 177800
+  value_text: 1270000 0 -6220000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -3196000
+    next_corner: 1096000 -3196000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 3196000
+    next_corner: 1096000 3196000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 6900000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 6900000 800000 800000 0
+
+name: "CAPC4564X155M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 6.40mm W X 1.55mm H"
+  units: NM
+  sel_rect: -3450000 -3950000 3450000 3950000
+  ref_text: 1270000 0 4950000 0 177800
+  value_text: 1270000 0 -6220000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -3196000
+    next_corner: 1096000 -3196000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 3196000
+    next_corner: 1096000 3196000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 6900000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 6900000 800000 800000 0
+
+name: "CAPC4564X160M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 6.40mm W X 1.60mm H"
+  units: NM
+  sel_rect: -3450000 -3950000 3450000 3950000
+  ref_text: 1270000 0 4950000 0 177800
+  value_text: 1270000 0 -6220000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -3196000
+    next_corner: 1096000 -3196000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 3196000
+    next_corner: 1096000 3196000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2150000 0 0
+      top_pad: 3 6900000 800000 800000 0
+    pin: "2" 0 2150000 0 0
+      top_pad: 3 6900000 800000 800000 0
+
+name: "CAPC4564X218M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.50mm L X 6.40mm W X 2.18mm H"
+  units: NM
+  sel_rect: -3450000 -3900000 3450000 3900000
+  ref_text: 1270000 0 4900000 0 177800
+  value_text: 1270000 0 -6170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1296000 -3121000
+    next_corner: 1296000 -3121000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1296000 3121000
+    next_corner: 1296000 3121000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2250000 0 0
+      top_pad: 3 6750000 700000 700000 0
+    pin: "2" 0 2250000 0 0
+      top_pad: 3 6750000 700000 700000 0
+
+name: "CAPC4612X140M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.57mm L X 1.25mm W X 1.40mm H"
+  units: NM
+  sel_rect: -3500000 -1400000 3500000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1246000 -621000
+    next_corner: 1246000 -621000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1246000 621000
+    next_corner: 1246000 621000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2250000 0 0
+      top_pad: 3 1750000 750000 750000 0
+    pin: "2" 0 2250000 0 0
+      top_pad: 3 1750000 750000 750000 0
+
+name: "CAPC4620X203M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.57mm L X 2.03mm W X 2.03mm H"
+  units: NM
+  sel_rect: -3500000 -1800000 3500000 1800000
+  ref_text: 1270000 0 2800000 0 177800
+  value_text: 1270000 0 -4070000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1246000 -1046000
+    next_corner: 1246000 -1046000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1246000 1046000
+    next_corner: 1246000 1046000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2250000 0 0
+      top_pad: 3 2600000 750000 750000 0
+    pin: "2" 0 2250000 0 0
+      top_pad: 3 2600000 750000 750000 0
+
+name: "CAPC4632X203M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.57mm L X 3.18mm W X 2.03mm H"
+  units: NM
+  sel_rect: -3500000 -2350000 3500000 2350000
+  ref_text: 1270000 0 3350000 0 177800
+  value_text: 1270000 0 -4620000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1246000 -1571000
+    next_corner: 1246000 -1571000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1246000 1571000
+    next_corner: 1246000 1571000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2250000 0 0
+      top_pad: 3 3650000 750000 750000 0
+    pin: "2" 0 2250000 0 0
+      top_pad: 3 3650000 750000 750000 0
+
+name: "CAPC4664X203M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.64mm L X 6.35mm W X 2.03mm H"
+  units: NM
+  sel_rect: -3600000 -3950000 3600000 3950000
+  ref_text: 1270000 0 4950000 0 177800
+  value_text: 1270000 0 -6220000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1246000 -3171000
+    next_corner: 1246000 -3171000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1246000 3171000
+    next_corner: 1246000 3171000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2300000 0 0
+      top_pad: 3 6850000 800000 800000 0
+    pin: "2" 0 2300000 0 0
+      top_pad: 3 6850000 800000 800000 0
+
+name: "CAPC4665X150M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.56mm L X 6.46mm W X 1.50mm H"
+  units: NM
+  sel_rect: -3600000 -4000000 3600000 4000000
+  ref_text: 1270000 0 5000000 0 177800
+  value_text: 1270000 0 -6270000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1271000 -3246000
+    next_corner: 1271000 -3246000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1271000 3246000
+    next_corner: 1271000 3246000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2300000 0 0
+      top_pad: 3 7000000 775000 775000 0
+    pin: "2" 0 2300000 0 0
+      top_pad: 3 7000000 775000 775000 0
+
+name: "CAPC4833X280M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;4.80mm L X 3.30mm W X 2.80mm H"
+  units: NM
+  sel_rect: -3550000 -2350000 3550000 2350000
+  ref_text: 1270000 0 3350000 0 177800
+  value_text: 1270000 0 -4620000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1596000 -1596000
+    next_corner: 1596000 -1596000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1596000 1596000
+    next_corner: 1596000 1596000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2450000 0 0
+      top_pad: 3 3700000 600000 600000 0
+    pin: "2" 0 2450000 0 0
+      top_pad: 3 3700000 600000 600000 0
+
+name: "CAPC5025X71M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.00mm L X 2.50mm W X 0.71mm H"
+  units: NM
+  sel_rect: -3650000 -1900000 3650000 1900000
+  ref_text: 1270000 0 2900000 0 177800
+  value_text: 1270000 0 -4170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1421000 -1146000
+    next_corner: 1421000 -1146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1421000 1146000
+    next_corner: 1421000 1146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2400000 0 0
+      top_pad: 3 2800000 725000 725000 0
+    pin: "2" 0 2400000 0 0
+      top_pad: 3 2800000 725000 725000 0
+
+name: "CAPC5650X115M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.60mm L X 5.00mm W X 1.15mm H"
+  units: NM
+  sel_rect: -4050000 -3250000 4050000 3250000
+  ref_text: 1270000 0 4250000 0 177800
+  value_text: 1270000 0 -5520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1596000 -2496000
+    next_corner: 1596000 -2496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1596000 2496000
+    next_corner: 1596000 2496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2700000 0 0
+      top_pad: 3 5500000 850000 850000 0
+    pin: "2" 0 2700000 0 0
+      top_pad: 3 5500000 850000 850000 0
+
+name: "CAPC5650X125M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.60mm L X 5.00mm W X 1.25mm H"
+  units: NM
+  sel_rect: -4050000 -3250000 4050000 3250000
+  ref_text: 1270000 0 4250000 0 177800
+  value_text: 1270000 0 -5520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1596000 -2496000
+    next_corner: 1596000 -2496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1596000 2496000
+    next_corner: 1596000 2496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2700000 0 0
+      top_pad: 3 5500000 850000 850000 0
+    pin: "2" 0 2700000 0 0
+      top_pad: 3 5500000 850000 850000 0
+
+name: "CAPC5650X145M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.60mm L X 5.00mm W X 1.45mm H"
+  units: NM
+  sel_rect: -4050000 -3250000 4050000 3250000
+  ref_text: 1270000 0 4250000 0 177800
+  value_text: 1270000 0 -5520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1596000 -2496000
+    next_corner: 1596000 -2496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1596000 2496000
+    next_corner: 1596000 2496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2700000 0 0
+      top_pad: 3 5500000 850000 850000 0
+    pin: "2" 0 2700000 0 0
+      top_pad: 3 5500000 850000 850000 0
+
+name: "CAPC5650X155M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.60mm L X 5.00mm W X 1.55mm H"
+  units: NM
+  sel_rect: -4050000 -3250000 4050000 3250000
+  ref_text: 1270000 0 4250000 0 177800
+  value_text: 1270000 0 -5520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1596000 -2496000
+    next_corner: 1596000 -2496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1596000 2496000
+    next_corner: 1596000 2496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2700000 0 0
+      top_pad: 3 5500000 850000 850000 0
+    pin: "2" 0 2700000 0 0
+      top_pad: 3 5500000 850000 850000 0
+
+name: "CAPC5650X165M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.60mm L X 5.00mm W X 1.65mm H"
+  units: NM
+  sel_rect: -4050000 -3250000 4050000 3250000
+  ref_text: 1270000 0 4250000 0 177800
+  value_text: 1270000 0 -5520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1596000 -2496000
+    next_corner: 1596000 -2496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1596000 2496000
+    next_corner: 1596000 2496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2700000 0 0
+      top_pad: 3 5500000 850000 850000 0
+    pin: "2" 0 2700000 0 0
+      top_pad: 3 5500000 850000 850000 0
+
+name: "CAPC5651X218M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.64mm L X 5.08mm W X 2.18mm H"
+  units: NM
+  sel_rect: -4000000 -3250000 4000000 3250000
+  ref_text: 1270000 0 4250000 0 177800
+  value_text: 1270000 0 -5520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1871000 -2471000
+    next_corner: 1871000 -2471000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1871000 2471000
+    next_corner: 1871000 2471000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2800000 0 0
+      top_pad: 3 5450000 675000 675000 0
+    pin: "2" 0 2800000 0 0
+      top_pad: 3 5450000 675000 675000 0
+
+name: "CAPC5663X115M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.60mm L X 6.30mm W X 1.15mm H"
+  units: NM
+  sel_rect: -4050000 -3900000 4050000 3900000
+  ref_text: 1270000 0 4900000 0 177800
+  value_text: 1270000 0 -6170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1596000 -3146000
+    next_corner: 1596000 -3146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1596000 3146000
+    next_corner: 1596000 3146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2700000 0 0
+      top_pad: 3 6800000 850000 850000 0
+    pin: "2" 0 2700000 0 0
+      top_pad: 3 6800000 850000 850000 0
+
+name: "CAPC5663X125M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.60mm L X 6.30mm W X 1.25mm H"
+  units: NM
+  sel_rect: -4050000 -3900000 4050000 3900000
+  ref_text: 1270000 0 4900000 0 177800
+  value_text: 1270000 0 -6170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1596000 -3146000
+    next_corner: 1596000 -3146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1596000 3146000
+    next_corner: 1596000 3146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2700000 0 0
+      top_pad: 3 6800000 850000 850000 0
+    pin: "2" 0 2700000 0 0
+      top_pad: 3 6800000 850000 850000 0
+
+name: "CAPC5663X145M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.60mm L X 6.30mm W X 1.45mm H"
+  units: NM
+  sel_rect: -4050000 -3900000 4050000 3900000
+  ref_text: 1270000 0 4900000 0 177800
+  value_text: 1270000 0 -6170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1596000 -3146000
+    next_corner: 1596000 -3146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1596000 3146000
+    next_corner: 1596000 3146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2700000 0 0
+      top_pad: 3 6800000 850000 850000 0
+    pin: "2" 0 2700000 0 0
+      top_pad: 3 6800000 850000 850000 0
+
+name: "CAPC5663X155M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.60mm L X 6.30mm W X 1.55mm H"
+  units: NM
+  sel_rect: -4050000 -3900000 4050000 3900000
+  ref_text: 1270000 0 4900000 0 177800
+  value_text: 1270000 0 -6170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1596000 -3146000
+    next_corner: 1596000 -3146000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1596000 3146000
+    next_corner: 1596000 3146000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2700000 0 0
+      top_pad: 3 6800000 850000 850000 0
+    pin: "2" 0 2700000 0 0
+      top_pad: 3 6800000 850000 850000 0
+
+name: "CAPC5664X200M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.60mm L X 6.40mm W X 2.00mm H"
+  units: NM
+  sel_rect: -3950000 -3950000 3950000 3950000
+  ref_text: 1270000 0 4950000 0 177800
+  value_text: 1270000 0 -6220000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1596000 -3196000
+    next_corner: 1596000 -3196000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1596000 3196000
+    next_corner: 1596000 3196000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2650000 0 0
+      top_pad: 3 6900000 800000 800000 0
+    pin: "2" 0 2650000 0 0
+      top_pad: 3 6900000 800000 800000 0
+
+name: "CAPC5664X218M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.59mm L X 6.35mm W X 2.18mm H"
+  units: NM
+  sel_rect: -3950000 -3850000 3950000 3850000
+  ref_text: 1270000 0 4850000 0 177800
+  value_text: 1270000 0 -6120000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1796000 -3096000
+    next_corner: 1796000 -3096000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1796000 3096000
+    next_corner: 1796000 3096000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2750000 0 0
+      top_pad: 3 6700000 700000 700000 0
+    pin: "2" 0 2750000 0 0
+      top_pad: 3 6700000 700000 700000 0
+
+name: "CAPC5750X200M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.70mm L X 5.00mm W X 2.00mm H"
+  units: NM
+  sel_rect: -4150000 -3250000 4150000 3250000
+  ref_text: 1270000 0 4250000 0 177800
+  value_text: 1270000 0 -5520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1621000 -2496000
+    next_corner: 1621000 -2496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1621000 2496000
+    next_corner: 1621000 2496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2750000 0 0
+      top_pad: 3 5500000 875000 875000 0
+    pin: "2" 0 2750000 0 0
+      top_pad: 3 5500000 875000 875000 0
+
+name: "CAPC5750X229M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.70mm L X 5.00mm W X 2.29mm H"
+  units: NM
+  sel_rect: -4150000 -3250000 4150000 3250000
+  ref_text: 1270000 0 4250000 0 177800
+  value_text: 1270000 0 -5520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1621000 -2496000
+    next_corner: 1621000 -2496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1621000 2496000
+    next_corner: 1621000 2496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2750000 0 0
+      top_pad: 3 5500000 875000 875000 0
+    pin: "2" 0 2750000 0 0
+      top_pad: 3 5500000 875000 875000 0
+
+name: "CAPC5750X230M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.70mm L X 5.00mm W X 2.30mm H"
+  units: NM
+  sel_rect: -4000000 -3200000 4000000 3200000
+  ref_text: 1270000 0 4200000 0 177800
+  value_text: 1270000 0 -5470000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1646000 -2421000
+    next_corner: 1646000 -2421000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1646000 2421000
+    next_corner: 1646000 2421000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2700000 0 0
+      top_pad: 3 5350000 800000 800000 0
+    pin: "2" 0 2700000 0 0
+      top_pad: 3 5350000 800000 800000 0
+
+name: "CAPC5750X279M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.70mm L X 5.00mm W X 2.79mm H"
+  units: NM
+  sel_rect: -4150000 -3250000 4150000 3250000
+  ref_text: 1270000 0 4250000 0 177800
+  value_text: 1270000 0 -5520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1621000 -2496000
+    next_corner: 1621000 -2496000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1621000 2496000
+    next_corner: 1621000 2496000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2750000 0 0
+      top_pad: 3 5500000 875000 875000 0
+    pin: "2" 0 2750000 0 0
+      top_pad: 3 5500000 875000 875000 0
+
+name: "CAPC5757X203M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.72mm L X 5.72mm W X 2.03mm H"
+  units: NM
+  sel_rect: -4150000 -3700000 4150000 3700000
+  ref_text: 1270000 0 4700000 0 177800
+  value_text: 1270000 0 -5970000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1796000 -2921000
+    next_corner: 1796000 -2921000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1796000 2921000
+    next_corner: 1796000 2921000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2850000 0 0
+      top_pad: 3 6350000 800000 800000 0
+    pin: "2" 0 2850000 0 0
+      top_pad: 3 6350000 800000 800000 0
+
+name: "CAPC5764X127M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.72mm L X 6.35mm W X 1.27mm H"
+  units: NM
+  sel_rect: -4100000 -3850000 4100000 3850000
+  ref_text: 1270000 0 4850000 0 177800
+  value_text: 1270000 0 -6120000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1671000 -3096000
+    next_corner: 1671000 -3096000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1671000 3096000
+    next_corner: 1671000 3096000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2750000 0 0
+      top_pad: 3 6700000 825000 825000 0
+    pin: "2" 0 2750000 0 0
+      top_pad: 3 6700000 825000 825000 0
+
+name: "CAPC5764X152M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;5.72mm L X 6.35mm W X 1.52mm H"
+  units: NM
+  sel_rect: -4100000 -3850000 4100000 3850000
+  ref_text: 1270000 0 4850000 0 177800
+  value_text: 1270000 0 -6120000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1671000 -3096000
+    next_corner: 1671000 -3096000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1671000 3096000
+    next_corner: 1671000 3096000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2750000 0 0
+      top_pad: 3 6700000 825000 825000 0
+    pin: "2" 0 2750000 0 0
+      top_pad: 3 6700000 825000 825000 0
+
+name: "CAPC6041X320M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;6.00mm L X 4.10mm W X 3.20mm H"
+  units: NM
+  sel_rect: -4150000 -2750000 4150000 2750000
+  ref_text: 1270000 0 3750000 0 177800
+  value_text: 1270000 0 -5020000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -2196000 -1996000
+    next_corner: 2196000 -1996000 0
+    close_polyline: 0
+  outline_polyline: 177800 -2196000 1996000
+    next_corner: 2196000 1996000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -3050000 0 0
+      top_pad: 3 4500000 600000 600000 0
+    pin: "2" 0 3050000 0 0
+      top_pad: 3 4500000 600000 600000 0
+
+name: "CAPC6332X71M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;6.30mm L X 3.25mm W X 0.71mm H"
+  units: NM
+  sel_rect: -4300000 -2300000 4300000 2300000
+  ref_text: 1270000 0 3300000 0 177800
+  value_text: 1270000 0 -4570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -2071000 -1521000
+    next_corner: 2071000 -1521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -2071000 1521000
+    next_corner: 2071000 1521000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -3050000 0 0
+      top_pad: 3 3550000 725000 725000 0
+    pin: "2" 0 3050000 0 0
+      top_pad: 3 3550000 725000 725000 0
+
+name: "CAPC9198X218M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,non-polarized,Chip;9.14mm L X 9.82mm W X 2.18mm H"
+  units: NM
+  sel_rect: -5800000 -5550000 5800000 5550000
+  ref_text: 1270000 0 6550000 0 177800
+  value_text: 1270000 0 -7820000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -3546000 -4771000
+    next_corner: 3546000 -4771000 0
+    close_polyline: 0
+  outline_polyline: 177800 -3546000 4771000
+    next_corner: 3546000 4771000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -4550000 0 0
+      top_pad: 3 10050000 750000 750000 0
+    pin: "2" 0 4550000 0 0
+      top_pad: 3 10050000 750000 750000 0
+

@@ -1,0 +1,888 @@
+name: "CAPAE1030X1020M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;10.30mm L X 10.30mm W X 10.20mm H"
+  units: NM
+  sel_rect: -8050000 -6150000 8050000 6150000
+  ref_text: 1270000 0 7150000 0 177800
+  value_text: 1270000 0 -8420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 5150000 1531000
+    next_corner: 5150000 5150000 0
+    next_corner: -2575000 5150000 0
+    next_corner: -5150000 2575000 0
+    next_corner: -5150000 1531000 0
+  outline_polyline: 177800 5150000 -1531000
+    next_corner: 5150000 -5150000 0
+    next_corner: -2575000 -5150000 0
+    next_corner: -5150000 -2575000 0
+    next_corner: -5150000 -1531000 0
+  outline_polyline: 254000 -6039000 1912000
+    next_corner: -5912000 2039000 1
+    next_corner: -5785000 1912000 1
+    next_corner: -5912000 1785000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -4600000 0 0
+      top_pad: 3 2300000 2425000 2425000 0
+    pin: "2" 0 4600000 0 0
+      top_pad: 3 2300000 2425000 2425000 0
+
+name: "CAPAE1030X1050M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;10.30mm L X 10.30mm W X 10.50mm H"
+  units: NM
+  sel_rect: -7400000 -6150000 7400000 6150000
+  ref_text: 1270000 0 7150000 0 177800
+  value_text: 1270000 0 -8420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 5150000 1531000
+    next_corner: 5150000 5150000 0
+    next_corner: -2575000 5150000 0
+    next_corner: -5150000 2575000 0
+    next_corner: -5150000 1531000 0
+  outline_polyline: 177800 5150000 -1531000
+    next_corner: 5150000 -5150000 0
+    next_corner: -2575000 -5150000 0
+    next_corner: -5150000 -2575000 0
+    next_corner: -5150000 -1531000 0
+  outline_polyline: 254000 -6039000 1912000
+    next_corner: -5912000 2039000 1
+    next_corner: -5785000 1912000 1
+    next_corner: -5912000 1785000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -4200000 0 0
+      top_pad: 3 2300000 2200000 2200000 0
+    pin: "2" 0 4200000 0 0
+      top_pad: 3 2300000 2200000 2200000 0
+
+name: "CAPAE1030X1250M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;10.30mm L X 10.30mm W X 12.50mm H"
+  units: NM
+  sel_rect: -7650000 -6150000 7650000 6150000
+  ref_text: 1270000 0 7150000 0 177800
+  value_text: 1270000 0 -8420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 5150000 1531000
+    next_corner: 5150000 5150000 0
+    next_corner: -2575000 5150000 0
+    next_corner: -5150000 2575000 0
+    next_corner: -5150000 1531000 0
+  outline_polyline: 177800 5150000 -1531000
+    next_corner: 5150000 -5150000 0
+    next_corner: -2575000 -5150000 0
+    next_corner: -5150000 -2575000 0
+    next_corner: -5150000 -1531000 0
+  outline_polyline: 254000 -6039000 1912000
+    next_corner: -5912000 2039000 1
+    next_corner: -5785000 1912000 1
+    next_corner: -5912000 1785000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -4400000 0 0
+      top_pad: 3 2300000 2225000 2225000 0
+    pin: "2" 0 4400000 0 0
+      top_pad: 3 2300000 2225000 2225000 0
+
+name: "CAPAE1030X1350M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;10.30mm L X 10.30mm W X 13.50mm H"
+  units: NM
+  sel_rect: -8050000 -6150000 8050000 6150000
+  ref_text: 1270000 0 7150000 0 177800
+  value_text: 1270000 0 -8420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 5150000 1531000
+    next_corner: 5150000 5150000 0
+    next_corner: -2575000 5150000 0
+    next_corner: -5150000 2575000 0
+    next_corner: -5150000 1531000 0
+  outline_polyline: 177800 5150000 -1531000
+    next_corner: 5150000 -5150000 0
+    next_corner: -2575000 -5150000 0
+    next_corner: -5150000 -2575000 0
+    next_corner: -5150000 -1531000 0
+  outline_polyline: 254000 -6039000 1912000
+    next_corner: -5912000 2039000 1
+    next_corner: -5785000 1912000 1
+    next_corner: -5912000 1785000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -4600000 0 0
+      top_pad: 3 2300000 2425000 2425000 0
+    pin: "2" 0 4600000 0 0
+      top_pad: 3 2300000 2425000 2425000 0
+
+name: "CAPAE1030X1750M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;10.30mm L X 10.30mm W X 17.50mm H"
+  units: NM
+  sel_rect: -8050000 -6150000 8050000 6150000
+  ref_text: 1270000 0 7150000 0 177800
+  value_text: 1270000 0 -8420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 5150000 1531000
+    next_corner: 5150000 5150000 0
+    next_corner: -2575000 5150000 0
+    next_corner: -5150000 2575000 0
+    next_corner: -5150000 1531000 0
+  outline_polyline: 177800 5150000 -1531000
+    next_corner: 5150000 -5150000 0
+    next_corner: -2575000 -5150000 0
+    next_corner: -5150000 -2575000 0
+    next_corner: -5150000 -1531000 0
+  outline_polyline: 254000 -6039000 1912000
+    next_corner: -5912000 2039000 1
+    next_corner: -5785000 1912000 1
+    next_corner: -5912000 1785000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -4600000 0 0
+      top_pad: 3 2300000 2425000 2425000 0
+    pin: "2" 0 4600000 0 0
+      top_pad: 3 2300000 2425000 2425000 0
+
+name: "CAPAE1350X1350M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;13.50mm L X 13.50mm W X 13.50mm H"
+  units: NM
+  sel_rect: -9150000 -7750000 9150000 7750000
+  ref_text: 1270000 0 8750000 0 177800
+  value_text: 1270000 0 -10020000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 6750000 1581000
+    next_corner: 6750000 6750000 0
+    next_corner: -3375000 6750000 0
+    next_corner: -6750000 3375000 0
+    next_corner: -6750000 1581000 0
+  outline_polyline: 177800 6750000 -1581000
+    next_corner: 6750000 -6750000 0
+    next_corner: -3375000 -6750000 0
+    next_corner: -6750000 -3375000 0
+    next_corner: -6750000 -1581000 0
+  outline_polyline: 254000 -7639000 1962000
+    next_corner: -7512000 2089000 1
+    next_corner: -7385000 1962000 1
+    next_corner: -7512000 1835000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -5100000 0 0
+      top_pad: 3 2400000 3025000 3025000 0
+    pin: "2" 0 5100000 0 0
+      top_pad: 3 2400000 3025000 3025000 0
+
+name: "CAPAE1350X1650M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;13.50mm L X 13.50mm W X 16.50mm H"
+  units: NM
+  sel_rect: -9150000 -7750000 9150000 7750000
+  ref_text: 1270000 0 8750000 0 177800
+  value_text: 1270000 0 -10020000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 6750000 1581000
+    next_corner: 6750000 6750000 0
+    next_corner: -3375000 6750000 0
+    next_corner: -6750000 3375000 0
+    next_corner: -6750000 1581000 0
+  outline_polyline: 177800 6750000 -1581000
+    next_corner: 6750000 -6750000 0
+    next_corner: -3375000 -6750000 0
+    next_corner: -6750000 -3375000 0
+    next_corner: -6750000 -1581000 0
+  outline_polyline: 254000 -7639000 1962000
+    next_corner: -7512000 2089000 1
+    next_corner: -7385000 1962000 1
+    next_corner: -7512000 1835000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -5100000 0 0
+      top_pad: 3 2400000 3025000 3025000 0
+    pin: "2" 0 5100000 0 0
+      top_pad: 3 2400000 3025000 3025000 0
+
+name: "CAPAE1700X1900M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;17.00mm L X 17.00mm W X 19.00mm H"
+  units: NM
+  sel_rect: -10950000 -9500000 10950000 9500000
+  ref_text: 1270000 0 10500000 0 177800
+  value_text: 1270000 0 -11770000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 8500000 1731000
+    next_corner: 8500000 8500000 0
+    next_corner: -4250000 8500000 0
+    next_corner: -8500000 4250000 0
+    next_corner: -8500000 1731000 0
+  outline_polyline: 177800 8500000 -1731000
+    next_corner: 8500000 -8500000 0
+    next_corner: -4250000 -8500000 0
+    next_corner: -8500000 -4250000 0
+    next_corner: -8500000 -1731000 0
+  outline_polyline: 254000 -9389000 2112000
+    next_corner: -9262000 2239000 1
+    next_corner: -9135000 2112000 1
+    next_corner: -9262000 1985000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -6600000 0 0
+      top_pad: 3 2700000 3325000 3325000 0
+    pin: "2" 0 6600000 0 0
+      top_pad: 3 2700000 3325000 3325000 0
+
+name: "CAPAE1920X1650M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;19.20mm L X 19.20mm W X 16.50mm H"
+  units: NM
+  sel_rect: -12500000 -10600000 12500000 10600000
+  ref_text: 1270000 0 11600000 0 177800
+  value_text: 1270000 0 -12870000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 9600000 1731000
+    next_corner: 9600000 9600000 0
+    next_corner: -4800000 9600000 0
+    next_corner: -9600000 4800000 0
+    next_corner: -9600000 1731000 0
+  outline_polyline: 177800 9600000 -1731000
+    next_corner: 9600000 -9600000 0
+    next_corner: -4800000 -9600000 0
+    next_corner: -9600000 -4800000 0
+    next_corner: -9600000 -1731000 0
+  outline_polyline: 254000 -10489000 2112000
+    next_corner: -10362000 2239000 1
+    next_corner: -10235000 2112000 1
+    next_corner: -10362000 1985000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -7450000 0 0
+      top_pad: 3 2700000 4050000 4050000 0
+    pin: "2" 0 7450000 0 0
+      top_pad: 3 2700000 4050000 4050000 0
+
+name: "CAPAE330X540M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;3.30mm L X 3.30mm W X 5.40mm H"
+  units: NM
+  sel_rect: -3750000 -2650000 3750000 2650000
+  ref_text: 1270000 0 3650000 0 177800
+  value_text: 1270000 0 -4920000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 1650000 1231000
+    next_corner: 1650000 1650000 0
+    next_corner: -825000 1650000 0
+    next_corner: -1244000 1231000 0
+  outline_polyline: 177800 1650000 -1231000
+    next_corner: 1650000 -1650000 0
+    next_corner: -825000 -1650000 0
+    next_corner: -1244000 -1231000 0
+  outline_polyline: 254000 -2539000 1612000
+    next_corner: -2412000 1739000 1
+    next_corner: -2285000 1612000 1
+    next_corner: -2412000 1485000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1450000 0 0
+      top_pad: 3 1700000 1275000 1275000 0
+    pin: "2" 0 1450000 0 0
+      top_pad: 3 1700000 1275000 1275000 0
+
+name: "CAPAE330X550M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;3.30mm L X 3.30mm W X 5.50mm H"
+  units: NM
+  sel_rect: -3800000 -2650000 3800000 2650000
+  ref_text: 1270000 0 3650000 0 177800
+  value_text: 1270000 0 -4920000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 1650000 1281000
+    next_corner: 1650000 1650000 0
+    next_corner: -825000 1650000 0
+    next_corner: -1194000 1281000 0
+  outline_polyline: 177800 1650000 -1281000
+    next_corner: 1650000 -1650000 0
+    next_corner: -825000 -1650000 0
+    next_corner: -1194000 -1281000 0
+  outline_polyline: 254000 -2539000 1662000
+    next_corner: -2412000 1789000 1
+    next_corner: -2285000 1662000 1
+    next_corner: -2412000 1535000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1500000 0 0
+      top_pad: 3 1800000 1300000 1300000 0
+    pin: "2" 0 1500000 0 0
+      top_pad: 3 1800000 1300000 1300000 0
+
+name: "CAPAE430X460M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;4.30mm L X 4.30mm W X 4.60mm H"
+  units: NM
+  sel_rect: -4300000 -3150000 4300000 3150000
+  ref_text: 1270000 0 4150000 0 177800
+  value_text: 1270000 0 -5420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 2150000 1306000
+    next_corner: 2150000 2150000 0
+    next_corner: -1075000 2150000 0
+    next_corner: -1919000 1306000 0
+  outline_polyline: 177800 2150000 -1306000
+    next_corner: 2150000 -2150000 0
+    next_corner: -1075000 -2150000 0
+    next_corner: -1919000 -1306000 0
+  outline_polyline: 254000 -3039000 1687000
+    next_corner: -2912000 1814000 1
+    next_corner: -2785000 1687000 1
+    next_corner: -2912000 1560000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1800000 0 0
+      top_pad: 3 1850000 1475000 1475000 0
+    pin: "2" 0 1800000 0 0
+      top_pad: 3 1850000 1475000 1475000 0
+
+name: "CAPAE430X540M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;4.30mm L X 4.30mm W X 5.40mm H"
+  units: NM
+  sel_rect: -4250000 -3150000 4250000 3150000
+  ref_text: 1270000 0 4150000 0 177800
+  value_text: 1270000 0 -5420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 2150000 1281000
+    next_corner: 2150000 2150000 0
+    next_corner: -1075000 2150000 0
+    next_corner: -1944000 1281000 0
+  outline_polyline: 177800 2150000 -1281000
+    next_corner: 2150000 -2150000 0
+    next_corner: -1075000 -2150000 0
+    next_corner: -1944000 -1281000 0
+  outline_polyline: 254000 -3039000 1662000
+    next_corner: -2912000 1789000 1
+    next_corner: -2785000 1662000 1
+    next_corner: -2912000 1535000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1800000 0 0
+      top_pad: 3 1800000 1425000 1425000 0
+    pin: "2" 0 1800000 0 0
+      top_pad: 3 1800000 1425000 1425000 0
+
+name: "CAPAE430X550M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;4.30mm L X 4.30mm W X 5.50mm H"
+  units: NM
+  sel_rect: -4300000 -3150000 4300000 3150000
+  ref_text: 1270000 0 4150000 0 177800
+  value_text: 1270000 0 -5420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 2150000 1306000
+    next_corner: 2150000 2150000 0
+    next_corner: -1075000 2150000 0
+    next_corner: -1919000 1306000 0
+  outline_polyline: 177800 2150000 -1306000
+    next_corner: 2150000 -2150000 0
+    next_corner: -1075000 -2150000 0
+    next_corner: -1919000 -1306000 0
+  outline_polyline: 254000 -3039000 1687000
+    next_corner: -2912000 1814000 1
+    next_corner: -2785000 1687000 1
+    next_corner: -2912000 1560000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1800000 0 0
+      top_pad: 3 1850000 1475000 1475000 0
+    pin: "2" 0 1800000 0 0
+      top_pad: 3 1850000 1475000 1475000 0
+
+name: "CAPAE430X600M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;4.30mm L X 4.30mm W X 6.00mm H"
+  units: NM
+  sel_rect: -4300000 -3150000 4300000 3150000
+  ref_text: 1270000 0 4150000 0 177800
+  value_text: 1270000 0 -5420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 2150000 1306000
+    next_corner: 2150000 2150000 0
+    next_corner: -1075000 2150000 0
+    next_corner: -1919000 1306000 0
+  outline_polyline: 177800 2150000 -1306000
+    next_corner: 2150000 -2150000 0
+    next_corner: -1075000 -2150000 0
+    next_corner: -1919000 -1306000 0
+  outline_polyline: 254000 -3039000 1687000
+    next_corner: -2912000 1814000 1
+    next_corner: -2785000 1687000 1
+    next_corner: -2912000 1560000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1800000 0 0
+      top_pad: 3 1850000 1475000 1475000 0
+    pin: "2" 0 1800000 0 0
+      top_pad: 3 1850000 1475000 1475000 0
+
+name: "CAPAE530X460M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;5.30mm L X 5.30mm W X 4.60mm H"
+  units: NM
+  sel_rect: -4800000 -3650000 4800000 3650000
+  ref_text: 1270000 0 4650000 0 177800
+  value_text: 1270000 0 -5920000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 2650000 1306000
+    next_corner: 2650000 2650000 0
+    next_corner: -1325000 2650000 0
+    next_corner: -2650000 1325000 0
+    next_corner: -2650000 1306000 0
+  outline_polyline: 177800 2650000 -1306000
+    next_corner: 2650000 -2650000 0
+    next_corner: -1325000 -2650000 0
+    next_corner: -2650000 -1325000 0
+    next_corner: -2650000 -1306000 0
+  outline_polyline: 254000 -3539000 1687000
+    next_corner: -3412000 1814000 1
+    next_corner: -3285000 1687000 1
+    next_corner: -3412000 1560000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -2200000 0 0
+      top_pad: 3 1850000 1600000 1600000 0
+    pin: "2" 0 2200000 0 0
+      top_pad: 3 1850000 1600000 1600000 0
+
+name: "CAPAE530X540M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;5.30mm L X 5.30mm W X 5.40mm H"
+  units: NM
+  sel_rect: -4950000 -3650000 4950000 3650000
+  ref_text: 1270000 0 4650000 0 177800
+  value_text: 1270000 0 -5920000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 2650000 1281000
+    next_corner: 2650000 2650000 0
+    next_corner: -1325000 2650000 0
+    next_corner: -2650000 1325000 0
+    next_corner: -2650000 1281000 0
+  outline_polyline: 177800 2650000 -1281000
+    next_corner: 2650000 -2650000 0
+    next_corner: -1325000 -2650000 0
+    next_corner: -2650000 -1325000 0
+    next_corner: -2650000 -1281000 0
+  outline_polyline: 254000 -3539000 1662000
+    next_corner: -3412000 1789000 1
+    next_corner: -3285000 1662000 1
+    next_corner: -3412000 1535000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -2300000 0 0
+      top_pad: 3 1800000 1650000 1650000 0
+    pin: "2" 0 2300000 0 0
+      top_pad: 3 1800000 1650000 1650000 0
+
+name: "CAPAE530X550M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;5.30mm L X 5.30mm W X 5.50mm H"
+  units: NM
+  sel_rect: -4800000 -3650000 4800000 3650000
+  ref_text: 1270000 0 4650000 0 177800
+  value_text: 1270000 0 -5920000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 2650000 1306000
+    next_corner: 2650000 2650000 0
+    next_corner: -1325000 2650000 0
+    next_corner: -2650000 1325000 0
+    next_corner: -2650000 1306000 0
+  outline_polyline: 177800 2650000 -1306000
+    next_corner: 2650000 -2650000 0
+    next_corner: -1325000 -2650000 0
+    next_corner: -2650000 -1325000 0
+    next_corner: -2650000 -1306000 0
+  outline_polyline: 254000 -3539000 1687000
+    next_corner: -3412000 1814000 1
+    next_corner: -3285000 1687000 1
+    next_corner: -3412000 1560000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -2200000 0 0
+      top_pad: 3 1850000 1600000 1600000 0
+    pin: "2" 0 2200000 0 0
+      top_pad: 3 1850000 1600000 1600000 0
+
+name: "CAPAE530X600M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;5.30mm L X 5.30mm W X 6.00mm H"
+  units: NM
+  sel_rect: -4800000 -3650000 4800000 3650000
+  ref_text: 1270000 0 4650000 0 177800
+  value_text: 1270000 0 -5920000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 2650000 1306000
+    next_corner: 2650000 2650000 0
+    next_corner: -1325000 2650000 0
+    next_corner: -2650000 1325000 0
+    next_corner: -2650000 1306000 0
+  outline_polyline: 177800 2650000 -1306000
+    next_corner: 2650000 -2650000 0
+    next_corner: -1325000 -2650000 0
+    next_corner: -2650000 -1325000 0
+    next_corner: -2650000 -1306000 0
+  outline_polyline: 254000 -3539000 1687000
+    next_corner: -3412000 1814000 1
+    next_corner: -3285000 1687000 1
+    next_corner: -3412000 1560000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -2200000 0 0
+      top_pad: 3 1850000 1600000 1600000 0
+    pin: "2" 0 2200000 0 0
+      top_pad: 3 1850000 1600000 1600000 0
+
+name: "CAPAE530X610M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;5.30mm L X 5.30mm W X 6.10mm H"
+  units: NM
+  sel_rect: -4950000 -3650000 4950000 3650000
+  ref_text: 1270000 0 4650000 0 177800
+  value_text: 1270000 0 -5920000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 2650000 1281000
+    next_corner: 2650000 2650000 0
+    next_corner: -1325000 2650000 0
+    next_corner: -2650000 1325000 0
+    next_corner: -2650000 1281000 0
+  outline_polyline: 177800 2650000 -1281000
+    next_corner: 2650000 -2650000 0
+    next_corner: -1325000 -2650000 0
+    next_corner: -2650000 -1325000 0
+    next_corner: -2650000 -1281000 0
+  outline_polyline: 254000 -3539000 1662000
+    next_corner: -3412000 1789000 1
+    next_corner: -3285000 1662000 1
+    next_corner: -3412000 1535000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -2300000 0 0
+      top_pad: 3 1800000 1625000 1625000 0
+    pin: "2" 0 2300000 0 0
+      top_pad: 3 1800000 1625000 1625000 0
+
+name: "CAPAE660X460M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;6.60mm L X 6.60mm W X 4.60mm H"
+  units: NM
+  sel_rect: -5450000 -4300000 5450000 4300000
+  ref_text: 1270000 0 5300000 0 177800
+  value_text: 1270000 0 -6570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 3300000 1306000
+    next_corner: 3300000 3300000 0
+    next_corner: -1650000 3300000 0
+    next_corner: -3300000 1650000 0
+    next_corner: -3300000 1306000 0
+  outline_polyline: 177800 3300000 -1306000
+    next_corner: 3300000 -3300000 0
+    next_corner: -1650000 -3300000 0
+    next_corner: -3300000 -1650000 0
+    next_corner: -3300000 -1306000 0
+  outline_polyline: 254000 -4189000 1687000
+    next_corner: -4062000 1814000 1
+    next_corner: -3935000 1687000 1
+    next_corner: -4062000 1560000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -2650000 0 0
+      top_pad: 3 1850000 1800000 1800000 0
+    pin: "2" 0 2650000 0 0
+      top_pad: 3 1850000 1800000 1800000 0
+
+name: "CAPAE660X540M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;6.60mm L X 6.60mm W X 5.40mm H"
+  units: NM
+  sel_rect: -5250000 -4300000 5250000 4300000
+  ref_text: 1270000 0 5300000 0 177800
+  value_text: 1270000 0 -6570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 3300000 1281000
+    next_corner: 3300000 3300000 0
+    next_corner: -1650000 3300000 0
+    next_corner: -3300000 1650000 0
+    next_corner: -3300000 1281000 0
+  outline_polyline: 177800 3300000 -1281000
+    next_corner: 3300000 -3300000 0
+    next_corner: -1650000 -3300000 0
+    next_corner: -3300000 -1650000 0
+    next_corner: -3300000 -1281000 0
+  outline_polyline: 254000 -4189000 1662000
+    next_corner: -4062000 1789000 1
+    next_corner: -3935000 1662000 1
+    next_corner: -4062000 1535000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -2500000 0 0
+      top_pad: 3 1800000 1725000 1725000 0
+    pin: "2" 0 2500000 0 0
+      top_pad: 3 1800000 1725000 1725000 0
+
+name: "CAPAE660X550M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;6.60mm L X 6.60mm W X 5.50mm H"
+  units: NM
+  sel_rect: -5450000 -4300000 5450000 4300000
+  ref_text: 1270000 0 5300000 0 177800
+  value_text: 1270000 0 -6570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 3300000 1306000
+    next_corner: 3300000 3300000 0
+    next_corner: -1650000 3300000 0
+    next_corner: -3300000 1650000 0
+    next_corner: -3300000 1306000 0
+  outline_polyline: 177800 3300000 -1306000
+    next_corner: 3300000 -3300000 0
+    next_corner: -1650000 -3300000 0
+    next_corner: -3300000 -1650000 0
+    next_corner: -3300000 -1306000 0
+  outline_polyline: 254000 -4189000 1687000
+    next_corner: -4062000 1814000 1
+    next_corner: -3935000 1687000 1
+    next_corner: -4062000 1560000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -2650000 0 0
+      top_pad: 3 1850000 1800000 1800000 0
+    pin: "2" 0 2650000 0 0
+      top_pad: 3 1850000 1800000 1800000 0
+
+name: "CAPAE660X570M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;6.60mm L X 6.60mm W X 5.70mm H"
+  units: NM
+  sel_rect: -5250000 -4300000 5250000 4300000
+  ref_text: 1270000 0 5300000 0 177800
+  value_text: 1270000 0 -6570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 3300000 1281000
+    next_corner: 3300000 3300000 0
+    next_corner: -1650000 3300000 0
+    next_corner: -3300000 1650000 0
+    next_corner: -3300000 1281000 0
+  outline_polyline: 177800 3300000 -1281000
+    next_corner: 3300000 -3300000 0
+    next_corner: -1650000 -3300000 0
+    next_corner: -3300000 -1650000 0
+    next_corner: -3300000 -1281000 0
+  outline_polyline: 254000 -4189000 1662000
+    next_corner: -4062000 1789000 1
+    next_corner: -3935000 1662000 1
+    next_corner: -4062000 1535000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -2500000 0 0
+      top_pad: 3 1800000 1725000 1725000 0
+    pin: "2" 0 2500000 0 0
+      top_pad: 3 1800000 1725000 1725000 0
+
+name: "CAPAE660X600M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;6.60mm L X 6.60mm W X 6.00mm H"
+  units: NM
+  sel_rect: -5450000 -4300000 5450000 4300000
+  ref_text: 1270000 0 5300000 0 177800
+  value_text: 1270000 0 -6570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 3300000 1306000
+    next_corner: 3300000 3300000 0
+    next_corner: -1650000 3300000 0
+    next_corner: -3300000 1650000 0
+    next_corner: -3300000 1306000 0
+  outline_polyline: 177800 3300000 -1306000
+    next_corner: 3300000 -3300000 0
+    next_corner: -1650000 -3300000 0
+    next_corner: -3300000 -1650000 0
+    next_corner: -3300000 -1306000 0
+  outline_polyline: 254000 -4189000 1687000
+    next_corner: -4062000 1814000 1
+    next_corner: -3935000 1687000 1
+    next_corner: -4062000 1560000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -2650000 0 0
+      top_pad: 3 1850000 1800000 1800000 0
+    pin: "2" 0 2650000 0 0
+      top_pad: 3 1850000 1800000 1800000 0
+
+name: "CAPAE660X790M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;6.60mm L X 6.60mm W X 7.90mm H"
+  units: NM
+  sel_rect: -5250000 -4300000 5250000 4300000
+  ref_text: 1270000 0 5300000 0 177800
+  value_text: 1270000 0 -6570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 3300000 1281000
+    next_corner: 3300000 3300000 0
+    next_corner: -1650000 3300000 0
+    next_corner: -3300000 1650000 0
+    next_corner: -3300000 1281000 0
+  outline_polyline: 177800 3300000 -1281000
+    next_corner: 3300000 -3300000 0
+    next_corner: -1650000 -3300000 0
+    next_corner: -3300000 -1650000 0
+    next_corner: -3300000 -1281000 0
+  outline_polyline: 254000 -4189000 1662000
+    next_corner: -4062000 1789000 1
+    next_corner: -3935000 1662000 1
+    next_corner: -4062000 1535000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -2500000 0 0
+      top_pad: 3 1800000 1725000 1725000 0
+    pin: "2" 0 2500000 0 0
+      top_pad: 3 1800000 1725000 1725000 0
+
+name: "CAPAE830X1020M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;8.30mm L X 8.30mm W X 10.20mm H"
+  units: NM
+  sel_rect: -7200000 -5150000 7200000 5150000
+  ref_text: 1270000 0 6150000 0 177800
+  value_text: 1270000 0 -7420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 4150000 1381000
+    next_corner: 4150000 4150000 0
+    next_corner: -2075000 4150000 0
+    next_corner: -4150000 2075000 0
+    next_corner: -4150000 1381000 0
+  outline_polyline: 177800 4150000 -1381000
+    next_corner: 4150000 -4150000 0
+    next_corner: -2075000 -4150000 0
+    next_corner: -4150000 -2075000 0
+    next_corner: -4150000 -1381000 0
+  outline_polyline: 254000 -5039000 1762000
+    next_corner: -4912000 1889000 1
+    next_corner: -4785000 1762000 1
+    next_corner: -4912000 1635000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -3800000 0 0
+      top_pad: 3 2000000 2375000 2375000 0
+    pin: "2" 0 3800000 0 0
+      top_pad: 3 2000000 2375000 2375000 0
+
+name: "CAPAE830X1050M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;8.30mm L X 8.30mm W X 10.50mm H"
+  units: NM
+  sel_rect: -6600000 -5150000 6600000 5150000
+  ref_text: 1270000 0 6150000 0 177800
+  value_text: 1270000 0 -7420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 4150000 1531000
+    next_corner: 4150000 4150000 0
+    next_corner: -2075000 4150000 0
+    next_corner: -4150000 2075000 0
+    next_corner: -4150000 1531000 0
+  outline_polyline: 177800 4150000 -1531000
+    next_corner: 4150000 -4150000 0
+    next_corner: -2075000 -4150000 0
+    next_corner: -4150000 -2075000 0
+    next_corner: -4150000 -1531000 0
+  outline_polyline: 254000 -5039000 1912000
+    next_corner: -4912000 2039000 1
+    next_corner: -4785000 1912000 1
+    next_corner: -4912000 1785000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -3550000 0 0
+      top_pad: 3 2300000 2050000 2050000 0
+    pin: "2" 0 3550000 0 0
+      top_pad: 3 2300000 2050000 2050000 0
+
+name: "CAPAE830X620M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;8.30mm L X 8.30mm W X 6.20mm H"
+  units: NM
+  sel_rect: -6450000 -5150000 6450000 5150000
+  ref_text: 1270000 0 6150000 0 177800
+  value_text: 1270000 0 -7420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 4150000 1281000
+    next_corner: 4150000 4150000 0
+    next_corner: -2075000 4150000 0
+    next_corner: -4150000 2075000 0
+    next_corner: -4150000 1281000 0
+  outline_polyline: 177800 4150000 -1281000
+    next_corner: 4150000 -4150000 0
+    next_corner: -2075000 -4150000 0
+    next_corner: -4150000 -2075000 0
+    next_corner: -4150000 -1281000 0
+  outline_polyline: 254000 -5039000 1662000
+    next_corner: -4912000 1789000 1
+    next_corner: -4785000 1662000 1
+    next_corner: -4912000 1535000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -3200000 0 0
+      top_pad: 3 1800000 2225000 2225000 0
+    pin: "2" 0 3200000 0 0
+      top_pad: 3 1800000 2225000 2225000 0
+
+name: "CAPAE830X680M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Aluminum Electrolytic;8.30mm L X 8.30mm W X 6.80mm H"
+  units: NM
+  sel_rect: -6350000 -5150000 6350000 5150000
+  ref_text: 1270000 0 6150000 0 177800
+  value_text: 1270000 0 -7420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 4150000 1306000
+    next_corner: 4150000 4150000 0
+    next_corner: -2075000 4150000 0
+    next_corner: -4150000 2075000 0
+    next_corner: -4150000 1306000 0
+  outline_polyline: 177800 4150000 -1306000
+    next_corner: 4150000 -4150000 0
+    next_corner: -2075000 -4150000 0
+    next_corner: -4150000 -2075000 0
+    next_corner: -4150000 -1306000 0
+  outline_polyline: 254000 -5039000 1687000
+    next_corner: -4912000 1814000 1
+    next_corner: -4785000 1687000 1
+    next_corner: -4912000 1560000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -3100000 0 0
+      top_pad: 3 1850000 2225000 2225000 0
+    pin: "2" 0 3100000 0 0
+      top_pad: 3 1850000 2225000 2225000 0
+

@@ -1,0 +1,36 @@
+name: "RESCAF40P60X140X45-8L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Resistor,Chip Array,0.40mm pitch;8 pin,0.60mm L X 1.40mm W X 0.45mm H"
+  units: NM
+  sel_rect: -650000 -850000 650000 850000
+  ref_text: 1270000 0 1850000 0 177800
+  value_text: 1270000 0 -3120000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -300000 825000
+    next_corner: 300000 825000 0
+  outline_polyline: 177800 -300000 -825000
+    next_corner: 300000 -825000 0
+  outline_polyline: 75000 -587500 825000
+    next_corner: -550000 862500 1
+    next_corner: -512500 825000 1
+    next_corner: -550000 787500 1
+    close_polyline: 1
+  n_pins: 8
+    pin: "1" 0 -350000 600000 0
+      top_pad: 3 150000 200000 200000 0
+    pin: "2" 0 -350000 200000 0
+      top_pad: 3 150000 200000 200000 0
+    pin: "3" 0 -350000 -200000 0
+      top_pad: 3 150000 200000 200000 0
+    pin: "4" 0 -350000 -600000 0
+      top_pad: 3 150000 200000 200000 0
+    pin: "5" 0 350000 -600000 0
+      top_pad: 3 150000 200000 200000 0
+    pin: "6" 0 350000 -200000 0
+      top_pad: 3 150000 200000 200000 0
+    pin: "7" 0 350000 200000 0
+      top_pad: 3 150000 200000 200000 0
+    pin: "8" 0 350000 600000 0
+      top_pad: 3 150000 200000 200000 0
+

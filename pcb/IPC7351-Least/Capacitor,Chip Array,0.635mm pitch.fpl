@@ -1,0 +1,28 @@
+name: "CAPCAF63P100X137X66-4L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,Chip Array,0.635mm pitch;4 pin,1.00mm L X 1.37mm W X 0.66mm H"
+  units: NM
+  sel_rect: -900000 -900000 900000 900000
+  ref_text: 1270000 0 1900000 0 177800
+  value_text: 1270000 0 -3170000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -500000 773900
+    next_corner: 500000 773900 0
+  outline_polyline: 177800 -500000 -773900
+    next_corner: 500000 -773900 0
+  outline_polyline: 150000 -875000 765000
+    next_corner: -800000 840000 1
+    next_corner: -725000 765000 1
+    next_corner: -800000 690000 1
+    close_polyline: 1
+  n_pins: 4
+    pin: "1" 0 -550000 315000 0
+      top_pad: 3 300000 250000 250000 0
+    pin: "2" 0 -550000 -315000 0
+      top_pad: 3 300000 250000 250000 0
+    pin: "3" 0 550000 -315000 0
+      top_pad: 3 300000 250000 250000 0
+    pin: "4" 0 550000 315000 0
+      top_pad: 3 300000 250000 250000 0
+

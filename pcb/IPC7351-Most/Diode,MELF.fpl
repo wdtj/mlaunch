@@ -1,0 +1,130 @@
+name: "DIOMELF1911M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Diode,MELF;1.90mm L X 1.15mm Dia"
+  units: NM
+  sel_rect: -2150000 -1150000 2150000 1150000
+  ref_text: 1270000 0 2150000 0 177800
+  value_text: 1270000 0 -3420000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -221000 -396000
+    next_corner: 221000 -396000 0
+    close_polyline: 0
+  outline_polyline: 177800 -221000 396000
+    next_corner: 221000 396000 0
+    close_polyline: 0
+  outline_polyline: 254000 -2260000 0
+    next_corner: -2133000 127000 1
+    next_corner: -2006000 0 1
+    next_corner: -2133000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1050000 0 0
+      top_pad: 3 1300000 575000 575000 0
+    pin: "2" 0 1050000 0 0
+      top_pad: 3 1300000 575000 575000 0
+
+name: "DIOMELF3414M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Diode,MELF;3.45mm L X 1.40mm Dia"
+  units: NM
+  sel_rect: -2900000 -1300000 2900000 1300000
+  ref_text: 1270000 0 2300000 0 177800
+  value_text: 1270000 0 -3570000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -746000 -521000
+    next_corner: 746000 -521000 0
+    close_polyline: 0
+  outline_polyline: 177800 -746000 521000
+    next_corner: 746000 521000 0
+    close_polyline: 0
+  outline_polyline: 254000 -3035000 0
+    next_corner: -2908000 127000 1
+    next_corner: -2781000 0 1
+    next_corner: -2908000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1700000 0 0
+      top_pad: 3 1550000 700000 700000 0
+    pin: "2" 0 1700000 0 0
+      top_pad: 3 1550000 700000 700000 0
+
+name: "DIOMELF3515M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Diode,MELF;3.50mm L X 1.53mm Dia"
+  units: NM
+  sel_rect: -2950000 -1350000 2950000 1350000
+  ref_text: 1270000 0 2350000 0 177800
+  value_text: 1270000 0 -3620000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -896000 -596000
+    next_corner: 896000 -596000 0
+    close_polyline: 0
+  outline_polyline: 177800 -896000 596000
+    next_corner: 896000 596000 0
+    close_polyline: 0
+  outline_polyline: 254000 -3085000 0
+    next_corner: -2958000 127000 1
+    next_corner: -2831000 0 1
+    next_corner: -2958000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1800000 0 0
+      top_pad: 3 1700000 650000 650000 0
+    pin: "2" 0 1800000 0 0
+      top_pad: 3 1700000 650000 650000 0
+
+name: "DIOMELF3516M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Diode,MELF;3.50mm L X 1.65mm Dia"
+  units: NM
+  sel_rect: -2950000 -1400000 2950000 1400000
+  ref_text: 1270000 0 2400000 0 177800
+  value_text: 1270000 0 -3670000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -696000 -646000
+    next_corner: 696000 -646000 0
+    close_polyline: 0
+  outline_polyline: 177800 -696000 646000
+    next_corner: 696000 646000 0
+    close_polyline: 0
+  outline_polyline: 254000 -3085000 0
+    next_corner: -2958000 127000 1
+    next_corner: -2831000 0 1
+    next_corner: -2958000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1700000 0 0
+      top_pad: 3 1800000 750000 750000 0
+    pin: "2" 0 1700000 0 0
+      top_pad: 3 1800000 750000 750000 0
+
+name: "DIOMELF3520M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Diode,MELF;3.50mm L X 2.05mm Dia"
+  units: NM
+  sel_rect: -2950000 -1600000 2950000 1600000
+  ref_text: 1270000 0 2600000 0 177800
+  value_text: 1270000 0 -3870000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -896000 -846000
+    next_corner: 896000 -846000 0
+    close_polyline: 0
+  outline_polyline: 177800 -896000 846000
+    next_corner: 896000 846000 0
+    close_polyline: 0
+  outline_polyline: 254000 -3085000 0
+    next_corner: -2958000 127000 1
+    next_corner: -2831000 0 1
+    next_corner: -2958000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1800000 0 0
+      top_pad: 3 2200000 650000 650000 0
+    pin: "2" 0 1800000 0 0
+      top_pad: 3 2200000 650000 650000 0
+

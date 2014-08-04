@@ -1,0 +1,219 @@
+name: "INDC1005X60L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Inductor,Chip;1.00mm L X 0.50mm W X 0.60mm H"
+  units: NM
+  sel_rect: -800000 -450000 800000 450000
+  ref_text: 1270000 0 1450000 0 177800
+  value_text: 1270000 0 -2720000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -400000 0 0
+      top_pad: 3 600000 275000 275000 0
+    pin: "2" 0 400000 0 0
+      top_pad: 3 600000 275000 275000 0
+
+name: "INDC1608X95L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Inductor,Chip;1.60mm L X 0.80mm W X 0.95mm H"
+  units: NM
+  sel_rect: -1200000 -600000 1200000 600000
+  ref_text: 1270000 0 1600000 0 177800
+  value_text: 1270000 0 -2870000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -71000 -196000
+    next_corner: 71000 -196000 0
+    close_polyline: 0
+  outline_polyline: 177800 -71000 196000
+    next_corner: 71000 196000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -700000 0 0
+      top_pad: 3 900000 375000 375000 0
+    pin: "2" 0 700000 0 0
+      top_pad: 3 900000 375000 375000 0
+
+name: "INDC2012X130L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Inductor,Chip;2.00mm L X 1.25mm W X 1.30mm H"
+  units: NM
+  sel_rect: -1350000 -850000 1350000 850000
+  ref_text: 1270000 0 1850000 0 177800
+  value_text: 1270000 0 -3120000 0 177800
+  centroid: 0 0 0 0
+  n_pins: 2
+    pin: "1" 0 -750000 0 0
+      top_pad: 3 1350000 500000 500000 0
+    pin: "2" 0 750000 0 0
+      top_pad: 3 1350000 500000 500000 0
+
+name: "INDC2520X220L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Inductor,Chip;2.50mm L X 2.00mm W X 2.20mm H"
+  units: NM
+  sel_rect: -1650000 -1250000 1650000 1250000
+  ref_text: 1270000 0 2250000 0 177800
+  value_text: 1270000 0 -3520000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -521000 -846000
+    next_corner: 521000 -846000 0
+    close_polyline: 0
+  outline_polyline: 177800 -521000 846000
+    next_corner: 521000 846000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1150000 0 0
+      top_pad: 3 2200000 375000 375000 0
+    pin: "2" 0 1150000 0 0
+      top_pad: 3 2200000 375000 375000 0
+
+name: "INDC3225X135L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Inductor,Chip;3.20mm L X 2.50mm W X 1.35mm H"
+  units: NM
+  sel_rect: -2000000 -1450000 2000000 1450000
+  ref_text: 1270000 0 2450000 0 177800
+  value_text: 1270000 0 -3720000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -671000 -1046000
+    next_corner: 671000 -1046000 0
+    close_polyline: 0
+  outline_polyline: 177800 -671000 1046000
+    next_corner: 671000 1046000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1400000 0 0
+      top_pad: 3 2600000 475000 475000 0
+    pin: "2" 0 1400000 0 0
+      top_pad: 3 2600000 475000 475000 0
+
+name: "INDC4509X190L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Inductor,Chip;4.50mm L X 0.90mm W X 1.90mm H"
+  units: NM
+  sel_rect: -2650000 -700000 2650000 700000
+  ref_text: 1270000 0 1700000 0 177800
+  value_text: 1270000 0 -2970000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1196000 -296000
+    next_corner: 1196000 -296000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1196000 296000
+    next_corner: 1196000 296000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2000000 0 0
+      top_pad: 3 1100000 550000 550000 0
+    pin: "2" 0 2000000 0 0
+      top_pad: 3 1100000 550000 550000 0
+
+name: "INDC4516X160L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Inductor,Chip;4.50mm L X 1.60mm W X 1.60mm H"
+  units: NM
+  sel_rect: -2600000 -1000000 2600000 1000000
+  ref_text: 1270000 0 2000000 0 177800
+  value_text: 1270000 0 -3270000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1046000 -596000
+    next_corner: 1046000 -596000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1046000 596000
+    next_corner: 1046000 596000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1900000 0 0
+      top_pad: 3 1700000 600000 600000 0
+    pin: "2" 0 1900000 0 0
+      top_pad: 3 1700000 600000 600000 0
+
+name: "INDC4532X175L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Inductor,Chip;4.50mm L X 3.20mm W X 1.75mm H"
+  units: NM
+  sel_rect: -2650000 -1800000 2650000 1800000
+  ref_text: 1270000 0 2800000 0 177800
+  value_text: 1270000 0 -4070000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1096000 -1396000
+    next_corner: 1096000 -1396000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1096000 1396000
+    next_corner: 1096000 1396000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1950000 0 0
+      top_pad: 3 3300000 600000 600000 0
+    pin: "2" 0 1950000 0 0
+      top_pad: 3 3300000 600000 600000 0
+
+name: "INDC4648X310L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Inductor,Chip;4.60mm L X 4.80mm W X 3.10mm H"
+  units: NM
+  sel_rect: -2600000 -2600000 2600000 2600000
+  ref_text: 1270000 0 3600000 0 177800
+  value_text: 1270000 0 -4870000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -446000 -2196000
+    next_corner: 446000 -2196000 0
+    close_polyline: 0
+  outline_polyline: 177800 -446000 2196000
+    next_corner: 446000 2196000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -1600000 0 0
+      top_pad: 3 4900000 900000 900000 0
+    pin: "2" 0 1600000 0 0
+      top_pad: 3 4900000 900000 900000 0
+
+name: "INDC5750X180L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Inductor,Chip;5.70mm L X 5.00mm W X 1.80mm H"
+  units: NM
+  sel_rect: -3200000 -2750000 3200000 2750000
+  ref_text: 1270000 0 3750000 0 177800
+  value_text: 1270000 0 -5020000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -1846000 -2346000
+    next_corner: 1846000 -2346000 0
+    close_polyline: 0
+  outline_polyline: 177800 -1846000 2346000
+    next_corner: 1846000 2346000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2600000 0 0
+      top_pad: 3 5200000 500000 500000 0
+    pin: "2" 0 2600000 0 0
+      top_pad: 3 5200000 500000 500000 0
+
+name: "INDC6350X200L"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Inductor,Chip;6.30mm L X 5.00mm W X 2.00mm H"
+  units: NM
+  sel_rect: -3500000 -2750000 3500000 2750000
+  ref_text: 1270000 0 3750000 0 177800
+  value_text: 1270000 0 -5020000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -2146000 -2346000
+    next_corner: 2146000 -2346000 0
+    close_polyline: 0
+  outline_polyline: 177800 -2146000 2346000
+    next_corner: 2146000 2346000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 -2900000 0 0
+      top_pad: 3 5200000 500000 500000 0
+    pin: "2" 0 2900000 0 0
+      top_pad: 3 5200000 500000 500000 0
+

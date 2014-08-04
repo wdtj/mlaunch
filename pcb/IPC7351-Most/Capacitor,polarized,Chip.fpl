@@ -1,0 +1,52 @@
+name: "CAPCP1709X105M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,polarized,Chip;1.65mm L X 0.90mm W X 1.05mm H"
+  units: NM
+  sel_rect: -2000000 -1100000 2000000 1100000
+  ref_text: 1270000 0 2100000 0 177800
+  value_text: 1270000 0 -3370000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -46000 -346000
+    next_corner: 46000 -346000 0
+    close_polyline: 0
+  outline_polyline: 177800 -46000 346000
+    next_corner: 46000 346000 0
+    close_polyline: 0
+  outline_polyline: 254000 -2135000 0
+    next_corner: -2008000 127000 1
+    next_corner: -1881000 0 1
+    next_corner: -2008000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -900000 0 0
+      top_pad: 3 1200000 600000 600000 0
+    pin: "2" 0 900000 0 0
+      top_pad: 3 1200000 600000 600000 0
+
+name: "CAPCP2014X145M"
+author: "Allan Wright @ freepcb.com"
+source: "Extracted from PCB Libraries IPC-7351 viewer"
+description: "Capacitor,polarized,Chip;2.05mm L X 1.40mm W X 1.45mm H"
+  units: NM
+  sel_rect: -2200000 -1350000 2200000 1350000
+  ref_text: 1270000 0 2350000 0 177800
+  value_text: 1270000 0 -3620000 0 177800
+  centroid: 0 0 0 0
+  outline_polyline: 177800 -171000 -596000
+    next_corner: 171000 -596000 0
+    close_polyline: 0
+  outline_polyline: 177800 -171000 596000
+    next_corner: 171000 596000 0
+    close_polyline: 0
+  outline_polyline: 254000 -2310000 0
+    next_corner: -2183000 127000 1
+    next_corner: -2056000 0 1
+    next_corner: -2183000 -127000 1
+    close_polyline: 1
+  n_pins: 2
+    pin: "1" 0 -1050000 0 0
+      top_pad: 3 1700000 625000 625000 0
+    pin: "2" 0 1050000 0 0
+      top_pad: 3 1700000 625000 625000 0
+
