@@ -1,0 +1,60 @@
+
+
+   ---- Transcoding 'C:\Users\waynej\Documents\GitHub\mlaunch\pad30\CAM\top_copper.grb' ----   Wed Jul 16 18:38:51 2014
+
+D11   --> D100
+D12   --> D101
+D13   --> D102
+D14   --> D103
+D15   --> D104
+D16   --> D105
+D17   --> D106
+D18   --> D107
+D19   --> D108
+D20   --> D109
+D21   --> D110
+D22   --> D111
+D23   --> D112
+D24   --> D113
+D25   --> D114
+D26   --> D115
+D27   --> D116
+D28   --> D117
+D29   --> D118
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\waynej\Documents\GitHub\mlaunch\pad30\CAM\bottom_copper.grb' ----   Wed Jul 16 18:49:36 2014
+
+D11   --> D100
+D12   --> D101
+D13   --> D102
+D14   --> D103
+D15   --> D104
+D16   --> D105
+D17   --> D106
+D18   --> D107
+D19   --> D108
+D20   --> D109
+D21   --> D110
+D22   --> D111
+D23   --> D112
+D24   --> D113
+D25   --> D114
+D26   --> D115
+D27   --> D116
+D28   --> D117
+D29   --> D118
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\waynej\Documents\GitHub\mlaunch\pad30\CAM\top_silk.grb' ----   Wed Jul 16 18:50:33 2014
+
+D11   --> D119
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\waynej\Documents\GitHub\mlaunch\pad30\CAM\bottom_silk.grb' ----   Wed Jul 16 18:50:46 2014
+
+D11   --> D120
+-----------------------------------------------------------------
