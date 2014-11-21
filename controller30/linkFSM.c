@@ -160,7 +160,7 @@ void linkStatusReady( zbPkt * pkt, unsigned int length )
 		break;
 	}
 }
-	
+
 void linkPkt(unsigned char *data, unsigned int length)
 {
 	zbPkt *pkt=(zbPkt *)data;

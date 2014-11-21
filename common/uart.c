@@ -48,7 +48,7 @@ void (*uart_handler)(void);
 
 void uart_init(long baud, void (*handler)(void))
 {
-	uart_handler=handler;
+  uart_handler=handler;
 	
 #if F_CPU < 2000000UL && defined(U2X)
   UCSRA = _BV(U2X);             /* improve baud rate error by using 2x clk */

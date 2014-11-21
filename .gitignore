@@ -14,3 +14,4 @@
 *.fpc.bak
 *~
 [Aa]utosave/
+*.zip
