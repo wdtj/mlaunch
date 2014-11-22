@@ -11,6 +11,10 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "switchTest", "switchTest\sw
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "relayTest", "relayTest\relayTest.cproj", "{3529CFC7-58E4-46A7-A432-E7C25FA63C27}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "XbeeTest", "XbeeTest\XbeeTest.cproj", "{7EB76141-8E7A-481B-A7A9-AABFC3C6B554}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ADCTest", "ADCTest\ADCTest.cproj", "{D4D1249F-5D4B-4933-AC94-A92BE700A576}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -37,6 +41,14 @@ Global
 		{3529CFC7-58E4-46A7-A432-E7C25FA63C27}.Debug|AVR.Build.0 = Debug|AVR
 		{3529CFC7-58E4-46A7-A432-E7C25FA63C27}.Release|AVR.ActiveCfg = Release|AVR
 		{3529CFC7-58E4-46A7-A432-E7C25FA63C27}.Release|AVR.Build.0 = Release|AVR
+		{7EB76141-8E7A-481B-A7A9-AABFC3C6B554}.Debug|AVR.ActiveCfg = Debug|AVR
+		{7EB76141-8E7A-481B-A7A9-AABFC3C6B554}.Debug|AVR.Build.0 = Debug|AVR
+		{7EB76141-8E7A-481B-A7A9-AABFC3C6B554}.Release|AVR.ActiveCfg = Release|AVR
+		{7EB76141-8E7A-481B-A7A9-AABFC3C6B554}.Release|AVR.Build.0 = Release|AVR
+		{D4D1249F-5D4B-4933-AC94-A92BE700A576}.Debug|AVR.ActiveCfg = Debug|AVR
+		{D4D1249F-5D4B-4933-AC94-A92BE700A576}.Debug|AVR.Build.0 = Debug|AVR
+		{D4D1249F-5D4B-4933-AC94-A92BE700A576}.Release|AVR.ActiveCfg = Release|AVR
+		{D4D1249F-5D4B-4933-AC94-A92BE700A576}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
