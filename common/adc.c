@@ -124,3 +124,8 @@ unsigned int adc_valid(int channel)
 {
 	return adcChannel[channel].valid;
 }
+
+unsigned int adc_count(int channel)
+{
+	return adcChannel[channel].count;
+}

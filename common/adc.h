@@ -47,3 +47,4 @@ void adc_run(void);
 
 unsigned int adc_value(int channel);
 unsigned int adc_valid(int channel);
+unsigned int adc_count(int channel);
