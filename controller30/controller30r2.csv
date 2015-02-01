@@ -22,10 +22,10 @@ Reference,Quantity,Name,Description,Package,Digi-Key Part,V_Max,R_Off,R_On,T_Tri
 "R7,R8,R9",  3,R,Resistor,R1206,311-910FRCT-ND,,,,,,..,..,..,..,910,..,..,..
 "D10,D3,D4,D5,D6,D7,D8,D9",  8,SMP4-SRGY,SMP4-SRGY,PLCC-4,492-1227-1-ND
 "S10",  1,SWITCH TOGGLE SPST 6A 125V,SWITCH TOGGLE SPST 6A 125V,package name for PCB layout,M2011LL1W01-ND
-"S1,S2,S3,S4,S5,S6,S7,S8,S9",  9,SWITCH1,Single Pole Push Switch,3ESH9-15.0,679-2219-ND
+"S1,S2,S3,S4,S5,S6,S7,S8,S9",  9,SWITCH1,Single Pole Push Switch,3ESH9-15.0,679-2226-ND
 "U7,U8,U9",  3,TLC5917,TLC5917,S016,296-21995-1-ND
 "J3",  1,TestPoint,Header 1x3,1X3HDR-100,609-3470-ND
 "V1",  1,VARISTOR,Varistor,C1206,732-2549-1-ND,18v,,,,,..,,,
-"U2",  1,XBee,MaxStream XBee,XBee,602-1285-ND
+"U2",  1,XBee,XBee,XBee,602-1101-ND
 "J6,J7",  2,Xbee Header,CONN RECEPT 2MM SINGLE STR 10POS,package name for PCB layout,S5751-10-ND
 "spacer1,spacer2,spacer3,spacer4",  4,spacer,ROUND SPACER #4 NYLON 1/8",package name for PCB layout,492-1072-ND
