@@ -69,7 +69,7 @@ unsigned int adc3hist[10];
 
 volatile unsigned int histTimer=1000/TIMER0_PERIOD;
 
-volatile unsigned long v1, v2;
+volatile unsigned long vBatt;
 
 
 bool ident=false;
@@ -133,83 +133,82 @@ int main(void)
 		 */
 
 		adc2=(long)adc_value(2);
-		if (adc2 > 12)
-		{
-			v1=(((adc2-12)*10000l)/5766l);
-		}
-		else
-		{
-			v1=0;
-		}
-		
 		adc3=(long)adc_value(3);
-		if (adc3 > 12)
+		if (adc2>adc3)
 		{
-			v2=(((adc3-12)*10000l)/5766l);
+			vBatt=(((long)adc2)-16)*100000/59571;
 		}
 		else
 		{
-			v2=0;
+			vBatt=(((long)adc3)-16)*100000/59571;
 		}
 		
-		if (pads[0].launchState==PAD_ENABLED)
+		if (vBatt < 0)
 		{
-			if (v1>v2)
+			vBatt=0;
+		}
+		
+		long r;
+		if (pads[0].launchState==PAD_ENABLED || pads[0].launchState==SW_ENABLED)
+		{
+			adc0=(long)adc_value(0);
+			if (adc2>adc3)
 			{
-				adc0=(long)adc_value(0);
-				unsigned long r=(adc0*153)-2000;
-				if (r > 50000)
-				{
-					pads[0].contResistance=-1;
-				}
-				else
-				{
-					pads[0].contResistance=r/100;
-				}
+				long rCd=((long)adc0)*148;
+				long rBatt=((long)adc2)*7;
+				r=(rCd-rBatt+3798)/100;
 			}
 			else
 			{
-				adc0=(long)adc_value(0);
-				unsigned long r=(adc0*149)-120800L;
-				if (r > 50000)
-				{
-					pads[0].contResistance=-1;
-				}
-				else
-				{
-					pads[0].contResistance=r/100;
-				}
+				long rCd=((long)adc0)*147;
+				long rBatt=((long)adc2)*140;
+				r=(rBatt-rCd+5386)/100;
+			}
+
+			if (r < 0)
+			{
+				r=0;
+			}
+			
+			if (r > 50000)
+			{
+				pads[0].contResistance=-1;
+			}
+			else
+			{
+				pads[0].contResistance=r;
 			}
 			pads[0].contValid=true;
 		}
 		
-		if (pads[1].launchState==PAD_ENABLED)
+		if (pads[1].launchState==PAD_ENABLED || pads[1].launchState==SW_ENABLED)
 		{
-			if (v1>v2)
+			adc1=(long)adc_value(1);
+			if (adc2>adc3)
 			{
-				adc1=(long)adc_value(1);
-				unsigned long r=(adc1*153)-2000;
-				if (r > 50000)
-				{
-					pads[1].contResistance=-1;
-				}
-				else
-				{
-					pads[1].contResistance=r/100;
-				}
+				long rCd=((long)adc1)*148;
+				long rBatt=((long)adc2)*7;
+				r=(rCd-rBatt+3798)/100;
 			}
 			else
 			{
-				adc1=(long)adc_value(1);
-				unsigned long r=(adc1*149)-120800L;
-				if (r > 50000)
-				{
-					pads[0].contResistance=-1;
-				}
-				else
-				{
-					pads[1].contResistance=r/100;
-				}
+				long rCd=((long)adc1)*147;
+				long rBatt=((long)adc2)*140;
+				r=(rBatt-rCd+5386)/100;
+			}
+
+			if (r < 0)
+			{
+				r=0;
+			}
+			
+			if (r > 50000)
+			{
+				pads[1].contResistance=-1;
+			}
+			else
+			{
+				pads[1].contResistance=r;
 			}
 			pads[1].contValid=true;
 		}

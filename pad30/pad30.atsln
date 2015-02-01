@@ -15,6 +15,8 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "XbeeTest", "XbeeTest\XbeeTe
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ADCTest", "ADCTest\ADCTest.cproj", "{D4D1249F-5D4B-4933-AC94-A92BE700A576}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "adcCalib", "adcCalib\adcCalib.cproj", "{83DD6E18-C5FC-495F-8E0A-529711A98A02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -49,6 +51,10 @@ Global
 		{D4D1249F-5D4B-4933-AC94-A92BE700A576}.Debug|AVR.Build.0 = Debug|AVR
 		{D4D1249F-5D4B-4933-AC94-A92BE700A576}.Release|AVR.ActiveCfg = Release|AVR
 		{D4D1249F-5D4B-4933-AC94-A92BE700A576}.Release|AVR.Build.0 = Release|AVR
+		{83DD6E18-C5FC-495F-8E0A-529711A98A02}.Debug|AVR.ActiveCfg = Debug|AVR
+		{83DD6E18-C5FC-495F-8E0A-529711A98A02}.Debug|AVR.Build.0 = Debug|AVR
+		{83DD6E18-C5FC-495F-8E0A-529711A98A02}.Release|AVR.ActiveCfg = Release|AVR
+		{83DD6E18-C5FC-495F-8E0A-529711A98A02}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

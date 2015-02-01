@@ -69,16 +69,19 @@ void padFSMtimer(int padNum)
         break;
 
         case SW_ENABLED:
-        if (pads[padNum].contResistance < 400)
-        {
-            set(PORTB, pad->green);
-            reset(PORTB, pad->red);
-        }
-        else
-        {
-            set(PORTB, pad->red);
-            reset(PORTB, pad->green);
-        }
+		if (pads[padNum].contValid==true)
+		{
+			if (pads[padNum].contResistance < 400)
+			{
+				set(PORTB, pad->green);
+				reset(PORTB, pad->red);
+			}
+			else
+			{
+				set(PORTB, pad->red);
+				reset(PORTB, pad->green);
+			}
+		}
         break;
 
         case PAD_ENABLE:

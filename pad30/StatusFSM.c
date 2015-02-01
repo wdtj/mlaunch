@@ -45,7 +45,7 @@ void sendStatus(int padNum)
 {
 	char msg[80];
 	long batt;
-	extern unsigned long v1, v2;
+	extern unsigned long vBatt, v2;
 	extern unsigned char channel;
 	extern unsigned char signalStrength;
 
@@ -57,13 +57,11 @@ void sendStatus(int padNum)
 		return;
 	}
 	
-	batt=v1>v2?v1:v2;
-
 	int launchState=pads[padNum].launchState==PAD_LAUNCH?1:0;
 	int contState=(pads[padNum].contResistance < 400)?1:0;
 	
-	int len=sprintf(msg, "S%d e%d l%d Rc%ld Bv%ld.%02ld Ch%02d RSSI%02d",
-		padNum+1, contState, launchState, pads[padNum].contResistance, batt/100, batt%100, channel, signalStrength);
+	int len=sprintf(msg, "S%d e%d l%d Cr%ld Vb%ld.%02ld Ch%02d RSSI%02d",
+		padNum+1, contState, launchState, pads[padNum].contResistance, vBatt/100, vBatt%100, channel, signalStrength);
 	
 	zb_tx(0, controllerAddress, controllerNAD, 0, 0, msg, len);
 }
