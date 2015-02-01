@@ -145,9 +145,20 @@ int main(void)
 	long v1=(((long)batt1ave)-16)*100000/59571;
 	long v2=(((long)batt2ave)-16)*100000/59571;
 
-	long r1cd=((long)cd2ave)*147;
-	long r1batt=((long)batt2ave)*140;
-	long r1=(r1batt-r1cd+5386)/100;
-	
+	long r1cd;
+	long r1batt;
+	long r1;
+	if (batt1ave < batt2ave)
+	{
+		r1cd=((long)cd2ave)*147;
+		r1batt=((long)batt2ave)*140;
+		r1=(r1batt-r1cd+5386)/100;
+	}
+	else
+	{
+		r1cd=((long)cd2ave)*148;
+		r1batt=((long)batt1ave)*7;
+		r1=(r1cd-r1batt+3798)/100;
+	}
 	while(true){};
 }
