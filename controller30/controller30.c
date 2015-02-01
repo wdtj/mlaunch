@@ -487,7 +487,7 @@ void statusMessage(char * data,int length)
 	int pad;
 	int contResistance, batt, batt1, batt2;
 	
-	sscanf(data, "S%c e%d l%d Rc%d Bv%d.%d", 
+	sscanf(data, "S%c e%d l%d Cr%d Vb%d.%d", 
 		&padnum, &contState, &launchState, &contResistance, &batt1, &batt2);
 
 	batt=batt1*100+batt2;
