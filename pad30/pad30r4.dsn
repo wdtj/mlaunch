@@ -1522,9 +1522,9 @@ download a copy.-->
 		</OPTIONS>
 		<SYMBOL id='6' pos='177.00000,103.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='U5' show='1' pos='-15.00000,-14.00000'/>
-			<FIELD type='0' description='Name' value='3.3v VReg' show='1' pos='-15.00000,-16.00000'/>
+			<FIELD type='0' description='Name' value='AZ1117-33' show='1' pos='-15.00000,-16.00000'/>
 			<FIELD type='1' description='Package' value='WSOT-223' show='0' pos='0.00000,0.00000'/>
-			<FIELD type='1' description='Digi-Key Part' value='AP1117E33GDICT-ND' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Digi-Key Part' value='AZ1117EH-3.3TRG1DICT-ND' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 		</SYMBOL>
