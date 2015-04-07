@@ -13,27 +13,7 @@
 
 #include "../../common/adc.h"
 #include <limits.h>
-
-#define Red1 PORTB0
-#define Green1 PORTB1
-#define Red2 PORTB4
-#define Green2 PORTB5
-
-#define setRed1()     set(PORTB, Red1)
-#define resetRed1()   reset(PORTB, Red1)
-#define setGreen1()   set(PORTB, Green1)
-#define resetGreen1() reset(PORTB, Green1)
-#define setYellow1()   set(PORTB, Green1); set(PORTB, Red1)
-#define resetYellow1() reset(PORTB, Green1); reset(PORTB, Red1)
-
-#define setRed2()     set(PORTB, Red2)
-#define resetRed2()   reset(PORTB, Red2)
-#define setGreen2()   set(PORTB, Green2)
-#define resetGreen2() reset(PORTB, Green2)
-#define setYellow2()   set(PORTB, Green2); set(PORTB, Red2)
-#define resetYellow2() reset(PORTB, Green2); reset(PORTB, Red2)
-
-#define Siren PORTB3
+#include "PadLed.h"
 
 #define Launch1 PORTA4
 #define Enable1 PORTA5
@@ -59,7 +39,8 @@ unsigned int batt2values[105];
 		
 int main(void)
 {
-	DDRB=_BV(Red1)|_BV(Green1)|_BV(Siren)|_BV(Red2)|_BV(Green2);	// PB0-1, 3-5 are output
+	PadLedInit();
+	
 	DDRA=_BV(Launch1)|_BV(Enable1)|_BV(Launch2)|_BV(Enable2);		// PA4-7 output
 
 	setEnable1();
@@ -98,7 +79,7 @@ int main(void)
 
 	unsigned count=0;
 		
-    while(adc_count(0) <= 100)\
+    while(adc_count(0) <= 100)
 	{
 	}
 
@@ -142,23 +123,40 @@ int main(void)
 	int batt1ave=batt1sum/count;
 	int batt2ave=batt2sum/count;
 
-	long v1=(((long)batt1ave)-16)*100000/59571;
-	long v2=(((long)batt2ave)-16)*100000/59571;
+	long v1=(((long)batt1ave)-20)*100000/62428;
+	long v2=(((long)batt2ave)-20)*100000/62428;
 
 	long r1cd;
 	long r1batt;
 	long r1;
 	if (batt1ave < batt2ave)
 	{
-		r1cd=((long)cd2ave)*147;
-		r1batt=((long)batt2ave)*140;
-		r1=(r1batt-r1cd+5386)/100;
+		r1cd=((long)cd1ave)*139;
+		r1batt=((long)batt2ave)*133;
+		r1=(r1batt-r1cd+5659)/100;
 	}
 	else
 	{
-		r1cd=((long)cd2ave)*148;
+		r1cd=((long)cd1ave)*148;
 		r1batt=((long)batt1ave)*7;
 		r1=(r1cd-r1batt+3798)/100;
 	}
+
+	long r2cd;
+	long r2batt;
+	long r2;
+	if (batt1ave < batt2ave)
+	{
+		r2cd=((long)cd2ave)*139;
+		r2batt=((long)batt2ave)*133;
+		r2=(r2batt-r2cd+5659)/100;
+	}
+	else
+	{
+		r2cd=((long)cd2ave)*148;
+		r2batt=((long)batt1ave)*7;
+		r2=(r2cd-r2batt+3798)/100;
+	}
+
 	while(true){};
 }

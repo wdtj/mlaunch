@@ -111,6 +111,12 @@
     <Compile Include="adcCalib.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="PadLed.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="PadLed.h">
+      <SubType>compile</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\common\mCommon.cproj">
