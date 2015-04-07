@@ -235,3 +235,35 @@ void zb_id(unsigned char fid, unsigned long v)
   zb_write((unsigned char *)&block, sizeof block);
 }
 
+void zb_vr(unsigned char fid)
+{
+	struct {
+		unsigned char frameType;
+		unsigned char frameId;
+		unsigned char cmd[2];
+		} block = {
+		ZB_AT_COMMAND,
+		fid,
+		{'V', 'R'}
+	};
+
+	zb_write((unsigned char *)&block, sizeof block);
+}
+
+void zb_no(unsigned char fid, unsigned char opt)
+{
+	struct {
+		unsigned char frameType;
+		unsigned char frameId;
+		unsigned char cmd[2];
+		unsigned char opt;
+		} block = {
+		ZB_AT_COMMAND,
+		fid,
+		{'N', 'O'},
+		opt
+	};
+
+	zb_write((unsigned char *)&block, sizeof block);
+}
+
