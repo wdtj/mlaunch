@@ -21,8 +21,6 @@ void zb_tx(unsigned char fid,
     unsigned char data[72]; 
   } block={ZB_TRANSMIT_REQUEST, fid}; 
 
-  zb_txBusy=true;
-  
   block.dest=dest;
   block.nad=nad;
   block.radius=radius;
