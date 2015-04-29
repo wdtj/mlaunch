@@ -39,14 +39,14 @@ void sendAssign( int sw );
 
 FILE xbee = FDEV_SETUP_STREAM(uart_putchar, uart_getchar, _FDEV_SETUP_RW);
 
-char rxBuffer[80]="";
-char txBuffer[80]="";
+char rxBuffer[160]="";
+char txBuffer[160]="";
 
 unsigned int greenLeds=0;
 unsigned int redLeds=0;
 unsigned int yellowLeds=0;
 
-struct padInfo pads[]=
+volatile struct padInfo pads[]=
 {
     {
 	    IDLE,
@@ -125,6 +125,8 @@ void initNewPads()
 						greenLeds|=_BV(pair);
 						greenLeds|=_BV(pair+1);
 						LED_output(redLeds, greenLeds, yellowLeds);
+						newPad[i].used=0;
+						newPad[i+1].used=0;
 						wait=false;
 						while(isClosed(sw)) {}
 						break;
@@ -178,19 +180,21 @@ int main(void)
 
 	linkStart(notInitialized);
 
+	// wait for all the pads to be discovered.
 	while(!isLinkReady()) {
 		for (int i=0; i<8; i+=2)
-		if (pads[i].discovered && !pads[i].discoveredAck)
 		{
-			OLED_XYprintf(0, 3, "Discovered %c&%c", pads[i].padId, pads[i+1].padId);
-			OLED_clearEOL();
+			if (pads[i].discovered && !pads[i].discoveredAck)
+			{
+				OLED_XYprintf(0, 3, "Discovered %c&%c", pads[i].padId, pads[i+1].padId);
+				OLED_clearEOL();
 			
-			pads[i].discoveredAck=true;
-			greenLeds|=_BV(i);
-			pads[i+1].discoveredAck=true;
-			greenLeds|=_BV(i+1);
+				pads[i].discoveredAck=true;
+				greenLeds|=_BV(i);
+				pads[i+1].discoveredAck=true;
+				greenLeds|=_BV(i+1);
+			}
 		}
-
 		LED_output(redLeds, greenLeds, yellowLeds);
 	}
 	
@@ -201,8 +205,11 @@ int main(void)
 	padReady();
 
 	/* main loop */
+	bool displayCluttered=false;
     while(1)
     {
+		bool allOpen=true;
+		
 		for(int sw=0; sw<8; ++sw)
 		{
 			if(!pads[sw].discovered)
@@ -212,6 +219,7 @@ int main(void)
 			
 			if (isClosed(sw))
 			{
+				allOpen=false;
 				if (pads[sw].padState == IDLE)
 				{
 					enable(sw);
@@ -239,8 +247,17 @@ int main(void)
 				{
 					OLED_clearDisplay();
 					OLED_XYprintf(0,0, "Pad %d", sw+1);
-					OLED_XYprintf(0,1, "Resistance=%d", pads[sw].contResistance);
+					if (pads[sw].contResistance==-1)
+					{
+						OLED_XYprintf(0,1, "Resistance=OPEN", pads[sw].contResistance);
+					}
+					else
+					{
+						OLED_XYprintf(0,1, "Resistance=%d", pads[sw].contResistance);
+					}
+
 					OLED_XYprintf(0,2, "Batt=%d.%d", pads[sw].batt/100, pads[sw].batt%100);
+					displayCluttered=true;
 					pads[sw].newStatus=false;
 				}
 			}
@@ -280,10 +297,12 @@ int main(void)
 		}
 		LED_output(redLeds, greenLeds, yellowLeds);
 		
-//		if (allOpen == true)
-//		{
-//			OLED_clearDisplay();
-//		}
+		if (allOpen == true && displayCluttered)
+		{
+			OLED_clearDisplay();
+			OLED_XYprintf(0, 0, "Ready");
+			displayCluttered=false;
+		}
 		
 		if (isClosed(8) && !launchPressed)
 		{
@@ -507,9 +526,9 @@ void statusMessage(char * data,int length)
 
 void padDiscovered( zbAddr addr, zbNetAddr netAddr, unsigned char *ni )
 {
-	if (ni[0]=='P' && ni[1]=='A' && ni[2]=='D' &&
-	ni[3]>'0' && ni[3]<'9' &&
-	ni[4]>'0' && ni[4]<'9' )
+	if (!notInitialized && ni[0]=='P' && ni[1]=='A' && ni[2]=='D' &&
+		ni[3]>'0' && ni[3]<'9' &&
+		ni[4]>'0' && ni[4]<'9' )
 	{
 		unsigned int padId0=ni[3]-'0'-1;
 		unsigned int padId1=ni[4]-'0'-1;
