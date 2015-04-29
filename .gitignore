@@ -14,5 +14,5 @@
 *.fpc.bak
 *~
 [Aa]utosave/
-*.zip
 pcb/x.fpl
+40-DIP.jpg
