@@ -16,6 +16,9 @@ void printpkt(zbRx* rxPkt, unsigned int length);
 volatile enum status status=0;
 
 volatile enum linkStatus {
+	uninit,
+	test_reset,
+	test_init,
 	reset,
 	waitForReset,
 	discovery,
@@ -23,6 +26,75 @@ volatile enum linkStatus {
 } linkStatus;
 
 unsigned int discoveryTimer=0;
+
+void verifyVersion( zbPkt * pkt )
+{
+	unsigned char data0=pkt->zbATResponse.data[0];
+	unsigned char data1=pkt->zbATResponse.data[1];
+	
+	OLED_XYprintf(0, 1, "Modem Version %02x%02x", data0, data1);
+	OLED_clearEOL();
+}
+
+void linkUnInit( zbPkt * pkt )
+{
+	OLED_XYprintf(0, 1, "pkt %02x %c%c", pkt->frameType, 
+		pkt->zbATResponse.cmd[0], pkt->zbATResponse.cmd[1]);
+}
+
+void linkNetReset( zbPkt * pkt )
+{
+	if (pkt->frameType==ZB_AT_COMMAND_RESPONSE && 
+		pkt->zbATResponse.cmd[0] == 'V' &&
+		pkt->zbATResponse.cmd[1] == 'R')
+	{
+		verifyVersion(pkt);
+	}
+	else
+	{
+		OLED_XYprintf(0, 1, "pkt %02x %c%c", pkt->frameType, 
+			pkt->zbATResponse.cmd[0], pkt->zbATResponse.cmd[1]);
+
+		discoveryTimer=1000/TIMER0_PERIOD;
+		zb_vr(1);
+		return;
+	}
+	
+	OLED_XYprintf(0, 1, "Net Reset");
+	OLED_clearEOL();
+
+	zb_ni(0, "Controller30");
+	discoveryTimer=6000/TIMER0_PERIOD;
+	linkStatus=reset;
+	zb_nr(1, 1);
+}
+
+void linkDiscover( zbPkt * pkt )
+{
+	if (pkt->frameType==ZB_AT_COMMAND_RESPONSE && 
+		pkt->zbATResponse.cmd[0] == 'V' &&
+		pkt->zbATResponse.cmd[1] == 'R')
+	{
+		verifyVersion(pkt);
+	}
+	else
+	{
+		OLED_XYprintf(0, 1, "pkt %02x %c%c", pkt->frameType, 
+			pkt->zbATResponse.cmd[0], pkt->zbATResponse.cmd[1]);
+
+		discoveryTimer=1000/TIMER0_PERIOD;
+		zb_vr(1);
+		return;
+	}
+	
+	OLED_XYprintf(0, 1, "Discovering Network");
+	OLED_clearEOL();
+
+	linkStatus=discovery;
+	discoveryTimer=6000/TIMER0_PERIOD;
+	zb_no(0, 1);
+	zb_nd(1);
+}
 
 void linkStatusReset( zbPkt * pkt )
 {
@@ -48,6 +120,7 @@ void linkStatusReset( zbPkt * pkt )
 				OLED_XYprintf(0, 1, "Waiting for network");
 				OLED_clearEOL();
 				discoveryTimer=30000/TIMER0_PERIOD;
+				zb_no(0, 1);
 				zb_nd(1);
 				linkStatus=waitForReset;
 				break;
@@ -166,6 +239,18 @@ void linkPkt(unsigned char *data, unsigned int length)
 	zbPkt *pkt=(zbPkt *)data;
 	switch (linkStatus)
 	{
+		case uninit:
+		linkUnInit(pkt);
+		break;
+		
+		case test_reset:
+		linkNetReset(pkt);
+		break;
+		
+		case test_init:
+		linkDiscover(pkt);
+		break;
+		
 		case reset:
 		linkStatusReset(pkt);
 		break;
@@ -232,28 +317,42 @@ void printpkt(zbRx* rxPkt, unsigned int length)
 
 void linkStart(bool notInitialized)
 {
+	OLED_XYprintf(0, 1, "Testing Modem");
+	OLED_clearEOL();
+	
+	discoveryTimer=1000/TIMER0_PERIOD;
 	if (notInitialized)
 	{
-		zb_ni(0, "Controller30");
-		OLED_XYprintf(0, 1, "Net Reset");
-		OLED_clearEOL();
-		linkStatus=reset;
-		zb_nr(1, 1);
+		linkStatus=test_reset;
 	}
 	else
 	{
-		OLED_XYprintf(0, 1, "Discovering Network");
-		OLED_clearEOL();
-		linkStatus=discovery;
-		discoveryTimer=6000/TIMER0_PERIOD;
-		zb_nd(1);
+		linkStatus=test_init;
 	}
+	zb_vr(1);
 }
 
 void linkTimer(void)
 {
 	switch (linkStatus)
 	{
+		case uninit:
+		break;
+		
+		case test_reset:
+		case test_init:
+		discoveryTimer--;
+		if (discoveryTimer==0)
+		{
+			OLED_XYprintf(0, 1, "Modem Timeout");
+			OLED_clearEOL();
+			
+			// try again
+			discoveryTimer=1000/TIMER0_PERIOD;
+			zb_vr(1);
+		}
+		break;
+
 		case reset:
 		break;
 		
@@ -271,6 +370,7 @@ void linkTimer(void)
 			OLED_clearEOL();
 			linkStatus=discovery;
 			discoveryTimer=6000/TIMER0_PERIOD;
+			zb_no(0, 1);
 			zb_nd(1);
 		}
 		break;
