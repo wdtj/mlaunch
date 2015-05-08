@@ -11,7 +11,14 @@
 
 void (*timer1Ptr)(void);
 
-void timer1_init(int ps, void (*ptr)(void))
+void timer1_init_normal(int ps)
+{
+	/* Set prescaler and normal count up */
+	TCCR1A=0;
+	TCCR1B=(ps<<CS10);
+}
+
+void timer1_init_ctc(int ps, void (*ptr)(void))
 {
 	timer1Ptr=ptr;	/* Set interrupt handler */
 	
@@ -20,7 +27,12 @@ void timer1_init(int ps, void (*ptr)(void))
     TCCR1B=(ps<<CS10)|_BV(WGM12);
 }
 
-void timer1_set(unsigned int tc)
+void timer1_set_normal()
+{
+	TCNT1=0;    /* We count from 0 */
+}
+
+void timer1_set_ctc(unsigned int tc)
 {
   TIMSK&=~_BV(OCIE1A);
   TIFR&=~_BV(OCF1A);
