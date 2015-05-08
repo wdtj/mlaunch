@@ -67,4 +67,10 @@ void statusMessage(char * data, int length);
 void padDiscovered( zbAddr addr, zbNetAddr netAddr, unsigned char *ni );
 void padReady(void);
 
+#ifdef DEBUG
+#define ASSERT(x) if (x) while(true) {};
+#else
+#define ASSERT(x) 
+#endif
+
 #endif /* CONTROLLER30_H_ */
