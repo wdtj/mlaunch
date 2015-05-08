@@ -158,10 +158,10 @@ void uart_rxBuff(void *ptr, unsigned int size)
   rxCount=0;
 }
 
-int uart_fe=0;
-int uart_doe=0;
-int uart_pe=0;
-int uart_roe=0;
+int uart_fe=0;			// Framing error
+int uart_doe=0;			// Data overrun error
+int uart_pe=0;			// Parity error
+int uart_roe=0;			// Buffer overrun error
 
 /*
  * Receive character from the UART Rx, wait until rx holding register

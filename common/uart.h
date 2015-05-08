@@ -13,3 +13,4 @@ void uart_txc(unsigned char ch);
 extern int uart_fe;
 extern int uart_doe;
 extern int uart_pe;
+extern int uart_roe;
