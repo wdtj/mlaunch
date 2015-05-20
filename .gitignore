@@ -16,3 +16,5 @@
 [Aa]utosave/
 pcb/x.fpl
 40-DIP.jpg
+*.raw
+pad30/Cont1Netv2.log
