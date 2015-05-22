@@ -17,6 +17,12 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ADCTest", "ADCTest\ADCTest.
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "adcCalib", "adcCalib\adcCalib.cproj", "{83DD6E18-C5FC-495F-8E0A-529711A98A02}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ledTestR4", "ledTestR4\ledTestR4.cproj", "{B562F268-F20E-44BE-A695-1EC88D0B7DD5}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "switchTestR4", "switchTestR4\switchTestR4.cproj", "{9709A8C5-EB4F-4064-A5B8-5D116A06B254}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "pad30r4", "pad30r4\pad30r4.cproj", "{24F9C04F-691F-42FC-B851-FB4F2FD22798}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -55,6 +61,18 @@ Global
 		{83DD6E18-C5FC-495F-8E0A-529711A98A02}.Debug|AVR.Build.0 = Debug|AVR
 		{83DD6E18-C5FC-495F-8E0A-529711A98A02}.Release|AVR.ActiveCfg = Release|AVR
 		{83DD6E18-C5FC-495F-8E0A-529711A98A02}.Release|AVR.Build.0 = Release|AVR
+		{B562F268-F20E-44BE-A695-1EC88D0B7DD5}.Debug|AVR.ActiveCfg = Debug|AVR
+		{B562F268-F20E-44BE-A695-1EC88D0B7DD5}.Debug|AVR.Build.0 = Debug|AVR
+		{B562F268-F20E-44BE-A695-1EC88D0B7DD5}.Release|AVR.ActiveCfg = Release|AVR
+		{B562F268-F20E-44BE-A695-1EC88D0B7DD5}.Release|AVR.Build.0 = Release|AVR
+		{9709A8C5-EB4F-4064-A5B8-5D116A06B254}.Debug|AVR.ActiveCfg = Debug|AVR
+		{9709A8C5-EB4F-4064-A5B8-5D116A06B254}.Debug|AVR.Build.0 = Debug|AVR
+		{9709A8C5-EB4F-4064-A5B8-5D116A06B254}.Release|AVR.ActiveCfg = Release|AVR
+		{9709A8C5-EB4F-4064-A5B8-5D116A06B254}.Release|AVR.Build.0 = Release|AVR
+		{24F9C04F-691F-42FC-B851-FB4F2FD22798}.Debug|AVR.ActiveCfg = Debug|AVR
+		{24F9C04F-691F-42FC-B851-FB4F2FD22798}.Debug|AVR.Build.0 = Debug|AVR
+		{24F9C04F-691F-42FC-B851-FB4F2FD22798}.Release|AVR.ActiveCfg = Release|AVR
+		{24F9C04F-691F-42FC-B851-FB4F2FD22798}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
