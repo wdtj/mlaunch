@@ -145,6 +145,7 @@ int main(void)
 	long r2cd;
 	long r2batt;
 	long r2;
+	
 	if (batt1ave < batt2ave)
 	{
 		r2cd=((long)cd2ave)*139;
