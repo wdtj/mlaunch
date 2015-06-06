@@ -11,7 +11,7 @@
 
 #include "stdbool.h"
 
-#define F_CPU 8000000UL
+#define F_CPU 16000000UL
 
 #define set(port, bit) {port|=_BV(bit);}
 #define reset(port, bit) {port&=~_BV(bit);}
