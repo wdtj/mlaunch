@@ -109,8 +109,6 @@ void linkFSMpkt(zbPkt *pkt)
 		case ZB_TRANSMIT_STATUS:
 		{
 //			struct zbTransmitStatus *ts=&pkt->zbTransmitStatus;
-			
-			zb_txBusy=false;
 		}
 		break;
 
