@@ -143,6 +143,15 @@ uart_putchar(char c, FILE *stream)
   return rc;
 }
 
+void uart_txc(unsigned char ch)
+{
+	/* Wait for empty transmit buffer */
+	while ( !( UCSRA & (1<<UDRE)) );
+
+	/* Put data into buffer, sends the data */
+	UDR = ch;
+}
+
 volatile static void *rxBuff=NULL;
 volatile static unsigned rxBuffSize=0;
 volatile static void *rxBuffIn=NULL;
@@ -186,7 +195,7 @@ uart_getchar(FILE *stream)
   return ch;
 }
 
-
+// Returns number of available characters in the buffer
 int uart_rxReady()
 {
    return (rxCount>0);
@@ -238,11 +247,3 @@ int uart_rxc(void)
 	return UDR;
 }
 
-void uart_txc(unsigned char ch)
-{
-	/* Wait for empty transmit buffer */
-	while ( !( UCSRA & (1<<UDRE)) );
-
-	/* Put data into buffer, sends the data */
-	UDR = ch;
-}
