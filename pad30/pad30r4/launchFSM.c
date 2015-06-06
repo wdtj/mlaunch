@@ -6,7 +6,6 @@
 #include <avr/eeprom.h>
 #include "launchFSM.h"
 #include "linkFSM.h"
-#include "pad30.h"
 #include "PadLed.h"
 
 void sendStatus(int padNum, float contVolt, float battVolt);

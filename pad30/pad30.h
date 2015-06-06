@@ -5,6 +5,8 @@
  *  Author: waynej
  */ 
 
+#warning deprecated
+
 #include "../common/config.h"
 #include <avr/io.h>
 

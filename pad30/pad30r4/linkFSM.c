@@ -7,6 +7,7 @@
 
 #include "pad30.h"
 #include "../../common/config.h"
+#include "../../common/uart.h"
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -177,6 +178,23 @@ void linkFSMpkt(zbPkt *pkt)
 
 void linkFSMToDo(void)
 {
+	// If we have data from the modem, go get it
+	while (uart_rxReady()>0)
+	{
+		unsigned char ch=uart_getchar(NULL);
+
+#if defined(TRACE)
+		*(trace_buffer_ptr++)=ch;
+		if (trace_buffer_ptr==trace_buffer_end)
+		{
+			trace_buffer_ptr=trace_buffer;
+		}
+#endif
+
+		zbReceivedChar(ch);
+		ASSERT(uart_fe || uart_doe || uart_pe || uart_roe);
+	}
+
 	switch(linkState)
 	{
 		case SEND_NI:

@@ -8,8 +8,8 @@
 #include "../../common/config.h"
 #include <avr/io.h>
 
-#ifndef PAD32_CONFIG_H_
-#define PAD32_CONFIG_H_
+#ifndef PAD30_CONFIG_H_
+#define PAD30_CONFIG_H_
 
 #define Launch1 PORTA4
 #define Enable1 PORTA5
@@ -78,7 +78,7 @@ struct padStruct pads[PAD_COUNT];
 #define DIS_TIMER50 (20/TIMER0_PERIOD)
 #define DIS_TIMER (200/TIMER0_PERIOD)
 #define RESET_TIMER (1000*10/TIMER0_PERIOD)
-#define RELAY_TIMER (100/TIMER0_PERIOD)
+#define RELAY_TIMER (50/TIMER0_PERIOD)
 
 volatile bool modemDown;
 int histptr;
@@ -97,5 +97,11 @@ enum LINK_STATUS
 	MODEM_RESET,
 	MODEM_READY
 };
+
+#ifdef DEBUG
+#define ASSERT(x) if (x) while(true) {};
+#else
+#define ASSERT(x)
+#endif
 
 #endif /* PAD32_CONFIG_H_ */

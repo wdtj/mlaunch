@@ -7,6 +7,7 @@
 
 #include "pad30.h"
 #include "../common/config.h"
+#include "../common/uart.h"
 
 #include <avr/io.h>
 #include <avr/interrupt.h>
