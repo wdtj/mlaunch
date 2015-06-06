@@ -42,6 +42,7 @@ char txBuffer[80]=
 	0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff
 };
 
+// addesses of the network controller
 zbAddr controllerAddress={{0,0,0,0,0,0,0xff,0xff}};
 zbNetAddr controllerNAD={{0xff, 0xfe}};
 
@@ -59,15 +60,7 @@ struct padStruct pads[2]=
 	}
 };
 
-unsigned int adc0hist[10];
-unsigned int adc1hist[10];
-unsigned int adc2hist[10];
-unsigned int adc3hist[10];
-
-volatile unsigned int histTimer=1000/TIMER0_PERIOD;
-
 volatile unsigned long vBatt;
-
 
 bool ident=false;
 int identTimer;
@@ -75,7 +68,7 @@ int histptr=0;
 
 struct epromStruct EEMEM eprom;
 
-#define noTRACE
+#define TRACE
 #if defined(TRACE)
 unsigned char trace_buffer[256];
 unsigned char *trace_buffer_ptr=trace_buffer;
@@ -234,23 +227,6 @@ int main(void)
 			SWReset(1);
 			sw2pressed=false;
 		}
-		
-		if (histTimer==0)
-		{
-			memmove(&adc0hist[1], &adc0hist[0], sizeof(adc0hist)-sizeof(adc0hist[0]));
-			adc0hist[0]=adc_value(0);
-
-			memmove(&adc1hist[1], &adc1hist[0], sizeof(adc1hist)-sizeof(adc1hist[0]));
-			adc1hist[0]=adc_value(1);
-
-			memmove(&adc2hist[1], &adc2hist[0], sizeof(adc2hist)-sizeof(adc2hist[0]));
-			adc2hist[0]=adc_value(2);
-
-			memmove(&adc3hist[1], &adc3hist[0], sizeof(adc3hist)-sizeof(adc3hist[0]));
-			adc3hist[0]=adc_value(3);
-
-			histTimer=1000/TIMER0_PERIOD;
-		}
 	}
 }
 
@@ -265,6 +241,8 @@ void init()
 
 	DDRD|=_BV(7);
 	
+	// If one of the cont buttons is presses at startup, clear the eprom to cause
+	// a rediscover.
 	if(!(PINB&_BV(ContSW1)) || !(PINB&_BV(ContSW2)))
 	{
 		_delay_ms(100);
@@ -284,6 +262,11 @@ void init()
 	}
 
 	timer0_init(CS_1024, timer0);					// Timer uses system clock/1024
+
+#if(F_CPU/1024/1000*TIMER0_PERIOD >=256)
+#error timer speed too slow
+#endif
+
 	timer0_set(F_CPU/1024/1000*TIMER0_PERIOD);
 	
 	uart_txBuff(txBuffer, sizeof txBuffer);
@@ -338,8 +321,6 @@ void timer0(void)
 
 		statusFSMtimer();
 	}
-	
-	if (histTimer>0) histTimer--;
 }
 
 /* Receive a single character from the UART */
