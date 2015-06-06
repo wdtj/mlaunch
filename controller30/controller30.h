@@ -61,7 +61,7 @@ struct NewPad
 	zbNetAddr netAddr; 
 };
 
-#define TIMER0_PERIOD 20
+#define TIMER0_PERIOD 10
 
 void statusMessage(char * data, int length);
 void padDiscovered( zbAddr addr, zbNetAddr netAddr, unsigned char *ni );
