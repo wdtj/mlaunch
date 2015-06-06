@@ -69,7 +69,8 @@ struct padStruct
 
 struct padStruct pads[PAD_COUNT];
 
-#define TIMER0_PERIOD 20
+#define TIMER0_PERIOD 10
+
 #define SWITCH_TIMER (50/TIMER0_PERIOD)
 #define STATUS_TIMER (1000/TIMER0_PERIOD)
 #define FLASH_TIMER50 (50/TIMER0_PERIOD)
