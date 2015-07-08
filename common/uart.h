@@ -11,7 +11,7 @@ int uart_getchar(FILE *stream);
 int uart_rxReady();
 int uart_rxc(void);
 
-extern int uart_fe;
-extern int uart_doe;
-extern int uart_pe;
-extern int uart_roe;
+volatile extern int uart_fe;
+volatile extern int uart_doe;
+volatile extern int uart_pe;
+volatile extern int uart_roe;

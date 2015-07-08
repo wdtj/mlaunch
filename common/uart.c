@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include "config.h"
 #include "uart.h"
+#include "timer1.h"
 
 /*
  * $0C ($2C) UDR   USART I/O Data Register
@@ -44,6 +45,26 @@
  * UBRR11:0: USART Baud Rate Register 
  */
 
+volatile static void *txBuff=NULL;
+volatile static void *txBuffIn=NULL;
+volatile static void *txBuffOut=NULL;
+volatile static unsigned int txBuffSize=0;
+volatile static unsigned int txCount=0;
+volatile static unsigned int maxTxTime=0;	
+volatile static int uart_toe=0;
+volatile static unsigned int maxTx=0;
+volatile int uart_fe=0;			// Framing error
+volatile int uart_doe=0;			// Data overrun error
+volatile int uart_pe=0;			// Parity error
+volatile int uart_roe=0;			// Buffer overrun error
+volatile unsigned int maxRxTime=0;	
+volatile unsigned int maxRx=0;
+volatile static void *rxBuff=NULL;
+volatile static unsigned rxBuffSize=0;
+volatile static void *rxBuffIn=NULL;
+volatile static void *rxBuffOut=NULL;
+volatile static unsigned int rxCount=0;
+
 void (*uart_handler)(void); 
 
 void uart_init(long baud, void (*handler)(void))
@@ -63,12 +84,6 @@ void uart_init(long baud, void (*handler)(void))
   UCSRB |= _BV(TXCIE);  // Reenable interrupt 
   UCSRB |= _BV(RXCIE);
 }
-
-volatile static void *txBuff=NULL;
-volatile static void *txBuffIn=NULL;
-volatile static void *txBuffOut=NULL;
-volatile static unsigned int txBuffSize=0;
-volatile static unsigned int txCount=0;
 
 void uart_txBuff(void *ptr, unsigned int size)
 {
@@ -100,17 +115,15 @@ static void txStart()
 
 ISR(USART_TXC_vect )
 {
-  MARK_COMM_ON();
+  unsigned int startTime=TCNT1;
 
   if (txCount != 0)
   {
     txWrite();
   }
-  
-  MARK_COMM_OFF();
-}
 
-int uart_toe=0;
+  HIGH_WATER(maxTxTime, TCNT1-startTime);
+}
 
 /*
  * Send character c down the UART Tx, wait until tx holding register
@@ -131,6 +144,7 @@ uart_putchar(char c, FILE *stream)
       txBuffIn=txBuff;
     }
     txCount++;
+    HIGH_WATER(maxTx, txCount);
     txStart();
   }
   else
@@ -152,12 +166,6 @@ void uart_txc(unsigned char ch)
 	UDR = ch;
 }
 
-volatile static void *rxBuff=NULL;
-volatile static unsigned rxBuffSize=0;
-volatile static void *rxBuffIn=NULL;
-volatile static void *rxBuffOut=NULL;
-volatile static unsigned int rxCount=0;
-
 void uart_rxBuff(void *ptr, unsigned int size)
 {
   rxBuff=ptr;
@@ -166,11 +174,6 @@ void uart_rxBuff(void *ptr, unsigned int size)
   rxBuffOut=ptr;
   rxCount=0;
 }
-
-int uart_fe=0;			// Framing error
-int uart_doe=0;			// Data overrun error
-int uart_pe=0;			// Parity error
-int uart_roe=0;			// Buffer overrun error
 
 /*
  * Receive character from the UART Rx, wait until rx holding register
@@ -204,15 +207,18 @@ int uart_rxReady()
 
 ISR(USART_RXC_vect )
 {
-	if (bit_is_set(UCSRA, FE))
+	unsigned int startTime=TCNT1;
+	
+	volatile unsigned char ucsra=UCSRA;
+	if (bit_is_set(ucsra, FE))
 	{
 		uart_fe=1;
 	}
-	if (bit_is_set(UCSRA, DOR))
+	if (bit_is_set(ucsra, DOR))
 	{
 		uart_doe=1;
 	}
-	if (bit_is_set(UCSRA, UPE))
+	if (bit_is_set(ucsra, UPE))
 	{
 		uart_pe=1;
 	}
@@ -235,7 +241,10 @@ ISR(USART_RXC_vect )
 		}
 
 		rxCount++;
+    HIGH_WATER(maxRx, rxCount);
 	}
+
+  HIGH_WATER(maxRxTime, TCNT1-startTime);
 }
 
 int uart_rxc(void)

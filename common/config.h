@@ -42,6 +42,9 @@
 #define	MARK_TIMER0_OFF()
 #endif
 
+#define MIN(X, Y) (((X) < (Y)) ? (X) : (Y))
+#define MAX(X, Y) (((X) > (Y)) ? (X) : (Y))
 
+#define HIGH_WATER(max, value) ((max)=MAX((max), (value)))
 
 #endif /* CONFIG_H_ */

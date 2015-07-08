@@ -31,9 +31,12 @@ void timer0_set(unsigned int tc)
 	TIMSK|=_BV(OCIE0);
 }
 
+volatile static unsigned int maxT0Time=0;
+
 ISR(TIMER0_COMP_vect) 
 {
-	MARK_TIMER0_ON();
-	(*timer0Ptr)();
-	MARK_TIMER0_OFF();
+  unsigned int start=TCNT1;
+  (*timer0Ptr)();
+  
+  maxT0Time=MAX(maxT0Time, TCNT1-start);
 }
