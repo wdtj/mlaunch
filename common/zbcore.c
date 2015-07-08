@@ -3,12 +3,10 @@
 #include <stdbool.h>
 #include <string.h>
 
-int zb_debug=2;
-
-void (*zbWritePtr)(void *buff, unsigned int count);
+int (*zbWritePtr)(void *buff, unsigned int count);
 void (*zbReceivedPktPtr)(unsigned char *pkt, unsigned int length);
 
-void zbInit(void (*zbWrite)(void *buff, unsigned int count), void (*zbReceivedPkt)(unsigned char *pkt, unsigned int length))
+void zbInit(int (*zbWrite)(void *buff, unsigned int count), void (*zbReceivedPkt)(unsigned char *pkt, unsigned int length))
 {
 	zbWritePtr=zbWrite;
 	zbReceivedPktPtr=zbReceivedPkt;
