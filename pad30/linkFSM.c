@@ -169,7 +169,7 @@ void linkFSMpkt(zbPkt *pkt)
 		}
 		
 		default:
-		#if defined(myDEBUG)
+		#if defined(DEBUG)
 		while(false){}
 		#endif
 		break;

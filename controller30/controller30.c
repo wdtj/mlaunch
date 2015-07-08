@@ -13,6 +13,7 @@
 #include <avr/interrupt.h>
 #include <util/delay.h>
 #include <avr/eeprom.h>
+#include <string.h>
 
 #include "../common/led.h"
 #include "../common/OLED.h"
@@ -20,13 +21,13 @@
 #include "../common/uart.h"
 #include "../common/zb.h"
 #include "../common/Timer0.h"
+#include "../common/Timer1.h"
 #include "linkFSM.h"
 #include "switchFSM.h"
 
 void initNewPads(void);
 void init(void);
-void rxc(void);
-void zbWrite(void *buff, unsigned int count);
+int zbWrite(void *buff, unsigned int count);
 void timer0(void);
 void enable(int sw);
 void disable(int sw);
@@ -39,8 +40,8 @@ void sendAssign( int sw );
 
 FILE xbee = FDEV_SETUP_STREAM(uart_putchar, uart_getchar, _FDEV_SETUP_RW);
 
-char rxBuffer[160]="";
-char txBuffer[160]="";
+char rxBuffer[200]="";
+char txBuffer[200]="";
 
 unsigned int greenLeds=0;
 unsigned int redLeds=0;
@@ -84,58 +85,8 @@ volatile struct padInfo pads[]=
 
 struct NewPad newPad[8];
 
+/* Flag to force manual initialization */
 bool notInitialized=false;
-
-void initNewPads()
-{
-	for(int i=0; i<8; ++i)
-	{
-		bool wait=false;
-		if(newPad[i].used)
-		{
-			sendIdent(newPad[i].addr, newPad[i].netAddr); 
-			
-			OLED_XYprintf(0, 0, "Unassigned Device:");
-			OLED_XYprintf(0, 1, "%02x%02x %02x%02x %02x%02x %02x%02x", 
-			newPad[i].addr.addr64[0],
-			newPad[i].addr.addr64[1],
-			newPad[i].addr.addr64[2],
-			newPad[i].addr.addr64[3],
-			newPad[i].addr.addr64[4],
-			newPad[i].addr.addr64[5],
-			newPad[i].addr.addr64[6],
-			newPad[i].addr.addr64[7]);
-			OLED_XYprintf(0, 3, "Select Pad");
-			
-			wait=true;
-			while(wait)
-			{
-				for(int sw=0; sw<8; ++sw)
-				{
-					if(isClosed(sw))
-					{
-						int pair=sw/2*2;
-						pads[pair].addr=newPad[i].addr;
-						pads[pair].netAddr=newPad[i].netAddr;
-						pads[pair].discovered=true;
-						pads[pair+1].addr=newPad[i].addr;
-						pads[pair+1].netAddr=newPad[i].netAddr;
-						pads[pair+1].discovered=true;
-						sendAssign(pair);
-						greenLeds|=_BV(pair);
-						greenLeds|=_BV(pair+1);
-						LED_output(redLeds, greenLeds, yellowLeds);
-						newPad[i].used=0;
-						newPad[i+1].used=0;
-						wait=false;
-						while(isClosed(sw)) {}
-						break;
-					}
-				}
-			}
-		}
-	}
-}
 
 int main(void)
 {
@@ -159,12 +110,15 @@ int main(void)
 	OLED_clearLine(2);
 	OLED_clearLine(3);
 	
+#if defined(iDEBUG)
+		notInitialized=true;
+#else
 	if (PINB!=0xFF)
 	{
 		notInitialized=true;
 		OLED_XYprintf(0, 3, "Reinitializing");
 	}
-//	notInitialized=true;
+#endif
 
 	OLED_XYprintf(0, 1, "Comm Init");
 	OLED_clearEOL();
@@ -178,153 +132,152 @@ int main(void)
 		LED_output(0x0, 0x0, 0x0);
 	}
 
-	linkStart(notInitialized);
+	linkInit(notInitialized);
 
-	// wait for all the pads to be discovered.
-	while(!isLinkReady()) {
-		for (int i=0; i<8; i+=2)
-		{
-			if (pads[i].discovered && !pads[i].discoveredAck)
-			{
-				OLED_XYprintf(0, 3, "Discovered %c&%c", pads[i].padId, pads[i+1].padId);
-				OLED_clearEOL();
-			
-				pads[i].discoveredAck=true;
-				greenLeds|=_BV(i);
-				pads[i+1].discoveredAck=true;
-				greenLeds|=_BV(i+1);
-			}
-		}
-		LED_output(redLeds, greenLeds, yellowLeds);
-	}
-	
 	OLED_clearDisplay();
 	
-	initNewPads();
-	
-	padReady();
-
 	/* main loop */
 	bool displayCluttered=false;
     while(1)
     {
 		bool allOpen=true;
 		
-		for(int sw=0; sw<8; ++sw)
+		linkFSM();
+		
+		if (isLinkReady())
 		{
-			if(!pads[sw].discovered)
+		
+			for(int sw=0; sw<8; ++sw)
 			{
-				continue;
-			}
-			
-			if (isClosed(sw))
-			{
-				allOpen=false;
-				if (pads[sw].padState == IDLE)
+				if(!pads[sw].discovered)
 				{
-					enable(sw);
-				} 
-				else if (pads[sw].padState == ENABLED)
-				{
-					disable(sw);
+					continue;
 				}
-			}
-			else
-			{
-				if (pads[sw].padState == PRESSED2ENABLE)
-				{
-					pads[sw].padState=ENABLED;
-				} 
-				else if (pads[sw].padState == PRESSED2DISABLE)
-				{
-					pads[sw].padState=IDLE;
-				}
-			}
 			
-			if (pads[sw].newStatus)
-			{
-				if (pads[sw].padState == PRESSED2ENABLE)
+				if (isClosed(sw))
 				{
-					OLED_clearDisplay();
-					OLED_XYprintf(0,0, "Pad %d", sw+1);
-					if (pads[sw].contResistance==-1)
+					allOpen=false;
+					if (pads[sw].padState == IDLE)
 					{
-						OLED_XYprintf(0,1, "Resistance=OPEN", pads[sw].contResistance);
-					}
-					else
+						enable(sw);
+					} 
+					else if (pads[sw].padState == ENABLED)
 					{
-						OLED_XYprintf(0,1, "Resistance=%d", pads[sw].contResistance);
-					}
-
-					OLED_XYprintf(0,2, "Batt=%d.%d", pads[sw].batt/100, pads[sw].batt%100);
-					displayCluttered=true;
-					pads[sw].newStatus=false;
-				}
-			}
-			
-			if (pads[sw].padState == ENABLED ||
-				pads[sw].padState == PRESSED2ENABLE)
-			{
-				if (pads[sw].statusValid)
-				{
-					if (pads[sw].contState==0)
-					{
-						redLeds|=_BV(sw);
-						greenLeds&=~_BV(sw);
-						yellowLeds&=~_BV(sw);
-					}
-					else
-					{
-						redLeds&=~_BV(sw);
-						greenLeds|=_BV(sw);
-						yellowLeds&=~_BV(sw);
+						disable(sw);
 					}
 				}
 				else
 				{
+					if (pads[sw].padState == PRESSED2ENABLE)
+					{
+						pads[sw].padState=ENABLED;
+					} 
+					else if (pads[sw].padState == PRESSED2DISABLE)
+					{
+						pads[sw].padState=IDLE;
+					}
+				}
+			
+				if (pads[sw].newStatus)
+				{
+					if (pads[sw].padState == PRESSED2ENABLE)
+					{
+						OLED_clearDisplay();
+						OLED_XYprintf(0,0, "Pad %d", sw+1);
+						if (pads[sw].contResistance==-1)
+						{
+							OLED_XYprintf(0,1, "Resistance=OPEN", pads[sw].contResistance);
+						}
+						else
+						{
+							OLED_XYprintf(0,1, "Resistance=%d", pads[sw].contResistance);
+						}
+
+						OLED_XYprintf(0,2, "Batt=%d.%d", pads[sw].batt/100, pads[sw].batt%100);
+						displayCluttered=true;
+						pads[sw].newStatus=false;
+					}
+				}
+			
+				if (pads[sw].padState == ENABLED ||
+					pads[sw].padState == PRESSED2ENABLE)
+				{
+					if (pads[sw].statusValid)
+					{
+						if (pads[sw].contState==0)
+						{
+							redLeds|=_BV(sw);
+							greenLeds&=~_BV(sw);
+							yellowLeds&=~_BV(sw);
+						}
+						else
+						{
+							redLeds&=~_BV(sw);
+							greenLeds|=_BV(sw);
+							yellowLeds&=~_BV(sw);
+						}
+					}
+					else
+					{
+						redLeds&=~_BV(sw);
+						greenLeds&=~_BV(sw);
+						yellowLeds|=_BV(sw);
+					}
+				}
+
+				if (pads[sw].padState == IDLE)
+				{
 					redLeds&=~_BV(sw);
 					greenLeds&=~_BV(sw);
-					yellowLeds|=_BV(sw);
+					yellowLeds&=~_BV(sw);
 				}
-			}
 
-			if (pads[sw].padState == IDLE)
-			{
-				redLeds&=~_BV(sw);
-				greenLeds&=~_BV(sw);
-				yellowLeds&=~_BV(sw);
+        if (pads[sw].sendEnable)
+        {
+          sendEnable(sw);
+          pads[sw].sendEnable=false;
+        }
+
+        if (pads[sw].sendLaunch)
+        {
+          sendLaunch(sw);
+          pads[sw].sendLaunch=false;
+        }
+
 			}
-		}
-		LED_output(redLeds, greenLeds, yellowLeds);
+			LED_output(redLeds, greenLeds, yellowLeds);
 		
-		if (allOpen == true && displayCluttered)
-		{
-			OLED_clearDisplay();
-			OLED_XYprintf(0, 0, "Ready");
-			displayCluttered=false;
-		}
-		
-		if (isClosed(8) && !launchPressed)
-		{
-			launchPressed=true;
-			for (int pad=0; pad<8; ++pad)
+			if (allOpen == true && displayCluttered)
 			{
-				if (pads[pad].padState==ENABLED)
+	      OLED_clearLine(0);
+	      OLED_clearLine(1);
+	      OLED_clearLine(2);
+				OLED_XYprintf(0, 0, "Ready");
+				displayCluttered=false;
+			}
+		
+			if (isClosed(8) && !launchPressed)
+			{
+				launchPressed=true;
+				for (int pad=0; pad<8; ++pad)
 				{
-					pads[pad].padState=PAD_LAUNCH;
-					pads[pad].enableTimer=0;
+					if (pads[pad].padState==ENABLED)
+					{
+						pads[pad].padState=PAD_LAUNCH;
+						pads[pad].enableTimer=0;
+					}
 				}
 			}
-		}
-		else if (!isClosed(8) && launchPressed)
-		{
-			launchPressed=false;
-			for (int pad=0; pad<8; ++pad)
+			else if (!isClosed(8) && launchPressed)
 			{
-				if (pads[pad].padState==PAD_LAUNCH)
+				launchPressed=false;
+				for (int pad=0; pad<8; ++pad)
 				{
-					sendDisable(pad);
-					pads[pad].padState=IDLE;
+					if (pads[pad].padState==PAD_LAUNCH)
+					{
+						sendDisable(pad);
+						pads[pad].padState=IDLE;
+					}
 				}
 			}
 		}
@@ -345,38 +298,40 @@ void init(void)
 	LED_init();
 	OLED_init();
 	
-	timer0_init(CS_1024, timer0);					// Timer uses system clock/1024
-	timer0_set(F_CPU/1024/1000*TIMER0_PERIOD);
-	
+	timer0_init(CS_1024, timer0);					// Timer0 uses system clock/1024
+
+#if(F_CPU/1024/1000*TIMER0_PERIOD >=256)
+#error timer speed too slow
+#endif
+
+	timer0_set(F_CPU/1024/1000*TIMER0_PERIOD);		// Timer0 is 20 ms
+
+	timer1_init_normal(CS_1024);					// Timer1 uses system clock/1024
+  timer1_set_normal();
+
 	uart_txBuff(txBuffer, sizeof txBuffer);
 	uart_rxBuff(rxBuffer, sizeof rxBuffer);
 
-	uart_init(UART_BAUD, rxc);
+	uart_init(UART_BAUD, NULL);
 	
 	zbInit(&zbWrite, &linkPkt);
 
 	sei();								// enable interrupts
 }
 
-void rxc(void)
+int zbWrite(void *buff, unsigned int count)
 {
-	signal2(true);
-
-	unsigned char ch=uart_rxc();
-	zbReceivedChar(ch);
-
-	signal2(false);
-}
-
-void zbWrite(void *buff, unsigned int count)
-{
-	fwrite(buff, count, 1, &xbee);
+	return fwrite(buff, count, 1, &xbee);
 }
 
 #define xUnitTest
 #ifdef UnitTest
 static int utTimer=0;
 #endif
+
+volatile static unsigned int maxSwitch=0;
+volatile static unsigned int maxPad=0;
+volatile static unsigned int maxLink=0;
 
 void timer0(void)
 {
@@ -394,10 +349,21 @@ void timer0(void)
 	}
 #endif
 	
+	unsigned int timer=TCNT1;
 	switchFSMtimer();
-	padFSMTimer();
-	linkTimer();
+	maxSwitch=MAX(maxSwitch, TCNT1-timer);
 
+	timer=TCNT1;
+	padFSMTimer();
+	maxPad=MAX(maxPad, TCNT1-timer);
+	
+	timer=TCNT1;
+	linkTimer();
+	maxLink=MAX(maxLink, TCNT1-timer);
+
+#if(F_CPU/1024/1000*TIMER0_PERIOD >=256)
+#error timer speed too slow
+#endif
 	timer0_set(F_CPU/1024/1000*TIMER0_PERIOD);
 }
 
@@ -458,7 +424,13 @@ void sendAssign( int sw )
 void sendIdent( zbAddr addr, zbNetAddr netAddr )
 {
 	char msg[]="I";
-	zb_tx(0, addr, netAddr, 0, 0, msg, 2);
+	zb_tx(0, addr, netAddr, 0, 0, msg, 1);
+}
+
+void sendUnident( zbAddr addr, zbNetAddr netAddr )
+{
+	char msg[]="X";
+	zb_tx(0, addr, netAddr, 0, 0, msg, 1);
 }
 
 void padFSMTimer(void)
@@ -473,7 +445,7 @@ void padFSMTimer(void)
 				pads[pad].enableTimer--;
 				if (pads[pad].enableTimer<=0)
 				{
-					sendEnable(pad);
+          pads[pad].sendEnable=true;
 					pads[pad].enableTimer=2000/TIMER0_PERIOD;
 				}
 				
@@ -491,7 +463,7 @@ void padFSMTimer(void)
 			pads[pad].enableTimer--;
 			if (pads[pad].enableTimer<=0)
 			{
-				sendLaunch(pad);
+        pads[pad].sendLaunch=true;
 				pads[pad].enableTimer=1000/TIMER0_PERIOD;
 			}
 		break;
@@ -505,6 +477,8 @@ void statusMessage(char * data,int length)
 	int contState, launchState;
 	int pad;
 	int contResistance, batt, batt1, batt2;
+	
+	data[length-1]='\0';
 	
 	sscanf(data, "S%c e%d l%d Cr%d Vb%d.%d", 
 		&padnum, &contState, &launchState, &contResistance, &batt1, &batt2);
@@ -524,50 +498,206 @@ void statusMessage(char * data,int length)
 	}
 }
 
+// Add pad to ToBeAssigned list
+void addToNew( unsigned char * ni, zbNetAddr netAddr, zbAddr addr )
+{
+	// find a slot in newPad
+	for(int i=0; i<8; ++i)
+	{
+		// Don't duplicate new pads in the list
+		if (newPad[i].used==true && memcmp(&newPad[i].netAddr, &netAddr, sizeof netAddr)==0)
+		{
+			return;
+		}
+
+    /* Add info to new pad list */
+		if (newPad[i].used==false)
+		{
+			newPad[i].addr=addr;
+			newPad[i].netAddr=netAddr;
+			newPad[i].used=true;
+#if defined(DEBUG)
+			OLED_XYprintf(0, 1, "%02x%02x %02x%02x %02x%02x %02x%02x",
+			newPad[i].addr.addr64[0],
+			newPad[i].addr.addr64[1],
+			newPad[i].addr.addr64[2],
+			newPad[i].addr.addr64[3],
+			newPad[i].addr.addr64[4],
+			newPad[i].addr.addr64[5],
+			newPad[i].addr.addr64[6],
+			newPad[i].addr.addr64[7]);
+			OLED_XYprintf(0, 3, "New pad");
+			OLED_clearEOL();
+#endif
+			return;
+		}
+	}
+  ASSERT("New pad overrun");
+}
+
 void padDiscovered( zbAddr addr, zbNetAddr netAddr, unsigned char *ni )
 {
-	if (!notInitialized && ni[0]=='P' && ni[1]=='A' && ni[2]=='D' &&
-		ni[3]>'0' && ni[3]<'9' &&
-		ni[4]>'0' && ni[4]<'9' )
-	{
-		unsigned int padId0=ni[3]-'0'-1;
-		unsigned int padId1=ni[4]-'0'-1;
-		
-		pads[padId0].addr=addr;
-		pads[padId0].netAddr=netAddr;
-		
-		pads[padId1].addr=addr;
-		pads[padId1].netAddr=netAddr;
+  /* If it's not one of ours, ignore it */
+	if (ni[0] != 'P' || ni[1] != 'A' || ni[2] != 'D') return;
 
-		pads[padId0].discovered=true;
-		pads[padId1].discovered=true;
+  unsigned char padId0=ni[3];
+  unsigned char padId1=ni[4];
+
+  /* OK, it's one of ours,  is it assigned a pad id? */
+	if (!notInitialized && padId0>'0' && padId0<'9' && padId1>'0' && padId1<'9' )
+	{
+    /* Yes, add it to the discovered pads */
+    
+		unsigned int padIndex0=padId0-'0'-1;
+		unsigned int padIndex1=padId1-'0'-1;
+		
+		OLED_XYprintf(0, 3, "Discovered %c&%c", padId0, padId1);
+		OLED_clearEOL();
+			
+    /* Is there another pad of that number registered? */
+		if (pads[padId0].discovered || pads[padId1].discovered)
+		{
+      if (pads[padIndex0].padId != padId0 || pads[padIndex1].padId != padId1)
+      {
+        /* Yes, reassign it */
+			  addToNew(ni, netAddr, addr);
+			  return;
+      }        
+		}
+		
+    /* Ok we add it */
+		pads[padIndex0].addr=addr;
+		pads[padIndex0].netAddr=netAddr;
+		
+		pads[padIndex1].addr=addr;
+		pads[padIndex1].netAddr=netAddr;
+
+		pads[padIndex0].discovered=true;
+		pads[padIndex1].discovered=true;
+		
+		pads[padIndex0].discoveredAck=true;
+		greenLeds|=_BV(padIndex0);
+		pads[padIndex1].discoveredAck=true;
+		greenLeds|=_BV(padIndex1);
+
+		LED_output(redLeds, greenLeds, yellowLeds);
 	}
 	else
 	{
-		// Add pad to ToBeAssigned list
-		
-		// find a slot in newPad
-		for(int i=0; i<8; ++i)
-		{
-			if (newPad[i].used==false)
-			{
-				newPad[i].addr=addr;
-				newPad[i].netAddr=netAddr;
-				newPad[i].used=true;
-				break;
-			}
-		}
+    /* Unassigned pad */
+		addToNew(ni, netAddr, addr);
 	}
 }
 
 void padReady()
 {
-	OLED_clearDisplay();
+	OLED_clearLine(0);
+	OLED_clearLine(1);
+	OLED_clearLine(2);
 	OLED_XYprintf(0, 0, "Ready");
 	
 	redLeds=0;
 	yellowLeds=0;
 	greenLeds=0;
 	LED_output(redLeds, greenLeds, yellowLeds);	
+}
+
+void initNewPads()
+{
+	bool newPadFound=false;
+	unsigned int greenLeds=0;		/* Local led status */
+	unsigned int redLeds=0;
+	unsigned int yellowLeds=0;
+	
+	/* Any new pads? */
+	for(int i=0; i<8; ++i)
+	{
+		if(newPad[i].used)
+		{
+			newPadFound=true;
+		}
+	}
+	
+	/* If none, go home */
+	if (!newPadFound)
+	{
+		return;
+	}
+	
+	OLED_clearDisplay();
+
+	/* Set the LEDs for the currently assigned pads */
+	for(int i=0; i<8; ++i)
+	{
+		if (pads[i].discovered==true)
+		{
+			greenLeds|=_BV(i);
+		}
+	}
+	LED_output(redLeds, greenLeds, yellowLeds);
+	
+	/* Go through the new pads and accept assignment */
+	for(int i=0; i<8; ++i)
+	{
+		bool wait=false;
+		if(newPad[i].used)	/* new pad? */
+		{
+			/* Send an ident signal to the pad */
+			sendIdent(newPad[i].addr, newPad[i].netAddr); 
+			
+			OLED_XYprintf(0, 0, "Unassigned Device:");
+			OLED_XYprintf(0, 1, "%02x%02x %02x%02x %02x%02x %02x%02x", 
+			newPad[i].addr.addr64[0],
+			newPad[i].addr.addr64[1],
+			newPad[i].addr.addr64[2],
+			newPad[i].addr.addr64[3],
+			newPad[i].addr.addr64[4],
+			newPad[i].addr.addr64[5],
+			newPad[i].addr.addr64[6],
+			newPad[i].addr.addr64[7]);
+			OLED_XYprintf(0, 3, "Select Pad");
+			
+			/* Wait till a button is pushed */
+			wait=true;
+			while(wait)
+			{
+				/* Cycle through all the buttons */
+				for(int sw=0; sw<8; ++sw)
+				{
+					if(isClosed(sw))
+					{
+						int pair=sw/2*2;
+						pads[pair].addr=newPad[i].addr;
+						pads[pair].netAddr=newPad[i].netAddr;
+						pads[pair].discovered=true;
+						pads[pair+1].addr=newPad[i].addr;
+						pads[pair+1].netAddr=newPad[i].netAddr;
+						pads[pair+1].discovered=true;
+						sendAssign(pair);
+						greenLeds|=_BV(pair);
+						greenLeds|=_BV(pair+1);
+						LED_output(redLeds, greenLeds, yellowLeds);
+						newPad[i].used=0;
+						wait=false;
+						while(isClosed(sw)) {}
+						break;
+					}
+				}
+				/* If the launch button is pushed, ignore the pad */
+				if(isClosed(8))
+				{
+					sendUnident(newPad[i].addr, newPad[i].netAddr);
+					newPad[i].used=0;
+					wait=false;
+					while(isClosed(8)) {}
+				}
+			}
+		}
+	}
+	
+	OLED_clearLine(0);
+	OLED_clearLine(1);
+	OLED_clearLine(2);
+
 }
 

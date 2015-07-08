@@ -9,6 +9,7 @@
 #include "../common/zb.h"
 #include "../common/OLED.h"
 #include "controller30.h"
+#include "../common/uart.h"
 
 void linkData( zbRx* rxPkt, unsigned int length );
 void printpkt(zbRx* rxPkt, unsigned int length);
@@ -16,18 +17,20 @@ void printpkt(zbRx* rxPkt, unsigned int length);
 volatile enum status status=0;
 
 volatile enum linkStatus {
-	uninit,
+	init,
+	net_reset,
 	test_reset,
 	test_init,
 	reset,
 	waitForReset,
 	discovery,
+	assignNewPads,
 	ready
 } linkStatus;
 
 unsigned int discoveryTimer=0;
 
-void verifyVersion( zbPkt * pkt )
+static void verifyVersion( zbPkt * pkt )
 {
 	unsigned char data0=pkt->zbATResponse.data[0];
 	unsigned char data1=pkt->zbATResponse.data[1];
@@ -36,13 +39,13 @@ void verifyVersion( zbPkt * pkt )
 	OLED_clearEOL();
 }
 
-void linkUnInit( zbPkt * pkt )
+static void linkUnInit( zbPkt * pkt )
 {
 	OLED_XYprintf(0, 1, "pkt %02x %c%c", pkt->frameType, 
 		pkt->zbATResponse.cmd[0], pkt->zbATResponse.cmd[1]);
 }
 
-void linkNetReset( zbPkt * pkt )
+static void linkNetReset( zbPkt * pkt )
 {
 	if (pkt->frameType==ZB_AT_COMMAND_RESPONSE && 
 		pkt->zbATResponse.cmd[0] == 'V' &&
@@ -52,6 +55,7 @@ void linkNetReset( zbPkt * pkt )
 	}
 	else
 	{
+		// Didn't get our reset response, resend
 		OLED_XYprintf(0, 1, "pkt %02x %c%c", pkt->frameType, 
 			pkt->zbATResponse.cmd[0], pkt->zbATResponse.cmd[1]);
 
@@ -63,13 +67,14 @@ void linkNetReset( zbPkt * pkt )
 	OLED_XYprintf(0, 1, "Net Reset");
 	OLED_clearEOL();
 
+	// Set controller name
 	zb_ni(0, "Controller30");
 	discoveryTimer=6000/TIMER0_PERIOD;
 	linkStatus=reset;
 	zb_nr(1, 1);
 }
 
-void linkDiscover( zbPkt * pkt )
+static void linkDiscover( zbPkt * pkt )
 {
 	if (pkt->frameType==ZB_AT_COMMAND_RESPONSE && 
 		pkt->zbATResponse.cmd[0] == 'V' &&
@@ -96,7 +101,7 @@ void linkDiscover( zbPkt * pkt )
 	zb_nd(1);
 }
 
-void linkStatusReset( zbPkt * pkt )
+static void linkStatusReset( zbPkt * pkt )
 {
 	switch(pkt->frameType)
 	{
@@ -162,7 +167,7 @@ struct ATNDData
 	unsigned char ni[20];
 };
 
-void linkStatusDiscovery( zbPkt * pkt )
+static void linkStatusDiscovery( zbPkt * pkt )
 {
 	switch(pkt->frameType)
 	{
@@ -229,6 +234,7 @@ void linkStatusReady( zbPkt * pkt, unsigned int length )
 		{
 			struct zbNID *nid=&pkt->zbNID;
 			padDiscovered(nid->remAddr, nid->remNetAddr, nid->ni);
+			linkStatus=assignNewPads;
 		}
 		break;
 	}
@@ -239,7 +245,8 @@ void linkPkt(unsigned char *data, unsigned int length)
 	zbPkt *pkt=(zbPkt *)data;
 	switch (linkStatus)
 	{
-		case uninit:
+		case init:
+		case net_reset:
 		linkUnInit(pkt);
 		break;
 		
@@ -291,6 +298,59 @@ void linkData( zbRx* rxPkt, unsigned int length )
 	}
 }
 
+// Set initial state of FSM
+void linkInit(bool notInitialized)
+{
+	if (notInitialized)
+	{
+		linkStatus=net_reset;
+	}
+	else
+	{
+		linkStatus=init;
+	}
+}
+
+// Called on every background loop.
+void linkFSM()
+{
+	// If we have data from the modem, go get it
+	while (uart_rxReady()>0)
+	{
+		unsigned char ch=uart_getchar(NULL);
+		zbReceivedChar(ch);
+		ASSERT(uart_fe || uart_doe || uart_pe || uart_roe);
+	}
+
+	switch (linkStatus)
+	{
+		case init:
+		case net_reset:
+			OLED_XYprintf(0, 1, "Testing Modem");
+			OLED_clearEOL();
+
+			if (linkStatus == init)	
+			{
+				linkStatus=test_init;
+			}
+			else
+			{
+				linkStatus=test_reset;
+			}
+			discoveryTimer=1000/TIMER0_PERIOD;
+			zb_vr(1);
+		break;
+		case assignNewPads:
+		    initNewPads();
+			padReady();
+
+			linkStatus=ready;
+			break;
+		default:
+		break;
+	}
+}
+
 void printpkt(zbRx* rxPkt, unsigned int length)
 {
 	OLED_XYprintf(0, 1, "PKT '");
@@ -315,28 +375,12 @@ void printpkt(zbRx* rxPkt, unsigned int length)
 	}
 }
 
-void linkStart(bool notInitialized)
-{
-	OLED_XYprintf(0, 1, "Testing Modem");
-	OLED_clearEOL();
-	
-	discoveryTimer=1000/TIMER0_PERIOD;
-	if (notInitialized)
-	{
-		linkStatus=test_reset;
-	}
-	else
-	{
-		linkStatus=test_init;
-	}
-	zb_vr(1);
-}
-
 void linkTimer(void)
 {
 	switch (linkStatus)
 	{
-		case uninit:
+		case init:
+		case net_reset:
 		break;
 		
 		case test_reset:
@@ -385,7 +429,7 @@ void linkTimer(void)
 		
 		if (discoveryTimer==0)
 		{
-			linkStatus=ready;
+			linkStatus=assignNewPads;
 		}
 		break;
 		

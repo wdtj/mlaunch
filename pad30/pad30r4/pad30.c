@@ -19,6 +19,7 @@
 #include "../../common/uart.h"
 #include "../../common/zb.h"
 #include "../../common/Timer0.h"
+#include "../../common/Timer1.h"
 
 #include "launchFSM.h"
 #include "switchFSM.h"
@@ -28,8 +29,8 @@
 
 FILE xbee = FDEV_SETUP_STREAM(uart_putchar, uart_getchar, _FDEV_SETUP_RW);
 
-char txBuffer[160]="";
-char rxBuffer[160]="";
+char txBuffer[100]="";
+char rxBuffer[100]="";
 
 // addesses of the network controller
 zbAddr controllerAddress={{0,0,0,0,0,0,0xff,0xff}};
@@ -55,6 +56,8 @@ bool ident=false;
 int identTimer;
 int histptr=0;
 
+char nodeName[]="PADxx";
+  
 struct epromStruct EEMEM eprom;
 
 #define TRACE
@@ -68,7 +71,7 @@ void init();
 void rxc(void);
 void rxData( zbRx* rxPkt );
 void rxPkt(unsigned char *data, unsigned int length);
-void zbWrite(void *buff, unsigned int count);
+int zbWrite(void *buff, unsigned int count);
 void timer0(void);
 void initFlash();
 void handleEnable( zbRx* rxPkt, zbAddr addr, zbNetAddr nad );
@@ -77,6 +80,7 @@ void handleLaunch( zbRx* rxPkt );
 void handleUnlaunch( zbRx* rxPkt );
 void handleAssign( zbRx* rxPkt );
 void handleIdent( zbRx* rxPkt );
+void handleUnident( zbRx* rxPkt );
 
 int main(void)
 {
@@ -88,7 +92,6 @@ int main(void)
 	PadLed(RED, 0);
 	PadLed(RED, 1);
 
-	char nodeName[]="PADxx";
 	nodeName[3]=pads[0].padAssign;
 	nodeName[4]=pads[1].padAssign;
 	
@@ -243,12 +246,18 @@ void init()
 
 	eeprom_read_block(init, &eprom.init[0], sizeof init);
 	
+  // Has EEPROM been initialized?
 	if (init[0] == 'I' && init[1] == 'n' && init[2] == 'i' && init[3] == 't')
 	{
 		// Read configured pad assignments
 		pads[0].padAssign=eeprom_read_byte(&eprom.padAssign[0]);
 		pads[1].padAssign=eeprom_read_byte(&eprom.padAssign[1]);
 	}
+  else
+  {
+    pads[0].padAssign='y';
+		pads[1].padAssign='y';
+  }
 
 	timer0_init(CS_1024, timer0);					// Timer uses system clock/1024
 
@@ -257,6 +266,9 @@ void init()
 #endif
 
 	timer0_set(F_CPU/1024/1000*TIMER0_PERIOD);
+
+	timer1_init_normal(CS_1024);					// Timer1 uses system clock/1024
+	timer1_set_normal();
 	
 	uart_txBuff(txBuffer, sizeof txBuffer);
 	uart_rxBuff(rxBuffer, sizeof rxBuffer);
@@ -293,10 +305,10 @@ void timer0(void)
 		identTimer%=100/TIMER0_PERIOD;
 		if (identTimer == 0/TIMER0_PERIOD)	
 		{
-			PadLed(YELLOW, 0);
-			PadLed(YELLOW, 1);
+			PadLed(GREEN, 0);
+			PadLed(GREEN, 1);
 		} 
-		else if (identTimer == 50/TIMER0_PERIOD) 
+		else if (identTimer == 20/TIMER0_PERIOD) 
 		{
 			PadLed(OFF, 0);
 			PadLed(OFF, 1);
@@ -314,9 +326,9 @@ void timer0(void)
 }
 
 /* Write a buffer of data to XBee */
-void zbWrite(void *buff, unsigned int count)
+int zbWrite(void *buff, unsigned int count)
 {
-	fwrite(buff, count, 1, &xbee);
+	return fwrite(buff, count, 1, &xbee);
 }
 
 /* Handle received XBee packet */
@@ -329,6 +341,10 @@ void rxPkt(unsigned char *data, unsigned int length)
 			rxData(&pkt->zbRX);
 		break;
 		
+    case ZB_MODEM_STATUS:
+      ident=false;
+      /* Fall through to linkFSM */
+    
 		default:
 			linkFSMpkt(pkt);
 		break;
@@ -357,6 +373,9 @@ void rxData( zbRx* rxPkt )
 		break;
 		case 'I':
 		handleIdent(rxPkt);
+		break;
+		case 'X':
+		handleUnident(rxPkt);
 		break;
 	}
 }
@@ -422,11 +441,10 @@ void handleAssign( zbRx* rxPkt )
 	eeprom_write_byte(&eprom.padAssign[0], pad0);
 	eeprom_write_byte(&eprom.padAssign[1], pad1);
 	
-	char nodeName[]="PADxx";
 	nodeName[3]=pad0;
 	nodeName[4]=pad1;
 	
-	zb_ni(0, nodeName);
+	zb_ni(1, nodeName);
 
 	PadLed(OFF, 0);
 	PadLed(OFF, 1);
@@ -435,4 +453,9 @@ void handleAssign( zbRx* rxPkt )
 void handleIdent( zbRx* rxPkt )
 {
 	ident=true;
+}
+
+void handleUnident( zbRx* rxPkt )
+{
+	ident=false;
 }

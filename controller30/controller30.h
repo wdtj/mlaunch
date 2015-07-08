@@ -48,6 +48,8 @@ struct padInfo
 	bool newStatus;
 	bool discovered;
 	bool discoveredAck;
+	bool sendEnable;	
+  bool sendLaunch;
 	int contState;
 	int launchState;
 	int contResistance;

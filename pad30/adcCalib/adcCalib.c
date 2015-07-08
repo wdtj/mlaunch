@@ -29,9 +29,6 @@
 #define setEnable2()   set(PORTA, Enable2)
 #define resetEnable2() reset(PORTA, Enable2)
 
-#define MIN(X, Y) (((X) < (Y)) ? (X) : (Y))
-#define MAX(X, Y) (((X) > (Y)) ? (X) : (Y))
-
 unsigned int cd1values[105];
 unsigned int cd2values[105];
 unsigned int batt1values[105];
