@@ -224,7 +224,7 @@ int main(void)
 
 void init()
 {
-	unsigned char init[4];
+	unsigned char init[sizeof(struct epromStruct)];
 	
 	PadLedInit();
 
@@ -244,10 +244,17 @@ void init()
 		}
 	}
 
-	eeprom_read_block(init, &eprom.init[0], sizeof init);
+	eeprom_read_block(init, &eprom.init[0], sizeof(struct epromStruct));
 	
   // Has EEPROM been initialized?
-	if (init[0] == 'I' && init[1] == 'n' && init[2] == 'i' && init[3] == 't')
+	if (init[0] == 'I' && 
+      init[1] == 'n' && 
+      init[2] == 'i' && 
+      init[3] == 't' &&
+      init[4] >= '1' &&
+      init[4] <= '8' &&
+      init[5] >= '1' &&
+      init[5] <= '8')
 	{
 		// Read configured pad assignments
 		pads[0].padAssign=eeprom_read_byte(&eprom.padAssign[0]);
