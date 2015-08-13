@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<data>
+  <loop>true</loop>
+  <repeat_times>1</repeat_times>
+  <repeat_period>2000</repeat_period>
+  <frames_list>
+    <frame name="Enable1">
+      <payload>7E00101001000000000000FFFFFFFE000045317D</payload>
+    </frame>
+    <frame name="Launch1">
+      <payload>7E00101001000000000000FFFFFFFE00004C3176</payload>
+    </frame>
+    <frame name="Unlaunch1">
+      <payload>7E00101001000000000000FFFFFFFE000055316D</payload>
+    </frame>
+    <frame name="Reset1">
+      <payload>7E00101001000000000000FFFFFFFE0000523170</payload>
+    </frame>
+    <frame name="Enable2">
+      <payload>7E00101001000000000000FFFFFFFE000045327C</payload>
+    </frame>
+    <frame name="Launch2">
+      <payload>7E00101001000000000000FFFFFFFE00004C3275</payload>
+    </frame>
+    <frame name="Unlaunch2">
+      <payload>7E00101001000000000000FFFFFFFE000055326C</payload>
+    </frame>
+    <frame name="Reset2">
+      <payload>7E00101001000000000000FFFFFFFE000052326F</payload>
+    </frame>
+    <frame name="Enable3">
+      <payload>7E00101001000000000000FFFFFFFE000045337B</payload>
+    </frame>
+    <frame name="Launch3">
+      <payload>7E00101001000000000000FFFFFFFE00004C3374</payload>
+    </frame>
+    <frame name="Unlaunch3">
+      <payload>7E00101001000000000000FFFFFFFE000055336B</payload>
+    </frame>
+    <frame name="Reset3">
+      <payload>7E00101001000000000000FFFFFFFE000052336E</payload>
+    </frame>
+    <frame name="Enable4">
+      <payload>7E00101001000000000000FFFFFFFE000045347A</payload>
+    </frame>
+    <frame name="Launch4">
+      <payload>7E00101001000000000000FFFFFFFE00004C3473</payload>
+    </frame>
+    <frame name="Unlaunch4">
+      <payload>7E00101001000000000000FFFFFFFE000055346A</payload>
+    </frame>
+    <frame name="Reset4">
+      <payload>7E00101001000000000000FFFFFFFE000052346D</payload>
+    </frame>
+  </frames_list>
+</data>
