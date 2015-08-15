@@ -1,0 +1,24 @@
+*PADS-PCB*
+*PART*
+B1      ..
+U1      WSOT-223
+C1      
+C2      
+U2      XBee
+U3      package name for PCB layout
+J2      6X1HDR-100
+x1      package name for PCB layout
+x2      package name for PCB layout
+
+*NET*
+*SIGNAL*  B+
+B1.1 C1.1 U1.3
+*SIGNAL*  V33
+U1.4 C2.1 U1.2 U2.1 J2.2
+*SIGNAL*  GND
+U2.10 B1.2 C1.2 U1.1 C2.2 J2.1
+*SIGNAL*  TX
+U2.2 J2.4
+*SIGNAL*  RX
+U2.3 J2.3
+*END*
