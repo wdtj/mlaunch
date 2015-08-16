@@ -38,7 +38,7 @@ visible_grid_spacing: 5080000.000000
   visible_grid_item: 50MM
   visible_grid_item: 100MM
 
-placement_grid_spacing: 1270000.000000
+placement_grid_spacing: 254000.000000
   placement_grid_item: 10MIL
   placement_grid_item: 20MIL
   placement_grid_item: 25MIL
@@ -69,10 +69,10 @@ routing_grid_spacing: 508000.000000
   routing_grid_item: 3.33330709MIL
   routing_grid_item: 4MIL
   routing_grid_item: 5MIL
-  routing_grid_item: 6.6665748MIL
+  routing_grid_item: 6.66653543MIL
   routing_grid_item: 10MIL
   routing_grid_item: 12.5MIL
-  routing_grid_item: 16.6665748MIL
+  routing_grid_item: 16.66653543MIL
   routing_grid_item: 20MIL
   routing_grid_item: 25MIL
   routing_grid_item: 40MIL
@@ -451,6 +451,12 @@ outline: 4 0
 
 [solder_mask_cutouts]
 
+sm_cutout: 4 0 9
+  corner: 1 -10668000 16256000 0
+  corner: 2 -4064000 16256000 0
+  corner: 3 -4064000 12700000 0
+  corner: 4 -10668000 12700000 0
+
 
 [parts]
 
@@ -608,20 +614,18 @@ net: "GND" 7 9 2 635000 711200 355600 1
   pin: 5 C2.2
   pin: 6 J2.1
   pin: 7 C3.2
-  connect: 1 2 0 6 0
+  connect: 1 2 0 5 0
     vtx: 1 -4990000 35560000 12 0 0 0 0
     seg: 1 12 635000 0 0
     vtx: 2 -5080000 38608000 0 0 0 0 0
     seg: 2 12 635000 0 0
-    vtx: 3 -6464300 38608000 0 0 0 0 0
+    vtx: 3 -17272000 38608000 0 0 0 0 0
     seg: 3 12 635000 0 0
-    vtx: 4 -17272000 38608000 0 0 0 0 0
+    vtx: 4 -22352000 33528000 0 0 0 0 0
     seg: 4 12 635000 0 0
-    vtx: 5 -22352000 33528000 0 0 0 0 0
+    vtx: 5 -22352000 15240000 0 0 0 0 0
     seg: 5 12 635000 0 0
-    vtx: 6 -22352000 15240000 0 0 0 0 0
-    seg: 6 12 635000 0 0
-    vtx: 7 -25180000 15240000 11 0 0 0 0
+    vtx: 6 -25180000 15240000 11 0 0 0 0
   connect: 2 5 1 2 0
     vtx: 1 -55880000 20320000 11 0 0 0 0
     seg: 1 12 635000 0 0
@@ -644,14 +648,12 @@ net: "GND" 7 9 2 635000 711200 355600 1
     vtx: 1 -12700000 15500000 12 0 0 0 0
     seg: 1 12 635000 0 0
     vtx: 2 -25180000 15240000 11 0 0 0 0
-  connect: 7 6 0 3 0
+  connect: 7 6 0 2 0
     vtx: 1 -12700000 15500000 12 0 0 0 0
     seg: 1 12 635000 0 0
     vtx: 2 -24384000 15240000 0 0 0 0 0
     seg: 2 12 635000 0 0
-    vtx: 3 -24384000 15240000 0 0 0 0 0
-    seg: 3 12 635000 0 0
-    vtx: 4 -25180000 15240000 11 0 0 0 0
+    vtx: 3 -25180000 15240000 11 0 0 0 0
   connect: 8 6 0 3 0
     vtx: 1 -12700000 15500000 12 0 0 0 0
     seg: 1 12 635000 0 0
@@ -693,5 +695,13 @@ net: "B+" 3 2 0 635000 711200 355600 1
     vtx: 2 -15240000 25400000 11 0 0 0 0
 
 [texts]
+
+text: "GND" -54356000 19558000 7 0 0 1270000 127000 0
+
+text: "Vcc" -54356000 22098000 7 0 0 1270000 127000 0
+
+text: "RX" -54356000 24638000 7 0 0 1270000 127000 0
+
+text: "TX" -54356000 27432000 7 0 0 1270000 127000 0
 
 [end]
