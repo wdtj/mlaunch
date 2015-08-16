@@ -1,3 +1,29 @@
+name: "coin1026"
+  units: MIL
+  sel_rect: -562 -562 688 562
+  ref_text: 100 100 200 0 10
+  value_text: 100 600 400 0 10
+  centroid: 0 0 0 0
+  outline_polyline: 10 547 0
+    next_corner: 0 547 2
+    next_corner: -547 0 2
+    next_corner: 0 -547 2
+    close_polyline: 2
+  outline_polyline: 10 547 63
+    next_corner: 673 63 0
+    next_corner: 673 -63 0
+    next_corner: 547 -63 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 60 600 0 0
+      top_pad: 2 90 0 0 0
+      inner_pad: 0 0 0 0 0 0
+      bottom_pad: 2 90 0 0 0
+    pin: "2" 60 -207 0 0
+      top_pad: 2 90 0 0 0
+      inner_pad: 0 0 0 0 0 0
+      bottom_pad: 2 90 0 0 0
+
 name: "LCM-S02004DSR"
 author: "Ivex"
 units: NM
@@ -863,30 +889,30 @@ inner_pad: 0 0 0 0 0 0
 bottom_pad: 2 50 0 0 0
 
 name: "4-SMD"
-  units: NM
-  sel_rect: -952500 -1143000 7672181 9883000
-  ref_text: 1270000 -5080000 5080000 0 127000
-  value_text: 2540000 7620000 0 0 254000
-  centroid: 0 2605000 4370000 0
-  text: "+" 1000000 6500000 8300000 0 100000 0 4
-  outline_polyline: 177800 0 1488330
-    next_corner: 5210000 1488330 0
-    next_corner: 5200000 3900000 0
-    next_corner: 4400000 3900000 0
-    next_corner: 4400000 5000000 0
-    next_corner: 5200000 5000000 0
-    next_corner: 5210000 7251670 0
-    next_corner: 0 7251670 0
-    close_polyline: 0
-  n_pins: 4
-    pin: "AC1" 0 0 0 90
-      top_pad: 3 1397000 889000 889000 0
-    pin: "AC2" 0 5210000 0 90
-      top_pad: 3 1397000 889000 889000 0
-    pin: "+" 0 5210000 8740000 90
-      top_pad: 3 1397000 889000 889000 0
-    pin: "-" 0 0 8740000 90
-      top_pad: 3 1397000 889000 889000 0
+units: NM
+sel_rect: -952500 -1143000 7672181 9883000
+ref_text: 1270000 -5080000 5080000 0 127000
+value_text: 2540000 7620000 0 0 254000
+centroid: 0 2605000 4370000 0
+text: "+" 1000000 6500000 8300000 0 100000 0 4
+outline_polyline: 177800 0 1488330
+next_corner: 5210000 1488330 0
+next_corner: 5200000 3900000 0
+next_corner: 4400000 3900000 0
+next_corner: 4400000 5000000 0
+next_corner: 5200000 5000000 0
+next_corner: 5210000 7251670 0
+next_corner: 0 7251670 0
+close_polyline: 0
+n_pins: 4
+pin: "AC1" 0 0 0 90
+top_pad: 3 1397000 889000 889000 0
+pin: "AC2" 0 5210000 0 90
+top_pad: 3 1397000 889000 889000 0
+pin: "+" 0 5210000 8740000 90
+top_pad: 3 1397000 889000 889000 0
+pin: "-" 0 0 8740000 90
+top_pad: 3 1397000 889000 889000 0
 
 name: "PLCC-4"
 units: NM
