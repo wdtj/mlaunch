@@ -1,5 +1,5 @@
 G04 FreePCB version 1.359*
-G04 C:\Users\Wayne\Documents\GitHub\mlaunch\mGPS\CAM10478\bottom_copper.grb*
+G04 C:\Users\waynej\Documents\GitHub\mlaunch\mGPS\CAM10478\bottom_copper.grb*
 G04 bottom copper layer *
 G04 Scale: 100 percent, Rotated: No, Reflected: No *
 %FSLAX24Y24*%
@@ -37,22 +37,22 @@ G04 Step and Repeat for panelization *
 G04 ----------------------- Draw board outline (positive)*
 %LPD*%
 G54D10*
-G01X-23200Y18000D02*
-G01X-23200Y2000D01*
+G01X-23500Y18000D02*
+G01X-23500Y2000D01*
 G04 end of side 1*
 G01X1000Y2000D01*
 G04 end of side 2*
 G01X1000Y18000D01*
 G04 end of side 3*
-G01X-23200Y18000D01*
+G01X-23500Y18000D01*
 
 G04 ----------------------- Draw copper area (positive)*
 G36*
-G01X-800Y3600D02*
-G01X-17600Y3600D01*
-G01X-17600Y16400D01*
-G01X-800Y16400D01*
-G01X-800Y3600D01*
+G01X-787Y3582D02*
+G01X-21338Y3582D01*
+G01X-21338Y16417D01*
+G01X-787Y16417D01*
+G01X-787Y3582D01*
 G37*
 
 G04 -------------------- Draw copper area clearances (negative)*
@@ -60,8 +60,8 @@ G04 -------------------- Draw copper area clearances (negative)*
 
 G04 Draw clearances for pads*
 G54D11*
-G01X-21000Y17000D03*
-G01X-21000Y3000D03*
+G01X-22500Y17000D03*
+G01X-22500Y3000D03*
 G01X0Y3000D03*
 G01X0Y17000D03*
 G54D12*
