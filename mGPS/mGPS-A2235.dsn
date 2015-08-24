@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--This file was written by TinyCAD Version 2.80.06 Build #626 Production Release
+<!--This file was written by TinyCAD Version 2.80.03 Build #514 Production Release
 If you wish to view this file go to http://tinycad.sourceforge.net to
-download the executable.-->
+download a copy.-->
 <TinyCADSheets>
 	<TinyCAD>
 		<NAME>Sheet 1</NAME>
@@ -19,16 +19,6 @@ download the executable.-->
 			<DATE></DATE>
 			<GRID spacing='50.00000' snap='1'/>
 		</DETAILS>
-		<FONT id='0'>
-			<HEIGHT>-13</HEIGHT>
-			<WIDTH>6</WIDTH>
-			<WEIGHT>400</WEIGHT>
-			<ITALIC>0</ITALIC>
-			<UNDERLINE>0</UNDERLINE>
-			<STRIKEOUT>0</STRIKEOUT>
-			<CHARSET>0</CHARSET>
-			<FACENAME>Arial</FACENAME>
-		</FONT>
 		<FONT id='1'>
 			<HEIGHT>-10</HEIGHT>
 			<WIDTH>0</WIDTH>
@@ -40,8 +30,8 @@ download the executable.-->
 			<FACENAME>Arial</FACENAME>
 		</FONT>
 		<FONT id='3'>
-			<HEIGHT>-24</HEIGHT>
-			<WIDTH>11</WIDTH>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
 			<WEIGHT>400</WEIGHT>
 			<ITALIC>0</ITALIC>
 			<UNDERLINE>0</UNDERLINE>
@@ -60,6 +50,16 @@ download the executable.-->
 			<FACENAME>Arial</FACENAME>
 		</FONT>
 		<FONT id='5'>
+			<HEIGHT>-24</HEIGHT>
+			<WIDTH>11</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='6'>
 			<HEIGHT>-11</HEIGHT>
 			<WIDTH>5</WIDTH>
 			<WEIGHT>400</WEIGHT>
@@ -1226,8 +1226,8 @@ F$E(%$9&quot;0*HB A%1!!&quot;2DBO\/HV8G^KTF25(     245.1*Y&quot;8((
 				<PIN pos='59.00000,39.00000' which='0' elec='0' direction='2' part='0' number='6' show='3' length='30' number_pos='0' centre_name='0'>PWM0/RSSI</PIN>
 				<PIN pos='59.00000,43.00000' which='0' elec='0' direction='2' part='0' number='9' show='3' length='30' number_pos='0' centre_name='0'>^DTR</PIN>
 				<PIN pos='59.00000,51.00000' which='4' elec='0' direction='2' part='0' number='10' show='3' length='30' number_pos='0' centre_name='0'>GND</PIN>
-				<TEXT pos='26.00000,24.00000' direction='3' font='3' color='000000'>MaxStream</TEXT>
-				<TEXT pos='26.00000,30.00000' direction='3' font='4' color='000000'>XBee</TEXT>
+				<TEXT pos='26.00000,24.00000' direction='3' font='4' color='000000'>MaxStream</TEXT>
+				<TEXT pos='26.00000,30.00000' direction='3' font='5' color='000000'>XBee</TEXT>
 				<PIN pos='59.00000,31.00000' which='0' elec='0' direction='2' part='0' number='3' show='3' length='30' number_pos='0' centre_name='0'>DIN</PIN>
 				<PIN pos='59.00000,35.00000' which='0' elec='0' direction='2' part='0' number='5' show='3' length='30' number_pos='0' centre_name='0'>^RESET</PIN>
 				<PIN pos='59.00000,27.00000' which='0' elec='1' direction='2' part='0' number='2' show='3' length='30' number_pos='0' centre_name='0'>DOUT</PIN>
@@ -1456,7 +1456,7 @@ F$E(%$9&quot;0*HB A%1!!&quot;2DBO\/HV8G^KTF25(     245.1*Y&quot;8((
 				<PIN pos='94.00000,33.00000' which='5' elec='4' direction='0' part='0' number='2' show='0' length='30' number_pos='0' centre_name='0'></PIN>
 			</TinyCAD>
 		</SYMBOLDEF>
-		<SYMBOLDEF id='10'>
+		<SYMBOLDEF id='7'>
 			<NAME type='0'>R</NAME>
 			<REF type='1'>R?</REF>
 			<DESCRIPTION>Resistor</DESCRIPTION>
@@ -1573,7 +1573,7 @@ F$E(%$9&quot;0*HB A%1!!&quot;2DBO\/HV8G^KTF25(     245.1*Y&quot;8((
 				</POLYGON>
 			</TinyCAD>
 		</SYMBOLDEF>
-		<SYMBOLDEF id='14'>
+		<SYMBOLDEF id='8'>
 			<NAME type='0'>A2235-H</NAME>
 			<REF type='0'>U?</REF>
 			<DESCRIPTION>A2235-H GPS</DESCRIPTION>
@@ -1638,9 +1638,6 @@ F$E(%$9&quot;0*HB A%1!!&quot;2DBO\/HV8G^KTF25(     245.1*Y&quot;8((
 			<COLOR_PIN>4040C0</COLOR_PIN>
 			<COLOR_HIDDEN_PIN>208020</COLOR_HIDDEN_PIN>
 			<COLOR_BACKGROUND>FFFFFF</COLOR_BACKGROUND>
-			<COLOR_NOTETEXT_FILL>AFFFFF</COLOR_NOTETEXT_FILL>
-			<COLOR_NOTETEXT_LINE>FF0000</COLOR_NOTETEXT_LINE>
-			<COLOR_NOTETEXT_TEXT>FF0000</COLOR_NOTETEXT_TEXT>
 		</OPTIONS>
 		<SYMBOL id='5' pos='25.00000,61.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='B1' show='1' pos='1.00000,-4.60000'/>
@@ -1743,8 +1740,8 @@ F$E(%$9&quot;0*HB A%1!!&quot;2DBO\/HV8G^KTF25(     245.1*Y&quot;8((
 		<WIRE a='161.00000,65.00000' b='161.00000,71.00000'/>
 		<JUNCTION pos='161.00000,71.00000'/>
 		<WIRE a='161.00000,71.00000' b='154.00000,71.00000'/>
-		<LABEL pos='161.00000,51.00000' direction='3' font='5' color='208000' style='0'>TX</LABEL>
-		<LABEL pos='161.00000,55.00000' direction='3' font='5' color='208000' style='0'>RX</LABEL>
+		<LABEL pos='161.00000,51.00000' direction='3' font='6' color='208000' style='0'>TX</LABEL>
+		<LABEL pos='161.00000,55.00000' direction='3' font='6' color='208000' style='0'>RX</LABEL>
 		<WIRE a='80.00000,41.00000' b='90.00000,41.00000'/>
 		<WIRE a='90.00000,41.00000' b='90.00000,45.00000'/>
 		<NOCONNECT pos='154.00000,59.00000'/>
@@ -1766,7 +1763,7 @@ F$E(%$9&quot;0*HB A%1!!&quot;2DBO\/HV8G^KTF25(     245.1*Y&quot;8((
 			<FIELD type='0' description='Digi-Key Part' value='S5751-10-ND' show='1' pos='1.00000,-13.20000'/>
 			<FIELD type='1' description='Package' value='package name for PCB layout' show='0' pos='1.00000,-10.80000'/>
 		</SYMBOL>
-		<LABEL pos='30.00000,45.00000' direction='3' font='5' color='208000' style='0'>B+</LABEL>
+		<LABEL pos='30.00000,45.00000' direction='3' font='6' color='208000' style='0'>B+</LABEL>
 		<SYMBOL id='6' pos='176.00000,72.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='C3' show='1' pos='0.00000,-2.60000'/>
 			<FIELD type='0' description='Name' value='8.2pf' show='0' pos='1.00000,-4.00000'/>
@@ -1775,7 +1772,7 @@ F$E(%$9&quot;0*HB A%1!!&quot;2DBO\/HV8G^KTF25(     245.1*Y&quot;8((
 			<FIELD type='3' description='Package' value='C1206' show='0' pos='1.00000,3.20000'/>
 		</SYMBOL>
 		<WIRE a='174.00000,75.00000' b='174.00000,72.00000'/>
-		<SYMBOL id='14' pos='131.00000,162.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='8' pos='131.00000,162.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='U3' show='1' pos='-21.00000,-42.60000'/>
 			<FIELD type='0' description='Name' value='A2235-H' show='1' pos='-31.00000,-42.00000'/>
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
@@ -1792,7 +1789,7 @@ F$E(%$9&quot;0*HB A%1!!&quot;2DBO\/HV8G^KTF25(     245.1*Y&quot;8((
 		<WIRE a='87.00000,150.00000' b='73.00000,150.00000'/>
 		<JUNCTION pos='73.00000,150.00000'/>
 		<WIRE a='73.00000,138.00000' b='73.00000,150.00000'/>
-		<SYMBOL id='10' pos='64.00000,147.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='7' pos='64.00000,147.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='1' description='Ref' value='R3' show='0' pos='1.00000,-9.60000'/>
 			<FIELD type='0' description='Name' value='10K' show='1' pos='1.00000,-7.00000'/>
 			<FIELD type='1' description='Package' value='R1206' show='0' pos='1.00000,-7.20000'/>
@@ -1801,7 +1798,7 @@ F$E(%$9&quot;0*HB A%1!!&quot;2DBO\/HV8G^KTF25(     245.1*Y&quot;8((
 			<FIELD type='1' description='P_Max' value='..' show='0' pos='1.00000,0.00000'/>
 			<FIELD type='1' description='Manufacturer' value='..' show='0' pos='1.00000,2.40000'/>
 			<FIELD type='1' description='Manufacturer Part' value='..' show='0' pos='1.00000,4.80000'/>
-			<FIELD type='1' description='Digi-Key Part' value='..' show='0' pos='1.00000,7.20000'/>
+			<FIELD type='1' description='Digi-Key Part' value='311-10KERCT-ND' show='0' pos='1.00000,7.20000'/>
 			<FIELD type='1' description='Newark Part' value='..' show='0' pos='1.00000,9.60000'/>
 			<FIELD type='1' description='Mouser Part' value='..' show='0' pos='1.00000,12.00000'/>
 			<FIELD type='1' description='Cost' value='..' show='0' pos='1.00000,14.40000'/>
@@ -1812,7 +1809,7 @@ F$E(%$9&quot;0*HB A%1!!&quot;2DBO\/HV8G^KTF25(     245.1*Y&quot;8((
 		<WIRE a='87.00000,144.00000' b='67.00000,144.00000'/>
 		<WIRE a='67.00000,144.00000' b='67.00000,147.00000'/>
 		<WIRE a='67.00000,147.00000' b='63.00000,147.00000'/>
-		<SYMBOL id='10' pos='150.00000,136.00000' part='0' rotate='2' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='7' pos='150.00000,136.00000' part='0' rotate='2' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='1' description='Ref' value='R1' show='0' pos='-14.00000,2.00000'/>
 			<FIELD type='0' description='Name' value='2.2K' show='1' pos='-9.00000,-1.00000'/>
 			<FIELD type='1' description='Package' value='R1206' show='0' pos='-14.00000,4.40000'/>
@@ -1821,12 +1818,12 @@ F$E(%$9&quot;0*HB A%1!!&quot;2DBO\/HV8G^KTF25(     245.1*Y&quot;8((
 			<FIELD type='1' description='P_Max' value='..' show='0' pos='-14.00000,11.60000'/>
 			<FIELD type='1' description='Manufacturer' value='..' show='0' pos='-14.00000,14.00000'/>
 			<FIELD type='1' description='Manufacturer Part' value='..' show='0' pos='-14.00000,16.40000'/>
-			<FIELD type='1' description='Digi-Key Part' value='..' show='0' pos='-14.00000,18.80000'/>
+			<FIELD type='1' description='Digi-Key Part' value='311-2.2KERCT-ND' show='0' pos='-14.00000,18.80000'/>
 			<FIELD type='1' description='Newark Part' value='..' show='0' pos='-14.00000,21.20000'/>
 			<FIELD type='1' description='Mouser Part' value='..' show='0' pos='-14.00000,23.60000'/>
 			<FIELD type='1' description='Cost' value='..' show='0' pos='-14.00000,26.00000'/>
 		</SYMBOL>
-		<SYMBOL id='10' pos='146.00000,139.00000' part='0' rotate='2' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='7' pos='146.00000,139.00000' part='0' rotate='2' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='1' description='Ref' value='R2' show='0' pos='-14.00000,2.00000'/>
 			<FIELD type='0' description='Name' value='2.2K' show='1' pos='-9.00000,2.00000'/>
 			<FIELD type='1' description='Package' value='R1206' show='0' pos='-14.00000,4.40000'/>
@@ -1835,7 +1832,7 @@ F$E(%$9&quot;0*HB A%1!!&quot;2DBO\/HV8G^KTF25(     245.1*Y&quot;8((
 			<FIELD type='1' description='P_Max' value='..' show='0' pos='-14.00000,11.60000'/>
 			<FIELD type='1' description='Manufacturer' value='..' show='0' pos='-14.00000,14.00000'/>
 			<FIELD type='1' description='Manufacturer Part' value='..' show='0' pos='-14.00000,16.40000'/>
-			<FIELD type='1' description='Digi-Key Part' value='..' show='0' pos='-14.00000,18.80000'/>
+			<FIELD type='1' description='Digi-Key Part' value='311-2.2KERCT-ND' show='0' pos='-14.00000,18.80000'/>
 			<FIELD type='1' description='Newark Part' value='..' show='0' pos='-14.00000,21.20000'/>
 			<FIELD type='1' description='Mouser Part' value='..' show='0' pos='-14.00000,23.60000'/>
 			<FIELD type='1' description='Cost' value='..' show='0' pos='-14.00000,26.00000'/>
@@ -1848,7 +1845,7 @@ F$E(%$9&quot;0*HB A%1!!&quot;2DBO\/HV8G^KTF25(     245.1*Y&quot;8((
 		<WIRE a='63.00000,132.00000' b='69.00000,132.00000'/>
 		<JUNCTION pos='63.00000,132.00000'/>
 		<WIRE a='56.00000,132.00000' b='63.00000,132.00000'/>
-		<LABEL pos='61.00000,169.00000' direction='3' font='0' color='208000' style='0'>1V8</LABEL>
+		<LABEL pos='61.00000,169.00000' direction='3' font='3' color='208000' style='0'>1V8</LABEL>
 		<WIRE a='179.00000,123.00000' b='131.00000,123.00000'/>
 		<WIRE a='183.00000,126.00000' b='131.00000,126.00000'/>
 		<WIRE a='87.00000,132.00000' b='71.00000,132.00000'/>
@@ -1856,7 +1853,7 @@ F$E(%$9&quot;0*HB A%1!!&quot;2DBO\/HV8G^KTF25(     245.1*Y&quot;8((
 		<WIRE a='71.00000,114.00000' b='150.00000,114.00000'/>
 		<WIRE a='150.00000,114.00000' b='150.00000,132.00000'/>
 		<WIRE a='150.00000,132.00000' b='131.00000,132.00000'/>
-		<LABEL pos='76.00000,114.00000' direction='3' font='0' color='208000' style='0'>WAKEUP</LABEL>
+		<LABEL pos='76.00000,114.00000' direction='3' font='3' color='208000' style='0'>WAKEUP</LABEL>
 		<NOCONNECT pos='87.00000,123.00000'/>
 		<NOCONNECT pos='87.00000,126.00000'/>
 		<NOCONNECT pos='87.00000,150.00000'/>

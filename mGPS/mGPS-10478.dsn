@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--This file was written by TinyCAD Version 2.80.06 Build #626 Production Release
+<!--This file was written by TinyCAD Version 2.80.03 Build #514 Production Release
 If you wish to view this file go to http://tinycad.sourceforge.net to
-download the executable.-->
+download a copy.-->
 <TinyCADSheets>
 	<TinyCAD>
 		<NAME>Sheet 1</NAME>
@@ -2055,9 +2055,6 @@ M7MJKC^&amp;=:SZ-_]:?_NK?V]KK&amp;P#%$ TQI5(W/&#039;YC&#039;^\4&amp;NZK3B B&quot
 			<COLOR_PIN>4040C0</COLOR_PIN>
 			<COLOR_HIDDEN_PIN>208020</COLOR_HIDDEN_PIN>
 			<COLOR_BACKGROUND>FFFFFF</COLOR_BACKGROUND>
-			<COLOR_NOTETEXT_FILL>AFFFFF</COLOR_NOTETEXT_FILL>
-			<COLOR_NOTETEXT_LINE>FF0000</COLOR_NOTETEXT_LINE>
-			<COLOR_NOTETEXT_TEXT>FF0000</COLOR_NOTETEXT_TEXT>
 		</OPTIONS>
 		<SYMBOL id='5' pos='25.00000,61.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='B1' show='1' pos='1.00000,-4.60000'/>
@@ -2279,13 +2276,15 @@ M7MJKC^&amp;=:SZ-_]:?_NK?V]KK&amp;P#%$ TQI5(W/&#039;YC&#039;^\4&amp;NZK3B B&quot
 		<NOCONNECT pos='126.00000,160.00000'/>
 		<SYMBOL id='6' pos='198.00000,140.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='C5' show='1' pos='1.00000,-2.60000'/>
-			<FIELD type='0' description='Name' value='C' show='1' pos='1.00000,-5.00000'/>
+			<FIELD type='0' description='Name' value='22pf' show='1' pos='1.00000,-5.00000'/>
 			<FIELD type='3' description='Package' value='C1206' show='0' pos='1.00000,-0.20000'/>
+			<FIELD type='3' description='DIgi-Key Part' value='311-1154-1-ND' show='0' pos='1.00000,2.20000'/>
 		</SYMBOL>
 		<SYMBOL id='6' pos='198.00000,154.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='C7' show='1' pos='1.00000,-2.60000'/>
-			<FIELD type='0' description='Name' value='C' show='1' pos='1.00000,-5.00000'/>
+			<FIELD type='0' description='Name' value='22pf' show='1' pos='1.00000,-5.00000'/>
 			<FIELD type='3' description='Package' value='C1206' show='0' pos='1.00000,-0.20000'/>
+			<FIELD type='3' description='Digi-Key Part' value='311-1154-1-ND' show='0' pos='1.00000,2.20000'/>
 		</SYMBOL>
 		<SYMBOL id='8' pos='188.00000,133.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='L1' show='1' pos='1.00000,2.40000'/>
@@ -2350,6 +2349,7 @@ M7MJKC^&amp;=:SZ-_]:?_NK?V]KK&amp;P#%$ TQI5(W/&#039;YC&#039;^\4&amp;NZK3B B&quot
 			<FIELD type='0' description='Ref' value='C8' show='1' pos='-8.00000,0.40000'/>
 			<FIELD type='0' description='Name' value='22pF' show='1' pos='-8.00000,-4.00000'/>
 			<FIELD type='3' description='Package' value='C1206' show='0' pos='1.00000,-0.20000'/>
+			<FIELD type='3' description='Digi-Key Part' value='311-1154-1-ND' show='0' pos='-8.00000,2.80000'/>
 		</SYMBOL>
 		<WIRE a='84.00000,161.00000' b='84.00000,147.00000'/>
 		<JUNCTION pos='48.00000,141.00000'/>
