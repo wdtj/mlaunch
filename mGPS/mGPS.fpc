@@ -69,10 +69,10 @@ routing_grid_spacing: 508000.000000
   routing_grid_item: 3.33330709MIL
   routing_grid_item: 4MIL
   routing_grid_item: 5MIL
-  routing_grid_item: 6.66653543MIL
+  routing_grid_item: 6.66649606MIL
   routing_grid_item: 10MIL
   routing_grid_item: 12.5MIL
-  routing_grid_item: 16.66653543MIL
+  routing_grid_item: 16.66649606MIL
   routing_grid_item: 20MIL
   routing_grid_item: 25MIL
   routing_grid_item: 40MIL
@@ -546,7 +546,7 @@ part: C3
 
 [nets]
 
-net: "V33" 6 5 0 635000 711200 355600 1
+net: "V33" 6 5 1 635000 711200 355600 1
   pin: 1 U1.4
   pin: 2 C2.1
   pin: 3 U1.2
@@ -583,6 +583,11 @@ net: "V33" 6 5 0 635000 711200 355600 1
     vtx: 1 -7380000 17780000 12 0 0 0 0
     seg: 1 12 635000 0 0
     vtx: 2 -7380000 11280000 12 0 0 0 0
+  area: 1 4 12 0
+    corner: 1 -2032000 9144000 0 0
+    corner: 2 -44704000 9144000 0 0
+    corner: 3 -44704000 41656000 0 0
+    corner: 4 -2032000 41656000 0 1
 
 net: "TX" 2 1 0 0 0 0 1
   pin: 1 U2.2
@@ -606,7 +611,7 @@ net: "RX" 2 1 0 0 0 0 1
     seg: 2 13 254000 0 0
     vtx: 3 -39192200 15240000 11 0 0 0 0
 
-net: "GND" 7 9 2 635000 711200 355600 1
+net: "GND" 7 9 1 635000 711200 355600 1
   pin: 1 U2.10
   pin: 2 B1.2
   pin: 3 C1.2
@@ -671,11 +676,6 @@ net: "GND" 7 9 2 635000 711200 355600 1
     seg: 3 12 635000 0 0
     vtx: 4 -25180000 15240000 11 0 0 0 0
   area: 1 4 13 0
-    corner: 1 -2032000 9144000 0 0
-    corner: 2 -44704000 9144000 0 0
-    corner: 3 -44704000 41656000 0 0
-    corner: 4 -2032000 41656000 0 1
-  area: 2 4 12 0
     corner: 1 -2032000 9144000 0 0
     corner: 2 -44704000 9144000 0 0
     corner: 3 -44704000 41656000 0 0
