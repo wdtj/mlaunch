@@ -1,32 +1,61 @@
 <<<<<<< HEAD
+name: "keystone51"
+  units: MIL
+  sel_rect: -415 -165 1465 165
+  ref_text: 100 350 -50 0 10
+  value_text: 100 500 200 0 10
+  centroid: 0 0 0 0
+  outline_polyline: 10 -400 150
+    next_corner: 1450 150 0
+    next_corner: 1450 -150 0
+    next_corner: -400 -150 0
+    close_polyline: 0
+  n_pins: 4
+    pin: "+" 55 0 0 0
+      top_pad: 3 250 125 125 0
+      inner_pad: 0 0 0 0 0 0
+      bottom_pad: 3 250 125 125 0
+    pin: "-" 55 1070 0 0
+      top_pad: 3 250 125 125 0
+      inner_pad: 0 0 0 0 0 0
+      bottom_pad: 3 250 125 125 0
+    pin: "3" 55 -236 0 0
+      top_pad: 3 250 125 125 0
+      inner_pad: 0 0 0 0 0 0
+      bottom_pad: 3 250 125 125 0
+    pin: "4" 55 1306 0 0
+      top_pad: 3 250 125 125 0
+      inner_pad: 0 0 0 0 0 0
+      bottom_pad: 3 250 125 125 0
+
 name: "BU2032SM-HD-G"
 description: "2032 Coin Holder"
-  units: NM
-  sel_rect: -2921000 -11581000 32131000 11581000
-  ref_text: 2540000 2540000 5080000 0 254000
-  value_text: 2540000 2540000 0 0 254000
-  centroid: 0 0 0 0
-  outline_polyline: 254000 0 2540000
-    next_corner: 2540000 2540000 0
-    next_corner: 25400000 2540000 0
-    next_corner: 29210000 2540000 0
-    next_corner: 31750000 2540000 0
-    next_corner: 31750000 -2540000 0
-    next_corner: 25400000 -2540000 0
-    next_corner: 2540000 -2540000 0
-    next_corner: -2540000 -2540000 0
-    next_corner: -2540000 2540000 0
-    close_polyline: 0
-  outline_polyline: 254000 3200000 0
-    next_corner: 14400000 11200000 1
-    next_corner: 25600000 0 1
-    next_corner: 14400000 -11200000 1
-    close_polyline: 1
-  n_pins: 2
-    pin: "+" 0 0 0 0
-      top_pad: 3 4200000 1600000 1600000 0
-    pin: "-" 0 29300000 0 0
-      top_pad: 3 4191000 1600200 1600200 0
+units: NM
+sel_rect: -2921000 -11581000 32131000 11581000
+ref_text: 2540000 2540000 5080000 0 254000
+value_text: 2540000 2540000 0 0 254000
+centroid: 0 0 0 0
+outline_polyline: 254000 0 2540000
+next_corner: 2540000 2540000 0
+next_corner: 25400000 2540000 0
+next_corner: 29210000 2540000 0
+next_corner: 31750000 2540000 0
+next_corner: 31750000 -2540000 0
+next_corner: 25400000 -2540000 0
+next_corner: 2540000 -2540000 0
+next_corner: -2540000 -2540000 0
+next_corner: -2540000 2540000 0
+close_polyline: 0
+outline_polyline: 254000 3200000 0
+next_corner: 14400000 11200000 1
+next_corner: 25600000 0 1
+next_corner: 14400000 -11200000 1
+close_polyline: 1
+n_pins: 2
+pin: "+" 0 0 0 0
+top_pad: 3 4200000 1600000 1600000 0
+pin: "-" 0 29300000 0 0
+top_pad: 3 4191000 1600200 1600200 0
 
 name: "A2235-H"
 units: NM
