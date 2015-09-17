@@ -9,10 +9,10 @@ J2      6SIP100
 x1      package name for PCB layout
 x2      package name for PCB layout
 C3      C1206
-B1      keystone51
-B2      keystone51
-B3      keystone51
-B4      keystone51
+B1      keystone50
+B2      keystone50
+B3      keystone50
+B4      keystone50
 
 *NET*
 *SIGNAL*  B+

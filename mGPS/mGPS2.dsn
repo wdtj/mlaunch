@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--This file was written by TinyCAD Version 2.80.03 Build #514 Production Release
+<!--This file was written by TinyCAD Version 2.80.06 Build #626 Production Release
 If you wish to view this file go to http://tinycad.sourceforge.net to
-download a copy.-->
+download the executable.-->
 <TinyCADSheets>
 	<TinyCAD>
 		<NAME>Sheet 1</NAME>
@@ -2895,7 +2895,7 @@ M7(RQ6WJ39S@1OLO3E4WI&#039;?U^ OUMPI&quot;: DWD.V)6QNRF%GZ)&gt;P [&quot;.P^&gt;[
 				<METAFILE a='15.00000,14.00000' b='35.00000,34.00000' id='2'/>
 			</TinyCAD>
 		</SYMBOLDEF>
-		<SYMBOLDEF id='8'>
+		<SYMBOLDEF id='7'>
 			<NAME type='0'>C</NAME>
 			<REF type='0'>C?</REF>
 			<DESCRIPTION>Capacitor</DESCRIPTION>
@@ -2922,7 +2922,7 @@ M7(RQ6WJ39S@1OLO3E4WI&#039;?U^ OUMPI&quot;: DWD.V)6QNRF%GZ)&gt;P [&quot;.P^&gt;[
 				<PIN pos='94.00000,33.00000' which='5' elec='4' direction='0' part='0' number='2' show='0' length='30' number_pos='0' centre_name='0'></PIN>
 			</TinyCAD>
 		</SYMBOLDEF>
-		<SYMBOLDEF id='9'>
+		<SYMBOLDEF id='8'>
 			<NAME type='0'>BATTERY</NAME>
 			<REF type='1'>B?</REF>
 			<DESCRIPTION>Single-cell battery</DESCRIPTION>
@@ -3052,6 +3052,9 @@ M7(RQ6WJ39S@1OLO3E4WI&#039;?U^ OUMPI&quot;: DWD.V)6QNRF%GZ)&gt;P [&quot;.P^&gt;[
 			<COLOR_PIN>4040C0</COLOR_PIN>
 			<COLOR_HIDDEN_PIN>208020</COLOR_HIDDEN_PIN>
 			<COLOR_BACKGROUND>FFFFFF</COLOR_BACKGROUND>
+			<COLOR_NOTETEXT_FILL>AFFFFF</COLOR_NOTETEXT_FILL>
+			<COLOR_NOTETEXT_LINE>FF0000</COLOR_NOTETEXT_LINE>
+			<COLOR_NOTETEXT_TEXT>FF0000</COLOR_NOTETEXT_TEXT>
 		</OPTIONS>
 		<SYMBOL id='1' pos='80.00000,53.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='U1' show='1' pos='1.00000,-9.60000'/>
@@ -3172,7 +3175,7 @@ M7(RQ6WJ39S@1OLO3E4WI&#039;?U^ OUMPI&quot;: DWD.V)6QNRF%GZ)&gt;P [&quot;.P^&gt;[
 			<FIELD type='1' description='Package' value='package name for PCB layout' show='0' pos='1.00000,-10.80000'/>
 		</SYMBOL>
 		<LABEL pos='30.00000,45.00000' direction='3' font='5' color='208000' style='0'>B+</LABEL>
-		<SYMBOL id='8' pos='171.00000,67.00000' part='0' rotate='2' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='7' pos='171.00000,67.00000' part='0' rotate='2' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='C3' show='1' pos='-4.00000,-6.00000'/>
 			<FIELD type='0' description='Name' value='8.2pf' show='0' pos='1.00000,-4.00000'/>
 			<FIELD type='3' description='Digi-Key Part' value='311-1222-1-ND' show='0' pos='-7.00000,6.80000'/>
@@ -3189,10 +3192,10 @@ M7(RQ6WJ39S@1OLO3E4WI&#039;?U^ OUMPI&quot;: DWD.V)6QNRF%GZ)&gt;P [&quot;.P^&gt;[
 		<JUNCTION pos='174.00000,65.00000'/>
 		<WIRE a='174.00000,75.00000' b='174.00000,65.00000'/>
 		<JUNCTION pos='161.00000,75.00000'/>
-		<SYMBOL id='9' pos='21.00000,52.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='8' pos='21.00000,52.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='1' description='Ref' value='B1' show='1' pos='1.00000,-2.60000'/>
 			<FIELD type='0' description='Name' value='BATTERY' show='0' pos='1.00000,-5.00000'/>
-			<FIELD type='1' description='Package' value='keystone51' show='0' pos='1.00000,-0.20000'/>
+			<FIELD type='1' description='Package' value='keystone50' show='0' pos='1.00000,-0.20000'/>
 			<FIELD type='1' description='Usage' value='..' show='0' pos='1.00000,2.20000'/>
 			<FIELD type='1' description='Datasheet' value='..' show='0' pos='1.00000,4.60000'/>
 			<FIELD type='1' description='Picture' value='..' show='0' pos='1.00000,7.00000'/>
@@ -3202,14 +3205,14 @@ M7(RQ6WJ39S@1OLO3E4WI&#039;?U^ OUMPI&quot;: DWD.V)6QNRF%GZ)&gt;P [&quot;.P^&gt;[
 			<FIELD type='1' description='T_Max' value='..' show='0' pos='1.00000,16.60000'/>
 			<FIELD type='1' description='Manufacturer' value='..' show='0' pos='1.00000,19.00000'/>
 			<FIELD type='1' description='Manufacturer Part' value='..' show='0' pos='1.00000,21.40000'/>
-			<FIELD type='1' description='Digi-Key Part' value='36-51-ND' show='0' pos='1.00000,23.80000'/>
+			<FIELD type='1' description='Digi-Key Part' value='36-50K-ND' show='0' pos='1.00000,23.80000'/>
 			<FIELD type='1' description='Newark Part' value='..' show='0' pos='1.00000,26.20000'/>
 			<FIELD type='1' description='Mouser Part' value='..' show='0' pos='1.00000,28.60000'/>
 		</SYMBOL>
-		<SYMBOL id='9' pos='21.00000,59.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='8' pos='21.00000,59.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='1' description='Ref' value='B2' show='1' pos='1.00000,-2.60000'/>
 			<FIELD type='0' description='Name' value='BATTERY' show='0' pos='1.00000,-5.00000'/>
-			<FIELD type='1' description='Package' value='keystone51' show='0' pos='1.00000,-0.20000'/>
+			<FIELD type='1' description='Package' value='keystone50' show='0' pos='1.00000,-0.20000'/>
 			<FIELD type='1' description='Usage' value='..' show='0' pos='1.00000,2.20000'/>
 			<FIELD type='1' description='Datasheet' value='..' show='0' pos='1.00000,4.60000'/>
 			<FIELD type='1' description='Picture' value='..' show='0' pos='1.00000,7.00000'/>
@@ -3219,14 +3222,14 @@ M7(RQ6WJ39S@1OLO3E4WI&#039;?U^ OUMPI&quot;: DWD.V)6QNRF%GZ)&gt;P [&quot;.P^&gt;[
 			<FIELD type='1' description='T_Max' value='..' show='0' pos='1.00000,16.60000'/>
 			<FIELD type='1' description='Manufacturer' value='..' show='0' pos='1.00000,19.00000'/>
 			<FIELD type='1' description='Manufacturer Part' value='..' show='0' pos='1.00000,21.40000'/>
-			<FIELD type='1' description='Digi-Key Part' value='36-51-ND' show='0' pos='1.00000,23.80000'/>
+			<FIELD type='1' description='Digi-Key Part' value='36-50K-ND' show='0' pos='1.00000,23.80000'/>
 			<FIELD type='1' description='Newark Part' value='..' show='0' pos='1.00000,26.20000'/>
 			<FIELD type='1' description='Mouser Part' value='..' show='0' pos='1.00000,28.60000'/>
 		</SYMBOL>
-		<SYMBOL id='9' pos='21.00000,66.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='8' pos='21.00000,66.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='1' description='Ref' value='B3' show='1' pos='1.00000,-2.60000'/>
 			<FIELD type='0' description='Name' value='BATTERY' show='0' pos='1.00000,-5.00000'/>
-			<FIELD type='1' description='Package' value='keystone51' show='0' pos='1.00000,-0.20000'/>
+			<FIELD type='1' description='Package' value='keystone50' show='0' pos='1.00000,-0.20000'/>
 			<FIELD type='1' description='Usage' value='..' show='0' pos='1.00000,2.20000'/>
 			<FIELD type='1' description='Datasheet' value='..' show='0' pos='1.00000,4.60000'/>
 			<FIELD type='1' description='Picture' value='..' show='0' pos='1.00000,7.00000'/>
@@ -3236,14 +3239,14 @@ M7(RQ6WJ39S@1OLO3E4WI&#039;?U^ OUMPI&quot;: DWD.V)6QNRF%GZ)&gt;P [&quot;.P^&gt;[
 			<FIELD type='1' description='T_Max' value='..' show='0' pos='1.00000,16.60000'/>
 			<FIELD type='1' description='Manufacturer' value='..' show='0' pos='1.00000,19.00000'/>
 			<FIELD type='1' description='Manufacturer Part' value='..' show='0' pos='1.00000,21.40000'/>
-			<FIELD type='1' description='Digi-Key Part' value='36-51-ND' show='0' pos='1.00000,23.80000'/>
+			<FIELD type='1' description='Digi-Key Part' value='36-50K-ND' show='0' pos='1.00000,23.80000'/>
 			<FIELD type='1' description='Newark Part' value='..' show='0' pos='1.00000,26.20000'/>
 			<FIELD type='1' description='Mouser Part' value='..' show='0' pos='1.00000,28.60000'/>
 		</SYMBOL>
-		<SYMBOL id='9' pos='21.00000,73.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='8' pos='21.00000,73.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='1' description='Ref' value='B4' show='1' pos='1.00000,-2.60000'/>
 			<FIELD type='0' description='Name' value='BATTERY' show='0' pos='1.00000,-5.00000'/>
-			<FIELD type='1' description='Package' value='keystone51' show='0' pos='1.00000,-0.20000'/>
+			<FIELD type='1' description='Package' value='keystone50' show='0' pos='1.00000,-0.20000'/>
 			<FIELD type='1' description='Usage' value='..' show='0' pos='1.00000,2.20000'/>
 			<FIELD type='1' description='Datasheet' value='..' show='0' pos='1.00000,4.60000'/>
 			<FIELD type='1' description='Picture' value='..' show='0' pos='1.00000,7.00000'/>
@@ -3253,7 +3256,7 @@ M7(RQ6WJ39S@1OLO3E4WI&#039;?U^ OUMPI&quot;: DWD.V)6QNRF%GZ)&gt;P [&quot;.P^&gt;[
 			<FIELD type='1' description='T_Max' value='..' show='0' pos='1.00000,16.60000'/>
 			<FIELD type='1' description='Manufacturer' value='..' show='0' pos='1.00000,19.00000'/>
 			<FIELD type='1' description='Manufacturer Part' value='..' show='0' pos='1.00000,21.40000'/>
-			<FIELD type='1' description='Digi-Key Part' value='36-51-ND' show='0' pos='1.00000,23.80000'/>
+			<FIELD type='1' description='Digi-Key Part' value='36-50K-ND' show='0' pos='1.00000,23.80000'/>
 			<FIELD type='1' description='Newark Part' value='..' show='0' pos='1.00000,26.20000'/>
 			<FIELD type='1' description='Mouser Part' value='..' show='0' pos='1.00000,28.60000'/>
 		</SYMBOL>

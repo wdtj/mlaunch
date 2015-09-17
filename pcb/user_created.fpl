@@ -1,32 +1,54 @@
 <<<<<<< HEAD
-name: "keystone51"
+name: "keystone50"
   units: MIL
-  sel_rect: -415 -165 1465 165
-  ref_text: 100 350 -50 0 10
-  value_text: 100 500 200 0 10
-  centroid: 0 0 0 0
-  outline_polyline: 10 -400 150
-    next_corner: 1450 150 0
-    next_corner: 1450 -150 0
-    next_corner: -400 -150 0
+  sel_rect: -233.5 -175 1480 175
+  ref_text: 50 311.25 0 0 5
+  value_text: 100 100 0 0 10
+  centroid: 0 622.5 0 0
+  outline_polyline: 7 -220 -160
+    next_corner: 220 -160 0
+    next_corner: 220 160 0
+    next_corner: -220 160 0
     close_polyline: 0
-  n_pins: 4
-    pin: "1" 55 0 0 0
-      top_pad: 3 150 75 75 0
-      inner_pad: 0 0 0 0 0 0
-      bottom_pad: 0 150 75 75 0
-    pin: "2" 55 1070 0 0
-      top_pad: 3 150 75 75 0
-      inner_pad: 0 0 0 0 0 0
-      bottom_pad: 0 150 75 75 0
-    pin: "3" 55 -236 0 0
-      top_pad: 3 150 75 75 0
-      inner_pad: 0 0 0 0 0 0
-      bottom_pad: 0 150 75 75 0
-    pin: "4" 55 1306 0 0
-      top_pad: 3 150 75 75 0
-      inner_pad: 0 0 0 0 0 0
-      bottom_pad: 0 150 75 75 0
+  outline_polyline: 10 1465 -160
+    next_corner: 1465 160 0
+    next_corner: 1025 160 0
+    next_corner: 1025 -160 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 0 0 270
+      top_pad: 3 360 62 62 0
+    pin: "2" 0 1245 0 270
+      top_pad: 3 360 62 62 0
+
+name: "keystone51"
+units: MIL
+sel_rect: -415 -165 1465 165
+ref_text: 100 350 -50 0 10
+value_text: 100 500 200 0 10
+centroid: 0 0 0 0
+outline_polyline: 10 -400 150
+next_corner: 1450 150 0
+next_corner: 1450 -150 0
+next_corner: -400 -150 0
+close_polyline: 0
+n_pins: 4
+pin: "1" 55 0 0 0
+top_pad: 3 150 75 75 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 150 75 75 0
+pin: "2" 55 1070 0 0
+top_pad: 3 150 75 75 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 150 75 75 0
+pin: "3" 55 -236 0 0
+top_pad: 3 150 75 75 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 150 75 75 0
+pin: "4" 55 1306 0 0
+top_pad: 3 150 75 75 0
+inner_pad: 0 0 0 0 0 0
+bottom_pad: 0 150 75 75 0
 
 name: "BU2032SM-HD-G"
 description: "2032 Coin Holder"
