@@ -31,14 +31,14 @@ G04 Step and Repeat for panelization *
 G04 ----------------------- Draw board outline (positive)*
 %LPD*%
 G54D10*
-G01X-12500Y8000D02*
-G01X-12500Y-8000D01*
+G01X-12500Y8750D02*
+G01X-12500Y-8750D01*
 G04 end of side 1*
-G01X12500Y-8000D01*
+G01X12500Y-8750D01*
 G04 end of side 2*
-G01X12500Y8000D01*
+G01X12500Y8750D01*
 G04 end of side 3*
-G01X-12500Y8000D01*
+G01X-12500Y8750D01*
 
 G04 -------------- Draw Parts, Pads, Traces, Vias and Text (positive)*
 %LPD*%
