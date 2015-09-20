@@ -1,0 +1,26 @@
+
+
+   ---- Transcoding 'C:\Users\waynej\Documents\GitHub\mlaunch\mGPS\CAM-A2235\top_copper.grb' ----   Sat Sep 19 22:54:07 2015
+
+D11   --> D100
+D12   --> D101
+-----------------------------------------------------------------
+
+
+   ---- Transcoding 'C:\Users\waynej\Documents\GitHub\mlaunch\mGPS\CAM-A2235\top_copper.grb' ----   Sat Sep 19 22:54:46 2015
+
+D11   --> D100
+D12   --> D101
+D13   --> D102
+D14   --> D103
+D16   --> D104
+D17   --> D105
+D18   --> D106
+D19   --> D107
+D21   --> D108
+D22   --> D109
+D23   --> D110
+D24   --> D111
+D25   --> D112
+D26   --> D113
+-----------------------------------------------------------------
