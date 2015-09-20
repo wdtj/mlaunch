@@ -1,19 +1,24 @@
 <<<<<<< HEAD
 name: "keystone50"
   units: MIL
-  sel_rect: -233.5 -175 1480 175
+  sel_rect: -235 -180 1480 180
   ref_text: 50 311.25 0 0 5
-  value_text: 100 100 0 0 10
+  value_text: 100 400 -50 0 10
   centroid: 0 622.5 0 0
-  outline_polyline: 7 -220 -160
-    next_corner: 220 -160 0
-    next_corner: 220 160 0
-    next_corner: -220 160 0
+  outline_polyline: 10 1465 -165
+    next_corner: 1465 165 0
+    next_corner: -220 165 0
+    next_corner: -220 -165 0
     close_polyline: 0
-  outline_polyline: 10 1465 -160
-    next_corner: 1465 160 0
-    next_corner: 1025 160 0
-    next_corner: 1025 -160 0
+  outline_polyline: 5 210 113
+    next_corner: 210 -113 0
+    next_corner: -220 -113 0
+    next_corner: -220 113 0
+    close_polyline: 0
+  outline_polyline: 5 1040 113
+    next_corner: 1465 113 0
+    next_corner: 1465 -113 0
+    next_corner: 1040 -113 0
     close_polyline: 0
   n_pins: 2
     pin: "1" 0 0 0 270

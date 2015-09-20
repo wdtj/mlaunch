@@ -1,6 +1,5 @@
 *PADS-PCB*
 *PART*
-B1      coin1026
 U1      WSOT-223
 C1      eeehae101
 C2      C1206
@@ -12,14 +11,18 @@ U3      A2235-H
 R3      R1206
 R1      R1206
 R2      R1206
+B1      keystone50
+B2      keystone50
+B3      keystone50
+B4      keystone50
 
 *NET*
-*SIGNAL*  B+
-B1.1 C1.1 U1.3
 *SIGNAL*  V33
 U1.4 C2.1 U1.2 U2.1 C3.1 U3.3
+*SIGNAL*  B+
+C1.1 U1.3 B1.1
 *SIGNAL*  GND
-U2.10 B1.2 C1.2 U1.1 C2.2 C3.2 U3.6 U3.9 R2.1
+U2.10 C1.2 U1.1 C2.2 C3.2 B4.2 U3.6 U3.9 R2.1
 *SIGNAL*  TX
 U2.2 U3.22
 *SIGNAL*  WAKEUP
@@ -34,4 +37,10 @@ U3.17 R2.2
 U3.18 R1.2
 *SIGNAL*  N000003
 R3.2 U3.5 R1.1
+*SIGNAL*  N000004
+B1.2 B2.1
+*SIGNAL*  N000005
+B2.2 B3.1
+*SIGNAL*  N000006
+B3.2 B4.1
 *END*
