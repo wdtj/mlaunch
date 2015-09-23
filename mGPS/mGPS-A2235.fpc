@@ -69,10 +69,10 @@ routing_grid_spacing: 127000.000000
   routing_grid_item: 3.33330709MIL
   routing_grid_item: 4MIL
   routing_grid_item: 5MIL
-  routing_grid_item: 6.66606299MIL
+  routing_grid_item: 6.66602362MIL
   routing_grid_item: 10MIL
   routing_grid_item: 12.5MIL
-  routing_grid_item: 16.66606299MIL
+  routing_grid_item: 16.66602362MIL
   routing_grid_item: 20MIL
   routing_grid_item: 25MIL
   routing_grid_item: 40MIL
@@ -264,6 +264,25 @@ name: "eeehae101"
     pin: "2" 0 0 3900000 90
       top_pad: 3 2000000 2500000 2500000 0
 
+name: "C1206"
+author: "Ivex"
+source: "SURFACE MOUNT DESIGN AND LAND PATTERN STANDARD SUBSECTION 8.2 (PAGE 3 OF 4)"
+  units: NM
+  sel_rect: -1303200 -1503200 4103200 1503200
+  ref_text: 1270000 1400000 2300000 0 177800
+  value_text: 1270000 1400000 -240000 0 177800
+  centroid: 0 1400000 0 0
+  outline_polyline: 177800 -1100000 1300000
+    next_corner: 3900000 1300000 0
+    next_corner: 3900000 -1300000 0
+    next_corner: -1100000 -1300000 0
+    close_polyline: 0
+  n_pins: 2
+    pin: "1" 0 0 0 0
+      top_pad: 3 2000000 800000 800000 0
+    pin: "2" 0 2800000 0 0
+      top_pad: 3 2000000 800000 800000 0
+
 name: "A2235-H"
   units: NM
   sel_rect: -704000 -1104000 15944000 16614000
@@ -325,24 +344,32 @@ name: "A2235-H"
     pin: "22" 0 0 15510000 90
       top_pad: 3 900000 850000 850000 0
 
-name: "C1206"
-author: "Ivex"
-source: "SURFACE MOUNT DESIGN AND LAND PATTERN STANDARD SUBSECTION 8.2 (PAGE 3 OF 4)"
-  units: NM
-  sel_rect: -1303200 -1503200 4103200 1503200
-  ref_text: 1270000 1400000 2300000 0 177800
-  value_text: 1270000 1400000 -240000 0 177800
-  centroid: 0 1400000 0 0
-  outline_polyline: 177800 -1100000 1300000
-    next_corner: 3900000 1300000 0
-    next_corner: 3900000 -1300000 0
-    next_corner: -1100000 -1300000 0
+name: "keystone50"
+  units: MIL
+  sel_rect: -235 -185 1480 185
+  ref_text: 50 311.25 0 0 5
+  value_text: 100 400 -50 0 10
+  centroid: 0 622.5 0 0
+  outline_polyline: 10 1465 -170
+    next_corner: 1465 170 0
+    next_corner: -220 170 0
+    next_corner: -220 -170 0
+    close_polyline: 0
+  outline_polyline: 5 210 113
+    next_corner: 210 -113 0
+    next_corner: -220 -113 0
+    next_corner: -220 113 0
+    close_polyline: 0
+  outline_polyline: 5 1040 113
+    next_corner: 1465 113 0
+    next_corner: 1465 -113 0
+    next_corner: 1040 -113 0
     close_polyline: 0
   n_pins: 2
-    pin: "1" 0 0 0 0
-      top_pad: 3 2000000 800000 800000 0
-    pin: "2" 0 2800000 0 0
-      top_pad: 3 2000000 800000 800000 0
+    pin: "1" 0 0 0 270
+      top_pad: 3 360 62 62 0
+    pin: "2" 0 1245 0 270
+      top_pad: 3 360 62 62 0
 
 name: "XBee"
   units: MIL
@@ -443,33 +470,6 @@ name: "XBee"
       top_pad: 2 50 0 0 0
       inner_pad: 0 0 0 0 0 0
       bottom_pad: 2 50 0 0 0
-
-name: "keystone50"
-  units: MIL
-  sel_rect: -235 -180 1480 180
-  ref_text: 50 311.25 0 0 5
-  value_text: 100 400 -50 0 10
-  centroid: 0 622.5 0 0
-  outline_polyline: 10 1465 -165
-    next_corner: 1465 165 0
-    next_corner: -220 165 0
-    next_corner: -220 -165 0
-    close_polyline: 0
-  outline_polyline: 5 210 113
-    next_corner: 210 -113 0
-    next_corner: -220 -113 0
-    next_corner: -220 113 0
-    close_polyline: 0
-  outline_polyline: 5 1040 113
-    next_corner: 1465 113 0
-    next_corner: 1465 -113 0
-    next_corner: 1040 -113 0
-    close_polyline: 0
-  n_pins: 2
-    pin: "1" 0 0 0 270
-      top_pad: 3 360 62 62 0
-    pin: "2" 0 1245 0 270
-      top_pad: 3 360 62 62 0
 
 name: "HOLE_125_NOPAD"
   units: MIL
@@ -624,14 +624,6 @@ part: h1
 
 [nets]
 
-net: "WAKEUP" 2 1 0 0 0 0 1
-  pin: 1 U3.4
-  pin: 2 U3.19
-  connect: 1 1 0 1 0
-    vtx: 1 -19050000 7763000 13 0 0 0 0
-    seg: 1 13 254000 0 0
-    vtx: 2 -19050000 -7747000 13 0 0 0 0
-
 net: "V33" 6 5 1 635000 711200 355600 1
   pin: 1 U1.4
   pin: 2 C2.1
@@ -673,21 +665,13 @@ net: "V33" 6 5 1 635000 711200 355600 1
     corner: 3 -12827000 21844000 0 0
     corner: 4 31369000 21844000 0 1
 
-net: "TX" 2 1 0 0 0 0 1
-  pin: 1 U2.2
-  pin: 2 U3.22
-  connect: 1 1 0 5 0
-    vtx: 1 -15240000 7763000 13 0 0 0 0
+net: "WAKEUP" 2 1 0 0 0 0 1
+  pin: 1 U3.4
+  pin: 2 U3.19
+  connect: 1 1 0 1 0
+    vtx: 1 -19050000 7763000 13 0 0 0 0
     seg: 1 13 254000 0 0
-    vtx: 2 -15240000 -3175000 0 0 0 0 0
-    seg: 2 13 254000 0 0
-    vtx: 3 -17018000 -3175000 0 0 711200 355600 0
-    seg: 3 12 254000 0 0
-    vtx: 4 -17018000 -6604000 0 0 0 0 0
-    seg: 4 12 254000 0 0
-    vtx: 5 -19608800 -9194800 0 0 0 0 0
-    seg: 5 12 254000 0 0
-    vtx: 6 -19608800 -10998200 11 0 0 0 0
+    vtx: 2 -19050000 -7747000 13 0 0 0 0
 
 net: "N000000" 2 1 0 0 0 0 1
   pin: 1 U3.7
@@ -696,6 +680,22 @@ net: "N000000" 2 1 0 0 0 0 1
     vtx: 1 -27940000 -10795000 13 0 0 0 0
     seg: 1 13 254000 0 0
     vtx: 2 -27940000 -7747000 13 0 0 0 0
+
+net: "TX" 2 1 0 0 0 0 1
+  pin: 1 U2.2
+  pin: 2 U3.22
+  connect: 1 1 0 5 0
+    vtx: 1 -15240000 7763000 13 0 0 0 0
+    seg: 1 13 254000 0 0
+    vtx: 2 -15240000 -1397000 0 0 0 0 0
+    seg: 2 13 254000 0 0
+    vtx: 3 -17018000 -3175000 0 0 711200 355600 0
+    seg: 3 12 254000 0 0
+    vtx: 4 -17018000 -6604000 0 0 0 0 0
+    seg: 4 12 254000 0 0
+    vtx: 5 -19608800 -9194800 0 0 0 0 0
+    seg: 5 12 254000 0 0
+    vtx: 6 -19608800 -10998200 11 0 0 0 0
 
 net: "N000001" 3 1 0 0 0 0 1
   pin: 1 D1.1
@@ -711,20 +711,6 @@ net: "N000001" 3 1 0 0 0 0 1
     vtx: 4 -21590000 9144000 0 0 0 0 0
     seg: 4 13 254000 0 0
     vtx: 5 -21590000 7763000 13 0 0 0 0
-
-net: "RX" 2 1 0 0 0 0 1
-  pin: 1 U2.3
-  pin: 2 U3.21
-  connect: 1 1 0 4 0
-    vtx: 1 -16510000 7763000 13 0 0 0 0
-    seg: 1 13 254000 0 0
-    vtx: 2 -16129000 5842000 0 0 711200 355600 0
-    seg: 2 12 254000 0 0
-    vtx: 3 -16129000 -6731000 0 0 0 0 0
-    seg: 3 12 254000 0 0
-    vtx: 4 -17602200 -8204200 0 0 0 0 0
-    seg: 4 12 254000 0 0
-    vtx: 5 -17602200 -10998200 11 0 0 0 0
 
 net: "N000002" 2 1 0 0 0 0 1
   pin: 1 U3.18
@@ -743,6 +729,22 @@ net: "N000002" 2 1 0 0 0 0 1
     vtx: 6 -20320000 9652000 0 0 0 0 0
     seg: 6 13 254000 0 0
     vtx: 7 -20320000 7763000 13 0 0 0 0
+
+net: "RX" 2 1 0 0 0 0 1
+  pin: 1 U2.3
+  pin: 2 U3.21
+  connect: 1 1 0 5 0
+    vtx: 1 -16510000 7763000 13 0 0 0 0
+    seg: 1 13 254000 0 0
+    vtx: 2 -16510000 5334000 0 0 711200 355600 0
+    seg: 2 12 254000 0 0
+    vtx: 3 -16129000 4953000 0 0 0 0 0
+    seg: 3 12 254000 0 0
+    vtx: 4 -16129000 -6731000 0 0 0 0 0
+    seg: 4 12 254000 0 0
+    vtx: 5 -17602200 -8204200 0 0 0 0 0
+    seg: 5 12 254000 0 0
+    vtx: 6 -17602200 -10998200 11 0 0 0 0
 
 net: "N000003" 3 2 0 0 0 0 1
   pin: 1 R3.2
@@ -795,6 +797,18 @@ net: "N000005" 3 1 0 635000 711200 355600 1
     vtx: 1 24130000 -6350000 13 0 0 0 0
     seg: 1 13 635000 0 0
     vtx: 2 24257000 6350000 13 0 0 0 0
+
+net: "N000006" 2 1 0 635000 711200 355600 1
+  pin: 1 B3.2
+  pin: 2 B4.1
+  connect: 1 1 0 3 0
+    vtx: 1 -7366000 -17780000 13 0 0 0 0
+    seg: 1 13 635000 0 0
+    vtx: 2 -381000 -17780000 0 0 0 0 0
+    seg: 2 13 635000 0 0
+    vtx: 3 -381000 -6350000 0 0 0 0 0
+    seg: 3 13 635000 0 0
+    vtx: 4 -7493000 -6350000 13 0 0 0 0
 
 net: "GND" 9 8 1 635000 711200 355600 1
   pin: 1 U2.10
@@ -893,18 +907,6 @@ net: "GND" 9 8 1 635000 711200 355600 1
     corner: 2 -12827000 -21844000 0 0
     corner: 3 -12827000 21844000 0 0
     corner: 4 31369000 21844000 0 1
-
-net: "N000006" 2 1 0 635000 711200 355600 1
-  pin: 1 B3.2
-  pin: 2 B4.1
-  connect: 1 1 0 3 0
-    vtx: 1 -7366000 -17780000 13 0 0 0 0
-    seg: 1 13 635000 0 0
-    vtx: 2 -381000 -17780000 0 0 0 0 0
-    seg: 2 13 635000 0 0
-    vtx: 3 -381000 -6350000 0 0 0 0 0
-    seg: 3 13 635000 0 0
-    vtx: 4 -7493000 -6350000 13 0 0 0 0
 
 net: "B+" 3 2 0 635000 711200 355600 1
   pin: 1 B1.1
