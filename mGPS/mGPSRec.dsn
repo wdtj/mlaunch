@@ -1145,6 +1145,47 @@ download a copy.-->
 				<PIN pos='82.00000,53.00000' which='0' elec='0' direction='0' part='0' number='44' show='3' length='30' number_pos='0' centre_name='0'>Reset</PIN>
 			</TinyCAD>
 		</SYMBOLDEF>
+		<SYMBOLDEF id='9'>
+			<NAME type='0'>Header 1x3</NAME>
+			<REF type='0'>J?</REF>
+			<DESCRIPTION>Header 1x3</DESCRIPTION>
+			<PPP>1</PPP>
+			<FIELD>
+				<NAME>$$SPICE_PROLOG_PRIORITY</NAME>
+				<DEFAULT>5</DEFAULT>
+				<FT>000002</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<FIELD>
+				<NAME>$$SPICE_EPILOG_PRIORITY</NAME>
+				<DEFAULT>5</DEFAULT>
+				<FT>000002</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<FIELD>
+				<NAME>Package</NAME>
+				<DEFAULT>1X3HDR-100</DEFAULT>
+				<FT>000001</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<FIELD>
+				<NAME>Digi-Key Part</NAME>
+				<DEFAULT>609-3470-ND</DEFAULT>
+				<FT>000001</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<REF_POINT power='0' part='0' pos='31.00000,29.00000'/>
+			<TinyCAD>
+				<RECTANGLE a='31.00000,22.00000' b='21.00000,26.00000' style='4' fill='0'/>
+				<PIN pos='23.00000,29.00000' which='1' elec='4' direction='0' part='0' number='1' show='2' length='30' number_pos='0' centre_name='0'>1</PIN>
+				<PIN pos='26.00000,29.00000' which='1' elec='4' direction='0' part='0' number='2' show='2' length='30' number_pos='0' centre_name='0'>2</PIN>
+				<PIN pos='29.00000,29.00000' which='1' elec='4' direction='0' part='0' number='3' show='2' length='30' number_pos='0' centre_name='0'>3</PIN>
+			</TinyCAD>
+		</SYMBOLDEF>
 		<OPTIONS>
 			<GRID>1</GRID>
 			<UNITS>1</UNITS>
@@ -1340,7 +1381,7 @@ download a copy.-->
 		</SYMBOL>
 		<POWER pos='212.00000,140.00000' which='4' direction='1'>GND</POWER>
 		<POWER pos='217.00000,131.00000' which='1' direction='2'>V3.3</POWER>
-		<WIRE a='218.00000,128.00000' b='182.00000,128.00000'/>
+		<WIRE a='203.00000,128.00000' b='182.00000,128.00000'/>
 		<WIRE a='182.00000,128.00000' b='182.00000,122.00000'/>
 		<WIRE a='182.00000,122.00000' b='157.00000,122.00000'/>
 		<NOCONNECT pos='218.00000,122.00000'/>
@@ -1373,7 +1414,7 @@ download a copy.-->
 		<WIRE a='190.00000,150.00000' b='188.00000,150.00000'/>
 		<WIRE a='212.00000,134.00000' b='212.00000,133.00000'/>
 		<WIRE a='217.00000,131.00000' b='218.00000,131.00000'/>
-		<WIRE a='212.00000,133.00000' b='199.00000,133.00000'/>
+		<WIRE a='206.00000,133.00000' b='199.00000,133.00000'/>
 		<NOCONNECT pos='79.00000,115.00000'/>
 		<NOCONNECT pos='79.00000,136.00000'/>
 		<NOCONNECT pos='120.00000,145.00000'/>
@@ -1399,10 +1440,30 @@ download a copy.-->
 		<WIRE a='221.00000,89.00000' b='221.00000,81.00000'/>
 		<WIRE a='221.00000,81.00000' b='212.00000,81.00000'/>
 		<WIRE a='212.00000,81.00000' b='212.00000,74.00000'/>
-		<WIRE a='157.00000,125.00000' b='218.00000,125.00000'/>
+		<WIRE a='209.00000,125.00000' b='218.00000,125.00000'/>
 		<WIRE a='218.00000,134.00000' b='212.00000,134.00000'/>
 		<JUNCTION pos='212.00000,134.00000'/>
 		<WIRE a='212.00000,140.00000' b='212.00000,134.00000'/>
+		<SYMBOL id='9' pos='227.00000,114.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+			<FIELD type='0' description='Ref' value='TP2' show='1' pos='-7.00000,2.00000'/>
+			<FIELD type='0' description='Name' value='TestPoint' show='1' pos='-7.00000,-10.00000'/>
+			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Package' value='1X3HDR-100' show='0' pos='-7.00000,4.40000'/>
+			<FIELD type='1' description='Digi-Key Part' value='609-3470-ND' show='0' pos='-7.00000,6.80000'/>
+		</SYMBOL>
+		<WIRE a='220.00000,106.00000' b='203.00000,106.00000'/>
+		<WIRE a='203.00000,106.00000' b='203.00000,128.00000'/>
+		<JUNCTION pos='203.00000,128.00000'/>
+		<WIRE a='218.00000,128.00000' b='203.00000,128.00000'/>
+		<WIRE a='220.00000,109.00000' b='206.00000,109.00000'/>
+		<WIRE a='206.00000,109.00000' b='206.00000,133.00000'/>
+		<JUNCTION pos='206.00000,133.00000'/>
+		<WIRE a='212.00000,133.00000' b='206.00000,133.00000'/>
+		<WIRE a='220.00000,112.00000' b='209.00000,112.00000'/>
+		<WIRE a='209.00000,112.00000' b='209.00000,125.00000'/>
+		<JUNCTION pos='209.00000,125.00000'/>
+		<WIRE a='157.00000,125.00000' b='209.00000,125.00000'/>
 	</TinyCAD>
 	<TinyCAD>
 		<NAME>Tranceiver</NAME>
@@ -1652,7 +1713,7 @@ download a copy.-->
 		<NOCONNECT pos='84.00000,97.00000'/>
 		<POWER pos='106.00000,101.00000' which='1' direction='3'>V3.3</POWER>
 		<SYMBOL id='1' pos='133.00000,72.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
-			<FIELD type='0' description='Ref' value='J3' show='1' pos='1.00000,-2.60000'/>
+			<FIELD type='0' description='Ref' value='TP1' show='1' pos='1.00000,-2.60000'/>
 			<FIELD type='0' description='Name' value='TestPoint' show='1' pos='1.00000,-5.00000'/>
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
@@ -8766,7 +8827,7 @@ MZE4((*I7(8&quot;H7H4 HGH5 HCJ50@@JE&lt;A@*A&gt;A0&quot;B&gt;A4&quot;B.I5&quot;&
 B *)Z%0*(ZE4((*I7_0&gt;+N-0];FIQ4P    !)14Y$KD)@@@  
 </UUENCODE>
 		</IMAGE>
-		<IMAGE id='18' type='PNG'>
+		<IMAGE id='7' type='PNG'>
 			<UUENCODE size='8684'>
 MB5!.1PT*&amp;@H    -24A$4@   ,@   #(&quot; ,   &quot;:AEZL   # %!,5$4   #_
 M\/#P__^/CY#___\P+R\O,&quot;____#_\/_P__ P,##P\/_P[^^_O[#P\._P\/&quot;O
@@ -9191,7 +9252,7 @@ L0R &#039;;1T&quot;.6CK$,A!6X= #MHZ!&#039;+0UO\#S5D0JZ#..+,     245.1*Y&quot;8((
 				<METAFILE a='12.00000,10.00000' b='32.00000,30.00000' id='6'/>
 			</TinyCAD>
 		</SYMBOLDEF>
-		<SYMBOLDEF id='18'>
+		<SYMBOLDEF id='7'>
 			<NAME type='0'>IC Socket DIP 40 pin</NAME>
 			<REF type='0'>K?</REF>
 			<DESCRIPTION>SOCKET IC OPEN FRAME 40POS .6&quot;</DESCRIPTION>
@@ -9226,7 +9287,7 @@ L0R &#039;;1T&quot;.6CK$,A!6X= #MHZ!&#039;+0UO\#S5D0JZ#..+,     245.1*Y&quot;8((
 			</FIELD>
 			<REF_POINT power='0' part='0' pos='39.00000,37.00000'/>
 			<TinyCAD>
-				<METAFILE a='19.00000,17.00000' b='39.00000,37.00000' id='18'/>
+				<METAFILE a='19.00000,17.00000' b='39.00000,37.00000' id='7'/>
 			</TinyCAD>
 		</SYMBOLDEF>
 		<OPTIONS>
@@ -9250,7 +9311,7 @@ L0R &#039;;1T&quot;.6CK$,A!6X= #MHZ!&#039;+0UO\#S5D0JZ#..+,     245.1*Y&quot;8((
 			<FIELD type='1' description='Package' value='package name for PCB layout' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='0' description='Digi-Key Part' value='SR17SA-ND' show='1' pos='0.00000,0.00000'/>
 		</SYMBOL>
-		<SYMBOL id='18' pos='61.00000,83.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='7' pos='61.00000,83.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='K1' show='1' pos='1.00000,-15.60000'/>
 			<FIELD type='0' description='Name' value='IC Socket DIP 40 pin' show='1' pos='1.00000,-18.00000'/>
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
