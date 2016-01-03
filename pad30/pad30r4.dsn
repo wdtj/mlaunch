@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--This file was written by TinyCAD Version 2.80.03 Build #514 Production Release
+<!--This file was written by TinyCAD Version 2.80.06 Build #626 Production Release
 If you wish to view this file go to http://tinycad.sourceforge.net to
-download a copy.-->
+download the executable.-->
 <TinyCADSheets>
 	<TinyCAD>
 		<NAME>CPU</NAME>
@@ -745,6 +745,9 @@ download a copy.-->
 			<COLOR_PIN>4040C0</COLOR_PIN>
 			<COLOR_HIDDEN_PIN>208020</COLOR_HIDDEN_PIN>
 			<COLOR_BACKGROUND>FFFFFF</COLOR_BACKGROUND>
+			<COLOR_NOTETEXT_FILL>AFFFFF</COLOR_NOTETEXT_FILL>
+			<COLOR_NOTETEXT_LINE>FF0000</COLOR_NOTETEXT_LINE>
+			<COLOR_NOTETEXT_TEXT>FF0000</COLOR_NOTETEXT_TEXT>
 		</OPTIONS>
 		<SYMBOL id='3' pos='174.00000,109.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='U2' show='1' pos='-30.00000,-43.00000'/>
@@ -756,11 +759,11 @@ download a copy.-->
 		</SYMBOL>
 		<SYMBOL id='8' pos='57.00000,58.00000' part='0' rotate='0' can_scale='0' show_power='1' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='U1' show='1' pos='1.00000,-33.60000'/>
-			<FIELD type='0' description='Name' value='XBee' show='1' pos='1.00000,-36.00000'/>
+			<FIELD type='0' description='Name' value='XBee-pro s2c' show='1' pos='1.00000,-36.00000'/>
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='1' description='Package' value='XBee' show='0' pos='1.00000,-31.20000'/>
-			<FIELD type='0' description='Digi-Key Part' value='602-1101-ND' show='0' pos='1.00000,-28.80000'/>
+			<FIELD type='0' description='Digi-Key Part' value='602-1563-ND' show='0' pos='1.00000,-28.80000'/>
 		</SYMBOL>
 		<WIRE a='82.00000,30.00000' b='96.00000,30.00000'/>
 		<WIRE a='96.00000,30.00000' b='96.00000,55.00000'/>
@@ -1519,12 +1522,15 @@ download a copy.-->
 			<COLOR_PIN>4040C0</COLOR_PIN>
 			<COLOR_HIDDEN_PIN>208020</COLOR_HIDDEN_PIN>
 			<COLOR_BACKGROUND>FFFFFF</COLOR_BACKGROUND>
+			<COLOR_NOTETEXT_FILL>AFFFFF</COLOR_NOTETEXT_FILL>
+			<COLOR_NOTETEXT_LINE>FF0000</COLOR_NOTETEXT_LINE>
+			<COLOR_NOTETEXT_TEXT>FF0000</COLOR_NOTETEXT_TEXT>
 		</OPTIONS>
 		<SYMBOL id='6' pos='177.00000,103.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='U5' show='1' pos='-15.00000,-14.00000'/>
 			<FIELD type='0' description='Name' value='AZ1117-33' show='1' pos='-15.00000,-16.00000'/>
 			<FIELD type='1' description='Package' value='WSOT-223' show='0' pos='0.00000,0.00000'/>
-			<FIELD type='1' description='Digi-Key Part' value='AZ1117EH-3.3TRG1DICT-ND' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Digi-Key Part' value='AZ1117H-3.3TRE1DICT-ND' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 		</SYMBOL>
@@ -2223,6 +2229,9 @@ download a copy.-->
 			<COLOR_PIN>4040C0</COLOR_PIN>
 			<COLOR_HIDDEN_PIN>208020</COLOR_HIDDEN_PIN>
 			<COLOR_BACKGROUND>FFFFFF</COLOR_BACKGROUND>
+			<COLOR_NOTETEXT_FILL>AFFFFF</COLOR_NOTETEXT_FILL>
+			<COLOR_NOTETEXT_LINE>FF0000</COLOR_NOTETEXT_LINE>
+			<COLOR_NOTETEXT_TEXT>FF0000</COLOR_NOTETEXT_TEXT>
 		</OPTIONS>
 		<LABEL pos='165.00000,67.00000' direction='3' font='5' color='208000' style='0'>Red_LED1</LABEL>
 		<WIRE a='189.00000,67.00000' b='165.00000,67.00000'/>
@@ -3007,6 +3016,9 @@ download a copy.-->
 			<COLOR_PIN>4040C0</COLOR_PIN>
 			<COLOR_HIDDEN_PIN>208020</COLOR_HIDDEN_PIN>
 			<COLOR_BACKGROUND>FFFFFF</COLOR_BACKGROUND>
+			<COLOR_NOTETEXT_FILL>AFFFFF</COLOR_NOTETEXT_FILL>
+			<COLOR_NOTETEXT_LINE>FF0000</COLOR_NOTETEXT_LINE>
+			<COLOR_NOTETEXT_TEXT>FF0000</COLOR_NOTETEXT_TEXT>
 		</OPTIONS>
 		<POWER pos='135.00000,44.00000' which='4' direction='1'>GND</POWER>
 		<WIRE a='54.00000,43.00000' b='115.00000,43.00000'/>
@@ -19784,6 +19796,9 @@ B^@;R;NL;R+NMOPV0_P.D]OWA+&amp;J=30    !)14Y$KD)@@@
 			<COLOR_PIN>4040C0</COLOR_PIN>
 			<COLOR_HIDDEN_PIN>208020</COLOR_HIDDEN_PIN>
 			<COLOR_BACKGROUND>FFFFFF</COLOR_BACKGROUND>
+			<COLOR_NOTETEXT_FILL>AFFFFF</COLOR_NOTETEXT_FILL>
+			<COLOR_NOTETEXT_LINE>FF0000</COLOR_NOTETEXT_LINE>
+			<COLOR_NOTETEXT_TEXT>FF0000</COLOR_NOTETEXT_TEXT>
 		</OPTIONS>
 		<SYMBOL id='1' pos='50.00000,42.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='J13' show='1' pos='1.00000,-11.60000'/>
