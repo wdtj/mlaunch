@@ -1,0 +1,15 @@
+Reference,Quantity,Name,Description,Package,Value,Tol.,V_Max,ESR,Material,Manufacturer,Manufacturer Part,Digi-Key Part,Newark Part,Mouser Part,Cost,P_Max,Usage,Datasheet,Picture,Voltage,Capacity,R_Int,T_Max,Pmax,IfMax,VrMax,VfMax,Vf,R_Off,R_On,T_Trip,Temp_Nom,Other
+"C1",  1,100mfd,Electrolytic Capacitor,eeehae101,..,..,..,..,..,..,..,PCE4705CT-ND,..,..,..
+"R3",  1,10K,Resistor,R1206,..,..,,,,..,..,311-10KERCT-ND,..,..,..,..
+"R1,R2",  2,2.2K,Resistor,R1206,..,..,,,,..,..,311-2.2KERCT-ND,..,..,..,..
+"C2",  1,330mfd,Electrolytic Capacitor,EEEFP1E331,..,..,..,..,..,..,..,311-1466-1-ND,..,..,..
+"C3",  1,8.2pf,Capacitor,C1206,8.2pf,,,,,,,311-1222-1-ND
+"U3",  1,A2235-H,A2235-H GPS,A2235-H,,,,,,,, 1530-1011-1-ND 
+"B1",  1,BATTERY,Single-cell battery,BH9V-PC-ND,,,,,,..,..,BH9V-PC-ND,..,..,,,..,..,..,..,..,..,..
+"D1",  1,D,Diode,SMA,,,,,,..,..,S1AFSCT-ND,..,..,..,,,,,,,,,..,..,..,..,..
+"D2",  1,D_SCHOTTKY,Schottky diode,SOD-123,,,,,,..,..,1N5819HW-FDICT-ND ,..,..,..,,,,,,,,,..,..,..,..,..
+"L1",  1,L,Coil,SRR1280,,,,,,,,SRR1280-331KLCT-ND ,,,,,,,,,,,,,,,,,,,,,..
+"U1",  1,TL2575,TL2575-33,TO-263,,,,,,,, 296-21828-1-ND 
+"V1",  1,VARISTOR,Varistor,C1206,,,18v,,,,..,732-2549-1-ND,,,,,,,,,,,,,,,,,,,,
+"U2",  1,XBP9B-DMWT-002,XBee,XBee,,,,,,,,602-1301-ND
+"x1,x2",  2,Xbee Header,CONN RECEPT 2MM SINGLE STR 10POS,package name for PCB layout,,,,,,,,S5751-10-ND
