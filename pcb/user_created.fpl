@@ -1,53 +1,148 @@
 <<<<<<< HEAD
-name: "SMA"
+name: "SOD-123"
+units: NM
+sel_rect: -1173100 -1173100 4423100 1173100
+ref_text: 1270000 812500 0 0 127000
+value_text: 2540000 2540000 0 0 254000
+centroid: 0 1625000 0 0
+outline_polyline: 177800 -830200 -830200
+next_corner: 4080200 -830200 0
+next_corner: 4080200 830200 0
+next_corner: -830200 830200 0
+close_polyline: 0
+n_pins: 2
+pin: "1" 0 0 0 270
+top_pad: 3 1000000 500000 500000 0
+pin: "2" 0 3250000 0 270
+top_pad: 3 1000000 500000 500000 0
+
+name: "SRR1280"
+units: NM
+sel_rect: -2704000 -6592900 12404000 6592900
+ref_text: 1270000 2425000 0 0 127000
+value_text: 2540000 2540000 0 0 254000
+centroid: 0 4850000 0 0
+outline_polyline: 177800 -1780200 -6250000
+next_corner: 11480200 -6250000 0
+next_corner: 11480200 6250000 0
+next_corner: -1780200 6250000 0
+close_polyline: 0
+n_pins: 2
+pin: "1" 0 -500000 0 90
+top_pad: 3 3900000 2700000 2700000 0
+pin: "2" 0 10200000 0 90
+top_pad: 3 3900000 2700000 2700000 0
+
+name: "EEEFP1E331"
+units: NM
+sel_rect: -6004000 -4542900 6004000 4542900
+ref_text: 1270000 -1980000 -6350000 0 127000
+value_text: 2540000 -6298000 4826000 0 254000
+centroid: 0 0 0 0
+text: "-" 1000000 4572000 3048000 90 254000 0 4
+outline_polyline: 177800 -4200000 -4200000
+next_corner: 4200000 -4200000 0
+next_corner: 4200000 4200000 0
+next_corner: -4200000 4200000 0
+close_polyline: 0
+n_pins: 2
+pin: "1" 0 -3250000 0 90
+top_pad: 3 5000000 1000000 1000000 0
+pin: "2" 0 3250000 0 90
+top_pad: 3 5000000 1000000 1000000 0
+
+name: "EEEFP331AP"
+units: NM
+sel_rect: -2423100 -4492900 11730181 4492900
+ref_text: 1270000 1270000 -6350000 0 127000
+value_text: 2540000 -3048000 4826000 0 254000
+centroid: 0 3250000 0 0
+text: "-" 2540000 9144000 762000 0 254000 0 4
+outline_polyline: 177800 -2080200 -4150000
+next_corner: 8580200 -4150000 0
+next_corner: 8580200 4150000 0
+next_corner: -2080200 4150000 0
+close_polyline: 0
+n_pins: 2
+pin: "1" 0 0 0 270
+top_pad: 3 3500000 500000 500000 0
+pin: "2" 0 6500000 0 270
+top_pad: 3 3500000 500000 500000 0
+
+name: "TO-263-6"
   units: NM
-  sel_rect: -1998100 -2516910 7158181 1548100
-  ref_text: 1270000 -1270000 1778000 0 127000
+  sel_rect: -2628900 -2374900 9486900 15582900
+  ref_text: 1270000 1700000 0 0 127000
   value_text: 2540000 2540000 0 0 254000
-  centroid: 0 2150000 0 0
-  text: "-" 2540000 4572000 -3048000 0 254000 0 4
-  outline_polyline: 177800 -1655200 -1205200
-    next_corner: 5955200 -1205200 0
-    next_corner: 5955200 1205200 0
-    next_corner: -1655200 1205200 0
+  centroid: 0 3400000 0 0
+  outline_polyline: 177800 -2286000 -2032000
+    next_corner: 9144000 -2032000 0
+    next_corner: 9144000 15240000 0
+    next_corner: -2286000 15240000 0
     close_polyline: 0
-  n_pins: 2
+  n_pins: 6
     pin: "1" 0 0 0 270
-      top_pad: 3 2650000 875000 875000 0
-    pin: "2" 0 4300000 0 270
-      top_pad: 3 2650000 875000 875000 0
+      top_pad: 3 1000000 1700000 1700000 0
+    pin: "2" 0 1700000 0 270
+      top_pad: 3 1000000 1700000 1700000 0
+    pin: "3" 0 3400000 0 270
+      top_pad: 3 1000000 1700000 1700000 0
+    pin: "4" 0 5100000 0 270
+      top_pad: 3 1000000 1700000 1700000 0
+    pin: "5" 0 6800000 0 270
+      top_pad: 3 1000000 1700000 1700000 0
+    pin: "6" 0 3400000 10600000 90
+      top_pad: 3 10700000 4300000 4300000 0 3
+
+name: "SMA"
+units: NM
+sel_rect: -1998100 -2516910 7158181 1548100
+ref_text: 1270000 -1270000 1778000 0 127000
+value_text: 2540000 2540000 0 0 254000
+centroid: 0 2150000 0 0
+text: "-" 2540000 4572000 -3048000 0 254000 0 4
+outline_polyline: 177800 -1655200 -1205200
+next_corner: 5955200 -1205200 0
+next_corner: 5955200 1205200 0
+next_corner: -1655200 1205200 0
+close_polyline: 0
+n_pins: 2
+pin: "1" 0 0 0 270
+top_pad: 3 2650000 875000 875000 0
+pin: "2" 0 4300000 0 270
+top_pad: 3 2650000 875000 875000 0
 
 name: "BH9V-PC-ND"
 units: MIL
-sel_rect: -2067 -1045 281.81815 165
-ref_text: 100 100 200 0 10
-value_text: 100 100 0 0 10
-centroid: 0 0 0 0
-text: "+" 100 180 -740 0 10 0 4
-text: "-" 100 170 -240 0 10 0 4
-outline_polyline: 10 88 150
-next_corner: -2052 150 0
-next_corner: -2052 -1030 0
-next_corner: 88 -1030 0
+sel_rect: -2067 -608 103 602
+ref_text: 100 100 637 0 10
+value_text: 100 100 437 0 10
+centroid: 0 0 437 0
+text: "+" 100 -50 -470 0 10 0 4
+text: "-" 100 -50 340 0 10 0 4
+outline_polyline: 10 88 587
+next_corner: -2052 587 0
+next_corner: -2052 -593 0
+next_corner: 88 -593 0
 close_polyline: 0
 n_pins: 5
-pin: "2" 40 0 -187 0
+pin: "2" 40 0 250 0
 top_pad: 1 70 0 0 0
 inner_pad: 0 0 0 0 0 0
 bottom_pad: 1 70 0 0 0
-pin: "1" 40 0 -687 0
+pin: "1" 40 0 -250 0
 top_pad: 1 70 0 0 0
 inner_pad: 0 0 0 0 0 0
 bottom_pad: 1 70 0 0 0
-pin: "x1" 90 -456 0 0
+pin: "x1" 90 -456 437 0
 top_pad: 0 70 0 0 0
 inner_pad: 0 0 0 0 0 0
 bottom_pad: 0 70 0 0 0
-pin: "x2" 90 -1518 0 0
+pin: "x2" 90 -1518 437 0
 top_pad: 0 70 0 0 0
 inner_pad: 0 0 0 0 0 0
 bottom_pad: 0 70 0 0 0
-pin: "x3" 90 -987 -880 0
+pin: "x3" 90 -987 -443 0
 top_pad: 0 70 0 0 0
 inner_pad: 0 0 0 0 0 0
 bottom_pad: 0 70 0 0 0
