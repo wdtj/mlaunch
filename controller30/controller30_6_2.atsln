@@ -1,21 +1,22 @@
-﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
+
+Microsoft Visual Studio Solution File, Format Version 11.00
 # Atmel Studio Solution File, Format Version 11.00
-VisualStudioVersion = 14.0.23107.0
-MinimumVisualStudioVersion = 10.0.40219.1
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "controller30", "controller30.cproj", "{F04217EF-808E-45A7-A9A0-614ECB9B7E48}"
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "mCommon", "..\common\mCommon.cproj", "{9F88DC90-C937-43B8-A936-E5CC5E15421B}"
 EndProject
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "LcdTest", "LcdTest\LcdTest.cproj", "{0F66ECAD-70DA-49C6-BD07-6F804FFFC0AD}"
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "LcdTest", "LcdTest\LcdTest_6_2.cproj", "{0F66ECAD-70DA-49C6-BD07-6F804FFFC0AD}"
 EndProject
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "LedTest", "LedTest\LedTest.cproj", "{4A3BB7F7-5940-41EF-AFEC-1AF367E95F54}"
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "LedTest", "LedTest\LedTest_6_2.cproj", "{4A3BB7F7-5940-41EF-AFEC-1AF367E95F54}"
 EndProject
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "SwitchTest", "SwitchTest\SwitchTest.cproj", "{653083BE-28E4-41E5-B7D0-4EFE6F2AC10C}"
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "SwitchTest", "SwitchTest\SwitchTest_6_2.cproj", "{653083BE-28E4-41E5-B7D0-4EFE6F2AC10C}"
 EndProject
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "XbeeTest", "XbeeTest\XbeeTest.cproj", "{7EB76141-8E7A-481B-A7A9-AABFC3C6B554}"
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "XbeeTest", "XbeeTest\XbeeTest_6_2.cproj", "{7EB76141-8E7A-481B-A7A9-AABFC3C6B554}"
 EndProject
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "UartTest", "UartTest\UartTest.cproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "GccApplication1", "..\GccApplication1\GccApplication1.cproj", "{CB88354A-4D79-4807-B0BE-64E83AB5011C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9F88DC90-C937-43B8-A936-E5CC5E15421B} = {9F88DC90-C937-43B8-A936-E5CC5E15421B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,10 +48,10 @@ Global
 		{7EB76141-8E7A-481B-A7A9-AABFC3C6B554}.Debug|AVR.Build.0 = Debug|AVR
 		{7EB76141-8E7A-481B-A7A9-AABFC3C6B554}.Release|AVR.ActiveCfg = Release|AVR
 		{7EB76141-8E7A-481B-A7A9-AABFC3C6B554}.Release|AVR.Build.0 = Release|AVR
-		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.ActiveCfg = Debug|AVR
-		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
-		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
-		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
+		{CB88354A-4D79-4807-B0BE-64E83AB5011C}.Debug|AVR.ActiveCfg = Debug|AVR
+		{CB88354A-4D79-4807-B0BE-64E83AB5011C}.Debug|AVR.Build.0 = Debug|AVR
+		{CB88354A-4D79-4807-B0BE-64E83AB5011C}.Release|AVR.ActiveCfg = Release|AVR
+		{CB88354A-4D79-4807-B0BE-64E83AB5011C}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
