@@ -2,9 +2,9 @@
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectVersion>7.0</ProjectVersion>
+    <ProjectVersion>6.2</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
-    <ProjectGuid>{b562f268-f20e-44be-a695-1ec88d0b7dd5}</ProjectGuid>
+    <ProjectGuid>{44054e3b-fc66-44db-8d6c-6c14e9f09f74}</ProjectGuid>
     <avrdevice>ATmega32A</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
@@ -12,13 +12,13 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>ledTestR4</AssemblyName>
-    <Name>ledTestR4</Name>
-    <RootNamespace>ledTestR4</RootNamespace>
+    <AssemblyName>switchTest</AssemblyName>
+    <Name>switchTest</Name>
+    <RootNamespace>switchTest</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
-    <CacheFlash>false</CacheFlash>
+    <CacheFlash>true</CacheFlash>
     <ProgFlashFromRam>true</ProgFlashFromRam>
     <RamSnippetAddress>0x20000000</RamSnippetAddress>
     <UncachedRange />
@@ -26,14 +26,14 @@
     <BootSegment>2</BootSegment>
     <eraseonlaunchrule>0</eraseonlaunchrule>
     <AsfFrameworkConfig>
-      <framework-data>
+      <framework-data xmlns="">
         <options />
         <configurations />
         <files />
         <documentation help="" />
         <offline-documentation help="" />
         <dependencies>
-          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.22.0" />
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.16.0" />
         </dependencies>
       </framework-data>
     </AsfFrameworkConfig>
@@ -51,16 +51,10 @@
       <ToolName>JTAGICE3</ToolName>
     </com_atmel_avrdbg_tool_jtagice3plus>
     <avrtoolinterface>JTAG</avrtoolinterface>
-    <UseGdb>False</UseGdb>
-    <preserveEEPROM>true</preserveEEPROM>
-    <avrtoolserialnumber>J30200014253</avrtoolserialnumber>
-    <avrdeviceexpectedsignature>0x1E9502</avrdeviceexpectedsignature>
-    <avrtoolinterfaceclock>200000</avrtoolinterfaceclock>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
       <AvrGcc>
-        <avrgcc.common.Device>-mmcu=atmega32a -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.0.106\gcc\dev\atmega32a"</avrgcc.common.Device>
         <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
         <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
         <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
@@ -73,11 +67,6 @@
             <Value>NDEBUG</Value>
           </ListValues>
         </avrgcc.compiler.symbols.DefSymbols>
-        <avrgcc.compiler.directories.IncludePaths>
-          <ListValues>
-            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.0.106\include</Value>
-          </ListValues>
-        </avrgcc.compiler.directories.IncludePaths>
         <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
         <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
         <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
@@ -87,18 +76,12 @@
             <Value>libm</Value>
           </ListValues>
         </avrgcc.linker.libraries.Libraries>
-        <avrgcc.assembler.general.IncludePaths>
-          <ListValues>
-            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.0.106\include</Value>
-          </ListValues>
-        </avrgcc.assembler.general.IncludePaths>
       </AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
       <AvrGcc>
-        <avrgcc.common.Device>-mmcu=atmega32a -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.0.106\gcc\dev\atmega32a"</avrgcc.common.Device>
         <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
         <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
         <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
@@ -111,11 +94,6 @@
             <Value>DEBUG</Value>
           </ListValues>
         </avrgcc.compiler.symbols.DefSymbols>
-        <avrgcc.compiler.directories.IncludePaths>
-          <ListValues>
-            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.0.106\include</Value>
-          </ListValues>
-        </avrgcc.compiler.directories.IncludePaths>
         <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
         <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
         <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
@@ -125,17 +103,12 @@
             <Value>libm</Value>
           </ListValues>
         </avrgcc.linker.libraries.Libraries>
-        <avrgcc.assembler.general.IncludePaths>
-          <ListValues>
-            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.0.106\include</Value>
-          </ListValues>
-        </avrgcc.assembler.general.IncludePaths>
         <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
       </AvrGcc>
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ledTestR4.c">
+    <Compile Include="switchTest.c">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>
