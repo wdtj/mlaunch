@@ -1,38 +1,38 @@
 Reference,Quantity,Name,Description,Package,Digi-Key Part,Value,V_Max,I_Max,R_Max,V_Max_AC,I_Max_AC,Manufacturer,Manufacturer Part,Newark Part,Mouser Part,Cost,R_Off,R_On,T_Trip,Temp_Nom,Other
-C10 C11 C12 C8 C9,5,0.1uf,Capacitor,C1206,311-1435-1-ND,0.1uf,,,,,,,,,,,,,,,
-R13 R14 R5 R8,4,1.0M,Small Resistor,R1206,311-1.00MFRCT-ND,,,,,,,,,,,,,,,,
-C3 C6,2,10 mfd,Small Electrolytic,C1206,311-1466-1-ND,,,,,,,,,,,,,,,,
-C5,1,100 mfd,Small Electrolytic,eeehae101,PCE4705CT-ND,,,,,,,,,,,,,,,,
-J16,1,16 pin dip socket,"SOCKET IC OPEN FRAME 16POS .3""",package name for PCB layout,3M5463-ND,,,,,,,,,,,,,,,,
-R15 R16 R17 R18,4,1K,Small Resistor,R1206,311-1.00KFRCT-ND,,,,,,,,,,,,,,,,
-A1,1,2.4Ghz Antenna,"ANTENNA 2.45GHZ 7"" RA U.FL PLUG",..,0600-00039-ND,,,,,,,,,,,,,,,,
-C1 C2,2,20pf,Capacitor,C1206,311-1153-1-ND,20pf,,,,,,,,,,,,,,,
-R1 R3 R6 R9,4,301K,Small Resistor,R1206,311-301KFRCT-ND,,,,,,,,,,,,,,,,
-R10 R2 R4 R7,4,56.2K,Small Resistor,R1206,311-56.2KFRCT-ND,,,,,,,,,,,,,,,,
-X1,1,8 Mhz,Crystal,csm-7,XC569CT-ND,,,,,,,,,,,,,,,,
-C7,1,8.2pf,Capacitor,C1206,311-1222-1-ND,8.2pf,,,,,,,,,,,,,,,
-U2,1,ATMega32A,ATMega32A,40DIP600,ATMEGA32A-PU-ND,,,,,,,,,,,,,,,,
-U5,1,AZ1117-33,LD1117S33,WSOT-223,AZ1117H-3.3TRE1DICT-ND,,,,,,,,,,,,,,,,
-B1,1,BUZZER,Buzzer,458-1092-ND,458-1088-ND,,,,,,,,,..,..,..,,,,,
-Banana Jack 1 Banana Jack 2 Banana Jack 3,3,Banana Jack,CONN JACK BANANA INSUL NYLON BLA,package name for PCB layout,J152-ND,,,,,,,,,,,,,,,,
-Banana Jack 4 Banana Jack 5 Banana Jack 6,3,Banana Jack,CONN JACK BANANA INSUL NYLON RED,package name for PCB layout,J151-ND,,,,,,,,,,,,,,,,
-D1,1,Bridge,Bridge,4-SMD,641-1344-5-ND,,,,,,,,,,,,,,,,
-cap1 cap2,2,CAP TACTILE ROUND BLACK,CAP TACTILE ROUND BLACK,package name for PCB layout,679-2172-ND,,,,,,,,,,,,,,,,
-S1 S2,2,Continuity,Single Pole Push Switch,3ESH9-15.0,679-2226-ND,,,,,,,,,,,,,,,,
-SE1 SE2,2,EXTENDER SWITCH 7MM,EXTENDER SWITCH 7MM HEIGHT,package name for PCB layout,679-2203-ND,,,,,,,,,,,,,,,,
-E1,1,Enclosure,BOX 5.62X3.25X2.50 ALMOND,..,SR153A-ND,,,,,,,,,,,,,,,,
-j15,1,IC Socket DIP 40 pin,"SOCKET IC OPEN FRAME 40POS .6""",package name for PCB layout,3M5471-ND,,,,,,,,,,,,,,,,..
-J3,1,JTAG,5X2HDR-100,5X2HDR-50,S9013E-05-ND,,,,,,,,,,,,,,,,
-LP1 LP2,2,"LIGHT PIPE .250"" ROUND PNL MT","LIGHT PIPE .250"" ROUND PNL MT",,492-1142-ND,,,,,,,,,,,,,,,,
-QD1 QD2 QD3 QD4 QD5 QD6,6,Quick Disc Female Connector,Quick Disconnect 0.205 x 0.250 x 0.020,package name for PCB layout,A0903-ND,,,,,,,,,,,,,,,,
-J17 J18,2,Quick Disconnect Female,"TERM PC QF .205"" VERT .205X.020""",package name for PCB layout,3525K-ND,,,,,,,,,,,,,,,,
-J1 J2 J5 J6 J7 J8,6,Quick-Connect,Contact in,Amp63650,1287K-ND,,,,,,,,,,,,,,,,
-F1,1,RELAY-THERMISCH-NC,Relay thermisch NC,AutoBreaker2,302-1242-ND,,,,,,,,,,,,,,,,
-K1 K2 K3 K4,4,Relay,RELAY AUTOMOTIVE SPDT 30A 12V,..,PB679-ND,,,,,,,,,,,,,,,,
-J10 J11 J12 J9,4,Relay,Relay SPST-NO,VCF4-1000,PB232-ND,,,,,,,,,,,,,,,,
-D2 D3,2,SMP4-SRGY,SMP4-SRGY,PLCC-4,492-1227-1-ND,,,,,,,,,,,,,,,,
-J4,1,TestPoint,Header 1x3,1X3HDR-100,609-3470-ND,,,,,,,,,,,,,,,,
-U3,1,ULN2003A,Driver,16DIP300,296-1979-5-ND,,,,,,,,,,,,,,,,
-V1 V2 V3,3,Varistor,Varistor,C1206,732-2549-1-ND,,..,,,,,,..,..,..,..,..,..,..,..,
-U1,1,XBee-pro s2c,XBee,XBee,602-1563-ND,,,,,,,,,,,,,,,,
-J13 J14,2,Xbee Header,CONN RECEPT 2MM SINGLE STR 10POS,..,S5751-10-ND,,,,,,,,,,,,,,,,
+"C10,C11,C12,C8,C9",  5,0.1uf,Capacitor,C1206,311-1435-1-ND,0.1uf
+"R13,R14,R5,R8",  4,1.0M,Small Resistor,R1206,311-1.00MFRCT-ND
+"C3,C6",  2,10 mfd,Small Electrolytic,C1206,311-1466-1-ND
+"C5",  1,100 mfd,Small Electrolytic,eeehae101,PCE4705CT-ND
+"J16",  1,16 pin dip socket,SOCKET IC OPEN FRAME 16POS .3",package name for PCB layout,3M5463-ND
+"R15,R16,R17,R18",  4,1K,Small Resistor,R1206,311-1.00KFRCT-ND
+"A1",  1,2.4Ghz Antenna,ANTENNA 2.45GHZ 7" RA U.FL PLUG,..,0600-00039-ND
+"C1,C2",  2,20pf,Capacitor,C1206,311-1153-1-ND,20pf
+"R1,R3,R6,R9",  4,301K,Small Resistor,R1206,311-301KFRCT-ND
+"R10,R2,R4,R7",  4,56.2K,Small Resistor,R1206,311-56.2KFRCT-ND
+"X1",  1,8 Mhz,Crystal,csm-7,XC569CT-ND
+"C7",  1,8.2pf,Capacitor,C1206,311-1222-1-ND,8.2pf
+"U2",  1,ATMega32A,ATMega32A,40DIP600,ATMEGA32A-PU-ND
+"U5",  1,AZ1117-33,LD1117S33,WSOT-223,AZ1117H-3.3TRE1DICT-ND
+"B1",  1,BUZZER,Buzzer,458-1092-ND,458-1088-ND,,,,,,,,,..,..,..
+"Banana Jack 1,Banana Jack 2,Banana Jack 3",  3,Banana Jack,CONN JACK BANANA INSUL NYLON BLA,package name for PCB layout,J152-ND
+"Banana Jack 4,Banana Jack 5,Banana Jack 6",  3,Banana Jack,CONN JACK BANANA INSUL NYLON RED,package name for PCB layout,J151-ND
+"D1",  1,Bridge,Bridge,4-SMD,641-1344-5-ND
+"cap1,cap2",  2,CAP TACTILE ROUND BLACK,CAP TACTILE ROUND BLACK,package name for PCB layout,679-2172-ND
+"S1,S2",  2,Continuity,Single Pole Push Switch,3ESH9-15.0,679-2226-ND
+"SE1,SE2",  2,EXTENDER SWITCH 7MM,EXTENDER SWITCH 7MM HEIGHT,package name for PCB layout,679-2203-ND
+"E1",  1,Enclosure,BOX 5.62X3.25X2.50 ALMOND,..,SR153A-ND
+"j15",  1,IC Socket DIP 40 pin,SOCKET IC OPEN FRAME 40POS .6",package name for PCB layout,3M5471-ND,,,,,,,,,,,,,,,,..
+"J3",  1,JTAG,5X2HDR-100,5X2HDR-50,S9013E-05-ND
+"LP1,LP2",  2,LIGHT PIPE .250" ROUND PNL MT,LIGHT PIPE .250" ROUND PNL MT,,492-1142-ND
+"QD1,QD2,QD3,QD4,QD5,QD6",  6,Quick Disc Female Connector,Quick Disconnect 0.205 x 0.250 x 0.020,package name for PCB layout,A0903-ND
+"J17,J18",  2,Quick Disconnect Female,TERM PC QF .205" VERT .205X.020",package name for PCB layout,3525K-ND
+"J1,J2,J5,J6,J7,J8",  6,Quick-Connect,Contact in,Amp63650,1287K-ND
+"F1",  1,RELAY-THERMISCH-NC,Relay thermisch NC,AutoBreaker2,302-1242-ND
+"K1,K2,K3,K4",  4,Relay,RELAY AUTOMOTIVE SPDT 30A 12V,..,PB679-ND
+"J10,J11,J12,J9",  4,Relay,Relay SPST-NO,VCF4-1000,PB232-ND
+"D2,D3",  2,SMP4-SRGY,SMP4-SRGY,PLCC-4,492-1227-1-ND
+"J4",  1,TestPoint,Header 1x3,1X3HDR-100,609-3470-ND
+"U3",  1,ULN2003A,Driver,16DIP300,296-1979-5-ND
+"V1,V2,V3",  3,Varistor,Varistor,C1206,732-2549-1-ND,,..,,,,,,..,..,..,..,..,..,..,..
+"U1",  1,XBee-pro s2c,XBee,XBee,602-1563-ND
+"J13,J14",  2,Xbee Header,CONN RECEPT 2MM SINGLE STR 10POS,..,S5751-10-ND
