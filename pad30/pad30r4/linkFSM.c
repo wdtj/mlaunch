@@ -206,7 +206,7 @@ void linkFSMToDo(void)
 	{
     // Reset Node Identifier.
 		case SEND_NI1:
-			zb_ni(1, "");
+			zb_ni(1, ni);
 			linkState=NI_SENT1;
 			linkTimer=1000/TIMER0_PERIOD;
 			break;

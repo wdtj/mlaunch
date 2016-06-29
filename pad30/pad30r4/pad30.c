@@ -240,7 +240,15 @@ void init()
 		_delay_ms(100);
 		if(!(PINB&_BV(ContSW1)) || !(PINB&_BV(ContSW2)))
 		{
+			PadLed(RED, 0);
+			PadLed(RED, 1);
+
 			eeprom_write_byte(&eprom.init[0], 0);
+
+			// Wait till it's released
+			while (!(PINB&_BV(ContSW1)) || !(PINB&_BV(ContSW2))) {}
+
+			_delay_ms(100);
 		}
 	}
 
@@ -263,7 +271,7 @@ void init()
   else
   {
     pads[0].padAssign='y';
-		pads[1].padAssign='y';
+	pads[1].padAssign='y';
   }
 
 	timer0_init(CS_1024, timer0);					// Timer uses system clock/1024
