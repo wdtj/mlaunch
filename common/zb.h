@@ -328,7 +328,7 @@ void zb_tx_ex(unsigned char fid,
            char *data, 
            int size);
 
-void zbInit(int (*zbWrite)(void *buff, unsigned int count), void (*zbReceivedPkt)(unsigned char *pkt, unsigned int length));
+void zbInit(void (*zbWrite)(void *buff, unsigned int count), void (*zbReceivedPkt)(unsigned char *pkt, unsigned int length));
 void zbReceivedChar(unsigned char ch);
 
 void zb_settimeout(int time);
