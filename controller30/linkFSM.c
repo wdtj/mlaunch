@@ -273,6 +273,9 @@ void linkPkt(unsigned char *data, unsigned int length)
 		case ready:
 		linkStatusReady(pkt, length);
 		break;
+
+        case assignNewPads:
+        break;
 	}
 }
 
@@ -434,6 +437,7 @@ void linkTimer(void)
 		break;
 		
 		case ready:
+        case assignNewPads:
 		break;
 	}
 	
