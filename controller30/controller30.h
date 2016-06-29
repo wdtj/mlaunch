@@ -28,32 +28,32 @@
 #define signal2(bit) if(bit) {PORTC|=_BV(6);}else{PORTC&=~_BV(6);}
 
 enum PadState {
-	IDLE,					/* We're idle and nothing is happening */
-	PRESSED2ENABLE,			/*  */
-	ENABLED,				/*  */
-	PRESSED2DISABLE,		/*  */
-	PAD_LAUNCH        /* Launch command received, launch relay is enabled */
+    IDLE,                   /* We're idle and nothing is happening */
+    PRESSED2ENABLE,         /*  */
+    ENABLED,                /*  */
+    PRESSED2DISABLE,        /*  */
+    PAD_LAUNCH              /* Launch command received, launch relay is enabled */
 };
 
 
 struct padInfo
 {
-	enum PadState padState;
-	unsigned char padId;
-	zbAddr addr;
-	zbNetAddr netAddr; 
-	int statusTimer;
-	int enableTimer;
-	bool statusValid;
-	bool newStatus;
-	bool discovered;
-	bool discoveredAck;
-	bool sendEnable;	
-  bool sendLaunch;
-	int contState;
-	int launchState;
-	int contResistance;
-	int batt;
+    enum PadState padState;
+    unsigned char padId;
+    zbAddr addr;
+    zbNetAddr netAddr;
+    int statusTimer;
+    int enableTimer;
+    bool statusValid;
+    bool newStatus;
+    bool discovered;
+    bool discoveredAck;
+    bool sendEnable;
+    bool sendLaunch;
+    int contState;
+    int launchState;
+    int contResistance;
+    int batt;
 };
 
 struct NewPad
@@ -68,6 +68,7 @@ struct NewPad
 void statusMessage(char * data, int length);
 void padDiscovered( zbAddr addr, zbNetAddr netAddr, unsigned char *ni );
 void padReady(void);
+void initNewPads(void);
 
 #ifdef DEBUG
 #define ASSERT(x) if (x) while(true) {};
