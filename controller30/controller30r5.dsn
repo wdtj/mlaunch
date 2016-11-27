@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--This file was written by TinyCAD Version 2.80.06 Build #626 Production Release
+<!--This file was written by TinyCAD Version 2.80.08 Build #631 Production Release
 If you wish to view this file go to http://tinycad.sourceforge.net to
 download the executable.-->
 <TinyCADSheets>
@@ -11,12 +11,12 @@ download the executable.-->
 			<GUIDES horiz='7' vert='5'/>
 			<TITLE>MLaunch3 Controller</TITLE>
 			<AUTHOR>Wayne Johnson</AUTHOR>
-			<REVISION>1.0</REVISION>
+			<REVISION>5.0</REVISION>
 			<DOCNUMBER></DOCNUMBER>
-			<ORGANISATION>Copyright 2013 by Wayne Johnson</ORGANISATION>
-			<SHEETS>1 of 1</SHEETS>
+			<ORGANISATION>Copyright 2016 by Wayne Johnson</ORGANISATION>
+			<SHEETS>1 of 5</SHEETS>
 			<SHOWS>1</SHOWS>
-			<DATE>12/20/2013</DATE>
+			<DATE>8/12/2016</DATE>
 			<GRID spacing='50.00000' snap='1'/>
 		</DETAILS>
 		<FONT id='1'>
@@ -527,14 +527,24 @@ download the executable.-->
 			<GUIDES horiz='7' vert='5'/>
 			<TITLE>MLaunch3 Controller</TITLE>
 			<AUTHOR>Wayne Johnson</AUTHOR>
-			<REVISION>2.0</REVISION>
+			<REVISION>5.0</REVISION>
 			<DOCNUMBER></DOCNUMBER>
-			<ORGANISATION>Copyright 2013 by Wayne Johnson</ORGANISATION>
-			<SHEETS>2</SHEETS>
+			<ORGANISATION>Copyright 2016 by Wayne Johnson</ORGANISATION>
+			<SHEETS>2 of 5</SHEETS>
 			<SHOWS>1</SHOWS>
-			<DATE>12/20/2013</DATE>
+			<DATE>8/12/2016</DATE>
 			<GRID spacing='50.00000' snap='1'/>
 		</DETAILS>
+		<FONT id='0'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
 		<FONT id='1'>
 			<HEIGHT>-10</HEIGHT>
 			<WIDTH>0</WIDTH>
@@ -1062,9 +1072,9 @@ download the executable.-->
 		</SYMBOL>
 		<SYMBOL id='1' pos='124.00000,56.00000' part='0' rotate='2' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='X1' show='1' pos='-7.00000,3.00000'/>
-			<FIELD type='0' description='Name' value='8 Mhz' show='1' pos='-7.00000,5.00000'/>
+			<FIELD type='0' description='Name' value='16 Mhz' show='1' pos='-7.00000,5.00000'/>
 			<FIELD type='3' description='package' value='csm-7' show='0' pos='-8.00000,4.40000'/>
-			<FIELD type='3' description='Digi-Key Part' value='XC569CT-ND' show='0' pos='0.00000,2.40000'/>
+			<FIELD type='3' description='Digi-Key Part' value=' XC577CT-ND ' show='0' pos='0.00000,2.40000'/>
 		</SYMBOL>
 		<SYMBOL id='3' pos='111.00000,54.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='C6' show='1' pos='0.00000,-2.60000'/>
@@ -1340,6 +1350,9 @@ download the executable.-->
 		<WIRE a='158.00000,38.00000' b='257.00000,38.00000'/>
 		<WIRE a='257.00000,38.00000' b='257.00000,74.00000'/>
 		<WIRE a='257.00000,74.00000' b='227.00000,74.00000'/>
+		<RECTANGLE a='35.00000,157.00000' b='79.00000,168.00000' style='6' fill='0'/>
+		<TEXT pos='37.00000,162.00000' direction='3' font='0' color='000000'>J5       1  2   3   4   5   6  7  8  9 10</TEXT>
+		<TEXT pos='37.00000,166.00000' direction='3' font='0' color='000000'>CPU 24 31 26 30 25  9  7  8 27 31</TEXT>
 	</TinyCAD>
 	<TinyCAD>
 		<NAME>Tranceiver</NAME>
@@ -1348,27 +1361,17 @@ download the executable.-->
 			<GUIDES horiz='7' vert='5'/>
 			<TITLE>MLaunch3 Controller</TITLE>
 			<AUTHOR>Wayne Johnson</AUTHOR>
-			<REVISION>1.0</REVISION>
+			<REVISION>5.0</REVISION>
 			<DOCNUMBER></DOCNUMBER>
-			<ORGANISATION>Copyright 2013 by Wayne Johnson</ORGANISATION>
-			<SHEETS>3</SHEETS>
+			<ORGANISATION>Copyright 2016 by Wayne Johnson</ORGANISATION>
+			<SHEETS>3 of 5</SHEETS>
 			<SHOWS>1</SHOWS>
-			<DATE>12/20/2013</DATE>
+			<DATE>8/12/2016</DATE>
 			<GRID spacing='50.00000' snap='1'/>
 		</DETAILS>
 		<FONT id='1'>
 			<HEIGHT>-10</HEIGHT>
 			<WIDTH>0</WIDTH>
-			<WEIGHT>400</WEIGHT>
-			<ITALIC>0</ITALIC>
-			<UNDERLINE>0</UNDERLINE>
-			<STRIKEOUT>0</STRIKEOUT>
-			<CHARSET>0</CHARSET>
-			<FACENAME>Arial</FACENAME>
-		</FONT>
-		<FONT id='3'>
-			<HEIGHT>-13</HEIGHT>
-			<WIDTH>6</WIDTH>
 			<WEIGHT>400</WEIGHT>
 			<ITALIC>0</ITALIC>
 			<UNDERLINE>0</UNDERLINE>
@@ -1411,11 +1414,6 @@ download the executable.-->
 			<COLOR>000000</COLOR>
 			<THICKNESS>1</THICKNESS>
 		</STYLE>
-		<STYLE id='5'>
-			<STYLE>0</STYLE>
-			<COLOR>000000</COLOR>
-			<THICKNESS>2</THICKNESS>
-		</STYLE>
 		<STYLE id='6'>
 			<STYLE>0</STYLE>
 			<COLOR>000000</COLOR>
@@ -1425,152 +1423,6 @@ download the executable.-->
 			<INDEX>-1</INDEX>
 			<COLOR>000000</COLOR>
 		</FILL>
-		<FILL id='1'>
-			<INDEX>0</INDEX>
-			<COLOR>000000</COLOR>
-		</FILL>
-		<FILL id='2'>
-			<INDEX>0</INDEX>
-			<COLOR>000000</COLOR>
-		</FILL>
-		<SYMBOLDEF id='1'>
-			<NAME type='0'>R</NAME>
-			<REF type='1'>R?</REF>
-			<DESCRIPTION>Generic Resistor</DESCRIPTION>
-			<PPP>1</PPP>
-			<FIELD>
-				<NAME>Package</NAME>
-				<DEFAULT>CK12-B</DEFAULT>
-				<FT>000001</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<FIELD>
-				<NAME>Usage</NAME>
-				<DEFAULT>..</DEFAULT>
-				<FT>000001</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<FIELD>
-				<NAME>Datasheet</NAME>
-				<DEFAULT>..</DEFAULT>
-				<FT>000001</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<FIELD>
-				<NAME>Picture</NAME>
-				<DEFAULT>..</DEFAULT>
-				<FT>000001</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<FIELD>
-				<NAME>Value</NAME>
-				<DEFAULT>..</DEFAULT>
-				<FT>000001</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<FIELD>
-				<NAME>P_Max</NAME>
-				<DEFAULT>0.25</DEFAULT>
-				<FT>000001</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<FIELD>
-				<NAME>Tol</NAME>
-				<DEFAULT>5%</DEFAULT>
-				<FT>000001</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<FIELD>
-				<NAME>Manufacturer</NAME>
-				<DEFAULT>..</DEFAULT>
-				<FT>000001</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<FIELD>
-				<NAME>Manufacturer Part</NAME>
-				<DEFAULT>..</DEFAULT>
-				<FT>000001</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<FIELD>
-				<NAME>Digi-Key Part</NAME>
-				<DEFAULT>..</DEFAULT>
-				<FT>000001</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<FIELD>
-				<NAME>Newark Part</NAME>
-				<DEFAULT>..</DEFAULT>
-				<FT>000001</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<FIELD>
-				<NAME>Mouser Part</NAME>
-				<DEFAULT>..</DEFAULT>
-				<FT>000001</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<FIELD>
-				<NAME>Cost</NAME>
-				<DEFAULT>..</DEFAULT>
-				<FT>000001</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<REF_POINT power='0' part='0' pos='71.00000,51.00000'/>
-			<TinyCAD>
-				<PIN pos='70.00000,37.00000' which='0' elec='4' direction='1' part='0' number='2' show='0' length='15' number_pos='0' centre_name='0'></PIN>
-				<PIN pos='70.00000,51.00000' which='0' elec='4' direction='0' part='0' number='1' show='0' length='15' number_pos='0' centre_name='0'></PIN>
-				<POLYGON pos='69.00000,40.60000' style='4' fill='0'>
-					<POINT pos='0.00000,1.00000' arc='0'/>
-					<POINT pos='1.00000,0.00000' arc='0'/>
-				</POLYGON>
-				<POLYGON pos='69.00000,41.60000' style='4' fill='0'>
-					<POINT pos='2.00000,1.00000' arc='0'/>
-					<POINT pos='0.00000,0.00000' arc='0'/>
-				</POLYGON>
-				<POLYGON pos='69.00000,42.60000' style='4' fill='0'>
-					<POINT pos='0.00000,1.00000' arc='0'/>
-					<POINT pos='2.00000,0.00000' arc='0'/>
-				</POLYGON>
-				<POLYGON pos='69.00000,43.60000' style='4' fill='0'>
-					<POINT pos='2.00000,1.00000' arc='0'/>
-					<POINT pos='0.00000,0.00000' arc='0'/>
-				</POLYGON>
-				<POLYGON pos='69.00000,44.60000' style='4' fill='0'>
-					<POINT pos='0.00000,1.00000' arc='0'/>
-					<POINT pos='2.00000,0.00000' arc='0'/>
-				</POLYGON>
-				<POLYGON pos='69.00000,45.60000' style='4' fill='0'>
-					<POINT pos='2.00000,1.00000' arc='0'/>
-					<POINT pos='0.00000,0.00000' arc='0'/>
-				</POLYGON>
-				<POLYGON pos='70.00000,46.60000' style='4' fill='0'>
-					<POINT pos='0.00000,1.00000' arc='0'/>
-					<POINT pos='1.00000,0.00000' arc='0'/>
-				</POLYGON>
-				<POLYGON pos='70.00000,47.60000' style='4' fill='0'>
-					<POINT pos='0.00000,0.00000' arc='0'/>
-					<POINT pos='0.00000,0.40000' arc='0'/>
-				</POLYGON>
-				<POLYGON pos='70.00000,40.00000' style='4' fill='0'>
-					<POINT pos='0.00000,0.60000' arc='0'/>
-					<POINT pos='0.00000,0.00000' arc='0'/>
-				</POLYGON>
-			</TinyCAD>
-		</SYMBOLDEF>
 		<SYMBOLDEF id='2'>
 			<NAME type='0'>Header 1x3</NAME>
 			<REF type='0'>J?</REF>
@@ -1648,77 +1500,6 @@ download the executable.-->
 				<POLYGON pos='20.00000,21.00000' style='4' fill='0'>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 					<POINT pos='3.00000,1.00000' arc='2'/>
-				</POLYGON>
-			</TinyCAD>
-		</SYMBOLDEF>
-		<SYMBOLDEF id='4'>
-			<NAME type='0'>BSS138</NAME>
-			<REF type='0'>Q?</REF>
-			<DESCRIPTION>BSS138</DESCRIPTION>
-			<PPP>1</PPP>
-			<FIELD>
-				<NAME>$$SPICE_PROLOG_PRIORITY</NAME>
-				<DEFAULT>5</DEFAULT>
-				<FT>000002</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<FIELD>
-				<NAME>$$SPICE_EPILOG_PRIORITY</NAME>
-				<DEFAULT>5</DEFAULT>
-				<FT>000002</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<FIELD>
-				<NAME>Package</NAME>
-				<DEFAULT>SOT23</DEFAULT>
-				<FT>000001</FT>
-				<VALUE></VALUE>
-				<POS>0.00000,0.00000</POS>
-			</FIELD>
-			<REF_POINT power='0' part='0' pos='78.00000,68.00000'/>
-			<TinyCAD>
-				<RECTANGLE a='60.00000,56.00000' b='64.00000,57.00000' style='4' fill='2'/>
-				<RECTANGLE a='65.00000,56.00000' b='69.00000,57.00000' style='4' fill='1'/>
-				<RECTANGLE a='70.00000,56.00000' b='74.00000,57.00000' style='4' fill='1'/>
-				<RECTANGLE a='60.00000,52.00000' b='74.00000,53.00000' style='4' fill='2'/>
-				<POLYGON pos='65.00000,63.00000' style='4' fill='2'>
-					<POINT pos='0.00000,0.00000' arc='0'/>
-					<POINT pos='0.00000,4.00000' arc='0'/>
-					<POINT pos='3.00000,2.00000' arc='0'/>
-					<POINT pos='0.00000,0.00000' arc='0'/>
-				</POLYGON>
-				<POLYGON pos='67.00000,62.00000' style='5' fill='0'>
-					<POINT pos='0.00000,0.00000' arc='0'/>
-					<POINT pos='1.00000,1.00000' arc='0'/>
-					<POINT pos='1.00000,5.00000' arc='0'/>
-					<POINT pos='2.00000,6.00000' arc='0'/>
-				</POLYGON>
-				<PIN pos='67.00000,46.00000' which='0' elec='4' direction='1' part='0' number='2' show='2' length='30' number_pos='0' centre_name='0'></PIN>
-				<PIN pos='56.00000,61.00000' which='0' elec='4' direction='3' part='0' number='3' show='3' length='30' number_pos='0' centre_name='0'></PIN>
-				<PIN pos='78.00000,61.00000' which='0' elec='4' direction='2' part='0' number='1' show='3' length='30' number_pos='0' centre_name='0'></PIN>
-				<POLYGON pos='66.00000,57.00000' style='4' fill='2'>
-					<POINT pos='1.00000,0.00000' arc='0'/>
-					<POINT pos='0.00000,2.00000' arc='0'/>
-					<POINT pos='2.00000,2.00000' arc='0'/>
-					<POINT pos='1.00000,0.00000' arc='0'/>
-				</POLYGON>
-				<POLYGON pos='62.00000,65.00000' style='4' fill='0'>
-					<POINT pos='0.00000,0.00000' arc='0'/>
-					<POINT pos='3.00000,0.00000' arc='0'/>
-				</POLYGON>
-				<POLYGON pos='68.00000,57.00000' style='4' fill='0'>
-					<POINT pos='0.00000,8.00000' arc='0'/>
-					<POINT pos='4.00000,8.00000' arc='0'/>
-					<POINT pos='4.00000,0.00000' arc='0'/>
-				</POLYGON>
-				<POLYGON pos='62.00000,57.00000' style='4' fill='0'>
-					<POINT pos='0.00000,0.00000' arc='0'/>
-					<POINT pos='0.00000,8.00000' arc='0'/>
-					<POINT pos='0.00000,4.00000' arc='0'/>
-					<POINT pos='5.00000,4.00000' arc='0'/>
-					<POINT pos='5.00000,2.00000' arc='0'/>
 				</POLYGON>
 			</TinyCAD>
 		</SYMBOLDEF>
@@ -1831,116 +1612,19 @@ download the executable.-->
 			<FIELD type='1' description='Package' value='1X3HDR-100' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='1' description='Digi-Key Part' value='609-3470-ND' show='0' pos='0.00000,0.00000'/>
 		</SYMBOL>
-		<SYMBOL id='1' pos='182.00000,109.00000' part='0' rotate='2' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
-			<FIELD type='1' description='Ref' value='R3' show='1' pos='-9.00000,-5.00000'/>
-			<FIELD type='0' description='Name' value='' show='0' pos='-9.00000,-5.00000'/>
-			<FIELD type='1' description='Package' value='R1206' show='0' pos='-14.00000,4.40000'/>
-			<FIELD type='1' description='Usage' value='..' show='0' pos='-14.00000,6.80000'/>
-			<FIELD type='1' description='Datasheet' value='..' show='0' pos='-14.00000,9.20000'/>
-			<FIELD type='1' description='Picture' value='..' show='0' pos='-14.00000,11.60000'/>
-			<FIELD type='1' description='Value' value='10K' show='1' pos='-9.00000,-3.00000'/>
-			<FIELD type='1' description='P_Max' value='0.25' show='0' pos='-14.00000,16.40000'/>
-			<FIELD type='1' description='Tol' value='1%' show='0' pos='-14.00000,18.80000'/>
-			<FIELD type='1' description='Manufacturer' value='..' show='0' pos='-14.00000,21.20000'/>
-			<FIELD type='1' description='Manufacturer Part' value='..' show='0' pos='-14.00000,23.60000'/>
-			<FIELD type='1' description='Digi-Key Part' value='311-10.0KFRCT-ND' show='0' pos='-14.00000,26.00000'/>
-			<FIELD type='1' description='Newark Part' value='..' show='0' pos='-14.00000,28.40000'/>
-			<FIELD type='1' description='Mouser Part' value='..' show='0' pos='-14.00000,30.80000'/>
-			<FIELD type='1' description='Cost' value='..' show='0' pos='-14.00000,33.20000'/>
-		</SYMBOL>
-		<SYMBOL id='1' pos='165.00000,122.00000' part='0' rotate='1' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
-			<FIELD type='1' description='Ref' value='R4' show='1' pos='2.00000,-6.60000'/>
-			<FIELD type='0' description='Name' value='' show='0' pos='2.00000,-7.00000'/>
-			<FIELD type='1' description='Package' value='R1206' show='0' pos='1.00000,-7.20000'/>
-			<FIELD type='1' description='Usage' value='..' show='0' pos='1.00000,-4.80000'/>
-			<FIELD type='1' description='Datasheet' value='..' show='0' pos='1.00000,-2.40000'/>
-			<FIELD type='1' description='Picture' value='..' show='0' pos='1.00000,0.00000'/>
-			<FIELD type='1' description='Value' value='10K' show='1' pos='2.00000,-4.60000'/>
-			<FIELD type='1' description='P_Max' value='0.25' show='0' pos='1.00000,4.80000'/>
-			<FIELD type='1' description='Tol' value='1%' show='0' pos='1.00000,7.20000'/>
-			<FIELD type='1' description='Manufacturer' value='..' show='0' pos='1.00000,9.60000'/>
-			<FIELD type='1' description='Manufacturer Part' value='..' show='0' pos='1.00000,12.00000'/>
-			<FIELD type='1' description='Digi-Key Part' value='311-10.0KFRCT-ND' show='0' pos='1.00000,14.40000'/>
-			<FIELD type='1' description='Newark Part' value='..' show='0' pos='1.00000,16.80000'/>
-			<FIELD type='1' description='Mouser Part' value='..' show='0' pos='1.00000,19.20000'/>
-			<FIELD type='1' description='Cost' value='..' show='0' pos='1.00000,21.60000'/>
-		</SYMBOL>
-		<POWER pos='164.00000,122.00000' which='4' direction='1'>GND</POWER>
-		<WIRE a='185.00000,108.00000' b='182.00000,108.00000'/>
-		<WIRE a='164.00000,108.00000' b='125.00000,108.00000'/>
+		<POWER pos='128.00000,123.00000' which='4' direction='1'>GND</POWER>
+		<WIRE a='185.00000,108.00000' b='125.00000,108.00000'/>
 		<WIRE a='131.00000,81.00000' b='84.00000,81.00000'/>
-		<SYMBOL id='4' pos='195.00000,88.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
-			<FIELD type='0' description='Ref' value='Q1' show='1' pos='-9.00000,-18.60000'/>
-			<FIELD type='0' description='Name' value='BSS138' show='1' pos='-9.00000,-21.00000'/>
-			<FIELD type='3' description='Digi-Key Part' value='BSS138CT-ND' show='0' pos='0.00000,2.40000'/>
-			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
-			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
-			<FIELD type='1' description='Package' value='SOT23' show='0' pos='0.00000,0.00000'/>
-		</SYMBOL>
-		<SYMBOL id='1' pos='164.00000,78.00000' part='0' rotate='1' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
-			<FIELD type='1' description='Ref' value='R5' show='1' pos='1.00000,-7.60000'/>
-			<FIELD type='0' description='Name' value='' show='0' pos='1.00000,-8.00000'/>
-			<FIELD type='1' description='Package' value='R1206' show='0' pos='1.00000,-7.20000'/>
-			<FIELD type='1' description='Usage' value='..' show='0' pos='1.00000,-4.80000'/>
-			<FIELD type='1' description='Datasheet' value='..' show='0' pos='1.00000,-2.40000'/>
-			<FIELD type='1' description='Picture' value='..' show='0' pos='1.00000,0.00000'/>
-			<FIELD type='1' description='Value' value='10K' show='1' pos='1.00000,-5.60000'/>
-			<FIELD type='1' description='P_Max' value='0.25' show='0' pos='1.00000,4.80000'/>
-			<FIELD type='1' description='Tol' value='1%' show='0' pos='1.00000,7.20000'/>
-			<FIELD type='1' description='Manufacturer' value='..' show='0' pos='1.00000,9.60000'/>
-			<FIELD type='1' description='Manufacturer Part' value='..' show='0' pos='1.00000,12.00000'/>
-			<FIELD type='1' description='Digi-Key Part' value='311-10.0KFRCT-ND' show='0' pos='1.00000,14.40000'/>
-			<FIELD type='1' description='Newark Part' value='..' show='0' pos='1.00000,16.80000'/>
-			<FIELD type='1' description='Mouser Part' value='..' show='0' pos='1.00000,19.20000'/>
-			<FIELD type='1' description='Cost' value='..' show='0' pos='1.00000,21.60000'/>
-		</SYMBOL>
-		<SYMBOL id='1' pos='204.00000,78.00000' part='0' rotate='1' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
-			<FIELD type='1' description='Ref' value='R6' show='1' pos='1.00000,-6.60000'/>
-			<FIELD type='0' description='Name' value='' show='0' pos='1.00000,-7.00000'/>
-			<FIELD type='1' description='Package' value='R1206' show='0' pos='1.00000,-7.20000'/>
-			<FIELD type='1' description='Usage' value='..' show='0' pos='1.00000,-4.80000'/>
-			<FIELD type='1' description='Datasheet' value='..' show='0' pos='1.00000,-2.40000'/>
-			<FIELD type='1' description='Picture' value='..' show='0' pos='1.00000,0.00000'/>
-			<FIELD type='1' description='Value' value='10K' show='1' pos='1.00000,-4.60000'/>
-			<FIELD type='1' description='P_Max' value='0.25' show='0' pos='1.00000,4.80000'/>
-			<FIELD type='1' description='Tol' value='1%' show='0' pos='1.00000,7.20000'/>
-			<FIELD type='1' description='Manufacturer' value='..' show='0' pos='1.00000,9.60000'/>
-			<FIELD type='1' description='Manufacturer Part' value='..' show='0' pos='1.00000,12.00000'/>
-			<FIELD type='1' description='Digi-Key Part' value='311-10.0KFRCT-ND' show='0' pos='1.00000,14.40000'/>
-			<FIELD type='1' description='Newark Part' value='..' show='0' pos='1.00000,16.80000'/>
-			<FIELD type='1' description='Mouser Part' value='..' show='0' pos='1.00000,19.20000'/>
-			<FIELD type='1' description='Cost' value='..' show='0' pos='1.00000,21.60000'/>
-		</SYMBOL>
-		<WIRE a='163.00000,81.00000' b='173.00000,81.00000'/>
-		<WIRE a='195.00000,81.00000' b='203.00000,81.00000'/>
-		<WIRE a='203.00000,81.00000' b='203.00000,78.00000'/>
-		<WIRE a='203.00000,81.00000' b='219.00000,81.00000'/>
-		<POWER pos='163.00000,60.00000' which='1' direction='0'>V3.3</POWER>
-		<WIRE a='163.00000,64.00000' b='163.00000,60.00000'/>
-		<WIRE a='163.00000,64.00000' b='184.00000,64.00000'/>
-		<WIRE a='184.00000,64.00000' b='184.00000,66.00000'/>
-		<POWER pos='203.00000,60.00000' which='1' direction='0'>V5</POWER>
 		<WIRE a='125.00000,72.00000' b='125.00000,85.00000'/>
 		<WIRE a='131.00000,72.00000' b='131.00000,81.00000'/>
-		<WIRE a='128.00000,116.00000' b='128.00000,122.00000'/>
-		<WIRE a='128.00000,122.00000' b='164.00000,122.00000'/>
+		<WIRE a='128.00000,116.00000' b='128.00000,123.00000'/>
 		<LABEL pos='185.00000,108.00000' direction='3' font='4' color='208000' style='0'>TXD</LABEL>
-		<LABEL pos='219.00000,81.00000' direction='3' font='4' color='208000' style='0'>RXD</LABEL>
+		<LABEL pos='185.00000,81.00000' direction='3' font='4' color='208000' style='0'>RXD</LABEL>
 		<LABEL pos='109.00000,89.00000' direction='3' font='4' color='208000' style='0'>`RESET</LABEL>
 		<WIRE a='84.00000,89.00000' b='109.00000,89.00000'/>
 		<WIRE a='84.00000,85.00000' b='125.00000,85.00000'/>
 		<WIRE a='125.00000,85.00000' b='125.00000,108.00000'/>
-		<WIRE a='131.00000,81.00000' b='163.00000,81.00000'/>
-		<WIRE a='163.00000,81.00000' b='163.00000,78.00000'/>
-		<WIRE a='203.00000,60.00000' b='203.00000,64.00000'/>
 		<JUNCTION pos='125.00000,85.00000'/>
-		<JUNCTION pos='164.00000,122.00000'/>
-		<JUNCTION pos='131.00000,81.00000'/>
-		<JUNCTION pos='163.00000,81.00000'/>
-		<JUNCTION pos='163.00000,64.00000'/>
-		<JUNCTION pos='164.00000,108.00000'/>
-		<JUNCTION pos='203.00000,81.00000'/>
-		<WIRE a='168.00000,108.00000' b='164.00000,108.00000'/>
 		<SYMBOL id='3' pos='105.00000,115.00000' part='0' rotate='1' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='C8' show='1' pos='1.00000,-5.60000'/>
 			<FIELD type='0' description='Name' value='10MFD' show='1' pos='1.00000,-4.00000'/>
@@ -1957,8 +1641,6 @@ download the executable.-->
 		<WIRE a='102.00000,101.00000' b='106.00000,101.00000'/>
 		<WIRE a='102.00000,115.00000' b='102.00000,116.00000'/>
 		<WIRE a='128.00000,116.00000' b='102.00000,116.00000'/>
-		<LABEL pos='144.00000,81.00000' direction='3' font='3' color='208000' style='0'>RXD_3</LABEL>
-		<LABEL pos='145.00000,108.00000' direction='3' font='3' color='208000' style='0'>TXD_3</LABEL>
 		<SYMBOL id='5' pos='93.00000,112.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='C10' show='1' pos='0.00000,-2.60000'/>
 			<FIELD type='0' description='Name' value='8.2pf' show='0' pos='1.00000,-4.00000'/>
@@ -1974,6 +1656,8 @@ download the executable.-->
 		<WIRE a='91.00000,112.00000' b='91.00000,116.00000'/>
 		<JUNCTION pos='91.00000,116.00000'/>
 		<WIRE a='102.00000,116.00000' b='91.00000,116.00000'/>
+		<JUNCTION pos='131.00000,81.00000'/>
+		<WIRE a='131.00000,81.00000' b='185.00000,81.00000'/>
 	</TinyCAD>
 	<TinyCAD>
 		<NAME>LEDs</NAME>
@@ -1982,12 +1666,12 @@ download the executable.-->
 			<GUIDES horiz='7' vert='5'/>
 			<TITLE>MLaunch3 Controller</TITLE>
 			<AUTHOR>Wayne Johnson</AUTHOR>
-			<REVISION>2.0</REVISION>
+			<REVISION>5.0</REVISION>
 			<DOCNUMBER></DOCNUMBER>
-			<ORGANISATION>Copyright 2013 by Wayne Johnson</ORGANISATION>
+			<ORGANISATION>Copyright 2016 by Wayne Johnson</ORGANISATION>
 			<SHEETS>4</SHEETS>
 			<SHOWS>1</SHOWS>
-			<DATE>12/20/2013</DATE>
+			<DATE>8/12/2016</DATE>
 			<GRID spacing='50.00000' snap='1'/>
 		</DETAILS>
 		<FONT id='1'>
@@ -2773,12 +2457,12 @@ download the executable.-->
 			<GUIDES horiz='7' vert='5'/>
 			<TITLE>MLaunch3 Controller</TITLE>
 			<AUTHOR>Wayne Johnson</AUTHOR>
-			<REVISION>1.0</REVISION>
+			<REVISION>5.0</REVISION>
 			<DOCNUMBER></DOCNUMBER>
-			<ORGANISATION>Copyright 2013 by Wayne Johnson</ORGANISATION>
-			<SHEETS>5</SHEETS>
+			<ORGANISATION>Copyright 2016 by Wayne Johnson</ORGANISATION>
+			<SHEETS>5 of 5</SHEETS>
 			<SHOWS>1</SHOWS>
-			<DATE>12/20/2013</DATE>
+			<DATE>8/12/2016</DATE>
 			<GRID spacing='50.00000' snap='1'/>
 		</DETAILS>
 		<FONT id='1'>
@@ -15675,6 +15359,569 @@ MB41W22@&#039; &lt;BNK$,@!VT= CEHZQ#(05N&#039;0 [:.@1RT-8AD(.V#H$&lt;M&#039;4(Y*
 L0R &#039;;1T&quot;.6CK$,A!6X= #MHZ!&#039;+0UO\#S5D0JZ#..+,     245.1*Y&quot;8(( 
 </UUENCODE>
 		</IMAGE>
+		<IMAGE id='26' type='PNG'>
+			<UUENCODE size='8230'>
+MB5!.1PT*&amp;@H    -24A$4@   ,@   #(&quot; ,   &quot;:AEZL   # %!,5$4   #_
+M\/#P__#_\/____\_/S\?(&quot; @&#039;R#O\.]?7V P+S_P\/_P___P\/#___! 0#_P
+M\.^PO[ _/S ?&#039;R O+S @&#039;R\O,# ?&#039;R\@(&quot;\O(# O+S\P,#\_,# P,# P/S\_
+M0$ P,$ _,#^/CX]/0#_O[^\_/T! /S]P&lt;&amp;^OH)]/0$#?T,]/3T]04%! 0$!/
+M3U!?4$] 3T]@7U!04%]?8%_0S\!@7U]?7U]@8%]@8&amp;_ O\&quot;0D(^0CY#P[_!_
+M&lt;&#039;^@H*_?W^!?7U#0T-^0GY# O[&quot;0CX!O;V_/P,#/T,^0D)]07U]O;W# O[_ 
+MP+_P[^_ P,]O&lt;&#039;&quot;_O[#O[^!_?W^ ?X#?W]_?T-]_?X&quot; @(&quot; @(]?8&amp;&quot;_L*_@
+MW]#?W]#?T-!@;V^?D(^OL*^0D)&quot;0CX^/CY#0T,_0S\]P;V^?GY&quot;@GY&quot;?GY]O
+M8&amp;# P,&quot;@GZ&quot;OGY^?GZ _,$!@7V! 0% _/T]/3T! /T!03U!?4%^ &lt;&#039;!?4%&quot; 
+M?W^/CX&quot;/@(&quot;/@(]@8&amp;&quot;OKZ^OH*^PK[&quot;PKZ^OK[&quot;PL+]P&lt;&#039;&quot;?H*!04$]03T]P
+M&lt;&#039;^ ?W&quot; @&#039;^PL*^PL+!_?W&quot;_L+&quot;_O[^_O\!_&lt;&amp;]_&lt;&#039;&quot;OKZ&quot;_L+\@(&quot; P+R#/
+MS]&quot;/@&#039;\@(##@[^#@X-_0T-#/P+\O(&quot;_/S\\O+R @+R_@X._OX.!@;V!O;V&quot;@
+MH*#/S\ ?&#039;Q\0$&quot; 0$!_@W^ O(&quot;!P;V ?$!\0$! 0&#039;Q\/#Q\/#Q#@X. O+R^P
+MKZ ?$&quot; ?&#039;Q#O[_ 0#Q    ]/0$\0#Q\P+R\/#P\/$!! 0$\P/S!/0%&quot;@GY\P
+M+S P,&quot;\                                                     
+M                                                            
+M                                                            
+M                                                          &quot;G
+M34&#039;I    #W1%6&#039;14:71L90!-;VYA($QI&lt;V&amp;UY#JY    %W1%6&#039;1!=71H;W( 
+M3&amp;5O;F%R9&amp;\@1&amp;%6:6YC:;J4WJ     @&gt;E18=$1E&lt;V-R:7!T:6]N  !XG+/)
+MR&lt;]+5RA)K2BQ P 8)000FW$%F   &#039;&#039;=)1$%4&gt;)SM7(]_&amp;T=6=^B.A6O6%[IC
+M9Y-ATECLEI;=%8&lt;!88ZCI;0Z2OJ#UH@ZE#N&quot;Z1VM,+0%G&#039;)P2 &gt;-N6N+BT++
+M0,/II*I0=2L.RT33._&lt;,O074_XOOFY7LV&#039;&amp;(G5\G^.C%EFUI-3O?&gt;&gt;]]WX\9
+M9&lt;SZ?R)CW^\)W&quot;P9 1DV&amp;0$9-AD!&amp;389 1DV&amp;0$9-AD!&amp;389 1DV&amp;0$9-AD!
+M&amp;389 1DV&amp;0$9-AD!&amp;389 1DV&amp;0$9-AD!&amp;389 1DV&amp;0$9-AD!&amp;389 1DV&amp;0$9
+M-AD!&amp;389 1DV&amp;0$9-KDF$/O6W&#039;?JAD&gt;P[5U3^S^CD&lt;&amp;T[:NL[$&amp;!#-Y^V3K8
+M]M4&amp;O1WB[;GW=6OD^X7A1C72&#039;V2W@K\/*KG,#&#039;;?_&lt;#.OI\AW5X&lt;]LX#Q)C6
+M91,XH$8F-RV[N+SVPK.+V3-GLDNE%UIKRT4/XTU.WOP97UUL[]T+U;7*_:U6
+MZT*C:Z ,7OI?@:2 O0=J3[Q2&quot;B,I6&lt;2DY!H_@P!?X7QVK6;?)B1&gt;\4)KL9Q(
+M*;767#(N@X6JM_/Z%4 \@]+N8^VV3I\N!TQJI6CFD99A$#$!*)(QR9DO\N6G
+M7RE.7F:&quot;EP]&amp;*^%M_[;WU5TR6%X,9;1\V97&gt;$^&gt;S\R&amp;FSKF4H0 6H/ C5[.%
+MJF45&lt;2G^7:D1SU ;S,8J+N4#%D6^$(R)*))*2S^44C :2VGMNMIUXM@545A&gt;
+MO;_A73&#039;4-@(R:*_K7&gt;YF&gt;_WK2G_;A&quot;W?7WIU=2[B##. &#039;K26NN,HQI1D6$@6
+MQ_Z9HF6 7*D1FX:TNY9570BDC (F..&gt;8&lt;T9Q(;D;.TKW&gt;OB;UY5R7:4T7G8=
+MQ_W89;G3/W^^:%9VL*PPZO[B&gt;I5L-KO6H-&lt;NL\4=!O*,+LR]&#039;WCBE4&gt;&gt;/CT_
+M_U*8K##A1VP%=ZCCCCU7:\59S&#039;G,M-/C6&amp;&quot;ML_T1KM1(BJ1:R,,I(J:EB[FZ
+MRI6.ZW;:+A[KI N7I\\KO-2;%1K:XOA#)D&amp;A](1Q0VMRH Q21&quot;.403X(*COA
+M=+-OOGTF[S:J:ZWLJZNY@&quot;Q@5C+?]V?AD,IU=&#039;N]HX2?^+1F.@GF&quot;V%.NW&#039;&#039;
+M93 W?RT=;E]G]^RU2$F:G-9&quot;NZ01Z#682$BI/6ZDIV64,*Y[*G;JO.Z2&gt;F!H
+M&amp;04EL7#^=*G:M8Q&gt;TJDO,ATNZK$R%#+95]:[#S2JYZN5UM+BPND)PR4&quot;3ISX
+MH@&gt;S$;-&quot;]+3*9+!JPN4BM[#PZ@3K&lt;&gt;7G7BH7GCW_8.VK&gt;&lt;&lt;54KEY;W^-T&#039;V[
+M6:9T&#039;&amp;M2B&amp;_&amp;%$RZPE&gt;.)GV0-=5](6?9K&amp;!)Y,/K878]:$G7&gt;RXAP4(Z,C&gt;_
+M .48]O&quot;Z9;CIJE1!Z852]NG50GXNH#&lt;*L(4D$N(Z@OC,#Z (6+_@RG$&lt;!02P
+MK1&quot;O;!F&#039;5#VZB]-V&gt;71_U[HP[Z@5)HM7,:VBY:TJ:$/%4(J.-.8(M&gt;8&quot;W+3N
+M2@&amp;K@GJX*[6S#EWTG+KPL9*^Q&amp;5&quot;.]&quot;8)N&lt;!*#&lt;#U^&#039;A:C9;B/(2I$W4J&lt;BM
+M))9FUO=!/GB3Y#WP!Z-OK,L*31@&gt;X= 0/=PX2L0LGNIQ/.O$&amp;!$OX0JGS9&lt;F
+MK07A,UVUKN+LW&lt;+&#039;&#039;1TK%&lt;&gt;(&amp;PQKXF9@7=+E,%G\Q)#U&#039;MR&gt;T,&quot;&lt;&#039;&#039;(5FC%-
+MJR=]FB41)-PF8XQ2QCHT(+&quot;T,!]&lt;:S2&amp;-&gt;%$W[-&amp;WP#A8SU&lt;%6&lt;PY+I#4B=3
+M8&#039;#&amp;&gt;@Q=U!U%G*,RO UGY2[_J)W_E\G*BM:EO4&quot;\_M=I!QSGJFB5T&lt;TP$&amp;:I
+M&gt;?1IYG.7D;]A?BZYR46 A%&amp;5?[4PD0A7C4,1&#039;$^0[?5Z6&amp;8@XK0.9 J&quot;TSQ=
+MKGC3X3/TMYAI8CV%N/OND^*D=&amp;FUXW9[G&quot;#$\4:;ULD9=[73;CL*8S&lt;!@P.L
+MZ)%-9.J*U&lt;?.=6O@HR7KCCMV:R2ED35PFRLOA=T2[%QWB&amp;(QPJ&lt;EFX$:)6G5
+MP=0&lt;0G217SR&amp;J4E_[C=^BWQC/&#039;;&amp;&gt;]SX49V3W4@ $B]BR&lt;4)&#039;YPC_#\D6X&quot;^
+M_+O](/$C&gt;#9L)8[&#039;H5@(3;J]@&gt;F[QB-P(^6&lt;U 3-%4X3J]ILPM*A&#039;EP&gt;N[JM
+M)LKN?&lt;$J)GW&#039;D3U /*L&amp;QU#!V()]/_&gt;9(NYJ8H 9^$;;H27BO*E)3Q&gt;-3ERG
+MN:&#039;&lt;IB2;;E)XQ%S:L0(,!=(WNA&amp;G@ /?IR[R%Y.&lt;G\LER=W0)!B&#039;WK&quot;!6&lt;?M
+MF)1A&#039;LRLP53*&#039;&lt;=@[OA&amp;W(EGA!XGWR+WF!%),BLXW4 C*#,9O/R2MYM^21^(
+M2V4H5&lt;?Y32\4XF/!8F,&amp;I *L$-1]4AF-..[%/A+I0.\P -*;-DX3DZP[&amp;7)Y
+MMUXGS9T0+QX7)\2=_!0 @(&lt;BD%,0)$D$&lt;T6BP&amp;GB1IJ\F1*%&lt;EP3I9I&quot;DP_J
+M!+? _=VV^^=?G7 1%!&quot;UM(83?_WK!7LW:]DF&gt;%6EBK6*/*OE$(^0)Y.HN*U@
+M&amp;D@:?2))6#@G)!&lt;ONGP#9@U(1):N40L&lt;TJ&amp; DDYM_9CKDC/=^&gt;*)._EQ[B8)
+MB,*=T1P&lt;&gt;Q*@..4_@BAOAM:!IN\&quot;#$+X#&quot;=^)&quot;-V^?Q?U&gt;[_%&gt;&gt;2 I&quot;/VG[B
+MKB.VP&#039;18 &amp;XN68]C\KM8&quot;T$X+Y5_B14]:U$*Q2*N#0^Z&quot;&quot;+DY8([,V*&amp;^(;&lt;
+MG!LDR!C&lt;)OR99&#039;S&lt;-?1?!W]F2#N.\VWZNBA._9%PICF_$Q&lt;Y33YS]]TF!9R!
+MVY##&quot;W&amp;24^R!GY&quot;+DU&amp;I&lt;;,TL2)J&amp;=?^Q$3D8&amp;T5IP /-R2N\Z,@S =K)MG:
+MXR-K,#LA6U;76F-Y%LM8.F&quot;L&amp;4&gt;&lt;6628;1.&gt;1S8$2.($/W$&quot;4$03*RQG3&#039;*M
+M4[, J6 JI!%$YNECWVZW7?&amp;B+SYP*)C![F&gt;D:]*%)@&amp;!OY-&quot;^(RA./S4;E-M
+M&amp;&quot;#Q.&quot;S!=;[W/7C&gt;)2(%!R&#039;+3U&gt;1^%0BA@9?/I&gt;MVM:174 \A)!8=/0JY3\/
+MQH&#039;DBQ\C&amp;#:5&amp;Y&lt;GSSB7,-HX?&amp;7&lt;,82*61D@-/498^3@@29/&#039;8,&gt;.)(9S&lt;F;
+MCN/*4Z&quot;+Z0\0(C&quot;*&lt;PE&lt;&quot;XJCK 9X,&#039;_P)- 8MB&gt;VTS,^^,40_;A)6&gt;E*.!&quot;%
+M G@=+1W&quot;%8O@:0!3Z%IW[#$M#Y6&#039;PVH43UH=I.HY%A&#039;;.2IWIM,!&amp;Y&#039;3.\3X
+MCOG%.&gt;::J-BW,R-DBECVNF-L$J].N\&gt;/8QUAA,XT&#039;LRDG V\&#039;6P;C\&lt;TC@E,
+M@AEKD20S%&#039;D-$%)6.NZXB6H(\1P*!R&lt;J)#B  39_&amp;03\V=U ELE&quot;%B@[LBJ,
+MCVD&gt;:_[IQ&amp;W#R38&lt;$\;3M7&amp;)KU(YYJ1B[B:,F+22 G7J5B&lt;PRSLO\N/D].YZ
+MFN% &gt;3&quot;O#=@,7(%&quot;AT/6!#=ODF((B &amp; ;W;2J(H&amp;HS)&quot;9\P,B-:E8H&amp;F_&quot;.,
+MEO&gt;D*/:25C)H&amp;&#039;&lt;I3E &amp;WY$P%JR:&quot;5&#039;- 4D:))CDQ6T8#L6/-FF!UU--&amp;&quot;!P
+M97$G6/&lt;$:.Y.^E,,P!JF&lt;DUVD_J3XYC40%%F8!9%(_BE5F5&quot;B/EMW.G/H$ZV
+MS )7K08*SMRR=Z?Q]JI6 GJB--M;4%&amp;L+FGUO3;G[38H90,\WAQ/N&lt;A)#&gt;N8
+M\X%)X^@[1&gt;)DB*[,3,S3[O0T.!=? &#039;+\!+0E3E*I-@.V)&lt;[UD:&#039;X:9QRTB3%
+MC&amp;QB&#039;^=I;6#&amp;;^JF(7&lt;S,!%\AI)/)%)4_LG2WJ0QCV*R1&quot;41?J^58^9C_OV9
+M@US\7)A#]9^.U?X@1?/!!Q\,&lt;!VCOYQCT]/&#039;ILFXQ8D[Q8LO7CQNS(+(81J2
+M(&lt;,&quot;)Z19)TP&amp;KN[?#8_%(F&#039;EL5H43@V89M.HR=P?@5Z9I-H=K&amp;(F(R.4&amp;A_&#039;
+M*ULL_._=/F+;L#FY;&quot;QKT[+70BX5Z(D[&amp;TT8)((N^4B[+] &#039;%-)7BD% C_3\
+M-&quot;G&#039;,4!A?!Q9ECCEB^-]/:4R0PD*&amp;1&#039;8GDR?\D&amp;?O,%DN)0Y E-,V==&amp;&#039;-/M
+M\+&quot;!QXWV  :/1:C&amp;%$&lt;2)&lt;-R;7&lt;&lt;\0*E&lt;^]:5#Y3G&amp;]ITWS!34T&quot;YSJ=2QMJ
+M9S+&amp;W?%PS/C\L;[S7+Q(GC/=YX&#039;VOZ=H*(2[Q\6I4V(@H&quot;&lt;Q8WR!/!^%&lt;AK&gt;
+MTZ!&quot;5( TBXAMW$ES&#039;@J39&#039;LT%7)X7RBG$\M.)&#039;50CI;MO4!D82&gt;L!*88(N^(
+M32(* D2A0Z$X]0&amp;:-1!L8S R32@N&#039;C\^(#5W&amp;KQ[_-2I_^+_=NG;T]..(58#
+M1*0A_22*&lt;3C,N&quot;:J.DFENL]2TC4TYH&quot;J23;Z&gt;241/]DGJEZ&amp;F!?=$VTA+#Y^
+MN49L3%UV\J8;0$[28B MY( (&quot;=PL0IVLFL^D3D+IEKN=JB NNJF#UTV227&#039;2
+MT#$GIR7V,BQ6-Z$2KKWNH&amp;09$+9O)&#039;4E59=4_H)=!&gt;62J$?6D&gt;:[9%N=CQ#*
+MC&amp;E0$TI15X)%^3!D$87P74#L M/E?J?,MBN!I)+7)&quot;2ZMTU[.IU@T^T;!,=-
+M&gt;Y2*T:124)CB;&amp;H_]*-7=WNTZJ:.%&quot;G&lt;?L&quot;D^&amp;_&gt;0?5ABHA:F&lt;AN 8:2,;:&quot;
+M/-?)P ^(IC*JWC=KV$?=]Y. !6&amp;D9-C8&amp;T&lt;64:07^T&quot;L[BK5(SW&lt;&amp;Q-&amp;UDS&amp;
+M:=C#I6I-4]DHTY0DE4SZ(RVKZP-6-L^@KO&lt;YE4U]UFF;8C9#?Z7O2J,+ 4&amp;I
+M#-.M(UN$AZ)*DW5WO9V),U2I*ZIX3&lt;7B8B9&quot;LB2:PV4L:^_-?DM*==:VNY4+
+MU%O$@F-8*J/)UZ@:26,2I]*!.VFPH+$SZ1)GTHI[.VZ:W_BLG\#@J&amp;U4-ZT%
+MNKP?1PF*&quot;3W&amp;U&amp;3J@11AZDY,34%R)4GN8LP2Z]&lt;S%L&amp;@Y(@IMQP6RD7+[NY)
+M42+=*5 _BK*48AF^KLBI&lt;;N.NBQ0&amp;:L7)RF?G^F&#039;861QTF0G/4-#7%+J&quot;*&gt;2
+M/4&#039;-D=1%J&amp;4&quot;SJ5UV:D)P4T$JIW!1#%Q5+510@9%K2*C15)C3&amp;6&quot;[AFU42==
+M&lt;K&quot;5(X, &lt;US-UHI[30MSCW0E;:;:M84@&quot;D&quot;_=#LGH],@FU%IQ*4&amp; F(9(HU+
+M\^5INTN[V_0L!$Q$$CD!&#039;8PFW/)G44 DIF&gt;&quot;WWB_GH2FU]?7$2RH$H?]$$M2
+M!IF66QBH1V4=%$+-)4 E\\Q0)T9+ 0&gt;)POSJ,I;=VY/]+K% Y8MIE].N%B0I
+M#VO2&#039;F0\L!^3$1&#039;#4YZW$:?QB0K&lt;=:IPC:6@#$G3(]S/&amp;&quot;(,P1?:)*W4Q 4X
+MZHOZ1D%]KS$:AX+,;6 #&amp;@011$+/4L&lt;C=HV+*EK2]=@T@A5L(,CG&quot;V&amp;V8N]3
+M6%5#&amp;&lt;5+=NHFQ:S2&gt;&amp;&lt;&#039;)0TM0DQKUE:QTS19&#039;S5)1+^K2%:N4N\QK8/4/\ _
+M1,,]+F=7$FI(8_YX[!$?P80D=&gt;2$:= A,:T3 V36+T%!%&quot;L^HMJ,^J\.K[-9
+M14T_0P@RXG7:#A 14)3+83G=([FBU.UF*02FB;Q=*0&lt;!0SHKR42_&quot;]V#-SDU
+M9,ADJ+TH9ESE([O O)# N6*V)^GI:,M&#039;&#039;&gt;,SJ(&#039;YN6@%5G4N%^1 T3WP$)P4
+M)&gt;J6OV*:EL&quot;J?6(&quot;;2K=.,T]*6C#&gt;8 ,&quot;]E&amp;&lt;(K;E]8S(O EXG&amp;2)%NYN7(^
+MR!&gt;^%N0&#039;&lt;]_;:6P4:..AW&quot;(DM7*0#YD@;HH=R&lt; Z:EU1^N&quot;H&amp;5^8=!ON+F9A
+M-#29%:ZI1L&quot;R,\07V6_0]6&quot;&lt;N&quot;B7&gt;YG)M#++F-(P&gt;?6%UIDYYE.@4EA@1!!-
+M6Q6QJM&gt;5:2N9&quot;U6&lt;B54[OO31.NHZ1$=%?9&quot;VRY(D5&#039;&amp;&gt;Z&lt;&gt;N!-(GW4H&gt;B:/2
+MBPT/(;&#039; (NIGM&gt;NFU=Y6NEZGY6JC7&#039;3&#039;3=*M&gt;C+N2&amp;T,L-.&amp;K&lt;%D4(,&amp;89+D
+M5U&lt;7G\TN54I+K=:SY7(^*4_D(PTBI%(31MN1A&lt;7LLZVE0N!0CX::JBCZ&gt;*8=
+M9U)&gt;3K_AXW ,1Q/UP]HZ*!0&lt;DP3*,/IDT=H?&quot;&#039;V7\A%*2*4*2\5N)4A@Y&gt;H2
+MBE)$C)BZ*/U YQJ20BT4PR00DP)&amp;; 2;2?*G5Q&gt;&gt;;55JC:[M3::;/I[5G&lt;CG
+M3__#9G&amp;YNK&quot;:#R)FNMGQI;$V&quot;U=+R]47)F#VJ@,OE &amp;L%)I$%:^IT^%TVAW8
+M68&lt;(IQZ#.Y58@=%*)5E8CMYX:NI*(-O,50EQ(]!5S!!&#039;M! 4I9&#039;ND%($CTUU
+M,Z.1_(%V,/4@S(=1KIQ?+:QF2X^TJK5W;7NSOS!VGS7@&lt;MGR0FNP@56LEA8*
+M 0P-/JXZG0X/%EO54K:04,.R[6C1&lt;V&amp;J:3&lt;&quot;42&gt;&amp;87? !)+V25QJ39!&quot;PO(O
+MOI.UGMI&#039;(SM27 B&quot;()*FY8GUOP0 B ^$A$A(Q&gt;-:GJ1L(DJ27!CEEZK+W&lt;T&amp;
+M;=_8@YD/@$P.5#UI%SW/;,?9Z0Z;7:LNK&lt;+2:*&amp;@BEC-81U*3^&lt;31)VZ:2HJ
+M9;J4HJ=ZU E2(F+(&gt;4%C\!46Y*- E^RC^V]/;S_IM0KY?!A(U%FT:BCF&#039;$WY
+MDT+Y&lt;S*9/[,X&lt;;*YD1:F+LL6;;.]ML^*I(/:VSNBFX/--C(WV_:*:UFLF81N
+M\ \.P/(+I&gt;QJ&quot;(JF+D-&amp;F69-W $,&gt;(J8I;BHXA@PJ&quot;\7OX7!OG$UTQHXBKW&lt;
+MRA?*&gt;18B(X?9]F;S$Q.O+KUP_L$&#039;)A\\_\@\1ZT&amp;]]3C[LP+E-%8_0W.?&gt;%,
+MTJN;D];EKTUN;_8_&lt;.%,(8@TC899MAT8[$J2&quot;Z*$0BC\&quot;$%6@[^T\L5Z7.\A
+M.O@A[=/EN];1R^^R_X$!L\;=VO):JW2F]$JUT=WT4E5=&gt;&amp;2&quot;?_1Q!J:;R?18
+MW9VO7D41!Q8J11N5[$+(8,C4F,;&lt;J74*_XB !^;$W!A,IE[U9^=D@J0$99)&gt;
+MN.*^5S_Y8&#039;NFPMI,-\?M2;NV%.KV)&gt;5(.&amp;(&amp;3J?;ZJ4+-XJC?US)MF%F!; ,
+M&lt;TQW6NM.)W9-LTY0SJ@R_KSOSX(+X%!!=I\]_:L!&amp;1S_Z=_MB4HY@M=3A[)&#039;
+M^]#U! E(\LAGK9MV@,-XT?+20IDV&gt;%W:F(%N0&amp;FT+Z[:W-V25!(&amp;S&quot;^7:OL9
+M\#4.U7A=F%AU@2&amp;&amp;@-Y].OWPW&gt;\Z/FT-R%&gt;+5M_B;@*,[;EU&amp;Z^4L@OS&lt;Z&amp;)
+M-K1;A(B#2#5/IQ\FGEY&lt;KNU_SWV #,ZAV,:X*J=U!_D)J):YG0ZR!$5EJV:%
+M&quot;];DNW?&lt;1(WL8)F&lt;]&amp;H7:/]]M1P&amp;OT!-THPSD5W(_O[?/=B=O-KAJJMKA(RW
+MMB!CET4HI)D&amp;/:)&gt;=+&gt;&quot;&lt;T(&#039;OW;CSK$OAIT8,$G+N.F]NRRI\Z];=AJ ^OQ]
+M)9@K@+P+&quot;+5&amp;HU&amp;M%&lt;^?AEWZH(ETSQ6)- OF$.[#9],]&gt;G/DY.:AV&gt;]WVUY&quot;
+M#..RG))\:BE[CS/N#V32&gt;C&lt;;()F)$BHIJ0 B@B&lt;Z)/-&quot;199]&lt;.? U\V&quot;&lt;&gt;4&quot;
+M;X_L(C7142F];&#039;&lt;PVB4[0+S4-S:M!9V+D/Y1#:= (,0@+ KIS%&gt;PVGKB)DW]
+M8+)IK:* $/[&quot;M0\=;@/IYWBV]2SFK:D/R&quot;G#E,BOHI (/I\UQV1NEZ1[ A=D
+MC#HN?&#039;#SFKK?4R%:7FFEC5HZY$S6$?I&quot;T99!+@S+JP]Z9BSOUDQ[7\&amp;ZYCI:
+M,U:RKFY2 ]D!TC6S7.NA3$U6$NFCY&amp; R&quot;) FA-D+71KI]A[$I&quot;QID0[VR 4Z
+MT7&gt;MRR\W+:I%@E[&quot;5D*!BA8Z!9&quot;74/@T)LV1.JM_6NSVR&quot;3F7HTI1PF+!U#(
+M&#039;M:J,$2-)$@$-?42(460;VR?&lt;IL\R&#039;@W33QJZ:#RT%&#039;%/B00VVZ4=21R$[ED
+MR^=&quot;4R\MRG61+D[&gt;9JLRXEEEQ123BU16&#039;H*U\,9BF&gt;6#N8ES/K7J$ZH,!)M+
+M$TT#9/!]&gt;V2SJOT.XED_^%[K\C&#039;+GC*?YO&quot;L[F*4FPO/A;D &lt;6_E&#039;.?:7Q%S
+MI=M*5-9.JM&lt;-M&quot;3&amp;JAWL;6-3@Q#BM4(4D&#039;E V?)GD[DDF&gt;514&amp;=9Z[:ZQL[-
+M6DPCH 7[YNS[&quot; $YFO854=C.T0Y0#EZ^-7\N$9%D/&quot;Q8WQ\@M/&amp;GI5HXZ.W&#039;
+MK*DI:PJ75D(ZEQL&amp;21#XPL_E7_)YX/B1.9]VVZ&#039;0\1YS;#VH#9ZZEHRE^K :
+MI_VY^2&quot;8 V-%P@_G&lt;A-SFO&amp;&lt;S\Z;R[Q;..\KA(!XH:G@&quot;_;@J6O)6.I&lt;Q86Y
+M?#X(ST5S=!(Z&gt;:E\[N5Y5T9&lt;E.P=][N=4I615C*J&#039;/@-1+]35G$)Z=2&lt;GPM]
+MJ,1/7BY/O)R?D$RXK^+5J1O_A-JAQ2[ /Q0+:P=&gt;10 !_U;R^3&quot;7SR5S86Z+
+M11.%B;G\Q%S@JWS-_JQ&#039;ETT=O&lt;8X-UF*=)J=185M#-&gt;.(^8$?KGL!UM;01!L
+M(5],&lt;N&#039;+^;G\RTD]F:^&lt;_[G&amp;[G%NO9%Y&quot; :MF.E8LLK!;S?FP=&amp;S08#J+Y4H
+MBI*MK&lt;0&lt;R@V$K]77WGJ*,M&amp;!@=UJ(*:99H*A#LJU0P !12Q$J*1FQ&gt; @E9R=
+ME9P:\=SG3-QUS^\]&quot;F:SIU*Q;HOCKW6HY1XL&gt;0=_&quot;UCK/%/&quot;20]VU&gt;MNVK:D
+MLX:.VT.*\&#039;O1?=E_.F(]3EY_!&amp;+&gt;Y&gt;U;_]\DP=*6Z1,?+*H&gt;XBYCEE= ]:+6
+M!^&lt;75!R;4\\.-&lt;9&lt;#&quot;=_YD^?_-+G&#039;OT&lt;9!E?C4;QUJH$R6Y%R5CJ*.P&gt;&quot;D@Q
+MBK6K!T&lt;5W&#039;K_P&gt;&amp;.&lt;KB_\LFGWOS=US_S%2-_EOV=SZQ&amp;LG&quot;8E3JT8.R\HNYO
+MD#V,%8]9#&gt;F8@S/]&lt;XI&lt;]LP&amp;2X8K:NNK&#039;_GZ&gt;S_YWINOO_:G)*^__I4WY&lt;=1
+MQ;NECM*B#4+-@H9E&#039;\+9K2IWZN;D J&gt;C._2!J7I=2I&lt;)A]&#039;GJ.YY[^VO//SF
+M[P#%:V^\^&gt;:;;P22K:[=4NMZ*L41A@&gt;IIW: V&quot;6I9KGNGQ]*CQ[7TPUP.C\A
+M[CE[[[W////HD\_\]#&lt;?^L)O?NF+/ZMT?JEVZS[&lt;ZDV]H&gt;[2[^B[[DK/)!X&quot;
+M&quot;+7P&gt;SW7Z&amp;1P:D&#039;W&lt;&gt;G&gt;M_[U[;?//O_\P\_?^_!K9Y\_^QR+9;&quot;Z?/-Q;&#039;^&lt;
+MN:+U=SXE[XK&gt;ZQ[&amp;LF!::_&amp;WZ-.1]7K_O&amp;UZUM8\40&gt;ZO_^)UUY[[&gt;&amp;W_^3A
+MLV_CQ]^^]L[&#039;*LS&gt;PDZ=_&lt;_O?/(=&lt;.4?EPX#@X LQU)F=/]#&gt;1J_Z %QT&gt;=R
+MY#T_&gt;?;LP_&lt;^__P?X/O&gt;LP^?C7106&amp;K&lt;*LNRO??&gt;^6/VSCLR^K&#039;&amp;X4+OF-V 
+M:]?E;*\/A4[UF(_B&amp; 7U?N2N+S__X8&lt;//?G-AQYZYID/[_WPL3&lt;E*R\=M/X\
+M- Z[^Y^?&gt;D&gt;&#039;S]VEJX?,N&lt;?L8D L84Y&lt;]GKXE&lt;Y2F$] F _WLF_]Z!O/_^5#
+M?_,0R3,?/O-HB2&amp;.W((\95#A/O?63WWR2]YBX&gt;CESQX$R)2]*N4G,MUW%+.S
+MC(Y\ 0(=_)*2W?/)?5][_&lt;GWW__&lt;HX]]Z&lt;??_]PW&#039;UTN52BVWRK;\M8^__YB
+M]1^[4];V:=&gt;# K$^\PD=&quot;*(3&#039;A!?I)CH4Z;T9_3U+]_SQA&gt;.3AVA NL(%6&#039;=
+M6YDV&gt;L6W&#039;JM^\9=-NGVXVXP=/?K8U_Y#!C(&quot;ELBGT\ I(H!(\-S6??I3SSUU
+M[7%N@I &quot;O-+R7U?&gt;]W[@\$7IV%&#039;KZ%(H[V&#039;T,9\@B8(P#%))J!&amp;//W_Q*U^Z
+M&amp;?\?RT&#039;$MAN?6?OA]__Q&gt;MZ+&gt;L0J5DO/+2TME2I_L6:D0K)FOO#]Y*_?.H^X
+M3$R&#039;M]O*_O8R^&lt;?A5P[UB&amp;VJ)?-XQ/[L[M%ORAP/)K3+5,V6&#039;BM.6=?3[AC;
+M#?_(;&gt;_[[(C772Z5UC[_@]=GR&amp;1:UN-8@L=M^\A^%]PN9%VOL58J-;[XC&gt;OL
+MUXQ-[&gt;[T[#OOR1^ZOL$/([7EM4JKVNUZ1XT^KL-&#039;K*.P26]?;:1B4-SR?9%N
+MI5JK%8N&gt;^&gt;-Z?.3F3N&lt;&amp;9!E98JUXW6\?&#039;B&quot;&gt;=T,..3Q K!OKE@\/D)T3+M&lt;E
+M(R##)D,%Y/^&#039;C]R@C( ,FXR #)N,@ R;C( ,FXR #)N,@ R;C( ,FXR #)N,
+M@ R;C( ,FXR #)N,@ R;C( ,FXR #)N,@ R;C( ,FXR #)N,@ R;C( ,FXR 
+H#)N,@ R;C( ,FXR #)N,@ R;_ ]).(@0$9*P6P    !)14Y$KD)@@@  
+</UUENCODE>
+		</IMAGE>
+		<IMAGE id='27' type='PNG'>
+			<UUENCODE size='7264'>
+MB5!.1PT*&amp;@H    -24A$4@   ,@   #(&quot; ,   &quot;:AEZL   # %!,5$4P#P7_
+M[^#P____\/____^/4C0P&#039;P\0$!#P__#/OZ&quot;/7T\@(!_P\/__\/#P\/#___ ?
+M%!/?W]\@&#039;R ?&#039;P\O+R @(&quot; _&#039;Q _+R\?&#039;Q\?&#039;Q!_/Q\O(B$@(&quot;_ P, P+R O
+M+R\P+R]0-2) -&quot;\_,#!P0&quot;]4/S P,#! /S!@0#!P0#! /S_1PK\_/S!?0# _
+M/S\P/S]D0&quot;]_7S^ 4#]@0#] 0#]/0#^ 7S]P3S]@3S]P4#^ 3S]O3S]_3S]_
+M4#] 0$&quot;2;T*_O[^RO[608$]_3R]P3S!@3S _0#]P0#]@3T!/3T!/0$! 3T!0
+M3T!_4$!P4$!O3T!O4$&quot; 7T&quot; 4$! 3T_/O[&quot;_P+&quot;/8%^0;T^ 3S!O7T!P3T!/
+M3T]03U&quot;?8%!_3S!04$]_4#&quot; 7T]P7T]@7T]_7T]04%#?OZ_/OZ^O&lt;%!O4$^ 
+M4#&quot; 8$]?7U&quot;?;U!/4$]_7U&quot;4;U907U&quot;0;U^ 8%!@8%]07U]_8%&quot;0&lt;%]O8%!?
+M7U^@&lt;%]?8%^O?U^ 8%^/;U]@8&amp;&quot;0&lt;&amp;&quot; ;U]?8&amp;&quot;/;V!O;V&quot;/&lt;&amp;!_;V&quot;P@&amp;&quot; 
+M&lt;&amp;&quot;_@&amp;!O;V_ @&amp;&quot;0;V&quot;0?V&quot;P?V&quot;@?V&quot;?&lt;&amp;&quot;??V&quot;_?V&quot;O?V# CV&quot;/?V^ &lt;%]@
+M;V!O&lt;&amp;_ CV]O&lt;&amp;!O&lt;&#039;^@?V^0?V^_@&amp;^??V_ @&amp;^?@&amp;^P@&amp;_/D&amp;_ D&amp;^0&lt;&amp;^/
+M&lt;&amp;^O@&amp;^?&lt;&#039;!@&#039;P] &#039;Q!0+R!?&#039;Q!/(A)@+R!0+Q]R-B%T/R^$0&quot;!O/S!O0#!_
+M0&quot;]O3S!_7T!@7U&quot; 7U!O8%^ ;V!P&lt;&amp;]P&lt;&#039;#/D&#039;!_&lt;&#039;&quot;PCW!_?W&quot; ?W^@?W!_
+M?W^??W&quot;/&lt;&#039;&quot;OD&#039;# D&#039;&quot;0?W&quot;OCW# CW#0D&#039;&quot;@@&#039;&quot;@CW]_0B)_@&#039;^PCW^ @(&quot;O
+MCW^?@&#039;^O@&#039;_/D&#039;^@@&#039;^PGX&quot; @&#039;^ CX&quot;/D(&quot;_D(&quot;OD(#0GX&quot;@D(&quot;PD(&quot;/CX# 
+MGX&quot;OCX# D(&quot;@CX&quot;?CX&quot;/D(^65C^07T_OY^#?T,_OT,&quot;@&lt;$_4Q+_&quot;O[#?O[#0
+MOZ^E;T^?&lt;%&quot;P?U^P@%^O?V#/CV_0D&amp;]P,!&quot;??W^/CX^0D(^OD(^?D(^PHI^R
+M4+SL    #W1%6&#039;14:71L90!-;VYA($QI&lt;V&amp;UY#JY    %W1%6&#039;1!=71H;W( 
+M3&amp;5O;F%R9&amp;\@1&amp;%6:6YC:;J4WJ     @&gt;E18=$1E&lt;V-R:7!T:6]N  !XG+/)
+MR&lt;]+5RA)K2BQ P 8)000FW$%F   &amp;+%)1$%4&gt;)SMG0V &#039;&#039;=5P(&gt;PP\299G&lt;6
+M9\(,:S*];5EZWO6L2V@H36[2$=2H*&gt;Z);/%LVL.&lt;1IJU:Z^H=S9W%(K(^076
+M#ZJU*&amp;)189PKI&amp;(Q0:N&#039;HHC%H&amp;!0M*C(9):V,JWU(\#?]]Y_9G&gt;3[.5VYO9V
+MMYAW=WO?M_.;]_W^_YD3,E\E(@SZ &#039;HE%T&amp;&amp;32Z&quot;#)M&lt;!!DVN0@R;&#039;(19-CD
+M(LBPR?\/D&quot;P]!$$^R,:?#:UT!-E&quot;C_D@WWB&lt;_&lt;L[[[XC7&#039;CWO[$@E]D6?RN3
+MR?7K +N5M32R-?.XO.? 6RNRXXARS7%J]?JCC;X&gt;64)9 V1+)I#%1]R#5SUP
+M&gt;7G/GK+H5.NA_S1#/6SKZ_%U+1U!+LED&amp;C_C/_T#UX[L?FVE/#KZTM.^?Z,M
+MAN&amp;C 7PW-W1FA;*&amp;1H(_%466^=SH2T6Q(E=&gt;&gt;K &lt;5A=&quot;/_0_ 21;MG3^G&lt;&#039;*
+M^2!POK&lt;&amp;[SCM \C8RL&amp;*+#JR&gt;&#039;#403\)PQK+Q3\T9-))(UMSGY&#039;#ZBC+!#,W
+M?\!!;Y\:&#039;;U!?+)6LT,?2)XA&amp;@$9&gt;^BT[7@L&lt;\EOOQ:B5M61*WO&gt;_X#OVZ&quot;2
+ML#Y&amp;/C1TTM&amp;T[O5#IS+RJ4LR&#039;Q-EN59S9/G L??OE@&#039;##L.%QE&quot;JI /()?D9
+ML&gt;9,E?\NLX6)M5JM#B1[1H\=&amp;RG;=JWFA^_.#^ XUY5.IM4HB^#B3CW(,&#039;]A
+MH?[DDXZS=\^Q8RNC3KB )/&lt;&amp;?3_,]:43R)@((&amp;49PA;SZW??O;!0J^X%C1P;
+M61&#039;!M@&quot;%#:%Q=0)YP@&lt;07_;?%K##3[WYG0 &quot;IO5^#V3%L1^KU\-P&quot;$DZFM9&quot;
+M%4!$O\;^\JG[WO*6T-FS@A0NO!RL5&lt;%/PNH3?3_0]:032/[I.VS?=R#]E&gt;L?
+M^M!&#039;WBQZKBH(@NO&quot;ZX/XY86P_H5A*^H[@03W/NU?;4/V.^P_XHNB/&gt;(&quot; PF@
+ME&quot;&amp;?.+:],&amp;P.WS$A_L7&quot;/&gt;#O-=L.#WKO00A41H3BRH!AA_8GAJQ*Z0&quot;2RS#Y
+M\+MLT7?LT!D58G6XT&gt;OE#I0J?EAEPT72 61KYHD9\8ZG??%&amp;IU85W\$^_*G?
+MF/&amp;(1(57P1V%&#039;.-3U;5EB(K&#039;3J:UI;$HR[]Y&#039;Z3WJF]CX9X+&amp;C_!+0M9O&quot;G&#039;
+M!PFK8WT_V@M(1Q\)CL[(CWVH#H66#=4\NO6VP,/ );P7&#039;MU1&quot;,Z^7W.@ZAJ&gt;
+M?-(1)&#039;O_(=GYV7\*13A@VV=;X4LY]AZRKO?&quot;HU&lt;FE=3L=P;## )F_^Q_/S0C
+MB_?&lt;X_NB8XO5+]+7QUX11R[A\AJEF=#_F^$)PAU]),,.R7\HBW_UGR)&amp;8;_6
+MR/!Q!)*H&amp;+J@?0\?P];WT:$AZ=RSO_(UMRS.R+6/AJ 2T?;K8SDTH&gt;!6(59)
+M&amp;(E]1S0C&amp;GCXZ@S2^!%9GI.=\)/@)C(VB6,X!-H:?$^42US_L&lt;,@4*WX\A&gt;W
+M#86C= 8)C@+(G&quot;R^^:-0&quot;,NR[\B,OMYP&gt;684&#039;CD&lt;(D&gt;(\XA_; Q&lt;&#039;9FU0+;]
+M[ZOFYN; X&gt;^[KP+AJ09ER9&lt;#/%P69?F5\&#039;!8#Z&amp;TM.70KE*$&#039;K!:UIAKL5L7
+M9X!%=CX*I0HHQ E/_]Q8 )F&lt;&lt;=/RID(  6]W&#039;+D:^G=CO3)8DC5 GG7_0S-@
+M7+?)&quot;_\=0FM2$:$HJ=&quot;)OQ&lt;Y!&#039;?*!T^&#039;9M$&amp;$L&lt;/ZW\^%@P69:TA-KM5EF= 
+M)=6?OP&lt;B%X! #7E:!I3@.\FX&lt;#H$$, &quot;M; ##S+[PD!=9&lt;WUD7^=D&gt;6&#039;%N=F
+M*D_]E&#039;V++(L0NRJ._^&#039;&#039;,X%&#039;D&lt;L&#039;#P$,T(E/**&#039;]-M38P$9&gt;:X)D_VQ.QM!U
+MM/JN7Q!!(0Z)*&#039;ZB\&lt;H1]W?&lt;WX-.V*[:=M7G*-B\V/7O?U;N&#039;//JFY;67K%J
+MO&amp;GN%HA&lt;$(1__2G 0!8&lt;$DT=8K=AS^L[Z!]0T$/;@H]0M82UZL=:%7&amp;?#6U-
+MD&amp;WD)K=@7ESX9-W&#039;!1\1-2/Z\M0-KKL&quot; #7&#039;)Q($&lt;:HV?!3:]M\W: &amp;E[_YR
+MH35$-E=%ZUJ4#_^7+Y)=X8-_&amp;GK=\@.@&quot;)Q0D$KP/8&#039;8_F-V[=&amp;!S%37!(&#039;:
+M/?&gt;W$(+E5X%Q/76?3X95BVBJ#@4MT$/5MKGW5/$3Z(%KH;_ G@4H?8:YX*IN
+M&lt;.?,(?03V?E(7&gt;2&amp;),I5QZF)-D&#039;95=0$#E5 &#039;S4,&quot;&amp;&quot;!4&quot;[[[_Z/83(M.):Q
+MHS)X/-C7PD&lt;&lt;4@&lt;/7?16\ZNU&amp;IJ6#0H&quot;**?VI&quot;]6&#039;?P,V/YXK,\K=&amp;N#T&#039;$P
+M&quot;,#U^IUR]7!-1(U@9P@^&lt;:,HHWJ&lt;VD+M2:=&amp;&gt;G%P2@0$50C&amp;5&gt;=)\1;6Z&amp;M6
+MN:!IY3+;V,SBXD-&#039;C_YH+11YL+7)N&lt;%3JN EX0*@+&quot;R(I!#T&gt;&quot;R]@ 82*-0M
+M+,\^&#039;?0K@%UX&quot;T&lt;N$[P)4LG&lt;XFWH!&#039;+%L7U\)9?W_:J/$1FR.S1?=K6*WZF2
+MK:&amp;*:D[]T&amp;6J=*31I]GJNGM1&amp;F^&lt;D^OR;8N@B&quot;H=?I3A42N5O0&lt;/EAVQ6@65
+MQ&quot; ^Q03X6?DU1=50#&#039;VU/^M&quot;ZV^J8;?6P=L70[]&lt;=7@&amp;A%&lt; $&lt;M3E9===?G4
+M5 4&quot;&amp;7@YO%2K/!2#F8G.(5&lt;P#&lt;.0C ELRC9=+UWL#F)SF!5M_Z 8%5SH\ A2
+MGMD[&gt;G#W]8&lt;@/$&lt;@$,Q\+&quot;]!8[=X1D$5#-U0=&amp;5VWV9C= 42?.K0W)T_#&lt;F#
+M4X&quot;7$XCO3U6F#NR^XD4OOW8*?1_B%6H$U&quot;**I^493U!5PS -4S)T29O?]&#039;TL
+MW&gt;S7&quot;NZ_=?&amp;-(J4+D&gt;=P=!!XVWO@^BN*!7?DV(/P7;%J&lt;\M&quot;/SGT K KR30-
+M%5AT&gt;&quot;F=W&amp;1761&lt;$@V?CUIE%&lt;.4H /M8&lt;/G^BBA&gt;??U+B@75&amp;_$&gt;I&amp;JKBC3X
+M4W[E2M&quot;&#039;JH(V# G&gt;D,289)LZ ^MJ!UV._&gt;!M1R&amp;3R%6?E.)3&#039;?R^E971WQ^Y
+M:O&gt;HN@+A]\8J&gt;3OHR1;E5[CHY29 \$?T&gt;D699H,&amp;R6S[W*OF:KA$:O/ 16&#039;+
+M?_X*Z$+TG_\^$1&gt;Q?% (Q*^:?&#039;5EMR&lt;($@E2H%8DX% ,96G&#039;@$$RC?O?6 TQ
+MF_M.[/-P[E=65AX4Q;)&lt;D0_(Y9MO+HN5RE2ELO&gt;:$5&gt;5D(1H3!!Z@*1B&gt;&quot;&lt;V
+M*T%V!0(5^2OOET,R*B?2B0Q*N&gt;$![W]65B[_ID&gt;&lt;&lt;OGZ:W;OF=HS^BV[=^^^
+MPI-BC41ZX:YBZ. JXZ?RFY)5N@#AM1*KAVA/D5U!GTBY_89&#039;5I[_R/M$&lt;60[
+M+F9%XNXT#%4R(@IT$HQ?D&gt;A*Z;.;$&lt;&quot;ZWB[;&gt;%,M+(M^U&gt;$]KTAU%KWWRP&gt;*
+MJJHW.03,Z&quot;JRD- [%9W?H$2OZ_HD:ZJD9[KI?M_OEYT%;!,C$)\J8,SDCEBY
+M0E4+):/)H=(! XO49%$Y&quot;8&lt;!E/F&gt;![ N07*9+&lt;P)&#039;5\FB_(=T@@-[2!273-2
+MO&amp;SRTI9&quot;(&#039;\0 J*0&lt;&lt;$[R&quot;J(82(D5&quot;V&amp;M=SC7-^]1L86ZS8.A6*SPJ)*E$\[
+MSK7?QZY[W0\7, .V0+BS&amp;Q$%F!9&amp;8@0S3!?CEZY&lt;^B&lt;]=97N08+%4+PZF@A1
+M]&gt;M35^(&lt;^*5&amp;GOUX4=%VCNQ_\0L1QE1;KLXI$!(C,M8L\ 43E:,HI3-![[JN
+M[D&amp;R?UWSRS71:0VX$$2\^=JO,/;VZ=&gt;YQOZ1#WYI:?;%(SM=0X^&lt; Q6CDEVI
+M^)%I H3* QB5+=.]*UL2;/)G\F$X&lt;)K4012N1%&#039;K&amp;U_#QO+LEU^GN$75+3[O
+MLI&amp;1RW1T=),PXG0&quot;&#039;H+:4%$A:IP@$6:6]2AN)0!YHDY+BJ0/AS[&quot;UY&gt;S?+[Q
+MV9N^05&lt;+KKM==5WO&gt;2IY-*&quot;0Q\3VQ9V&amp;6&quot;BO@/69NJ+H2[UI5A* -%[O0QK$
+M145*B-3QRI7BJ&gt;L8&gt;WC_&amp;\#9:=L*H*&quot;+\&amp;I1DB(2M&quot;_,[[&#039;K@$Z:H5CK23.&lt;
+M &quot;3_BR&amp;!1+8E4S=XQ:Z&#039;62-@;_AV@Q8;0+8+7VORC&amp;&amp;VBA1R%/BJ&amp;CF/R2M\
+MTZ!B&lt;H)M&#039;&quot;4!R)9_]J&#039;&lt;PM4K7.AUY+UE&lt;&gt;H#7HDU&amp;M=]^KM^&quot;./5]NVT[P9H
+MC,BZ3*X#-&lt;XG1A20.0UH3J54K\]N&gt;$M&gt;DBMZF!S:&lt;N5EUUS[DBN+Q4MW&gt;J[J
+M[G1&#039;CC/&amp;_N$-OUI4MZO;XXTW0()2B%-BJX2,G02_1N4]\&gt;J:]?$-*J5[D&quot;V9
+M1OVM+Q]Q%:RD,/08%$]?^&quot;O?G0_8!W&lt;*\2X[8;L*B43&#039;F,3?6BF%#AQB0%RZ
+M\)0)!J;K5F&#039;_QD)Q$HT$?^!1I0&#039;G]+E1/67HXY_/Y]GWJD(+!%2B%B)&#039;UKF#
+M&amp;^3VD6;(65HEOLE+8U&gt;##C*;?BZ9!&amp;2&#039;9AA?!UK #&amp;U2*64(IOL=/[83$9X#
+M]G1L].#H]2^XLN@B [11&quot;E&gt;)%*N%AS&quot;5Y_DV%C(O1==+=Z4/Q4E _HA.+JE$
+M(HV M^K/$7Y7\*Y:_+7/L*]I!(U&amp;$ 2-QR^3Z+@@(&quot;FZ&#039;O4A9ISJB87\Y&quot;R;
+M,TT%+6QI7\H$F0!DV[*AT^G$8&amp;12.ZX*M!_-?3TW[RU;^$4R;&amp;+&lt;-: T5&#039;02
+MA4 0Q20+PU@L&amp;5+3&gt;U2&gt;65&quot;%X/7+Z7PEB49.Z)9*#;A$SHXY3OCZ@J!N_]8@
+MNLHGE^,[(++Y&#039;&gt;SAV1*4(!:\$(EI1%5+Y&quot;XM@XO2/OQ=&#039;=U&gt;TVY/HY4D()]_
+M;D$GC6#W9U)1+NTJ;&#039;=&#039;OGB.ASZ;^VR&gt;K7X;@&quot;@ HF!.,7@6$7@E*4CM* A&amp;
+M]HKN92WO2(R2*(_HFHZ&amp;;495!L;27477[=SMT:$$.QZ&gt;T#0]\A4=&gt;T8\]K@&quot;
+MXR#1)VKL]XJF%Q,/CI* [+.LJ%K&quot;&amp;H07&amp;?NO]&#039;XKN,&quot;Z9Q;T&lt;I.GD.L;DFM(
+MS73(#UZETQ+&#039;,-&quot;:20&#039;,=$L)49* -$IX,+%&quot;3+*2Z5&gt;_:-V&gt;-6&quot;SFJ$!C,%M
+MC**O&amp;A\^.EVSNS?Y7P&gt;U:)IUHI%@.)$$)#\!!D)/9D1&amp;( F3KV;K7&lt;^7XRAZ
+M 9R%2A&gt;U?3#!1T7M@1B592I0MNC&gt;\&gt;ZW%B?*[$=T&#039;4\@90!J5R5AXB=QR^SZ
+MZ3C+9A5%*X!&gt;7&quot;.:&lt;:EQN#)X&lt;=RL6DP^+P85:A.KW&lt;XH$ET&amp;?I=%*A&amp;:O@X@
+M7^GJ&lt;KXL:F5:T0N6;D05I:&amp;VE$(=3)OS&quot;#1II1JG= I]9?TSE00DNPI1WHS\
+M0^+U^/C)[@-EP&quot;8US74Q@!7&lt;&gt;/)(AXWAUVBK6@1!XF,P&gt;$*]M-J-@272R!G0
+M&quot;,_/](8IKK2&lt;).+G/SM&gt;*!1TO8E!\Q:L)H5VCE@QO$ZSK-+Q]2-8(A#F*06#
+M&quot;D8&gt;M.#!NBOHG@1^,O_VDN8I5!9#NQ+/\**\@LU*;&amp;Q21,)3Y,32&gt;D.*1&quot;&quot;/
+MCVN:TFQ@*=KH=R7+P=G,OML]C9=@&gt;C0-;GE*2RMJ&lt;\9&#039;*)9&gt;NOW&quot;-5@BD,:D
+M1MX&gt;.3L%_=G$G5V636/Y%1?&amp;4I/&amp;H/S2&#039;(G%;27Y&quot;JC%F[T02B*08%93*)- 
+MH441$AZ\%&quot;U$_DN[H 3C1M-T&gt;:E=&amp;V&lt;[#&quot;U#FMC:LS475Q*!9)&gt;@;#)($6IL
+M6Y&gt;FFJOG5TL&amp;!&quot;0E[E9:JRE2LZEO5PJJC90XN59B278[D5-6FVU1)A&amp;TC]-W
+MMB9%&amp;5N&amp;PMB(V_JS=&amp;(8ZMDJBN.7I$ :&amp;C^QHU-&gt;20;&quot;(/YJ2J1^ (&#039;22UE*
+M._-D-^%T3F^:5YO3MS,T)S!44:H8C3MUQ E!QJT(A#IW?&amp;YE?]KES5R632J6
+MA2 Q2K2&gt;TC8&quot;;YLD\&gt;FDJ6,;&gt;7XT3@;2F #;:IT[^$@P=FU@MI9?M:C^TFF=
+MU&amp;TR1.L2Y[A\[&quot;S8=%HWG3.=3 82&#039;($SJ#1M !U0\CZ?#B)+KSN6BFU:X6M!
+M9ZOE/!2))TEK_YEVE&amp;0@N64^3(B5C46*EZA(.5\PJT [K&#039;&#039;S4L_SE YJH382
+M:^.VRB492&#039;;5@\85 [#*SXUB&quot;L4C&amp;QQVYJ&amp;6M#2+.[W4%HK;,[T05\4QBPF*
+MU-I&quot;?\*[.;&amp;2IA44;K^\ !;&lt;R;$-+C+G&amp;B&lt;P&amp;D8H&#039;*1YR)TC&amp;)Y#2Q+.I ?Q
+MK*C&lt;4F.3-7?U8*EYQ](XA!&amp;-4&quot;#*FJH0/\4YEM54C*%!H$FOD?Q^ -$4(RJS
+M,;2;I5.]6-%D2R70&quot;1_E\=Y$7&lt;/=N&gt;CPIJ3VD4QP4\FB*@5=7:&quot;NU+0VZ.V1
+M9%$KE&#039; QA,1QN$WU9[F+8&gt;(EJFW&gt;F1 DNZR!8RIFL[.&quot;=UKR KB3Y&#039;*Y?&lt;LE
+MFDSJ;:X0&gt;Z,06980M5SXP7S;KR&gt;]==L9L&quot;R(6ZT39 K:KNMZP4&amp;/;+Z95.*G
+M4-O6N! $W$?@&#039; ++MFPA*0CS&quot;EBY27&#039;&#039;:^B2XO5P8PGT]3@OCD;&lt;]*:VN;S 
+MER8,/CYN+X23@C1VZ0@2MXF4F[Q3O=Q_E3\Y@&gt;85@W&quot;7;\\HJ!!:3UIJ_[6D
+M(/E9KX#U5M.RX(]:&quot;=O=]:2Q;%EQ^RC%&amp;W)HWQ0/OH;.%\;.,H2D(-F[($I:
+MNMD*(J:D3?=Z)QFY&quot;DWPN2ZH&lt;%$YB&quot;KI7&quot;&amp;39YV^Q/=IA&quot;)%QWC?#&quot;N&amp;Z8[W
+M?/=5EDTHN!QAM!7$\=*CP7=4M*?U3&#039;*0&#039;&quot;M9&gt;+;XZ!3?%-&gt;PSO34MNB/Y9&gt;M
+MJ$OA  ;?\27AQF[BF#C[.1-KY(F2A2IIYBILW+T&gt;.PD7*(OY&#039;B*:=M%&gt;*4.-
+M%&quot;*=XR$I0/*3&#039;DX-XH@(V0H,8&#039;HSMKYGP;Y:T2L.D9&amp;#&quot;!/GC(82@V3G+4KN
+MDJJVQH&amp;[-NEN+]!!&lt;H?D1H6-HT:&amp;)1GGNF7RF[*N@HMXFAN[.\Y.E8F3O3GP
+M\V7&#039;O!Z-)_C3%2SB$);/_&lt;&#039;D(*RD%XI%I3DZQ:F0=?NF;&gt;#/LDELZ+FS&amp;Z[.
+M/63RO(&quot;?&quot;D2W*+GS#5FX@*7OW[Q-[WR8%TU9=+Y/1#]_&#039;I0&lt;I#%A89?9EMP!
+MI!?-U06&gt;&lt;MXR&gt;*KGVZ2E#L^6&#039;&quot;0_C=,876FE=M-4)C_=@^-=6[)LNJ ;KF&#039;R
+MXN1$AQ])&lt;0?F&gt;&gt;A(&quot;SRWFQ+?PZ&quot;,+VWR!3O!R7&#039;%-#0 487E3@Z9 N1$R5*T
+M@F&amp;V%A-U4YO=]&#039;N*Y$]8FN4)@GE[KM.P(P4(%&quot;DZ;Z^;*V22/KEO\R\ 9;.:
+MI;C&#039;.^L^.0A46YZE@&amp;V99JLGT28VU=LCR;(CRVLMP:70R(X2&gt;7O47/&#039;U5],[
+MT8]+&lt;K-K/TD*D/PDCJ&quot;4YEXR&amp;N%XL_G!WG@G!4AVEF]=PKW\)M\19QJ%C0SE
+M&gt;R%I;H&quot;_C!V)1@6P&quot;5&amp;$Y\2T0_E&gt;20J0W$FK6,#%3,HC0C1.L&gt;8&#039;&gt;R_--!J!
+M^ N%O!N&#039;+0&#039;7KDSEFS&gt;QW.I&quot;$H. 2S^^RZ(I7;3=DD&lt;NTSNS_B]OHJ312&amp;,7
+MAJV&quot;(&lt;6;T&amp;A]SYM?_S&lt;W4=)$K?RLA4M_M-\RVB&lt;&amp;C;4^,=!_69!&amp;(Q&quot;VP+0*
+MW+2BRUBA2BEN6IO8C:0&quot;@4Y:+_+&lt;3EN2:5RG&gt;-.#O-=A*I&quot;3)0V:Q$(S;.$Z
+MB61J \V)J4 8)D2OX#;WN],N1&amp;7\5*^/+H&amp;D RD12-O6+8,VBO1\!IQ 4H$T
+MQG4+0=HFV;CI5.O]#+A[20&lt;R&quot;3[&quot;083F-CYH%(O&#039;!U&lt;!IP+)WP0)T=/T^ H]
+M C%!)?L&#039;9UNI0*B0MXI:^P5Z.-&gt;T^M(G=I9T(&#039;=9EJ)9A;;M872AIU9:6O^7
+M-TE2@62.Z[I6C.8/_#H\O&#039;S!A)PX,-M*![)JX6BFT&#039;[Q)U[&lt;37%K0&amp;U).I&quot;3
+M6&amp;QYFF*V@^!4:&#039;&quot;VE0Z$67JA +;5!D+97?&lt;&amp;5@*G!M%H&lt;3&lt;J45 C.)XWK-*7
+M&gt;GR W4I*$ \Y&quot;GJSUXWBKZE==F1 )7!*$#XU;5Y,$HVW&lt;,EGO \W!&gt;LDZ4#&amp;
+M)BQ%M[365HYXZXM9\&#039;JR&gt;RNYI /)3^C8D2@F7[R/ME!A4M&amp;LV&lt;&#039;85CJ08+^F
+MT$XZVI8089!MZ8,J4U*&quot;3$/\]:QH^:W] @G([JN90=P//QU(]HB&amp;*E%:(&#039;&#039;@
+MDDQKUT#*E&#039;0@4&amp;QA)FGKK&amp;(.2;6L@=A62I&quot;3N$\WKN/)W2,.$]P]]?4+&amp;Y&amp;4
+M( RO&amp;0&quot;0MAL&#039;\(X7KU(K#:),20N&quot;F\&quot;MLUK$&quot; 0#UR!L*R7(/@A9!;VUV!Y5
+M*6A:AFX-HDQ)&quot;0(9T8!2WHANX&quot;*T]N/B,EQI &quot;I)&quot;S*-48O&quot;%K^!2*OEE23%
+M6GVFY!&#039;(B-CL:LWRM^V.+7CSTLG^KXRF!,DL8_Q5%-ZT(T@K&lt;H&amp;7]&#039;)+&lt;Y&gt;2
+M%@0OI/8T76J&amp;WWA.A]O^#&gt;OMSQB-8&quot;+AG16_QX[: L&#039;A:?\[WO0@!C8D\3Q&gt;
+M:$N*N%M([WO&#039;FQ9D7XDN)C)BBOAV&lt;[3YWC&quot;5V[-]KE/2@C1*4*/P;70\APBM
+MR[D@NRBE?B]6IP7)3V*OJQC10%YH&amp;I=!BR6Z=KRGA[F^I 7)XDTUBLWI0W27
+M4GXG7+R011_O&lt;U&gt;2%B0SK^ 5PXK1=L6KT/07O&amp;9TM8=&#039;V86D!EFE2Y_Q.GVA
+MH^C3O3S,]24U&quot;*.;-G2&amp;0%&#039;ZG-PW  )99&quot;T*T%*_-PNE!MFGM]]S^3R2Y7Y/
+M(%*#-,;U-;P#9  ]8FJ0[+2V!HAD+0V@:4\-DF$EHRT3MC&quot;\$P-9(DD/DF&amp;S
+MNB2=JXQYEA_,O]W&lt; $@F8/-X;_)HKF58DR?P&#039;PP-:,_ 1D#PGD8[V,GEY&gt;43
+M)\^P?4ENM-9[V0C(V3+@?]C&gt;.Y!8GE&#039;+TT,H%T&amp;&amp;32Z&quot;#)M&lt;!!DV^:H!^3]L
+35A4[&amp;8 I@     !)14Y$KD)@@@  
+</UUENCODE>
+		</IMAGE>
+		<IMAGE id='28' type='PNG'>
+			<UUENCODE size='9227'>
+MB5!.1PT*&amp;@H    -24A$4@   ,@   #(&quot; ,   &quot;:AEZL   # %!,5$5##P/_
+M______#O\/^0#P]/(!+_\/__\/#_[__@___O___P__^5;T\T%!#P\/_@\/^0
+M(1]1-2^OCX: &#039;Q _%A!O&#039;Q!?%1!O$!&quot;/&#039;Q T&#039;Q]/+Q^40#]?3T&quot;/&#039;Q]6+Q^ 
+M&#039;Q]$&#039;Q]@(&quot;]/+R&quot;/+R!@,&quot;!1/S&quot;?7T]?3T^/,&quot;!0,&quot;!P,!]_,!]@,!]?,&quot;]P
+M,&quot;]?,!]@/R!?0#]O/R!P/S]P/R!P0&quot;]O0#]_0&quot;&quot; 0#^00&quot;^/0#]O0&quot;^ 3S]@
+M0#]_,#^/,#]P0#^00#]00#^ ,#^/0$!_7T!_8%!@0$!_0$!_/T&quot;//T&quot; 0$!P
+M0$&quot;/0$^0;U!O7U&quot;/8%&quot;/8$&quot;64E&amp; 8%!O8%^?;V]P7U^/;T^/8$^ 8%]O7U]P
+M8&amp;&quot;07U^08&amp;^08&amp;!_8&amp;&quot;/8%]_8%^ 8&amp;!P8%^/;U]_;U^ ;U]P;V^/#P:#(!2O
+M&lt;%!_&#039;Q&quot;&#039;,&quot;_O[^&quot;/$!&quot; $!!P$!!_&#039;Q^&quot;(A^%3S^/+Q&quot;/&#039;R&quot;/+Q]_,&quot;&quot;/,S&quot;$
+M3T]D,!]O,!^ /S2/,#^0/S]_0&quot;^&quot;7T&quot; 8$^ /T&quot;/7U&quot; 7U^/;U&quot; ;U&quot;/&lt;%]_
+M;V!_&lt;&amp;]_;V^/&lt;%&quot;0;V^/;V^0;V&quot; ;V&quot; ;V^/;V&quot; &lt;&amp;&quot;/&lt;&amp;&quot;0?V&quot;0&lt;&amp;&quot;$&lt;F^&amp;
+M#P.??U^0?V^0&lt;&#039;&quot;$?W!_#P*?;V)_,&quot;^ #Q&quot; +R&quot; &#039;R&quot; 0#!R/S!_5$]_7U&quot;D
+M=6^??U^G?V^/@&#039;^0@(&quot;P@&amp;&quot;O?W^0@&#039;^@@&amp;]O#P1T(!!V+R_?O[9_$!!_#Q!P
+M+Q]U3S]_+R!P+Q5_&#039;R!U3T]_0#]_/S]_7S]_8$^_@&amp;&quot;/CW^O@&amp;^O@&amp;&quot;@@(&quot;@
+M@&amp;&quot;P@&amp;^OCV&quot;O@&amp;^O@&#039;^?@&#039;_ @&#039;^0@&#039;&quot;O@&#039;&quot;@@&#039;&quot;P@&#039;^P@&#039;&quot;@@&#039;^?@&#039;&quot;PCW!F
+M(!1P&#039;Q!P/R]O+R_/I9]P&#039;Q]P3S]O3S]O,&quot;!P4%!P,#!P7U#O[^_OTL^_CW&quot;B
+MCW6PCX&quot;OCW^_CW^@CW^_CV^_CW^PCV^_DG&gt;?$@^0)!2?;U&amp;C)Q^4,&quot;3/E(]@
+M+Q^B-C&quot;08$1O3S!O3T!O&#039;Q]D,!]C,3&quot;@8$^0;T]D4$]O/S^O7U^?85__YM^$
+MTE9P    #W1%6&#039;14:71L90!-;VYA($QI&lt;V&amp;UY#JY    %W1%6&#039;1!=71H;W( 
+M3&amp;5O;F%R9&amp;\@1&amp;%6:6YC:;J4WJ     @&gt;E18=$1E&lt;V-R:7!T:6]N  !XG+/)
+MR&lt;]+5RA)K2BQ P 8)000FW$%F   ( !)1$%4&gt;)SMG0U\&amp;^=YV($+P-M$1H, 
+MV46)4.B,B%/:6&#039;5DN]/LN+53)_.F#66D.047+Y4=1&lt;,-=Z1YR&quot;30H5)H&quot;5-W
+M:YQD*0VZQ6%,*)VPQ1,.I_%CDKU-6K1X;1Q_@-6)4NT[QTX&lt;$9\$UUF5*V#/
+M\]X!)!6+Q/&#039;;^^4Q&quot;5+ZR&lt;#]\7R_[_,&gt;+-;_3\2RWA&gt;P4O(+D(TFOP#9:/(+
+MD(TFC8%L;B8_FIM7\U*6)XN&quot;P+5_ +[5S&lt;W-&amp;YFC 9!FZWNH0E57YW*6+HN;
+M%IJ5&lt;=T43=.K?4%+E49\!&quot;EHF@(.E:*HU;ZB)4HC()3*&lt;4! J=4J1QL@[T/3
+MHBA.=CIE65:(:-R&amp;8R&quot;R*(A*5&gt;5__XGM&#039;_K6U_;U&quot;Z(P(#IE304K6XN+,R,W
+M!8% U8SJ4*N*^*F7_^K2Z.3D9#@:\(N#0E*I D@3L:\-HY[W!-$]&amp;J.5E=)*
+M&#039;?N&gt;D9U7^P,S,X% ;[0EG\^#5M;V*AN014 H[:V*\*)8E4&lt;%0N /P&amp;-2&amp;&#039;#*
+M&amp;T85AMS&lt;M,B7]M.!7D%\694O^5L&amp;!\\E17]+7DPF15&#039;4*#2KC9/L;^[L*AJ6
+M&lt;CI9Z;TD5K5]PF!R4 20&lt;  HA.2+3HS([PL0#DQ,^_8^01 NO5C5?GPB&gt;4X4
+MSR6%T=$H\&quot;1_MD^N4M3&amp;X5@ 9#. R*&lt;/B()PS%G5 .*&lt;&gt;.[L2&gt;&#039;8Z*C_W%DQ
+MV?%C(-E =&gt;1&quot;&gt;82N*I_L]4&gt;%?6]QU9-GKUPY=^YL4CAV[)-A_Y6W!\\*4]S[
+MP[1 (]57#D1G9CH&amp;_D#F3O[XRAM7$&amp;3?L?]S;SC_/7&#039;PU1\H%-K?!I&amp;;@S1!
+M%&#039;:*UZ*#_D]^399/3EVY&lt;AY .D8G1\/AF7\E#B8AFVR@&quot;G*A\$M1RDEQ9M#?
+M,&gt;!\Z]72U-MOGW_CA\+H)2#QM @0A5]Q:ANG&amp;%X01%5^&lt;&#039;8FGS^;%(].E4JE
+M*:%2Z0U?N.-&quot;&gt;MB3%_+)Y&quot;NRNF%(;FY:0%)5A*F9F7Q2_*&amp;0+)644ONNZ&gt;GI
+MUNF/;K/?U2Y&quot;7GQQ QG7@B&quot;4TC\UU=XN&quot;&quot;&lt;A$;;\=W%XF]UNL=CA&lt;?KW 4](
+M#C@WC+&lt;O4/TV \A_.U$2PWE!\/LM]O%?!0*=9-NVZ2C\K2B\J&amp;R4FFL!&#039;VE6
+M*7DR&gt;F4J/U.!]![=U8H86^WV#+!D+@]7H.1*GCVI&lt;1NC-5FHUK*J\NB!CE(I
+M6A&amp;3%&gt;&amp;&#039;R0/&#039;/P8D&amp;&lt;NOI:21\&gt;FPD!3$&lt;Z*S:J6)_M8Y-2X$0JGR7^X_&gt;E(Y
+M&amp;_8&#039;DAU.K5K5G._:+?:,)%E^;7JX8T 0!P??@L@%))LV.,CKG1W^J9)_)@&quot;&gt;
+MC54B+6^WC%A2XZE,!DC$EI;!@1]KE*Z2-;SJ]Y %06CMJYT=0H&lt;R%?4&#039;A-X7
+MX;VWTB]OM5M2(T!RZS;H5*Z)PC/0^*[A!=],%BH:*4K[O&lt;Y&gt;H1&gt;\Q.\7COZ!
+MHE*JJG7:+;]J&amp;0&amp;/MX&gt;30@6:D[=DZ.S7G65!$&quot;OWC4ZAMR*47IT!DGT&quot;)G):
+M.VZY/)Y)6&gt;SV82&#039;I%\2DX-0VP KJ(B#??%3H[&gt;A]24E&amp; _X#!\&#039;?P1_DL/VN
+MC&quot;65L6R#5)F$FNLD&amp;-&gt;&amp;UHAJY9Y^M/.I_14(P0&amp;Q0SBP3^&amp;P 9:?F,[84^,6
+MRW ^^=)+;TR=_:%&lt;-?QD_3S^IB&quot;;2=&gt;NO-YY_*FPX&quot;\E_?Y _Q]_#4L26GW9
+M,CV&gt;LF0L7TK^Y*6I&#039;YQ_8^HMN:JBFZ@;$,1*XI;\Y&amp;.=G&lt;&gt;%P/FI0$ 4A8$_
+M=H+#4UK8 BH9R4Q77OK)&amp;V^_/?4JM&quot;95XO#KYRP+@E!6S?F9QSKW=P0JI7,!
+MT(F ?@()4/FPW9ZR9\8__D;I_-MO7X&amp;^_D7,,O _K)NO+-3J-L/;*W_FT6]U
+M[O/WOEH2/QWP]PL&#039;3O]O656K;X)*,IGQWW]CZOS;WQO,0_ 2,:2M8T99(&quot;$V
+M8[G%_&gt;PSW^C&lt;ARHI06&lt;2 $&lt;Y]HQ&lt;I;7M=OO(^#M?$L]_[\JY?%Z$0O\515O/
+M?+* 1IJMFX%$&gt;_KSG9V]@4_G%3&amp;:G\E?:Q$G!46CE:V6\?%Q&gt;_[\N2OGR-*=
+M,/ ,.LH&amp;!#&amp;$5CY_\&amp;!&#039;(!!]8VHFW))O^?2YWDM?!Y(*%(]/V#WGS_VO[P\F
+M(0[TB^*W?RJOW^;)0N$78REMU?XMI/&gt;C@6A&gt;.1_-!ZZUS/@&#039;#OZE(&amp;MIN^7O
+MOQ/^7O+[@R&lt;&amp;H&gt;\]&quot;P[_S+&gt;=VGJI9/&amp;-&#039;JO\Y.M0J$&quot;%6$J&amp;1=$/TM&#039;142F)
+M]FG[E]KS29 3(A&#039;P&gt;/$&#039;:%X4U:S6R^$U*HL7WWI3U?_TV&lt;&gt;^U=E1$:9&gt;#0@M
+M&quot;&#039;)M!AR_?==?9.SMH@%R0CQ!OD2H5]0J13HM8\I@M1%T:60S5&#039;ORF\?W/X7%
+M(]$&#039;RLQ,=&quot;8:O7NZ781:2]?&#039;&quot;2*B. #F!7EQK7-\ Z9%6YV_=[SS0&amp;]&#039;QT]&gt;
+M]5_+Y_-^XSL_,XJ;/TG1,&quot;WXB5LG [C&lt;M&gt;9QN*%]=BB&quot;C^_;O[\C6?(&#039;&quot; &amp;A
+MP/^@^)T%(0H1DF*_J&amp;BX(T^O)4P#/H+^_ECG\0/[.SJF&quot;$@+[L+Y(:?,7!L4
+M!T7&quot;43,L\?M^_\F! TY&quot;LI9J:4 CT-_2SL&lt;Z]P&amp;(H(.(+7GP$]&#039;_Z1:1.&#039;C=
+M1?&quot;7P62+7T@F94#12^*UD45!]&quot;O1/O/UTYW[^H\*4#K60*[Y Q&quot;OT)I:6NHL
+MX@GX0SXO&quot;/NA8JFN8:9OQ$=H %&amp;PY&quot;(*F0G,^ $$,LHU&gt;&amp;B!0-;B/QKPM[0(
+MA*8%!&amp;HO03CP&quot;J24*MDRW=R\^D&amp;LP:$:6OO31[^Q[Z@@^E$7+9@7\T&quot;%/_M_
+M-Q!]/@HHNJ^T$ $08&gt; 5A6R8&lt;ARIHS&lt; &quot;!&#039;ER2\&lt;/&quot;J*,\2T1.+N&lt;.W^ %1A
+MX4NCX&gt;&gt;C_A.0VD_H(&#039;G,\P,&#039;O^V4R33.6F3%QD&quot;:H)YW_L[! P&#039;!/V-D$5&#039;,
+MPZ\SX6@T&gt;FDR_$D $5N(J&gt;DJ$6&lt;@#A\\^%-%(UI9_5&amp;/!F&lt;:H824/__Z@:,(
+M@GE=SR05  D3D&amp;@T@ D?3$T0=!#X&#039;&lt;WK*:=6E3&amp;IKK8T;%H4Y7Q]GW&quot;67.\U
+M/2NVMU?:H^&#039;H\Y&lt;F+ST?!1N#:Z^#M)R ((R2]VR[JM!-J[Z/TOBX+*7]^6DA
+M22HM([&gt;W@WC 0R;OW7+O)*BFY018%EX\ ?$#2*4B1*3T:W&gt;*6E/3*D*@- [&quot;
+M4&lt;KI QWB+ &lt;!B89&#039;)^^^X]=__8Y[[WU&gt;@(LG($#R[WY73 +)WL2$Q&quot;;25Q^6
+M5YND&lt;1#5RKVR3Q0#,W602KX2&#039;;[\\=&amp;[/[JM]&gt;YM]T9Q&quot;0) (/8.@H!553RL
+MQ/.2)(V_=J&gt;B67&amp;R\P/ZDU&#039;&amp;&lt;.3*-2NF0)0#D!(K&gt;2%?5TMT-&#039;Q7ZZ[VF;OM
+MNZ+0\?J111#Z442A\@#+,*&amp;0A&quot;3IZ9+&amp;S0G#M2G/=0#!K&quot;@.!&quot;I^ *E+-+SK
+M2W&lt;-1WO!YW&amp;=&amp;ZIXW&lt;4%R&quot;F5&lt;(+QGHK&#039;7&quot;X@R60R_P)GO%:M9#$!0EM5YT _
+MDLS*3&#039;3T\JZ_N#L\ VE$0(8 ((&quot;^^@-&quot;)7Q8\C&#039;=+I?+Z_4R4N;(W_T;I8K!
+M&quot;UO&#039;E4_UID H94 ,!.IQ&quot;Q]GVH?OVO717&lt;-W3/8* O;R &lt;B0$(?SGO;PR(0K
+MYW&quot;#N+P\D*0O7! @/4+OK*[&quot;EJ,9$(J2X6*1HX(H?I(6H7V/WGW&#039;&#039;7=&lt;&amp;@:Y
+M?_18I3T&lt;#&lt;S,&gt;#QA5HJ[W4&#039;@Z.X&amp;DA[I8CJ2&quot;2MD5F)]09JLJC8@]/OKJ41_
+M;($\7QF]-#!LM[&gt;VDOWKR^EH7O#\ ][%Y()Q]!$@&lt;?%&gt;\)0$.U+&quot;#;Q5V&#039;(T
+M=7Y$50&gt;$C@KA$&amp;M.T@[?HM _,-FZM?4=^Z_8+;K86;98L 6#MGC&lt;!;8%*$QH
+M@AF2QCXLRG.ZK97S?5,@- 7!%9T$RGDA3YJK?+LP$Q6%8Z?OVW+[?5=!(;=N
+MW4I()$&gt;Y7 @&amp;P;1&lt;*.CT)*5&lt;OAQ6-)IN0JVHUI4;^#*ID5&lt;&amp;H$&lt;4L!FIQ2U/
+M&quot;\2H3T&#039;![GS]/K2L6T$;=@)2*!2RV1QR&amp;# NAI&amp;DPV.9&quot;TFH6$@HYE:N!#.G
+M$?6GZ&quot;3B&#039;#?!]2#QZ*4_EYV/?FQ[:^MMMVTU;(MG&lt;ED@R;F)$(Y0&quot;% F&amp;&#039;8\
+M_8C&quot;-4&#039;L4%&lt;P#)L&quot;@0KX&amp;5TCI$5$D&amp;OY0.#HZ2\X9&gt;4/W]W&gt;&gt;OO5A^Y_APS&gt;
+M6&#039;PYF\V6S05S!&quot;4&amp;+N\B#_PI/L+^WSU.[%/6S;0@D3QS(-&quot;/2A%UG9 J\6M/
+M*[(L_^F&#039;MFSYC0M7/_&gt;5R:L? 9(AAP-\/0@@ (1A&amp;$!0+;PK%&gt;*E\9U[&lt;6-(
+M71_3:J)H!7RDW]_?7ULZO&gt;8/&quot;!T?^A0HY&#039;]\Z!-;MFRQV^_\F_NN;G_BPY?Y
+M7!9 &amp;,:F2]V^4EXF=&quot;K$C_5=**D&lt;O7*=HQF0S59:&#039;ACHZ/#/RC4H2R:W?P$/
+MEOSAY[&gt;WVBWVK5M_&gt;=N6+5&lt;CC*, E\\PP2R*CM(&amp;,(#!,^#UF;X+3VGT.FB$
+M&#039;,.@9%$T^EPLXR&amp;K^X7&gt;CVSYS[+&amp;*?_LW2W;MFQMW6;_H+WU(^\D6$&lt;A:\L9
+M&#039;%E=*P@20JW$7,S0V,X+QQ1UQ;J4QD&#039;^#J!4-4&#039;PA/]:N-Y^_?IU(7\=FEWA
+M=OO&#039;_J.B./_EWWM]^^T6R_0[K=M:02VWCO$.E)R-@ 0Q-QKV%2-.&#039;WI&lt;BJ1W
+MXED!8EZ&amp;B2U]&gt;[MA$!S(HE5-^.LP&amp;PY&#039;6#;R0!BDO=+[A&#039;T[.KORV7]H1],B
+M8W86RZUC#,\X&lt;KF&lt;@W $@\A&quot;O#\6(R1\2&amp;+93*0BX[$&#039;8VUB.&gt;N2)DRK&amp;&lt;&gt;U
+M/.SAD1&#039;,T&quot; C8X&lt;C]XQ86O]*D37YZ4_&lt;]L&#039;6:8B[M]X**)G,X2%PA=PA)@?1
+MRT8(4&quot;&lt;V&amp;W@- 6&#039;XGHO8IDR2VKY&amp;LB8@N&quot;24&#039; &amp; B9#$2ZD)TOJ-).SVVY_^
+MYC_?_LN67]GV3CT=6FX]S//,%P]]$6!R&amp;(%U$,CT.09&quot;,8&quot;$O-[01&gt;CG+VP3
+M-&quot;B^N.46D8V#0+?-?&gt;ZU#&#039;^(#X5(M\23VHD%+6PE7Q\D-J5+)C/&quot;&#039;X+@]$4@
+MT5D0!*TLIV=(5^H4P_- ,I[.C&amp;(9&quot;5T*^L&gt;2G=],STYK=V828# D&#039;[1YH&gt;3@
+M^:$,%E&gt;W;7GWR:\_]B=_]*W]^R?O?Z&lt;5,_O(&quot;(+D&quot;@9(-EL+7Z@?1(%ZF \]
+M&#039;F*D],A5)T&lt;&amp;638OE&lt;(42+.5DQ]*1&#039;B7(:= 0&quot;M2!M1A;_TL1T-6J%8U39,5
+MYXL=HX&gt;&#039;?(&quot;1S3*&#039;9D%L&lt;R3GCI]R&gt;7O P*1(WVW&#039;Y:IU&amp;&gt;HP X)U4&gt;DA2 ^D
+M*$\9O7@H-&#039;(8NX_?T50K1X%UX.9T%7CD,^P0!&amp;! 0 Q;=DXZL9&amp;?&lt;8S$7B\6
+M+=!PG?D-65L&amp;A1D0C&quot;S.YR(^AROEXE,IK&amp;7!LKP38].65ON[Z*]DL0HWIE7&lt;
+MJWHSG(&#039;XZF%X*.?=-JSH\?K=1O2&quot;WZ&#039; !Q0&amp;*C&quot;(&amp;F,[GRM5Y[Z8:=\W ]*$
+M(#Y7G$&quot; ]$@]H8GO?GCZ(U^0:QF@ML&amp;.D5H1]UQ(LRS/%SSE0K:@@[AM1OC*
+M%FQ=;GBN6!R5P@QE_JE3HW%?F^1&amp;\YVP&amp;1&quot;ZE&amp;9]/IY 3$Q,2!+^_/C5)T9E
+M4I&#039;?^*]I6E/^Z)^D)=;C&lt;6!O4BCD2&quot;BN@T!-&#039;(]!*^QRM[6UL=*%&quot;GD&gt;=)0E
+M)/C&amp;PZ^5HDM] *(O&#039;J8F)@C.+7V3]RFJ6BLQYKR12$)SLG/O,. [VG(&amp;2!:+
+M8@*&quot;U@4@(1=IO=K8],[C9(28K!*OGD;PG*@&quot;((&lt;.Z2 2Z*2G)W3+U&gt;,O5ZFY
+M1:P1&gt;HPW5:7E9WO3&amp;;:&lt;,R1+2. !4DHA%V1()^SNZN[VLNS.^U^0Z:8F;BEG
+M@$V&quot;)!P.S&quot;-2: ) (,&amp;&#039;;GDH^1[GDPP3)T-/%&quot;&lt;+SXU)/HQ@6=WI2?D%&quot;BGD
+MW+FV-DR/9)$%VJTCQQ2MR=JTA&#039;VA1D&#039;0@SD=!!.9+EX^=/$AI0D74]7Y_Q;^
+M=:U&quot;IZR4I@CC+( 4&quot;G- 2&quot;?LAE*L#8)7/)[B?1.IBVSZM%-K6DT0JP%2+!,0
+ML*Q0#UB6-W-!HV_H\XS!(+@8&lt;D%DF$,K1&lt;!19D%LI!0&amp;(\MF&#039;0YW=RP6/Y1*
+M\4,2P_[FU=.*9C6_5V&gt;J1)&#039;OC_@\/@;S8 @YH&#039;:\^)K&quot;-&gt;*9E&quot;RD&amp;2,*8\$%
+MCJ__:H-.,AC&#039;EMZ% 9WY3H1-X^PZKA!#4VKH=?$UUD9 ]*?8#!?S4(3U^/@Y
+M(#VW]&quot;DJ:FOQZD(K&#039;&gt;GQP$7C&amp;A%!F9?M;5U0*WA[&gt;KQM##^V\QC.LEC5.1&gt;_
+MZ&#039;O5. A&gt;2V\$$TD-!#/B+:\I=!UDH7=-I3AE[YBO7$9=%&#039;*SSH*^4G XNG2=
+MA/A3H;%,YD[!V IN.&#039;J9 SD&amp;F=W&#039;Z[ZN@_Q2VJE:&amp;YGZHSA5U9+?&#039;2LZB,\7
+MYB@$DTJ.=,%ZJI78]&#039;CF&#039;RF&lt;U4PZ,052_4H=I &gt;_4&quot;,CSZJ-%1041U4YYS%(
+M*9Y9#.A32 V9Q267[NYN5RB5R4R$&amp;):Y\&amp;\$62]95AZ$JC[&quot;S@&lt;!&#039;QE_&amp; ]1
+M+_XD&gt;#R^6N4TX&lt;&amp;+C,=1J#E]+DA:&gt;AOD&gt;5L75&quot;PN:&#039;^A;_O7GG)DN!&lt;2_6J 
+M-%/&lt;YXB/&amp;&amp;E$CUKCE6K# XQ8YFO./0F6,7RD8%3X0&lt;/IW&lt;&amp;8E$HQN;:N[E3D
+MMRX\]&amp;;CAX%-@:A/18A*ZB ,?S$3KM;C[T(\.$&gt;L0H4/07QOFBT&#039;:R&quot;U_(@L
+M4%#&amp;XPP3CW=U_0&gt;&#039;5TJGMSVBT$V+/G7C(+6Y5_6%&quot;%MTU+U=ZL&amp;::Z_&lt;D&amp;E9
+MZ]=#:S_J&amp;RI#N8(%BSL[1_3EHGB0%)%&gt;1AI+IY\3M&quot;9&lt;M&gt;?411S1&#039;(AS#L@$
+M@##\+TEA65WL16X0*.\]M[&quot;,NU&quot;PS2F^ZB3&amp;[I#7*S$,R[[62\ZH-6_:A GR
+MYL7+,D&amp;8&quot;6DW&#039;M=M&#039; 3WJ2A5V9N)%)DV0&quot;G,0\&amp;:!4%B&amp;(E=WC:&gt;C_SFG8)&amp;
+M&lt;2#DIE(W3;SF0$H&amp;B-&lt;P+1Y ^IPF09IQ&amp;4M[=@\$8DB,V3I)T&#039;@ #K&quot;O&gt;&quot;C4
+MC1T7*R6&amp;1TNX&#039;F!=\)Y8C8-@0:M$AM@BI&#039;:^AX# U\1$WULJ96+C&quot;6\&lt;@]FA
+M6@JGV6*!@.@H-1!LB$D##&amp;FEK2U59,=V#@OZTM&lt;&quot;SVL2Y$@&quot;5 (@J!*I!ZSK
+M\8F^I&quot;D0&#039;06K8WDOZ(3)9N&lt;G&gt;CT,=\5)DP+B2;DB[-B1,XJV&lt;$%L#D2^AV6+
+M&#039;@!!+Y&amp;DB1Y^0HH(Y@XDT&gt;&quot;TI)95H;;GRX7LC16+7D-BUT@VAN#;X6$C_UB 
+MZGZ!&amp;M@DR(/H)&#039;S(  E).)G1H9EQ$MIJ=&quot;R04:HE3Z+H&lt;#CJ)%BNN-T&amp;&quot;@X;
+MQ&amp;+8&quot;&#039;&gt;W&gt;3R&gt;2&quot;]47]1- Z2)E49P4FU/8F@&#039;DH1&lt;)&quot;&amp;&quot;I Y79&#039;H)TTID&gt;YI6
+MGLI$(CX&#039;%)+@&#039;;6R1&gt;?H&quot;M9B&lt;9&gt;[S&gt;&amp; ECY=D;FJ^K?QM7X^&gt;#4&amp;@K:#.U9:
+M+SNTPU%+[2@ TBLO[9 %\5W-N7N,&#039;7*4;87@; S6W:1.$NQR.W+=/,N.W?,S
+MC6JNO0]+!@&amp;E:H_T&#039;=[A.S0+TB-E#H&gt;5Y9P6X4I].SV^U+P8#&amp;VCK;8JJ8.T
+MM7E&lt;$T.)L7LJ,CK]&gt;SBE.1&quot;N&lt;H3= 7F$(;9%AN,0A%[*)!S9&lt;%-QD:6RDRWG
+M:C&amp;X1C*[/00@X/IN+Z3YQ%@BK7&quot;&lt;]A[OG&quot;D0JBI$6-0(KW=S&quot;#)Q^..EY8Q:
+MJU152QZ)E.=ED[I]U4&quot;ZNKH9!]\C)5@V&lt;EVFWV,WV!P()[ L^ C#SR[_ID;.
+M.)&lt;QGJSBX1^H&amp;&quot;*XJCJW[,H:H4O&#039;Z.IRN+M=O&amp;^(+WN8!TOJ&lt;GQD,X#0R&lt;CA
+M&#039;&lt;4=-8409Q\Y\\)2MF+K:;H9NV Y[/$=*F9O$ ?JQ.TF*,&amp;NG*/-Y&gt;6[&#039;65V
+MN&quot;+_7-AJ&#039;$3%W= ?&#039;1E&quot;$#W\&gt;LF6:&amp;+W&quot;RJ]1,M2:_&lt;&gt;5*O&quot;=P\7BX4;0!SZ
+MYI:-@&#039;3%NW,.5\[%E-GTWM*-5M!88V7,Z%)4J0_SB(_&#039;E6Q#)9EP&lt;MGS&quot;[@Y
+M5 J/\;.5&lt;*%.@A(DB07$[6(8QNWP&#039;/EMZ%.LT&amp;37&gt;4R&quot;*&#039;V)&#039;44H&amp;^L&lt;H8G4
+M;J&#039;:M&#039;E9F[*8:ZM5Q1,I.^;W)UD&quot;8FP.$9)@G/DBXRA 2W]]_MU^3(- L&gt;4 
+M=Y]-B;?T5;1E#B)#U[0)2.0*Z_&amp;09:\;?;X&gt;B*&amp;!)%NLY;*G3*)7_74; &amp;F&gt;
+M R(#B,-1G)O;,WU?7&gt;;V&#039;P&amp;!\$5K(ALIZXMW/\=2+UB@%&lt;:^LE&quot;.0!6Y:=-2
+M0&lt;ZP.W8XB@[&amp;50&gt;1=AY;[@U!]65O6J6YTI&amp;(@\&amp;EH9M@!,D8&quot;%&amp;9S8.KSDL#
+ML5:U,XD=/@29M2TI/:HL$T1_&amp;:R,Z9+&#039;Y[W14&gt;:;5RT:N#VXU+UDD-T)U(B/
+MG]7(T,X5 =%WJ3BJ=+W(%PHWHA 8PE&amp;GC)&gt;UN=YN8C,4&amp;Y+J*+2(Q1US?&quot;0U
+ME#ZCK,3)HR8]IZC*==:7NY%C5B?E6G7)B-S&lt;LUMF)NC@_^,ZH6IDY^81?F*L
+MSSF[(+3\ &gt;LF68@XB+L39S#&lt;!1S&lt;AG]&amp;?&gt;A_XU-HNG8&lt;Q20(B/H-&quot;%OLW$2&quot;
+M(&quot;^H]7/XRP8!H]?$&quot;#.[ZS!GC 6C%4Y^D3]=U[!J,A-^YX%\/7T#&quot;%3 ?4)U
+MY4#P&#039;G[:GSW@*^:&quot;\V)PP:8O@&lt;5B1JHLT?-V 4R&quot;&lt;&#039;^&quot;&amp;;$X)R%. $AE]O:L
+MRS&lt;MR/(4!\%K?NPJD$0)UA73#:MP7;8N!X1.HFF!0NKE;XJ7(KW:&quot;H)8FSDH
+MO11/N3R/A.QM!V/ZL$$V6&quot;1MZ9RP91;D?_:Q0SYT=M&gt;L1MA&gt;N;IBYRAHLH!7
+MA&gt;&quot;%XSBSUH7MBBT&gt;L^D@;7NKJ(\YT=(D&quot;.74-Q9F0&lt;!&#039;TGL4E5JY\R#-S9O(
+M[L-UUC-?*;98S*:#V,K*C;?H-0EB=&gt;XFIC7;6?$3/=)SSA4],D4J%@XJKR&amp;^
+M4(]9X.FQ6 PP &quot;3&amp;BQ2\&lt;YOG=E&lt;F\PBMI-&#039;9#\UQ$I[O20LW7SA;(@N^G/8S
+M7(FLV5&lt;9&#039; 0C%H#\E^O&lt;S]W%VB0(I41(U&quot;(@I^H@E&gt;I2UN@6$C OXO)2.5@H
+M8W8L9&amp;-Q&amp;Z:06#;ET:S&amp;EOC2\@A67,J18A%!R% C;HA*O)&gt;7]FK4&quot;CJ)08+G
+M,I2]%\L.DN&lt;+,1M$7K&quot;N0BJM-!&amp;&quot;)8-8&quot;0AJQ(&#039;32:=2(5&lt;/.+N+E_;(*P^B
+MZT3&gt;RY)I0E!(%G)(+!9GQDIT4UW_2P&lt;!5T&lt;0I@82!Y#_^MNE%0=!IU-I&lt;!0A
+M/4:B5Q @XMEXR%(R3IW,W_8Q#^+S%&lt;LZ&quot;-B6-Y1BNOGOI)/T2H/4ED6I*D1\
+M3[80S,9CL50P-?*C*MI4DY52U266\&gt;1IP=EK(-WH))#9N]N^,_QP=25!=,LG
+M)^,V 8G2YRNCK^-90-]+5;C^IK]E@,P&gt;+C=Y-(E6^HILL5Q$&#039;XF=TDN44VW&gt;
+M]&quot;,K&gt;5^MVKB755]?H2%X&gt;&lt;N.5&quot;H%141)5T,3WK%;;5XZB%6)&gt;#P &lt;LB%4V\0
+M0^)\Z!3OO;B7+&amp;2ORKTV&lt;%%5%C*)1&#039;K;U8?EN?&lt;C6FIF;R8@&quot;8&lt;#0#!LZ2!&gt;
+MR&quot;321+BT6B&quot;D:^1DYU=/GQ9E;GG[[+-2 R%.$D/O2Y&amp;4.!$1N*;5N&gt;&lt;O63&amp;@
+MU*I67?B&gt;U&gt;9-BVC$5P=Y/!1R\1/IL*;O::VX0#K!#50*.!;\%&quot;V3(%0IX7,X
+MB$88/&quot;P53Z&#039;&#039;NZ2Q,V1M:Q5 -C7KVT&#039;&amp;M,!-JU.S40M ? B&quot;3H*&#039;I&gt;(A*+E&lt;
+MH&lt;QS9&quot;5E59RDN9DB W@+QT6S($[#1QQ$(2   O6CU$&gt;6Y%?CQCID[M_8IUM 
+MS$QB$XWTE8&amp;C7%.(#M)V:B+Q.&lt;ZZ@N&lt;\;WCMYCFW2[R)F .AK4($.?343DX4
+MGCK5[7(S_-C]\FJI1&#039;_YE9C[U9\)&#039;VCZX03Z&gt;MF1,T! (]VQH)L?&amp;U;H5;UI
+MTV+N9Q)$&gt;X3501@&lt;;]5!XO&amp;@FQD9&gt;9.^^3#5&amp;HA)$.ZKLR NXXQG=S 8=$DC
+MPEK&lt;?.KF8NI.-:&quot;17M;AJ8/$\1X;(01Q2^.]W/K=?MEJ[O@&gt;F Z&quot;H$9P&lt;EH&#039;
+M&quot;=5 1M?W\]_,@=#:0P#B06&gt;O@4#4PM7^T/C]*[+=LV1I&#039;&amp;0SCB7)K^$6(B@$
+M32N.DDK%@C9;,&quot;0-OT&quot;MIY,T#D(:?N5!EE@6:H1L(,49&quot;0=UV_C#&quot;0&amp;*B.4&lt;
+M4EV&gt;F .AE-_&quot;FK&#039;H((&gt;@XV3&lt;&amp;$&quot;ZVMJ\_/A7JNK[!Z3$UD!R  (9)):&quot;8AY 
+M7%(F+*_G)P^9 E&#039;I&amp;T&#039; 1^&quot;;@$AGUO6#ATR&quot;/!M!&#039;S%,&quot;UU$%W&gt;;-S22-C?)
+MO,)B$N1ZQ&amp;. N.L@L1J(4+6NGY,T#((++ZI:80T0IA:U$*3;W&gt;9R\9&gt;_LN)+
+MV2;$),C&gt;(8&lt;!@E$K3DCTT5S7T&#039;A86T=O-V-:*J4]R))&amp;-V&gt;8%K$L+!S=;:&#039;0
+MX;#\&#039;B-Z:R4F07:S&#039;KT;&lt;&lt;^:%CG([7:%AO  Q@8&#039;:2:F15%RA&#039;?4069)]&#039;N!
+M#47&gt;7,=/&lt;FX8A&#039;QBI&lt;SRQ$=R=6&lt;GB_TZ&quot;),0Z/7+)(V#X J_ M%W&#039;@AQ=^(C
+M[CB?J*SCQT&quot;9TDC5R=:6&#039;FIII ;B#G;SB;&quot;VX4&amp;:#9&quot;$PP&quot;Y02,8@5UCX77\
+M1&amp;HS48NB7ACC]2*&gt;W#?&#039;\)%@W !A=BOKETA,+3ZHPG=)RU[(V69]&#039;4C&lt;#.,*
+MYKJ*Z5+C1U)76DR!5!^)Z&quot;!X--6MC^#C^B_)B^XX,^9\&#039;X&quot;@:)Y$L4@JE&#039;H:
+MB6%O%&lt;?Y:)NMC7VVNN%!R*Z&gt;YO&amp;5@:2HWQC$&amp;#)$C4!3P@0+[HBP\4&amp;LN%XJ
+M/X!V52X4BX5YXG&quot;[0#.%.!M&gt;M\\:,N,C-*U\N5#0IUP*]7-VLR&lt;B&quot;UV^W&gt;OW
+M@&lt;$-FY9JI3F%)==&lt;=W!=2-PB]S\H1M8OD30(0HX-&lt;B4 ,6[K%YL+0AZRA7+Y
+M@0T/ L+15?&#039;+CB#.L&lt;5L-C+?0I;GX \V^#46C-G*GM+&amp;!\%SPD(?VT4&amp;BG$H
+M+V:LH&lt;2,&amp;6GX*S[]HXT/@G&gt;J4?9(7G0)&#039;&quot;W4C0LT@F283^+Q;FE/:=UJ%#,@
+M5N[9(Q==NGO7_(28%K@__,+T9(3U6Y$W8UJJ52OME1Y/N=JZZC# 0FS-[8J&#039;
+M$H*\@3O$VOJ.JM^I41;W)FY)I5)=L5B-Q4:J%&quot;D3^3-MU?9U%Y?%0&gt;I#=Q\@
+MMV-3Y5+EGC&#039;&gt;T09N8L0K&quot;&amp;&amp;.8B2I5&amp;EZ_3[&amp;U531R.%0B*I6Y9)P_&lt;LLRWN]
+M;4QFQ%&lt;N7R^59/*A&gt;YO&gt;&#039;R HY&amp;:,-,=ILE)R)D419_(#    4$E$052GTZG(
+M&amp;D=3&quot;]Y98@W$-(@A9&quot;&gt;ZJ:EI_JWSUE&amp;6&quot;F)5R:[ZJG_T3L.R9)&quot;:K.-2UCQ9
+M-LA&amp;D:6;5NWG^UTC]7N,;!!9EFEM&#039; RK]?\!BU#S99LZ(9L     245.1*Y&quot;
+&quot;8(( 
+</UUENCODE>
+		</IMAGE>
 		<SYMBOLDEF id='1'>
 			<NAME type='0'>Xbee Header</NAME>
 			<REF type='0'></REF>
@@ -16618,6 +16865,106 @@ L0R &#039;;1T&quot;.6CK$,A!6X= #MHZ!&#039;+0UO\#S5D0JZ#..+,     245.1*Y&quot;8((
 				<METAFILE a='19.00000,17.00000' b='39.00000,37.00000' id='25'/>
 			</TinyCAD>
 		</SYMBOLDEF>
+		<SYMBOLDEF id='26'>
+			<NAME type='0'> CABLE ASSY R/A 2.1MM 6&#039; 18 AWG </NAME>
+			<REF type='0'>P?</REF>
+			<DESCRIPTION>Cable Assembly 2.1mm ID, 5.5mm OD Plug, Right Angle to Wire Leads Flat 6.0&#039; (1.83m) </DESCRIPTION>
+			<PPP>1</PPP>
+			<FIELD>
+				<NAME>$$SPICE_PROLOG_PRIORITY</NAME>
+				<DEFAULT>5</DEFAULT>
+				<FT>000002</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<FIELD>
+				<NAME>$$SPICE_EPILOG_PRIORITY</NAME>
+				<DEFAULT>5</DEFAULT>
+				<FT>000002</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<FIELD>
+				<NAME>Package</NAME>
+				<DEFAULT>package name for PCB layout</DEFAULT>
+				<FT>000001</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<FIELD>
+				<NAME>Digi-Key Part</NAME>
+				<DEFAULT>CP-2191-ND </DEFAULT>
+				<FT>000001</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<REF_POINT power='0' part='0' pos='33.00000,31.00000'/>
+			<TinyCAD>
+				<METAFILE a='13.00000,11.00000' b='33.00000,31.00000' id='26'/>
+			</TinyCAD>
+		</SYMBOLDEF>
+		<SYMBOLDEF id='27'>
+			<NAME type='0'> PLUNGER CLAMP CLIP BLACK 50A </NAME>
+			<REF type='0'>Clip?</REF>
+			<DESCRIPTION>PLUNGER CLAMP CLIP BLACK 50A </DESCRIPTION>
+			<PPP>1</PPP>
+			<FIELD>
+				<NAME>$$SPICE_PROLOG_PRIORITY</NAME>
+				<DEFAULT>5</DEFAULT>
+				<FT>000002</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<FIELD>
+				<NAME>$$SPICE_EPILOG_PRIORITY</NAME>
+				<DEFAULT>5</DEFAULT>
+				<FT>000002</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<FIELD>
+				<NAME>Digi-Key Part</NAME>
+				<DEFAULT>290-1950-ND </DEFAULT>
+				<FT>000001</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<REF_POINT power='0' part='0' pos='23.00000,26.00000'/>
+			<TinyCAD>
+				<METAFILE a='3.00000,6.00000' b='23.00000,26.00000' id='27'/>
+			</TinyCAD>
+		</SYMBOLDEF>
+		<SYMBOLDEF id='28'>
+			<NAME type='0'>PLUNGER CLAMP CLIP RED 50A</NAME>
+			<REF type='0'>Clip?</REF>
+			<DESCRIPTION>PLUNGER CLAMP CLIP RED 50A </DESCRIPTION>
+			<PPP>1</PPP>
+			<FIELD>
+				<NAME>$$SPICE_PROLOG_PRIORITY</NAME>
+				<DEFAULT>5</DEFAULT>
+				<FT>000002</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<FIELD>
+				<NAME>$$SPICE_EPILOG_PRIORITY</NAME>
+				<DEFAULT>5</DEFAULT>
+				<FT>000002</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<FIELD>
+				<NAME>Digi-Key Part</NAME>
+				<DEFAULT>290-1949-ND </DEFAULT>
+				<FT>000001</FT>
+				<VALUE></VALUE>
+				<POS>0.00000,0.00000</POS>
+			</FIELD>
+			<REF_POINT power='0' part='0' pos='23.00000,29.00000'/>
+			<TinyCAD>
+				<METAFILE a='3.00000,9.00000' b='23.00000,29.00000' id='28'/>
+			</TinyCAD>
+		</SYMBOLDEF>
 		<OPTIONS>
 			<GRID>1</GRID>
 			<UNITS>1</UNITS>
@@ -16937,6 +17284,28 @@ L0R &#039;;1T&quot;.6CK$,A!6X= #MHZ!&#039;+0UO\#S5D0JZ#..+,     245.1*Y&quot;8((
 			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='1' description='Digi-Key Part' value='679-2203-ND' show='0' pos='1.00000,-13.20000'/>
 			<FIELD type='1' description='Package' value='package name for PCB layout' show='0' pos='1.00000,-10.80000'/>
+		</SYMBOL>
+		<SYMBOL id='26' pos='142.00000,157.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+			<FIELD type='0' description='Ref' value='P1' show='1' pos='1.00000,-15.60000'/>
+			<FIELD type='0' description='Name' value=' CABLE ASSY R/A 2.1MM 6&#039; 18 AWG ' show='1' pos='1.00000,-18.00000'/>
+			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Package' value='package name for PCB layout' show='0' pos='1.00000,-13.20000'/>
+			<FIELD type='1' description='Digi-Key Part' value='CP-2191-ND ' show='0' pos='1.00000,-10.80000'/>
+		</SYMBOL>
+		<SYMBOL id='27' pos='182.00000,164.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+			<FIELD type='0' description='Ref' value='Clip1' show='1' pos='1.00000,-15.60000'/>
+			<FIELD type='0' description='Name' value=' PLUNGER CLAMP CLIP BLACK 50A ' show='1' pos='1.00000,-18.00000'/>
+			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Digi-Key Part' value='290-1950-ND ' show='0' pos='1.00000,-13.20000'/>
+		</SYMBOL>
+		<SYMBOL id='28' pos='207.00000,170.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+			<FIELD type='0' description='Ref' value='Clip2' show='1' pos='1.00000,-15.60000'/>
+			<FIELD type='0' description='Name' value='PLUNGER CLAMP CLIP RED 50A' show='1' pos='1.00000,-18.00000'/>
+			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Digi-Key Part' value='290-1949-ND ' show='0' pos='1.00000,-13.20000'/>
 		</SYMBOL>
 	</TinyCAD>
 </TinyCADSheets>
