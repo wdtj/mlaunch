@@ -248,11 +248,11 @@ int main(void)
         
             if (allOpen == true && displayCluttered)
             {
-          OLED_clearLine(0);
-          OLED_clearLine(1);
-          OLED_clearLine(2);
-                OLED_XYprintf(0, 0, "Ready");
-                displayCluttered=false;
+              OLED_clearLine(0);
+              OLED_clearLine(1);
+              OLED_clearLine(2);
+              OLED_XYprintf(0, 0, "Ready");
+              displayCluttered=false;
             }
         
             if (isClosed(8) && !launchPressed)
@@ -537,7 +537,11 @@ void addToNew( unsigned char * ni, zbNetAddr netAddr, zbAddr addr )
 void padDiscovered( zbAddr addr, zbNetAddr netAddr, unsigned char *ni )
 {
     /* If it's not one of ours, ignore it */
-    if (ni[0] != 'P' || ni[1] != 'A' || ni[2] != 'D') return;
+    if (ni[0] != 'P' || ni[1] != 'A' || ni[2] != 'D') 
+    {
+        OLED_XYprintf(0, 3, "???%.17s", ni);
+        return;
+    }
 
     unsigned char padId0=ni[3];
     unsigned char padId1=ni[4];
