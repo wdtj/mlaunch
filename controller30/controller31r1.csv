@@ -1,17 +1,16 @@
-Reference,Quantity,Name,Description,Package,Digi-Key Part,V_Max,R_Off,R_On,T_Trip,Temp_Nom,Manufacturer Part,Newark Part,Mouser Part,Cost,Value,Tol.,P_Max,Manufacturer,Usage,Datasheet,Picture,Tol
+Reference,Quantity,Name,Description,Package,Digi-Key Part,V_Max,R_Off,R_On,T_Trip,Temp_Nom,Manufacturer Part,Newark Part,Mouser Part,Cost,Value,Digikey,Usage,Datasheet,Picture,P_Max,Tol,Manufacturer,Tol.
 "P1",  1, CABLE ASSY R/A 2.1MM 6' 18 AWG ,"Cable Assembly 2.1mm ID, 5.5mm OD Plug, Right Angle to Wire Leads Flat 6.0' (1.83m) ",package name for PCB layout,CP-2191-ND 
 "Clip1",  1, PLUNGER CLAMP CLIP BLACK 50A ,PLUNGER CLAMP CLIP BLACK 50A ,,290-1950-ND 
-"R3,R4,R5,R6",  4,,Generic Resistor,R1206,311-10.0KFRCT-ND,,,,,,..,..,..,..,10K,,0.25,..,..,..,..,1%
+"R3,R4,R5,R6",  4,,Generic Resistor,R1206,311-10.0KFRCT-ND,,,,,,..,..,..,..,10K,,..,..,..,0.25,1%,..
 "J1,J2",  2,,Header 1x2,1X2HDR-100,609-3469-ND
 "C1",  1,100MFD,Small Electrolytic,eeehae101,PCE4705CT-ND
-"C2,C3,C4,C5,C8,C9",  6,10MFD,Small Electrolytic,C1206,311-1466-1-ND
+"C3,C4,C5,C8,C9",  5,10MFD,Small Electrolytic,C1206,311-1466-1-ND
 "A1",  1,2.4Ghz Antenna,ANTENNA 2.45GHZ 7" RA U.FL PLUG,..,0600-00039-ND
 "C6,C7",  2,20pf,Capacitor,C1206,311-1153-1-ND,,,,,,,,,,20pf
 "X1",  1,8 Mhz,Crystal,csm-7,XC569CT-ND
 "C10",  1,8.2pf,Capacitor,C1206,311-1222-1-ND,,,,,,,,,,8.2pf
 "U1",  1,ATMega32A,ATMega32A,40DIP600,ATMEGA32A-PU-ND
 "U3",  1,AZ1117S33,LD1117S33,WSOT-223,AZ1117H-3.3TRE1DICT-ND
-"U5",  1,AZ1117S5,LD1117S33,WSOT-223,AZ1117CH-5.0TRG1DICT-ND
 "D1",  1,BRIDGE,Bridge,4-SMD,641-1344-5-ND
 "Q1",  1,BSS138,BSS138,SOT23,BSS138CT-ND
 "J9",  1,Barrel - Power Connector,CONN JACK 2X5.5MM VERT POWER PNL,package name for PCB layout,CP-065A-ND
@@ -21,11 +20,10 @@ Reference,Quantity,Name,Description,Package,Digi-Key Part,V_Max,R_Off,R_On,T_Tri
 "SE1,SE2,SE3,SE4,SE5,SE6,SE7,SE8,SE9",  9,EXTENDER SWITCH 7MM,EXTENDER SWITCH 7MM HEIGHT,package name for PCB layout,679-2203-ND
 "K1",  1,IC Socket DIP 40 pin,SOCKET IC OPEN FRAME 40POS .6",package name for PCB layout,3M5471-ND
 "J5",  1,JTAG,5X2HDR-100,5X2HDR-50,S9013E-05-ND
-"U6",  1,LCD Display,20x4 LCD Character Display,LCM-S02004DSR,67-1774-ND
+"U6",  1,LCD Display,LCD MOD CHAR 4X20 BLK/W,EA DOGM204N-A,,,,,,,,,,,,EA DOGM204N-A
 "LP1,LP2,LP3,LP4,LP5,LP6,LP7,LP8",  8,LIGHT PIPE,LIGHT PIPE .250" ROUND PNL MT,,492-1142-ND
 "Clip2",  1,PLUNGER CLAMP CLIP RED 50A,PLUNGER CLAMP CLIP RED 50A ,,290-1949-ND 
-"R10",  1,R,Resistor,R1206,311-4.99KFRCT-ND,,,,,,..,..,..,..,4.99k,..,..,..
-"R7,R8,R9",  3,R,Resistor,R1206,311-910FRCT-ND,,,,,,..,..,..,..,910,..,..,..
+"R7,R8,R9",  3,R,Resistor,R1206,311-910FRCT-ND,,,,,,..,..,..,..,910,,,,,..,,..,..
 "D10,D3,D4,D5,D6,D7,D8,D9",  8,SMP4-SRGY,SMP4-SRGY,PLCC-4,492-1227-1-ND
 "S10",  1,SWITCH TOGGLE SPST 6A 125V,SWITCH TOGGLE SPST 6A 125V,package name for PCB layout,M2011LL1W01-ND
 "S1,S2,S3,S4,S5,S6,S7,S8,S9",  9,SWITCH1,Single Pole Push Switch,3ESH9-15.0,679-2226-ND

@@ -535,16 +535,6 @@ download the executable.-->
 			<DATE>8/12/2016</DATE>
 			<GRID spacing='50.00000' snap='1'/>
 		</DETAILS>
-		<FONT id='0'>
-			<HEIGHT>-13</HEIGHT>
-			<WIDTH>6</WIDTH>
-			<WEIGHT>400</WEIGHT>
-			<ITALIC>0</ITALIC>
-			<UNDERLINE>0</UNDERLINE>
-			<STRIKEOUT>0</STRIKEOUT>
-			<CHARSET>0</CHARSET>
-			<FACENAME>Arial</FACENAME>
-		</FONT>
 		<FONT id='1'>
 			<HEIGHT>-10</HEIGHT>
 			<WIDTH>0</WIDTH>
@@ -576,6 +566,16 @@ download the executable.-->
 			<FACENAME>Arial</FACENAME>
 		</FONT>
 		<FONT id='5'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='6'>
 			<HEIGHT>-24</HEIGHT>
 			<WIDTH>11</WIDTH>
 			<WEIGHT>400</WEIGHT>
@@ -585,7 +585,7 @@ download the executable.-->
 			<CHARSET>0</CHARSET>
 			<FACENAME>Arial</FACENAME>
 		</FONT>
-		<FONT id='6'>
+		<FONT id='7'>
 			<HEIGHT>-11</HEIGHT>
 			<WIDTH>5</WIDTH>
 			<WEIGHT>400</WEIGHT>
@@ -809,8 +809,8 @@ download the executable.-->
 				<PIN pos='133.00000,51.00000' which='0' elec='5' direction='2' part='0' number='35' show='3' length='30' number_pos='0' centre_name='0'>PA5/ADC5</PIN>
 				<PIN pos='133.00000,54.00000' which='0' elec='5' direction='2' part='0' number='34' show='3' length='30' number_pos='0' centre_name='0'>PA6/ADC6</PIN>
 				<PIN pos='133.00000,57.00000' which='0' elec='5' direction='2' part='0' number='33' show='3' length='30' number_pos='0' centre_name='0'>PA7/ADC7</PIN>
-				<TEXT pos='82.00000,59.00000' direction='3' font='5' color='000000'>ATMega32A</TEXT>
-				<LABEL pos='67.00000,90.00000' direction='3' font='6' color='208000' style='0'>AVCC pin 15, should be externally connected to VCC</LABEL>
+				<TEXT pos='82.00000,59.00000' direction='3' font='6' color='000000'>ATMega32A</TEXT>
+				<LABEL pos='67.00000,90.00000' direction='3' font='7' color='208000' style='0'>AVCC pin 15, should be externally connected to VCC</LABEL>
 				<PIN pos='133.00000,68.00000' which='0' elec='5' direction='2' part='0' number='3' show='3' length='30' number_pos='0' centre_name='0'>PB0/INT2/AIN0</PIN>
 				<PIN pos='133.00000,71.00000' which='0' elec='5' direction='2' part='0' number='4' show='3' length='30' number_pos='0' centre_name='0'>PB3/OC0/AIN1</PIN>
 				<PIN pos='133.00000,74.00000' which='0' elec='5' direction='2' part='0' number='5' show='3' length='30' number_pos='0' centre_name='0'>PB4/`SS</PIN>
@@ -1250,11 +1250,11 @@ download the executable.-->
 		<WIRE a='248.00000,148.00000' b='248.00000,62.00000'/>
 		<WIRE a='74.00000,90.00000' b='79.00000,90.00000'/>
 		<WIRE a='74.00000,93.00000' b='79.00000,93.00000'/>
-		<LABEL pos='74.00000,90.00000' direction='3' font='4' color='208000' style='0'>RXD</LABEL>
-		<LABEL pos='74.00000,93.00000' direction='3' font='4' color='208000' style='0'>TXD</LABEL>
+		<LABEL pos='74.00000,90.00000' direction='3' font='5' color='208000' style='0'>RXD</LABEL>
+		<LABEL pos='74.00000,93.00000' direction='3' font='5' color='208000' style='0'>TXD</LABEL>
 		<NOCONNECT pos='79.00000,118.00000'/>
 		<NOCONNECT pos='79.00000,133.00000'/>
-		<LABEL pos='31.00000,64.00000' direction='3' font='4' color='208000' style='0'>`RESET</LABEL>
+		<LABEL pos='31.00000,64.00000' direction='3' font='5' color='208000' style='0'>`RESET</LABEL>
 		<WIRE a='36.00000,131.00000' b='36.00000,107.00000'/>
 		<WIRE a='62.00000,96.00000' b='79.00000,96.00000'/>
 		<WIRE a='68.00000,148.00000' b='68.00000,102.00000'/>
@@ -1262,32 +1262,32 @@ download the executable.-->
 		<WIRE a='79.00000,105.00000' b='74.00000,105.00000'/>
 		<WIRE a='79.00000,108.00000' b='74.00000,108.00000'/>
 		<WIRE a='79.00000,111.00000' b='74.00000,111.00000'/>
-		<LABEL pos='74.00000,105.00000' direction='3' font='4' color='208000' style='0'>CLK</LABEL>
-		<LABEL pos='74.00000,108.00000' direction='3' font='4' color='208000' style='0'>LE</LABEL>
-		<LABEL pos='74.00000,111.00000' direction='3' font='4' color='208000' style='0'>SDI</LABEL>
-		<LABEL pos='74.00000,115.00000' direction='3' font='4' color='208000' style='0'>SDO</LABEL>
+		<LABEL pos='74.00000,105.00000' direction='3' font='5' color='208000' style='0'>CLK</LABEL>
+		<LABEL pos='74.00000,108.00000' direction='3' font='5' color='208000' style='0'>LE</LABEL>
+		<LABEL pos='74.00000,111.00000' direction='3' font='5' color='208000' style='0'>SDI</LABEL>
+		<LABEL pos='74.00000,115.00000' direction='3' font='5' color='208000' style='0'>SDO</LABEL>
 		<WIRE a='79.00000,115.00000' b='74.00000,115.00000'/>
-		<TEXT pos='63.00000,206.00000' direction='3' font='4' color='000000'>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</TEXT>
-		<LABEL pos='157.00000,116.00000' direction='3' font='3' color='208000' style='0'>S1</LABEL>
-		<LABEL pos='157.00000,119.00000' direction='3' font='3' color='208000' style='0'>S2</LABEL>
-		<LABEL pos='157.00000,122.00000' direction='3' font='3' color='208000' style='0'>S3</LABEL>
-		<LABEL pos='157.00000,125.00000' direction='3' font='3' color='208000' style='0'>S4</LABEL>
-		<LABEL pos='157.00000,128.00000' direction='3' font='3' color='208000' style='0'>S5</LABEL>
-		<LABEL pos='157.00000,131.00000' direction='3' font='3' color='208000' style='0'>S6</LABEL>
-		<LABEL pos='157.00000,134.00000' direction='3' font='3' color='208000' style='0'>S7</LABEL>
-		<LABEL pos='157.00000,137.00000' direction='3' font='3' color='208000' style='0'>S8</LABEL>
-		<LABEL pos='157.00000,90.00000' direction='3' font='3' color='208000' style='0'>DB0</LABEL>
-		<LABEL pos='157.00000,93.00000' direction='3' font='3' color='208000' style='0'>DB1</LABEL>
-		<LABEL pos='157.00000,96.00000' direction='3' font='3' color='208000' style='0'>DB2</LABEL>
-		<LABEL pos='157.00000,99.00000' direction='3' font='3' color='208000' style='0'>DB3</LABEL>
-		<LABEL pos='157.00000,102.00000' direction='3' font='3' color='208000' style='0'>DB4</LABEL>
-		<LABEL pos='157.00000,105.00000' direction='3' font='3' color='208000' style='0'>DB5</LABEL>
-		<LABEL pos='157.00000,108.00000' direction='3' font='3' color='208000' style='0'>DB6</LABEL>
-		<LABEL pos='157.00000,111.00000' direction='3' font='3' color='208000' style='0'>DB7</LABEL>
-		<LABEL pos='74.00000,102.00000' direction='3' font='3' color='208000' style='0'>E</LABEL>
-		<LABEL pos='74.00000,99.00000' direction='3' font='3' color='208000' style='0'>R/`W</LABEL>
-		<LABEL pos='74.00000,96.00000' direction='3' font='3' color='208000' style='0'>RS</LABEL>
-		<LABEL pos='67.00000,136.00000' direction='3' font='3' color='208000' style='0'>LAUNCH</LABEL>
+		<TEXT pos='63.00000,206.00000' direction='3' font='5' color='000000'>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</TEXT>
+		<LABEL pos='157.00000,116.00000' direction='3' font='4' color='208000' style='0'>S1</LABEL>
+		<LABEL pos='157.00000,119.00000' direction='3' font='4' color='208000' style='0'>S2</LABEL>
+		<LABEL pos='157.00000,122.00000' direction='3' font='4' color='208000' style='0'>S3</LABEL>
+		<LABEL pos='157.00000,125.00000' direction='3' font='4' color='208000' style='0'>S4</LABEL>
+		<LABEL pos='157.00000,128.00000' direction='3' font='4' color='208000' style='0'>S5</LABEL>
+		<LABEL pos='157.00000,131.00000' direction='3' font='4' color='208000' style='0'>S6</LABEL>
+		<LABEL pos='157.00000,134.00000' direction='3' font='4' color='208000' style='0'>S7</LABEL>
+		<LABEL pos='157.00000,137.00000' direction='3' font='4' color='208000' style='0'>S8</LABEL>
+		<LABEL pos='157.00000,90.00000' direction='3' font='4' color='208000' style='0'>DB0</LABEL>
+		<LABEL pos='157.00000,93.00000' direction='3' font='4' color='208000' style='0'>DB1</LABEL>
+		<LABEL pos='157.00000,96.00000' direction='3' font='4' color='208000' style='0'>DB2</LABEL>
+		<LABEL pos='157.00000,99.00000' direction='3' font='4' color='208000' style='0'>DB3</LABEL>
+		<LABEL pos='157.00000,102.00000' direction='3' font='4' color='208000' style='0'>DB4</LABEL>
+		<LABEL pos='157.00000,105.00000' direction='3' font='4' color='208000' style='0'>DB5</LABEL>
+		<LABEL pos='157.00000,108.00000' direction='3' font='4' color='208000' style='0'>DB6</LABEL>
+		<LABEL pos='157.00000,111.00000' direction='3' font='4' color='208000' style='0'>DB7</LABEL>
+		<LABEL pos='74.00000,102.00000' direction='3' font='4' color='208000' style='0'>E</LABEL>
+		<LABEL pos='74.00000,99.00000' direction='3' font='4' color='208000' style='0'>R/`W</LABEL>
+		<LABEL pos='74.00000,96.00000' direction='3' font='4' color='208000' style='0'>RS</LABEL>
+		<LABEL pos='67.00000,136.00000' direction='3' font='4' color='208000' style='0'>LAUNCH</LABEL>
 		<SYMBOL id='7' pos='58.00000,149.00000' part='0' rotate='3' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='S9' show='1' pos='-18.00000,1.00000'/>
 			<FIELD type='0' description='Name' value='SWITCH1' show='0' pos='-18.00000,3.00000'/>
@@ -1351,8 +1351,8 @@ download the executable.-->
 		<WIRE a='257.00000,38.00000' b='257.00000,74.00000'/>
 		<WIRE a='257.00000,74.00000' b='227.00000,74.00000'/>
 		<RECTANGLE a='35.00000,157.00000' b='79.00000,168.00000' style='6' fill='0'/>
-		<TEXT pos='37.00000,162.00000' direction='3' font='0' color='000000'>J5       1  2   3   4   5   6  7  8  9 10</TEXT>
-		<TEXT pos='37.00000,166.00000' direction='3' font='0' color='000000'>CPU 24 31 26 30 25  9  7  8 27 31</TEXT>
+		<TEXT pos='37.00000,162.00000' direction='3' font='3' color='000000'>J5       1  2   3   4   5   6  7  8  9 10</TEXT>
+		<TEXT pos='37.00000,166.00000' direction='3' font='3' color='000000'>CPU 24 31 26 30 25  9  7  8 27 31</TEXT>
 	</TinyCAD>
 	<TinyCAD>
 		<NAME>Tranceiver</NAME>
@@ -1379,9 +1379,19 @@ download the executable.-->
 			<CHARSET>0</CHARSET>
 			<FACENAME>Arial</FACENAME>
 		</FONT>
-		<FONT id='4'>
+		<FONT id='3'>
 			<HEIGHT>-13</HEIGHT>
 			<WIDTH>6</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='4'>
+			<HEIGHT>-24</HEIGHT>
+			<WIDTH>11</WIDTH>
 			<WEIGHT>400</WEIGHT>
 			<ITALIC>0</ITALIC>
 			<UNDERLINE>0</UNDERLINE>
@@ -1399,22 +1409,12 @@ download the executable.-->
 			<CHARSET>0</CHARSET>
 			<FACENAME>Arial</FACENAME>
 		</FONT>
-		<FONT id='6'>
-			<HEIGHT>-24</HEIGHT>
-			<WIDTH>11</WIDTH>
-			<WEIGHT>400</WEIGHT>
-			<ITALIC>0</ITALIC>
-			<UNDERLINE>0</UNDERLINE>
-			<STRIKEOUT>0</STRIKEOUT>
-			<CHARSET>0</CHARSET>
-			<FACENAME>Arial</FACENAME>
-		</FONT>
-		<STYLE id='4'>
+		<STYLE id='3'>
 			<STYLE>0</STYLE>
 			<COLOR>000000</COLOR>
 			<THICKNESS>1</THICKNESS>
 		</STYLE>
-		<STYLE id='6'>
+		<STYLE id='4'>
 			<STYLE>0</STYLE>
 			<COLOR>000000</COLOR>
 			<THICKNESS>5</THICKNESS>
@@ -1423,7 +1423,7 @@ download the executable.-->
 			<INDEX>-1</INDEX>
 			<COLOR>000000</COLOR>
 		</FILL>
-		<SYMBOLDEF id='2'>
+		<SYMBOLDEF id='1'>
 			<NAME type='0'>Header 1x3</NAME>
 			<REF type='0'>J?</REF>
 			<DESCRIPTION>Header 1x3</DESCRIPTION>
@@ -1458,13 +1458,13 @@ download the executable.-->
 			</FIELD>
 			<REF_POINT power='0' part='0' pos='31.00000,29.00000'/>
 			<TinyCAD>
-				<RECTANGLE a='31.00000,22.00000' b='21.00000,26.00000' style='4' fill='0'/>
+				<RECTANGLE a='31.00000,22.00000' b='21.00000,26.00000' style='3' fill='0'/>
 				<PIN pos='23.00000,29.00000' which='1' elec='4' direction='0' part='0' number='1' show='2' length='30' number_pos='0' centre_name='0'>1</PIN>
 				<PIN pos='26.00000,29.00000' which='1' elec='4' direction='0' part='0' number='2' show='2' length='30' number_pos='0' centre_name='0'>2</PIN>
 				<PIN pos='29.00000,29.00000' which='1' elec='4' direction='0' part='0' number='3' show='2' length='30' number_pos='0' centre_name='0'>3</PIN>
 			</TinyCAD>
 		</SYMBOLDEF>
-		<SYMBOLDEF id='3'>
+		<SYMBOLDEF id='2'>
 			<NAME type='0'>CAP1A</NAME>
 			<REF type='0'>C?</REF>
 			<DESCRIPTION>Small Electrolytic</DESCRIPTION>
@@ -1473,56 +1473,56 @@ download the executable.-->
 			<TinyCAD>
 				<PIN pos='23.00000,29.00000' which='0' elec='0' direction='0' part='0' number='1' show='1' length='30' number_pos='0' centre_name='0'></PIN>
 				<PIN pos='23.00000,16.00000' which='0' elec='0' direction='1' part='0' number='2' show='1' length='30' number_pos='0' centre_name='0'></PIN>
-				<POLYGON pos='20.00000,23.00000' style='4' fill='0'>
+				<POLYGON pos='20.00000,23.00000' style='3' fill='0'>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 					<POINT pos='6.00000,0.00000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='23.00000,23.00000' style='4' fill='0'>
+				<POLYGON pos='23.00000,23.00000' style='3' fill='0'>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 					<POINT pos='0.00000,1.00000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='23.00000,21.00000' style='4' fill='0'>
+				<POLYGON pos='23.00000,21.00000' style='3' fill='0'>
 					<POINT pos='0.00000,1.00000' arc='0'/>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='24.00000,25.00000' style='4' fill='0'>
+				<POLYGON pos='24.00000,25.00000' style='3' fill='0'>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 					<POINT pos='2.00000,0.00000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='25.00000,24.00000' style='4' fill='0'>
+				<POLYGON pos='25.00000,24.00000' style='3' fill='0'>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 					<POINT pos='0.00000,2.00000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='23.00000,21.00000' style='4' fill='0'>
+				<POLYGON pos='23.00000,21.00000' style='3' fill='0'>
 					<POINT pos='3.00000,0.00000' arc='0'/>
 					<POINT pos='0.00000,1.00000' arc='2'/>
 				</POLYGON>
-				<POLYGON pos='20.00000,21.00000' style='4' fill='0'>
+				<POLYGON pos='20.00000,21.00000' style='3' fill='0'>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 					<POINT pos='3.00000,1.00000' arc='2'/>
 				</POLYGON>
 			</TinyCAD>
 		</SYMBOLDEF>
-		<SYMBOLDEF id='5'>
+		<SYMBOLDEF id='3'>
 			<NAME type='0'>C</NAME>
 			<REF type='0'>C?</REF>
 			<DESCRIPTION>Capacitor</DESCRIPTION>
 			<PPP>1</PPP>
 			<REF_POINT power='0' part='0' pos='96.00000,33.00000'/>
 			<TinyCAD>
-				<POLYGON pos='94.00000,30.00000' style='4' fill='0'>
+				<POLYGON pos='94.00000,30.00000' style='3' fill='0'>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 					<POINT pos='0.00000,3.00000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='94.00000,26.00000' style='4' fill='0'>
+				<POLYGON pos='94.00000,26.00000' style='3' fill='0'>
 					<POINT pos='0.00000,3.00000' arc='0'/>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='92.40000,30.00000' style='4' fill='0'>
+				<POLYGON pos='92.40000,30.00000' style='3' fill='0'>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 					<POINT pos='3.20000,0.00000' arc='0'/>
 				</POLYGON>
-				<POLYGON pos='92.40000,29.00000' style='4' fill='0'>
+				<POLYGON pos='92.40000,29.00000' style='3' fill='0'>
 					<POINT pos='0.00000,0.00000' arc='0'/>
 					<POINT pos='3.20000,0.00000' arc='0'/>
 				</POLYGON>
@@ -1530,7 +1530,7 @@ download the executable.-->
 				<PIN pos='94.00000,33.00000' which='5' elec='4' direction='0' part='0' number='2' show='0' length='30' number_pos='0' centre_name='0'></PIN>
 			</TinyCAD>
 		</SYMBOLDEF>
-		<SYMBOLDEF id='6'>
+		<SYMBOLDEF id='4'>
 			<NAME type='0'>XBee</NAME>
 			<REF type='0'>U?</REF>
 			<DESCRIPTION>XBee</DESCRIPTION>
@@ -1565,13 +1565,13 @@ download the executable.-->
 			</FIELD>
 			<REF_POINT power='1' part='0' pos='59.00000,55.00000'/>
 			<TinyCAD>
-				<RECTANGLE a='23.00000,17.00000' b='54.00000,55.00000' style='6' fill='0'/>
+				<RECTANGLE a='23.00000,17.00000' b='54.00000,55.00000' style='4' fill='0'/>
 				<PIN pos='59.00000,47.00000' which='4' elec='0' direction='2' part='0' number='1' show='3' length='30' number_pos='0' centre_name='0'>Vcc</PIN>
 				<PIN pos='59.00000,39.00000' which='0' elec='0' direction='2' part='0' number='6' show='3' length='30' number_pos='0' centre_name='0'>PWM0/RSSI</PIN>
 				<PIN pos='59.00000,43.00000' which='0' elec='0' direction='2' part='0' number='9' show='3' length='30' number_pos='0' centre_name='0'>^DTR</PIN>
 				<PIN pos='59.00000,51.00000' which='4' elec='0' direction='2' part='0' number='10' show='3' length='30' number_pos='0' centre_name='0'>GND</PIN>
-				<TEXT pos='26.00000,24.00000' direction='3' font='5' color='000000'>MaxStream</TEXT>
-				<TEXT pos='26.00000,30.00000' direction='3' font='6' color='000000'>XBee</TEXT>
+				<TEXT pos='26.00000,24.00000' direction='3' font='4' color='000000'>MaxStream</TEXT>
+				<TEXT pos='26.00000,30.00000' direction='3' font='5' color='000000'>XBee</TEXT>
 				<PIN pos='59.00000,31.00000' which='0' elec='0' direction='2' part='0' number='3' show='3' length='30' number_pos='0' centre_name='0'>DIN</PIN>
 				<PIN pos='59.00000,35.00000' which='0' elec='0' direction='2' part='0' number='5' show='3' length='30' number_pos='0' centre_name='0'>^RESET</PIN>
 				<PIN pos='59.00000,27.00000' which='0' elec='1' direction='2' part='0' number='2' show='3' length='30' number_pos='0' centre_name='0'>DOUT</PIN>
@@ -1593,7 +1593,7 @@ download the executable.-->
 			<COLOR_NOTETEXT_LINE>FF0000</COLOR_NOTETEXT_LINE>
 			<COLOR_NOTETEXT_TEXT>FF0000</COLOR_NOTETEXT_TEXT>
 		</OPTIONS>
-		<SYMBOL id='6' pos='84.00000,109.00000' part='0' rotate='0' can_scale='0' show_power='1' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='4' pos='84.00000,109.00000' part='0' rotate='0' can_scale='0' show_power='1' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='U2' show='1' pos='1.00000,-33.60000'/>
 			<FIELD type='0' description='Name' value='XBee-pro s2c' show='1' pos='1.00000,-36.00000'/>
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
@@ -1604,7 +1604,7 @@ download the executable.-->
 		<NOCONNECT pos='84.00000,93.00000'/>
 		<NOCONNECT pos='84.00000,97.00000'/>
 		<POWER pos='106.00000,101.00000' which='1' direction='3'>V3.3</POWER>
-		<SYMBOL id='2' pos='133.00000,72.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='1' pos='133.00000,72.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='J3' show='1' pos='1.00000,-2.60000'/>
 			<FIELD type='0' description='Name' value='TestPoint' show='1' pos='1.00000,-5.00000'/>
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
@@ -1618,14 +1618,14 @@ download the executable.-->
 		<WIRE a='125.00000,72.00000' b='125.00000,85.00000'/>
 		<WIRE a='131.00000,72.00000' b='131.00000,81.00000'/>
 		<WIRE a='128.00000,116.00000' b='128.00000,123.00000'/>
-		<LABEL pos='185.00000,108.00000' direction='3' font='4' color='208000' style='0'>TXD</LABEL>
-		<LABEL pos='185.00000,81.00000' direction='3' font='4' color='208000' style='0'>RXD</LABEL>
-		<LABEL pos='109.00000,89.00000' direction='3' font='4' color='208000' style='0'>`RESET</LABEL>
+		<LABEL pos='185.00000,108.00000' direction='3' font='3' color='208000' style='0'>TXD</LABEL>
+		<LABEL pos='185.00000,81.00000' direction='3' font='3' color='208000' style='0'>RXD</LABEL>
+		<LABEL pos='109.00000,89.00000' direction='3' font='3' color='208000' style='0'>`RESET</LABEL>
 		<WIRE a='84.00000,89.00000' b='109.00000,89.00000'/>
 		<WIRE a='84.00000,85.00000' b='125.00000,85.00000'/>
 		<WIRE a='125.00000,85.00000' b='125.00000,108.00000'/>
 		<JUNCTION pos='125.00000,85.00000'/>
-		<SYMBOL id='3' pos='105.00000,115.00000' part='0' rotate='1' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='2' pos='105.00000,115.00000' part='0' rotate='1' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='C8' show='1' pos='1.00000,-5.60000'/>
 			<FIELD type='0' description='Name' value='10MFD' show='1' pos='1.00000,-4.00000'/>
 			<FIELD type='3' description='Digi-Key Part' value='311-1466-1-ND' show='0' pos='1.00000,-6.20000'/>
@@ -1634,14 +1634,14 @@ download the executable.-->
 		<WIRE a='91.00000,116.00000' b='84.00000,116.00000'/>
 		<WIRE a='84.00000,116.00000' b='84.00000,105.00000'/>
 		<WIRE a='128.00000,72.00000' b='128.00000,116.00000'/>
-		<TEXT pos='59.00000,206.00000' direction='3' font='4' color='000000'>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</TEXT>
+		<TEXT pos='59.00000,206.00000' direction='3' font='3' color='000000'>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</TEXT>
 		<JUNCTION pos='128.00000,116.00000'/>
 		<WIRE a='91.00000,101.00000' b='102.00000,101.00000'/>
 		<WIRE a='102.00000,101.00000' b='102.00000,102.00000'/>
 		<WIRE a='102.00000,101.00000' b='106.00000,101.00000'/>
 		<WIRE a='102.00000,115.00000' b='102.00000,116.00000'/>
 		<WIRE a='128.00000,116.00000' b='102.00000,116.00000'/>
-		<SYMBOL id='5' pos='93.00000,112.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+		<SYMBOL id='3' pos='93.00000,112.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='C10' show='1' pos='0.00000,-2.60000'/>
 			<FIELD type='0' description='Name' value='8.2pf' show='0' pos='1.00000,-4.00000'/>
 			<FIELD type='3' description='Digi-Key Part' value='311-1222-1-ND' show='0' pos='1.00000,0.80000'/>
@@ -2214,7 +2214,7 @@ download the executable.-->
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='1' description='Package' value='PLCC-4' show='0' pos='0.00000,0.00000'/>
-			<FIELD type='1' description='Digi-Key Part' value='492-1227-1-ND' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Digi-Key Part' value=' 492-2193-1-ND' show='0' pos='0.00000,0.00000'/>
 		</SYMBOL>
 		<SYMBOL id='4' pos='113.00000,127.00000' part='0' rotate='1' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='D4' show='1' pos='1.00000,-10.60000'/>
@@ -2222,7 +2222,7 @@ download the executable.-->
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='1' description='Package' value='PLCC-4' show='0' pos='0.00000,0.00000'/>
-			<FIELD type='1' description='Digi-Key Part' value='492-1227-1-ND' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Digi-Key Part' value=' 492-2193-1-ND ' show='0' pos='0.00000,0.00000'/>
 		</SYMBOL>
 		<SYMBOL id='4' pos='177.00000,127.00000' part='0' rotate='1' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='D5' show='1' pos='1.00000,-10.60000'/>
@@ -2230,7 +2230,7 @@ download the executable.-->
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='1' description='Package' value='PLCC-4' show='0' pos='0.00000,0.00000'/>
-			<FIELD type='1' description='Digi-Key Part' value='492-1227-1-ND' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Digi-Key Part' value=' 492-2193-1-ND ' show='0' pos='0.00000,0.00000'/>
 		</SYMBOL>
 		<SYMBOL id='4' pos='242.00000,127.00000' part='0' rotate='1' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='D6' show='1' pos='1.00000,-10.60000'/>
@@ -2238,7 +2238,7 @@ download the executable.-->
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='1' description='Package' value='PLCC-4' show='0' pos='0.00000,0.00000'/>
-			<FIELD type='1' description='Digi-Key Part' value='492-1227-1-ND' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Digi-Key Part' value=' 492-2193-1-ND ' show='0' pos='0.00000,0.00000'/>
 		</SYMBOL>
 		<SYMBOL id='4' pos='47.00000,159.00000' part='0' rotate='1' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='D7' show='1' pos='1.00000,-10.60000'/>
@@ -2246,7 +2246,7 @@ download the executable.-->
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='1' description='Package' value='PLCC-4' show='0' pos='0.00000,0.00000'/>
-			<FIELD type='1' description='Digi-Key Part' value='492-1227-1-ND' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Digi-Key Part' value=' 492-2193-1-ND ' show='0' pos='0.00000,0.00000'/>
 		</SYMBOL>
 		<SYMBOL id='4' pos='113.00000,159.00000' part='0' rotate='1' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='D8' show='1' pos='1.00000,-10.60000'/>
@@ -2254,7 +2254,7 @@ download the executable.-->
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='1' description='Package' value='PLCC-4' show='0' pos='0.00000,0.00000'/>
-			<FIELD type='1' description='Digi-Key Part' value='492-1227-1-ND' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Digi-Key Part' value=' 492-2193-1-ND ' show='0' pos='0.00000,0.00000'/>
 		</SYMBOL>
 		<SYMBOL id='4' pos='177.00000,159.00000' part='0' rotate='1' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='D9' show='1' pos='1.00000,-10.60000'/>
@@ -2262,7 +2262,7 @@ download the executable.-->
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='1' description='Package' value='PLCC-4' show='0' pos='0.00000,0.00000'/>
-			<FIELD type='1' description='Digi-Key Part' value='492-1227-1-ND' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Digi-Key Part' value=' 492-2193-1-ND ' show='0' pos='0.00000,0.00000'/>
 		</SYMBOL>
 		<SYMBOL id='4' pos='242.00000,159.00000' part='0' rotate='1' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='D10' show='1' pos='1.00000,-10.60000'/>
@@ -2270,7 +2270,7 @@ download the executable.-->
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='2' description='$$SPICE_EPILOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
 			<FIELD type='1' description='Package' value='PLCC-4' show='0' pos='0.00000,0.00000'/>
-			<FIELD type='1' description='Digi-Key Part' value='492-1227-1-ND' show='0' pos='0.00000,0.00000'/>
+			<FIELD type='1' description='Digi-Key Part' value=' 492-2193-1-ND ' show='0' pos='0.00000,0.00000'/>
 		</SYMBOL>
 		<WIRE a='57.00000,46.00000' b='78.00000,46.00000'/>
 		<WIRE a='78.00000,46.00000' b='78.00000,101.00000'/>
