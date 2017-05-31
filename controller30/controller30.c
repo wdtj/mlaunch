@@ -102,8 +102,8 @@ int main(void)
 
     OLED_clearDisplay();                /* Blank display */
 
-    OLED_XYprintf(0, 0, "mLaunch 3.0");
-    OLED_XYprintf(0, 2, "Copyright 2016 by");
+    OLED_XYprintf(0, 0, "mLaunch 3.1");
+    OLED_XYprintf(0, 2, "Copyright 2017 by");
     OLED_XYprintf(0, 3, "Wayne Johnson");
 
     OLED_clearLine(2);
@@ -133,7 +133,10 @@ int main(void)
 
     linkInit(notInitialized);
 
-    OLED_clearDisplay();
+    // Leave the copyright on a bit longer
+    OLED_clearLine(1);
+    OLED_clearLine(2);
+    OLED_clearLine(3);
     
     /* main loop */
     bool displayCluttered=false;
