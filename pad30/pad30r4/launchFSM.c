@@ -188,17 +188,17 @@ void padLaunch(int sw)
 {
     struct padStruct *pad=&pads[sw];
 	
-    if(pad->launchState!=PAD_ENABLED)
+    /* If we're not already enabled, ignore this launch command */
+    if(pad->launchState!=PAD_ENABLED && pad->launchState!=PAD_LAUNCH)
     {
         return;
     }
-	
-	pad->timeout=RESET_TIMER;
 	
     set(PORTA, pad->launchBit);
 	
 	pad->flashTimer=0;
     pad->launchState=PAD_LAUNCH;
+	pad->timeout=RESET_TIMER;
 }
 
 void padUnlaunch(int sw)
