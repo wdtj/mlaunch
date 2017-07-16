@@ -12,6 +12,7 @@
 #include "../../common/zb.h"
 
 void linkFSMinit( char * nodeName );
+void linkFSMset(void);
 void linkFSMtimer( void );
 void linkFSMpkt(zbPkt *pkt);
 void linkFSMToDo(void);

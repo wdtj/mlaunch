@@ -47,10 +47,19 @@ unsigned char signalStrength;
 unsigned int linkTimer=0;
 unsigned int statTimer=0;
 
+/* Initialization sequence 
+NI1 with node id
+
+*/
 void linkFSMinit( const char const * nodeName )
 {
 	strcpy(ni, nodeName);
 	linkState=SEND_NI1;
+}
+
+void linkFSMset()
+{
+    linkState=NI_SENT1;
 }
 
 void linkFSMtimer( void )
@@ -199,7 +208,11 @@ void linkFSMToDo(void)
 #endif
 
 		zbReceivedChar(ch);
-		ASSERT(uart_fe || uart_doe || uart_pe || uart_roe);
+		if (uart_fe)
+		{
+			uart_fe=0;
+		}
+		ASSERT(uart_doe || uart_pe || uart_roe);
 	}
 
 	switch(linkState)
