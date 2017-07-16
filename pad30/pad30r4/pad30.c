@@ -60,7 +60,6 @@ char nodeName[]="PADxx";
   
 struct epromStruct EEMEM eprom;
 
-#define TRACE
 #if defined(TRACE)
 unsigned char trace_buffer[256];
 unsigned char *trace_buffer_ptr=trace_buffer;
@@ -360,9 +359,9 @@ void rxPkt(unsigned char *data, unsigned int length)
       ident=false;
       /* Fall through to linkFSM */
     
-		default:
-			linkFSMpkt(pkt);
-		break;
+    default:
+      linkFSMpkt(pkt);
+      break;
 	}
 }
 
@@ -460,7 +459,9 @@ void handleAssign( zbRx* rxPkt )
 	nodeName[4]=pad1;
 	
 	zb_ni(1, nodeName);
-
+    
+    linkFSMset();   /* make sure the name is in the xbee flash */
+    
 	PadLed(OFF, 0);
 	PadLed(OFF, 1);
 }

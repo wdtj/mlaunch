@@ -98,6 +98,12 @@ enum LINK_STATUS
 	MODEM_READY
 };
 
+#if defined(TRACE)
+extern unsigned char trace_buffer[256];
+extern unsigned char *trace_buffer_ptr;
+extern unsigned char *trace_buffer_end;
+#endif
+
 #ifdef DEBUG
 #define ASSERT(x) if (x) while(true) {};
 #else

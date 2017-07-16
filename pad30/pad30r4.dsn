@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!--This file was written by TinyCAD Version 2.80.06 Build #626 Production Release
+<!--This file was written by TinyCAD Version 2.80.08 Build #631 Production Release
 If you wish to view this file go to http://tinycad.sourceforge.net to
 download the executable.-->
 <TinyCADSheets>
@@ -780,9 +780,9 @@ download the executable.-->
 		<WIRE a='126.00000,46.00000' b='129.00000,46.00000'/>
 		<SYMBOL id='2' pos='144.00000,20.00000' part='0' rotate='2' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='X1' show='1' pos='-6.00000,3.00000'/>
-			<FIELD type='0' description='Name' value='8 Mhz' show='1' pos='-6.00000,5.00000'/>
+			<FIELD type='0' description='Name' value='16 Mhz' show='1' pos='-6.00000,5.00000'/>
 			<FIELD type='3' description='package' value='csm-7' show='0' pos='-8.00000,4.40000'/>
-			<FIELD type='3' description='Digi-Key Part' value='XC569CT-ND' show='0' pos='-8.00000,6.80000'/>
+			<FIELD type='3' description='Digi-Key Part' value=' XC694CT-ND ' show='0' pos='-8.00000,6.80000'/>
 		</SYMBOL>
 		<SYMBOL id='4' pos='137.00000,18.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
 			<FIELD type='0' description='Ref' value='C1' show='1' pos='-8.00000,-3.00000'/>
@@ -19857,7 +19857,7 @@ B^@;R;NL;R+NMOPV0_P.D]OWA+&amp;J=30    !)14Y$KD)@@@
 			<FIELD type='0' description='Digi-Key Part' value='SR153A-ND' show='1' pos='1.00000,-13.20000'/>
 		</SYMBOL>
 		<SYMBOL id='13' pos='47.00000,109.00000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
-			<FIELD type='0' description='Ref' value='j15' show='1' pos='1.00000,-15.60000'/>
+			<FIELD type='0' description='Ref' value='Sock1' show='0' pos='1.00000,-15.60000'/>
 			<FIELD type='0' description='Name' value='IC Socket DIP 40 pin' show='1' pos='1.00000,-18.00000'/>
 			<FIELD type='3' description='Other' value='..' show='1' pos='0.00000,2.40000'/>
 			<FIELD type='2' description='$$SPICE_PROLOG_PRIORITY' value='5' show='0' pos='0.00000,0.00000'/>
