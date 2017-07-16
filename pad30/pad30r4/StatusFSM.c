@@ -44,8 +44,7 @@ void statusFSM(int padNum)
 void sendStatus(int padNum)
 {
 	char msg[80];
-	long batt;
-	extern unsigned long vBatt, v2;
+	extern unsigned long vBatt;
 	extern unsigned char channel;
 	extern unsigned char signalStrength;
 
