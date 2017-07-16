@@ -34,10 +34,25 @@ typedef struct zbAddr
   unsigned char addr64[8];
 } zbAddr;
 
+#define zbAddrZero(addr) { addr.addr64[0]=0; addr.addr64[1]=0; addr.addr64[2]=0; addr.addr64[3]=0; addr.addr64[4]=0; addr.addr64[5]=0; addr.addr64[6]=0; addr.addr64[7]=0; }
+#define zbAddrCmp(addr1, addr2) { \
+    addr1.addr64[0]=addr2.addr64[0] && \
+    addr1.addr64[1]=addr2.addr64[1] && \
+    addr1.addr64[2]=addr2.addr64[2] && \
+    addr1.addr64[3]=addr2.addr64[3] && \
+    addr1.addr64[4]=addr2.addr64[4] && \
+    addr1.addr64[5]=addr2.addr64[5] && \
+    addr1.addr64[6]=addr2.addr64[6] && \
+    addr1.addr64[7]=addr2.addr64[7]; }
+
+/* Coordinator assigned 16 bit address */
 typedef struct zbNetAddr
 {
   unsigned char addr16[2];
 } zbNetAddr;
+
+#define zbNetAddrZero(addr) { addr.addr16[0]=0; addr.addr16[1]=0; }
+#define zbNetAddrCmp(addr1, addr2) { addr1.addr16[0]=addr2.addr16[0] && addr1.addr16[1]=addr2.addr16[1];  }
 
 typedef struct zbProfile
 {
@@ -328,7 +343,7 @@ void zb_tx_ex(unsigned char fid,
            char *data, 
            int size);
 
-void zbInit(void (*zbWrite)(void *buff, unsigned int count), void (*zbReceivedPkt)(unsigned char *pkt, unsigned int length));
+void zbInit(int (*zbWrite)(void *buff, unsigned int count), void (*zbReceivedPkt)(unsigned char *pkt, unsigned int length));
 void zbReceivedChar(unsigned char ch);
 
 void zb_settimeout(int time);
