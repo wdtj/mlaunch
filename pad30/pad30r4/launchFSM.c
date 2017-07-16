@@ -10,10 +10,14 @@
 
 void sendStatus(int padNum, float contVolt, float battVolt);
 
+/**
+ * Pad Finite State timer
+ */
 void padFSMtimer(int padNum)
 {
 	struct padStruct *pad=&pads[padNum];
 
+    /* After 10 seconds of no contact from the controller, reset to the IDLE state. */
 	pad->timeout--;
 	if (pad->timeout==0)
 	{
@@ -119,8 +123,12 @@ void padFSMtimer(int padNum)
     }
 }
 
-//static unsigned int zeros[10];
-
+/**
+ * Handle switch enable
+ *
+ * User has pressed the continuity switch.  This engages the continuity relay
+ * take resistance measurements, and displays the continuity status on the LED.
+ */
 void SWEnable(int sw)
 {
     struct padStruct *pad=&pads[sw];
@@ -135,6 +143,12 @@ void SWEnable(int sw)
     pad->launchState=SW_ENABLE;
 }
 
+/**
+ * Handle switch disable
+ *
+ * User has released the continuity switch.  This disgages the continuity relay
+ * and turns off the LED.
+ */
 void SWReset(int sw)
 {
     struct padStruct *pad=&pads[sw];
@@ -152,6 +166,16 @@ void SWReset(int sw)
 	PadLed(OFF, sw);
 }
 
+/**
+ * Received Enable command.
+ * 
+ * Handle an enable command for the specified pad.  This causes the pad to
+ * engage the continuity relay, take resistance measurements, and starts 
+ * responding with a Status command every second.
+ *
+ * If the pad does not hear a Enable or Launch command within 10 seconds, the
+ * pad->timeout counter decrements to 0 and the pad resets to IDLE state.
+ */
 void padEnable(int sw)
 {
     struct padStruct *pad=&pads[sw];
@@ -165,6 +189,12 @@ void padEnable(int sw)
     pad->launchState=PAD_ENABLE;
 }
 
+/**
+ * Handle Reset command.
+ * 
+ * Handles a reset command for the specified pad.  This causes the pad to
+ * disengage all relays and reset to it's IDLE state.
+ */
 void padReset(int sw)
 {
     struct padStruct *pad=&pads[sw];
@@ -184,6 +214,15 @@ void padReset(int sw)
 	pad->statusTimer=0;
 }
 
+/**
+ * Handle Launch command.
+ * 
+ * Handle a launch command for the specified pad.  This causes the pad to
+ * engage it's launch relay allowing full current to flow through the igniter.
+ *
+ * If the pad does not hear a Enable or Launch command within 10 seconds, the
+ * pad->timeout counter decrements to 0 and the pad resets to IDLE state.
+ */
 void padLaunch(int sw)
 {
     struct padStruct *pad=&pads[sw];
@@ -201,6 +240,12 @@ void padLaunch(int sw)
 	pad->timeout=RESET_TIMER;
 }
 
+/**
+ * Handle Unlaunch command.
+ * 
+ * Handle an unlaunch command for the specified pad.  This causes the pad to
+ * disengage the launch relay and regress to it's Enabled state.
+ */
 void padUnlaunch(int sw)
 {
     struct padStruct *pad=&pads[sw];
@@ -209,4 +254,3 @@ void padUnlaunch(int sw)
 	pad->flashTimer=0;
 	pad->launchState=PAD_ENABLED;
 }
-
