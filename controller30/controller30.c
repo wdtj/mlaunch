@@ -133,7 +133,7 @@ int main(void)
 
     linkInit(notInitialized);
 
-    // Leave the copyright on a bit longer
+    // Leave the copyright on a bit longer  
     OLED_clearLine(1);
     OLED_clearLine(2);
     OLED_clearLine(3);
@@ -512,13 +512,22 @@ void addToNew( unsigned char * ni, zbNetAddr netAddr, zbAddr addr )
             return;
         }
 
+        /* If we've already discovered this pad, skip it */
+        for(int j=0; j<8; ++j)
+        {
+            if (memcmp(&pads[j].addr, &addr, sizeof addr)==0)
+            {
+                return;
+            }
+        }
+        
         /* Add info to new pad list */
         if (newPad[i].used==false)
         {
             newPad[i].addr=addr;
             newPad[i].netAddr=netAddr;
             newPad[i].used=true;
-#if defined(DEBUG)
+#if defined(DEBUGx)
             OLED_XYprintf(0, 1, "%02x%02x %02x%02x %02x%02x %02x%02x",
             newPad[i].addr.addr64[0],
             newPad[i].addr.addr64[1],
@@ -537,60 +546,95 @@ void addToNew( unsigned char * ni, zbNetAddr netAddr, zbAddr addr )
     ASSERT("New pad overrun");
 }
 
+/** 
+  * Discovered a node 
+  *
+  * We have been notified of a discovered node.  This can happen is several 
+  * situations:
+  *  This node has just been powered up and knows his name
+  *  This node has just been powered up in cold start and needs to be assigned 
+  *    a name
+  *  We are doing a cold start, and we want to reassign all nodes their names
+  *  We are doing a warm start and want to use the names the pad knows
+*/
+
 void padDiscovered( zbAddr addr, zbNetAddr netAddr, unsigned char *ni )
 {
     /* If it's not one of ours, ignore it */
     if (ni[0] != 'P' || ni[1] != 'A' || ni[2] != 'D') 
     {
-        OLED_XYprintf(0, 3, "???%.17s", ni);
         return;
     }
 
+    /* Attempt to get the pad id */
     unsigned char padId0=ni[3];
     unsigned char padId1=ni[4];
 
-    /* OK, it's one of ours,  is it assigned a pad id? */
-    if (!notInitialized && padId0>'0' && padId0<'9' && padId1>'0' && padId1<'9' )
+    if (!notInitialized) /* not in cold start */
     {
-        /* Yes, add it to the discovered pads */
+        if (padId0 > '0' && padId0 < '9' && padId1 > '0' && padId1 < '9' )
+        {   /* This guy knows who he is */
+            /* Add it to the discovered pads */
         
-        unsigned int padIndex0=padId0-'0'-1;
-        unsigned int padIndex1=padId1-'0'-1;
+            unsigned int padIndex0=padId0-'0'-1;
+            unsigned int padIndex1=padId1-'0'-1;
         
-        OLED_XYprintf(0, 3, "Discovered %c&%c", padId0, padId1);
-        OLED_clearEOL();
+            OLED_XYprintf(0, 3, "Discovered %c&%c", padId0, padId1);
+            OLED_clearEOL();
         
-        /* Is there another pad of that number registered? */
-        if (pads[padId0].discovered || pads[padId1].discovered)
-        {
-            if (pads[padIndex0].padId != padId0 || pads[padIndex1].padId != padId1)
+            /* Is there another pad of that number registered? */
+            if (pads[padIndex0].discovered || pads[padIndex0].discovered)
             {
-                /* Yes, reassign it */
-                addToNew(ni, netAddr, addr);
-                return;
+                if (pads[padIndex0].padId != padId0 || pads[padIndex1].padId != padId1)
+                {
+                    /* Yes, reassign it */
+                    addToNew(ni, netAddr, addr);
+                    return;
+                }
             }
+        
+            /* Ok we add it */
+            pads[padIndex0].addr=addr;
+            pads[padIndex0].netAddr=netAddr;
+        
+            pads[padIndex1].addr=addr;
+            pads[padIndex1].netAddr=netAddr;
+
+            pads[padIndex0].discovered=true;
+            pads[padIndex1].discovered=true;
+        
+            pads[padIndex0].discoveredAck=true;
+            greenLeds|=_BV(padIndex0);
+            pads[padIndex1].discoveredAck=true;
+            greenLeds|=_BV(padIndex1);
+
+            LED_output(redLeds, greenLeds, yellowLeds);
         }
+        else
+        {   /* Uninitialized pad, we need to assign a name */
+            /* Do we know who he is? */
+            for(int j=0; j<8; ++j)
+            {
+                if (memcmp(&pads[j].addr, &addr, sizeof addr)==0)
+                {
+                    /* We need to forget him and reassign anyway */
+                    zbAddrZero(pads[j].addr);
+                    zbNetAddrZero(pads[j].netAddr);
+                    pads[j].discovered=true;
+                    pads[j].discoveredAck=true;
         
-        /* Ok we add it */
-        pads[padIndex0].addr=addr;
-        pads[padIndex0].netAddr=netAddr;
-        
-        pads[padIndex1].addr=addr;
-        pads[padIndex1].netAddr=netAddr;
-
-        pads[padIndex0].discovered=true;
-        pads[padIndex1].discovered=true;
-        
-        pads[padIndex0].discoveredAck=true;
-        greenLeds|=_BV(padIndex0);
-        pads[padIndex1].discoveredAck=true;
-        greenLeds|=_BV(padIndex1);
-
-        LED_output(redLeds, greenLeds, yellowLeds);
+                    zbAddrZero(pads[j+1].addr);
+                    zbNetAddrZero(pads[j+1].netAddr);
+                    pads[j+1].discovered=true;
+                    pads[j+1].discoveredAck=true;
+                }
+            }
+            addToNew(ni, netAddr, addr);
+        }
     }
     else
     {
-        /* Unassigned pad */
+        /* Unassigned all pads on cold start */
         addToNew(ni, netAddr, addr);
     }
 }
@@ -653,14 +697,14 @@ void initNewPads()
             
             OLED_XYprintf(0, 0, "Unassigned Device:");
             OLED_XYprintf(0, 1, "%02x%02x %02x%02x %02x%02x %02x%02x", 
-            newPad[i].addr.addr64[0],
-            newPad[i].addr.addr64[1],
-            newPad[i].addr.addr64[2],
-            newPad[i].addr.addr64[3],
-            newPad[i].addr.addr64[4],
-            newPad[i].addr.addr64[5],
-            newPad[i].addr.addr64[6],
-            newPad[i].addr.addr64[7]);
+                newPad[i].addr.addr64[0],
+                newPad[i].addr.addr64[1],
+                newPad[i].addr.addr64[2],
+                newPad[i].addr.addr64[3],
+                newPad[i].addr.addr64[4],
+                newPad[i].addr.addr64[5],
+                newPad[i].addr.addr64[6],
+                newPad[i].addr.addr64[7]);
             OLED_XYprintf(0, 3, "Select Pad");
             
             /* Wait till a button is pushed */
