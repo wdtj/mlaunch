@@ -43,7 +43,7 @@ char rxBuffer[80]="";
 char txBuffer[80]="";
 
 void rxc(void);
-void zbWrite(void *buff, unsigned int count);
+int zbWrite(void *buff, unsigned int count);
 void linkPkt(unsigned char *data, unsigned int length);
 
 int main(void)
@@ -73,9 +73,9 @@ void rxc(void)
 	zbReceivedChar(ch);
 }
 
-void zbWrite(void *buff, unsigned int count)
+int zbWrite(void *buff, unsigned int count)
 {
-	fwrite(buff, count, 1, &xbee);
+	return fwrite(buff, count, 1, &xbee);
 }
 
 void linkPkt(unsigned char *data, unsigned int length)
