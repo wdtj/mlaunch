@@ -102,8 +102,8 @@ int main(void)
 
     OLED_clearDisplay();                /* Blank display */
 
-    OLED_XYprintf(0, 0, "mLaunch 3.0");
-    OLED_XYprintf(0, 2, "Copyright 2016 by");
+    OLED_XYprintf(0, 0, "mLaunch 3.1");
+    OLED_XYprintf(0, 2, "Copyright 2017 by");
     OLED_XYprintf(0, 3, "Wayne Johnson");
 
     OLED_clearLine(2);
@@ -133,7 +133,10 @@ int main(void)
 
     linkInit(notInitialized);
 
-    OLED_clearDisplay();
+    // Leave the copyright on a bit longer
+    OLED_clearLine(1);
+    OLED_clearLine(2);
+    OLED_clearLine(3);
     
     /* main loop */
     bool displayCluttered=false;
@@ -248,11 +251,11 @@ int main(void)
         
             if (allOpen == true && displayCluttered)
             {
-          OLED_clearLine(0);
-          OLED_clearLine(1);
-          OLED_clearLine(2);
-                OLED_XYprintf(0, 0, "Ready");
-                displayCluttered=false;
+              OLED_clearLine(0);
+              OLED_clearLine(1);
+              OLED_clearLine(2);
+              OLED_XYprintf(0, 0, "Ready");
+              displayCluttered=false;
             }
         
             if (isClosed(8) && !launchPressed)
@@ -537,7 +540,11 @@ void addToNew( unsigned char * ni, zbNetAddr netAddr, zbAddr addr )
 void padDiscovered( zbAddr addr, zbNetAddr netAddr, unsigned char *ni )
 {
     /* If it's not one of ours, ignore it */
-    if (ni[0] != 'P' || ni[1] != 'A' || ni[2] != 'D') return;
+    if (ni[0] != 'P' || ni[1] != 'A' || ni[2] != 'D') 
+    {
+        OLED_XYprintf(0, 3, "???%.17s", ni);
+        return;
+    }
 
     unsigned char padId0=ni[3];
     unsigned char padId1=ni[4];

@@ -1,5 +1,5 @@
 G04 FreePCB version 1.359*
-G04 C:\Users\waynej\Documents\GitHub\mlaunch\controller30\CAM\board_outline.grb*
+G04 D:\Users\waynej\My Documents\GitHub\mlaunch\controller30\CAM\board_outline.grb*
 G04 board outline layer *
 G04 Scale: 100 percent, Rotated: No, Reflected: No *
 %FSLAX24Y24*%
@@ -1168,9 +1168,7 @@ G01X3500Y1750D01*
 
 G04 -------------- Draw Parts, Pads, Traces, Vias and Text (positive)*
 %LPD*%
-G04 Draw part U5*
 G04 Draw part U3*
-G04 Draw part C2*
 G04 Draw part C3*
 G04 Draw part U1*
 G04 Draw part C6*
@@ -1185,10 +1183,6 @@ G04 Draw part S7*
 G04 Draw part S8*
 G04 Draw part C4*
 G04 Draw part C5*
-G04 Draw part R3*
-G04 Draw part R4*
-G04 Draw part R5*
-G04 Draw part R6*
 G04 Draw part C8*
 G04 Draw part R7*
 G04 Draw part R8*
@@ -1214,10 +1208,8 @@ G04 Draw part U2*
 G04 Draw part X1*
 G04 Draw part U6*
 G04 Draw part C1*
-G04 Draw part Q1*
 G04 Draw part V1*
 G04 Draw part S9*
-G04 Draw part R10*
 G04 Draw part C10*
 
 G04 Draw traces*
