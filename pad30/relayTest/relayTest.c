@@ -3,7 +3,7 @@
  *
  * Created: 11/21/2014 4:35:34 PM
  *  Author: waynej
- */ 
+ */
 
 #include "../../common/config.h"
 
@@ -26,26 +26,34 @@
 
 int main(void)
 {
-	DDRA=_BV(Launch1)|_BV(Enable1)|_BV(Launch2)|_BV(Enable2);		// PA4-7 output
+    DDRA = _BV(Launch1) | _BV(Enable1) | _BV(Launch2) | _BV(Enable2);// PA4-7 output
 
-    while(1)
+    while (1)
     {
-		setEnable1();
-		_delay_ms(1000);
-		setLaunch1();
-		_delay_ms(1000);
-		resetLaunch1();
-		_delay_ms(1000);
-		resetEnable1();
-		_delay_ms(1000);
+        setEnable1()
+        ;
+        _delay_ms(1000);
+        setLaunch1()
+        ;
+        _delay_ms(1000);
+        resetLaunch1()
+        ;
+        _delay_ms(1000);
+        resetEnable1()
+        ;
+        _delay_ms(1000);
 
-		setEnable2();
-		_delay_ms(1000);
-		setLaunch2();
-		_delay_ms(1000);
-		resetLaunch2();
-		_delay_ms(1000);
-		resetEnable2();
-		_delay_ms(1000);
+        setEnable2()
+        ;
+        _delay_ms(1000);
+        setLaunch2()
+        ;
+        _delay_ms(1000);
+        resetLaunch2()
+        ;
+        _delay_ms(1000);
+        resetEnable2()
+        ;
+        _delay_ms(1000);
     }
 }

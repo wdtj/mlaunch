@@ -32,100 +32,100 @@
 
 unsigned int adc_read(int channel)
 {
-  unsigned int adcValue;
+    unsigned int adcValue;
 
-  ADMUX=_BV(REFS0) | channel;  /* AVcc as Aref, select ADC4 */
-  
-  ADCSRA=_BV(ADEN) | _BV(ADPS0) | _BV(ADPS1) | _BV(ADPS2);
-							/* Enable ADC and set prescaler to x128 */
+    ADMUX = _BV(REFS0) | channel; /* AVcc as Aref, select ADC4 */
 
-  ADCSRA|=_BV(ADSC);		/* Start conversion */
+    ADCSRA = _BV(ADEN) | _BV(ADPS0) | _BV(ADPS1) | _BV(ADPS2);
+    /* Enable ADC and set prescaler to x128 */
 
-  loop_until_bit_is_set(ADCSRA, ADIF);
-							/* Wait for conversion */
+    ADCSRA |= _BV(ADSC); /* Start conversion */
 
-  adcValue=ADCL+(ADCH<<8);	/* Read Low and High data */
-  
-  ADCSRA|=_BV(ADIF);		/* Reenable ADC */
+    loop_until_bit_is_set(ADCSRA, ADIF);
+    /* Wait for conversion */
 
-  return adcValue;
+    adcValue = ADCL + (ADCH << 8); /* Read Low and High data */
+
+    ADCSRA |= _BV(ADIF); /* Reenable ADC */
+
+    return adcValue;
 }
 
-struct AdcChannel 
+struct AdcChannel
 {
-	bool enabled;
-	bool valid;
-	unsigned int value;
-	unsigned int count;
-	unsigned int admux;
+    bool enabled;
+    bool valid;
+    unsigned int value;
+    unsigned int count;
+    unsigned int admux;
 };
 
 volatile struct AdcChannel adcChannel[8];
 
-int channelEnabled=0;
+int channelEnabled = 0;
 
 #define ADREF _BV(REFS0) /*|_BV(REFS1)*/ | 0
 
 void adc_init(int channel, unsigned int admux)
 {
-	adcChannel[channel].enabled=true;
-	adcChannel[channel].admux=admux;
-	adcChannel[channel].count=0;
-	adcChannel[channel].valid=false;
+    adcChannel[channel].enabled = true;
+    adcChannel[channel].admux = admux;
+    adcChannel[channel].count = 0;
+    adcChannel[channel].valid = false;
 }
 
 void adc_run()
 {
-	/* Initialize and enable ADC */
-	ADCSRA=_BV(ADEN) | _BV(ADIE) | _BV(ADPS0) | _BV(ADPS1) | _BV(ADPS2);
-							/* Enable ADC, ADC interrupt, and set prescaler to x128 */
+    /* Initialize and enable ADC */
+    ADCSRA = _BV(ADEN) | _BV(ADIE) | _BV(ADPS0) | _BV(ADPS1) | _BV(ADPS2);
+    /* Enable ADC, ADC interrupt, and set prescaler to x128 */
 
-	/* Initiate first conversion */
-	for (channelEnabled=0; channelEnabled<8; ++channelEnabled)
-	{
-		if (adcChannel[channelEnabled].enabled)
-		{
-			ADMUX = adcChannel[channelEnabled].admux;  
-			ADCSRA |= _BV(ADSC);		/* Start conversion */
-			break;
-		}
-	}
+    /* Initiate first conversion */
+    for (channelEnabled = 0; channelEnabled < 8; ++channelEnabled)
+    {
+        if (adcChannel[channelEnabled].enabled)
+        {
+            ADMUX = adcChannel[channelEnabled].admux;
+            ADCSRA |= _BV(ADSC); /* Start conversion */
+            break;
+        }
+    }
 }
 
-ISR(ADC_vect)
+ISR( ADC_vect)
 {
-	int value;
-	
-	value=ADCL+(ADCH<<8);	/* Read Low and High data */
-	
-	adcChannel[channelEnabled].value=value;
-	adcChannel[channelEnabled].valid=true;
-	adcChannel[channelEnabled].count++;
+    int value;
 
-	for(int x=0; x<8; ++x)
-	{
-		channelEnabled++;
-		channelEnabled%=8;
-		if (adcChannel[channelEnabled].enabled)
-		{
-			ADMUX = adcChannel[channelEnabled].admux;
-			ADCSRA |= _BV(ADSC)|_BV(ADIF);		/* Start next conversion */
-			break;
-		}
-	}
+    value = ADCL + (ADCH << 8); /* Read Low and High data */
+
+    adcChannel[channelEnabled].value = value;
+    adcChannel[channelEnabled].valid = true;
+    adcChannel[channelEnabled].count++;
+
+    for (int x = 0; x < 8; ++x)
+    {
+        channelEnabled++;
+        channelEnabled %= 8;
+        if (adcChannel[channelEnabled].enabled)
+        {
+            ADMUX = adcChannel[channelEnabled].admux;
+            ADCSRA |= _BV(ADSC) | _BV(ADIF); /* Start next conversion */
+            break;
+        }
+    }
 }
 
 unsigned int adc_value(int channel)
 {
-	return adcChannel[channel].value;
+    return adcChannel[channel].value;
 }
 
 unsigned int adc_valid(int channel)
 {
-	return adcChannel[channel].valid;
+    return adcChannel[channel].valid;
 }
 
 unsigned int adc_count(int channel)
 {
-	return adcChannel[channel].count;
+    return adcChannel[channel].count;
 }

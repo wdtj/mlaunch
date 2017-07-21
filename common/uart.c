@@ -45,214 +45,213 @@
  * UBRR11:0: USART Baud Rate Register 
  */
 
-volatile static void *txBuff=NULL;
-volatile static void *txBuffIn=NULL;
-volatile static void *txBuffOut=NULL;
-volatile static unsigned int txBuffSize=0;
-volatile static unsigned int txCount=0;
-volatile static unsigned int maxTxTime=0;	
-volatile static int uart_toe=0;
-volatile static unsigned int maxTx=0;
-volatile int uart_fe=0;			// Framing error
-volatile int uart_doe=0;			// Data overrun error
-volatile int uart_pe=0;			// Parity error
-volatile int uart_roe=0;			// Buffer overrun error
-volatile unsigned int maxRxTime=0;	
-volatile unsigned int maxRx=0;
-volatile static void *rxBuff=NULL;
-volatile static unsigned rxBuffSize=0;
-volatile static void *rxBuffIn=NULL;
-volatile static void *rxBuffOut=NULL;
-volatile static unsigned int rxCount=0;
+volatile static void *txBuff = NULL;
+volatile static void *txBuffIn = NULL;
+volatile static void *txBuffOut = NULL;
+volatile static unsigned int txBuffSize = 0;
+volatile static unsigned int txCount = 0;
+volatile static unsigned int maxTxTime = 0;
+volatile static int uart_toe = 0;
+volatile static unsigned int maxTx = 0;
+volatile int uart_fe = 0;			// Framing error
+volatile int uart_doe = 0;			// Data overrun error
+volatile int uart_pe = 0;			// Parity error
+volatile int uart_roe = 0;			// Buffer overrun error
+volatile unsigned int maxRxTime = 0;
+volatile unsigned int maxRx = 0;
+volatile static void *rxBuff = NULL;
+volatile static unsigned rxBuffSize = 0;
+volatile static void *rxBuffIn = NULL;
+volatile static void *rxBuffOut = NULL;
+volatile static unsigned int rxCount = 0;
 
-void (*uart_handler)(void); 
+void (*uart_handler)(void);
 
 void uart_init(long baud, void (*handler)(void))
 {
-  uart_handler=handler;
-	
-#if F_CPU < 2000000UL && defined(U2X)
-  UCSRA = _BV(U2X);             /* improve baud rate error by using 2x clk */
-  UBRRL = (F_CPU/8UL/baud-1);
-  UBRRH = (F_CPU/8UL/baud-1)>>8;
-#else
-  UBRRL = (F_CPU/16UL/baud-1);
-  UBRRH = (F_CPU/16UL/baud-1)>>8;
-#endif
-  UCSRB = _BV(TXEN) | _BV(RXEN);  /* tx/rx enable */
+    uart_handler = handler;
 
-  UCSRB |= _BV(TXCIE);  // Reenable interrupt 
-  UCSRB |= _BV(RXCIE);
+#if F_CPU < 2000000UL && defined(U2X)
+    UCSRA = _BV(U2X); /* improve baud rate error by using 2x clk */
+    UBRRL = (F_CPU/8UL/baud-1);
+    UBRRH = (F_CPU/8UL/baud-1)>>8;
+#else
+    UBRRL = (F_CPU / 16UL / baud - 1);
+    UBRRH = (F_CPU / 16UL / baud - 1) >> 8;
+#endif
+    UCSRB = _BV(TXEN) | _BV(RXEN); /* tx/rx enable */
+
+    UCSRB |= _BV(TXCIE);  // Reenable interrupt
+    UCSRB |= _BV(RXCIE);
 }
 
 void uart_txBuff(void *ptr, unsigned int size)
 {
-  txBuff=ptr;
-  txBuffIn=ptr;
-  txBuffOut=ptr;
-  txBuffSize=size;
-  txCount=0;
+    txBuff = ptr;
+    txBuffIn = ptr;
+    txBuffOut = ptr;
+    txBuffSize = size;
+    txCount = 0;
 }
 
 static void txWrite()
 {
-  txCount--;
-  UDR = *(unsigned char *)txBuffOut;
-  txBuffOut++;
-  if (txBuffOut >= txBuff+txBuffSize)
-  {
-    txBuffOut=txBuff;
-  }
+    txCount--;
+    UDR = *(unsigned char *) txBuffOut;
+    txBuffOut++;
+    if (txBuffOut >= txBuff + txBuffSize)
+    {
+        txBuffOut = txBuff;
+    }
 }
 
 static void txStart()
 {
-  if (bit_is_set(UCSRA, UDRE))
-  {
-    txWrite();
-  }
+    if (bit_is_set(UCSRA, UDRE))
+    {
+        txWrite();
+    }
 }
 
-ISR(USART_TXC_vect )
+ISR( USART_TXC_vect)
 {
-  unsigned int startTime=TCNT1;
+    unsigned int startTime = TCNT1;
 
-  if (txCount != 0)
-  {
-    txWrite();
-  }
+    if (txCount != 0)
+    {
+        txWrite();
+    }
 
-  HIGH_WATER(maxTxTime, TCNT1-startTime);
+    HIGH_WATER(maxTxTime, TCNT1 - startTime);
 }
 
 /*
  * Send character c down the UART Tx, wait until tx holding register
  * is empty.
  */
-int
-uart_putchar(char c, FILE *stream)
+int uart_putchar(char c, FILE *stream)
 {
-  int rc=0;
+    int rc = 0;
 
-  UCSRB &= ~_BV(TXCIE);
-  if (txCount <= txBuffSize)
-  {
-    *(unsigned char *)txBuffIn=c;
-    txBuffIn++;
-    if (txBuffIn >= txBuff+txBuffSize)
+    UCSRB &= ~_BV(TXCIE);
+    if (txCount <= txBuffSize)
     {
-      txBuffIn=txBuff;
+        *(unsigned char *) txBuffIn = c;
+        txBuffIn++;
+        if (txBuffIn >= txBuff + txBuffSize)
+        {
+            txBuffIn = txBuff;
+        }
+        txCount++;
+        HIGH_WATER(maxTx, txCount);
+        txStart();
+    } else
+    {
+        uart_toe++;
+        rc = -1;
     }
-    txCount++;
-    HIGH_WATER(maxTx, txCount);
-    txStart();
-  }
-  else
-  {
-    uart_toe++;
-    rc=-1;
-  }
-  UCSRB |= _BV(TXCIE);
+    UCSRB |= _BV(TXCIE);
 
-  return rc;
+    return rc;
 }
 
 void uart_txc(unsigned char ch)
 {
-	/* Wait for empty transmit buffer */
-	while ( !( UCSRA & (1<<UDRE)) );
+    /* Wait for empty transmit buffer */
+    while (!(UCSRA & (1 << UDRE)))
+        ;
 
-	/* Put data into buffer, sends the data */
-	UDR = ch;
+    /* Put data into buffer, sends the data */
+    UDR = ch;
 }
 
 void uart_rxBuff(void *ptr, unsigned int size)
 {
-  rxBuff=ptr;
-  rxBuffSize=size;
-  rxBuffIn=ptr;
-  rxBuffOut=ptr;
-  rxCount=0;
+    rxBuff = ptr;
+    rxBuffSize = size;
+    rxBuffIn = ptr;
+    rxBuffOut = ptr;
+    rxCount = 0;
 }
 
 /*
  * Receive character from the UART Rx, wait until rx holding register
  * is ready.
  */
-int
-uart_getchar(FILE *stream)
+int uart_getchar(FILE *stream)
 {
-  while (rxCount ==0) {}
+    while (rxCount == 0)
+    {
+    }
 
-  UCSRB &= ~_BV(RXCIE);
+    UCSRB &= ~_BV(RXCIE);
 
-  unsigned char ch=*(unsigned char *)rxBuffOut;
-  rxBuffOut++;
-  if (rxBuffOut >= rxBuff+rxBuffSize)
-  {
-    rxBuffOut=rxBuff;
-  }
-  rxCount--;
+    unsigned char ch = *(unsigned char *) rxBuffOut;
+    rxBuffOut++;
+    if (rxBuffOut >= rxBuff + rxBuffSize)
+    {
+        rxBuffOut = rxBuff;
+    }
+    rxCount--;
 
-  UCSRB |= _BV(RXCIE);
-  return ch;
+    UCSRB |= _BV(RXCIE);
+    return ch;
 }
 
 // Returns number of available characters in the buffer
 int uart_rxReady()
 {
-   return (rxCount>0);
+    return (rxCount > 0);
 }
 
-
-ISR(USART_RXC_vect )
+ISR( USART_RXC_vect)
 {
-	unsigned int startTime=TCNT1;
-	
-	volatile unsigned char ucsra=UCSRA;
-	if (bit_is_set(ucsra, FE))
-	{
-		uart_fe=1;
-	}
-	if (bit_is_set(ucsra, DOR))
-	{
-		uart_doe=1;
-	}
-	if (bit_is_set(ucsra, UPE))
-	{
-		uart_pe=1;
-	}
+    unsigned int startTime = TCNT1;
 
-	if (uart_handler)
-	{
-		(*uart_handler)();
-	}
-	else
-	{
-		if (rxCount > rxBuffSize)
-		{
-			uart_roe=1;
-		}
-		
-		*(unsigned char *)(rxBuffIn++)=UDR;
-		if (rxBuffIn >= rxBuff+rxBuffSize)
-		{
-			rxBuffIn=rxBuff;
-		}
+    volatile unsigned char ucsra = UCSRA;
+    if (bit_is_set(ucsra, FE))
+    {
+        uart_fe = 1;
+    }
+    if (bit_is_set(ucsra, DOR))
+    {
+        uart_doe = 1;
+    }
+    if (bit_is_set(ucsra, UPE))
+    {
+        uart_pe = 1;
+    }
 
-		rxCount++;
-    HIGH_WATER(maxRx, rxCount);
-	}
+    if (uart_handler)
+    {
+        (*uart_handler)();
+    } else
+    {
+        if (rxCount > rxBuffSize)
+        {
+            uart_roe = 1;
+        }
 
-  HIGH_WATER(maxRxTime, TCNT1-startTime);
+        *(unsigned char *) (rxBuffIn++) = UDR;
+        if (rxBuffIn >= rxBuff + rxBuffSize)
+        {
+            rxBuffIn = rxBuff;
+        }
+
+        rxCount++;
+        HIGH_WATER(maxRx, rxCount);
+    }
+
+    HIGH_WATER(maxRxTime, TCNT1 - startTime);
 }
 
 int uart_rxc(void)
 {
-	/* Wait for data to be received */
-	while ( !(UCSRA & (1<<RXC)) );
-	
-	/* Get and return received data from buffer */
-	return UDR;
+    /* Wait for data to be received */
+    while (!(UCSRA & (1 << RXC)))
+        ;
+
+    /* Get and return received data from buffer */
+    return UDR;
 }
 

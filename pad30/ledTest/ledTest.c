@@ -3,7 +3,7 @@
  *
  * Created: 11/21/2014 3:49:31 PM
  *  Author: waynej
- */ 
+ */
 
 #include "../../common/config.h"
 
@@ -33,28 +33,40 @@
 
 int main(void)
 {
-	DDRB=_BV(Red1)|_BV(Green1)|_BV(Siren)|_BV(Red2)|_BV(Green2);	// PB0-1, 3-5 are output
+    DDRB = _BV(Red1) | _BV(Green1) | _BV(Siren) | _BV(Red2) | _BV(Green2);// PB0-1, 3-5 are output
 
-    while(1)
+    while (1)
     {
-		setRed1();
-		setRed2();
-		_delay_ms(1000);
-		resetRed1();
-		resetRed2();
+        setRed1()
+        ;
+        setRed2()
+        ;
+        _delay_ms(1000);
+        resetRed1()
+        ;
+        resetRed2()
+        ;
 
-		setGreen1();
-		setGreen2();
-		_delay_ms(1000);
-		resetGreen1();
-		resetGreen2();
+        setGreen1()
+        ;
+        setGreen2()
+        ;
+        _delay_ms(1000);
+        resetGreen1()
+        ;
+        resetGreen2()
+        ;
 
-		setYellow1();
-		setYellow2();
-		_delay_ms(1000);
-		resetYellow1();
-		resetYellow2();
+        setYellow1()
+        ;
+        setYellow2()
+        ;
+        _delay_ms(1000);
+        resetYellow1()
+        ;
+        resetYellow2()
+        ;
 
-		_delay_ms(1000);
+        _delay_ms(1000);
     }
 }

@@ -3,7 +3,7 @@
  *
  * Created: 11/21/2014 3:49:31 PM
  *  Author: waynej
- */ 
+ */
 
 #include "../../common/config.h"
 
@@ -33,28 +33,42 @@
 
 int main(void)
 {
-	DDRB=_BV(Red1)|_BV(Green1)|_BV(Yellow1)|_BV(Red2)|_BV(Green2)|_BV(Yellow2);	// PB0-2, 4-6 are output
-	PORTB=_BV(Red1)|_BV(Green1)|_BV(Yellow1)|_BV(Red2)|_BV(Green2)|_BV(Yellow2);
-    while(1)
+    DDRB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
+            | _BV(Yellow2);	// PB0-2, 4-6 are output
+    PORTB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
+            | _BV(Yellow2);
+    while (1)
     {
-		setRed1();
-		setRed2();
-		_delay_ms(1000);
-		resetRed1();
-		resetRed2();
+        setRed1()
+        ;
+        setRed2()
+        ;
+        _delay_ms(1000);
+        resetRed1()
+        ;
+        resetRed2()
+        ;
 
-		setGreen1();
-		setGreen2();
-		_delay_ms(1000);
-		resetGreen1();
-		resetGreen2();
+        setGreen1()
+        ;
+        setGreen2()
+        ;
+        _delay_ms(1000);
+        resetGreen1()
+        ;
+        resetGreen2()
+        ;
 
-		setYellow1();
-		setYellow2();
-		_delay_ms(1000);
-		resetYellow1();
-		resetYellow2();
+        setYellow1()
+        ;
+        setYellow2()
+        ;
+        _delay_ms(1000);
+        resetYellow1()
+        ;
+        resetYellow2()
+        ;
 
-		_delay_ms(1000);
+        _delay_ms(1000);
     }
 }

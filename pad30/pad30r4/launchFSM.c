@@ -15,110 +15,105 @@ void sendStatus(int padNum, float contVolt, float battVolt);
  */
 void padFSMtimer(int padNum)
 {
-	struct padStruct *pad=&pads[padNum];
+    struct padStruct *pad = &pads[padNum];
 
     /* After 10 seconds of no contact from the controller, reset to the IDLE state. */
-	pad->timeout--;
-	if (pad->timeout==0)
-	{
-		padReset(padNum);
-		return;
-	}
-	
+    pad->timeout--;
+    if (pad->timeout == 0)
+    {
+        padReset(padNum);
+        return;
+    }
+
     switch (pad->launchState)
     {
-        case IDLE:
-		switch(linkFSMStatus())
-		{
-		case MODEM_RESET:
-			if (pad->flashTimer <DIS_TIMER50)
-			{
-				PadLed(YELLOW, padNum);
-			}
-			else
-			{
-				PadLed(OFF, padNum);
-			}
-			pad->flashTimer++;
-			pad->flashTimer%=DIS_TIMER;
-			break;
-		case MODEM_INIT:
-			if (pad->flashTimer <DIS_TIMER50)
-			{
-				PadLed(RED, padNum);
-			}
-			else
-			{
-				PadLed(OFF, padNum);
-			}
-			pad->flashTimer++;
-			pad->flashTimer%=DIS_TIMER;
-			break;
-		case MODEM_READY:
-			PadLed(OFF, padNum);
-			break;
-			
-		}
-		break;
-		
-        case SW_ENABLE:
-        pad->relayTimer--;
-        if (pad->relayTimer == 0)
+    case IDLE:
+        switch (linkFSMStatus())
         {
-            pad->launchState=SW_ENABLED;
+        case MODEM_RESET:
+            if (pad->flashTimer < DIS_TIMER50)
+            {
+                PadLed(YELLOW, padNum);
+            } else
+            {
+                PadLed(OFF, padNum);
+            }
+            pad->flashTimer++;
+            pad->flashTimer %= DIS_TIMER;
+            break;
+        case MODEM_INIT:
+            if (pad->flashTimer < DIS_TIMER50)
+            {
+                PadLed(RED, padNum);
+            } else
+            {
+                PadLed(OFF, padNum);
+            }
+            pad->flashTimer++;
+            pad->flashTimer %= DIS_TIMER;
+            break;
+        case MODEM_READY:
+            PadLed(OFF, padNum);
+            break;
+
         }
         break;
 
-        case SW_ENABLED:
-		if (pads[padNum].contValid==true)
-		{
-			if (pads[padNum].contResistance < 400)
-			{
-				PadLed(GREEN, padNum);
-			}
-			else
-			{
-				PadLed(RED, padNum);
-			}
-		}
-        break;
-
-        case PAD_ENABLE:
+    case SW_ENABLE:
         pad->relayTimer--;
         if (pad->relayTimer == 0)
         {
-			pad->contValid=false;
-            pad->launchState=PAD_ENABLED;
-			pad->statusTimer=0;
+            pad->launchState = SW_ENABLED;
         }
         break;
 
-        case PAD_ENABLED:
-        pad->relayTimer--;
-
-		if (pads[padNum].contResistance < 400)
-		{
-			PadLed(GREEN, padNum);
-		}
-		else
-		{
-			PadLed(RED, padNum);
-		}
-			
+    case SW_ENABLED:
+        if (pads[padNum].contValid == true)
+        {
+            if (pads[padNum].contResistance < 400)
+            {
+                PadLed(GREEN, padNum);
+            } else
+            {
+                PadLed(RED, padNum);
+            }
+        }
         break;
 
-        case PAD_LAUNCH:
-		if (pad->flashTimer <FLASH_TIMER50)
-		{
-			PadLed(RED, padNum);
+    case PAD_ENABLE:
+        pad->relayTimer--;
+        if (pad->relayTimer == 0)
+        {
+            pad->contValid = false;
+            pad->launchState = PAD_ENABLED;
+            pad->statusTimer = 0;
+        }
+        break;
 
-		}
-		else
-		{
-			PadLed(OFF, padNum);
-		}
-		pad->flashTimer++;
-		pad->flashTimer%=FLASH_TIMER;
+    case PAD_ENABLED:
+        pad->relayTimer--;
+
+        if (pads[padNum].contResistance < 400)
+        {
+            PadLed(GREEN, padNum);
+        } else
+        {
+            PadLed(RED, padNum);
+        }
+
+        break;
+
+    case PAD_LAUNCH:
+        if (pad->flashTimer < FLASH_TIMER50)
+        {
+            PadLed(RED, padNum);
+
+        } else
+        {
+            PadLed(OFF, padNum);
+        }
+        pad->flashTimer++;
+        pad->flashTimer %= FLASH_TIMER;
         break;
     }
 }
@@ -131,16 +126,16 @@ void padFSMtimer(int padNum)
  */
 void SWEnable(int sw)
 {
-    struct padStruct *pad=&pads[sw];
+    struct padStruct *pad = &pads[sw];
 
-    if (pad->launchState!=IDLE)
+    if (pad->launchState != IDLE)
     {
         return;
     }
 
     set(PORTA, pad->enableBit);
-    pad->relayTimer=RELAY_TIMER;   /* Relay latch time is 10ms + margin */
-    pad->launchState=SW_ENABLE;
+    pad->relayTimer = RELAY_TIMER; /* Relay latch time is 10ms + margin */
+    pad->launchState = SW_ENABLE;
 }
 
 /**
@@ -151,19 +146,19 @@ void SWEnable(int sw)
  */
 void SWReset(int sw)
 {
-    struct padStruct *pad=&pads[sw];
+    struct padStruct *pad = &pads[sw];
 
-    if (pad->launchState!=SW_ENABLE && pad->launchState!=SW_ENABLED)
+    if (pad->launchState != SW_ENABLE && pad->launchState != SW_ENABLED)
     {
         return;
     }
 
-    pad->launchState=IDLE;
+    pad->launchState = IDLE;
 
     reset(PORTA, pad->enableBit);
     reset(PORTA, pad->launchBit);
 
-	PadLed(OFF, sw);
+    PadLed(OFF, sw);
 }
 
 /**
@@ -178,15 +173,15 @@ void SWReset(int sw)
  */
 void padEnable(int sw)
 {
-    struct padStruct *pad=&pads[sw];
-	
+    struct padStruct *pad = &pads[sw];
+
     reset(PORTA, pad->launchBit);
     set(PORTA, pad->enableBit);
     set(PORTC, Siren);
-	
-    pad->relayTimer=RELAY_TIMER;   /* Relay latch time is 10ms + margin */
-	pad->timeout=RESET_TIMER;
-    pad->launchState=PAD_ENABLE;
+
+    pad->relayTimer = RELAY_TIMER; /* Relay latch time is 10ms + margin */
+    pad->timeout = RESET_TIMER;
+    pad->launchState = PAD_ENABLE;
 }
 
 /**
@@ -197,21 +192,21 @@ void padEnable(int sw)
  */
 void padReset(int sw)
 {
-    struct padStruct *pad=&pads[sw];
+    struct padStruct *pad = &pads[sw];
 
-    pad->launchState=IDLE;
+    pad->launchState = IDLE;
 
     reset(PORTA, pad->enableBit);
     reset(PORTA, pad->launchBit);
-	
-	PadLed(OFF, sw);
-	
+
+    PadLed(OFF, sw);
+
     reset(PORTC, Siren);
 
-	pad->timeout=0;
-	pad->flashTimer=0;
-	pad->relayTimer=0;
-	pad->statusTimer=0;
+    pad->timeout = 0;
+    pad->flashTimer = 0;
+    pad->relayTimer = 0;
+    pad->statusTimer = 0;
 }
 
 /**
@@ -225,19 +220,19 @@ void padReset(int sw)
  */
 void padLaunch(int sw)
 {
-    struct padStruct *pad=&pads[sw];
-	
+    struct padStruct *pad = &pads[sw];
+
     /* If we're not already enabled, ignore this launch command */
-    if(pad->launchState!=PAD_ENABLED && pad->launchState!=PAD_LAUNCH)
+    if (pad->launchState != PAD_ENABLED && pad->launchState != PAD_LAUNCH)
     {
         return;
     }
-	
+
     set(PORTA, pad->launchBit);
-	
-	pad->flashTimer=0;
-    pad->launchState=PAD_LAUNCH;
-	pad->timeout=RESET_TIMER;
+
+    pad->flashTimer = 0;
+    pad->launchState = PAD_LAUNCH;
+    pad->timeout = RESET_TIMER;
 }
 
 /**
@@ -248,9 +243,9 @@ void padLaunch(int sw)
  */
 void padUnlaunch(int sw)
 {
-    struct padStruct *pad=&pads[sw];
+    struct padStruct *pad = &pads[sw];
     reset(PORTA, pad->launchBit);
-    pad->timeout=RESET_TIMER;
-	pad->flashTimer=0;
-	pad->launchState=PAD_ENABLED;
+    pad->timeout = RESET_TIMER;
+    pad->flashTimer = 0;
+    pad->launchState = PAD_ENABLED;
 }

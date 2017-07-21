@@ -515,7 +515,7 @@ void addToNew( unsigned char * ni, zbNetAddr netAddr, zbAddr addr )
         /* If we've already discovered this pad, skip it */
         for(int j=0; j<8; ++j)
         {
-            if (memcmp(&pads[j].addr, &addr, sizeof addr)==0)
+            if (zbAddrCmp(pads[j].addr, addr))
             {
                 return;
             }
@@ -615,7 +615,7 @@ void padDiscovered( zbAddr addr, zbNetAddr netAddr, unsigned char *ni )
             /* Do we know who he is? */
             for(int j=0; j<8; ++j)
             {
-                if (memcmp(&pads[j].addr, &addr, sizeof addr)==0)
+                if (zbAddrCmp(pads[j].addr, addr))
                 {
                     /* We need to forget him and reassign anyway */
                     zbAddrZero(pads[j].addr);

@@ -3,7 +3,7 @@
  *
  * Created: 11/21/2014 4:06:38 PM
  *  Author: waynej
- */ 
+ */
 
 #include "../../common/config.h"
 
@@ -35,28 +35,32 @@
 
 int main(void)
 {
-	PORTB=_BV(ContSW1)|_BV(ContSW2);								// Set pullup on switches
-	DDRB=_BV(Red1)|_BV(Green1)|_BV(Yellow1)|_BV(Red2)|_BV(Green2)|_BV(Yellow2);	// PB0-2, 4-6 are output
-	PORTB|=_BV(Red1)|_BV(Green1)|_BV(Yellow1)|_BV(Red2)|_BV(Green2)|_BV(Yellow2); // Turn off leds
+    PORTB = _BV(ContSW1) | _BV(ContSW2);			// Set pullup on switches
+    DDRB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
+            | _BV(Yellow2);	// PB0-2, 4-6 are output
+    PORTB |= _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
+            | _BV(Yellow2); // Turn off leds
 
-    while(1)
+    while (1)
     {
-		if(!(PINB&_BV(ContSW1)))
-		{
-			setRed1();
-		}
-		else
-		{
-			resetRed1();
-		}
+        if (!(PINB & _BV(ContSW1)))
+        {
+            setRed1()
+            ;
+        } else
+        {
+            resetRed1()
+            ;
+        }
 
-		if(!(PINB&_BV(ContSW2)))
-		{
-			setRed2();
-		}
-		else
-		{
-			resetRed2();
-		}
+        if (!(PINB & _BV(ContSW2)))
+        {
+            setRed2()
+            ;
+        } else
+        {
+            resetRed2()
+            ;
+        }
     }
 }
