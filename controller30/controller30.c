@@ -87,9 +87,16 @@ struct NewPad newPad[8];
 /* Flag to force manual initialization */
 bool notInitialized=false;
 
+/**
+ * mLaunch controller main
+ *
+ * We get control here as soon as Atmel runtime is initialized.  It initializes 
+ * the platform, then loops, looking for work to do.
+ */
 int main(void)
 {
     bool launchPressed=false;
+   
     
     init();
 
