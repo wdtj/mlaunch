@@ -3,7 +3,7 @@
  *
  * Created: 2/12/2014 9:00:34 PM
  *  Author: waynej
- */ 
+ */
 
 #include "../../common/config.h"
 #include <avr/io.h>
@@ -42,27 +42,28 @@
 
 #define UART_BAUD  9600UL
 
-enum LaunchState {
-	IDLE,             /* We're idle and nothing is happening */
-	SW_ENABLE,       /* The switch was pressed and we're waiting for the relay to engage */
-	SW_ENABLED,       /* Relay is engaged, update LED */
-	PAD_ENABLE,       /* An Enable message was received and we're waiting for the relay to engage */
-	PAD_ENABLED,      /* Relay is engaged, update LED */
-	PAD_LAUNCH        /* Launch command received, launch relay is enabled */
+enum LaunchState
+{
+    IDLE, /* We're idle and nothing is happening */
+    SW_ENABLE, /* The switch was pressed and we're waiting for the relay to engage */
+    SW_ENABLED, /* Relay is engaged, update LED */
+    PAD_ENABLE, /* An Enable message was received and we're waiting for the relay to engage */
+    PAD_ENABLED, /* Relay is engaged, update LED */
+    PAD_LAUNCH /* Launch command received, launch relay is enabled */
 };
 
 struct padStruct
 {
-	enum LaunchState launchState;
-	unsigned int enableBit;
-	unsigned int launchBit;
-	unsigned char padAssign;
-	unsigned int flashTimer;
-	unsigned int relayTimer;
-	unsigned int statusTimer;
-	unsigned int timeout;
-	unsigned long contResistance;
-	bool contValid;
+    enum LaunchState launchState;
+    unsigned int enableBit;
+    unsigned int launchBit;
+    unsigned char padAssign;
+    unsigned int flashTimer;
+    unsigned int relayTimer;
+    unsigned int statusTimer;
+    unsigned int timeout;
+    unsigned long contResistance;
+    bool contValid;
 };
 
 #define PAD_COUNT 2
@@ -85,17 +86,15 @@ int histptr;
 
 struct epromStruct
 {
-	unsigned char init[4];
-	unsigned char padAssign[PAD_COUNT];
+    unsigned char init[4];
+    unsigned char padAssign[PAD_COUNT];
 };
 
 extern struct epromStruct eprom;
 
 enum LINK_STATUS
 {
-	MODEM_INIT,
-	MODEM_RESET,
-	MODEM_READY
+    MODEM_INIT, MODEM_RESET, MODEM_READY
 };
 
 #if defined(TRACE)

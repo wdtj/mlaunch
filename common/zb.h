@@ -3,7 +3,8 @@
 #include <stdbool.h>
 
 #ifdef  __cplusplus
-extern "C" {
+extern "C"
+{
 #endif
 //#define ZB_DEBUG(level, s) if ((level) <= zb_debug) {zb_log##s;}
 
@@ -29,26 +30,19 @@ extern "C" {
 
 /* Substructures */
 
+/* factory assigned 64 bit address (AKA MAC) */
 typedef struct zbAddr
 {
-  unsigned char addr64[8];
+    unsigned char addr64[8];
 } zbAddr;
 
-#define zbAddrZero(addr) { addr.addr64[0]=0; addr.addr64[1]=0; addr.addr64[2]=0; addr.addr64[3]=0; addr.addr64[4]=0; addr.addr64[5]=0; addr.addr64[6]=0; addr.addr64[7]=0; }
-#define zbAddrCmp(addr1, addr2) { \
-    addr1.addr64[0]=addr2.addr64[0] && \
-    addr1.addr64[1]=addr2.addr64[1] && \
-    addr1.addr64[2]=addr2.addr64[2] && \
-    addr1.addr64[3]=addr2.addr64[3] && \
-    addr1.addr64[4]=addr2.addr64[4] && \
-    addr1.addr64[5]=addr2.addr64[5] && \
-    addr1.addr64[6]=addr2.addr64[6] && \
-    addr1.addr64[7]=addr2.addr64[7]; }
+int zbAddrCmp(zbAddr addr1, zbAddr addr2);
+void zbAddrZero(zbAddr addr);
 
 /* Coordinator assigned 16 bit address */
 typedef struct zbNetAddr
 {
-  unsigned char addr16[2];
+    unsigned char addr16[2];
 } zbNetAddr;
 
 #define zbNetAddrZero(addr) { addr.addr16[0]=0; addr.addr16[1]=0; }
@@ -56,294 +50,290 @@ typedef struct zbNetAddr
 
 typedef struct zbProfile
 {
-  unsigned char profile[2];
+    unsigned char profile[2];
 } zbProfile;
 
 typedef struct zbCluster
 {
-  unsigned char cluster[2];
+    unsigned char cluster[2];
 } zbCluster;
-
 
 /* Frame types */
 
 /* FrameType ZB_AT_COMMAND (0x08) */
 typedef struct zbATCommand
 {
-	unsigned char frameId;
-	unsigned char cmd[2];
-	unsigned char data[72];
+    unsigned char frameId;
+    unsigned char cmd[2];
+    unsigned char data[72];
 } zbATCommand;
 
 /* FrameType ZB_AT_COMMAND_QUEUE (0x09) */
-typedef struct zbATCommandQueue	
+typedef struct zbATCommandQueue
 {
-	unsigned char frameId;
-	unsigned char cmd[2];
-	unsigned char data[72];
+    unsigned char frameId;
+    unsigned char cmd[2];
+    unsigned char data[72];
 } zbATCommandQueue;
 
-/* FrameType ZB_TRANSMIT_REQUEST (0x10) */ 
-typedef struct zbTx	
+/* FrameType ZB_TRANSMIT_REQUEST (0x10) */
+typedef struct zbTx
 {
-	unsigned char frameId;
-	zbAddr dest;
-	zbNetAddr nad;
-	unsigned char radius;
-	unsigned char opt;
-	unsigned char data[72];
+    unsigned char frameId;
+    zbAddr dest;
+    zbNetAddr nad;
+    unsigned char radius;
+    unsigned char opt;
+    unsigned char data[72];
 } zbTx;
 
-/* FrameType ZB_TRANSMIT_EXPLICIT (0x11)*/ 
+/* FrameType ZB_TRANSMIT_EXPLICIT (0x11)*/
 typedef struct zbExpTx
 {
-	unsigned char frameId;
-	zbAddr dest;
-	zbNetAddr nad;
-	unsigned char src;
-	unsigned char dst;
-	zbCluster cluster;
-	zbProfile profile;
-	unsigned char radius;
-	unsigned char opt;
-	unsigned char data[72];
+    unsigned char frameId;
+    zbAddr dest;
+    zbNetAddr nad;
+    unsigned char src;
+    unsigned char dst;
+    zbCluster cluster;
+    zbProfile profile;
+    unsigned char radius;
+    unsigned char opt;
+    unsigned char data[72];
 } zbExpTx;
 
 /* FrameType ZB_REMOTE_COMMAND_REQUEST (0x17) */
 typedef struct zbRemoteCommand
 {
-	unsigned char frameId;
-	zbAddr dest;
-	zbNetAddr nad;
-	unsigned char opt;
-	unsigned char cmd[2];
-	unsigned char data[72];
+    unsigned char frameId;
+    zbAddr dest;
+    zbNetAddr nad;
+    unsigned char opt;
+    unsigned char cmd[2];
+    unsigned char data[72];
 } zbRemoteCommand;
 
 /* FrameType ZB_SOURCE_ROUTE (0x21) */
 typedef struct zbSourceRoute
 {
-	unsigned char frameId;
-	zbAddr dest;
-	zbNetAddr nad;
-	unsigned char opt;
-	unsigned char numAddr;
-	zbNetAddr naddr[];
+    unsigned char frameId;
+    zbAddr dest;
+    zbNetAddr nad;
+    unsigned char opt;
+    unsigned char numAddr;
+    zbNetAddr naddr[];
 } zbSourceRoute;
 
 /* FrameType ZB_AT_COMMAND_RESPONSE (0x88) */
-typedef struct zbATResponse	
+typedef struct zbATResponse
 {
-	unsigned char frameId;
-	unsigned char cmd[2];
-	unsigned char status;
-	union
-	{
-		unsigned char data[72];
-		struct
-		{
-			unsigned char my[2];
-			unsigned char sh[4];
-			unsigned char sl[4];
-			unsigned char ni[20];
-		};
-	};
+    unsigned char frameId;
+    unsigned char cmd[2];
+    unsigned char status;
+    union
+    {
+        unsigned char data[72];
+        struct
+        {
+            unsigned char my[2];
+            unsigned char sh[4];
+            unsigned char sl[4];
+            unsigned char ni[20];
+        };
+    };
 } zbATResponse;
 
 /* FrameType ZB_MODEM_STATUS (0x8A) */
 
-enum status {zb_mdm_hwrst=0, zb_mdm_wdrst=1, zb_mdm_assoc=2, zb_mdm_disassoc=3, zb_mdm_start=6};
-	
+enum status
+{
+    zb_mdm_hwrst = 0,
+    zb_mdm_wdrst = 1,
+    zb_mdm_assoc = 2,
+    zb_mdm_disassoc = 3,
+    zb_mdm_start = 6
+};
+
 typedef struct zbModemStatus
 {
-	enum status status;
+    enum status status;
 } zbModemStatus;
 
 /* FrameType ZB_TRANSMIT_STATUS (0x8B) */
 typedef struct zbTransmitStatus
 {
-	    unsigned char frameId;
-	    zbNetAddr nad;
-	    unsigned char retry;
-	    unsigned char delStatus;
-	    unsigned char disStatus;
+    unsigned char frameId;
+    zbNetAddr nad;
+    unsigned char retry;
+    unsigned char delStatus;
+    unsigned char disStatus;
 } zbTxStatus;
 
 /* FrameType ZB_RECEIVE_PACKET (0x90) */
 typedef struct zbRx
 {
-  zbAddr dest;
-  zbNetAddr nad;
-  unsigned char opt;
-  unsigned char data[72];
+    zbAddr dest;
+    zbNetAddr nad;
+    unsigned char opt;
+    unsigned char data[72];
 } zbRx;
 
 /* FrameType ZB_EXPLICIT_RX_INDICATOR (0x91) */
 typedef struct zbExpRx
 {
-	zbAddr dest;
-	zbNetAddr nad;
-	unsigned char src;
-	unsigned char dst;
-	zbCluster cluster;
-	zbProfile profile;
-	unsigned char opt;
-	unsigned char data[72];
+    zbAddr dest;
+    zbNetAddr nad;
+    unsigned char src;
+    unsigned char dst;
+    zbCluster cluster;
+    zbProfile profile;
+    unsigned char opt;
+    unsigned char data[72];
 } zbExpRx;
 
 /* FrameType ZB_IO_DATA_SAMPLE (0x92) */
 typedef struct zbSample
 {
-	unsigned char addr64[8];
-	unsigned char addr16[2];
-	unsigned char opt;
-	unsigned char numSamples;
-	unsigned char digitalMask[2];
-	unsigned char analogMask;
-	unsigned char data[72];
+    unsigned char addr64[8];
+    unsigned char addr16[2];
+    unsigned char opt;
+    unsigned char numSamples;
+    unsigned char digitalMask[2];
+    unsigned char analogMask;
+    unsigned char data[72];
 } zbSample;
 
 /* FrameType ZB_SENSOR_READ (0x94) */
 typedef struct zbSensor
 {
-	unsigned char addr64[8];
-	unsigned char addr16[2];
-	unsigned char opt;
-	unsigned char sensorMask;
-	unsigned char data[72];
+    unsigned char addr64[8];
+    unsigned char addr16[2];
+    unsigned char opt;
+    unsigned char sensorMask;
+    unsigned char data[72];
 } zbSensor;
 
 /* FrameType ZB_NODE_IDENTIFICATION (0x95) */
 typedef struct zbNID
 {
-	zbAddr dest;
-	zbNetAddr destNad;
-	unsigned char opt;
-	zbNetAddr remNetAddr;
-	zbAddr remAddr;
-	unsigned char ni[20];
-	unsigned char parent[2];
-	unsigned char type;
-	unsigned char src;
-	zbProfile profile;
-	unsigned char manufacture[2];
+    zbAddr dest;
+    zbNetAddr destNad;
+    unsigned char opt;
+    zbNetAddr remNetAddr;
+    zbAddr remAddr;
+    unsigned char ni[20];
+    unsigned char parent[2];
+    unsigned char type;
+    unsigned char src;
+    zbProfile profile;
+    unsigned char manufacture[2];
 } zbNID;
 
 /* FrameType ZB_REMOTE_COMMAND_RESPONSE (0x97) */
 typedef struct zbRemResponse
 {
-	unsigned char frameId;
-	unsigned char addr64[8];
-	unsigned char addr16[2];
-	unsigned char cmd[2];
-	unsigned char status;
-	unsigned char data[72];
+    unsigned char frameId;
+    unsigned char addr64[8];
+    unsigned char addr16[2];
+    unsigned char cmd[2];
+    unsigned char status;
+    unsigned char data[72];
 } zbRemResponse;
 
 /* FrameType ZB_FIRMWARE_UPDATE 0xA0) */
 typedef struct zbFirmwareUpdate
 {
-	zbAddr src;
-	zbNetAddr destNad;
-	unsigned char opt;
-	unsigned char bootMsgType;
-	unsigned char blockNo;
-	zbAddr target;
+    zbAddr src;
+    zbNetAddr destNad;
+    unsigned char opt;
+    unsigned char bootMsgType;
+    unsigned char blockNo;
+    zbAddr target;
 } zbFirmwareUpdate;
 
 /* FrameType ZB_ROUTE_RECORD (0xA1) */
 typedef struct zbRR
 {
-	zbAddr dest;
-	zbNetAddr destNad;
-	unsigned char opt;
-	unsigned char numAddr;
-	zbNetAddr route[1];
+    zbAddr dest;
+    zbNetAddr destNad;
+    unsigned char opt;
+    unsigned char numAddr;
+    zbNetAddr route[1];
 } zbRR;
-	
+
 /* FrameType ZB_MANY_TO_ONE_ROUTE_REQUEST_INDICATOR (0xA3) */
 typedef struct zbManyToOneRouteRequestIndicator
 {
-	zbAddr dest;
-	zbNetAddr destNad;
+    zbAddr dest;
+    zbNetAddr destNad;
 } zbManyToOneRouteRequestIndicator;
 
 typedef struct zbFrame
 {
-  unsigned char esc;
-  unsigned char pktlen[2];
-  unsigned char frameType;
-  union 
-  {
-    struct zbATCommand zbATCommand;
-    struct zbATCommandQueue zbATCommandQueue;
-    struct zbTx zbTx;
-    struct zbExpTx zbExpTx;
-	struct zbRemoteCommand zbRemoteCommand;
-	struct zbSourceRoute zbSourceRoute;
-	
-    struct zbATResponse zbATResponse;
-    struct zbModemStatus zbModemStatus;
-    struct zbTransmitStatus zbTransmitStatus;
-	struct zbRx zbRX;
-	struct zbExpRx zbExpRx;
-	struct zbSample zbSample;
-	struct zbSensor zbSensor;
-	struct zbNID zbNID;
-	struct zbRemResponse zbRemResponse;
-	struct zbFirmwareUpdate zbFirmwareUpdate;
-	struct zbRR zbRR;
-	struct zbManyToOneRouteRequestIndicator zbManyToOneRouteRequestIndicator;
-  };
-  unsigned char cksum;
+    unsigned char esc;
+    unsigned char pktlen[2];
+    unsigned char frameType;
+    union
+    {
+        struct zbATCommand zbATCommand;
+        struct zbATCommandQueue zbATCommandQueue;
+        struct zbTx zbTx;
+        struct zbExpTx zbExpTx;
+        struct zbRemoteCommand zbRemoteCommand;
+        struct zbSourceRoute zbSourceRoute;
+
+        struct zbATResponse zbATResponse;
+        struct zbModemStatus zbModemStatus;
+        struct zbTransmitStatus zbTransmitStatus;
+        struct zbRx zbRX;
+        struct zbExpRx zbExpRx;
+        struct zbSample zbSample;
+        struct zbSensor zbSensor;
+        struct zbNID zbNID;
+        struct zbRemResponse zbRemResponse;
+        struct zbFirmwareUpdate zbFirmwareUpdate;
+        struct zbRR zbRR;
+        struct zbManyToOneRouteRequestIndicator zbManyToOneRouteRequestIndicator;
+    };
+    unsigned char cksum;
 } zbFrame;
 
-typedef struct zbPkt {
-	unsigned char frameType;
-	union
-	{
-		struct zbATCommand zbATCommand;
-		struct zbATCommandQueue zbATCommandQueue;
-		struct zbTx zbTx;
-		struct zbExpTx zbExpTx;
-		struct zbRemoteCommand zbRemoteCommand;
-		struct zbSourceRoute zbSourceRoute;
-		
-		struct zbATResponse zbATResponse;
-		struct zbModemStatus zbModemStatus;
-		struct zbTransmitStatus zbTransmitStatus;
-		struct zbRx zbRX;
-		struct zbExpRx zbExpRx;
-		struct zbSample zbSample;
-		struct zbSensor zbSensor;
-		struct zbNID zbNID;
-		struct zbRemResponse zbRemResponse;
-		struct zbFirmwareUpdate zbFirmwareUpdate;
-		struct zbRR zbRR;
-		struct zbManyToOneRouteRequestIndicator zbManyToOneRouteRequestIndicator;
-	};
+typedef struct zbPkt
+{
+    unsigned char frameType;
+    union
+    {
+        struct zbATCommand zbATCommand;
+        struct zbATCommandQueue zbATCommandQueue;
+        struct zbTx zbTx;
+        struct zbExpTx zbExpTx;
+        struct zbRemoteCommand zbRemoteCommand;
+        struct zbSourceRoute zbSourceRoute;
+
+        struct zbATResponse zbATResponse;
+        struct zbModemStatus zbModemStatus;
+        struct zbTransmitStatus zbTransmitStatus;
+        struct zbRx zbRX;
+        struct zbExpRx zbExpRx;
+        struct zbSample zbSample;
+        struct zbSensor zbSensor;
+        struct zbNID zbNID;
+        struct zbRemResponse zbRemResponse;
+        struct zbFirmwareUpdate zbFirmwareUpdate;
+        struct zbRR zbRR;
+        struct zbManyToOneRouteRequestIndicator zbManyToOneRouteRequestIndicator;
+    };
 } zbPkt;
 
-void zb_tx(unsigned char fid, 
-           zbAddr dest, 
-           zbNetAddr nad, 
-           unsigned char bcast, 
-           unsigned char radius, 
-           char *data, 
-           int size);
+void zb_tx(unsigned char fid, zbAddr dest, zbNetAddr nad, unsigned char bcast,
+        unsigned char radius, char *data, int size);
 
-void zb_tx_ex(unsigned char fid, 
-           zbAddr dest, 
-           zbNetAddr nad, 
-           unsigned char src,
-           unsigned char dst,
-           unsigned short clust,
-           zbProfile prof,
-           unsigned char radius, 
-           char *data, 
-           int size);
+void zb_tx_ex(unsigned char fid, zbAddr dest, zbNetAddr nad, unsigned char src,
+        unsigned char dst, unsigned short clust, zbProfile prof,
+        unsigned char radius, char *data, int size);
 
-void zbInit(int (*zbWrite)(void *buff, unsigned int count), void (*zbReceivedPkt)(unsigned char *pkt, unsigned int length));
+void zbInit(int (*zbWrite)(void *buff, unsigned int count),
+        void (*zbReceivedPkt)(unsigned char *pkt, unsigned int length));
 void zbReceivedChar(unsigned char ch);
 
 void zb_settimeout(int time);

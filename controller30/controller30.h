@@ -3,8 +3,7 @@
  *
  * Created: 2/26/2014 7:40:38 PM
  *  Author: waynej
- */ 
-
+ */
 
 #ifndef CONTROLLER30_H_
 #define CONTROLLER30_H_
@@ -27,14 +26,14 @@
 #define signal1(bit) if(bit) {PORTC|=_BV(1);}else{PORTC&=~_BV(1);}
 #define signal2(bit) if(bit) {PORTC|=_BV(6);}else{PORTC&=~_BV(6);}
 
-enum PadState {
-    IDLE,                   /* We're idle and nothing is happening */
-    PRESSED2ENABLE,         /*  */
-    ENABLED,                /*  */
-    PRESSED2DISABLE,        /*  */
-    PAD_LAUNCH              /* Launch command received, launch relay is enabled */
+enum PadState
+{
+    IDLE, /* We're idle and nothing is happening */
+    PRESSED2ENABLE, /*  */
+    ENABLED, /*  */
+    PRESSED2DISABLE, /*  */
+    PAD_LAUNCH /* Launch command received, launch relay is enabled */
 };
-
 
 struct padInfo
 {
@@ -58,15 +57,15 @@ struct padInfo
 
 struct NewPad
 {
-	bool used;
-	zbAddr addr;
-	zbNetAddr netAddr; 
+    bool used;
+    zbAddr addr;
+    zbNetAddr netAddr;
 };
 
 #define TIMER0_PERIOD 10
 
 void statusMessage(char * data, int length);
-void padDiscovered( zbAddr addr, zbNetAddr netAddr, unsigned char *ni );
+void padDiscovered(zbAddr addr, zbNetAddr netAddr, unsigned char *ni);
 void padReady(void);
 void initNewPads(void);
 

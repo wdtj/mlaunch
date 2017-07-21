@@ -3,8 +3,7 @@
  *
  * Created: 3/1/2014 3:52:56 PM
  *  Author: waynej
- */ 
-
+ */
 
 #ifndef SWITCHFSM_H_
 #define SWITCHFSM_H_

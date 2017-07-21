@@ -3,8 +3,7 @@
  *
  * Created: 12/19/2013 5:48:22 PM
  *  Author: waynej
- */ 
-
+ */
 
 #ifndef OLED_H_
 #define OLED_H_

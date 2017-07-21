@@ -3,8 +3,7 @@
  *
  * Created: 1/27/2014 1:06:35 PM
  *  Author: waynej
- */ 
-
+ */
 
 #ifndef TIMER0_H_
 #define TIMER0_H_
@@ -20,6 +19,5 @@
 
 void timer0_init(int ps, void (*ptr)(void));
 void timer0_set(unsigned int tc);
-
 
 #endif /* TIMER0_H_ */
