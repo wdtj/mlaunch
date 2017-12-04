@@ -32,10 +32,11 @@ FILE xbee = FDEV_SETUP_STREAM(uart_putchar, uart_getchar, _FDEV_SETUP_RW);
 char txBuffer[100] = "";
 char rxBuffer[100] = "";
 
-// addesses of the network controller
+// addresses of the network controller
 zbAddr controllerAddress =
     {
         { 0, 0, 0, 0, 0, 0, 0xff, 0xff } };
+            
 zbNetAddr controllerNAD =
     {
         { 0xff, 0xfe } };
