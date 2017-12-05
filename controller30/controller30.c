@@ -110,6 +110,7 @@ int main(void)
     OLED_clearDisplay();                /* Blank display */
 
     OLED_XYprintf(0, 0, "mLaunch 3.1");
+    OLED_XYprintf(0, 0, __DATE__);
     OLED_XYprintf(0, 2, "Copyright 2017 by");
     OLED_XYprintf(0, 3, "Wayne Johnson");
 
