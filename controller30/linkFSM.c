@@ -96,6 +96,7 @@ static void linkDiscover(zbPkt * pkt)
 
     linkStatus = discovery;
     discoveryTimer = 6000 / TIMER0_PERIOD;
+    zb_ao(0, 0);
     zb_no(0, 1);
     zb_nd(1);
 }
