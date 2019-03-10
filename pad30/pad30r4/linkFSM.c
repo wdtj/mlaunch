@@ -18,35 +18,38 @@
 
 #include "../../common/zb.h"
 
+/*
+    During link initialization we go through several states to set proper values in the xBee.
+*/
 volatile enum LINKSTATE
 {
-    SEND_NI1,
-    NI_SENT1,
-    SEND_JV,
-    JV_SENT,
-    SEND_JN,
-    JN_SENT,
-    SEND_NW,
-    NW_SENT,
-    SEND_WR,
-    WR_SENT,
-    SEND_NI2,
-    NI_SENT2,
-    SEND_FR,
-    FR_SENT,
-    SEND_CH,
-    CH_SENT,
-    SEND_DB,
-    DB_SENT,
-    RESET,
-    READY
+    SEND_NI1,       // Send Node Identity ("PAD xx") to XBee in the next opportunity
+    NI_SENT1,       // Node Identity has been sent, wait for response
+    SEND_JV,        // Send Channel Verification=1 verify the coordinator is on its operating channel when joining
+    JV_SENT,        // wait for response
+    SEND_JN,        // Send Join Notification=1 broadcast node identification when joining.
+    JN_SENT,        // wait for response
+    SEND_NW,        // Send Network Watchdog=1 Restart connect after 3 minutes of inactivity
+    NW_SENT,        // wait for response
+    SEND_WR,        // Send Write to nvrom to XBee
+    WR_SENT,        // wait for response
+    SEND_NI2,       // Send Node Identity ("PAD nn")
+    NI_SENT2,       // wait for response
+    SEND_FR,        // Send Factory reset
+    FR_SENT,        // wait for response
+    SEND_CH,        // Send Channel read
+    CH_SENT,        // wait for response
+    SEND_DB,        // Send Signal strength read
+    DB_SENT,        // wait for response
+    RESET,          // Link is in reset state (disassociated)
+    READY           // Ready to send commands
 } linkState;
 
-char ni[21];
-unsigned char channel;
-unsigned char signalStrength;
-unsigned int linkTimer = 0;
-unsigned int statTimer = 0;
+char ni[21];                    // Node ID
+unsigned char channel;          // Channel #
+unsigned char signalStrength;   // Signal strength
+unsigned int linkTimer = 0;     // Link Timer
+unsigned int statTimer = 0;     // Status Timer
 
 /* Initialization sequence 
  NI1 with node id
@@ -119,7 +122,6 @@ void linkFSMpkt(zbPkt *pkt)
 
     case ZB_TRANSMIT_STATUS:
     {
-//			struct zbTransmitStatus *ts=&pkt->zbTransmitStatus;
     }
         break;
 
