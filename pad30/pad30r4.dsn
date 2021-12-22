@@ -19,6 +19,16 @@ download the executable.-->
 			<DATE></DATE>
 			<GRID spacing='50.00000' snap='1'/>
 		</DETAILS>
+		<FONT id='0'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
 		<FONT id='1'>
 			<HEIGHT>-10</HEIGHT>
 			<WIDTH>0</WIDTH>
@@ -1085,6 +1095,16 @@ download the executable.-->
 		<LABEL pos='174.00000,87.00000' direction='3' font='5' color='208000' style='0'>Yellow_LED1</LABEL>
 		<LABEL pos='174.00000,99.00000' direction='3' font='5' color='208000' style='0'>Yellow_LED2</LABEL>
 		<LABEL pos='135.00000,38.00000' direction='1' font='14' color='208000' style='0'>AREF</LABEL>
+		<TEXT pos='22.00000,137.00000' direction='3' font='0' color='000000'>J3-1  U3-24</TEXT>
+		<TEXT pos='22.00000,140.00000' direction='3' font='0' color='000000'>J3-2  U3-31 (GND)</TEXT>
+		<TEXT pos='22.00000,143.00000' direction='3' font='0' color='000000'>J3-3  U3-26</TEXT>
+		<TEXT pos='22.00000,146.00000' direction='3' font='0' color='000000'>J3-4  U3-30 (Vcc)</TEXT>
+		<TEXT pos='22.00000,149.00000' direction='3' font='0' color='000000'>J3-5  U3-25</TEXT>
+		<TEXT pos='22.00000,152.00000' direction='3' font='0' color='000000'>J3-6  U3-9</TEXT>
+		<TEXT pos='22.00000,155.00000' direction='3' font='0' color='000000'>J3-7  NC</TEXT>
+		<TEXT pos='22.00000,158.00000' direction='3' font='0' color='000000'>J3-8  NC</TEXT>
+		<TEXT pos='22.00000,161.00000' direction='3' font='0' color='000000'>J3-9  U3-27</TEXT>
+		<TEXT pos='22.00000,164.00000' direction='3' font='0' color='000000'>J3-10 U3-31</TEXT>
 	</TinyCAD>
 	<TinyCAD>
 		<NAME>Power</NAME>
