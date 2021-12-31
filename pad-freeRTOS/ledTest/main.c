@@ -17,16 +17,15 @@
 void init()
 {
     DDRB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
-    | _BV(Yellow2);	// PB0-2, 4-6 are output
+           | _BV(Yellow2); // PB0-2, 4-6 are output
     PORTB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
-    | _BV(Yellow2);
+            | _BV(Yellow2);
 }
 
 
 void togglePadLED(void *parameters)
 {
-    while (1)
-    {
+    while(1) {
         setRed1();
         setRed2();
         vTaskDelay(1000);
