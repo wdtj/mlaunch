@@ -42,16 +42,16 @@
  * UBRRH USART Baud Rate Registers
  * UBRRL
  * URSEL: Register Select
- * UBRR11:0: USART Baud Rate Register 
+ * UBRR11:0: USART Baud Rate Register
  */
 
 volatile static unsigned int maxTxTime = 0;
 volatile static int uart_toe = 0;
 volatile static unsigned int maxTx = 0;
-volatile int uart_fe = 0;			// Framing error
-volatile int uart_doe = 0;			// Data overrun error
-volatile int uart_pe = 0;			// Parity error
-volatile int uart_roe = 0;			// Buffer overrun error
+volatile int uart_fe = 0;           // Framing error
+volatile int uart_doe = 0;          // Data overrun error
+volatile int uart_pe = 0;           // Parity error
+volatile int uart_roe = 0;          // Buffer overrun error
 
 volatile QueueHandle_t uartTxQueue;
 volatile QueueHandle_t uartRxQueue;
@@ -79,13 +79,11 @@ ISR( USART_UDRE_vect)
     unsigned char ch;
     BaseType_t xTaskWokenByReceive = pdFALSE;
 
-    if( xQueueReceiveFromISR( uartTxQueue, ( void * ) &ch, &xTaskWokenByReceive) )
-    {
+    if( xQueueReceiveFromISR( uartTxQueue, ( void * ) &ch, &xTaskWokenByReceive) ) {
         UDR = ch;
     }
 
-    if ( xTaskWokenByReceive != ( char ) pdFALSE)
-    {
+    if ( xTaskWokenByReceive != ( char ) pdFALSE) {
         taskYIELD ();
     }
 }
@@ -93,24 +91,20 @@ ISR( USART_UDRE_vect)
 ISR( USART_RXC_vect)
 {
     volatile unsigned char ucsra = UCSRA;
-    if (bit_is_set(ucsra, FE))
-    {
+    if (bit_is_set(ucsra, FE)) {
         uart_fe = 1;
     }
-    if (bit_is_set(ucsra, DOR))
-    {
+    if (bit_is_set(ucsra, DOR)) {
         uart_doe = 1;
     }
-    if (bit_is_set(ucsra, UPE))
-    {
+    if (bit_is_set(ucsra, UPE)) {
         uart_pe = 1;
     }
 
     unsigned char ch=UDR;
 
     volatile BaseType_t rc=xQueueSendToBackFromISR(uartRxQueue, &ch, 0);
-    if (rc != pdPASS ) 
-    {
+    if (rc != pdPASS ) {
         uart_roe=1;
     }
 }
@@ -118,8 +112,7 @@ ISR( USART_RXC_vect)
 void uart_txc(unsigned char ch)
 {
     volatile BaseType_t rc=xQueueSendToBack( uartTxQueue, ( void * ) &ch, 0);
-    if (rc != pdPASS ) 
-    {
+    if (rc != pdPASS ) {
         uart_toe=1;
         return;
     }
@@ -127,10 +120,9 @@ void uart_txc(unsigned char ch)
     UCSRB |= _BV(UDRIE);
 }
 
-void uart_txBuff(unsigned char *buff, int size)
+void uart_txBuff(char *buff, int size)
 {
-    while(size > 0)
-    {
+    while(size > 0) {
         uart_txc(*buff);
         buff++;
         size--;
@@ -146,20 +138,16 @@ int uart_rxReady()
 int uart_rxc(void)
 {
     int ch;
-
     xQueueReceive(uartRxQueue, &ch, 0);
-
     return ch;
 }
 
 int uart_rxBuff(unsigned char *buff, int size, int *count, int timeout)
 {
     *count=0;
-    while(xQueueReceive(uartRxQueue, buff++, timeout))
-    {
+    while(xQueueReceive(uartRxQueue, buff++, timeout)) {
         ++(*count);
-        if (--size == 0)
-        {
+        if (--size == 0) {
             return size;
         }
     }

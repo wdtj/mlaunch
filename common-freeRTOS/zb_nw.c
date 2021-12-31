@@ -13,6 +13,6 @@ void zb_nw(unsigned char fid, unsigned char time)
         ZB_AT_COMMAND, fid,
             { 'N', 'W' }, time };
 
-    zb_write((unsigned char *) &block, sizeof block);
+    zb_write((char *) &block, sizeof block);
 }
 

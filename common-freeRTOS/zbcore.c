@@ -3,11 +3,11 @@
 #include <stdbool.h>
 #include <string.h>
 
-int (*zbWritePtr)(void *buff, unsigned int count);
+void (*zbWritePtr)(char *buff, int count);
 void (*zbReceivedPktPtr)(unsigned char *pkt, unsigned int length);
 
-void zbInit(int (*zbWrite)(void *buff, unsigned int count),
-        void (*zbReceivedPkt)(unsigned char *pkt, unsigned int length))
+void zbInit(void (*zbWrite)(char *buff, int count),
+void (*zbReceivedPkt)(unsigned char *pkt, unsigned int length))
 {
     zbWritePtr = zbWrite;
     zbReceivedPktPtr = zbReceivedPkt;
@@ -16,10 +16,15 @@ void zbInit(int (*zbWrite)(void *buff, unsigned int count),
 bool fe = false;
 bool cse = true;
 
-void zbReceivedChar(unsigned char ch)
+/*
+  This function takes a single character and through a finite state machine
+  demarshalls and determines if a full xbee packet has been received.  If it 
+  is, it returns a pointer to the packet.  If not it returns NULL and waits 
+  for more characters.
+*/
+void zbReceive(unsigned char ch)
 {
-    static enum
-    {
+    static enum {
         readEsc, readLenMsb, readLenLsb, readPkt, readCksum
     } portState = readEsc;
 
@@ -30,14 +35,11 @@ void zbReceivedChar(unsigned char ch)
     static unsigned char pkt[256];
     static unsigned char *ptr = pkt;
 
-    switch (portState)
-    {
+    switch(portState) {
     case readEsc:
-        if (ch == 0x7e)
-        {
+        if(ch == 0x7e) {
             portState = readLenMsb;
-        } else
-        {
+        } else {
             fe = true;
         }
         break;
@@ -60,16 +62,14 @@ void zbReceivedChar(unsigned char ch)
         ptr++;
         cksum += ch;
         count--;
-        if (count == 0)
-        {
+        if(count == 0) {
             portState = readCksum;
         }
         break;
 
     case readCksum:
         cksum = 0xff - cksum;
-        if (ch != cksum)
-        {
+        if(ch != cksum) {
             cse = true;
         }
         portState = readEsc;
@@ -80,17 +80,16 @@ void zbReceivedChar(unsigned char ch)
     }
 }
 
-int zb_write(unsigned char *block, unsigned short size)
+int zb_write(char *block, int size)
 {
-    unsigned char cksum = 0;
+    char cksum = 0;
     unsigned long i;
 
     (*zbWritePtr)("\x7e", 1);
     (*zbWritePtr)(((char *) &size) + 1, 1);
-    (*zbWritePtr)(&size, 1);
+    (*zbWritePtr)(((char *) &size), 1);
 
-    for (i = 0; i < size; ++i)
-    {
+    for(i = 0; i < size; ++i) {
         cksum += *(block + i);
     }
     cksum = 0xff - cksum;
@@ -101,175 +100,179 @@ int zb_write(unsigned char *block, unsigned short size)
     return 0;
 }
 
+/*
+ *  Node Identifier. Set/read a string identifier. The register only accepts printable ASCII
+ *  data. In AT Command Mode, a string cannot start with a space. A carriage return ends
+ *  the command. A command will automatically end when maximum bytes for the string
+ *  have been entered. This string is returned as part of the ND (Node Discover) command.
+ *  This identifier is also used with the DN (Destination Node) command. In AT command
+ *  mode, an ASCII comma (0x2C) cannot be used in the NI string
+ */
 void zb_ni(unsigned char fid, char *string)
 {
-    struct
-    {
+    struct {
         unsigned char frameType;
         unsigned char frameId;
         unsigned char cmd[2];
         char ni[20];
-    } block =
-        {
+    } block = {
         ZB_AT_COMMAND, fid,
-            { 'N', 'I' } };
-    strncpy(block.ni, string, sizeof block.ni);
-
-    zb_write((unsigned char *) &block, 4 + strlen(string));
+        { 'N', 'I' }
+    };
+    if (string)
+    {
+        strncpy(block.ni, string, sizeof block.ni);
+        zb_write((char *) &block, 4 + strlen(string));
+    }
+    else
+    {
+        zb_write((char *) &block, 4);
+    }
 }
 
 void zb_nj(unsigned char fid, unsigned char join)
 {
-    struct
-    {
+    struct {
         unsigned char frameType;
         unsigned char frameId;
         unsigned char cmd[2];
         unsigned char join;
-    } block =
-        {
+    } block = {
         ZB_AT_COMMAND, fid,
-            { 'N', 'J' }, join };
+        { 'N', 'J' }, join
+    };
 
-    zb_write((unsigned char *) &block, sizeof block);
+    zb_write((char *) &block, sizeof block);
 }
 
 void zb_nr(unsigned char fid, unsigned char reset)
 {
-    struct
-    {
+    struct {
         unsigned char frameType;
         unsigned char frameId;
         unsigned char cmd[2];
         unsigned char reset;
-    } block =
-        {
+    } block = {
         ZB_AT_COMMAND, fid,
-            { 'N', 'R' }, reset };
+        { 'N', 'R' }, reset
+    };
 
-    zb_write((unsigned char *) &block, sizeof block);
+    zb_write((char *) &block, sizeof block);
 }
 
 void zb_nd(unsigned char fid)
 {
-    struct
-    {
+    struct {
         unsigned char frameType;
         unsigned char frameId;
         unsigned char cmd[2];
-    } block =
-        {
+    } block = {
         ZB_AT_COMMAND, fid,
-            { 'N', 'D' } };
+        { 'N', 'D' }
+    };
 
-    zb_write((unsigned char *) &block, sizeof block);
+    zb_write((char *) &block, sizeof block);
 }
 
 void zb_jn(unsigned char fid, unsigned char notify)
 {
-    struct
-    {
+    struct {
         unsigned char frameType;
         unsigned char frameId;
         unsigned char cmd[2];
         unsigned char notify;
-    } block =
-        {
+    } block = {
         ZB_AT_COMMAND, fid,
-            { 'J', 'N' }, notify };
+        { 'J', 'N' }, notify
+    };
 
-    zb_write((unsigned char *) &block, sizeof block);
+    zb_write((char *) &block, sizeof block);
 }
 
 void zb_ao(unsigned char fid, unsigned char option)
 {
-    struct
-    {
+    struct {
         unsigned char frameType;
         unsigned char frameId;
         unsigned char cmd[2];
         unsigned char option;
-    } block =
-        {
+    } block = {
         ZB_AT_COMMAND, fid,
-            { 'A', 'O' }, option };
+        { 'A', 'O' }, option
+    };
 
-    zb_write((unsigned char *) &block, sizeof block);
+    zb_write((char *) &block, sizeof block);
 }
 
 void zb_jv(unsigned char fid, unsigned char v)
 {
-    struct
-    {
+    struct {
         unsigned char frameType;
         unsigned char frameId;
         unsigned char cmd[2];
         unsigned char v;
-    } block =
-        {
+    } block = {
         ZB_AT_COMMAND, fid,
-            { 'J', 'V' }, v };
+        { 'J', 'V' }, v
+    };
 
-    zb_write((unsigned char *) &block, sizeof block);
+    zb_write((char *) &block, sizeof block);
 }
 
 void zb_id(unsigned char fid, unsigned long v)
 {
-    struct
-    {
+    struct {
         unsigned char frameType;
         unsigned char frameId;
         unsigned char cmd[2];
         unsigned long long v;
-    } block =
-        {
+    } block = {
         ZB_AT_COMMAND, fid,
-            { 'I', 'D' }, v };
+        { 'I', 'D' }, v
+    };
 
-    zb_write((unsigned char *) &block, sizeof block);
+    zb_write((char *) &block, sizeof block);
 }
 
 void zb_vr(unsigned char fid)
 {
-    struct
-    {
+    struct {
         unsigned char frameType;
         unsigned char frameId;
         unsigned char cmd[2];
-    } block =
-        {
+    } block = {
         ZB_AT_COMMAND, fid,
-            { 'V', 'R' } };
+        { 'V', 'R' }
+    };
 
-    zb_write((unsigned char *) &block, sizeof block);
+    zb_write((char *) &block, sizeof block);
 }
 
 void zb_no(unsigned char fid, unsigned char opt)
 {
-    struct
-    {
+    struct {
         unsigned char frameType;
         unsigned char frameId;
         unsigned char cmd[2];
         unsigned char opt;
-    } block =
-        {
+    } block = {
         ZB_AT_COMMAND, fid,
-            { 'N', 'O' }, opt };
+        { 'N', 'O' }, opt
+    };
 
-    zb_write((unsigned char *) &block, sizeof block);
+    zb_write((char *) &block, sizeof block);
 }
 
 int zbAddrCmp(zbAddr addr1, zbAddr addr2)
 {
     return addr1.addr64[0] == addr2.addr64[0]
-            && addr1.addr64[1] == addr2.addr64[1]
-            && addr1.addr64[2] == addr2.addr64[2]
-            && addr1.addr64[3] == addr2.addr64[3]
-            && addr1.addr64[4] == addr2.addr64[4]
-            && addr1.addr64[5] == addr2.addr64[5]
-            && addr1.addr64[6] == addr2.addr64[6]
-            && addr1.addr64[7] == addr2.addr64[7];
+           && addr1.addr64[1] == addr2.addr64[1]
+           && addr1.addr64[2] == addr2.addr64[2]
+           && addr1.addr64[3] == addr2.addr64[3]
+           && addr1.addr64[4] == addr2.addr64[4]
+           && addr1.addr64[5] == addr2.addr64[5]
+           && addr1.addr64[6] == addr2.addr64[6]
+           && addr1.addr64[7] == addr2.addr64[7];
 }
 
 void zbAddrZero(zbAddr addr)

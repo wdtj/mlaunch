@@ -125,6 +125,13 @@ typedef struct zbSourceRoute
 } zbSourceRoute;
 
 /* FrameType ZB_AT_COMMAND_RESPONSE (0x88) */
+
+#define ZB_AT_STATUS_OK 0
+#define ZB_AT_STATUS_ERROR 1
+#define ZB_AT_STATUS_INV_CMD 2
+#define ZB_AT_STATUS_INV_PARAM 3
+#define ZB_AT_STATUS_TX_FAIL 4
+
 typedef struct zbATResponse
 {
     unsigned char frameId;
@@ -332,15 +339,16 @@ void zb_tx_ex(unsigned char fid, zbAddr dest, zbNetAddr nad, unsigned char src,
         unsigned char dst, unsigned short clust, zbProfile prof,
         unsigned char radius, char *data, int size);
 
-void zbInit(int (*zbWrite)(void *buff, unsigned int count),
+void zbInit(
+        void (*zbWrite)(char *buff, int count),
         void (*zbReceivedPkt)(unsigned char *pkt, unsigned int length));
-void zbReceivedChar(unsigned char ch);
+void zbReceive(unsigned char ch);
 
 void zb_settimeout(int time);
 void zb_timeout();
 void zb_flush();
 void zb_abort(char *msg);
-int zb_write(unsigned char *block, unsigned short size);
+int zb_write(char *block, int size);
 
 void zb_ni(unsigned char fid, char *string);
 void zb_nj(unsigned char fid, unsigned char join);
