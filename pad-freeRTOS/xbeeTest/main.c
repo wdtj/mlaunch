@@ -16,20 +16,20 @@
 #include "queue.h"
 
 #include "uart.h"
-#include <string.h> 
+#include <string.h>
 
 void init()
 {
     DDRB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
-    | _BV(Yellow2);	// PB0-2, 4-6 are output
+           | _BV(Yellow2);  // PB0-2, 4-6 are output
     PORTB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
-    | _BV(Yellow2);
+            | _BV(Yellow2);
 
     uart_init(UART_BAUD, 80, 80);
 
     //zbInit(&zbWrite, &linkPkt);
 
-    sei();								// enable interrupts
+    sei();                              // enable interrupts
 }
 
 void sendXbee(void *parameter)
@@ -38,8 +38,7 @@ void sendXbee(void *parameter)
     memset(testIn, 0, sizeof testIn);
 
 
-    //zb_ni(1, "XbeeTest");
-    unsigned char test[]={0x7E, 0x00, 0x04, 0x08, 0x01, 0x4e, 0x49, 0x5f};
+    char test[]={0x7E, 0x00, 0x04, 0x08, 0x01, 0x4e, 0x49, 0x5f};
     int len;
 
     while(1)
@@ -61,22 +60,22 @@ void sendXbee(void *parameter)
             vTaskDelay(1000);
             resetRed1();
             resetRed2();
-        }
     }
+}
 }
 
 
 int main(void)
 {
     init();
-    
+
     xTaskCreate(
     sendXbee,      // Function to be called
     "SendXbee",   // Name of task
-    1024, // Stack size
-    NULL,           // Parameter to pass
-    1,              // Task priority
-    NULL);          // Created Task
+        1024, // Stack size
+        NULL,           // Parameter to pass
+        1,              // Task priority
+        NULL);          // Created Task
 
     vTaskStartScheduler();
 }

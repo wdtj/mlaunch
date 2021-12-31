@@ -18,6 +18,8 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "pad", "pad\pad.cproj", "{DC
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "switchTest", "switchTest\switchTest.cproj", "{FB650B52-2C5C-4E78-9107-8109A2ADCA95}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "xbeeAPITest", "xbeeAPITest\xbeeAPITest.cproj", "{8C403340-2167-4C43-85D4-AA2BD345E8F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -44,6 +46,10 @@ Global
 		{FB650B52-2C5C-4E78-9107-8109A2ADCA95}.Debug|AVR.Build.0 = Debug|AVR
 		{FB650B52-2C5C-4E78-9107-8109A2ADCA95}.Release|AVR.ActiveCfg = Release|AVR
 		{FB650B52-2C5C-4E78-9107-8109A2ADCA95}.Release|AVR.Build.0 = Release|AVR
+		{8C403340-2167-4C43-85D4-AA2BD345E8F8}.Debug|AVR.ActiveCfg = Debug|AVR
+		{8C403340-2167-4C43-85D4-AA2BD345E8F8}.Debug|AVR.Build.0 = Debug|AVR
+		{8C403340-2167-4C43-85D4-AA2BD345E8F8}.Release|AVR.ActiveCfg = Release|AVR
+		{8C403340-2167-4C43-85D4-AA2BD345E8F8}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
