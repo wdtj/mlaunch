@@ -6,8 +6,9 @@
 void (*zbWritePtr)(char *buff, int count);
 void (*zbReceivedPktPtr)(unsigned char *pkt, unsigned int length);
 
-void zbInit(void (*zbWrite)(char *buff, int count),
-void (*zbReceivedPkt)(unsigned char *pkt, unsigned int length))
+void zbInit(
+    void (*zbWrite)(char *buff, int count),
+    void (*zbReceivedPkt)(unsigned char *pkt, unsigned int length))
 {
     zbWritePtr = zbWrite;
     zbReceivedPktPtr = zbReceivedPkt;

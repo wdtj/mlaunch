@@ -72,6 +72,8 @@ void uart_init(long baud, int txQueueSize, int rxQueueSize)
     UCSRB = _BV(TXEN) | _BV(RXEN); /* tx/rx enable */
 
     UCSRB |= _BV(RXCIE);
+
+    sei();                              // enable interrupts
 }
 
 ISR( USART_UDRE_vect)

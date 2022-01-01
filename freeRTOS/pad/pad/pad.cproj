@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>pad-freeRTOS</AssemblyName>
+    <AssemblyName>pad</AssemblyName>
     <Name>pad</Name>
-    <RootNamespace>pad-freeRTOS</RootNamespace>
+    <RootNamespace>pad</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
@@ -69,12 +69,12 @@
   <avrgcc.linker.libraries.Libraries>
     <ListValues>
       <Value>libm</Value>
-      <Value>libCommon-freeRTOS.a</Value>
+      <Value>libCommon.a</Value>
     </ListValues>
   </avrgcc.linker.libraries.Libraries>
   <avrgcc.linker.libraries.LibrarySearchPaths>
     <ListValues>
-      <Value>D:\Users\waynej\My Documents\GitHub\mlaunch\common-freeRTOS\Debug</Value>
+      <Value>D:\Users\waynej\My Documents\GitHub\mlaunch\common\Debug</Value>
     </ListValues>
   </avrgcc.linker.libraries.LibrarySearchPaths>
   <avrgcc.assembler.general.IncludePaths>
@@ -115,13 +115,13 @@
     <ListValues>
       <Value>libm</Value>
       <Value>libFreeRTOS-ATmega32</Value>
-      <Value>libCommon-freeRTOS</Value>
+      <Value>libCommon</Value>
     </ListValues>
   </avrgcc.linker.libraries.Libraries>
   <avrgcc.linker.libraries.LibrarySearchPaths>
     <ListValues>
-      <Value>../../../FreeRTOS-ATmega32/FreeRTOS-ATmega32/Debug</Value>
-      <Value>../../../common-freeRTOS/Debug</Value>
+      <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Debug</Value>
+      <Value>../../../common/Debug</Value>
     </ListValues>
   </avrgcc.linker.libraries.LibrarySearchPaths>
   <avrgcc.assembler.general.IncludePaths>

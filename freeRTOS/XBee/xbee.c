@@ -1,15 +1,13 @@
 /*
-* xbeeTest.c
-*
-* Created: 11/21/2014 3:49:31 PM
-*  Author: waynej
-*/
+ * XBee.c
+ *
+ * Created: 12/31/2021 12:36:08 PM
+ * Author : waynej
+ */
 
 #include "config.h"
-#include "../pad-config.h"
 
 #include <avr/io.h>
-#include <avr/interrupt.h>
 
 #include "FreeRTOS.h"
 #include "task.h"
@@ -20,7 +18,10 @@
 #include <string.h>
 #include "zb.h"
 
-#define ZB_TIMEOUT 10000
+#define XB_TIMEOUT 10000
+
+void(*dataCallback)();
+void(*errorCallback)(int code);
 
 TimerHandle_t timeoutTimer;
 
@@ -34,18 +35,18 @@ static enum {
 
 } portState = NodeIdentity;
 
+
 void timeout(TimerHandle_t xTimer)
 {
+    (*errorCallback)(1);
     portState = NodeIdentity;
-    resetRed1();
-    resetRed2();
-}
+ }
 
 void xbeeReceivePacket(unsigned char *pkt, unsigned int length)
 {
     switch(portState) {
-    // We have sent the ni packet, now we have a response
-    case NodeIdentity: {
+        // We have sent the ni packet, now we have a response
+        case NodeIdentity: {
             struct zbATResponse *resp = (struct zbATResponse *)pkt;
             if(resp->status != ZB_AT_STATUS_OK) {
                 zb_jv(2, 1);
@@ -54,7 +55,7 @@ void xbeeReceivePacket(unsigned char *pkt, unsigned int length)
             }
             break;
         }
-    case ChannelVerify: {
+        case ChannelVerify: {
             struct zbATResponse *resp = (struct zbATResponse *)pkt;
             if(resp->status != ZB_AT_STATUS_OK) {
                 zb_jn(3, 1);
@@ -63,7 +64,7 @@ void xbeeReceivePacket(unsigned char *pkt, unsigned int length)
                 break;
             }
         }
-    case JoinNotifications: {
+        case JoinNotifications: {
             struct zbATResponse *resp = (struct zbATResponse *)pkt;
             if(resp->status != ZB_AT_STATUS_OK) {
                 zb_nw(4, 1);
@@ -72,7 +73,7 @@ void xbeeReceivePacket(unsigned char *pkt, unsigned int length)
             }
             break;
         }
-    case GetChannel: {
+        case GetChannel: {
             struct zbATResponse *resp = (struct zbATResponse *)pkt;
             if(resp->status != ZB_AT_STATUS_OK) {
                 zb_ch(5);
@@ -81,7 +82,7 @@ void xbeeReceivePacket(unsigned char *pkt, unsigned int length)
             }
             break;
         }
-    case GetReceivedSignalStrength: {
+        case GetReceivedSignalStrength: {
             struct zbATResponse *resp = (struct zbATResponse *)pkt;
             if(resp->status != ZB_AT_STATUS_OK) {
                 zb_ch(5);
@@ -90,34 +91,19 @@ void xbeeReceivePacket(unsigned char *pkt, unsigned int length)
             }
             break;
         }
-    case Idle: {
+        case Idle: {
             xTimerDelete(timeoutTimer, 0);
-            setGreen1();
-            setGreen2();
+            (*dataCallback)();
             break;
         }
     }
 }
 
 
-void init()
-{
-    DDRB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
-           | _BV(Yellow2); // PB0-2, 4-6 are output
-    PORTB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
-            | _BV(Yellow2);
-
-    uart_init(UART_BAUD, 80, 80);
-
-    zbInit(&uart_txBuff, &xbeeReceivePacket);
-
-    sei();                              // enable interrupts
-}
-
 void sendXbee(void *parameter)
 {
     timeoutTimer = xTimerCreate("Timeout",
-                                pdMS_TO_TICKS(ZB_TIMEOUT),
+                                pdMS_TO_TICKS(XB_TIMEOUT),
                                 pdFALSE,
                                 NULL,
                                 timeout);
@@ -126,29 +112,31 @@ void sendXbee(void *parameter)
     }
 
     zb_ni(1, "test02");
-    xTimerStart(timeoutTimer, pdMS_TO_TICKS(ZB_TIMEOUT));
+    xTimerStart(timeoutTimer, pdMS_TO_TICKS(XB_TIMEOUT));
 
     while(1) {
         while(uart_rxReady()) {
             zbReceive(uart_rxc());
         }
     }
-
 }
 
-
-int main(void)
+/* Replace with your library code */
+int xbeeFSMInit(int baud, int txQueueSize, int rxQueueSize, void(*data)(), void(*error)(int code))
 {
-    init();
+    dataCallback=data;
+    errorCallback=error;
 
-    xTaskCreate(
+    uart_init(baud, txQueueSize, rxQueueSize);
+
+    zbInit(&uart_txBuff, &xbeeReceivePacket);
+
+    return xTaskCreate(
         sendXbee,      // Function to be called
         "SendXbee",   // Name of task
         configMINIMAL_STACK_SIZE, // Stack size
         NULL,           // Parameter to pass
         1,              // Task priority
         NULL);          // Created Task
-
-    vTaskStartScheduler();
 }
 

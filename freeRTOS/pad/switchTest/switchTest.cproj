@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>7.0</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
-    <ProjectGuid>{7b88c483-9d91-4e93-8b54-bdf80f1ac82d}</ProjectGuid>
+    <ProjectGuid>{fb650b52-2c5c-4e78-9107-8109a2adca95}</ProjectGuid>
     <avrdevice>ATmega32A</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
     <OutputType>Executable</OutputType>
@@ -12,9 +12,9 @@
     <OutputFileName>$(MSBuildProjectName)</OutputFileName>
     <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AssemblyName>ledTest</AssemblyName>
-    <Name>ledTest</Name>
-    <RootNamespace>ledTest</RootNamespace>
+    <AssemblyName>switchTest</AssemblyName>
+    <Name>switchTest</Name>
+    <RootNamespace>switchTest</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
@@ -55,19 +55,7 @@
       <ToolName>JTAGICE3</ToolName>
     </com_atmel_avrdbg_tool_jtagice3plus>
     <avrtoolinterface>JTAG</avrtoolinterface>
-    <avrtoolinterfaceclock>125000</avrtoolinterfaceclock>
-    <com_atmel_avrdbg_tool_jtagicemk3>
-      <ToolOptions>
-        <InterfaceProperties>
-          <JtagDbgClock>200000</JtagDbgClock>
-          <IspClock>125000</IspClock>
-        </InterfaceProperties>
-        <InterfaceName>JTAG</InterfaceName>
-      </ToolOptions>
-      <ToolType>com.atmel.avrdbg.tool.jtagicemk3</ToolType>
-      <ToolNumber>J30200014253</ToolNumber>
-      <ToolName>JTAGICE3</ToolName>
-    </com_atmel_avrdbg_tool_jtagicemk3>
+    <avrtoolinterfaceclock>200000</avrtoolinterfaceclock>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
@@ -88,10 +76,6 @@
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
             <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
-            <Value>../../../common-freeRTOS</Value>
-            <Value>../../../FreeRTOS-ATmega32/FreeRTOS-ATmega32</Value>
-            <Value>../../../FreeRTOS-ATmega32/FreeRTOS-ATmega32/Source/include</Value>
-            <Value>../../../FreeRTOS-ATmega32/FreeRTOS-ATmega32/Source/portable/GCC/ATMega323</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
         <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
@@ -101,14 +85,8 @@
         <avrgcc.linker.libraries.Libraries>
           <ListValues>
             <Value>libm</Value>
-            <Value>libFreeRTOS-ATmega32</Value>
           </ListValues>
         </avrgcc.linker.libraries.Libraries>
-        <avrgcc.linker.libraries.LibrarySearchPaths>
-          <ListValues>
-            <Value>../../../FreeRTOS-ATmega32/FreeRTOS-ATmega32/Debug</Value>
-          </ListValues>
-        </avrgcc.linker.libraries.LibrarySearchPaths>
         <avrgcc.assembler.general.IncludePaths>
           <ListValues>
             <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
@@ -136,13 +114,12 @@
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
             <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
-            <Value>../../../common-freeRTOS</Value>
-            <Value>../../../FreeRTOS-ATmega32/FreeRTOS-ATmega32</Value>
-            <Value>../../../FreeRTOS-ATmega32/FreeRTOS-ATmega32/Source/include</Value>
-            <Value>../../../FreeRTOS-ATmega32/FreeRTOS-ATmega32/Source/portable/GCC/ATMega323</Value>
+            <Value>../../../common</Value>
+            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32</Value>
+            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Source/include</Value>
+            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Source/portable/GCC/ATMega323</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
-        <avrgcc.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcc.compiler.optimization.level>
         <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
         <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
         <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
@@ -151,11 +128,13 @@
           <ListValues>
             <Value>libm</Value>
             <Value>libFreeRTOS-ATmega32</Value>
+            <Value>libCommon</Value>
           </ListValues>
         </avrgcc.linker.libraries.Libraries>
         <avrgcc.linker.libraries.LibrarySearchPaths>
           <ListValues>
-            <Value>../../../FreeRTOS-ATmega32/FreeRTOS-ATmega32/Debug</Value>
+            <Value>../../../freeRTOS-ATmega32/freeRTOS-ATmega32/Debug</Value>
+            <Value>../../../common/Debug</Value>
           </ListValues>
         </avrgcc.linker.libraries.LibrarySearchPaths>
         <avrgcc.assembler.general.IncludePaths>
@@ -171,13 +150,6 @@
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\common-freeRTOS\common-freeRTOS.cproj">
-      <Name>Common-freeRTOS</Name>
-      <Project>{a5eb1fc5-2427-476f-b93e-79fa0fec0d12}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>
