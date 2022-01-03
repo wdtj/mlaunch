@@ -11,6 +11,7 @@
 
 
 int xbeeFSMInit(int baud, int txQueueSize, int rxQueueSize, void(*data)(), void(*error)(int code));
+void networkDiscovery();
 
 
 

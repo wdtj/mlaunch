@@ -150,6 +150,14 @@ typedef struct zbATResponse
     };
 } zbATResponse;
 
+struct ATNDData
+{
+    zbNetAddr netAddr;
+    zbAddr addr;
+    unsigned char ni[20];
+};
+
+
 /* FrameType ZB_MODEM_STATUS (0x8A) */
 
 enum status

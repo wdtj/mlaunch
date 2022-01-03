@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "common", "common\common.cproj", "{A5EB1FC5-2427-476F-B93E-79FA0FEC0D12}"
 EndProject
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "XBee", "XBee\XBee.cproj", "{F1A6A0A6-1B76-4D1B-B286-C14B209B2C62}"
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "XBeeAPI", "XBee\XBeeAPI.cproj", "{F1A6A0A6-1B76-4D1B-B286-C14B209B2C62}"
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "ledTest", "pad\ledTest\ledTest.cproj", "{5ECD561E-7E0F-4B9B-A8DD-CFFCCED3B053}"
 EndProject
@@ -18,6 +18,8 @@ EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "xbeeAPITest", "pad\xbeeAPITest\xbeeAPITest.cproj", "{8C403340-2167-4C43-85D4-AA2BD345E8F8}"
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "FreeRTOS-ATmega32", "freeRTOS-ATmega32\FreeRTOS-ATmega32\FreeRTOS-ATmega32.cproj", "{18B405D3-EE19-4BEE-BFC2-975E574D9701}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "timerTest", "pad\timerTest\timerTest.cproj", "{5711D825-FA87-4AC5-86DB-DF413421FFB2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{18B405D3-EE19-4BEE-BFC2-975E574D9701}.Debug|AVR.Build.0 = Debug|AVR
 		{18B405D3-EE19-4BEE-BFC2-975E574D9701}.Release|AVR.ActiveCfg = Release|AVR
 		{18B405D3-EE19-4BEE-BFC2-975E574D9701}.Release|AVR.Build.0 = Release|AVR
+		{5711D825-FA87-4AC5-86DB-DF413421FFB2}.Debug|AVR.ActiveCfg = Debug|AVR
+		{5711D825-FA87-4AC5-86DB-DF413421FFB2}.Debug|AVR.Build.0 = Debug|AVR
+		{5711D825-FA87-4AC5-86DB-DF413421FFB2}.Release|AVR.ActiveCfg = Release|AVR
+		{5711D825-FA87-4AC5-86DB-DF413421FFB2}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -16,9 +16,9 @@
 
 void init()
 {
-    PORTB = _BV(ContSW1) | _BV(ContSW2);			// Set pullup on switches
+    PORTB = _BV(ContSW1) | _BV(ContSW2);            // Set pullup on switches
     DDRB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
-           | _BV(Yellow2);	// PB0-2, 4-6 are output
+           | _BV(Yellow2);  // PB0-2, 4-6 are output
     PORTB |= _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
              | _BV(Yellow2); // Turn off leds
 }
@@ -26,22 +26,24 @@ void init()
 
 void switchTest(void *parameters)
 {
-    while (1)
-    {
-        if (!(PINB & _BV(ContSW1)))
-        {
+    while(1) {
+        if(!(PINB & _BV(ContSW1))) {
             setRed1();
         } else {
             resetRed1();
         }
 
-        if (!(PINB & _BV(ContSW2)))
-        {
+        if(!(PINB & _BV(ContSW2))) {
             setRed2();
         } else {
             resetRed2();
         }
     }
+}
+
+void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
+{
+    while(1);
 }
 
 int main(void)
@@ -52,7 +54,7 @@ int main(void)
     xTaskCreate(
         switchTest,      // Function to be called
         "Toggle Pad LED",   // Name of task
-        1024, // Stack size
+        configMINIMAL_STACK_SIZE, // Stack size
         NULL,           // Parameter to pass
         1,              // Task priority
         NULL);          // Created Task

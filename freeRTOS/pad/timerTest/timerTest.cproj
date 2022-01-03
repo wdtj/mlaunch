@@ -4,28 +4,26 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>7.0</ProjectVersion>
     <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
-    <ProjectGuid>{f1a6a0a6-1b76-4d1b-b286-c14b209b2c62}</ProjectGuid>
+    <ProjectGuid>{5711d825-fa87-4ac5-86db-df413421ffb2}</ProjectGuid>
     <avrdevice>ATmega32A</avrdevice>
     <avrdeviceseries>none</avrdeviceseries>
-    <OutputType>StaticLibrary</OutputType>
+    <OutputType>Executable</OutputType>
     <Language>C</Language>
-    <OutputFileName>lib$(MSBuildProjectName)</OutputFileName>
-    <OutputFileExtension>.a</OutputFileExtension>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
     <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
-    <AvrGccProjectExtensions>
-    </AvrGccProjectExtensions>
-    <AssemblyName>XBee</AssemblyName>
-    <Name>XBee</Name>
-    <RootNamespace>XBee</RootNamespace>
+    <AssemblyName>timerTest</AssemblyName>
+    <Name>timerTest</Name>
+    <RootNamespace>timerTest</RootNamespace>
     <ToolchainFlavour>Native</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
     <CacheFlash>true</CacheFlash>
     <ProgFlashFromRam>true</ProgFlashFromRam>
-    <RamSnippetAddress />
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
     <UncachedRange />
     <preserveEEPROM>true</preserveEEPROM>
-    <OverrideVtorValue />
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
     <BootSegment>2</BootSegment>
     <ResetRule>0</ResetRule>
     <eraseonlaunchrule>0</eraseonlaunchrule>
@@ -42,6 +40,22 @@
         </dependencies>
       </framework-data>
     </AsfFrameworkConfig>
+    <avrtool>com.atmel.avrdbg.tool.jtagice3plus</avrtool>
+    <avrtoolserialnumber>J30200014253</avrtoolserialnumber>
+    <avrdeviceexpectedsignature>0x1E9502</avrdeviceexpectedsignature>
+    <com_atmel_avrdbg_tool_jtagice3plus>
+      <ToolOptions>
+        <InterfaceProperties>
+          <JtagDbgClock>200000</JtagDbgClock>
+        </InterfaceProperties>
+        <InterfaceName>JTAG</InterfaceName>
+      </ToolOptions>
+      <ToolType>com.atmel.avrdbg.tool.jtagice3plus</ToolType>
+      <ToolNumber>J30200014253</ToolNumber>
+      <ToolName>JTAGICE3</ToolName>
+    </com_atmel_avrdbg_tool_jtagice3plus>
+    <avrtoolinterface>JTAG</avrtoolinterface>
+    <avrtoolinterfaceclock>200000</avrtoolinterfaceclock>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
@@ -100,14 +114,12 @@
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
             <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
-            <Value>../../common</Value>
-            <Value>../../freeRTOS-ATmega32/FreeRTOS-ATmega32</Value>
-            <Value>../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Source/include</Value>
-            <Value>../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Source/portable/GCC/ATMega323</Value>
-            <Value>.</Value>
+            <Value>../../../common</Value>
+            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32</Value>
+            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Source/include</Value>
+            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Source/portable/GCC/ATMega323</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
-        <avrgcc.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcc.compiler.optimization.level>
         <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
         <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
         <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
@@ -121,7 +133,7 @@
         </avrgcc.linker.libraries.Libraries>
         <avrgcc.linker.libraries.LibrarySearchPaths>
           <ListValues>
-            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Debug</Value>
+            <Value>../../../freeRTOS-ATmega32/freeRTOS-ATmega32/Debug</Value>
             <Value>../../../common/Debug</Value>
           </ListValues>
         </avrgcc.linker.libraries.LibrarySearchPaths>
@@ -135,10 +147,7 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="xbee.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="xbee.h">
+    <Compile Include="timerTest.c">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>

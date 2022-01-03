@@ -48,6 +48,11 @@ void togglePadLED(void *parameters)
     }
 }
 
+void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
+{
+    while(1);
+}
+
 int main(void)
 {
     init();

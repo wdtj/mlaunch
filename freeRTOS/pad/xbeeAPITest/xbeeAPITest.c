@@ -19,18 +19,18 @@
 #include "uart.h"
 #include <string.h>
 #include "zb.h"
-#include "xbee.h"
+#include "xbeeAPI.h"
 
-void data()
+void handleData()
 {
     setGreen1();
     setGreen2();
 }
 
-void error(int code)
+void handleError(int code)
 {
-   resetRed1();
-   resetRed2();
+    resetRed1();
+    resetRed2();
 }
 
 void init()
@@ -39,14 +39,33 @@ void init()
            | _BV(Yellow2); // PB0-2, 4-6 are output
     PORTB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
             | _BV(Yellow2);
-
-    xbeeFSMInit(UART_BAUD, 80, 80, data, error);
 }
 
+void testXbeeTask(void *parameter)
+{
+    xbeeFSMInit(UART_BAUD, 80, 80, handleData, handleError);
+
+    //networkDiscovery();
+
+}
+
+
+void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
+{
+    while(1);
+}
 
 int main(void)
 {
     init();
+
+    xTaskCreate(
+        testXbeeTask,      // Function to be called
+        "testXbee",   // Name of task
+        128, // Stack size
+        NULL,           // Parameter to pass
+        1,              // Task priority
+        NULL);          // Created Task
 
     vTaskStartScheduler();
 
