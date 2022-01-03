@@ -110,7 +110,6 @@
       <Value>../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Source/portable/GCC/ATMega323</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
-  <avrgcc.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcc.compiler.optimization.level>
   <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
   <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
   <avrgcc.compiler.optimization.DebugLevel>Maximum (-g3)</avrgcc.compiler.optimization.DebugLevel>
@@ -133,10 +132,10 @@
     <Compile Include="config.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="led.c">
+    <Compile Include="PadLed.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="led.h">
+    <Compile Include="PadLed.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="uart.c">
@@ -157,7 +156,19 @@
     <Compile Include="zb_db.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="zb_fr.c">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="zb_nw.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="zb_tx.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="zb_tx_ex.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="zb_wr.c">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>

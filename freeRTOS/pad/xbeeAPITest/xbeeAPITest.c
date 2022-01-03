@@ -20,11 +20,23 @@
 #include <string.h>
 #include "zb.h"
 #include "xbeeAPI.h"
+#include "PadLed.h"
 
-void handleData()
+// addresses of the network controller
+zbAddr controllerAddress = {
+    { 0, 0, 0, 0, 0, 0, 0, 0 }
+};
+
+zbNetAddr controllerNAD = {
+    { 0xff, 0xfe }
+};
+
+void handleData(char *data, int length)
 {
-    setGreen1();
-    setGreen2();
+    PadLed(GREEN, 1);
+    vTaskDelay(100);
+    PadLed(YELLOW, 1);
+
 }
 
 void handleError(int code)
@@ -43,10 +55,26 @@ void init()
 
 void testXbeeTask(void *parameter)
 {
-    xbeeFSMInit(UART_BAUD, 80, 80, handleData, handleError);
+    PadLed(RED, 0);
+    PadLed(RED, 1);
 
-    //networkDiscovery();
+    xbeeFSMInit(UART_BAUD, 180, 180, handleData, handleError);
 
+    xbeeWait();
+
+    PadLed(YELLOW, 0);
+    PadLed(YELLOW, 1);
+
+    while(1) {
+        char msg[] = "there";
+        xbeeTx(msg, strlen(msg), controllerAddress, controllerNAD);
+        PadLed(GREEN, 0);
+        vTaskDelay(100);
+        PadLed(YELLOW, 0);
+        vTaskDelay(100);
+    }
+
+    vTaskDelete(NULL);
 }
 
 
@@ -62,7 +90,7 @@ int main(void)
     xTaskCreate(
         testXbeeTask,      // Function to be called
         "testXbee",   // Name of task
-        128, // Stack size
+        256, // Stack size
         NULL,           // Parameter to pass
         1,              // Task priority
         NULL);          // Created Task

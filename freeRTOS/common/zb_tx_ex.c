@@ -31,6 +31,6 @@ void zb_tx_ex(unsigned char fid, zbAddr dest, zbNetAddr nad, unsigned char src,
     block.radius = radius;
     block.fill = 0;
     memcpy(&block.data, data, size);
-    zb_write((unsigned char *) &block, size + 20);
+    zb_write((char *) &block, size + 20);
 }
 

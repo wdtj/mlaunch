@@ -12,6 +12,6 @@ void zb_wr(unsigned char fid)
         ZB_AT_COMMAND, fid,
             { 'W', 'R' } };
 
-    zb_write((unsigned char *) &block, sizeof block);
+    zb_write((char *) &block, sizeof block);
 }
 

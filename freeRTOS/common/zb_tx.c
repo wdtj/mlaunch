@@ -23,5 +23,5 @@ void zb_tx(unsigned char fid, zbAddr dest, zbNetAddr nad, unsigned char bcast,
     block.radius = radius;
     block.opt = bcast;
     memcpy(&block.data, data, size);
-    zb_write((unsigned char *) &block, size + 14);
+    zb_write((char *) &block, size + 14);
 }

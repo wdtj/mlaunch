@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include "config.h"
 #include "uart.h"
-//#include "timer1.h"
 
 /*
  * $0C ($2C) UDR   USART I/O Data Register
@@ -45,9 +44,7 @@
  * UBRR11:0: USART Baud Rate Register
  */
 
-volatile static unsigned int maxTxTime = 0;
-volatile static int uart_toe = 0;
-volatile static unsigned int maxTx = 0;
+volatile int uart_toe = 0;
 volatile int uart_fe = 0;           // Framing error
 volatile int uart_doe = 0;          // Data overrun error
 volatile int uart_pe = 0;           // Parity error
@@ -78,7 +75,7 @@ void uart_init(long baud, int txQueueSize, int rxQueueSize)
 
 ISR( USART_UDRE_vect)
 {
-    unsigned char ch;
+    volatile unsigned char ch;
     BaseType_t xTaskWokenByReceive = pdFALSE;
 
     if( xQueueReceiveFromISR( uartTxQueue, ( void * ) &ch, &xTaskWokenByReceive) ) {
