@@ -10,6 +10,8 @@
 
 #include "stdbool.h"
 
+#define assert(x) if (!(x)) {while(1){}}
+
 #define F_CPU 16000000UL
 
 #define set(port, bit) {port|=_BV(bit);}
