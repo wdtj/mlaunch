@@ -210,19 +210,7 @@
     <Compile Include="Source\portable\GCC\ATMega323\portmacro.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="Source\portable\MemMang\heap_1.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="Source\portable\MemMang\heap_2.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="Source\portable\MemMang\heap_3.c">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="Source\portable\MemMang\heap_4.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="Source\portable\MemMang\heap_5.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Source\queue.c">
