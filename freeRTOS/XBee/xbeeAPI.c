@@ -15,17 +15,21 @@
 #include "timers.h"
 #include "semphr.h"
 
+#include "xbeeAPI.h"
 #include "uart.h"
 #include <string.h>
 #include "zb.h"
 
 #define XB_TIMEOUT 10000
 
-void(*dataCallback)();
-void(*errorCallback)(int code);
+void(*dataCallback)(char *data, int length);
+void(*errorCallback)(int code, int state);
 
 TimerHandle_t timeoutTimer;
 
+/*
+ *  FSM State
+ */
 volatile static enum {
     Idle,
     NodeIdentity,
@@ -36,29 +40,51 @@ volatile static enum {
     GetReceivedSignalStrength,
     NodeDiscovery,
     txInProgress
-} portState = NodeIdentity;
+} apiState = NodeIdentity;
 
-unsigned int channel;
-unsigned int signalStrength;
-static char name[46];
+/* xbee statistics */
+static unsigned int channel;
+static unsigned int signalStrength;
+static char name[20];
+static char *nodeID = "testNode";
 
+/* Semaphore to guard FSM integrity.
+ * This is taken when the FSM starts a sequence and given when complete.
+ */
 SemaphoreHandle_t xbeeBusy = NULL;
+
+/*
+ *  Start up FSM for initial sequence.
+ */
+void xbeeInit(char *ni)
+{
+    apiState = NodeIdentity;
+    zb_ni(1, ni);
+    //xTimerStart(timeoutTimer, 0);
+}
+
+/*
+ * Timeout waiting for a response.
+ *
+ * Call error callback with code and state, then reset link
+ */
 
 void timeout(TimerHandle_t xTimer)
 {
-    (*errorCallback)(portState);
-    portState = NodeIdentity;
+    (*errorCallback)(XBEE_TIMEOUT, apiState);
+    xbeeInit(nodeID);
 }
 
+/* Handle an AT Response */
 void handleATResp(struct zbATResponse *resp, int length)
 {
-    switch(portState) {
+    switch(apiState) {
     // We have sent the ni packet, now we have a response
     case NodeIdentity: {
             if(resp->status == ZB_AT_STATUS_OK) {
                 zb_jv(2, 1);
                 xTimerStart(timeoutTimer, (XB_TIMEOUT / portTICK_RATE_MS));
-                portState = ChannelVerify;
+                apiState = ChannelVerify;
             }
             break;
         }
@@ -68,7 +94,7 @@ void handleATResp(struct zbATResponse *resp, int length)
             if(resp->status == ZB_AT_STATUS_OK) {
                 zb_jn(3, 1);
                 xTimerStart(timeoutTimer, (XB_TIMEOUT / portTICK_RATE_MS));
-                portState = JoinNotifications;
+                apiState = JoinNotifications;
                 break;
             }
         }
@@ -78,7 +104,7 @@ void handleATResp(struct zbATResponse *resp, int length)
             if(resp->status == ZB_AT_STATUS_OK) {
                 zb_nw(4, 1);
                 xTimerStart(timeoutTimer, (XB_TIMEOUT / portTICK_RATE_MS));
-                portState = NetworkWatchdog;
+                apiState = NetworkWatchdog;
             }
             break;
         }
@@ -88,7 +114,7 @@ void handleATResp(struct zbATResponse *resp, int length)
             if(resp->status == ZB_AT_STATUS_OK) {
                 zb_ch(5);
                 xTimerStart(timeoutTimer, (XB_TIMEOUT / portTICK_RATE_MS));
-                portState = GetChannel;
+                apiState = GetChannel;
             }
             break;
         }
@@ -99,7 +125,7 @@ void handleATResp(struct zbATResponse *resp, int length)
                 channel = (resp->data[1] << 8) | (resp->data[0]);
                 zb_db(6);
                 xTimerStart(timeoutTimer, (XB_TIMEOUT / portTICK_RATE_MS));
-                portState = GetReceivedSignalStrength;
+                apiState = GetReceivedSignalStrength;
             }
             break;
         }
@@ -109,7 +135,7 @@ void handleATResp(struct zbATResponse *resp, int length)
             if(resp->status == ZB_AT_STATUS_OK) {
                 signalStrength = (resp->data[1] << 8) | (resp->data[0]);
                 xTimerDelete(timeoutTimer, pdMS_TO_TICKS(XB_TIMEOUT));
-                portState = Idle;
+                apiState = Idle;
                 xSemaphoreGive(xbeeBusy);
             }
             break;
@@ -125,43 +151,63 @@ void handleATResp(struct zbATResponse *resp, int length)
             break;
         }
 
-    // Initial Sequence is complete
+    // We have received a packet we are not prepared for.
     default: {
-            while(1);
+            assert(0);
+
             break;
         }
     }
 }
 
+/*
+ * Handle Modem Status message.
+ */
 void handleModemStatus(struct zbModemStatus *resp, int length)
 {
-    while(1);
+    assert(0);      // TODO
 }
 
+/*
+ * Handle Transmit Status message.
+ *
+ * This indicates that a transmission is complete.
+ */
 void handleTransmitStatus(struct zbTransmitStatus *resp, int length)
 {
-    portState = Idle;
+    apiState = Idle;
 }
 
+/*
+ * Handle Receive message.
+ *
+ * This indicates that data has been received.  Pass to user.
+ */
 void handleReceivePacket(struct zbRx *resp, int length)
 {
     int headerLength = ((char *)resp->data) - ((char *)resp);
-    (*dataCallback)(resp->data, length - headerLength);
+    (*dataCallback)((char *)resp->data, length - headerLength);
 }
 
+/*
+ * Handle Explicit Receive message.
+ *
+ * This indicates that data has been received.  Pass to user.
+ */
 void handleExplicitRx(struct zbExpRx *resp, int length)
 {
-    while(1);
+    int headerLength = ((char *)resp->data) - ((char *)resp);
+    (*dataCallback)((char *)resp->data, length - headerLength);
 }
 
 void handleNodeID(struct zbNID *resp, int length)
 {
-    while(1);
+    assert(0);      // TODO
 }
 
 void handleRouteRecord(struct zbRR *resp, int length)
 {
-    while(1);
+    assert(0);      // TODO
 }
 
 
@@ -184,68 +230,82 @@ void xbeeReceivePacket(unsigned char *pkt, unsigned int length)
     }
 }
 
-void xbeeTask(void *parameter)
-{
-    timeoutTimer = xTimerCreate("Timeout",
-                                (XB_TIMEOUT / portTICK_RATE_MS),
-                                pdFALSE,
-                                NULL,
-                                timeout);
-    if(timeoutTimer == NULL) {
-        for(;;); /* failure! */
-    }
-
-    zb_ni(1, "test02");
-    xTimerStart(timeoutTimer, 0);
-
-    while(1) {
-        while(uart_rxReady()) {
-            zbReceive(uart_rxc());
-        }
-    }
-}
-
-void networkDiscovery()
+void networkDiscovery()      // TODO
 {
     while(!xSemaphoreTake(xbeeBusy, 0));
     zb_nd(10);
-    portState = NodeDiscovery;
+    apiState = NodeDiscovery;
     vTaskDelay(10000);
     xSemaphoreGive(xbeeBusy);
 }
 
+/* API call to wait for the FSM guard */
 void xbeeWait()
 {
     while(!xSemaphoreTake(xbeeBusy, 0));
     xSemaphoreGive(xbeeBusy);
 }
 
-
+/* API call to Transmit data */
 void xbeeTx(char *msg, int length, zbAddr controllerAddress,
             zbNetAddr controllerNAD)
 {
     while(!xSemaphoreTake(xbeeBusy, 0)) {
         taskYIELD();
     }
-    portState = txInProgress;
+    apiState = txInProgress;
     zb_tx(11, controllerAddress, controllerNAD, 0, 0, msg, length);
-    while(portState == txInProgress) {
+    while(apiState == txInProgress) {
         taskYIELD();
     }
     xSemaphoreGive(xbeeBusy);
 }
 
-int xbeeFSMInit(int baud, int txQueueSize, int rxQueueSize,
-                void(*data)(),
-                void(*error)(int code))
+TaskStatus_t xTaskDetails;
+
+/*
+ * Main xbee task
+ */
+void xbeeTask(void *parameter)
+{
+
+    timeoutTimer = xTimerCreate("Timeout",
+                                (XB_TIMEOUT / portTICK_RATE_MS),
+                                pdFALSE,
+                                NULL,
+                                timeout);
+    assert(timeoutTimer != NULL)  /* failure! */
+
+    xbeeInit(nodeID);
+
+    while(1) {
+        while(uart_rxReady()) {
+            zbReceive(uart_rxc());
+        }
+        vTaskGetInfo( /* The handle of the task being queried. */
+            NULL,
+            /* The TaskStatus_t structure to complete with information on xTask. */
+            &xTaskDetails,
+            /* Include the stack high water mark value in the TaskStatus_t structure. */
+            pdTRUE,
+            /* Include the task state in the TaskStatus_t structure. */
+            eRunning);
+    }
+}
+
+/* API call to Initialize the xbee modem */
+int xbeeFSMInit(
+    int baud,           // Baud rate (Bits per second)
+    int txQueueSize,    // Transmit queue size
+    int rxQueueSize,    // Receive queue size
+    void(*data)(),      // Data received callback
+    void(*error)(int, int))  // Error received callback
 {
     dataCallback = data;
     errorCallback = error;
 
     xbeeBusy = xSemaphoreCreateBinary();
-    if(xbeeBusy == NULL) {
-        for(;;); /* failure! */
-    }
+    assert(xbeeBusy != NULL);
     xSemaphoreGive(xbeeBusy);
 
     xSemaphoreTake(xbeeBusy, 0);
@@ -254,14 +314,16 @@ int xbeeFSMInit(int baud, int txQueueSize, int rxQueueSize,
 
     zbInit(&uart_txBuff, &xbeeReceivePacket);
 
-    int success = xTaskCreate(
-                      xbeeTask,      // Function to be called
-                      "xbeeTask",   // Name of task
-                      128, // Stack size
-                      NULL,           // Parameter to pass
-                      1,              // Task priority
-                      NULL);          // Created Task
+    int rc = xTaskCreate(
+                 xbeeTask,      // Function to be called
+                 "xbeeTask",   // Name of task
+                 128, // Stack size
+                 NULL,           // Parameter to pass
+                 1,              // Task priority
+                 NULL);          // Created Task
 
-    return success;
+    assert(rc == pdPASS) /* failure! */
+
+    return rc;
 }
 

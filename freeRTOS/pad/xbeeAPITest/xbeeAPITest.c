@@ -39,7 +39,7 @@ void handleData(char *data, int length)
 
 }
 
-void handleError(int code)
+void handleError(int code, int state)
 {
     resetRed1();
     resetRed2();
@@ -80,23 +80,24 @@ void testXbeeTask(void *parameter)
 
 void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
 {
-    while(1);
+    assert(0);
 }
 
 int main(void)
 {
     init();
 
-    xTaskCreate(
-        testXbeeTask,      // Function to be called
-        "testXbee",   // Name of task
-        256, // Stack size
-        NULL,           // Parameter to pass
-        1,              // Task priority
-        NULL);          // Created Task
+    int rc = xTaskCreate(
+                 testXbeeTask,      // Function to be called
+                 "testXbee",   // Name of task
+                 256, // Stack size
+                 NULL,           // Parameter to pass
+                 1,              // Task priority
+                 NULL);          // Created Task
+    assert(rc == pdPASS) /* failure! */
 
     vTaskStartScheduler();
 
-    while(1);   // should never hit here
+    while(0);   // should never hit here
 }
 
