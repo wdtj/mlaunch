@@ -266,6 +266,10 @@ void xbeeTx(char *msg, int length, zbAddr controllerAddress,
  */
 void xbeeTask(void *parameter)
 {
+    //int depth;
+
+    //depth=uxTaskGetStackHighWaterMark(NULL);
+
     timeoutTimer = xTimerCreate("Timeout",
                                 (XB_TIMEOUT / portTICK_RATE_MS),
                                 pdFALSE,
@@ -277,12 +281,13 @@ void xbeeTask(void *parameter)
 
     while(1) {
         while(uart_rxReady()) {
-            zbReceive(uart_rxc());
+            zbReceive(uart_rxc(0));
         }
+    //depth=uxTaskGetStackHighWaterMark(NULL);
     }
 }
 
-#define XBEE_TRACE_WRITE
+//#define XBEE_TRACE_WRITE
 #ifdef XBEE_TRACE_WRITE
 char writeTrace[40];
 char *writeTracePtr = writeTrace;
@@ -331,7 +336,7 @@ int xbeeFSMInit(
     int rc = xTaskCreate(
                  xbeeTask,      // Function to be called
                  "xbeeTask",   // Name of task
-                 165, // Stack size
+                 145, // Stack size
                  NULL,           // Parameter to pass
                  1,              // Task priority
                  NULL);          // Created Task

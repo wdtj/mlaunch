@@ -53,10 +53,14 @@ volatile int uart_roe = 0;          // Buffer overrun error
 volatile QueueHandle_t uartTxQueue;
 volatile QueueHandle_t uartRxQueue;
 
+/*
+ * UART initialization.
+ */
 void uart_init(long baud, int txQueueSize, int rxQueueSize)
 {
-    uartTxQueue = xQueueCreate(txQueueSize, 1);
-    uartRxQueue = xQueueCreate(rxQueueSize, 1);
+    // Use freeRTOS queues for sending and receiving
+    uartTxQueue = xQueueCreate(txQueueSize, sizeof(char));
+    uartRxQueue = xQueueCreate(rxQueueSize, sizeof(char));
 
 #if F_CPU < 2000000UL && defined(U2X)
     UCSRA = _BV(U2X); /* improve baud rate error by using 2x clk */
@@ -73,13 +77,52 @@ void uart_init(long baud, int txQueueSize, int rxQueueSize)
     sei();                              // enable interrupts
 }
 
+/*
+ * Transmitter interrupt vector.
+ *
+ * This is called when the transmitter is empty.
+ */
 ISR( USART_UDRE_vect)
 {
-    volatile unsigned char ch;
+    unsigned char ch;
+    BaseType_t xTaskWokenBySend = pdFALSE;
+
+    // Get a character from our queue and send it
+    if( xQueueReceiveFromISR( uartTxQueue, ( void * ) &ch, &xTaskWokenBySend) ) {
+        UDR = ch;
+    }
+
+    if ( xTaskWokenBySend != ( char ) pdFALSE) {
+        taskYIELD ();
+    }
+}
+
+/*
+ * Receiver interrupt vector.
+ *
+ * This is called when the receiver has a character.
+ */
+ISR( USART_RXC_vect)
+{
+    volatile unsigned char ucsra = UCSRA;
     BaseType_t xTaskWokenByReceive = pdFALSE;
 
-    if( xQueueReceiveFromISR( uartTxQueue, ( void * ) &ch, &xTaskWokenByReceive) ) {
-        UDR = ch;
+    if (bit_is_set(ucsra, FE)) {    // Receiver has detected a framing error
+        uart_fe = 1;
+    }
+    if (bit_is_set(ucsra, DOR)) {    // Receiver has detected a n overrun
+        uart_doe = 1;
+    }
+    if (bit_is_set(ucsra, UPE)) {    // Receiver has detected a parity error
+        uart_pe = 1;
+    }
+
+    // Send it on it's way
+    unsigned char ch=UDR;
+
+    volatile BaseType_t rc=xQueueSendToBackFromISR(uartRxQueue, &ch, &xTaskWokenByReceive);
+    if (rc != pdPASS ) {            // The receiver queue is full
+        uart_roe=1;
     }
 
     if ( xTaskWokenByReceive != ( char ) pdFALSE) {
@@ -87,38 +130,26 @@ ISR( USART_UDRE_vect)
     }
 }
 
-ISR( USART_RXC_vect)
-{
-    volatile unsigned char ucsra = UCSRA;
-    if (bit_is_set(ucsra, FE)) {
-        uart_fe = 1;
-    }
-    if (bit_is_set(ucsra, DOR)) {
-        uart_doe = 1;
-    }
-    if (bit_is_set(ucsra, UPE)) {
-        uart_pe = 1;
-    }
-
-    unsigned char ch=UDR;
-
-    volatile BaseType_t rc=xQueueSendToBackFromISR(uartRxQueue, &ch, 0);
-    if (rc != pdPASS ) {
-        uart_roe=1;
-    }
-}
-
+/*
+ * Transmit a character.  
+ *
+ * We put the character on queue and tickle the transmit interrupt.
+ */
 void uart_txc(unsigned char ch)
 {
-    volatile BaseType_t rc=xQueueSendToBack( uartTxQueue, ( void * ) &ch, 0);
+    BaseType_t rc=xQueueSendToBack( uartTxQueue, ( void * ) &ch, 0);
     if (rc != pdPASS ) {
         uart_toe=1;
         return;
     }
 
+    // Now enable the transmitter empty interrupt to get it to send what's been queued.
     UCSRB |= _BV(UDRIE);
 }
 
+/* 
+ * Put a buffer full of characters out the transmitter. 
+ */
 void uart_txBuff(char *buff, int size)
 {
     while(size > 0) {
@@ -128,19 +159,29 @@ void uart_txBuff(char *buff, int size)
     }
 }
 
-// Returns number of available characters in the buffer
+
+/* 
+ * Returns number of available characters in the buffer 
+ */
 int uart_rxReady()
 {
     return uxQueueMessagesWaiting(uartRxQueue);
 }
 
-int uart_rxc(void)
+/* 
+ * Receive a single character
+ */
+
+int uart_rxc(int timeout)
 {
     int ch;
-    xQueueReceive(uartRxQueue, &ch, 0);
+    xQueueReceive(uartRxQueue, &ch, timeout);
     return ch;
 }
 
+/* 
+ * Read characters into a buffer.
+ */
 int uart_rxBuff(unsigned char *buff, int size, int *count, int timeout)
 {
     *count=0;
