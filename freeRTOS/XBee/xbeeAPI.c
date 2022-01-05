@@ -95,8 +95,8 @@ void handleATResp(struct zbATResponse *resp, int length)
                 zb_jn(3, 1);
                 xTimerStart(timeoutTimer, (XB_TIMEOUT / portTICK_RATE_MS));
                 apiState = JoinNotifications;
-                break;
             }
+            break;
         }
 
     // We have sent the Join Notifications packet, now we have a response
@@ -266,7 +266,6 @@ void xbeeTx(char *msg, int length, zbAddr controllerAddress,
  */
 void xbeeTask(void *parameter)
 {
-
     timeoutTimer = xTimerCreate("Timeout",
                                 (XB_TIMEOUT / portTICK_RATE_MS),
                                 pdFALSE,
@@ -282,6 +281,28 @@ void xbeeTask(void *parameter)
         }
     }
 }
+
+//#define XBEE_TRACE_WRITE
+#ifdef XBEE_TRACE_WRITE
+char writeTrace[80];
+char end[]="yy";
+char *writeTracePtr = writeTrace;
+
+
+void xbee_write(char *buff, int size)
+{
+    char *ptr;
+    int count;
+
+    for(ptr = buff, count = size; count > 0; --count) {
+        *(writeTracePtr++) = *(ptr++);
+        if(writeTracePtr > writeTrace + sizeof writeTrace) {
+            writeTracePtr = writeTrace;
+        }
+    }
+    uart_txBuff(buff, size);
+}
+#endif
 
 /* API call to Initialize the xbee modem */
 int xbeeFSMInit(
@@ -302,12 +323,16 @@ int xbeeFSMInit(
 
     uart_init(baud, txQueueSize, rxQueueSize);
 
+#ifdef XBEE_TRACE_WRITE
+    zbInit(&xbee_write, &xbeeReceivePacket);
+#else
     zbInit(&uart_txBuff, &xbeeReceivePacket);
+#endif
 
     int rc = xTaskCreate(
                  xbeeTask,      // Function to be called
                  "xbeeTask",   // Name of task
-                 128, // Stack size
+                 150, // Stack size
                  NULL,           // Parameter to pass
                  1,              // Task priority
                  NULL);          // Created Task

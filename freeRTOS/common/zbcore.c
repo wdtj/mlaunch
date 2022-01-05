@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
+#include <ctype.h>
 
 void (*zbWritePtr)(char *buff, int count);
 void (*zbReceivedPktPtr)(unsigned char *pkt, unsigned int length);
@@ -19,8 +20,8 @@ bool cse = true;
 
 /*
   This function takes a single character and through a finite state machine
-  demarshalls and determines if a full xbee packet has been received.  If it 
-  is, it returns a pointer to the packet.  If not it returns NULL and waits 
+  demarshalls and determines if a full xbee packet has been received.  If it
+  is, it returns a pointer to the packet.  If not it returns NULL and waits
   for more characters.
 */
 void zbReceive(unsigned char ch)
@@ -101,6 +102,88 @@ int zb_write(char *block, int size)
     return 0;
 }
 
+
+void zb_write2(char *format, ...)
+{
+    char ch;
+    char *string;
+    int length;
+
+    va_list argp;
+    va_start(argp, format);
+
+    int size = 0;
+
+    char *ptr = format;
+    while(*ptr != '\0') {
+        if(*ptr == '%') {
+            ptr++;
+            switch(*ptr) {
+            case '%':
+                size++;
+                break;
+            case 'c':
+                size++;
+                ch = va_arg(argp, int);
+                break;
+            case 's':
+                string = va_arg(argp, char *);
+                size += strlen(string);
+                break;
+            }
+        } else {
+            size++;
+        }
+        ptr++;
+    }
+    va_end(argp);
+
+    va_start(argp, format);
+
+    char cksum = 0;
+    unsigned long i;
+
+    (*zbWritePtr)("\x7e", 1);
+
+    (*zbWritePtr)(((char *) &size) + 1, 1);
+    (*zbWritePtr)(((char *) &size), 1);
+
+    while(*format != '\0') {
+        if(*format == '%') {
+
+            format++;
+            switch(*format) {
+            case '%':
+                (*zbWritePtr)("%", 1);
+                cksum += '%';
+                break;
+            case 'c':
+                ch = va_arg(argp, int);
+                (*zbWritePtr)(&ch, 1);
+                cksum += ch;
+                break;
+            case 's':
+                string = va_arg(argp, char *);
+                length = strlen(string);
+                (*zbWritePtr)(string, length);
+                for(i = 0; i < length; ++i) {
+                    cksum += *(string + i);
+                }
+
+                break;
+            }
+        } else {
+            (*zbWritePtr)(format, 1);
+            cksum += *format;
+        }
+        format++;
+    }
+    cksum = 0xff - cksum;
+    (*zbWritePtr)(&cksum, 1);
+
+    va_end(argp);
+}
+
 /*
  *  Node Identifier. Set/read a string identifier. The register only accepts printable ASCII
  *  data. In AT Command Mode, a string cannot start with a space. A carriage return ends
@@ -111,113 +194,40 @@ int zb_write(char *block, int size)
  */
 void zb_ni(unsigned char fid, char *string)
 {
-    struct {
-        unsigned char frameType;
-        unsigned char frameId;
-        unsigned char cmd[2];
-        char ni[20];
-    } block = {
-        ZB_AT_COMMAND, fid,
-        { 'N', 'I' }
-    };
-    if (string)
-    {
-        strncpy(block.ni, string, sizeof block.ni);
-        zb_write((char *) &block, 4 + strlen(string));
+    if(strlen(string) > 20) {
+        string[20] = '\0';
     }
-    else
-    {
-        zb_write((char *) &block, 4);
-    }
+    zb_write2("%c%cNI%s", ZB_AT_COMMAND, fid, string);
 }
 
 void zb_nj(unsigned char fid, unsigned char join)
 {
-    struct {
-        unsigned char frameType;
-        unsigned char frameId;
-        unsigned char cmd[2];
-        unsigned char join;
-    } block = {
-        ZB_AT_COMMAND, fid,
-        { 'N', 'J' }, join
-    };
-
-    zb_write((char *) &block, sizeof block);
+    zb_write2("%c%cNJ%c", ZB_AT_COMMAND, fid, join);
 }
 
 void zb_nr(unsigned char fid, unsigned char reset)
 {
-    struct {
-        unsigned char frameType;
-        unsigned char frameId;
-        unsigned char cmd[2];
-        unsigned char reset;
-    } block = {
-        ZB_AT_COMMAND, fid,
-        { 'N', 'R' }, reset
-    };
-
-    zb_write((char *) &block, sizeof block);
+    zb_write2("%c%cNR%c", ZB_AT_COMMAND, fid, reset);
 }
 
 void zb_nd(unsigned char fid)
 {
-    struct {
-        unsigned char frameType;
-        unsigned char frameId;
-        unsigned char cmd[2];
-    } block = {
-        ZB_AT_COMMAND, fid,
-        { 'N', 'D' }
-    };
-
-    zb_write((char *) &block, sizeof block);
+    zb_write2("%c%cND", ZB_AT_COMMAND, fid);
 }
 
 void zb_jn(unsigned char fid, unsigned char notify)
 {
-    struct {
-        unsigned char frameType;
-        unsigned char frameId;
-        unsigned char cmd[2];
-        unsigned char notify;
-    } block = {
-        ZB_AT_COMMAND, fid,
-        { 'J', 'N' }, notify
-    };
-
-    zb_write((char *) &block, sizeof block);
+    zb_write2("%c%cJN%c", ZB_AT_COMMAND, fid, notify);
 }
 
 void zb_ao(unsigned char fid, unsigned char option)
 {
-    struct {
-        unsigned char frameType;
-        unsigned char frameId;
-        unsigned char cmd[2];
-        unsigned char option;
-    } block = {
-        ZB_AT_COMMAND, fid,
-        { 'A', 'O' }, option
-    };
-
-    zb_write((char *) &block, sizeof block);
+    zb_write2("%c%cAO%c", ZB_AT_COMMAND, fid, option);
 }
 
-void zb_jv(unsigned char fid, unsigned char v)
+void zb_jv(unsigned char fid, unsigned char verify)
 {
-    struct {
-        unsigned char frameType;
-        unsigned char frameId;
-        unsigned char cmd[2];
-        unsigned char v;
-    } block = {
-        ZB_AT_COMMAND, fid,
-        { 'J', 'V' }, v
-    };
-
-    zb_write((char *) &block, sizeof block);
+    zb_write2("%c%cJV%c", ZB_AT_COMMAND, fid, verify);
 }
 
 void zb_id(unsigned char fid, unsigned long v)
