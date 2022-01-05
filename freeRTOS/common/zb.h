@@ -357,6 +357,7 @@ void zb_timeout();
 void zb_flush();
 void zb_abort(char *msg);
 int zb_write(char *block, int size);
+void zb_write2(char *format, ...);
 
 void zb_ni(unsigned char fid, char *string);
 void zb_nj(unsigned char fid, unsigned char join);

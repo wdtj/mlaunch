@@ -31,21 +31,21 @@ TimerHandle_t timeoutTimer;
  *  FSM State
  */
 volatile static enum {
-    Idle,
-    NodeIdentity,
-    ChannelVerify,
-    JoinNotifications,
-    NetworkWatchdog,
-    GetChannel,
-    GetReceivedSignalStrength,
-    NodeDiscovery,
-    txInProgress
+    Idle=0,
+    NodeIdentity=1,
+    ChannelVerify=2,
+    JoinNotifications=3,
+    NetworkWatchdog=4,
+    GetChannel=5,
+    GetReceivedSignalStrength=6,
+    NodeDiscovery=7,
+    txInProgress=8
 } apiState = NodeIdentity;
 
 /* xbee statistics */
 static unsigned int channel;
 static unsigned int signalStrength;
-static char name[20];
+//static char name[20];
 static char *nodeID = "testNode";
 
 /* Semaphore to guard FSM integrity.
@@ -142,14 +142,14 @@ void handleATResp(struct zbATResponse *resp, int length)
         }
 
     // We have sent the Received Signal Strength packet, now we have a response
-    case NodeDiscovery: {
-            if(resp->status == ZB_AT_STATUS_OK) {
-                struct ATNDData *nid = (struct ATNDData *) resp->data;
-                strncpy(name, (char *)nid->ni, sizeof name);
-            }
-            xSemaphoreGive(xbeeBusy);
-            break;
-        }
+    //case NodeDiscovery: {
+            //if(resp->status == ZB_AT_STATUS_OK) {
+                //struct ATNDData *nid = (struct ATNDData *) resp->data;
+                //strncpy(name, (char *)nid->ni, sizeof name);
+            //}
+            //xSemaphoreGive(xbeeBusy);
+            //break;
+        //}
 
     // We have received a packet we are not prepared for.
     default: {
@@ -230,14 +230,14 @@ void xbeeReceivePacket(unsigned char *pkt, unsigned int length)
     }
 }
 
-void networkDiscovery()      // TODO
-{
-    while(!xSemaphoreTake(xbeeBusy, 0));
-    zb_nd(10);
-    apiState = NodeDiscovery;
-    vTaskDelay(10000);
-    xSemaphoreGive(xbeeBusy);
-}
+//void networkDiscovery()      // TODO
+//{
+    //while(!xSemaphoreTake(xbeeBusy, 0));
+    //zb_nd(10);
+    //apiState = NodeDiscovery;
+    //vTaskDelay(10000);
+    //xSemaphoreGive(xbeeBusy);
+//}
 
 /* API call to wait for the FSM guard */
 void xbeeWait()
@@ -282,10 +282,9 @@ void xbeeTask(void *parameter)
     }
 }
 
-//#define XBEE_TRACE_WRITE
+#define XBEE_TRACE_WRITE
 #ifdef XBEE_TRACE_WRITE
-char writeTrace[80];
-char end[]="yy";
+char writeTrace[40];
 char *writeTracePtr = writeTrace;
 
 
@@ -332,13 +331,14 @@ int xbeeFSMInit(
     int rc = xTaskCreate(
                  xbeeTask,      // Function to be called
                  "xbeeTask",   // Name of task
-                 150, // Stack size
+                 165, // Stack size
                  NULL,           // Parameter to pass
                  1,              // Task priority
                  NULL);          // Created Task
 
-    assert(rc == pdPASS) /* failure! */
-
+    if(rc != pdPASS) {
+        assert(rc == pdPASS)     /* failure! */
+    }
     return rc;
 }
 

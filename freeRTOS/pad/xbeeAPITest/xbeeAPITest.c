@@ -90,7 +90,7 @@ int main(void)
     int rc = xTaskCreate(
                  testXbeeTask,      // Function to be called
                  "testXbee",   // Name of task
-                 256, // Stack size
+                 220, // Stack size
                  NULL,           // Parameter to pass
                  1,              // Task priority
                  NULL);          // Created Task
