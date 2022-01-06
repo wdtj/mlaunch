@@ -2,6 +2,8 @@
 #include "string.h"
 
 /*
+ Frame Type: 0x10
+
  A Transmit Request API frame causes the module to send data as an RF packet to the specified destination.
  The 64-bit destination address should be set to 0x000000000000FFFF for a broadcast transmission (to all
  devices). The coordinator can be addressed by either setting the 64-bit address to all 0x00s and the 16-bit

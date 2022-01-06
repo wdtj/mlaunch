@@ -48,15 +48,6 @@ typedef struct zbNetAddr
 #define zbNetAddrZero(addr) { addr.addr16[0]=0; addr.addr16[1]=0; }
 #define zbNetAddrCmp(addr1, addr2) { addr1.addr16[0]=addr2.addr16[0] && addr1.addr16[1]=addr2.addr16[1];  }
 
-typedef struct zbProfile
-{
-    unsigned char profile[2];
-} zbProfile;
-
-typedef struct zbCluster
-{
-    unsigned char cluster[2];
-} zbCluster;
 
 /* Frame types */
 
@@ -95,8 +86,8 @@ typedef struct zbExpTx
     zbNetAddr nad;
     unsigned char src;
     unsigned char dst;
-    zbCluster cluster;
-    zbProfile profile;
+    unsigned short cluster;
+    unsigned short profile;
     unsigned char radius;
     unsigned char opt;
     unsigned char data[72];
@@ -200,8 +191,8 @@ typedef struct zbExpRx
     zbNetAddr nad;
     unsigned char src;
     unsigned char dst;
-    zbCluster cluster;
-    zbProfile profile;
+    unsigned short cluster;
+    unsigned short profile;
     unsigned char opt;
     unsigned char data[72];
 } zbExpRx;
@@ -240,7 +231,7 @@ typedef struct zbNID
     unsigned char parent[2];
     unsigned char type;
     unsigned char src;
-    zbProfile profile;
+    unsigned short profile;
     unsigned char manufacture[2];
 } zbNID;
 
@@ -344,8 +335,8 @@ void zb_tx(unsigned char fid, zbAddr dest, zbNetAddr nad, unsigned char bcast,
         unsigned char radius, char *data, int size);
 
 void zb_tx_ex(unsigned char fid, zbAddr dest, zbNetAddr nad, unsigned char src,
-        unsigned char dst, unsigned short clust, zbProfile prof,
-        unsigned char radius, char *data, int size);
+        unsigned char dst, unsigned short clust, unsigned short prof,
+        unsigned char radius, char options, char *data, int size);
 
 void zbInit(
         void (*zbWrite)(char *buff, int count),

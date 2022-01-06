@@ -31,15 +31,15 @@ TimerHandle_t timeoutTimer;
  *  FSM State
  */
 volatile static enum {
-    Idle=0,
-    NodeIdentity=1,
-    ChannelVerify=2,
-    JoinNotifications=3,
-    NetworkWatchdog=4,
-    GetChannel=5,
-    GetReceivedSignalStrength=6,
-    NodeDiscovery=7,
-    txInProgress=8
+    Idle = 0,
+    NodeIdentity = 1,
+    ChannelVerify = 2,
+    JoinNotifications = 3,
+    NetworkWatchdog = 4,
+    GetChannel = 5,
+    GetReceivedSignalStrength = 6,
+    NodeDiscovery = 7,
+    txInProgress = 8
 } apiState = NodeIdentity;
 
 /* xbee statistics */
@@ -143,13 +143,13 @@ void handleATResp(struct zbATResponse *resp, int length)
 
     // We have sent the Received Signal Strength packet, now we have a response
     //case NodeDiscovery: {
-            //if(resp->status == ZB_AT_STATUS_OK) {
-                //struct ATNDData *nid = (struct ATNDData *) resp->data;
-                //strncpy(name, (char *)nid->ni, sizeof name);
-            //}
-            //xSemaphoreGive(xbeeBusy);
-            //break;
-        //}
+    //if(resp->status == ZB_AT_STATUS_OK) {
+    //struct ATNDData *nid = (struct ATNDData *) resp->data;
+    //strncpy(name, (char *)nid->ni, sizeof name);
+    //}
+    //xSemaphoreGive(xbeeBusy);
+    //break;
+    //}
 
     // We have received a packet we are not prepared for.
     default: {
@@ -165,7 +165,16 @@ void handleATResp(struct zbATResponse *resp, int length)
  */
 void handleModemStatus(struct zbModemStatus *resp, int length)
 {
-    assert(0);      // TODO
+    enum status status = resp->status;
+    switch(status) {
+    case zb_mdm_hwrst:
+    case zb_mdm_wdrst:
+    case zb_mdm_assoc:
+    case zb_mdm_disassoc:
+    case zb_mdm_start:
+        // TODO: Do something here
+        break;
+    }
 }
 
 /*
@@ -232,11 +241,11 @@ void xbeeReceivePacket(unsigned char *pkt, unsigned int length)
 
 //void networkDiscovery()      // TODO
 //{
-    //while(!xSemaphoreTake(xbeeBusy, 0));
-    //zb_nd(10);
-    //apiState = NodeDiscovery;
-    //vTaskDelay(10000);
-    //xSemaphoreGive(xbeeBusy);
+//while(!xSemaphoreTake(xbeeBusy, 0));
+//zb_nd(10);
+//apiState = NodeDiscovery;
+//vTaskDelay(10000);
+//xSemaphoreGive(xbeeBusy);
 //}
 
 /* API call to wait for the FSM guard */
@@ -247,7 +256,8 @@ void xbeeWait()
 }
 
 /* API call to Transmit data */
-void xbeeTx(char *msg, int length, zbAddr controllerAddress,
+void xbeeTx(char *msg, int length,
+            zbAddr controllerAddress,
             zbNetAddr controllerNAD)
 {
     while(!xSemaphoreTake(xbeeBusy, 0)) {
@@ -255,6 +265,37 @@ void xbeeTx(char *msg, int length, zbAddr controllerAddress,
     }
     apiState = txInProgress;
     zb_tx(11, controllerAddress, controllerNAD, 0, 0, msg, length);
+    while(apiState == txInProgress) {
+        taskYIELD();
+    }
+    xSemaphoreGive(xbeeBusy);
+}
+
+/* API call to Explicit Transmit data */
+void xbeeExpTx(char *msg, int length,
+               zbAddr controllerAddress,
+               zbNetAddr controllerNAD,
+               char src, char dest, 
+               unsigned short clust,
+               unsigned short prof,
+               char radius,
+               char opt)
+{
+
+    while(!xSemaphoreTake(xbeeBusy, 0)) {
+        taskYIELD();
+    }
+    apiState = txInProgress;
+    zb_tx_ex(12,
+             controllerAddress, // dest addr
+             controllerNAD,     // dest nad
+             src,               // src endpoint
+             dest,              // dst endpoint
+             clust,             // cluster
+             prof,              // profile
+             0,                 // radius
+             0,                 // options
+             msg, length);
     while(apiState == txInProgress) {
         taskYIELD();
     }
@@ -283,7 +324,7 @@ void xbeeTask(void *parameter)
         while(uart_rxReady()) {
             zbReceive(uart_rxc(0));
         }
-    //depth=uxTaskGetStackHighWaterMark(NULL);
+        //depth=uxTaskGetStackHighWaterMark(NULL);
     }
 }
 
@@ -336,7 +377,7 @@ int xbeeFSMInit(
     int rc = xTaskCreate(
                  xbeeTask,      // Function to be called
                  "xbeeTask",   // Name of task
-                 145, // Stack size
+                 160, // Stack size
                  NULL,           // Parameter to pass
                  1,              // Task priority
                  NULL);          // Created Task
