@@ -4,46 +4,6 @@
 #include "config.h"
 #include "uart.h"
 
-/*
- * $0C ($2C) UDR0   USART I/O Data Register
- * $0B ($2B) UCSR0A RXC   TXC   UDR0E  FE   DOR0  PE    U2X  MPCM
- * $0A ($2A) UCSR0B RXCIE0 TXCIE UDR0IE0 RXEN0 TXEN00 UCSZ2 RXB8 TXB8
- * $09 ($29) UBRR0L USART Baud Rate Register Low Byte
- * $20 ($40) UBR0H URSEL –     –    –         UBRR[11:8]
- *           UCSRC URSEL UMSEL UPM1 UPM0 USBS UCSZ1 UCSZ0 UCPOL
- *
- * UDR0   USART I/O Data Register
- * UCSR0A USART Control and Status Register A
- *   RXC: USART Receive Complete
- *   TXC: USART Transmit Complete
- *   UDR0E: USART Data Register Empty
- *   FE: Frame Error
- *   DOR0: Data OverRun
- *   PE: Parity Error
- *   U2X: Double the USART Transmission Speed
- *   MPCM: Multi-processor Communication Mode
- * UCSR0B USART Control and Status Register B
- *   RXCIE0: RX Complete Interrupt Enable
- *   TXCIE: TX Complete Interrupt Enable
- *   UDR0IE0: USART Data Register Empty Interrupt Enable
- *   RXEN0: Receiver Enable
- *   TXEN00: Transmitter Enable
- *   UCSZ2: Character Size
- *   RXB8: Receive Data Bit 8
- *   TXB8: Transmit Data Bit 8
- * UCSRC USART Control and Status Register C
- *   URSEL: Register Select
- *   UMSEL: USART Mode Select
- *   UPM1:0: Parity Mode
- *   USBS: Stop Bit Select
- *   UCSZ1:0: Character Size
- *   UCPOL: Clock Polarity
- * UBR0H USART Baud Rate Registers
- * UBRR0L
- * URSEL: Register Select
- * UBRR11:0: USART Baud Rate Register
- */
-
 volatile int uart_toe = 0;
 volatile int uart_fe = 0;           // Framing error
 volatile int uart_doe = 0;          // Data overrun error
