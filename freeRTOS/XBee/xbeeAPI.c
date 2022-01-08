@@ -377,7 +377,7 @@ int xbeeFSMInit(
     int rc = xTaskCreate(
                  xbeeTask,      // Function to be called
                  "xbeeTask",   // Name of task
-                 160, // Stack size
+                 256, // Stack size
                  NULL,           // Parameter to pass
                  1,              // Task priority
                  NULL);          // Created Task

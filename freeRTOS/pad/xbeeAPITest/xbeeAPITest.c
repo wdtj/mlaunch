@@ -55,9 +55,10 @@ void init()
 
 void testXbeeTask(void *parameter)
 {
-    //int depth=0xff;
-
-    //depth=uxTaskGetStackHighWaterMark(NULL);
+    int remaining;
+    if((remaining = uxTaskGetStackHighWaterMark(NULL)) < 20) {
+        assert(0);
+    }
 
     PadLed(RED, 0);
     PadLed(RED, 1);
@@ -69,37 +70,42 @@ void testXbeeTask(void *parameter)
     PadLed(YELLOW, 0);
     PadLed(YELLOW, 1);
 
-    //depth=uxTaskGetStackHighWaterMark(NULL);
+    if((remaining = uxTaskGetStackHighWaterMark(NULL)) < 20) {
+        assert(0);
+    }
 
     while(1) {
         {
-        char msg[] = "there";
+            char msg[] = "there";
 
-        xbeeTx(msg, strlen(msg), controllerAddress, controllerNAD);
-        PadLed(GREEN, 0);
-        vTaskDelay(100);
-        PadLed(YELLOW, 0);
-        vTaskDelay(100);
+            xbeeTx(msg, strlen(msg), controllerAddress, controllerNAD);
+            PadLed(GREEN, 0);
+            vTaskDelay(100);
+            PadLed(YELLOW, 0);
+            vTaskDelay(100);
         }
 
         {
-        char msg[] = "there2";
-        xbeeExpTx(msg, strlen(msg), 
-            controllerAddress, // dest addr
-            controllerNAD,     // dest nad
-            0xE8,              // src endpoint
-            0xE8,              // dst endpoint
-            0x12,              // cluster
-            0xC105,            // profile
-            0,                 // radius
-            0);                // options
-}
+            char msg[] = "there2";
+            xbeeExpTx(msg, strlen(msg),
+                      controllerAddress, // dest addr
+                      controllerNAD,     // dest nad
+                      0xE8,              // src endpoint
+                      0xE8,              // dst endpoint
+                      0x12,              // cluster
+                      0xC105,            // profile
+                      0,                 // radius
+                      0);                // options
+        }
         PadLed(GREEN, 0);
         vTaskDelay(100);
         PadLed(YELLOW, 0);
         vTaskDelay(100);
 
-        //depth=uxTaskGetStackHighWaterMark(NULL);
+        if((remaining = uxTaskGetStackHighWaterMark(NULL)) < 20) {
+            assert(0);
+        }
+
     }
 
     vTaskDelete(NULL);
@@ -118,7 +124,7 @@ int main(void)
     int rc = xTaskCreate(
                  testXbeeTask,      // Function to be called
                  "testXbee",   // Name of task
-                 240, // Stack size
+                 300, // Stack size
                  NULL,           // Parameter to pass
                  1,              // Task priority
                  NULL);          // Created Task

@@ -89,9 +89,9 @@
           <ListValues>
             <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
             <Value>../../../common</Value>
-            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32</Value>
-            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Source/include</Value>
-            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Source/portable/GCC/ATMega323</Value>
+            <Value>../../../freeRTOS-ATmega644/freeRTOS-ATmega644</Value>
+            <Value>../../../freeRTOS-ATmega644/freeRTOS-ATmega644/Source/include</Value>
+            <Value>../../../freeRTOS-ATmega644/freeRTOS-ATmega644/Source/portable/GCC/ATMega323</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
         <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
@@ -101,12 +101,12 @@
         <avrgcc.linker.libraries.Libraries>
           <ListValues>
             <Value>libm</Value>
-            <Value>libFreeRTOS-ATmega32</Value>
+            <Value>libfreeRTOS-ATmega644</Value>
           </ListValues>
         </avrgcc.linker.libraries.Libraries>
         <avrgcc.linker.libraries.LibrarySearchPaths>
           <ListValues>
-            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Debug</Value>
+            <Value>../../../freeRTOS-ATmega644/freeRTOS-ATmega644/Debug</Value>
           </ListValues>
         </avrgcc.linker.libraries.LibrarySearchPaths>
         <avrgcc.assembler.general.IncludePaths>
@@ -137,9 +137,9 @@
           <ListValues>
             <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
             <Value>../../../common</Value>
-            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32</Value>
-            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Source/include</Value>
-            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Source/portable/GCC/ATMega323</Value>
+            <Value>../../../freeRTOS-ATmega644/freeRTOS-ATmega644</Value>
+            <Value>../../../freeRTOS-ATmega644/freeRTOS-ATmega644/Source/include</Value>
+            <Value>../../../freeRTOS-ATmega644/freeRTOS-ATmega644/Source/portable/GCC/ATMega323</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
         <avrgcc.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcc.compiler.optimization.level>
@@ -150,12 +150,12 @@
         <avrgcc.linker.libraries.Libraries>
           <ListValues>
             <Value>libm</Value>
-            <Value>libFreeRTOS-ATmega32</Value>
+            <Value>libfreeRTOS-ATmega644</Value>
           </ListValues>
         </avrgcc.linker.libraries.Libraries>
         <avrgcc.linker.libraries.LibrarySearchPaths>
           <ListValues>
-            <Value>../../../freeRTOS-ATmega32/FreeRTOS-ATmega32/Debug</Value>
+            <Value>../../../freeRTOS-ATmega644/freeRTOS-ATmega644/Debug</Value>
           </ListValues>
         </avrgcc.linker.libraries.LibrarySearchPaths>
         <avrgcc.assembler.general.IncludePaths>

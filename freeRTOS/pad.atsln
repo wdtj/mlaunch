@@ -17,9 +17,9 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "switchTest", "pad\switchTes
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "xbeeAPITest", "pad\xbeeAPITest\xbeeAPITest.cproj", "{8C403340-2167-4C43-85D4-AA2BD345E8F8}"
 EndProject
-Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "FreeRTOS-ATmega32", "freeRTOS-ATmega32\FreeRTOS-ATmega32\FreeRTOS-ATmega32.cproj", "{18B405D3-EE19-4BEE-BFC2-975E574D9701}"
-EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "timerTest", "pad\timerTest\timerTest.cproj", "{5711D825-FA87-4AC5-86DB-DF413421FFB2}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "FreeRTOS-ATmega644", "freeRTOS-ATmega644\FreeRTOS-ATmega644\FreeRTOS-ATmega644.cproj", "{18B405D3-EE19-4BEE-BFC2-975E574D9701}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,14 +51,14 @@ Global
 		{8C403340-2167-4C43-85D4-AA2BD345E8F8}.Debug|AVR.Build.0 = Debug|AVR
 		{8C403340-2167-4C43-85D4-AA2BD345E8F8}.Release|AVR.ActiveCfg = Release|AVR
 		{8C403340-2167-4C43-85D4-AA2BD345E8F8}.Release|AVR.Build.0 = Release|AVR
-		{18B405D3-EE19-4BEE-BFC2-975E574D9701}.Debug|AVR.ActiveCfg = Debug|AVR
-		{18B405D3-EE19-4BEE-BFC2-975E574D9701}.Debug|AVR.Build.0 = Debug|AVR
-		{18B405D3-EE19-4BEE-BFC2-975E574D9701}.Release|AVR.ActiveCfg = Release|AVR
-		{18B405D3-EE19-4BEE-BFC2-975E574D9701}.Release|AVR.Build.0 = Release|AVR
 		{5711D825-FA87-4AC5-86DB-DF413421FFB2}.Debug|AVR.ActiveCfg = Debug|AVR
 		{5711D825-FA87-4AC5-86DB-DF413421FFB2}.Debug|AVR.Build.0 = Debug|AVR
 		{5711D825-FA87-4AC5-86DB-DF413421FFB2}.Release|AVR.ActiveCfg = Release|AVR
 		{5711D825-FA87-4AC5-86DB-DF413421FFB2}.Release|AVR.Build.0 = Release|AVR
+		{18B405D3-EE19-4BEE-BFC2-975E574D9701}.Debug|AVR.ActiveCfg = Debug|AVR
+		{18B405D3-EE19-4BEE-BFC2-975E574D9701}.Debug|AVR.Build.0 = Debug|AVR
+		{18B405D3-EE19-4BEE-BFC2-975E574D9701}.Release|AVR.ActiveCfg = Release|AVR
+		{18B405D3-EE19-4BEE-BFC2-975E574D9701}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
