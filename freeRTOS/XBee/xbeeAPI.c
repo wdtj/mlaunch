@@ -15,9 +15,10 @@
 #include "timers.h"
 #include "semphr.h"
 
+#include <string.h>
+
 #include "xbeeAPI.h"
 #include "uart.h"
-#include <string.h>
 #include "zb.h"
 
 #define XB_TIMEOUT 10000
@@ -26,6 +27,12 @@ void(*dataCallback)(char *data, int length);
 void(*errorCallback)(int code, int state);
 
 TimerHandle_t timeoutTimer;
+
+#define XBEE_TRACE
+#ifdef XBEE_TRACE
+char trace[256];
+char *tracePtr = trace;
+
 
 /*
  *  FSM State
@@ -43,15 +50,37 @@ volatile static enum {
 } apiState = NodeIdentity;
 
 /* xbee statistics */
-static unsigned int channel;
-static unsigned int signalStrength;
-//static char name[20];
-static char *nodeID = "testNode";
+static unsigned int channel = 0;
+static unsigned int signalStrength = 0;
+
+static char *nodeID = "testNode2";
+
+static zbAddr controllerAddr = {{0, 0, 0, 0, 0, 0, 0, 0}};
+static zbNetAddr controllerAddrNad = {{0, 0}};
+static xbeeNode *nodeList = NULL;
 
 /* Semaphore to guard FSM integrity.
  * This is taken when the FSM starts a sequence and given when complete.
  */
 SemaphoreHandle_t xbeeBusy = NULL;
+
+void *malloc(int size)
+{
+    return pvPortMalloc(size);
+}
+
+void free(void *ptr)
+{
+    vPortFree(ptr);
+}
+
+char *strdup(const char *string)
+{
+    size_t length = strlen(string);
+    char *newString = malloc(length + 1);
+    memcpy(newString, string, length + 1);
+    return newString;
+}
 
 /*
  *  Start up FSM for initial sequence.
@@ -122,7 +151,7 @@ void handleATResp(struct zbATResponse *resp, int length)
     // We have sent the Received Signal Strength packet, now we have a response
     case GetChannel: {
             if(resp->status == ZB_AT_STATUS_OK) {
-                channel = (resp->data[1] << 8) | (resp->data[0]);
+                channel = resp->data[0];
                 zb_db(6);
                 xTimerStart(timeoutTimer, (XB_TIMEOUT / portTICK_RATE_MS));
                 apiState = GetReceivedSignalStrength;
@@ -133,7 +162,7 @@ void handleATResp(struct zbATResponse *resp, int length)
     // We have sent the Received Signal Strength packet, now we have a response
     case GetReceivedSignalStrength: {
             if(resp->status == ZB_AT_STATUS_OK) {
-                signalStrength = (resp->data[1] << 8) | (resp->data[0]);
+                signalStrength = resp->data[0];
                 xTimerDelete(timeoutTimer, pdMS_TO_TICKS(XB_TIMEOUT));
                 apiState = Idle;
                 xSemaphoreGive(xbeeBusy);
@@ -142,14 +171,31 @@ void handleATResp(struct zbATResponse *resp, int length)
         }
 
     // We have sent the Received Signal Strength packet, now we have a response
-    //case NodeDiscovery: {
-    //if(resp->status == ZB_AT_STATUS_OK) {
-    //struct ATNDData *nid = (struct ATNDData *) resp->data;
-    //strncpy(name, (char *)nid->ni, sizeof name);
-    //}
-    //xSemaphoreGive(xbeeBusy);
-    //break;
-    //}
+    case NodeDiscovery: {
+            if(resp->status == ZB_AT_STATUS_OK) {
+                struct ATNDData *nid = (struct ATNDData *) resp->data;
+                xbeeNode *node = nodeList;
+                while(node != NULL) {
+                    if(zbAddrCmp(nid->addr, node->addr)) {
+                        break;
+                    }
+                    node = node->next;
+                }
+
+                if(node == NULL) {
+                    node = malloc(sizeof(struct xbeeNode));
+                    assert(node != 0);
+                    node->next = nodeList;
+                    memcpy(&node->addr, &nid->addr, sizeof(node->addr));
+                    memcpy(&node->netAddr, &nid->netAddr, sizeof(node->netAddr));
+                    node->name = strdup(nid->ni);
+                    nid = (struct ATNDData *) resp->data + strlen(node->name);
+                    node->type = nid->type;
+                    nodeList = node;
+                }
+            }
+        }
+        break;
 
     // We have received a packet we are not prepared for.
     default: {
@@ -170,10 +216,18 @@ void handleModemStatus(struct zbModemStatus *resp, int length)
     case zb_mdm_hwrst:
     case zb_mdm_wdrst:
     case zb_mdm_assoc:
-    case zb_mdm_disassoc:
     case zb_mdm_start:
         // TODO: Do something here
         break;
+    case zb_mdm_disassoc: {
+            // We lost the network, trash the list
+            xbeeNode *node = nodeList;
+            while(node != NULL) {
+                node = node->next;
+                free(node);
+            }
+            nodeList = NULL;
+        }
     }
 }
 
@@ -211,7 +265,25 @@ void handleExplicitRx(struct zbExpRx *resp, int length)
 
 void handleNodeID(struct zbNID *resp, int length)
 {
-    assert(0);      // TODO
+    xbeeNode *node = nodeList;
+    while(node != NULL) {
+        if(zbAddrCmp(resp->addr, node->addr)) {
+            break;
+        }
+        node = node->next;
+    }
+
+    if(node == NULL) {
+        node = malloc(sizeof(struct xbeeNode));
+        assert(node != 0);
+        node->next = nodeList;
+        memcpy(&node->addr, &resp->addr, sizeof(node->addr));
+        memcpy(&node->netAddr, &resp->netAddr, sizeof(node->netAddr));
+        node->name = strdup(resp->ni + 1);
+        assert(node->name != 0);
+        node->type = resp->type;
+        nodeList = node;
+    }
 }
 
 void handleRouteRecord(struct zbRR *resp, int length)
@@ -219,7 +291,16 @@ void handleRouteRecord(struct zbRR *resp, int length)
     assert(0);      // TODO
 }
 
+void handleMany2OneRouteRecord(struct zbManyToOneRouteRequestIndicator *resp,
+                               int length)
+{
+    controllerAddr = resp->dest;
+    controllerAddrNad = resp->destNad;
+}
 
+/*
+  Identify the received packet and dispatch to the proper handler.
+  */
 void xbeeReceivePacket(unsigned char *pkt, unsigned int length)
 {
     if(pkt[0] == ZB_AT_COMMAND_RESPONSE) {
@@ -236,17 +317,31 @@ void xbeeReceivePacket(unsigned char *pkt, unsigned int length)
         handleNodeID((struct zbNID *)(pkt + 1), length - 1);
     } else if(pkt[0] == ZB_ROUTE_RECORD) {
         handleRouteRecord((struct zbRR *)(pkt + 1), length - 1);
+    } else if(pkt[0] == ZB_MANY_TO_ONE_ROUTE_REQUEST_INDICATOR) {
+        handleMany2OneRouteRecord((struct zbManyToOneRouteRequestIndicator *)(pkt + 1),
+                                  length - 1);
     }
 }
 
-//void networkDiscovery()      // TODO
-//{
-//while(!xSemaphoreTake(xbeeBusy, 0));
-//zb_nd(10);
-//apiState = NodeDiscovery;
-//vTaskDelay(10000);
-//xSemaphoreGive(xbeeBusy);
-//}
+int networkDiscovery()      // TODO
+{
+    while(!xSemaphoreTake(xbeeBusy, 0));
+
+    zb_nd(10);
+    apiState = NodeDiscovery;
+    vTaskDelay(0x3c * 100);
+
+    xSemaphoreGive(xbeeBusy);
+
+    int count = 0;
+    xbeeNode *node = nodeList;
+    while(node) {
+        count++;
+        node = node->next;
+    }
+
+    return count;
+}
 
 /* API call to wait for the FSM guard */
 void xbeeWait()
@@ -275,7 +370,7 @@ void xbeeTx(char *msg, int length,
 void xbeeExpTx(char *msg, int length,
                zbAddr controllerAddress,
                zbNetAddr controllerNAD,
-               char src, char dest, 
+               char src, char dest,
                unsigned short clust,
                unsigned short prof,
                char radius,
@@ -322,17 +417,16 @@ void xbeeTask(void *parameter)
 
     while(1) {
         while(uart_rxReady()) {
-            zbReceive(uart_rxc(0));
+            char ch = uart_rxc(0);
+            *(tracePtr++) = ch;
+            if(tracePtr > trace + sizeof trace) {
+                tracePtr = trace;
+            }
+            zbReceive(ch);
         }
         //depth=uxTaskGetStackHighWaterMark(NULL);
     }
 }
-
-//#define XBEE_TRACE_WRITE
-#ifdef XBEE_TRACE_WRITE
-char writeTrace[40];
-char *writeTracePtr = writeTrace;
-
 
 void xbee_write(char *buff, int size)
 {
@@ -340,9 +434,9 @@ void xbee_write(char *buff, int size)
     int count;
 
     for(ptr = buff, count = size; count > 0; --count) {
-        *(writeTracePtr++) = *(ptr++);
-        if(writeTracePtr > writeTrace + sizeof writeTrace) {
-            writeTracePtr = writeTrace;
+        *(tracePtr++) = *(ptr++);
+        if(tracePtr > trace + sizeof trace) {
+            tracePtr = trace;
         }
     }
     uart_txBuff(buff, size);
@@ -368,11 +462,7 @@ int xbeeFSMInit(
 
     uart_init(baud, txQueueSize, rxQueueSize);
 
-#ifdef XBEE_TRACE_WRITE
     zbInit(&xbee_write, &xbeeReceivePacket);
-#else
-    zbInit(&uart_txBuff, &xbeeReceivePacket);
-#endif
 
     int rc = xTaskCreate(
                  xbeeTask,      // Function to be called

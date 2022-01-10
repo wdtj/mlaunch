@@ -15,7 +15,7 @@
 
 int xbeeFSMInit(int baud, int txQueueSize, int rxQueueSize, void(*data)(),
                 void(*error)(int code, int state));
-void networkDiscovery();
+int networkDiscovery();
 void xbeeWait();
 void xbeeTx(char *msg, int length,
             zbAddr controllerAddress,
@@ -29,8 +29,12 @@ void xbeeExpTx(char *msg, int length,
                char radius,
                char opt);
 
-
-
-
+typedef struct xbeeNode {
+    struct xbeeNode *next;
+    zbAddr addr;
+    zbNetAddr netAddr;
+    char *name;
+    unsigned char type;
+} xbeeNode;
 
 #endif /* XBEE_H_ */

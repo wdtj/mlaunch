@@ -137,6 +137,7 @@ typedef struct zbATResponse
             unsigned char sh[4];
             unsigned char sl[4];
             unsigned char ni[20];
+            unsigned char type;
         };
     };
 } zbATResponse;
@@ -145,7 +146,8 @@ struct ATNDData
 {
     zbNetAddr netAddr;
     zbAddr addr;
-    unsigned char ni[20];
+    char ni[0];         // variable length, \0 terminated
+    unsigned char type;
 };
 
 
@@ -222,12 +224,12 @@ typedef struct zbSensor
 /* FrameType ZB_NODE_IDENTIFICATION (0x95) */
 typedef struct zbNID
 {
-    zbAddr dest;
-    zbNetAddr destNad;
+    zbAddr addr;
+    zbNetAddr netAddr;
     unsigned char opt;
     zbNetAddr remNetAddr;
     zbAddr remAddr;
-    unsigned char ni[20];
+    char ni[20];
     unsigned char parent[2];
     unsigned char type;
     unsigned char src;

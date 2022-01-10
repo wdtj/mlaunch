@@ -55,6 +55,7 @@ void init()
 
 void testXbeeTask(void *parameter)
 {
+    char *msg;
     int remaining;
     if((remaining = uxTaskGetStackHighWaterMark(NULL)) < 20) {
         assert(0);
@@ -74,39 +75,34 @@ void testXbeeTask(void *parameter)
         assert(0);
     }
 
-    while(1) {
-        {
-            char msg[] = "there";
+    msg = "there";
+    xbeeTx(msg, strlen(msg), controllerAddress, controllerNAD);
+    PadLed(GREEN, 0);
+    vTaskDelay(100);
+    PadLed(YELLOW, 0);
+    vTaskDelay(100);
 
-            xbeeTx(msg, strlen(msg), controllerAddress, controllerNAD);
-            PadLed(GREEN, 0);
-            vTaskDelay(100);
-            PadLed(YELLOW, 0);
-            vTaskDelay(100);
-        }
+    msg = "there2";
+    xbeeExpTx(msg, strlen(msg),
+              controllerAddress, // dest addr
+              controllerNAD,     // dest nad
+              0xE8,              // src endpoint
+              0xE8,              // dst endpoint
+              0x12,              // cluster
+              0xC105,            // profile
+              0,                 // radius
+              0);                // options
 
-        {
-            char msg[] = "there2";
-            xbeeExpTx(msg, strlen(msg),
-                      controllerAddress, // dest addr
-                      controllerNAD,     // dest nad
-                      0xE8,              // src endpoint
-                      0xE8,              // dst endpoint
-                      0x12,              // cluster
-                      0xC105,            // profile
-                      0,                 // radius
-                      0);                // options
-        }
-        PadLed(GREEN, 0);
-        vTaskDelay(100);
-        PadLed(YELLOW, 0);
-        vTaskDelay(100);
+    PadLed(GREEN, 0);
+    vTaskDelay(100);
+    PadLed(YELLOW, 0);
+    vTaskDelay(100);
 
-        if((remaining = uxTaskGetStackHighWaterMark(NULL)) < 20) {
-            assert(0);
-        }
-
+    if((remaining = uxTaskGetStackHighWaterMark(NULL)) < 20) {
+        assert(0);
     }
+
+    networkDiscovery();
 
     vTaskDelete(NULL);
 }
@@ -124,7 +120,7 @@ int main(void)
     int rc = xTaskCreate(
                  testXbeeTask,      // Function to be called
                  "testXbee",   // Name of task
-                 300, // Stack size
+                 350, // Stack size
                  NULL,           // Parameter to pass
                  1,              // Task priority
                  NULL);          // Created Task
