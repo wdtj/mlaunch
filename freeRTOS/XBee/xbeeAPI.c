@@ -57,6 +57,8 @@ static char *nodeID = "testNode2";
 
 static zbAddr controllerAddr = {{0, 0, 0, 0, 0, 0, 0, 0}};
 static zbNetAddr controllerAddrNad = {{0, 0}};
+
+SemaphoreHandle_t nodeListGuard = NULL;
 static xbeeNode *nodeList = NULL;
 
 /* Semaphore to guard FSM integrity.
@@ -173,6 +175,8 @@ void handleATResp(struct zbATResponse *resp, int length)
     // We have sent the Received Signal Strength packet, now we have a response
     case NodeDiscovery: {
             if(resp->status == ZB_AT_STATUS_OK) {
+                xSemaphoreTake(nodeListGuard, 0);
+
                 struct ATNDData *nid = (struct ATNDData *) resp->data;
                 xbeeNode *node = nodeList;
                 while(node != NULL) {
@@ -192,7 +196,9 @@ void handleATResp(struct zbATResponse *resp, int length)
                     nid = (struct ATNDData *) resp->data + strlen(node->name);
                     node->type = nid->type;
                     nodeList = node;
+
                 }
+                xSemaphoreGive(nodeListGuard);
             }
         }
         break;
@@ -221,12 +227,15 @@ void handleModemStatus(struct zbModemStatus *resp, int length)
         break;
     case zb_mdm_disassoc: {
             // We lost the network, trash the list
+            xSemaphoreTake(nodeListGuard, 0);
+
             xbeeNode *node = nodeList;
             while(node != NULL) {
                 node = node->next;
                 free(node);
             }
             nodeList = NULL;
+            xSemaphoreGive(nodeListGuard);
         }
     }
 }
@@ -265,6 +274,8 @@ void handleExplicitRx(struct zbExpRx *resp, int length)
 
 void handleNodeID(struct zbNID *resp, int length)
 {
+    xSemaphoreTake(nodeListGuard, 0);
+
     xbeeNode *node = nodeList;
     while(node != NULL) {
         if(zbAddrCmp(resp->addr, node->addr)) {
@@ -284,6 +295,7 @@ void handleNodeID(struct zbNID *resp, int length)
         node->type = resp->type;
         nodeList = node;
     }
+    xSemaphoreGive(nodeListGuard);
 }
 
 void handleRouteRecord(struct zbRR *resp, int length)
@@ -454,9 +466,15 @@ int xbeeFSMInit(
     dataCallback = data;
     errorCallback = error;
 
+    // Mutex to prevent multiple threads from using xbee
     xbeeBusy = xSemaphoreCreateBinary();
     assert(xbeeBusy != NULL);
     xSemaphoreGive(xbeeBusy);
+
+    // Mutex to prevent multiple threads from updating the nodeList during Network Discovery
+    nodeListGuard = xSemaphoreCreateBinary();
+    assert(nodeListGuard != NULL);
+    xSemaphoreGive(nodeListGuard);
 
     xSemaphoreTake(xbeeBusy, 0);
 

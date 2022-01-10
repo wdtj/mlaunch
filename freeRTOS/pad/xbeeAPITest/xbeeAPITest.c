@@ -104,6 +104,11 @@ void testXbeeTask(void *parameter)
 
     networkDiscovery();
 
+    PadLed(GREEN, 0);
+    vTaskDelay(100);
+    PadLed(YELLOW, 0);
+    vTaskDelay(100);
+
     vTaskDelete(NULL);
 }
 
