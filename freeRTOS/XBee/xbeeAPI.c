@@ -279,7 +279,7 @@ void handleNodeID(struct zbNID *resp, int length)
         node->next = nodeList;
         memcpy(&node->addr, &resp->addr, sizeof(node->addr));
         memcpy(&node->netAddr, &resp->netAddr, sizeof(node->netAddr));
-        node->name = strdup(resp->ni + 1);
+        node->name = strdup(resp->ni);
         assert(node->name != 0);
         node->type = resp->type;
         nodeList = node;
