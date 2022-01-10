@@ -20,6 +20,7 @@
 #include "xbeeAPI.h"
 #include "uart.h"
 #include "zb.h"
+#include "mlaunchlib.h"
 
 #define XB_TIMEOUT 10000
 
@@ -65,24 +66,6 @@ static xbeeNode *nodeList = NULL;
  * This is taken when the FSM starts a sequence and given when complete.
  */
 SemaphoreHandle_t xbeeBusy = NULL;
-
-void *malloc(int size)
-{
-    return pvPortMalloc(size);
-}
-
-void free(void *ptr)
-{
-    vPortFree(ptr);
-}
-
-char *strdup(const char *string)
-{
-    size_t length = strlen(string);
-    char *newString = malloc(length + 1);
-    memcpy(newString, string, length + 1);
-    return newString;
-}
 
 /*
  *  Start up FSM for initial sequence.
