@@ -74,7 +74,6 @@ void xbeeInit(char *ni)
 {
     apiState = NodeIdentity;
     zb_ni(1, ni);
-    //xTimerStart(timeoutTimer, 0);
 }
 
 /*
@@ -320,7 +319,7 @@ void xbeeReceivePacket(unsigned char *pkt, unsigned int length)
 
 int networkDiscovery()      // TODO
 {
-    while(!xSemaphoreTake(xbeeBusy, 0));
+    xSemaphoreTake(xbeeBusy, portMAX_DELAY);
 
     zb_nd(10);
     apiState = NodeDiscovery;
@@ -341,7 +340,7 @@ int networkDiscovery()      // TODO
 /* API call to wait for the FSM guard */
 void xbeeWait()
 {
-    while(!xSemaphoreTake(xbeeBusy, 0));
+    xSemaphoreTake(xbeeBusy, portMAX_DELAY);
     xSemaphoreGive(xbeeBusy);
 }
 
