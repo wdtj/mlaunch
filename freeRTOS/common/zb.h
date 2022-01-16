@@ -260,14 +260,14 @@ typedef struct zbFirmwareUpdate
 } zbFirmwareUpdate;
 
 /* FrameType ZB_ROUTE_RECORD (0xA1) */
-typedef struct zbRR
+typedef struct zbRRI
 {
-    zbAddr dest;
-    zbNetAddr destNad;
+    zbAddr addr;
+    zbNetAddr netAddr;
     unsigned char opt;
-    unsigned char numAddr;
-    zbNetAddr route[1];
-} zbRR;
+    unsigned char hopCount;
+    zbNetAddr hops[];
+} zbRRI;
 
 /* FrameType ZB_MANY_TO_ONE_ROUTE_REQUEST_INDICATOR (0xA3) */
 typedef struct zbManyToOneRouteRequestIndicator
@@ -300,7 +300,7 @@ typedef struct zbFrame
         struct zbNID zbNID;
         struct zbRemResponse zbRemResponse;
         struct zbFirmwareUpdate zbFirmwareUpdate;
-        struct zbRR zbRR;
+        struct zbRRI zbRRI;
         struct zbManyToOneRouteRequestIndicator zbManyToOneRouteRequestIndicator;
     };
     unsigned char cksum;
@@ -328,7 +328,7 @@ typedef struct zbPkt
         struct zbNID zbNID;
         struct zbRemResponse zbRemResponse;
         struct zbFirmwareUpdate zbFirmwareUpdate;
-        struct zbRR zbRR;
+        struct zbRRI zbRRI;
         struct zbManyToOneRouteRequestIndicator zbManyToOneRouteRequestIndicator;
     };
 } zbPkt;
@@ -367,6 +367,7 @@ void zb_db(unsigned char fid);
 void zb_nw(unsigned char fid, unsigned char time);
 void zb_vr(unsigned char fid);
 void zb_no(unsigned char fid, unsigned char opt);
+void zb_ar(unsigned char fid, char mode);
 
 #ifdef  __cplusplus
 }

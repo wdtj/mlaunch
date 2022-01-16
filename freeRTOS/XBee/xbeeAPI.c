@@ -24,8 +24,12 @@
 
 #define XB_TIMEOUT 10000
 
-void(*dataCallback)(char *data, int length);
-void(*errorCallback)(int code, int state);
+xbeeEvent *eventCallbacks = {
+    NULL,   // data
+    NULL,   // error
+    NULL,   // reset
+    NULL,   // config
+};
 
 TimerHandle_t timeoutTimer;
 
@@ -84,8 +88,44 @@ void xbeeInit(char *ni)
 
 void timeout(TimerHandle_t xTimer)
 {
-    (*errorCallback)(XBEE_TIMEOUT, apiState);
+    (*eventCallbacks->error)(XBEE_TIMEOUT, apiState);
     xbeeInit(nodeID);
+}
+
+void addNode(
+    zbAddr addr,
+    zbNetAddr netAddr,
+    char *name,
+    unsigned char type,
+    int hopcount,
+    int *hops)
+{
+    xSemaphoreTake(nodeListGuard, 0);
+
+    xbeeNode *node = nodeList;
+    while(node != NULL) {
+        if(zbAddrCmp(addr, node->addr)) {
+            break;
+        }
+        node = node->next;
+    }
+
+    if(node == NULL) {
+        node = malloc(sizeof(struct xbeeNode));
+        assert(node != 0);
+        node->next = nodeList;
+        memcpy(&node->addr, &addr, sizeof(node->addr));
+        memcpy(&node->netAddr, &netAddr, sizeof(node->netAddr));
+        node->name = strdup(name);
+        node->type = type;
+        node->hopCount = hopcount;
+        memcpy(node->hops, hops, hopcount * sizeof(zbNetAddr));
+        nodeList = node;
+
+    }
+    xSemaphoreGive(nodeListGuard);
+
+    return;
 }
 
 /* Handle an AT Response */
@@ -157,30 +197,8 @@ void handleATResp(struct zbATResponse *resp, int length)
     // We have sent the Received Signal Strength packet, now we have a response
     case NodeDiscovery: {
             if(resp->status == ZB_AT_STATUS_OK) {
-                xSemaphoreTake(nodeListGuard, 0);
-
                 struct ATNDData *nid = (struct ATNDData *) resp->data;
-                xbeeNode *node = nodeList;
-                while(node != NULL) {
-                    if(zbAddrCmp(nid->addr, node->addr)) {
-                        break;
-                    }
-                    node = node->next;
-                }
-
-                if(node == NULL) {
-                    node = malloc(sizeof(struct xbeeNode));
-                    assert(node != 0);
-                    node->next = nodeList;
-                    memcpy(&node->addr, &nid->addr, sizeof(node->addr));
-                    memcpy(&node->netAddr, &nid->netAddr, sizeof(node->netAddr));
-                    node->name = strdup(nid->ni);
-                    nid = (struct ATNDData *) resp->data + strlen(node->name);
-                    node->type = nid->type;
-                    nodeList = node;
-
-                }
-                xSemaphoreGive(nodeListGuard);
+                addNode(nid->addr, nid->netAddr, nid->ni, nid->type, 0, NULL);
             }
         }
         break;
@@ -240,7 +258,7 @@ void handleTransmitStatus(struct zbTransmitStatus *resp, int length)
 void handleReceivePacket(struct zbRx *resp, int length)
 {
     int headerLength = ((char *)resp->data) - ((char *)resp);
-    (*dataCallback)((char *)resp->data, length - headerLength);
+    (*eventCallbacks->data)((char *)resp->data, length - headerLength);
 }
 
 /*
@@ -251,37 +269,30 @@ void handleReceivePacket(struct zbRx *resp, int length)
 void handleExplicitRx(struct zbExpRx *resp, int length)
 {
     int headerLength = ((char *)resp->data) - ((char *)resp);
-    (*dataCallback)((char *)resp->data, length - headerLength);
+    (*eventCallbacks->data)((char *)resp->data, length - headerLength);
 }
 
 void handleNodeID(struct zbNID *resp, int length)
+{
+    addNode(resp->addr, resp->netAddr, resp->ni, resp->type, 0, NULL);
+}
+
+void handleRouteRecord(struct zbRRI *resp, int length)
 {
     xSemaphoreTake(nodeListGuard, 0);
 
     xbeeNode *node = nodeList;
     while(node != NULL) {
         if(zbAddrCmp(resp->addr, node->addr)) {
-            break;
+            node->hopCount = resp->hopCount;
+            memcpy(node->hops, resp->hops, resp->hopCount * sizeof(zbNetAddr));
+
         }
         node = node->next;
     }
 
-    if(node == NULL) {
-        node = malloc(sizeof(struct xbeeNode));
-        assert(node != 0);
-        node->next = nodeList;
-        memcpy(&node->addr, &resp->addr, sizeof(node->addr));
-        memcpy(&node->netAddr, &resp->netAddr, sizeof(node->netAddr));
-        node->name = strdup(resp->ni);
-        assert(node->name != 0);
-        node->type = resp->type;
-        nodeList = node;
-    }
     xSemaphoreGive(nodeListGuard);
-}
 
-void handleRouteRecord(struct zbRR *resp, int length)
-{
     assert(0);      // TODO
 }
 
@@ -310,7 +321,7 @@ void xbeeReceivePacket(unsigned char *pkt, unsigned int length)
     } else if(pkt[0] == ZB_NODE_IDENTIFICATION) {
         handleNodeID((struct zbNID *)(pkt + 1), length - 1);
     } else if(pkt[0] == ZB_ROUTE_RECORD) {
-        handleRouteRecord((struct zbRR *)(pkt + 1), length - 1);
+        handleRouteRecord((struct zbRRI *)(pkt + 1), length - 1);
     } else if(pkt[0] == ZB_MANY_TO_ONE_ROUTE_REQUEST_INDICATOR) {
         handleMany2OneRouteRecord((struct zbManyToOneRouteRequestIndicator *)(pkt + 1),
                                   length - 1);
@@ -442,11 +453,9 @@ int xbeeFSMInit(
     int baud,           // Baud rate (Bits per second)
     int txQueueSize,    // Transmit queue size
     int rxQueueSize,    // Receive queue size
-    void(*data)(),      // Data received callback
-    void(*error)(int, int))  // Error received callback
+    xbeeEvent *events)  // Event callbacks
 {
-    dataCallback = data;
-    errorCallback = error;
+    eventCallbacks = events;
 
     // Mutex to prevent multiple threads from using xbee
     xbeeBusy = xSemaphoreCreateBinary();

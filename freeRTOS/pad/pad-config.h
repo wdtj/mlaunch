@@ -1,3 +1,14 @@
+/*
+ * pad-config.h
+ *
+ * Created: 1/16/2022 2:40:42 PM
+ *  Author: waynej
+ */ 
+
+
+#ifndef PAD_CONFIG_H_
+#define PAD_CONFIG_H_
+
 #define Red1 PORTB0
 #define Green1 PORTB1
 #define Yellow1 PORTB2
@@ -21,6 +32,14 @@
 
 #define UART_BAUD  9600UL
 
+#define Launch1 PORTA4
+#define Enable1 PORTA5
+#define Launch2 PORTA6
+#define Enable2 PORTA7
+
 #define ContSW1 PORTB3
 #define ContSW2 PORTB7
 
+#define Siren PORTB3
+
+#endif /* PAD_CONFIG_H_ */

@@ -9,7 +9,6 @@
 #include "../pad-config.h"
 
 #include <avr/io.h>
-#include <avr/interrupt.h>
 
 #include "FreeRTOS.h"
 #include "task.h"
@@ -53,6 +52,11 @@ void init()
             | _BV(Yellow2);
 }
 
+xbeeEvent events = {
+    handleData,
+    handleError
+};
+
 void testXbeeTask(void *parameter)
 {
     char *msg;
@@ -64,7 +68,7 @@ void testXbeeTask(void *parameter)
     PadLed(RED, 0);
     PadLed(RED, 1);
 
-    xbeeFSMInit(UART_BAUD, 180, 180, handleData, handleError);
+    xbeeFSMInit(UART_BAUD, 180, 180, &events);
 
     xbeeWait();
 

@@ -133,12 +133,6 @@
     <Compile Include="config.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="PadLed.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="PadLed.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="mlaunchlib.c">
       <SubType>compile</SubType>
     </Compile>
@@ -155,6 +149,9 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="zbcore.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="zb_ar.c">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="zb_ch.c">

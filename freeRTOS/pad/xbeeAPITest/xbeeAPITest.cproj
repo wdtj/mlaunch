@@ -152,6 +152,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="PadLed.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="PadLed.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="xbeeAPITest.c">
       <SubType>compile</SubType>
     </Compile>
