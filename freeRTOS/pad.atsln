@@ -21,6 +21,8 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "timerTest", "pad\timerTest\
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "FreeRTOS-ATmega644", "freeRTOS-ATmega644\FreeRTOS-ATmega644\FreeRTOS-ATmega644.cproj", "{18B405D3-EE19-4BEE-BFC2-975E574D9701}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "padLed", "pad\padLed\padLed.cproj", "{88303962-955E-48BB-BDDD-BA50F3978855}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -59,6 +61,10 @@ Global
 		{18B405D3-EE19-4BEE-BFC2-975E574D9701}.Debug|AVR.Build.0 = Debug|AVR
 		{18B405D3-EE19-4BEE-BFC2-975E574D9701}.Release|AVR.ActiveCfg = Release|AVR
 		{18B405D3-EE19-4BEE-BFC2-975E574D9701}.Release|AVR.Build.0 = Release|AVR
+		{88303962-955E-48BB-BDDD-BA50F3978855}.Debug|AVR.ActiveCfg = Debug|AVR
+		{88303962-955E-48BB-BDDD-BA50F3978855}.Debug|AVR.Build.0 = Debug|AVR
+		{88303962-955E-48BB-BDDD-BA50F3978855}.Release|AVR.ActiveCfg = Release|AVR
+		{88303962-955E-48BB-BDDD-BA50F3978855}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
