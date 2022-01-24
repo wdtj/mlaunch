@@ -23,6 +23,10 @@ Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "FreeRTOS-ATmega644", "freeR
 EndProject
 Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "padLed", "pad\padLed\padLed.cproj", "{88303962-955E-48BB-BDDD-BA50F3978855}"
 EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "switch", "switch\switch.cproj", "{3EB09512-A171-402A-9C94-5CB5F575AC70}"
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "switchAPITest", "pad\switchAPITest\switchAPITest.cproj", "{F15AFE6D-A966-48FE-96E1-DB53B729513A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -65,6 +69,14 @@ Global
 		{88303962-955E-48BB-BDDD-BA50F3978855}.Debug|AVR.Build.0 = Debug|AVR
 		{88303962-955E-48BB-BDDD-BA50F3978855}.Release|AVR.ActiveCfg = Release|AVR
 		{88303962-955E-48BB-BDDD-BA50F3978855}.Release|AVR.Build.0 = Release|AVR
+		{3EB09512-A171-402A-9C94-5CB5F575AC70}.Debug|AVR.ActiveCfg = Debug|AVR
+		{3EB09512-A171-402A-9C94-5CB5F575AC70}.Debug|AVR.Build.0 = Debug|AVR
+		{3EB09512-A171-402A-9C94-5CB5F575AC70}.Release|AVR.ActiveCfg = Release|AVR
+		{3EB09512-A171-402A-9C94-5CB5F575AC70}.Release|AVR.Build.0 = Release|AVR
+		{F15AFE6D-A966-48FE-96E1-DB53B729513A}.Debug|AVR.ActiveCfg = Debug|AVR
+		{F15AFE6D-A966-48FE-96E1-DB53B729513A}.Debug|AVR.Build.0 = Debug|AVR
+		{F15AFE6D-A966-48FE-96E1-DB53B729513A}.Release|AVR.ActiveCfg = Release|AVR
+		{F15AFE6D-A966-48FE-96E1-DB53B729513A}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

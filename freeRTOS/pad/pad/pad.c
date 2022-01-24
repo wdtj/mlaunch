@@ -17,6 +17,8 @@
 #include "PadLed.h"
 
 
+/* Main pad code */
+
 void init()
 {
     DDRA = _BV(Launch1) | _BV(Enable1) | _BV(Launch2) | _BV(Enable2);// PA4-7 output
