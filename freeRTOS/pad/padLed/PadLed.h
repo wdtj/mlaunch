@@ -10,12 +10,18 @@
 #ifndef PADLED_H_
 #define PADLED_H_
 
-#define OFF 0
-#define RED 1
-#define GREEN 2
-#define YELLOW 3
+typedef
+enum LedsState {
+    PAD_LED_OFF,
+    PAD_LED_GREEN,
+    PAD_LED_YELLOW,
+    PAD_LED_RED,
+    PAD_LED_BLINK_GREEN,
+    PAD_LED_BLINK_YELLOW,
+    PAD_LED_BLINK_RED
+} LedState;
 
-void PadLedInit(void);
-void PadLed(int color, int number);
+int padLedInit(void);
+void padLed(LedState color, int number);
 
 #endif /* PADLED_H_ */

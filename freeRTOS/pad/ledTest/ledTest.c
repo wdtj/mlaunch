@@ -12,37 +12,52 @@
 #include "FreeRTOS.h"
 #include "task.h"
 
-#include "../pad-config.h"
-
-void init()
-{
-    DDRB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
-           | _BV(Yellow2); // PB0-2, 4-6 are output
-    PORTB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
-            | _BV(Yellow2);
-}
-
+#include "padLed.h"
 
 void togglePadLED(void *parameters)
 {
+    padLedInit();
+
     while(1) {
-        setRed1();
-        setRed2();
+        padLed(PAD_LED_GREEN, 0);
         vTaskDelay(1000);
-        resetRed1();
-        resetRed2();
+        padLed(PAD_LED_OFF, 0);
+        padLed(PAD_LED_GREEN, 1);
+        vTaskDelay(1000);
+        padLed(PAD_LED_OFF, 1);
+        padLed(PAD_LED_YELLOW, 0);
+        vTaskDelay(1000);
+        padLed(PAD_LED_OFF, 0);
+        padLed(PAD_LED_YELLOW, 1);
+        vTaskDelay(1000);
+        padLed(PAD_LED_OFF, 1);
+        padLed(PAD_LED_RED, 0);
+        vTaskDelay(1000);
+        padLed(PAD_LED_OFF, 0);
+        padLed(PAD_LED_RED, 1);
+        vTaskDelay(1000);
+        padLed(PAD_LED_OFF, 1);
 
-        setGreen1();
-        setGreen2();
         vTaskDelay(1000);
-        resetGreen1();
-        resetGreen2();
 
-        setYellow1();
-        setYellow2();
+        padLed(PAD_LED_BLINK_GREEN, 0);
         vTaskDelay(1000);
-        resetYellow1();
-        resetYellow2();
+        padLed(PAD_LED_OFF, 0);
+        padLed(PAD_LED_BLINK_GREEN, 1);
+        vTaskDelay(1000);
+        padLed(PAD_LED_OFF, 1);
+        padLed(PAD_LED_BLINK_YELLOW, 0);
+        vTaskDelay(1000);
+        padLed(PAD_LED_OFF, 0);
+        padLed(PAD_LED_BLINK_YELLOW, 1);
+        vTaskDelay(1000);
+        padLed(PAD_LED_OFF, 1);
+        padLed(PAD_LED_BLINK_RED, 0);
+        vTaskDelay(1000);
+        padLed(PAD_LED_OFF, 0);
+        padLed(PAD_LED_BLINK_RED, 1);
+        vTaskDelay(1000);
+        padLed(PAD_LED_OFF, 1);
 
         vTaskDelay(1000);
     }
@@ -55,8 +70,6 @@ void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
 
 int main(void)
 {
-    init();
-
     // Start blink task
     xTaskCreate(
         togglePadLED,      // Function to be called

@@ -19,7 +19,7 @@
 #include <string.h>
 #include "zb.h"
 #include "xbeeAPI.h"
-#include "PadLed.h"
+#include "padLed.h"
 
 // addresses of the network controller
 zbAddr controllerAddress = {
@@ -32,10 +32,9 @@ zbNetAddr controllerNAD = {
 
 void handleData(char *data, int length)
 {
-    PadLed(GREEN, 1);
+    padLed(PAD_LED_GREEN, 1);
     vTaskDelay(100);
-    PadLed(YELLOW, 1);
-
+    padLed(PAD_LED_YELLOW, 1);
 }
 
 void handleError(int code, int state)
@@ -46,10 +45,7 @@ void handleError(int code, int state)
 
 void init()
 {
-    DDRB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
-           | _BV(Yellow2); // PB0-2, 4-6 are output
-    PORTB = _BV(Red1) | _BV(Green1) | _BV(Yellow1) | _BV(Red2) | _BV(Green2)
-            | _BV(Yellow2);
+    padLedInit();
 }
 
 xbeeEvent events = {
@@ -65,15 +61,15 @@ void testXbeeTask(void *parameter)
         assert(0);
     }
 
-    PadLed(RED, 0);
-    PadLed(RED, 1);
+    padLed(PAD_LED_RED, 0);
+    padLed(PAD_LED_RED, 1);
 
     xbeeFSMInit(UART_BAUD, 180, 180, &events);
 
     xbeeWait();
 
-    PadLed(YELLOW, 0);
-    PadLed(YELLOW, 1);
+    padLed(PAD_LED_YELLOW, 0);
+    padLed(PAD_LED_YELLOW, 1);
 
     if((remaining = uxTaskGetStackHighWaterMark(NULL)) < 20) {
         assert(0);
@@ -81,9 +77,9 @@ void testXbeeTask(void *parameter)
 
     msg = "there";
     xbeeTx(msg, strlen(msg), controllerAddress, controllerNAD);
-    PadLed(GREEN, 0);
+    padLed(PAD_LED_GREEN, 0);
     vTaskDelay(100);
-    PadLed(YELLOW, 0);
+    padLed(PAD_LED_YELLOW, 0);
     vTaskDelay(100);
 
     msg = "there2";
@@ -97,9 +93,9 @@ void testXbeeTask(void *parameter)
               0,                 // radius
               0);                // options
 
-    PadLed(GREEN, 0);
+    padLed(PAD_LED_GREEN, 0);
     vTaskDelay(100);
-    PadLed(YELLOW, 0);
+    padLed(PAD_LED_YELLOW, 0);
     vTaskDelay(100);
 
     if((remaining = uxTaskGetStackHighWaterMark(NULL)) < 20) {
@@ -108,9 +104,9 @@ void testXbeeTask(void *parameter)
 
     networkDiscovery();
 
-    PadLed(GREEN, 0);
+    padLed(PAD_LED_GREEN, 0);
     vTaskDelay(100);
-    PadLed(YELLOW, 0);
+    padLed(PAD_LED_YELLOW, 0);
     vTaskDelay(100);
 
     vTaskDelete(NULL);

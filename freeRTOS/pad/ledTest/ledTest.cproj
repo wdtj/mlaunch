@@ -40,10 +40,9 @@
         </dependencies>
       </framework-data>
     </AsfFrameworkConfig>
-    <avrtool>
-    </avrtool>
+    <avrtool>com.atmel.avrdbg.tool.jtagice3plus</avrtool>
     <avrtoolserialnumber>J30200014253</avrtoolserialnumber>
-    <avrdeviceexpectedsignature>0x1E9502</avrdeviceexpectedsignature>
+    <avrdeviceexpectedsignature>0x1E9609</avrdeviceexpectedsignature>
     <com_atmel_avrdbg_tool_jtagice3plus>
       <ToolOptions>
         <InterfaceProperties>
@@ -115,6 +114,7 @@
   <avrgcc.compiler.directories.IncludePaths>
     <ListValues>
       <Value>../../../common</Value>
+      <Value>../../padLed</Value>
       <Value>../../../freeRTOS-ATmega644/freeRTOS-ATmega644</Value>
       <Value>../../../freeRTOS-ATmega644/freeRTOS-ATmega644/Source/include</Value>
       <Value>../../../freeRTOS-ATmega644/freeRTOS-ATmega644/Source/portable/GCC/ATMega644</Value>
@@ -129,12 +129,14 @@
     <ListValues>
       <Value>libm</Value>
       <Value>libfreeRTOS-ATmega644</Value>
+      <Value>PadLed</Value>
     </ListValues>
   </avrgcc.linker.libraries.Libraries>
   <avrgcc.linker.libraries.LibrarySearchPaths>
     <ListValues>
       <Value>../../../freeRTOS-ATmega644/freeRTOS-ATmega644/Debug</Value>
       <Value>../../../common/Debug</Value>
+      <Value>../../padLed/Debug</Value>
     </ListValues>
   </avrgcc.linker.libraries.LibrarySearchPaths>
   <avrgcc.assembler.general.IncludePaths>
@@ -150,6 +152,13 @@
     <Compile Include="ledTest.c">
       <SubType>compile</SubType>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\pad\padLed\padLed.cproj">
+      <Name>padLed</Name>
+      <Project>{88303962-955e-48bb-bddd-ba50f3978855}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
 </Project>
