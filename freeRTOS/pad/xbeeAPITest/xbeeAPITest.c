@@ -48,11 +48,6 @@ void init()
     padLedInit();
 }
 
-xbeeEvent events = {
-    handleData,
-    handleError
-};
-
 void testXbeeTask(void *parameter)
 {
     char *msg;
@@ -64,12 +59,12 @@ void testXbeeTask(void *parameter)
     padLed(PAD_LED_RED, 0);
     padLed(PAD_LED_RED, 1);
 
-    xbeeFSMInit(UART_BAUD, 180, 180, &events);
+    xbeeFSMInit(UART_BAUD, 180, 180, 4);
 
     xbeeWait();
 
     padLed(PAD_LED_YELLOW, 0);
-    padLed(PAD_LED_YELLOW, 1);
+    padLed(PAD_LED_OFF, 1);
 
     if((remaining = uxTaskGetStackHighWaterMark(NULL)) < 20) {
         assert(0);
@@ -97,6 +92,29 @@ void testXbeeTask(void *parameter)
     vTaskDelay(100);
     padLed(PAD_LED_YELLOW, 0);
     vTaskDelay(100);
+
+    XbeeEventMsg message;
+    // See if we have a response
+    if(xQueueReceive(xbeeGetEventQueue(), &message, portMAX_DELAY)) {
+        switch(message.eventType) {
+        case 'R':
+            padLed(PAD_LED_GREEN, 1);
+            vTaskDelay(100);
+            padLed(PAD_LED_OFF, 1);
+            break;
+        case 'X':
+            padLed(PAD_LED_GREEN, 1);
+            vTaskDelay(100);
+            padLed(PAD_LED_OFF, 1);
+            break;
+        case 'T':
+            padLed(PAD_LED_RED, 1);
+            vTaskDelay(100);
+            padLed(PAD_LED_OFF, 1);
+            break;
+        }
+
+    }
 
     if((remaining = uxTaskGetStackHighWaterMark(NULL)) < 20) {
         assert(0);

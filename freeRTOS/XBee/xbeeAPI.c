@@ -24,12 +24,7 @@
 
 #define XB_TIMEOUT 10000
 
-xbeeEvent *eventCallbacks = {
-    NULL,   // data
-    NULL,   // error
-    NULL,   // reset
-    NULL,   // config
-};
+QueueHandle_t xbeeEventQueue = NULL;
 
 TimerHandle_t timeoutTimer;
 
@@ -88,7 +83,13 @@ void xbeeInit(char *ni)
 
 void timeout(TimerHandle_t xTimer)
 {
-    (*eventCallbacks->error)(XBEE_TIMEOUT, apiState);
+    XbeeEventMsg msg;
+    msg.eventType = 'T';
+
+    if(xbeeEventQueue) {
+        xQueueSend(xbeeEventQueue, &msg, 0);
+    }
+
     xbeeInit(nodeID);
 }
 
@@ -257,8 +258,18 @@ void handleTransmitStatus(struct zbTransmitStatus *resp, int length)
  */
 void handleReceivePacket(struct zbRx *resp, int length)
 {
-    int headerLength = ((char *)resp->data) - ((char *)resp);
-    (*eventCallbacks->data)((char *)resp->data, length - headerLength);
+    XbeeEventMsg msg;
+    msg.eventType = 'R';
+    memset(msg.data, 0, sizeof msg.data);
+    size_t dataLength=length-((char *)resp->data-(char *)resp);
+    memcpy(msg.data, resp->data, dataLength);
+
+    if(xbeeEventQueue) {
+        xQueueSend(xbeeEventQueue, &msg, 0);
+    }
+
+    //int headerLength = ((char *)resp->data) - ((char *)resp);
+    //(*eventCallbacks->data)((char *)resp->data, length - headerLength);
 }
 
 /*
@@ -266,18 +277,24 @@ void handleReceivePacket(struct zbRx *resp, int length)
  *
  * This indicates that data has been received.  Pass to user.
  */
-void handleExplicitRx(struct zbExpRx *resp, int length)
+void handleExplicitRx(struct zbExpRx * resp, int length)
 {
-    int headerLength = ((char *)resp->data) - ((char *)resp);
-    (*eventCallbacks->data)((char *)resp->data, length - headerLength);
+    XbeeEventMsg msg;
+    msg.eventType = 'X';
+
+    if(xbeeEventQueue) {
+        xQueueSend(xbeeEventQueue, &msg, 0);
+    }
+    //int headerLength = ((char *)resp->data) - ((char *)resp);
+    //(*eventCallbacks->data)((char *)resp->data, length - headerLength);
 }
 
-void handleNodeID(struct zbNID *resp, int length)
+void handleNodeID(struct zbNID * resp, int length)
 {
     addNode(resp->addr, resp->netAddr, resp->ni, resp->type, 0, NULL);
 }
 
-void handleRouteRecord(struct zbRRI *resp, int length)
+void handleRouteRecord(struct zbRRI * resp, int length)
 {
     xSemaphoreTake(nodeListGuard, 0);
 
@@ -296,7 +313,7 @@ void handleRouteRecord(struct zbRRI *resp, int length)
     assert(0);      // TODO
 }
 
-void handleMany2OneRouteRecord(struct zbManyToOneRouteRequestIndicator *resp,
+void handleMany2OneRouteRecord(struct zbManyToOneRouteRequestIndicator * resp,
                                int length)
 {
     controllerAddr = resp->dest;
@@ -429,6 +446,8 @@ void xbeeTask(void *parameter)
             }
             zbReceive(ch);
         }
+
+
         //depth=uxTaskGetStackHighWaterMark(NULL);
     }
 }
@@ -450,12 +469,13 @@ void xbee_write(char *buff, int size)
 
 /* API call to Initialize the xbee modem */
 int xbeeFSMInit(
-    int baud,           // Baud rate (Bits per second)
-    int txQueueSize,    // Transmit queue size
-    int rxQueueSize,    // Receive queue size
-    xbeeEvent *events)  // Event callbacks
+    int baud,               // Baud rate (Bits per second)
+    int txQueueSize,        // Transmit queue size
+    int rxQueueSize,        // Receive queue size
+    size_t eventQueueSize)   // Event queue size
 {
-    eventCallbacks = events;
+    // queue to return events
+    xbeeEventQueue = xQueueCreate(eventQueueSize, sizeof(struct XbeeEventMsg));
 
     // Mutex to prevent multiple threads from using xbee
     xbeeBusy = xSemaphoreCreateBinary();
@@ -467,6 +487,7 @@ int xbeeFSMInit(
     assert(nodeListGuard != NULL);
     xSemaphoreGive(nodeListGuard);
 
+    // Mark us as busy until the init exchange is complete.
     xSemaphoreTake(xbeeBusy, 0);
 
     uart_init(baud, txQueueSize, rxQueueSize);
@@ -484,6 +505,13 @@ int xbeeFSMInit(
     if(rc != pdPASS) {
         assert(rc == pdPASS)     /* failure! */
     }
+
     return rc;
+}
+
+/* Queue for the user to watch */
+QueueHandle_t xbeeGetEventQueue()
+{
+    return xbeeEventQueue;
 }
 

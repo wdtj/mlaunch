@@ -23,26 +23,33 @@ typedef struct xbeeNode {
     unsigned int *hops;
 } xbeeNode;
 
-typedef struct xbeeEvent {
+typedef struct XbeeEventMsg {
+    char eventType;
+    char data[80];
+} XbeeEventMsg;
+
+
+typedef struct XbeeEvent {
     void(*data)(char* data, int length);
     void(*error)(int code, int state);
     void(*reset)(int code);
     void(*config)();
-} xbeeEvent;
+} XbeeEvent;
 
-int xbeeFSMInit(int baud, int txQueueSize, int rxQueueSize, struct xbeeEvent *event);
+int xbeeFSMInit(int baud, int txQueueSize, int rxQueueSize,
+                size_t eventQueueSize);
 int networkDiscovery();
 void xbeeWait();
 void xbeeTx(char *msg, int length,
-zbAddr controllerAddress,
-zbNetAddr controllerNAD);
+            zbAddr controllerAddress,
+            zbNetAddr controllerNAD);
 void xbeeExpTx(char *msg, int length,
-zbAddr controllerAddress,
-zbNetAddr controllerNAD,
-char src, char dest,
-unsigned short clust,
-unsigned short prof,
-char radius,
-char opt);
-
+               zbAddr controllerAddress,
+               zbNetAddr controllerNAD,
+               char src, char dest,
+               unsigned short clust,
+               unsigned short prof,
+               char radius,
+               char opt);
+QueueHandle_t xbeeGetEventQueue();
 #endif /* XBEE_H_ */

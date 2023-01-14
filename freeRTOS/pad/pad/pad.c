@@ -12,25 +12,76 @@
 #include "queue.h"
 #include "timers.h"
 
+#include <string.h>
+
 #include "config.h"
 #include "pad-config.h"
 #include "PadLed.h"
+#include "zb.h"
+#include "xbeeAPI.h"
 
+// addresses of the network controller
+const zbAddr controllerAddress = {
+    { 0, 0, 0, 0, 0, 0, 0, 0 }
+};
 
-/* Main pad code */
+const zbNetAddr controllerNAD = {
+    { 0xff, 0xfe }
+};
+
+void handleData(char *data, int length)
+{
+    padLed(PAD_LED_GREEN, 1);
+    vTaskDelay(100);
+    padLed(PAD_LED_YELLOW, 1);
+}
+
+void handleError(int code, int state)
+{
+    resetRed1();
+    resetRed2();
+}
 
 void init()
 {
-    DDRA = _BV(Launch1) | _BV(Enable1) | _BV(Launch2) | _BV(Enable2);// PA4-7 output
-    DDRB = _BV(Red1) | _BV(Green1) | _BV(Siren) | _BV(Red2) | _BV(
-               Green2);// PB0-1, 3-5 are output
-    PORTB = _BV(ContSW1) | _BV(ContSW2);            // Set pullup on switches
-
-    DDRD |= _BV(7);
+    padLedInit();
 }
 
+/* Main pad code */
 void padTask(void *parameter)
 {
+    char *msg;
+
+    int remaining;
+    if((remaining = uxTaskGetStackHighWaterMark(NULL)) < 20) {
+        assert(0);
+    }
+
+    padLed(PAD_LED_RED, 0);
+    padLed(PAD_LED_RED, 1);
+
+    xbeeFSMInit(UART_BAUD, 180, 180, 4);
+
+    xbeeWait();
+
+    padLed(PAD_LED_YELLOW, 0);
+    padLed(PAD_LED_YELLOW, 1);
+
+    if((remaining = uxTaskGetStackHighWaterMark(NULL)) < 20) {
+        assert(0);
+    }
+
+    // Phone Home
+    msg = "there2";
+    xbeeExpTx(msg, strlen(msg),
+              controllerAddress, // dest addr
+              controllerNAD,     // dest nad
+              0xE8,              // src endpoint
+              0xE8,              // dst endpoint
+              0x12,              // cluster
+              0xC105,            // profile
+              0,                 // radius
+              0);                // options
 }
 
 void vApplicationStackOverflowHook(TaskHandle_t xTask, char *pcTaskName)
